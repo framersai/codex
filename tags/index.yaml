@@ -1,0 +1,24 @@
+subjects:
+  - computing
+  - knowledge-systems
+  - education
+  - ai
+  - design
+
+topics:
+  - openstrand
+  - architecture
+  - ingestion
+  - schema
+  - rag
+  - graph
+
+subtopics:
+  - api
+  - pipelines
+  - metadata
+  - search
+  - embeddings
+  - indexing
+
+

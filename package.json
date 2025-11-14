@@ -1,0 +1,15 @@
+{
+  "name": "@framersai/codex",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Frame Codex - a structured public knowledge corpus for LLM/RAG.",
+  "scripts": {
+    "build:index": "node ./scripts/build-index.mjs"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  }
+}
+
+

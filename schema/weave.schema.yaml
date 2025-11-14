@@ -1,0 +1,24 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Weave
+type: object
+required: [slug, title]
+properties:
+  slug:
+    type: string
+    pattern: "^[a-z0-9-]+$"
+  title:
+    type: string
+    minLength: 3
+  description:
+    type: string
+  maintainedBy:
+    type: string
+  license:
+    type: string
+    default: MIT
+  tags:
+    type: array
+    items:
+      type: string
+
+

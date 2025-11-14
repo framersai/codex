@@ -1,0 +1,31 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Loom
+type: object
+required: [slug, title]
+properties:
+  slug:
+    type: string
+    pattern: "^[a-z0-9-]+$"
+  title:
+    type: string
+  summary:
+    type: string
+  tags:
+    type: array
+    items: { type: string }
+  ordering:
+    type: string
+    enum: [manual, alpha, date, weight]
+    default: manual
+  relationships:
+    type: array
+    items:
+      type: object
+      properties:
+        targetSlug: { type: string }
+        type:
+          type: string
+          enum: [follows, parallels, contrasts, extends, applies]
+        strength: { type: number, minimum: 0, maximum: 1 }
+
+
