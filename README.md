@@ -75,30 +75,52 @@ const content = await response.text();
 # Install dependencies
 npm install
 
-# Generate index.json
-npm run build-index
+# Generate search index with auto-categorization
+npm run index
 
-# Validate schemas
+# Build lightweight index (original)
+npm run build:index
+
+# Validate all schemas and content
 npm run validate
+
+# Check for duplicate content
+npm run check-duplicates
 ```
 
 ## 🤝 Contributing
 
-We welcome contributions! Please:
+We welcome contributions! Our automated systems help ensure quality:
 
-1. Follow the [schema specifications](../../wiki/codex/schema.md)
-2. Ensure content quality and accuracy
-3. Include proper citations
-4. Submit via pull request
+### Quick Start
+1. Fork this repository
+2. Generate a template: `npm run generate-template -- "Your Title"`
+3. Add your content following the schema
+4. Validate: `npm run validate`
+5. Submit a PR using our template
+
+### Automated Features
+- **🤖 Auto-Indexing**: NLP-powered categorization
+- **🏷️ Auto-Tagging**: Smart tag suggestions
+- **✅ Validation**: Quality assurance checks
+- **🔍 Duplicate Detection**: Prevents redundant content
+- **📝 Summary Generation**: Auto-creates if missing
+
+### Quality Standards
+✓ Minimum 100 characters of meaningful content  
+✓ No placeholder text (lorem ipsum, TODO, FIXME)  
+✓ Complete metadata (title, summary, tags)  
+✓ Valid schema compliance  
+✓ Proper categorization  
 
 See [Contributing Guide](../../wiki/codex/contributing.md) for details.
 
-## 📊 Current Statistics
+## 📊 Repository Structure
 
-- **3** Weaves (knowledge universes)
-- **50+** Looms (topic collections)
-- **10,000+** Strands (knowledge units)
-- **100+** Contributors
+The Codex is organized hierarchically:
+- **Weaves**: Complete knowledge universes
+- **Looms**: Curated topic collections
+- **Strands**: Individual knowledge units
 
 ## 🔗 Integration
 

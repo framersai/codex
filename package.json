@@ -4,11 +4,16 @@
   "version": "0.1.0",
   "description": "Frame Codex - a structured public knowledge corpus for LLM/RAG.",
   "scripts": {
-    "build:index": "node ./scripts/build-index.mjs"
+    "build:index": "node ./scripts/build-index.mjs",
+    "index": "node scripts/auto-index.js",
+    "validate": "node scripts/validate.js",
+    "check-duplicates": "node scripts/validate.js --skip-duplicates=false",
+    "generate-template": "node scripts/validate.js --generate"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "uuid": "^9.0.1"
   }
 }
 

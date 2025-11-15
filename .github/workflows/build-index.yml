@@ -1,0 +1,121 @@
+name: Build Codex Search Index
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install js-yaml gray-matter
+      
+      - name: Build search index
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const yaml = require('js-yaml');
+          const matter = require('gray-matter');
+
+          const index = [];
+
+          function walkDir(dir, basePath = '') {
+            const files = fs.readdirSync(dir);
+            
+            files.forEach(file => {
+              const filePath = path.join(dir, file);
+              const stat = fs.statSync(filePath);
+              const relativePath = path.join(basePath, file);
+              
+              if (stat.isDirectory()) {
+                // Skip hidden directories
+                if (!file.startsWith('.')) {
+                  walkDir(filePath, relativePath);
+                }
+              } else if (file.endsWith('.md') || file.endsWith('.yaml') || file.endsWith('.yml')) {
+                const content = fs.readFileSync(filePath, 'utf8');
+                let metadata = {};
+                let textContent = content;
+                
+                if (file.endsWith('.md')) {
+                  const parsed = matter(content);
+                  metadata = parsed.data;
+                  textContent = parsed.content;
+                } else {
+                  try {
+                    metadata = yaml.load(content);
+                  } catch (e) {
+                    console.error('Error parsing YAML:', filePath, e.message);
+                  }
+                }
+                
+                // Extract summary from content if not in metadata
+                if (!metadata.summary && textContent) {
+                  const firstParagraph = textContent.split('\n\n')[0];
+                  metadata.summary = firstParagraph.substring(0, 200) + '...';
+                }
+                
+                index.push({
+                  path: relativePath.replace(/\\/g, '/'),
+                  name: file,
+                  type: stat.isDirectory() ? 'dir' : 'file',
+                  metadata,
+                  content: textContent.substring(0, 5000) // First 5KB for search
+                });
+              }
+            });
+          }
+
+          // Walk through weaves directory
+          if (fs.existsSync('./weaves')) {
+            walkDir('./weaves');
+          }
+          
+          // Walk through schema directory
+          if (fs.existsSync('./schema')) {
+            walkDir('./schema');
+          }
+          
+          // Walk through docs directory
+          if (fs.existsSync('./docs')) {
+            walkDir('./docs');
+          }
+
+          // Write the index
+          fs.writeFileSync('./codex-index.json', JSON.stringify(index, null, 2));
+          console.log(`Built index with ${index.length} entries`);
+          EOF
+
+      - name: Upload index artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: codex-index
+          path: codex-index.json
+      
+      - name: Create index branch
+        run: |
+          git config --global user.name 'Frame Dev Bot'
+          git config --global user.email 'team@frame.dev'
+          
+          # Create or checkout index branch
+          git checkout -B index
+          
+          # Copy the index file
+          cp codex-index.json index.json
+          
+          # Commit and push
+          git add index.json
+          git commit -m "chore: update search index" || echo "No changes to commit"
+          git push origin index --force
