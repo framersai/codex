@@ -8,12 +8,21 @@
     "index": "node scripts/auto-index.js",
     "validate": "node scripts/validate.js",
     "check-duplicates": "node scripts/validate.js --skip-duplicates=false",
-    "generate-template": "node scripts/validate.js --generate"
+    "generate-template": "node scripts/validate.js --generate",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
+    "husky": "^8.0.3",
     "js-yaml": "^4.1.0",
     "uuid": "^9.0.1"
+  },
+  "scripts-info": {
+    "index": "Build search index with NLP-powered auto-categorization",
+    "validate": "Validate all content against schemas and quality rules",
+    "check-duplicates": "Detect duplicate content across the repository",
+    "generate-template": "Generate a new strand template with UUID",
+    "prepare": "Install git hooks for pre-commit validation"
   }
 }
 
