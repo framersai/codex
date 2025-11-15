@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/codex-logo.svg" alt="Frame Codex" height="56">
+  <img src="logos/codex.svg" alt="Frame Codex" height="56">
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="logos/openstrand.svg" alt="OpenStrand" height="56">
 
