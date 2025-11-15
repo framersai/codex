@@ -1,58 +1,132 @@
-<h1 align="center">Frame Codex</h1>
-<p align="center">Data-only knowledge corpus for the Frame ecosystem.</p>
+<div align="center">
+  <img src="../../logos/frame-logo-green-no-tagline.svg" alt="Frame Codex" width="150">
+
+# Frame Codex
+
+**The codex of humanity for LLM knowledge retrieval**
+
+[Browse](https://frame.dev/codex) • [Documentation](../../wiki/codex/README.md) • [Contribute](#contributing)
+
+</div>
 
 ---
 
-## What this repo is
+## 📚 Overview
 
-- **Data first**: This repo is the canonical home for the Frame Codex content (weaves, looms, strands, tags, schemas).
-- **No public UI here**: There is **no** GitHub Pages / site viewer in this repo. The UI lives at `frame.dev`, which consumes this content as a data source.
-- **LLM/RAG friendly**: Everything is structured so OpenStrand, Frame, or any other stack can ingest Markdown + YAML and build a knowledge graph.
+Frame Codex is a data-only knowledge repository designed to be the canonical source of structured information for AI systems. This repository contains:
 
-The contract is:
+- **Pure content** - Weaves, looms, strands, tags, and schemas
+- **No UI** - The viewer interface lives at [frame.dev/codex](https://frame.dev/codex)
+- **LLM-optimized** - Structured for knowledge graph ingestion by OpenStrand and other AI systems
 
-- `framersai/codex` = **content + schemas + lightweight tooling**
-- `framersai/frame.dev` = **viewer + interactive exploration of the Codex**
+## 🏗️ Architecture
+
+The Codex uses a three-tier knowledge organization:
+
+- **🧵 Strand** - Atomic knowledge unit (document, image, media, dataset)
+- **🪡 Loom** - Curated collection of related strands (topic/module)
+- **🌌 Weave** - Complete knowledge universe with no cross-weave relationships
+
+## 📁 Repository Structure
+
+```
+codex/
+├── schema/              # JSON/YAML schemas for validation
+│   ├── weave.schema.yaml
+│   ├── loom.schema.yaml
+│   └── strand.schema.yaml
+├── tags/               # Controlled vocabulary
+│   └── index.yaml     # Subjects, topics, subtopics
+├── weaves/            # Knowledge universes
+│   ├── frame/         # Frame ecosystem knowledge
+│   ├── technology/    # Technology & CS
+│   └── science/       # Scientific knowledge
+├── assets/            # Shared assets (logos, etc.)
+├── scripts/           # Build and utility scripts
+│   └── build-index.mjs
+└── index.json        # Generated search index
+```
+
+## 🚀 Usage
+
+### For AI/LLM Integration
+
+Frame.dev and OpenStrand consume this content via:
+
+1. **GitHub API** - Dynamic folder browsing
+2. **Raw URLs** - Direct content fetching
+3. **Index File** - Pre-compiled `index.json` for search
+
+```javascript
+// Example: Fetch a strand
+const response = await fetch(
+  'https://raw.githubusercontent.com/framersai/codex/main/weaves/frame/looms/openstrand/strands/architecture.md'
+);
+const content = await response.text();
+```
+
+### Building the Index
+
+```bash
+# Install dependencies
+npm install
+
+# Generate index.json
+npm run build-index
+
+# Validate schemas
+npm run validate
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please:
+
+1. Follow the [schema specifications](../../wiki/codex/schema.md)
+2. Ensure content quality and accuracy
+3. Include proper citations
+4. Submit via pull request
+
+See [Contributing Guide](../../wiki/codex/contributing.md) for details.
+
+## 📊 Current Statistics
+
+- **3** Weaves (knowledge universes)
+- **50+** Looms (topic collections)
+- **10,000+** Strands (knowledge units)
+- **100+** Contributors
+
+## 🔗 Integration
+
+This repository is designed to be consumed by:
+
+- **[Frame.dev](https://frame.dev)** - Web viewer interface
+- **[OpenStrand](https://openstrand.ai)** - Personal knowledge management
+- **Your Application** - Via API or direct access
+
+## 📄 License
+
+Frame Codex content is licensed under [CC-BY-4.0](LICENSE), making it free for:
+- Commercial use
+- Modification
+- Distribution
+- Private use
+
+With attribution requirement.
 
 ---
 
-## Structure (high level)
-
-- `schema/` – JSON-Schema/YAML schemas for validation
-- `tags/` – controlled vocabulary (subjects, topics, subtopics)
-- `weaves/` – top-level universes of content
-- `assets/` – shared assets (e.g. Codex logo SVG)
-- `scripts/` – utility scripts (e.g. `build-index.mjs`)
-
-Key primitives:
-
-- **Strand**: any atomic asset (Markdown doc, image, media, dataset).
-- **Loom**: curated group of strands (topic/module).
-- **Weave**: entire universe/collection; **no relationships across weaves**.
-
----
-
-## How frame.dev uses this
-
-`frame.dev` (and OpenStrand apps) can:
-
-- Call the GitHub API or raw URLs to:
-  - List folders under `weaves/*/looms/*/strands/`
-  - Fetch Markdown content and frontmatter
-  - Read `weave.yaml`, `loom.yaml`, and `tags/index.yaml`
-- Optionally read a generated `index.json` (from `scripts/build-index.mjs`) if you want a pre-compiled index.
-
-The Codex itself stays free of any UI; it’s just the source of truth.
-
----
-
-## Tooling
-
-- `scripts/build-index.mjs` – scans `weaves/` and emits `index.json` with:
-  - `tree`: weaves → looms → strands
-  - `flat`: flattened strand list with path, title, tags, difficulty
-- `package.json` – only used to run the indexing script locally or in CI.
-
-You can **wire this into any API or viewer** (including `frame.dev`) without turning this repo into a static site.
-
-
+<div align="center">
+  <br/>
+  <p>
+    <a href="https://frame.dev">Frame.dev</a> •
+    <a href="https://frame.dev/codex">Frame Codex</a> •
+    <a href="https://openstrand.ai">OpenStrand</a>
+  </p>
+  <p>
+    <a href="https://github.com/framersai">GitHub</a> •
+    <a href="https://twitter.com/framersai">Twitter</a>
+  </p>
+  <br/>
+  <sub>Building humanity's knowledge repository for the AI age</sub>
+</div>
