@@ -1,0 +1,388 @@
+[
+  {
+    "path": "frame/looms/openstrand/loom.yaml",
+    "name": "loom.yaml",
+    "type": "file",
+    "metadata": {
+      "slug": "openstrand",
+      "title": "OpenStrand",
+      "summary": "AI-native knowledge infrastructure, ingestion, schemas, and RAG patterns.",
+      "tags": [
+        "openstrand",
+        "architecture",
+        "ingestion",
+        "schema",
+        "rag"
+      ],
+      "ordering": "manual"
+    },
+    "content": "slug: openstrand\ntitle: OpenStrand\nsummary: AI-native knowledge infrastructure, ingestion, schemas, and RAG patterns.\ntags: [openstrand, architecture, ingestion, schema, rag]\nordering: manual\n\n\n"
+  },
+  {
+    "path": "frame/looms/openstrand/strands/architecture.md",
+    "name": "architecture.md",
+    "type": "file",
+    "metadata": {
+      "id": "3c3ac6d5-8cc2-4106-9f4a-4f6134c3d0b2",
+      "slug": "openstrand-architecture",
+      "title": "OpenStrand Architecture – Condensed Overview",
+      "summary": "A practical, implementation-focused overview of OpenStrand’s architecture for ingestion and RAG.",
+      "version": "1.0.0",
+      "contentType": "reference",
+      "difficulty": {
+        "overall": "advanced",
+        "cognitive": 8,
+        "prerequisites": 5,
+        "conceptual": 8
+      },
+      "taxonomy": {
+        "subject": [
+          "computing",
+          "knowledge-systems"
+        ],
+        "topic": [
+          "openstrand",
+          "architecture"
+        ],
+        "subtopic": [
+          "api",
+          "pipelines",
+          "metadata",
+          "search",
+          "embeddings"
+        ],
+        "concepts": [
+          {
+            "term": "strands",
+            "weight": 0.8
+          },
+          {
+            "term": "looms",
+            "weight": 0.6
+          },
+          {
+            "term": "weaves",
+            "weight": 0.6
+          },
+          {
+            "term": "knowledge-graph",
+            "weight": 0.8
+          },
+          {
+            "term": "ingestion",
+            "weight": 0.7
+          }
+        ]
+      },
+      "relationships": [
+        {
+          "targetSlug": "openstrand-ingestion",
+          "type": "follows",
+          "strength": 0.7,
+          "bidirectional": false
+        }
+      ],
+      "publishing": {
+        "status": "published",
+        "license": "MIT"
+      }
+    },
+    "content": "\nThis strand condenses the OpenStrand Architecture into a short practitioner guide. For full details, see the comprehensive architecture document in the OpenStrand repo and related strands in this loom.\n\n## Key Ideas\n- Strands: atomic assets (docs, media, datasets); Looms: curated groups of strands; Weaves: entire universes of content. No cross-weave edges.\n- Ingestion: parse frontmatter → validate → persist ECA → index (text + vector) → construct relations (within weave).\n- Retrieval: combine lexical + semantic + graph edges; re-rank with pedagogical and structural signals.\n- Pipelines: support multi-format content; normalize to Markdown + frontmatter; attach assets alongside strands.\n\n## Ingestion Mapping\n1. Read `weave.yaml` → create workspace scope  \n2. Read `loom.yaml` → create grouping with tags + ordering  \n3. For each strand MD:\n   - Extract frontmatter (id, slug, title, taxonomy, relationships)\n   - Store Markdown and assets\n   - Create edges only to strands in the same weave\n4. Build search index + embeddings\n\n## RAG & Search\n- Flat inverted index for fast client-side search (GitHub Pages).\n- Vector store for semantic similarity (server-side or local).\n- Graph traversal to suggest next-items within a loom.\n\n## Governance & SEO\n- Short executive summaries; single-topic strands; stable anchors; internal links between strands.\n- Controlled vocabulary in `tags/index.yaml`; CI validates tag usage and relationships.\n\n\n"
+  },
+  {
+    "path": "frame/weave.yaml",
+    "name": "weave.yaml",
+    "type": "file",
+    "metadata": {
+      "slug": "frame",
+      "title": "Frame",
+      "description": "The Frame weave: documentation, architecture, and knowledge related to the Frame ecosystem. This weave is a self-contained universe; no relationships to strands outside of this weave.\n",
+      "maintainedBy": "team@frame.dev",
+      "license": "MIT",
+      "tags": [
+        "computing",
+        "knowledge-systems",
+        "rag"
+      ],
+      "summary": "slug: frame\ntitle: Frame\ndescription: >\n  The Frame weave: documentation, architecture, and knowledge related to the Frame ecosystem.\n  This weave is a self-contained universe; no relationships to str..."
+    },
+    "content": "slug: frame\ntitle: Frame\ndescription: >\n  The Frame weave: documentation, architecture, and knowledge related to the Frame ecosystem.\n  This weave is a self-contained universe; no relationships to strands outside of this weave.\nmaintainedBy: team@frame.dev\nlicense: MIT\ntags: [computing, knowledge-systems, rag]\n\n\n"
+  },
+  {
+    "path": "loom.schema.yaml",
+    "name": "loom.schema.yaml",
+    "type": "file",
+    "metadata": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Loom",
+      "type": "object",
+      "required": [
+        "slug",
+        "title"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ordering": {
+          "type": "string",
+          "enum": [
+            "manual",
+            "alpha",
+            "date",
+            "weight"
+          ],
+          "default": "manual"
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "targetSlug": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "follows",
+                  "parallels",
+                  "contrasts",
+                  "extends",
+                  "applies"
+                ]
+              },
+              "strength": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        }
+      },
+      "summary": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Loom\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n  su..."
+    },
+    "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Loom\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n  summary:\n    type: string\n  tags:\n    type: array\n    items: { type: string }\n  ordering:\n    type: string\n    enum: [manual, alpha, date, weight]\n    default: manual\n  relationships:\n    type: array\n    items:\n      type: object\n      properties:\n        targetSlug: { type: string }\n        type:\n          type: string\n          enum: [follows, parallels, contrasts, extends, applies]\n        strength: { type: number, minimum: 0, maximum: 1 }\n\n\n"
+  },
+  {
+    "path": "strand.schema.yaml",
+    "name": "strand.schema.yaml",
+    "type": "file",
+    "metadata": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "StrandFrontmatter",
+      "type": "object",
+      "required": [
+        "id",
+        "slug",
+        "title",
+        "version",
+        "contentType"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "contentType": {
+          "type": "string",
+          "enum": [
+            "lesson",
+            "reference",
+            "exercise",
+            "assessment",
+            "project",
+            "discussion",
+            "resource"
+          ]
+        },
+        "difficulty": {
+          "type": "object",
+          "properties": {
+            "overall": {
+              "enum": [
+                "beginner",
+                "intermediate",
+                "advanced",
+                "expert"
+              ]
+            },
+            "cognitive": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "prerequisites": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "conceptual": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 10
+            }
+          }
+        },
+        "taxonomy": {
+          "type": "object",
+          "properties": {
+            "subject": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "topic": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "subtopic": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "concepts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "term": {
+                    "type": "string"
+                  },
+                  "weight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "targetSlug": {
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "follows",
+                  "parallels",
+                  "contrasts",
+                  "extends",
+                  "applies",
+                  "synthesizes"
+                ]
+              },
+              "strength": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "bidirectional": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        },
+        "publishing": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "draft",
+                "review",
+                "published",
+                "archived"
+              ]
+            },
+            "license": {
+              "type": "string",
+              "default": "MIT"
+            }
+          }
+        }
+      },
+      "summary": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: StrandFrontmatter\ntype: object\nrequired: [id, slug, title, version, contentType]\nproperties:\n  id: { type: string, format: uuid }\n  slug:..."
+    },
+    "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: StrandFrontmatter\ntype: object\nrequired: [id, slug, title, version, contentType]\nproperties:\n  id: { type: string, format: uuid }\n  slug: { type: string, pattern: \"^[a-z0-9-]+$\" }\n  title: { type: string }\n  summary: { type: string }\n  version: { type: string, pattern: \"^\\\\d+\\\\.\\\\d+\\\\.\\\\d+$\" }\n  contentType:\n    type: string\n    enum: [lesson, reference, exercise, assessment, project, discussion, resource]\n  difficulty:\n    type: object\n    properties:\n      overall: { enum: [beginner, intermediate, advanced, expert] }\n      cognitive: { type: number, minimum: 1, maximum: 10 }\n      prerequisites: { type: number, minimum: 0, maximum: 10 }\n      conceptual: { type: number, minimum: 1, maximum: 10 }\n  taxonomy:\n    type: object\n    properties:\n      subject: { type: array, items: { type: string } }\n      topic: { type: array, items: { type: string } }\n      subtopic: { type: array, items: { type: string } }\n      concepts:\n        type: array\n        items:\n          type: object\n          properties:\n            term: { type: string }\n            weight: { type: number, minimum: 0, maximum: 1 }\n  relationships:\n    type: array\n    items:\n      type: object\n      properties:\n        targetSlug: { type: string }\n        type: { enum: [follows, parallels, contrasts, extends, applies, synthesizes] }\n        strength: { type: number, minimum: 0, maximum: 1 }\n        bidirectional: { type: boolean, default: false }\n  publishing:\n    type: object\n    properties:\n      status: { enum: [draft, review, published, archived] }\n      license: { type: string, default: MIT }\n\n\n"
+  },
+  {
+    "path": "weave.schema.yaml",
+    "name": "weave.schema.yaml",
+    "type": "file",
+    "metadata": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Weave",
+      "type": "object",
+      "required": [
+        "slug",
+        "title"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "description": {
+          "type": "string"
+        },
+        "maintainedBy": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string",
+          "default": "MIT"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "summary": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Weave\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n   ..."
+    },
+    "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Weave\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n    minLength: 3\n  description:\n    type: string\n  maintainedBy:\n    type: string\n  license:\n    type: string\n    default: MIT\n  tags:\n    type: array\n    items:\n      type: string\n\n\n"
+  }
+]
