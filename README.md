@@ -1,11 +1,15 @@
 <div align="center">
-  <img src="../../logos/frame-logo-green-no-tagline.svg" alt="Frame Codex" width="150">
+  <img src="assets/codex-logo.svg" alt="Frame Codex" width="150">
 
 # Frame Codex
 
 **The codex of humanity for LLM knowledge retrieval**
 
+*The OS for humans, the codex of humanity.*
+
 [Browse](https://frame.dev/codex) • [Documentation](../../wiki/codex/README.md) • [Contribute](#contributing)
+
+**AI Infrastructure for Superintelligence.**
 
 </div>
 
