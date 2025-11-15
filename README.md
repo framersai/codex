@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="assets/codex-logo.svg" alt="Frame Codex" width="150">
+  <img src="assets/codex-logo.svg" alt="Frame Codex" height="56">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="logos/openstrand.svg" alt="OpenStrand" height="56">
 
 # Frame Codex
 
@@ -15,7 +17,7 @@
 
 ---
 
-## 📚 Overview
+## Overview
 
 Frame Codex is a data-only knowledge repository designed to be the canonical source of structured information for AI systems. This repository contains:
 
@@ -23,15 +25,15 @@ Frame Codex is a data-only knowledge repository designed to be the canonical sou
 - **No UI** - The viewer interface lives at [frame.dev/codex](https://frame.dev/codex)
 - **LLM-optimized** - Structured for knowledge graph ingestion by OpenStrand and other AI systems
 
-## 🏗️ Architecture
+## Architecture
 
 The Codex uses a three-tier knowledge organization:
 
-- **🧵 Strand** - Atomic knowledge unit (document, image, media, dataset)
-- **🪡 Loom** - Curated collection of related strands (topic/module)
-- **🌌 Weave** - Complete knowledge universe with no cross-weave relationships
+- **Strand** - Atomic knowledge unit (document, image, media, dataset)
+- **Loom** - Curated collection of related strands (topic/module)
+- **Weave** - Complete knowledge universe with no cross-weave relationships
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 codex/
@@ -51,7 +53,7 @@ codex/
 └── index.json        # Generated search index
 ```
 
-## 🚀 Usage
+## Usage
 
 ### For AI/LLM Integration
 
@@ -88,7 +90,7 @@ npm run validate
 npm run check-duplicates
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Our automated systems help ensure quality:
 
@@ -100,29 +102,29 @@ We welcome contributions! Our automated systems help ensure quality:
 5. Submit a PR using our template
 
 ### Automated Features
-- **🤖 Auto-Indexing**: NLP-powered categorization
-- **🏷️ Auto-Tagging**: Smart tag suggestions
-- **✅ Validation**: Quality assurance checks
-- **🔍 Duplicate Detection**: Prevents redundant content
-- **📝 Summary Generation**: Auto-creates if missing
+- Auto-Indexing: NLP-powered categorization
+- Auto-Tagging: Smart tag suggestions
+- Validation: Quality assurance checks
+- Duplicate Detection: Prevents redundant content
+- Summary Generation: Auto-creates if missing
 
 ### Quality Standards
-✓ Minimum 100 characters of meaningful content  
-✓ No placeholder text (lorem ipsum, TODO, FIXME)  
-✓ Complete metadata (title, summary, tags)  
-✓ Valid schema compliance  
-✓ Proper categorization  
+- Minimum 100 characters of meaningful content  
+- No placeholder text (lorem ipsum, TODO, FIXME)  
+- Complete metadata (title, summary, tags)  
+- Valid schema compliance  
+- Proper categorization  
 
 See [Contributing Guide](../../wiki/codex/contributing.md) for details.
 
-## 📊 Repository Structure
+## Repository Structure
 
 The Codex is organized hierarchically:
 - **Weaves**: Complete knowledge universes
 - **Looms**: Curated topic collections
 - **Strands**: Individual knowledge units
 
-## 🔗 Integration
+## Integration
 
 This repository is designed to be consumed by:
 
