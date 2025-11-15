@@ -94,6 +94,8 @@ npm run check-duplicates
 
 We welcome contributions! Our automated systems help ensure quality:
 
+> Important: Only submit content you own or have permission to publish under a permissive license (CC-BY-4.0 or compatible). Do not submit proprietary or copyrighted material without explicit written permission.
+
 ### Quick Start
 1. Fork this repository
 2. Generate a template: `npm run generate-template -- "Your Title"`

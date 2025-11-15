@@ -60,11 +60,11 @@
 - [ ] Researchers
 - [ ] General audience
 
-### License Compliance
-- [ ] Content is original or properly attributed
-- [ ] Compatible with MIT license
-- [ ] No copyrighted material without permission
-- [ ] References are properly cited
+### License Compliance (mandatory)
+- [ ] I own the rights to this content, or I have explicit permission to contribute it
+- [ ] Content is original or properly attributed with a permissive license (CC-BY-4.0 or compatible)
+- [ ] No proprietary/confidential content; no copyrighted material without written permission
+- [ ] References and sources are properly cited
 
 ## Validation Results
 <!-- Run `npm run validate` and paste results here -->
@@ -102,7 +102,7 @@ npm run check-duplicates -- --path <new-content-path>
 
 By submitting this PR, I confirm that:
 1. The content adheres to Frame Codex quality standards
-2. I have the right to contribute this content
-3. The content will be available under the MIT license
+2. I have the right to contribute this content (or it is under a license allowing redistribution)
+3. The content is free to republish under CC-BY-4.0 (or a compatible license)
 
 /cc @framersai/codex-maintainers
