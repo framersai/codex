@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@framers/sql-storage-adapter": "^0.3.5",
-    "better-sqlite3": "^11.0.0"
+    "better-sqlite3": "^12.0.0"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^1.6.1",
