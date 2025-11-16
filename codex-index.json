@@ -56,7 +56,7 @@
           "best-practices": 0.14285714285714285,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:14:11.012Z"
+        "lastIndexed": "2025-11-16T00:36:43.027Z"
       }
     },
     "validation": {
@@ -190,7 +190,7 @@
           "getting-started": 0.125,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:14:11.062Z"
+        "lastIndexed": "2025-11-16T00:36:43.110Z"
       }
     },
     "validation": {
@@ -266,7 +266,7 @@
           "knowledge": 0.14285714285714285,
           "architecture": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:14:11.069Z"
+        "lastIndexed": "2025-11-16T00:36:43.118Z"
       }
     },
     "validation": {
@@ -396,7 +396,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:14:11.083Z"
+        "lastIndexed": "2025-11-16T00:36:43.191Z"
       }
     },
     "validation": {
@@ -626,7 +626,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:14:11.110Z"
+        "lastIndexed": "2025-11-16T00:36:43.265Z"
       }
     },
     "validation": {
@@ -729,7 +729,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:14:11.120Z"
+        "lastIndexed": "2025-11-16T00:36:43.277Z"
       }
     },
     "validation": {
@@ -841,7 +841,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.6666666666666666
         },
-        "lastIndexed": "2025-11-16T00:14:11.649Z"
+        "lastIndexed": "2025-11-16T00:36:43.877Z"
       }
     },
     "validation": {
@@ -908,8 +908,8 @@
           "number",
           "content",
           "validation",
-          "learning",
           "programming",
+          "learning",
           "python",
           "enum",
           "eca",
@@ -960,7 +960,7 @@
           "testing": 0.5,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:14:12.831Z"
+        "lastIndexed": "2025-11-16T00:36:45.520Z"
       }
     },
     "validation": {
@@ -972,7 +972,7 @@
       ]
     },
     "content": "\r\n# Frame Codex Submission Schema Reference\r\n\r\nThis document provides the complete technical specification for Frame Codex content schema, including integration with OpenStrand's Educational Content Atom (ECA) standard.\r\n\r\n---\r\n\r\n## Table of Contents\r\n\r\n1. [Schema Overview](#schema-overview)\r\n2. [Strand Schema (Individual Content)](#strand-schema)\r\n3. [Loom Schema (Collections)](#loom-schema)\r\n4. [Weave Schema (Universes)](#weave-schema)\r\n5. [ECA Integration](#eca-integration)\r\n6. [Validation Rules](#validation-rules)\r\n7. [Examples](#examples)\r\n\r\n---\r\n\r\n## Schema Overview\r\n\r\nFrame Codex uses a three-tier knowledge organization:\r\n\r\n```\r\nWeave (Universe)\r\n├── Loom (Collection)\r\n│   ├── Strand (Content)\r\n│   ├── Strand (Content)\r\n│   └── ...\r\n├── Loom (Collection)\r\n│   └── ...\r\n└── ...\r\n```\r\n\r\n### Key Principles\r\n\r\n- **Strands** are atomic, self-contained knowledge units\r\n- **Looms** curate related strands into coherent learning paths\r\n- **Weaves** represent complete, isolated knowledge universes\r\n- **No cross-weave relationships** (each weave is independent)\r\n\r\n---\r\n\r\n## Strand Schema\r\n\r\nStrands are individual markdown files with YAML frontmatter.\r\n\r\n### Required Fields\r\n\r\n```yaml\r\nid: string (UUID v4)\r\nslug: string (lowercase, hyphens, alphanumeric)\r\ntitle: string (3-100 characters)\r\nsummary: string (20-300 characters)\r\nversion: string (semver: x.y.z)\r\ncontentType: enum [markdown, code, data, media]\r\ndifficulty: enum [beginner, intermediate, advanced, expert]\r\n```\r\n\r\n### Recommended Fields\r\n\r\n```yaml\r\ntaxonomy:\r\n  subjects: array<string>\r\n  topics: array<string>\r\n  subtopics: array<string>\r\n  concepts: array<object>\r\n    - term: string\r\n      weight: number (0-1)\r\n      definition: string (optional)\r\n  skills: array<object>\r\n    - name: string\r\n      level: enum [introduce, develop, master]\r\n\r\ntags: array<string>\r\n\r\nrelationships:\r\n  requires: array<string> (slugs of prerequisite strands)\r\n  references: array<string> (slugs of related strands)\r\n  seeAlso: array<string> (external URLs)\r\n\r\npublishing:\r\n  created: string (ISO 8601 datetime)\r\n  updated: string (ISO 8601 datetime)\r\n  status: enum [draft, review, published, archived]\r\n  license: string (default: CC-BY-4.0)\r\n  authors: array<string>\r\n```\r\n\r\n### OpenStrand ECA Extended Fields\r\n\r\nFrame Codex supports the full OpenStrand Educational Content Atom (ECA) specification for advanced learning design:\r\n\r\n```yaml\r\n# Learning Design\r\nlearningDesign:\r\n  objectives: array<object>\r\n    - id: string\r\n      description: string\r\n      bloomsLevel: enum [remember, understand, apply, analyze, evaluate, create]\r\n      measurable: boolean\r\n  \r\n  outcomes: array<object>\r\n    - id: string\r\n      description: string\r\n      assessment: string (optional)\r\n  \r\n  pedagogicalApproach: array<enum>\r\n    # Options: direct_instruction, discovery_learning, problem_based,\r\n    #          collaborative, experiential, inquiry_based\r\n  \r\n  instructionalStrategies: array<string>\r\n\r\n# Time Estimates\r\ntimeEstimates:\r\n  reading: number (minutes)\r\n  exercises: number (minutes)\r\n  projects: number (minutes)\r\n  total: number (minutes)\r\n\r\n# Modality Support\r\nmodalities:\r\n  text: boolean\r\n  visual:\r\n    diagrams: number\r\n    images: number\r\n    charts: number\r\n  audio:\r\n    narration: boolean\r\n    duration: number (seconds, optional)\r\n  video:\r\n    embedded: number\r\n    duration: number (seconds, optional)\r\n  kinesthetic:\r\n    simulations: number\r\n    exercises: number\r\n\r\n# Interactive Elements\r\ninteractiveElements: array<object>\r\n  - id: string\r\n    type: enum [quiz, poll, simulation, code_exercise, discussion_prompt, reflection, peer_review]\r\n    required: boolean\r\n    data: object (type-specific)\r\n\r\n# Assessment\r\nassessments:\r\n  formative: array<object>\r\n    - id: string\r\n      type: string\r\n      weight: number (0-1)\r\n  summative: array<object>\r\n    - id: string\r\n      type: string\r\n      weight: number (0-1)\r\n      passingScore: number (0-100)\r\n\r\n# Accessibility\r\naccessibility:\r\n  wcagLevel: enum [A, AA, AAA]\r\n  features: array<enum>\r\n    # Options: alt_text, captions, transcripts, audio_description,\r\n    #          sign_language, easy_read, high_contrast, keyboard_navigation\r\n  languages: array<string> (ISO 639-1 codes)\r\n  readingLevel: number (Flesch-Kincaid grade level)\r\n\r\n# Cultural Adaptations\r\nculturalAdaptations: array<object>\r\n  - culture: string (ISO 3166-1 alpha-2)\r\n    modifications:\r\n      examples: boolean\r\n      imagery: boolean\r\n      language: boolean\r\n      values: boolean\r\n    notes: string (optional)\r\n\r\n# Quality Metrics\r\nquality:\r\n  peerReview:\r\n    status: enum [pending, reviewed, approved]\r\n    reviewers: array<string>\r\n    score: number (0-5, optional)\r\n  evidenceBased: array<object>\r\n    - claim: string\r\n      evidence: string\r\n      citation: string\r\n      strength: enum [strong, moderate, emerging]\r\n  lastUpdated: string (ISO 8601 datetime)\r\n  updateFrequency: enum [static, annual, biannual, quarterly, dynamic]\r\n```\r\n\r\n### Full Example\r\n\r\n```yaml\r\n---\r\nid: 550e8400",
-    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string yaml array fields iso number content validation learning programming python enum eca 8601 integration array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml publishing created"
+    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string yaml array fields iso number content validation programming learning python enum eca 8601 integration array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml publishing created"
   },
   {
     "path": "docs/DEVELOPMENT.md",
@@ -1046,7 +1046,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T00:14:17.453Z"
+        "lastIndexed": "2025-11-16T00:36:47.692Z"
       }
     },
     "validation": {
@@ -1064,7 +1064,7 @@
         "Key phrases found: npm run, run index, index validate"
       ]
     },
-    "content": "# Frame Codex Development Guide\r\n\r\n## Initial Setup & Cataloging\r\n\r\n### First-Time Setup\r\n\r\n1. **Install Dependencies**\r\n```bash\r\ncd apps/codex\r\nnpm install\r\n```\r\n\r\n2. **Run Initial Catalog** (categorizes ALL existing content)\r\n```bash\r\nnpm run index -- --validate\r\n```\r\n\r\nThis will:\r\n- Scan all markdown files in `weaves/`, `docs/`, `wiki/`\r\n- Extract keywords using TF-IDF\r\n- Auto-categorize using NLP (no LLM, pure statistical)\r\n- Generate `codex-index.json` (searchable index)\r\n- Generate `codex-report.json` (analytics)\r\n- Output validation errors/warnings/suggestions\r\n\r\n**First run takes ~30 seconds for 100 files**\r\n\r\n### How It Works Subsequently\r\n\r\n**Automatic on Every PR Merge:**\r\n\r\n1. GitHub Actions triggers `build-index.yml` on push to `main`\r\n2. Runs `npm run index -- --validate` (static NLP only)\r\n3. Generates updated index files\r\n4. Pushes to `index` branch for consumption\r\n5. **No AI/LLM calls** - pure TF-IDF, n-grams, vocabulary matching\r\n\r\n**Static NLP Tools Used:**\r\n- **TF-IDF**: Keyword extraction (no external API)\r\n- **N-gram extraction**: Common phrases (local computation)\r\n- **Vocabulary matching**: Controlled taxonomy (regex/string matching)\r\n- **Readability scoring**: Flesch-Kincaid (formula-based)\r\n- **Sentiment heuristics**: Simple keyword patterns\r\n\r\n**Cost: $0** - All processing is local/in-CI\r\n\r\n---\r\n\r\n## Environment Variables & Secrets\r\n\r\n### Required GitHub Secrets\r\n\r\nAdd to `framersai/codex` repository settings:\r\n\r\n```bash\r\n# Required for auto-merge workflow\r\nGH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx  # GitHub Personal Access Token (repo scope)\r\n\r\n# AI Enhancement (OPTIONAL - only if you want AI-powered PR analysis)\r\nOPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx  # Supported by OpenAI\r\n\r\n# Auto-merge control (default: false - requires manual approval)\r\nAUTO_CATALOG_MERGE=false  # Set to 'true' to auto-merge re-catalog PRs\r\n\r\n# Configuration (optional)\r\nAI_PROVIDER=disabled  # Set to 'disabled' to skip AI entirely\r\n```\r\n\r\n### Secret Configuration\r\n\r\n**To enable AI enhancement:**\r\n```bash\r\nOPENAI_API_KEY=sk-...\r\n# Supported by OpenAI for open source\r\n```\r\n\r\n**To enable auto-merge for re-catalog PRs:**\r\n```bash\r\nAUTO_CATALOG_MERGE=true\r\n# Default: false (requires manual approval)\r\n# Recommended: keep false to review metadata changes\r\n```\r\n\r\n**To disable AI enhancement:**\r\n```bash\r\nAI_PROVIDER=disabled\r\n# Or just don't set OPENAI_API_KEY\r\n```\r\n\r\n### Local Development\r\n\r\nCreate `.env` in `apps/codex/`:\r\n\r\n```bash\r\n# Optional - only for testing AI enhancement locally\r\nOPENAI_API_KEY=sk-...\r\n# or\r\nANTHROPIC_API_KEY=sk-ant-...\r\nAI_PROVIDER=openai\r\n```\r\n\r\n**Note:** The indexer and validator work WITHOUT any API keys. AI is only for optional PR enhancement.\r\n\r\n---\r\n\r\n## Triggering a Full Re-Catalog\r\n\r\n### Method 1: Automated Script (Recommended)\r\n\r\n```bash\r\ncd apps/codex\r\nchmod +x scripts/retrigger-full-catalog.sh\r\n\r\n# Dry run first (see what would change)\r\n./scripts/retrigger-full-catalog.sh --dry-run\r\n\r\n# Create PR with changes (requires manual approval)\r\n./scripts/retrigger-full-catalog.sh\r\n\r\n# Force auto-merge (one-time override)\r\n./scripts/retrigger-full-catalog.sh --auto-merge\r\n```\r\n\r\n**What it does:**\r\n1. Runs full static NLP analysis on ALL files\r\n2. Creates branch: `catalog/full-reindex-{timestamp}`\r\n3. Commits updated index files\r\n4. Creates PR with detailed summary\r\n5. **Waits for manual approval** (unless `AUTO_CATALOG_MERGE=true`)\r\n\r\n**Requirements:**\r\n- `GH_PAT` environment variable\r\n\r\n### Method 2: GitHub Actions Trigger\r\n\r\n```bash\r\n# Via GitHub CLI\r\ngh workflow run build-index.yml --repo framersai/codex\r\n\r\n# Or via web UI\r\n# Go to: https://github.com/framersai/codex/actions/workflows/build-index.yml\r\n# Click \"Run workflow\" → \"Run workflow\"\r\n```\r\n\r\n**What it does:**\r\n- Runs indexer in CI\r\n- Pushes directly to `index` branch (no PR)\r\n- Updates live immediately\r\n\r\n### Method 3: Local Re-Index\r\n\r\n```bash\r\ncd apps/codex\r\nnpm run index -- --validate\r\n\r\n# Review changes\r\ncat codex-report.json | jq '.summary'\r\n\r\n# Commit manually\r\ngit add codex-index.json codex-report.json\r\ngit commit -m \"chore: re-index all content\"\r\ngit push\r\n```\r\n\r\n**See full guide:** [RECATALOG_GUIDE.md](./RECATALOG_GUIDE.md)\r\n\r\n---\r\n\r\n## SQL Cache Architecture\r\n\r\nFrame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent incremental indexing.\r\n\r\n### How It Works\r\n\r\n**On First Run:**\r\n1. Creates `.cache/codex.db` (better-sqlite3 in CI, IndexedDB in browser)\r\n2. Analyzes ALL files with static NLP (TF-IDF, n-grams)\r\n3. Stores: file path, SHA hash, mtime, analysis JSON, keywords\r\n4. Generates `codex-index.json` and `codex-report.json`\r\n5. **Time: ~30 seconds for 100 files**\r\n\r\n**On Subsequent Runs:**\r\n1. Reads cache database\r\n2. Computes diff: `SELECT path, sha FROM files`\r\n3. Compares current filesystem SHA vs cached SHA\r\n4. Only re-processes changed files (added, modified)\r\n5. Merges cached + new analyses\r\n6. **Time: ~2-5 seconds for 5 changed files (85-95% speedup)**\r\n\r\n### C",
+    "content": "# Frame Codex Development Guide\r\n\r\n## Initial Setup & Cataloging\r\n\r\n### First-Time Setup\r\n\r\n1. **Install Dependencies**\r\n```bash\r\ncd apps/codex\r\nnpm install\r\n```\r\n\r\n2. **Run Initial Catalog** (categorizes ALL existing content)\r\n```bash\r\nnpm run index -- --validate\r\n```\r\n\r\nThis will:\r\n- Scan all markdown files in `weaves/`, `docs/`, `wiki/`\r\n- Extract keywords using TF-IDF\r\n- Auto-categorize using NLP (no LLM, pure statistical)\r\n- Generate `codex-index.json` (searchable index)\r\n- Generate `codex-report.json` (analytics)\r\n- Output validation errors/warnings/suggestions\r\n\r\n**First run takes ~30 seconds for 100 files**\r\n\r\n### How It Works Subsequently\r\n\r\n**Automatic on Every PR Merge:**\r\n\r\n1. GitHub Actions triggers `build-index.yml` on push to `main`\r\n2. Runs `npm run index -- --validate` (static NLP only)\r\n3. Generates updated index files\r\n4. Pushes to `index` branch for consumption\r\n5. **No AI/LLM calls** - pure TF-IDF, n-grams, vocabulary matching\r\n\r\n**Static NLP Tools Used:**\r\n- **TF-IDF**: Keyword extraction (no external API)\r\n- **N-gram extraction**: Common phrases (local computation)\r\n- **Vocabulary matching**: Controlled taxonomy (regex/string matching)\r\n- **Readability scoring**: Flesch-Kincaid (formula-based)\r\n- **Sentiment heuristics**: Simple keyword patterns\r\n\r\n**Cost: $0** - All processing is local/in-CI\r\n\r\n---\r\n\r\n## Environment Variables & Secrets\r\n\r\n### Required GitHub Secrets\r\n\r\nAdd to `framersai/codex` repository settings:\r\n\r\n```bash\r\n# Required for auto-merge workflow\r\nGH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx  # GitHub Personal Access Token (repo scope)\r\n\r\n# AI Enhancement (OPTIONAL - only if you want AI-powered PR analysis)\r\nOPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx\r\n\r\n# Auto-merge control (default: false - requires manual approval)\r\nAUTO_CATALOG_MERGE=false  # Set to 'true' to auto-merge re-catalog PRs\r\n\r\n# Configuration (optional)\r\nAI_PROVIDER=disabled  # Set to 'disabled' to skip AI entirely\r\n```\r\n\r\n### Secret Configuration\r\n\r\n**To enable AI enhancement:**\r\n```bash\r\nOPENAI_API_KEY=sk-...\r\n```\r\n\r\n**To enable auto-merge for re-catalog PRs:**\r\n```bash\r\nAUTO_CATALOG_MERGE=true\r\n# Default: false (requires manual approval)\r\n# Recommended: keep false to review metadata changes\r\n```\r\n\r\n**To disable AI enhancement:**\r\n```bash\r\nAI_PROVIDER=disabled\r\n# Or just don't set OPENAI_API_KEY\r\n```\r\n\r\n### Local Development\r\n\r\nCreate `.env` in `apps/codex/`:\r\n\r\n```bash\r\n# Optional - only for testing AI enhancement locally\r\nOPENAI_API_KEY=sk-...\r\n# or\r\nANTHROPIC_API_KEY=sk-ant-...\r\nAI_PROVIDER=openai\r\n```\r\n\r\n**Note:** The indexer and validator work WITHOUT any API keys. AI is only for optional PR enhancement.\r\n\r\n---\r\n\r\n## Triggering a Full Re-Catalog\r\n\r\n### Method 1: Automated Script (Recommended)\r\n\r\n```bash\r\ncd apps/codex\r\nchmod +x scripts/retrigger-full-catalog.sh\r\n\r\n# Dry run first (see what would change)\r\n./scripts/retrigger-full-catalog.sh --dry-run\r\n\r\n# Create PR with changes (requires manual approval)\r\n./scripts/retrigger-full-catalog.sh\r\n\r\n# Force auto-merge (one-time override)\r\n./scripts/retrigger-full-catalog.sh --auto-merge\r\n```\r\n\r\n**What it does:**\r\n1. Runs full static NLP analysis on ALL files\r\n2. Creates branch: `catalog/full-reindex-{timestamp}`\r\n3. Commits updated index files\r\n4. Creates PR with detailed summary\r\n5. **Waits for manual approval** (unless `AUTO_CATALOG_MERGE=true`)\r\n\r\n**Requirements:**\r\n- `GH_PAT` environment variable\r\n\r\n### Method 2: GitHub Actions Trigger\r\n\r\n```bash\r\n# Via GitHub CLI\r\ngh workflow run build-index.yml --repo framersai/codex\r\n\r\n# Or via web UI\r\n# Go to: https://github.com/framersai/codex/actions/workflows/build-index.yml\r\n# Click \"Run workflow\" → \"Run workflow\"\r\n```\r\n\r\n**What it does:**\r\n- Runs indexer in CI\r\n- Pushes directly to `index` branch (no PR)\r\n- Updates live immediately\r\n\r\n### Method 3: Local Re-Index\r\n\r\n```bash\r\ncd apps/codex\r\nnpm run index -- --validate\r\n\r\n# Review changes\r\ncat codex-report.json | jq '.summary'\r\n\r\n# Commit manually\r\ngit add codex-index.json codex-report.json\r\ngit commit -m \"chore: re-index all content\"\r\ngit push\r\n```\r\n\r\n**See full guide:** [RECATALOG_GUIDE.md](./RECATALOG_GUIDE.md)\r\n\r\n---\r\n\r\n## SQL Cache Architecture\r\n\r\nFrame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent incremental indexing.\r\n\r\n### How It Works\r\n\r\n**On First Run:**\r\n1. Creates `.cache/codex.db` (better-sqlite3 in CI, IndexedDB in browser)\r\n2. Analyzes ALL files with static NLP (TF-IDF, n-grams)\r\n3. Stores: file path, SHA hash, mtime, analysis JSON, keywords\r\n4. Generates `codex-index.json` and `codex-report.json`\r\n5. **Time: ~30 seconds for 100 files**\r\n\r\n**On Subsequent Runs:**\r\n1. Reads cache database\r\n2. Computes diff: `SELECT path, sha FROM files`\r\n3. Compares current filesystem SHA vs cached SHA\r\n4. Only re-processes changed files (added, modified)\r\n5. Merges cached + new analyses\r\n6. **Time: ~2-5 seconds for 5 changed files (85-95% speedup)**\r\n\r\n### Cache Tables\r\n\r\n```sql\r\n-- File metadata and analysis cache\r\nCR",
     "searchText": "development frame codex development guide\r\n\r\ninitial setup & cataloging\r\n\r\nfirst-time setup\r\n\r\n1 const cache index run codex null javascript loom catalog await return scripts auto sha cached npm run run index index validate static nlp auto merge integer null loom strands auto index apps codex codex report"
   },
   {
@@ -1171,7 +1171,7 @@
           "testing": 0.3333333333333333,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:14:19.246Z"
+        "lastIndexed": "2025-11-16T00:36:48.586Z"
       }
     },
     "validation": {
@@ -1273,7 +1273,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.5
         },
-        "lastIndexed": "2025-11-16T00:14:21.770Z"
+        "lastIndexed": "2025-11-16T00:36:49.572Z"
       }
     },
     "validation": {
@@ -1377,7 +1377,7 @@
           "deployment": 0.3333333333333333,
           "testing": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T00:14:23.592Z"
+        "lastIndexed": "2025-11-16T00:36:52.024Z"
       }
     },
     "validation": {

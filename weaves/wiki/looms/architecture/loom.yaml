@@ -1,0 +1,33 @@
+slug: architecture
+title: "Frame Codex Architecture"
+summary: "Technical architecture, design decisions, and system internals"
+
+description: |
+  Deep dive into how Frame Codex is built, including:
+  - Three-tier knowledge organization (Weave/Loom/Strand)
+  - SQL caching layer for incremental indexing
+  - Static NLP pipeline (TF-IDF, n-grams)
+  - GitHub Actions automation
+  - OpenStrand ECA integration
+
+ordering:
+  type: sequential
+  items:
+    - overview
+    - sql-cache-architecture
+    - nlp-pipeline
+    - automation-workflows
+    - openstrand-integration
+  rationale: "Builds from high-level overview to detailed implementation"
+
+metadata:
+  estimatedTime: 45
+  difficulty: intermediate
+  prerequisites: []
+
+tags: [architecture, technical, sql, nlp, automation]
+
+publishing:
+  status: published
+  maintainers: [jddunn]
+
