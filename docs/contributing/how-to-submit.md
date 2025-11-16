@@ -80,6 +80,7 @@ The enhanced contribution modal provides:
 
 6. **GitHub PAT** (Optional)
    - Provide token for direct API PR creation
+   - Token is used only in your browser to call GitHub APIs directly and is never stored in localStorage, IndexedDB, SQL, or on any Frame.dev server
    - Leave blank to open GitHub web editor instead
 
 7. **Preview & Submit**
@@ -94,7 +95,8 @@ The enhanced contribution modal provides:
 
 4. **Provide GitHub Token**
    - Create a [Personal Access Token](https://github.com/settings/tokens/new?scopes=repo&description=Frame%20Codex%20Submission) with `repo` scope
-   - Paste it in the token field (stored locally, never sent to our servers)
+   - Paste it into the token field in the Frame Codex UI
+   - The token lives only in that browser tab’s memory while the modal is open, is never persisted in local storage / IndexedDB / SQL, and is sent only to GitHub (never to any Frame.dev backend)
 
 5. **Submit**
    - Click "Create Pull Request"

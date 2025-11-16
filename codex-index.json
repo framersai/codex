@@ -114,7 +114,7 @@
           "troubleshooting": 0.125,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T15:00:06.961Z"
+        "lastIndexed": "2025-11-16T15:41:34.194Z"
       }
     },
     "validation": {
@@ -190,7 +190,7 @@
           "knowledge": 0.14285714285714285,
           "architecture": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T15:00:07.002Z"
+        "lastIndexed": "2025-11-16T15:41:34.228Z"
       }
     },
     "validation": {
@@ -309,7 +309,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T15:00:07.690Z"
+        "lastIndexed": "2025-11-16T15:41:34.383Z"
       }
     },
     "validation": {
@@ -414,7 +414,7 @@
           "deployment": 0.16666666666666666,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T15:00:08.064Z"
+        "lastIndexed": "2025-11-16T15:41:34.433Z"
       }
     },
     "validation": {
@@ -544,7 +544,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T15:00:08.143Z"
+        "lastIndexed": "2025-11-16T15:41:34.459Z"
       }
     },
     "validation": {
@@ -774,7 +774,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T15:00:08.602Z"
+        "lastIndexed": "2025-11-16T15:41:34.512Z"
       }
     },
     "validation": {
@@ -877,7 +877,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T15:00:08.713Z"
+        "lastIndexed": "2025-11-16T15:41:34.549Z"
       }
     },
     "validation": {
@@ -991,7 +991,7 @@
           "testing": 0.16666666666666666,
           "performance": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T15:00:13.371Z"
+        "lastIndexed": "2025-11-16T15:41:34.931Z"
       }
     },
     "validation": {
@@ -1042,30 +1042,30 @@
           "your",
           "content",
           "add",
-          "codex",
-          "submission",
-          "quality",
-          "create",
           "click",
-          "method",
-          "recursion",
-          "paste",
-          "submissions",
+          "quality",
+          "codex",
+          "create",
           "github",
-          "new",
-          "review"
+          "submission",
+          "recursion",
+          "request",
+          "submissions",
+          "direct",
+          "characters",
+          "programming"
         ],
         "phrases": [
-          "frame dev",
           "your content",
+          "frame dev",
           "frame codex",
           "dev codex",
           "github com",
           "framersai codex",
-          "add your",
-          "submission schema",
-          "com framersai",
-          "uuidgenerator net"
+          "content title",
+          "content analysis",
+          "create pull",
+          "pull request"
         ],
         "subjects": [
           "technology",
@@ -1096,7 +1096,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.6666666666666666
         },
-        "lastIndexed": "2025-11-16T15:00:16.550Z"
+        "lastIndexed": "2025-11-16T15:41:35.883Z"
       }
     },
     "validation": {
@@ -1105,11 +1105,11 @@
       "warnings": [],
       "suggestions": [
         "Consider adding relationships (requires, references, seeAlso)",
-        "Key phrases found: frame dev, your content, frame codex"
+        "Key phrases found: your content, frame dev, frame codex"
       ]
     },
-    "content": "\r\n# How to Submit to Frame Codex\r\n\r\nWelcome! This guide will walk you through the different ways to contribute knowledge to Frame Codex.\r\n\r\n## Quick Start\r\n\r\nThe easiest way to submit content is through our **web submission UI** at [frame.dev/codex](https://frame.dev/codex):\r\n\r\n1. Click the **\"Contribute\"** button in the Codex viewer\r\n2. Choose your input method (URL, file upload, or paste)\r\n3. Review and edit the auto-generated metadata\r\n4. Click **\"Create Pull Request\"**\r\n\r\nThat's it! Our maintainers will review your submission.\r\n\r\n---\r\n\r\n## Submission Methods\r\n\r\n### Method 1: Web Submission UI (Recommended)\r\n\r\n**Best for:** Quick submissions, URL scraping, beginners\r\n\r\nThe web UI provides:\r\n- ✅ Automatic metadata generation using NLP\r\n- ✅ Real-time validation\r\n- ✅ Direct GitHub PR creation\r\n- ✅ No local setup required\r\n\r\n**Steps:**\r\n\r\n1. **Access the UI**\r\n   - Go to [frame.dev/codex](https://frame.dev/codex)\r\n   - Click the \"Contribute\" dropdown → \"Submit Content\"\r\n\r\n2. **Choose Input Method**\r\n   - **From URL**: Paste any webpage URL to scrape content\r\n   - **Upload File**: Drag & drop or select a `.md`, `.txt`, or `.json` file\r\n   - **Paste Content**: Write or paste markdown directly\r\n\r\n3. **Review Metadata**\r\n   - The system auto-generates:\r\n     - Title (from content or filename)\r\n     - Summary (extractive summarization)\r\n     - Tags (TF-IDF keyword extraction)\r\n     - Difficulty level (heuristic detection)\r\n     - Subjects and topics (vocabulary matching)\r\n   - Edit any field as needed\r\n\r\n4. **Provide GitHub Token**\r\n   - Create a [Personal Access Token](https://github.com/settings/tokens/new?scopes=repo&description=Frame%20Codex%20Submission) with `repo` scope\r\n   - Paste it in the token field (stored locally, never sent to our servers)\r\n\r\n5. **Submit**\r\n   - Click \"Create Pull Request\"\r\n   - A new PR will be created on GitHub\r\n   - You'll receive a link to track the review\r\n\r\n**Rate Limits:**\r\n- 5 submissions per hour per user\r\n- Resets automatically after 60 minutes\r\n\r\n---\r\n\r\n### Method 2: GitHub Direct (Advanced)\r\n\r\n**Best for:** Bulk submissions, complex content, experienced contributors\r\n\r\n**Steps:**\r\n\r\n1. **Fork the Repository**\r\n   ```bash\r\n   gh repo fork framersai/codex --clone\r\n   cd codex\r\n   ```\r\n\r\n2. **Create a Branch**\r\n   ```bash\r\n   git checkout -b add-my-content\r\n   ```\r\n\r\n3. **Add Your Content**\r\n   - Place files directly within the target weave. Any folder becomes a loom, and any markdown file becomes a strand:\r\n     ```\r\n     weaves/\r\n       [weave-name]/\r\n         weave.yaml\r\n         overview.md                 # Strand at weave root\r\n         [loom-folder]/              # e.g. guides/, research/, notes/\r\n           loom.yaml (optional)\r\n           your-content.md\r\n           nested/topic/advanced.md  # Nested looms are allowed\r\n     ```\r\n   - See [submission-schema.md](./submission-schema.md) for required metadata\r\n\r\n4. **Validate Locally**\r\n   ```bash\r\n   npm install\r\n   npm run validate\r\n   npm run index -- --validate\r\n   ```\r\n\r\n5. **Commit and Push**\r\n   ```bash\r\n   git add .\r\n   git commit -m \"feat: add [your content title]\"\r\n   git push origin add-my-content\r\n   ```\r\n\r\n6. **Create Pull Request**\r\n   ```bash\r\n   gh pr create --title \"Add: [Your Content Title]\" --body \"Description of your contribution\"\r\n   ```\r\n\r\n---\r\n\r\n### Method 3: GitHub Web Interface (No CLI)\r\n\r\n**Best for:** Single file submissions, quick edits\r\n\r\n1. Navigate to [github.com/framersai/codex](https://github.com/framersai/codex)\r\n2. Click \"Add file\" → \"Create new file\"\r\n3. Enter the file path: `weaves/[weave]/[optional-folders]/your-file.md`\r\n4. Add your content with frontmatter (see schema below)\r\n5. Scroll down and select \"Create a new branch for this commit\"\r\n6. Click \"Propose new file\"\r\n7. Fill in the PR template and submit\r\n\r\n---\r\n\r\n## Content Requirements\r\n\r\n### Minimum Requirements\r\n\r\n✅ **Required Fields:**\r\n- `id`: Unique UUID (generate at [uuidgenerator.net](https://www.uuidgenerator.net/))\r\n- `slug`: URL-friendly identifier (lowercase, hyphens)\r\n- `title`: Clear, descriptive title (3-100 characters)\r\n- `summary`: Brief abstract (20-300 characters)\r\n- `version`: Semantic version (e.g., `1.0.0`)\r\n- `contentType`: One of `markdown`, `code`, `data`, `media`\r\n- `difficulty`: One of `beginner`, `intermediate`, `advanced`, `expert`\r\n\r\n✅ **Quality Standards:**\r\n- Minimum 100 characters of meaningful content\r\n- No placeholder text (test content, unfinished sections)\r\n- Proper formatting and structure\r\n- Spell-checked and grammar-checked\r\n\r\n✅ **Licensing:**\r\n- Content must be original or properly licensed\r\n- Will be published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)\r\n- Provide attribution for external sources\r\n\r\n### Recommended Fields\r\n\r\n💡 **Enhance Discoverability:**\r\n- `tags`: Keywords for search (5-10 recommended)\r\n- `taxonomy.subjects`: High-level categories\r\n- `taxonomy.topics`: Specific topic areas\r\n- `relationships.requires`: Prerequisites\r\n- `relationships.references`: R",
-    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation your content add codex submission quality create click method recursion paste submissions github new review frame dev your content frame codex dev codex github com framersai codex add your submission schema com framersai uuidgenerator net"
+    "content": "\r\n# How to Submit to Frame Codex\r\n\r\nWelcome! This guide will walk you through the different ways to contribute knowledge to Frame Codex.\r\n\r\n## Quick Start\r\n\r\nThe easiest way to submit content is through our **enhanced contribution modal** at [frame.dev/codex](https://frame.dev/codex):\r\n\r\n1. Click the green **\"Contribute\"** button in the Codex viewer toolbar\r\n2. Fill in your content (title, summary, markdown body)\r\n3. Specify or leave blank weave/loom for AI suggestion\r\n4. Add tags (or use suggested tags from content analysis)\r\n5. Choose difficulty level (beginner/intermediate/advanced/expert)\r\n6. Toggle AI enhancement (optional, explains cost vs free static NLP)\r\n7. Preview final markdown with frontmatter\r\n8. Click **\"Create Pull Request\"** (uses GitHub API if you provide PAT, or opens GitHub editor)\r\n\r\nThat's it! Our automated validation runs, and maintainers review your submission.\r\n\r\n---\r\n\r\n## Submission Methods\r\n\r\n### Method 1: Web Submission UI (Recommended)\r\n\r\n**Best for:** Quick submissions, beginners, anyone without Git expertise\r\n\r\nThe enhanced contribution modal provides:\r\n- ✅ Pre-filled metadata based on current context\r\n- ✅ Tag suggestions from content analysis\r\n- ✅ Weave/loom inference (or manual override)\r\n- ✅ AI enhancement toggle (optional, cost-transparent)\r\n- ✅ Direct GitHub PR creation via API\r\n- ✅ Fallback to GitHub web editor (no PAT required)\r\n- ✅ Preview step showing final markdown\r\n- ✅ No local setup required\r\n\r\n**Steps:**\r\n\r\n1. **Open Contribution Modal**\r\n   - Go to [frame.dev/codex](https://frame.dev/codex)\r\n   - Click the green \"Contribute\" button in the toolbar\r\n   - Or use quick actions dropdown (mobile)\r\n\r\n2. **Fill in Content**\r\n   - **Title**: Clear, descriptive title (required)\r\n   - **Summary**: 20-300 character abstract (required)\r\n   - **Content**: Write or paste markdown (minimum 100 characters, required)\r\n\r\n3. **Specify Location** (Optional - AI can suggest if left blank)\r\n   - **Weave**: Which knowledge universe (e.g., technology, science, community)\r\n   - **Loom**: Topic collection (e.g., programming, algorithms)\r\n   - System auto-detects from current path or suggests based on content\r\n\r\n4. **Add Metadata**\r\n   - **Tags**: Type and press Enter, or click suggested tags from content analysis\r\n   - **Difficulty**: Select beginner/intermediate/advanced/expert\r\n   - **Subjects/Topics**: Auto-suggested from controlled vocabulary\r\n\r\n5. **AI Enhancement** (Optional)\r\n   - Toggle ON: AI analyzes content, suggests better categorization (~$0.01-0.20 cost)\r\n   - Toggle OFF: Static NLP only (free, still provides quality validation)\r\n\r\n6. **GitHub PAT** (Optional)\r\n   - Provide token for direct API PR creation\r\n   - Leave blank to open GitHub web editor instead\r\n\r\n7. **Preview & Submit**\r\n   - Review generated markdown with frontmatter\r\n   - See final file path: `weaves/{weave}/{loom}/{slug}.md`\r\n   - Click \"Create Pull Request\"\r\n     - Summary (extractive summarization)\r\n     - Tags (TF-IDF keyword extraction)\r\n     - Difficulty level (heuristic detection)\r\n     - Subjects and topics (vocabulary matching)\r\n   - Edit any field as needed\r\n\r\n4. **Provide GitHub Token**\r\n   - Create a [Personal Access Token](https://github.com/settings/tokens/new?scopes=repo&description=Frame%20Codex%20Submission) with `repo` scope\r\n   - Paste it in the token field (stored locally, never sent to our servers)\r\n\r\n5. **Submit**\r\n   - Click \"Create Pull Request\"\r\n   - A new PR will be created on GitHub\r\n   - You'll receive a link to track the review\r\n\r\n**Rate Limits:**\r\n- 5 submissions per hour per user\r\n- Resets automatically after 60 minutes\r\n\r\n---\r\n\r\n### Method 2: GitHub Direct (Advanced)\r\n\r\n**Best for:** Bulk submissions, complex content, experienced contributors\r\n\r\n**Steps:**\r\n\r\n1. **Fork the Repository**\r\n   ```bash\r\n   gh repo fork framersai/codex --clone\r\n   cd codex\r\n   ```\r\n\r\n2. **Create a Branch**\r\n   ```bash\r\n   git checkout -b add-my-content\r\n   ```\r\n\r\n3. **Add Your Content**\r\n   - Place files directly within the target weave. Any folder becomes a loom, and any markdown file becomes a strand:\r\n     ```\r\n     weaves/\r\n       [weave-name]/\r\n         weave.yaml\r\n         overview.md                 # Strand at weave root\r\n         [loom-folder]/              # e.g. guides/, research/, notes/\r\n           loom.yaml (optional)\r\n           your-content.md\r\n           nested/topic/advanced.md  # Nested looms are allowed\r\n     ```\r\n   - See [submission-schema.md](./submission-schema.md) for required metadata\r\n\r\n4. **Validate Locally**\r\n   ```bash\r\n   npm install\r\n   npm run validate\r\n   npm run index -- --validate\r\n   ```\r\n\r\n5. **Commit and Push**\r\n   ```bash\r\n   git add .\r\n   git commit -m \"feat: add [your content title]\"\r\n   git push origin add-my-content\r\n   ```\r\n\r\n6. **Create Pull Request**\r\n   ```bash\r\n   gh pr create --title \"Add: [Your Content Title]\" --body \"Description of your contribution\"\r\n   ```\r\n\r\n---\r\n\r\n### Method 3: GitHub Web Interface (No CLI)\r\n\r\n**Best for:** Single file submissions",
+    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation your content add click quality codex create github submission recursion request submissions direct characters programming your content frame dev frame codex dev codex github com framersai codex content title content analysis create pull pull request"
   },
   {
     "path": "docs/contributing/submission-schema.md",
@@ -1215,7 +1215,7 @@
           "testing": 0.5,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T15:00:22.078Z"
+        "lastIndexed": "2025-11-16T15:41:38.055Z"
       }
     },
     "validation": {
@@ -1301,7 +1301,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T15:00:30.034Z"
+        "lastIndexed": "2025-11-16T15:41:42.486Z"
       }
     },
     "validation": {
@@ -1372,12 +1372,12 @@
           "immutable",
           "versions",
           "enables",
-          "collection",
           "powered",
           "layer",
           "reference",
-          "api",
-          "strands"
+          "strands",
+          "strand",
+          "collection"
         ],
         "phrases": [
           "frame codex",
@@ -1426,7 +1426,7 @@
           "testing": 0.3333333333333333,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T15:00:34.112Z"
+        "lastIndexed": "2025-11-16T15:41:45.075Z"
       }
     },
     "validation": {
@@ -1438,7 +1438,7 @@
       ]
     },
     "content": "\r\n# OpenStrand Architecture Overview\r\n\r\nOpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex. It provides a structured, AI-native way to organize, store, and retrieve humanity's knowledge.\r\n\r\n## Core Concepts\r\n\r\n### The Four-Tier Hierarchy\r\n\r\nOpenStrand organizes knowledge using four fundamental primitives:\r\n\r\n**Fabric** - A collection of weaves\r\n- The highest level of organization\r\n- Represents an entire knowledge repository or ecosystem\r\n- Example: Frame Codex itself is a fabric\r\n- Contains multiple weaves that are conceptually related but independent\r\n\r\n**Strand** - The atomic unit of knowledge\r\n- A single document, image, dataset, or media file\r\n- Contains rich metadata for categorization and discovery\r\n- Can reference other strands within the same weave\r\n- Immutable once published (new versions create new strands)\r\n\r\n**Loom** - A curated collection of related strands\r\n- Groups strands by topic, theme, or learning path\r\n- Defines ordering (sequential, hierarchical, or network)\r\n- Provides context and relationships between strands\r\n- Acts as a module or chapter in the knowledge base\r\n\r\n**Weave** - A complete universe of knowledge\r\n- Self-contained collection with no external dependencies\r\n- Represents a domain, project, or knowledge area\r\n- No relationships exist between different weaves\r\n- Think of it as a separate universe or dimension\r\n\r\n### Why This Structure?\r\n\r\nThe Fabric/Weave/Loom/Strand architecture solves several key problems:\r\n\r\n1. **Isolation**: Weaves are completely independent, preventing knowledge pollution\r\n2. **Scalability**: Each weave can grow infinitely without affecting others\r\n3. **Clarity**: Clear boundaries make it obvious where knowledge belongs\r\n4. **Versioning**: Strands are immutable, making version control natural\r\n5. **AI-Friendly**: Structured metadata enables semantic search and RAG\r\n\r\n## How It Works\r\n\r\n### Knowledge Flow\r\n\r\n```\r\nFabric (Repository)\r\n  └── Weave (Universe)\r\n        └── Loom (Collection / any subdirectory)\r\n              ├── Strand (Markdown file)\r\n              ├── Strand (Markdown file)\r\n              └── Loom (Nested subdirectory)\r\n                    └── Strand (Markdown file)\r\n```\r\n\r\n### Example: Frame Ecosystem Weave\r\n\r\n```yaml\r\n# weaves/frame/weave.yaml\r\nslug: frame\r\ntitle: Frame.dev Ecosystem\r\ndescription: Complete knowledge base for Frame products and infrastructure\r\n```\r\n\r\nThis weave contains looms for:\r\n- OpenStrand documentation\r\n- AgentOS guides\r\n- Frame API reference\r\n- Architecture patterns\r\n\r\n💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.\r\n\r\n```\r\nweaves/frame/\r\n├── weave.yaml\r\n├── overview.md\r\n├── openstrand/\r\n│   ├── loom.yaml\r\n│   └── architecture.md\r\n└── guides/agentos/deployment.md\r\n```\r\n\r\nEach folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.\r\n\r\n### Metadata Schema\r\n\r\nEvery strand includes:\r\n- **Identity**: UUID, slug, title\r\n- **Content**: Summary, body, content type\r\n- **Taxonomy**: Subjects, topics, tags\r\n- **Relationships**: Prerequisites, references, related content\r\n- **Publishing**: Dates, status, version\r\n\r\nThis rich metadata enables:\r\n- Semantic search\r\n- Knowledge graph visualization\r\n- Prerequisite tracking\r\n- Learning path generation\r\n- AI-powered recommendations\r\n\r\n## Integration with Frame Codex\r\n\r\nFrame Codex is the public manifestation of OpenStrand's architecture:\r\n\r\n1. **Data Layer**: Codex stores all weaves, looms, and strands as files\r\n2. **Index Layer**: Auto-indexing creates searchable metadata\r\n3. **API Layer**: Frame API exposes the knowledge graph\r\n4. **UI Layer**: Frame.dev provides the browsing interface\r\n\r\n### For LLMs\r\n\r\nThe structure is optimized for Large Language Model consumption:\r\n\r\n- **Structured metadata** enables precise retrieval\r\n- **Clear relationships** provide context\r\n- **Immutable versions** ensure consistency\r\n- **Rich tagging** improves relevance\r\n\r\nLLMs can:\r\n- Navigate the knowledge graph\r\n- Understand prerequisites\r\n- Find related content\r\n- Extract specific information\r\n- Generate summaries\r\n\r\n### For Humans\r\n\r\nThe same structure benefits human users:\r\n\r\n- **Browse by topic** through looms\r\n- **Follow learning paths** with ordered strands\r\n- **Discover connections** via relationships\r\n- **Search semantically** using natural language\r\n- **Track versions** to see evolution\r\n\r\n## Technical Implementation\r\n\r\n### Storage\r\n\r\n- **GitHub**: Primary storage as markdown and YAML files\r\n- **Git**: Version control for all content\r\n- **Raw URLs**: Direct access to any strand\r\n\r\n### Indexing\r\n\r\n- **Auto-indexing**: NLP-powered categorization on every commit\r\n- **TF-IDF**: Keyword extraction for search\r\n- **Validation**: Quality checks before merging\r\n- **Relationships**: Automatic link discovery\r\n\r\n### Access\r\n\r\n- **GitHub API**: Dynamic folder browsing\r\n- **Raw Content**: Direct file fetching\r\n- **Search Index**: Pre-built JSON for ",
-    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex knowledge infrastructure fabric openstrand frame search immutable versions enables collection powered layer reference api strands frame codex frame dev markdown file openstrand architecture knowledge infrastructure looms strands metadata enables strand markdown weave yaml weaves frame"
+    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex knowledge infrastructure fabric openstrand frame search immutable versions enables powered layer reference strands strand collection frame codex frame dev markdown file openstrand architecture knowledge infrastructure looms strands metadata enables strand markdown weave yaml weaves frame"
   },
   {
     "path": "docs/RECATALOG_GUIDE.md",
@@ -1528,7 +1528,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.5
         },
-        "lastIndexed": "2025-11-16T15:00:42.217Z"
+        "lastIndexed": "2025-11-16T15:41:47.168Z"
       }
     },
     "validation": {
@@ -1632,7 +1632,7 @@
           "deployment": 0.3333333333333333,
           "testing": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T15:00:50.419Z"
+        "lastIndexed": "2025-11-16T15:41:48.991Z"
       }
     },
     "validation": {

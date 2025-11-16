@@ -12,11 +12,11 @@ build/
 .next/
 out/
 
-# SQL Cache
+# SQL Cache (local/CI)
 .cache/
-*.db
-*.db-shm
-*.db-wal
+.cache/*.db
+.cache/*.db-shm
+.cache/*.db-wal
 
 # OS / Editor
 .DS_Store

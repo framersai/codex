@@ -665,7 +665,7 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 152,
+    "totalUniqueTerms": 151,
     "suggestedAdditions": [
       {
         "term": "codex",
@@ -718,7 +718,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "43.91s",
+    "timeElapsed": "14.95s",
     "cacheHitRate": "0%",
     "filesProcessed": 14,
     "filesCached": 0,

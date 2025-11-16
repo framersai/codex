@@ -37,7 +37,7 @@ Frame Codex is a data-only knowledge repository designed to be the canonical sou
 - **Frame Codex**: Public markdown knowledge repository (this repo) - read-only, curated, version-controlled
 - **OpenStrand**: Full personal knowledge management platform at [openstrand.ai](https://openstrand.ai) - supports any file type (images, videos, PDFs, code), AI analysis, serialization to markdown, private workspaces, and advanced features
 
-**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` prefix required) and strands are any markdown files within a weave.
+**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` or `strands/` prefixes required) and strands are any markdown files within a weave.
 
 ## 🔄 Automated Indexing Workflow
 
@@ -132,11 +132,11 @@ Frame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql
 - Reduces indexing time from ~30s to ~2-5s on typical PRs (85-95% speedup)
 - Cache persists across workflow runs via GitHub Actions cache
 
-**Browser (IndexedDB):**
-- Caches fetched index data locally for offline access
-- Progressive sync with ETag-based updates
-- Instant repeat loads, no network requests for cached content
-- Quota: 50MB-1GB+ depending on browser
+**Browser (IndexedDB via Frame.dev Codex UI):**
+- Caches fetched Codex strands locally for faster reloads
+- SQL-backed cache lives entirely in your browser (IndexedDB/sql.js), never on Frame.dev servers
+- No secrets or tokens are ever stored in this cache—only public markdown content
+- Quota: 50MB–1GB+ depending on browser
 
 **Performance:**
 - First run: ~30s (full analysis, populates cache)
@@ -147,6 +147,23 @@ Frame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql
 ```bash
 SQL_CACHE_DISABLED=true  # Disable SQL caching (falls back to full indexing)
 ```
+
+### Search Data (BM25 + Semantic Embeddings)
+
+After building the main index, generate the search artifacts consumed by `frame.dev/codex`:
+
+```bash
+npm run index           # builds codex-index.json
+npm run build:search    # builds codex-search.json (BM25 + MiniLM embeddings)
+```
+
+`codex-search.json` contains:
+
+- **BM25 postings** for every token (term frequency per strand)
+- **Document metadata** (path, title, summary, weave/loom, doc length)
+- **Packed Float32 embeddings** (MiniLM-L6-v2, mean pooled, normalized) stored as base64
+
+These assets are completely static, so they can be hosted on GitHub Pages or any CDN. Frame.dev downloads them once and performs all ranking + semantic re-ranking in the browser (no server calls, no API keys).
 
 ## Repository Structure
 
@@ -188,10 +205,39 @@ Frame.dev and OpenStrand consume this content via:
 ```javascript
 // Example: Fetch a strand (file at any depth inside a weave)
 const response = await fetch(
-  'https://raw.githubusercontent.com/framersai/codex/main/weaves/frame/openstrand/architecture.md'
+  'https://raw.githubusercontent.com/framersai/codex/main/weaves/frame/overview.md'
 );
 const content = await response.text();
 ```
+
+### Using Frame.dev as the Codex Viewer
+
+The primary UI for browsing Frame Codex lives at [`https://frame.dev/codex`](https://frame.dev/codex):
+
+- **Browse**: Tree + outline view with loom/strand badges
+- **Search**: NLP-enhanced client-side search (names + content, typo-tolerant)
+- **Bookmarks & History**: Stored locally in your browser
+- **Contribution Modal**: AI-assisted PR creation with optional GitHub PAT
+
+> Privacy: The Frame.dev Codex UI stores bookmarks, history, preferences, and SQL cache **only in your browser**.  
+> GitHub Personal Access Tokens (PATs), if you choose to provide one, are held only in memory while the contribution modal is open and are sent directly to GitHub—never to any Frame.dev backend and never written to localStorage/IndexedDB/SQL.
+
+### Pointing Frame Codex UI at Your Own Repository
+
+You can reuse the Frame.dev Codex viewer to render *any* GitHub-hosted Codex-style repository:
+
+1. **Fork `framersai/frame.dev`**
+2. In the `apps/frame.dev` app, configure the Codex repo via environment variables:
+
+   ```bash
+   # .env.local
+   NEXT_PUBLIC_CODEX_REPO_OWNER=your-github-username-or-org
+   NEXT_PUBLIC_CODEX_REPO_NAME=your-codex-repo
+   NEXT_PUBLIC_CODEX_REPO_BRANCH=main
+   ```
+
+3. The viewer reads these in `components/codex/constants.ts` (`REPO_CONFIG`) and will render your repository instead of `framersai/codex`.
+4. Deploy your fork (e.g., Vercel, Netlify, GitHub Pages) and you now have a hosted Codex UI for your own knowledge fabric.
 
 ### Building the Index
 
