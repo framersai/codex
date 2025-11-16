@@ -15,7 +15,7 @@
 [![OpenStrand](https://img.shields.io/badge/Schema-OpenStrand-purple)](https://openstrand.ai)
 [![Build](https://img.shields.io/github/actions/workflow/status/framersai/codex/auto-index.yml?label=Index)](https://github.com/framersai/codex/actions)
 
-[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/VXXC4SJMKh)
+[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Changelog](docs/CHANGELOG_SYSTEM.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/VXXC4SJMKh)
 
 **AI Infrastructure for Superintelligence.**
 
@@ -88,6 +88,7 @@ graph TD
 - `.github/workflows/auto-index.yml` - Builds index on every commit (static NLP)
 - `.github/workflows/ai-enhance-pr.yml` - Optional AI analysis on PRs
 - `.github/workflows/auto-merge-weavers.yml` - Auto-approves PRs from trusted contributors
+- `.github/workflows/changelog.yml` - Daily changelog generation (git + GitHub API)
 - `.github/workflows/test.yml` - Runs validation suite (no API keys)
 
 ### Manual Overrides & Controls
