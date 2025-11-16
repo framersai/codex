@@ -2,6 +2,24 @@
 
 Automated changelog and activity tracking for Frame Codex using **append-only JSONL format**.
 
+## Architecture
+
+```mermaid
+graph LR
+    A[GitHub Actions<br/>Daily @ 00:00 UTC] --> B[Generate Git Log]
+    A --> C[Fetch GitHub Activity]
+    B --> D{New Entries?}
+    C --> D
+    D -->|Yes| E[Append to YYYY-MM.jsonl]
+    D -->|No| F[Skip Commit]
+    E --> G[Commit & Push]
+    
+    style A fill:#4CAF50,color:#fff
+    style E fill:#2196F3,color:#fff
+    style F fill:#FFC107,color:#000
+    style G fill:#9C27B0,color:#fff
+```
+
 ## Structure
 
 ```
@@ -20,6 +38,25 @@ codex-history/
 - ✅ **Compact**: 12 files/year instead of 365
 - ✅ **Streamable**: Parse line-by-line without loading entire file
 - ✅ **Empty days skipped**: Only records days with activity
+
+## Data Flow
+
+```mermaid
+sequenceDiagram
+    participant GHA as GitHub Actions
+    participant Git as Git Log
+    participant API as GitHub GraphQL
+    participant File as YYYY-MM.jsonl
+    
+    GHA->>Git: Parse last 7 days
+    Git-->>GHA: Commits with metadata
+    GHA->>API: Query issues/PRs (yesterday)
+    API-->>GHA: Activity data
+    GHA->>File: Check existing dates
+    File-->>GHA: Existing entries
+    GHA->>File: Append new entries only
+    GHA->>Git: Commit if changes
+```
 
 ## Entry Types
 
