@@ -29,36 +29,37 @@ Frame Codex is a structured, version-controlled knowledge repository designed as
 
 ```
 Weave (Universe)
-├── Loom (Collection)
-│   ├── Strand (Content)
-│   ├── Strand (Content)
+├── Loom (Folder)
+│   ├── Strand (markdown file)
+│   ├── Strand (markdown file)
 │   └── ...
-└── Loom (Collection)
+└── Loom (Folder)
     └── ...
 ```
 
 **Weave**: Complete, isolated knowledge universe
 - No cross-weave relationships
 - Independent scope and taxonomy
-- Examples: `wiki`, `technology`, `science`
+- Examples: `wiki`, `frame`, `technology`
 
-**Loom**: Curated collection of related strands
+**Loom**: Any folder inside a weave
 - Organized by topic or module
-- Sequential, hierarchical, or network ordering
-- Metadata and aggregate statistics
+- No explicit `looms/` prefix needed
+- Metadata in optional `loom.yaml`
 
-**Strand**: Atomic knowledge unit
-- Single markdown file with YAML frontmatter
+**Strand**: Any markdown file inside a weave
 - Self-contained, focused on one concept
-- Rich metadata (tags, difficulty, relationships)
+- Rich metadata in YAML frontmatter
+- No explicit `strands/` folder needed
 
 ### Why This Structure?
 
 1. **Modularity**: Each strand is independent and reusable
-2. **Discoverability**: Looms provide curated learning paths
+2. **Discoverability**: Looms (folders) provide natural organization
 3. **Isolation**: Weaves prevent namespace collisions
 4. **Scalability**: Can grow to millions of strands
 5. **AI-Friendly**: Clear structure for LLM ingestion
+6. **Simple**: Folders = looms, markdown files = strands (auto-detected)
 
 ## SQL Cache Layer
 
@@ -73,7 +74,7 @@ Frame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql
 ### How It Works
 
 1. **SHA-based change detection**: Only re-process modified files
-2. **Loom-scoped caching**: Store aggregate stats per loom
+2. **Loom-scoped caching**: Store aggregate stats per loom (folder)
 3. **Keyword caching**: Pre-computed TF-IDF scores
 4. **GitHub Actions cache**: Persistent across CI runs
 
@@ -143,49 +144,29 @@ Frame Codex implements the **Educational Content Atom (ECA)** specification:
 ```
 codex/
 ├── weaves/              # Knowledge universes
-│   ├── wiki/           # Meta-documentation (this weave)
+│   ├── wiki/           # Meta-documentation
+│   │   ├── weave.yaml
+│   │   ├── architecture/    # Loom (folder)
+│   │   │   └── overview.md  # Strand (markdown file)
+│   │   └── ...
 │   ├── frame/          # Frame ecosystem knowledge
+│   │   ├── weave.yaml
+│   │   ├── openstrand/      # Loom (folder)
+│   │   │   └── architecture.md  # Strand (markdown file)
+│   │   └── ...
 │   └── technology/     # Tech & CS content
 ├── schema/             # Validation schemas
 ├── docs/               # Development guides
-│   ├── logos/         # Brand assets
-│   └── assets/        # Shared resources
 ├── scripts/            # Automation scripts
-│   ├── auto-index.js  # NLP indexer with SQL cache
-│   ├── cache-db.js    # SQL cache layer
-│   ├── validate.js    # Schema validator
-│   └── ai-enhance.js  # Optional AI analysis
 ├── tests/              # Test suite
 └── .github/
     └── workflows/      # CI/CD automation
 ```
 
-## Data Flow
+**Note:** Looms and strands are auto-detected from folder structure. No explicit `looms/` or `strands/` folders needed.
 
-```
-PR Opened
-  ↓
-Schema Validation (instant)
-  ↓
-Static NLP Analysis (~2-5s with cache)
-  ↓
-[Optional] AI Quality Analysis (~30s, $0.01-0.20)
-  ↓
-Auto-Merge (if Weaver) OR Manual Review
-  ↓
-Merge to main
-  ↓
-Index Rebuild (~2-5s with cache)
-  ↓
-Push to index branch
-  ↓
-Live on frame.dev/codex (instant)
-```
+## Learn More
 
-## Next Steps
-
-- Read: [SQL Cache Architecture](./sql-cache-architecture.md)
-- Read: [NLP Pipeline](./nlp-pipeline.md)
-- Read: [Automation Workflows](./automation-workflows.md)
-- Contribute: [How to Submit](../../contributing/how-to-submit.md)
-
+- [Changelog System](../../docs/CHANGELOG_SYSTEM.md)
+- [Development Guide](../../docs/DEVELOPMENT.md)
+- [How to Submit](../../docs/contributing/how-to-submit.md)
