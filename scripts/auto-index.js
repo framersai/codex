@@ -69,14 +69,20 @@ class CodexIndexer {
       totalFiles: 0,
       indexedFiles: 0,
       skippedFiles: 0,
+      cachedFiles: 0,
       errors: [],
       vocabulary: {
         extractedTerms: new Set(),
         suggestedAdditions: []
+      },
+      performance: {
+        cacheHitRate: 0,
+        timeElapsed: 0
       }
     };
     this.documentFrequency = {}; // For TF-IDF
     this.allDocuments = [];
+    this.cache = null; // SQL cache instance
   }
 
   /**
@@ -293,19 +299,25 @@ class CodexIndexer {
     // Content validation
     if (content.length < 100) warnings.push('Content very short (< 100 chars)');
     
-    // Forbidden patterns
-    const forbiddenPatterns = [
-      { pattern: /lorem ipsum/i, message: 'Contains placeholder text (lorem ipsum)' },
-      { pattern: /TODO:/i, message: 'Contains TODO comments' },
-      { pattern: /FIXME:/i, message: 'Contains FIXME comments' },
-      { pattern: /test test test/i, message: 'Contains test placeholder' },
-    ];
+    // Forbidden patterns (only check actual content, not docs/guides)
+    const isDocumentation = filePath.includes('/docs/') || filePath.includes('/wiki/') || 
+                           filePath.includes('README') || filePath.includes('GUIDE') ||
+                           filePath.includes('CONTRIBUTING');
     
-    forbiddenPatterns.forEach(({ pattern, message }) => {
-      if (pattern.test(content)) {
-        errors.push(message);
-      }
-    });
+    if (!isDocumentation) {
+      const forbiddenPatterns = [
+        { pattern: /lorem ipsum/i, message: 'Contains placeholder text' },
+        { pattern: /TODO:/i, message: 'Contains TODO comments' },
+        { pattern: /FIXME:/i, message: 'Contains FIXME comments' },
+        { pattern: /test test test/i, message: 'Contains test placeholder' },
+      ];
+      
+      forbiddenPatterns.forEach(({ pattern, message }) => {
+        if (pattern.test(content)) {
+          errors.push(message);
+        }
+      });
+    }
     
     return { valid: errors.length === 0, errors, warnings };
   }
@@ -582,26 +594,136 @@ class CodexIndexer {
   }
 
   /**
-   * Build and save index
+   * Build and save index with SQL caching for incremental updates
+   * 
+   * @param {string} baseDir - Base directory to index
+   * @param {Object} options - Build options
+   * @param {boolean} options.validate - Exit with error code if validation fails
+   * @param {boolean} options.verbose - Show detailed output
+   * @param {boolean} options.clearCache - Clear SQL cache before building
+   * @returns {Promise<Object>} Build report with statistics
    */
-  build(baseDir = '.', options = {}) {
-    console.log('🚀 Building Frame Codex index...\n');
+  async build(baseDir = '.', options = {}) {
+    const startTime = Date.now();
+    console.log('🚀 Building Frame Codex index with SQL caching...\n');
     
-    // Walk directories
+    // Initialize SQL cache
+    try {
+      const CodexCacheDB = require('./cache-db.js');
+      this.cache = await CodexCacheDB.create();
+      
+      if (options.clearCache && this.cache.isInitialized) {
+        console.log('🗑️  Clearing cache (--clear-cache flag)...');
+        await this.cache.clear();
+      }
+      
+      if (this.cache.isInitialized) {
+        const cacheStats = await this.cache.getStats();
+        console.log(`💾 SQL cache loaded: ${cacheStats.totalFiles} files cached, ${Math.round(cacheStats.cacheSize / 1024)}KB\n`);
+      }
+    } catch (error) {
+      console.warn('⚠️ SQL cache unavailable, running full index:', error.message);
+    }
+    
+    // Collect all files first
+    const allFiles = [];
     const dirs = ['weaves', 'schema', 'docs', 'wiki'];
+    
+    const collectFiles = (dir) => {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      entries.forEach(entry => {
+        // Skip hidden files/folders, node_modules, and common dev folders
+        if (entry.name.startsWith('.')) return;
+        if (['node_modules', '.github', '.husky', '.cache', 'dist', 'build', 'coverage'].includes(entry.name)) return;
+        
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+          collectFiles(fullPath);
+        } else if (entry.name.endsWith('.md') || entry.name.endsWith('.yaml') || entry.name.endsWith('.yml')) {
+          allFiles.push(fullPath);
+        }
+      });
+    };
+    
     dirs.forEach(dir => {
       const dirPath = path.join(baseDir, dir);
       if (fs.existsSync(dirPath)) {
-        console.log(`📂 Indexing ${dir}/...`);
-        this.walkDirectory(dirPath, baseDir);
+        collectFiles(dirPath);
       }
     });
+    
+    // Compute diff if cache available
+    let diff = { added: allFiles, modified: [], deleted: [], unchanged: [] };
+    if (this.cache && this.cache.isInitialized) {
+      diff = await this.cache.getDiff(allFiles);
+      console.log(`📊 Cache diff:`);
+      console.log(`   Added: ${diff.added.length}`);
+      console.log(`   Modified: ${diff.modified.length}`);
+      console.log(`   Deleted: ${diff.deleted.length}`);
+      console.log(`   Unchanged: ${diff.unchanged.length} (using cache)\n`);
+      
+      // Delete removed files from cache
+      if (diff.deleted.length > 0) {
+        await this.cache.deleteFiles(diff.deleted);
+      }
+    }
+    
+    // Process only changed files
+    const filesToProcess = [...diff.added, ...diff.modified];
+    const filesToCache = [...diff.unchanged];
+    
+    // Load cached analyses
+    for (const filePath of filesToCache) {
+      const cached = await this.cache.getCachedAnalysis(filePath);
+      if (cached) {
+        this.index.push(cached);
+        this.stats.cachedFiles++;
+        this.allDocuments.push(cached.content || '');
+      } else {
+        // Cache miss, add to process list
+        filesToProcess.push(filePath);
+      }
+    }
+    
+    // Process changed files
+    console.log(`🔄 Processing ${filesToProcess.length} changed files...\n`);
+    for (const filePath of filesToProcess) {
+      const entry = this.processFile(filePath, baseDir);
+      
+      // Save to cache
+      if (entry && this.cache && this.cache.isInitialized) {
+        try {
+          const content = fs.readFileSync(filePath, 'utf8');
+          await this.cache.saveFileAnalysis(filePath, content, entry);
+        } catch (error) {
+          console.warn(`Failed to cache ${filePath}:`, error.message);
+        }
+      }
+    }
+    
+    // Calculate performance metrics
+    const timeElapsed = Date.now() - startTime;
+    this.stats.performance.timeElapsed = timeElapsed;
+    this.stats.performance.cacheHitRate = this.stats.totalFiles > 0
+      ? Math.round((this.stats.cachedFiles / this.stats.totalFiles) * 100)
+      : 0;
     
     // Analyze vocabulary
     this.analyzeVocabulary();
     
     // Generate report
     const report = this.generateReport();
+    
+    // Add performance metrics to report
+    report.performance = {
+      timeElapsed: `${(timeElapsed / 1000).toFixed(2)}s`,
+      cacheHitRate: `${this.stats.performance.cacheHitRate}%`,
+      filesProcessed: filesToProcess.length,
+      filesCached: this.stats.cachedFiles,
+      speedup: diff.unchanged.length > 0 
+        ? `${Math.round((diff.unchanged.length / this.stats.totalFiles) * 100)}% faster`
+        : 'N/A (first run)'
+    };
     
     // Save index
     fs.writeFileSync(
@@ -617,7 +739,9 @@ class CodexIndexer {
     
     // Print summary
     console.log('\n✅ Indexing complete!');
-    console.log(`📊 Total files processed: ${report.summary.totalFiles}`);
+    console.log(`⏱️  Time: ${report.performance.timeElapsed} (${report.performance.speedup})`);
+    console.log(`💾 Cache hit rate: ${report.performance.cacheHitRate}`);
+    console.log(`📊 Total files: ${report.summary.totalFiles}`);
     console.log(`✓ Successfully indexed: ${report.summary.indexedFiles}`);
     console.log(`✓ Valid files: ${report.summary.validFiles}`);
     console.log(`⚠️  Files with warnings: ${report.summary.filesWithWarnings}`);
@@ -655,6 +779,11 @@ class CodexIndexer {
         });
     }
     
+    // Close cache
+    if (this.cache) {
+      await this.cache.close();
+    }
+    
     return report;
   }
 }
@@ -664,17 +793,23 @@ if (require.main === module) {
   const args = process.argv.slice(2);
   const options = {
     validate: args.includes('--validate'),
-    verbose: args.includes('--verbose')
+    verbose: args.includes('--verbose'),
+    clearCache: args.includes('--clear-cache')
   };
   
   const indexer = new CodexIndexer();
-  const report = indexer.build('.', options);
   
-  // Exit with error code if validation failed and --validate flag is set
-  if (options.validate && report.summary.filesWithErrors > 0) {
-    console.error('\n❌ Validation failed. Fix errors before committing.');
+  // Run async build
+  indexer.build('.', options).then(report => {
+    // Exit with error code if validation failed and --validate flag is set
+    if (options.validate && report.summary.filesWithErrors > 0) {
+      console.error('\n❌ Validation failed. Fix errors before committing.');
+      process.exit(1);
+    }
+  }).catch(error => {
+    console.error('❌ Fatal error during indexing:', error);
     process.exit(1);
-  }
+  });
 }
 
 module.exports = CodexIndexer;

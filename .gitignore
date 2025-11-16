@@ -12,6 +12,12 @@ build/
 .next/
 out/
 
+# SQL Cache
+.cache/
+*.db
+*.db-shm
+*.db-wal
+
 # OS / Editor
 .DS_Store
 Thumbs.db

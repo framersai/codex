@@ -18,12 +18,20 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install dependencies
-        run: npm install js-yaml gray-matter
+      - name: Restore SQL cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/codex.db
+          key: codex-cache-${{ hashFiles('weaves/**/*.md', 'docs/**/*.md', 'wiki/**/*.md') }}
+          restore-keys: |
+            codex-cache-
       
-      - name: Build search index with NLP
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build search index with SQL caching
         run: |
-          # Run the enhanced auto-indexer
+          # Run the enhanced auto-indexer with SQL diff cache
           npm run index -- --validate
           
           # Check if validation passed

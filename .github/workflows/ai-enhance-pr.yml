@@ -1,0 +1,281 @@
+name: AI-Powered PR Enhancement
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  ai-analysis:
+    runs-on: ubuntu-latest
+    if: |
+      !contains(github.event.pull_request.labels.*.name, 'skip-ai') &&
+      github.event.pull_request.user.login != 'dependabot[bot]'
+    
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install --no-save @anthropic-ai/sdk openai
+      
+      - name: Get changed files
+        id: changed-files
+        run: |
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD | grep -E '\.(md|yaml|yml)$' || echo "")
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No content files changed"
+            exit 0
+          fi
+          
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Run AI enhancement analysis
+        if: steps.changed-files.outputs.has_changes == 'true'
+        id: ai-enhance
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          node scripts/ai-enhance.js \
+            --files "${{ steps.changed-files.outputs.files }}" \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --output enhancement-report.json
+      
+      - name: Upload enhancement report
+        if: steps.changed-files.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-enhancement-report
+          path: enhancement-report.json
+      
+      - name: Post AI suggestions as review
+        if: steps.changed-files.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const fs = require('fs');
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            // Read enhancement report
+            let report;
+            try {
+              report = JSON.parse(fs.readFileSync('enhancement-report.json', 'utf8'));
+            } catch (error) {
+              console.log('No enhancement report generated');
+              return;
+            }
+            
+            if (!report.suggestions || report.suggestions.length === 0) {
+              console.log('No suggestions from AI');
+              return;
+            }
+            
+            // Build review comments
+            const comments = report.suggestions.map(suggestion => ({
+              path: suggestion.file,
+              line: suggestion.line || 1,
+              body: `🤖 **AI Suggestion:** ${suggestion.message}
+              
+${suggestion.details ? `\n${suggestion.details}\n` : ''}
+${suggestion.suggestedFix ? `\n**Suggested fix:**\n\`\`\`${suggestion.language || 'yaml'}\n${suggestion.suggestedFix}\n\`\`\`` : ''}
+              
+*Confidence: ${suggestion.confidence || 'medium'}*`
+            }));
+            
+            // Post review with suggestions
+            await github.rest.pulls.createReview({
+              owner,
+              repo,
+              pull_number,
+              event: 'COMMENT',
+              body: `## 🤖 AI-Powered Content Analysis
+              
+I've analyzed your contribution and have ${report.suggestions.length} suggestion(s) to improve quality and discoverability.
+              
+**Analysis Summary:**
+- **Quality Score:** ${report.qualityScore || 'N/A'}/100
+- **Completeness:** ${report.completeness || 'N/A'}%
+- **Auto-detected tags:** ${report.autoTags?.join(', ') || 'None'}
+- **Suggested difficulty:** ${report.suggestedDifficulty || 'intermediate'}
+              
+These are suggestions, not requirements. Feel free to accept, modify, or ignore them based on your judgment.
+              
+*Powered by ${report.model || 'AI'} • [Learn more](https://github.com/framersai/codex/wiki/AI-Enhancement)*`,
+              comments: comments.slice(0, 10) // Limit to 10 inline comments
+            });
+            
+            // If there are more than 10 suggestions, post them as a separate comment
+            if (comments.length > 10) {
+              const additionalSuggestions = report.suggestions.slice(10).map((s, i) => 
+                `${i + 11}. **${s.file}**: ${s.message}`
+              ).join('\n');
+              
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: pull_number,
+                body: `## Additional AI Suggestions
+                
+${additionalSuggestions}
+                
+*See the full report in the workflow artifacts.*`
+              });
+            }
+      
+      - name: Auto-apply safe improvements
+        if: |
+          steps.changed-files.outputs.has_changes == 'true' &&
+          contains(github.event.pull_request.labels.*.name, 'auto-enhance')
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          node scripts/ai-enhance.js \
+            --files "${{ steps.changed-files.outputs.files }}" \
+            --apply-safe-fixes \
+            --output enhancement-report.json
+          
+          # Check if any files were modified
+          if git diff --quiet; then
+            echo "No auto-fixes applied"
+            exit 0
+          fi
+          
+          # Commit improvements
+          git config --global user.name 'Frame Codex AI'
+          git config --global user.email 'ai@frame.dev'
+          git add -A
+          git commit -m "chore: apply AI-suggested improvements
+          
+          - Auto-filled missing metadata
+          - Enhanced tags and categorization
+          - Improved formatting and structure
+          
+          Co-authored-by: ${{ github.event.pull_request.user.login }} <${{ github.event.pull_request.user.email }}>"
+          
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+      
+      - name: Post enhancement summary
+        if: steps.changed-files.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            let report;
+            try {
+              report = JSON.parse(fs.readFileSync('enhancement-report.json', 'utf8'));
+            } catch {
+              return;
+            }
+            
+            // Post summary as a comment
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pull_number,
+              body: `## 📊 Content Quality Report
+              
+| Metric | Score |
+|--------|-------|
+| Overall Quality | ${report.qualityScore || 'N/A'}/100 |
+| Completeness | ${report.completeness || 'N/A'}% |
+| Readability | ${report.readability || 'N/A'} |
+| SEO Score | ${report.seoScore || 'N/A'}/100 |
+              
+**Auto-detected Metadata:**
+- **Subjects:** ${report.autoTags?.slice(0, 5).join(', ') || 'None'}
+- **Difficulty:** ${report.suggestedDifficulty || 'intermediate'}
+- **Estimated Reading Time:** ${report.estimatedReadingTime || 'N/A'} min
+              
+**Recommendations:**
+${report.recommendations?.map(r => `- ${r}`).join('\n') || 'None'}
+              
+*Want automatic improvements? Add the \`auto-enhance\` label to enable safe auto-fixes.*`
+            });
+
+  quality-gate:
+    needs: ai-analysis
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+      - name: Download enhancement report
+        uses: actions/download-artifact@v4
+        with:
+          name: ai-enhancement-report
+        continue-on-error: true
+      
+      - name: Check quality threshold
+        id: quality-check
+        run: |
+          if [ ! -f enhancement-report.json ]; then
+            echo "No report found, skipping quality gate"
+            exit 0
+          fi
+          
+          QUALITY_SCORE=$(node -e "const r = require('./enhancement-report.json'); console.log(r.qualityScore || 70)")
+          THRESHOLD=60
+          
+          if [ "$QUALITY_SCORE" -lt "$THRESHOLD" ]; then
+            echo "quality_passed=false" >> $GITHUB_OUTPUT
+            echo "⚠️ Quality score ($QUALITY_SCORE) below threshold ($THRESHOLD)"
+          else
+            echo "quality_passed=true" >> $GITHUB_OUTPUT
+            echo "✅ Quality score ($QUALITY_SCORE) meets threshold ($THRESHOLD)"
+          fi
+      
+      - name: Post quality gate result
+        if: steps.quality-check.outputs.quality_passed == 'false'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pull_number,
+              body: `## ⚠️ Quality Gate Warning
+              
+The AI analysis detected that this content may benefit from additional improvements before merging.
+              
+**This is not blocking** - maintainers can still approve and merge. However, consider:
+              
+1. Reviewing the AI suggestions above
+2. Adding more detailed metadata
+3. Expanding the content for better clarity
+4. Ensuring all required fields are present
+              
+Questions? Ask in our [Discord](https://discord.gg/framersai) or tag a maintainer.`
+            });
+

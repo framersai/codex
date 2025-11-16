@@ -87,6 +87,9 @@ class CodexValidator {
       }
     }
 
+    // Validate ECA (Educational Content Atom) fields
+    this.validateECAFields(data, filePath);
+
     // Suggest improvements
     if (!data.summary) {
       this.suggestions.push(`${filePath}: Consider adding a summary for better searchability`);
@@ -96,6 +99,203 @@ class CodexValidator {
     }
     if (!data.version) {
       this.suggestions.push(`${filePath}: Consider adding a version number`);
+    }
+  }
+
+  // Validate OpenStrand ECA (Educational Content Atom) fields
+  validateECAFields(data, filePath) {
+    // Learning Design validation
+    if (data.learningDesign) {
+      if (data.learningDesign.objectives) {
+        if (!Array.isArray(data.learningDesign.objectives)) {
+          this.errors.push(`${filePath}: learningDesign.objectives must be an array`);
+        } else {
+          data.learningDesign.objectives.forEach((obj, idx) => {
+            if (!obj.description) {
+              this.errors.push(`${filePath}: learningDesign.objectives[${idx}] missing description`);
+            }
+            if (obj.bloomsLevel && !['remember', 'understand', 'apply', 'analyze', 'evaluate', 'create'].includes(obj.bloomsLevel)) {
+              this.errors.push(`${filePath}: learningDesign.objectives[${idx}] invalid bloomsLevel`);
+            }
+          });
+        }
+      }
+
+      if (data.learningDesign.pedagogicalApproach) {
+        const validApproaches = ['direct_instruction', 'discovery_learning', 'problem_based', 'collaborative', 'experiential', 'inquiry_based'];
+        if (!Array.isArray(data.learningDesign.pedagogicalApproach)) {
+          this.errors.push(`${filePath}: learningDesign.pedagogicalApproach must be an array`);
+        } else {
+          data.learningDesign.pedagogicalApproach.forEach(approach => {
+            if (!validApproaches.includes(approach)) {
+              this.errors.push(`${filePath}: Invalid pedagogicalApproach: ${approach}`);
+            }
+          });
+        }
+      }
+    }
+
+    // Time Estimates validation
+    if (data.timeEstimates) {
+      ['reading', 'exercises', 'projects', 'total'].forEach(field => {
+        if (data.timeEstimates[field] !== undefined && typeof data.timeEstimates[field] !== 'number') {
+          this.errors.push(`${filePath}: timeEstimates.${field} must be a number`);
+        }
+      });
+
+      if (data.timeEstimates.total && data.timeEstimates.reading && data.timeEstimates.exercises) {
+        const sum = (data.timeEstimates.reading || 0) + (data.timeEstimates.exercises || 0) + (data.timeEstimates.projects || 0);
+        if (Math.abs(sum - data.timeEstimates.total) > 1) {
+          this.warnings.push(`${filePath}: timeEstimates.total (${data.timeEstimates.total}) doesn't match sum of components (${sum})`);
+        }
+      }
+    }
+
+    // Modalities validation
+    if (data.modalities) {
+      if (data.modalities.text !== undefined && typeof data.modalities.text !== 'boolean') {
+        this.errors.push(`${filePath}: modalities.text must be boolean`);
+      }
+
+      if (data.modalities.visual) {
+        ['diagrams', 'images', 'charts'].forEach(field => {
+          if (data.modalities.visual[field] !== undefined && typeof data.modalities.visual[field] !== 'number') {
+            this.errors.push(`${filePath}: modalities.visual.${field} must be a number`);
+          }
+        });
+      }
+
+      if (data.modalities.audio && data.modalities.audio.narration !== undefined && typeof data.modalities.audio.narration !== 'boolean') {
+        this.errors.push(`${filePath}: modalities.audio.narration must be boolean`);
+      }
+    }
+
+    // Interactive Elements validation
+    if (data.interactiveElements) {
+      if (!Array.isArray(data.interactiveElements)) {
+        this.errors.push(`${filePath}: interactiveElements must be an array`);
+      } else {
+        const validTypes = ['quiz', 'poll', 'simulation', 'code_exercise', 'discussion_prompt', 'reflection', 'peer_review'];
+        data.interactiveElements.forEach((elem, idx) => {
+          if (!elem.id) {
+            this.errors.push(`${filePath}: interactiveElements[${idx}] missing id`);
+          }
+          if (!elem.type || !validTypes.includes(elem.type)) {
+            this.errors.push(`${filePath}: interactiveElements[${idx}] invalid or missing type`);
+          }
+          if (elem.required !== undefined && typeof elem.required !== 'boolean') {
+            this.errors.push(`${filePath}: interactiveElements[${idx}].required must be boolean`);
+          }
+        });
+      }
+    }
+
+    // Assessments validation
+    if (data.assessments) {
+      ['formative', 'summative'].forEach(assessmentType => {
+        if (data.assessments[assessmentType]) {
+          if (!Array.isArray(data.assessments[assessmentType])) {
+            this.errors.push(`${filePath}: assessments.${assessmentType} must be an array`);
+          } else {
+            data.assessments[assessmentType].forEach((assessment, idx) => {
+              if (!assessment.id) {
+                this.errors.push(`${filePath}: assessments.${assessmentType}[${idx}] missing id`);
+              }
+              if (!assessment.type) {
+                this.errors.push(`${filePath}: assessments.${assessmentType}[${idx}] missing type`);
+              }
+              if (assessment.weight !== undefined && (typeof assessment.weight !== 'number' || assessment.weight < 0 || assessment.weight > 1)) {
+                this.errors.push(`${filePath}: assessments.${assessmentType}[${idx}].weight must be between 0 and 1`);
+              }
+              if (assessmentType === 'summative' && assessment.passingScore !== undefined) {
+                if (typeof assessment.passingScore !== 'number' || assessment.passingScore < 0 || assessment.passingScore > 100) {
+                  this.errors.push(`${filePath}: assessments.summative[${idx}].passingScore must be between 0 and 100`);
+                }
+              }
+            });
+          }
+        }
+      });
+    }
+
+    // Accessibility validation
+    if (data.accessibility) {
+      if (data.accessibility.wcagLevel && !['A', 'AA', 'AAA'].includes(data.accessibility.wcagLevel)) {
+        this.errors.push(`${filePath}: accessibility.wcagLevel must be A, AA, or AAA`);
+      }
+
+      if (data.accessibility.features) {
+        const validFeatures = ['alt_text', 'captions', 'transcripts', 'audio_description', 'sign_language', 'easy_read', 'high_contrast', 'keyboard_navigation'];
+        if (!Array.isArray(data.accessibility.features)) {
+          this.errors.push(`${filePath}: accessibility.features must be an array`);
+        } else {
+          data.accessibility.features.forEach(feature => {
+            if (!validFeatures.includes(feature)) {
+              this.warnings.push(`${filePath}: Unknown accessibility feature: ${feature}`);
+            }
+          });
+        }
+      }
+
+      if (data.accessibility.readingLevel !== undefined) {
+        if (typeof data.accessibility.readingLevel !== 'number' || data.accessibility.readingLevel < 1 || data.accessibility.readingLevel > 20) {
+          this.errors.push(`${filePath}: accessibility.readingLevel must be between 1 and 20`);
+        }
+      }
+    }
+
+    // Cultural Adaptations validation
+    if (data.culturalAdaptations) {
+      if (!Array.isArray(data.culturalAdaptations)) {
+        this.errors.push(`${filePath}: culturalAdaptations must be an array`);
+      } else {
+        data.culturalAdaptations.forEach((adaptation, idx) => {
+          if (!adaptation.culture) {
+            this.errors.push(`${filePath}: culturalAdaptations[${idx}] missing culture code`);
+          }
+          if (adaptation.culture && !/^[A-Z]{2}$/.test(adaptation.culture)) {
+            this.warnings.push(`${filePath}: culturalAdaptations[${idx}].culture should be ISO 3166-1 alpha-2 (e.g., US, GB)`);
+          }
+        });
+      }
+    }
+
+    // Quality metrics validation
+    if (data.quality) {
+      if (data.quality.peerReview) {
+        if (data.quality.peerReview.status && !['pending', 'reviewed', 'approved'].includes(data.quality.peerReview.status)) {
+          this.errors.push(`${filePath}: quality.peerReview.status must be pending, reviewed, or approved`);
+        }
+        if (data.quality.peerReview.score !== undefined) {
+          if (typeof data.quality.peerReview.score !== 'number' || data.quality.peerReview.score < 0 || data.quality.peerReview.score > 5) {
+            this.errors.push(`${filePath}: quality.peerReview.score must be between 0 and 5`);
+          }
+        }
+      }
+
+      if (data.quality.evidenceBased) {
+        if (!Array.isArray(data.quality.evidenceBased)) {
+          this.errors.push(`${filePath}: quality.evidenceBased must be an array`);
+        } else {
+          data.quality.evidenceBased.forEach((evidence, idx) => {
+            if (!evidence.claim || !evidence.evidence || !evidence.citation) {
+              this.errors.push(`${filePath}: quality.evidenceBased[${idx}] missing required fields (claim, evidence, citation)`);
+            }
+            if (evidence.strength && !['strong', 'moderate', 'emerging'].includes(evidence.strength)) {
+              this.errors.push(`${filePath}: quality.evidenceBased[${idx}].strength must be strong, moderate, or emerging`);
+            }
+          });
+        }
+      }
+
+      if (data.quality.updateFrequency && !['static', 'annual', 'biannual', 'quarterly', 'dynamic'].includes(data.quality.updateFrequency)) {
+        this.errors.push(`${filePath}: quality.updateFrequency must be static, annual, biannual, quarterly, or dynamic`);
+      }
+    }
+
+    // Suggest ECA enhancements
+    if (!data.learningDesign && !data.timeEstimates && !data.modalities) {
+      this.suggestions.push(`${filePath}: Consider adding ECA fields (learningDesign, timeEstimates, modalities) for enhanced learning analytics`);
     }
   }
 

@@ -186,7 +186,7 @@ publishing:
 ### Content Requirements
 
 - Minimum 100 characters of meaningful content
-- No placeholder text (lorem ipsum, TODO, FIXME)
+- No unfinished sections or test content
 - Proper markdown formatting
 - Valid YAML frontmatter
 

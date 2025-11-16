@@ -1,0 +1,220 @@
+name: Auto-Merge Trusted Weavers
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+
+jobs:
+  check-weaver-status:
+    runs-on: ubuntu-latest
+    outputs:
+      is_weaver: ${{ steps.check.outputs.is_weaver }}
+      username: ${{ steps.check.outputs.username }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Check if PR author is a trusted Weaver
+        id: check
+        run: |
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          echo "username=$PR_AUTHOR" >> $GITHUB_OUTPUT
+          
+          # Read WEAVERS.txt and check if author is listed
+          if grep -q "^${PR_AUTHOR}$" .github/WEAVERS.txt; then
+            echo "is_weaver=true" >> $GITHUB_OUTPUT
+            echo "✅ $PR_AUTHOR is a trusted Weaver"
+          else
+            echo "is_weaver=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ $PR_AUTHOR is not in WEAVERS.txt"
+          fi
+
+  validate-content:
+    needs: check-weaver-status
+    if: needs.check-weaver-status.outputs.is_weaver == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run validation
+        id: validate
+        run: |
+          # Get list of changed files
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD | grep -E '\.(md|yaml|yml)$' || echo "")
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No content files changed"
+            echo "validation_passed=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+          
+          # Run validation on changed files
+          npm run validate -- --files "$CHANGED_FILES"
+          
+          if [ $? -eq 0 ]; then
+            echo "validation_passed=true" >> $GITHUB_OUTPUT
+            echo "✅ Validation passed"
+          else
+            echo "validation_passed=false" >> $GITHUB_OUTPUT
+            echo "❌ Validation failed"
+            exit 1
+          fi
+      
+      - name: Run indexer with quality checks
+        if: steps.validate.outputs.validation_passed == 'true'
+        run: |
+          npm run index -- --validate
+          
+          if [ $? -ne 0 ]; then
+            echo "⚠️ Indexer warnings found, but continuing"
+          fi
+      
+      - name: Check for duplicates
+        if: steps.validate.outputs.validation_passed == 'true'
+        run: |
+          npm run check-duplicates
+          
+          if [ $? -ne 0 ]; then
+            echo "❌ Duplicate content detected"
+            exit 1
+          fi
+
+  auto-approve-and-merge:
+    needs: [check-weaver-status, validate-content]
+    if: |
+      needs.check-weaver-status.outputs.is_weaver == 'true' &&
+      needs.validate-content.result == 'success'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Approve PR
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            await github.rest.pulls.createReview({
+              owner,
+              repo,
+              pull_number,
+              event: 'APPROVE',
+              body: `✅ Auto-approved: @${{ needs.check-weaver-status.outputs.username }} is a trusted Weaver and all validation checks passed.
+              
+              **Validation Summary:**
+              - ✅ Schema validation passed
+              - ✅ Quality checks passed
+              - ✅ No duplicates detected
+              - ✅ Indexer ran successfully
+              
+              Merging automatically.`
+            });
+      
+      - name: Enable auto-merge
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            try {
+              await github.rest.pulls.merge({
+                owner,
+                repo,
+                pull_number,
+                merge_method: 'squash',
+                commit_title: `${{ github.event.pull_request.title }} (#${pull_number})`,
+                commit_message: `Contributed by @${{ needs.check-weaver-status.outputs.username }} (Trusted Weaver)
+                
+                Auto-merged after passing all validation checks.`
+              });
+              
+              console.log('✅ PR merged successfully');
+            } catch (error) {
+              console.error('Failed to merge PR:', error.message);
+              
+              // Post comment explaining why merge failed
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: pull_number,
+                body: `⚠️ Auto-merge failed: ${error.message}
+                
+                This may be due to merge conflicts or branch protection rules. Please merge manually.`
+              });
+            }
+      
+      - name: Post success comment
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pull_number,
+              body: `🎉 Thank you @${{ needs.check-weaver-status.outputs.username }} for your contribution!
+              
+              This PR has been automatically merged as you are a trusted Weaver.
+              
+              The search index will be rebuilt automatically and will be live within a few minutes.`
+            });
+
+  notify-non-weaver:
+    needs: check-weaver-status
+    if: needs.check-weaver-status.outputs.is_weaver == 'false'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Post welcome comment
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pull_number,
+              body: `👋 Thank you for your contribution @${{ needs.check-weaver-status.outputs.username }}!
+              
+              Your PR will be reviewed by our maintainers. While you wait:
+              
+              - ✅ Ensure all validation checks pass
+              - 📝 Review the [contribution guidelines](../../wiki/codex/contributing.md)
+              - 💬 Join our [Discord](https://discord.gg/framersai) for questions
+              
+              **Become a Weaver:** After 5+ high-quality contributions, you can be nominated for auto-merge privileges!`
+            });
+

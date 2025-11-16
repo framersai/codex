@@ -1,0 +1,21 @@
+# Frame Codex Weavers
+#
+# This file lists trusted contributors ("Weavers") who have demonstrated
+# consistent high-quality contributions to the Frame Codex. PRs opened by
+# users in this list will be automatically approved and merged after passing
+# all validation checks.
+#
+# Format: One GitHub username per line (no @ symbol)
+# Comments start with #
+#
+# To become a Weaver:
+# 1. Submit 5+ high-quality PRs that pass all validation
+# 2. Demonstrate understanding of the Codex schema and quality standards
+# 3. Receive nomination from existing Weavers or maintainers
+#
+# Maintainers (full access):
+jddunn
+
+# Trusted Weavers (auto-merge after validation):
+# Add trusted contributors below this line
+

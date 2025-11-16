@@ -9,19 +9,30 @@
     "validate": "node scripts/validate.js",
     "check-duplicates": "node scripts/validate.js --skip-duplicates=false",
     "generate-template": "node scripts/validate.js --generate",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "@framers/sql-storage-adapter": "workspace:*",
+    "better-sqlite3": "^11.0.0"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
     "husky": "^8.0.3",
     "js-yaml": "^4.1.0",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.1"
   },
   "scripts-info": {
-    "index": "Build search index with NLP-powered auto-categorization",
+    "index": "Build search index with NLP-powered auto-categorization (uses SQL cache for incremental updates)",
     "validate": "Validate all content against schemas and quality rules",
     "check-duplicates": "Detect duplicate content across the repository",
     "generate-template": "Generate a new strand template with UUID",
+    "test": "Run unit and integration tests",
+    "test:coverage": "Run tests with coverage report",
     "prepare": "Install git hooks for pre-commit validation"
   }
 }

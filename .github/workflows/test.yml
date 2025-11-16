@@ -1,0 +1,109 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run unit tests
+        run: npm test
+      
+      - name: Run tests with coverage
+        run: npm run test:coverage
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage/coverage-final.json
+          flags: codex
+          name: codex-coverage
+        continue-on-error: true
+      
+      - name: Test SQL cache functionality
+        run: |
+          # First run (full index)
+          time npm run index -- --validate
+          
+          # Second run (should use cache)
+          time npm run index -- --validate
+          
+          # Verify cache was created
+          if [ ! -f .cache/codex.db ]; then
+            echo "❌ Cache file not created"
+            exit 1
+          fi
+          
+          echo "✅ SQL cache working correctly"
+      
+      - name: Test cache clear
+        run: |
+          npm run index -- --clear-cache
+          echo "✅ Cache clear works"
+
+  integration:
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Test full workflow
+        run: |
+          # Run validation
+          npm run validate
+          
+          # Run indexer
+          npm run index -- --validate
+          
+          # Check outputs
+          if [ ! -f codex-index.json ]; then
+            echo "❌ Index not generated"
+            exit 1
+          fi
+          
+          if [ ! -f codex-report.json ]; then
+            echo "❌ Report not generated"
+            exit 1
+          fi
+          
+          # Verify JSON is valid
+          node -e "JSON.parse(require('fs').readFileSync('codex-index.json'))"
+          node -e "JSON.parse(require('fs').readFileSync('codex-report.json'))"
+          
+          echo "✅ Full workflow passed"
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-outputs
+          path: |
+            codex-index.json
+            codex-report.json
+            .cache/codex.db
+
