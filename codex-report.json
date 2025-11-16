@@ -704,7 +704,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "14.18s",
+    "timeElapsed": "10.05s",
     "cacheHitRate": "0%",
     "filesProcessed": 15,
     "filesCached": 0,
