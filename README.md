@@ -115,11 +115,12 @@ manual_tags: true    # Don't auto-suggest tags
 
 ## Architecture
 
-The Codex uses a three-tier knowledge organization:
+The Codex uses the OpenStrand four-tier knowledge hierarchy:
 
-- **Strand** - Atomic knowledge unit (document, image, media, dataset)
-- **Loom** - Curated collection of related strands (topic/module)
-- **Weave** - Complete knowledge universe with no cross-weave relationships
+- **Fabric** - Collection of weaves (Frame Codex itself is a fabric containing multiple knowledge universes)
+- **Weave** - Complete knowledge universe with no cross-weave dependencies (e.g., `weaves/technology/`, `weaves/science/`)
+- **Loom** - Any subdirectory inside a weave, curated collection of related strands (topic/module, auto-detected from folder structure)
+- **Strand** - Atomic knowledge unit (individual markdown file at any depth within its weave)
 
 ### SQL Cache Layer
 

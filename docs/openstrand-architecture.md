@@ -34,9 +34,15 @@ OpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex
 
 ## Core Concepts
 
-### The Three-Tier Hierarchy
+### The Four-Tier Hierarchy
 
-OpenStrand organizes knowledge using three fundamental primitives:
+OpenStrand organizes knowledge using four fundamental primitives:
+
+**Fabric** - A collection of weaves
+- The highest level of organization
+- Represents an entire knowledge repository or ecosystem
+- Example: Frame Codex itself is a fabric
+- Contains multiple weaves that are conceptually related but independent
 
 **Strand** - The atomic unit of knowledge
 - A single document, image, dataset, or media file
@@ -58,7 +64,7 @@ OpenStrand organizes knowledge using three fundamental primitives:
 
 ### Why This Structure?
 
-The Weave/Loom/Strand architecture solves several key problems:
+The Fabric/Weave/Loom/Strand architecture solves several key problems:
 
 1. **Isolation**: Weaves are completely independent, preventing knowledge pollution
 2. **Scalability**: Each weave can grow infinitely without affecting others
@@ -71,11 +77,13 @@ The Weave/Loom/Strand architecture solves several key problems:
 ### Knowledge Flow
 
 ```
-Weave (Universe)
-  └── Loom (Collection)
-        ├── Strand (Document)
-        ├── Strand (Image)
-        └── Strand (Dataset)
+Fabric (Repository)
+  └── Weave (Universe)
+        └── Loom (Collection / any subdirectory)
+              ├── Strand (Markdown file)
+              ├── Strand (Markdown file)
+              └── Loom (Nested subdirectory)
+                    └── Strand (Markdown file)
 ```
 
 ### Example: Frame Ecosystem Weave
