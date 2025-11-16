@@ -97,14 +97,16 @@ The web UI provides:
    ```
 
 3. **Add Your Content**
-   - Place files in the appropriate weave/loom structure:
+   - Place files directly within the target weave. Any folder becomes a loom, and any markdown file becomes a strand:
      ```
      weaves/
        [weave-name]/
-         looms/
-           [loom-name]/
-             strands/
-               your-content.md
+         weave.yaml
+         overview.md                 # Strand at weave root
+         [loom-folder]/              # e.g. guides/, research/, notes/
+           loom.yaml (optional)
+           your-content.md
+           nested/topic/advanced.md  # Nested looms are allowed
      ```
    - See [submission-schema.md](./submission-schema.md) for required metadata
 
@@ -135,7 +137,7 @@ The web UI provides:
 
 1. Navigate to [github.com/framersai/codex](https://github.com/framersai/codex)
 2. Click "Add file" → "Create new file"
-3. Enter the file path: `weaves/[weave]/looms/[loom]/strands/your-file.md`
+3. Enter the file path: `weaves/[weave]/[optional-folders]/your-file.md`
 4. Add your content with frontmatter (see schema below)
 5. Scroll down and select "Create a new branch for this commit"
 6. Click "Propose new file"

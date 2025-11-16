@@ -225,7 +225,7 @@ The indexer will suggest additions to the vocabulary based on frequently occurri
 npm run validate
 
 # Validate specific files
-npm run validate -- --files weaves/frame/looms/openstrand/strands/architecture.md
+npm run validate -- --files weaves/frame/openstrand/architecture.md
 
 # Check for duplicates
 npm run check-duplicates

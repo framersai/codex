@@ -10,8 +10,7 @@ const TAGS_FILE = path.join(ROOT, 'tags', 'index.yaml');
 
 const read = (p) => fs.readFileSync(p, 'utf8');
 const safeRead = (p) => (fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : null);
-const listDirs = (p) => fs.readdirSync(p).filter((f) => fs.statSync(path.join(p, f)).isDirectory());
-const listFiles = (p) => fs.readdirSync(p).filter((f) => fs.statSync(path.join(p, f)).isFile());
+const IGNORED_SEGMENTS = new Set(['.git', '.github', '.DS_Store', 'node_modules', '.cache']);
 
 function loadYAML(filePath) {
   const txt = safeRead(filePath);
@@ -40,6 +39,82 @@ function loadStrand(filePath) {
   };
 }
 
+const formatSegment = (segment = '') =>
+  segment
+    .replace(/[-_]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+const formatLoomTitle = (relativePath = '') => {
+  if (!relativePath) return 'Loose strands (root)';
+  return relativePath
+    .split(/[\\/]/)
+    .filter(Boolean)
+    .map(formatSegment)
+    .join(' / ');
+};
+
+function ensureLoomNode(map, weaveDir, loomPath) {
+  if (map.has(loomPath)) return map.get(loomPath);
+
+  const absolutePath = loomPath ? path.join(weaveDir, loomPath) : weaveDir;
+  const loomYaml = loadYAML(path.join(absolutePath, 'loom.yaml')) || {};
+
+  const node = {
+    slug: loomPath ? loomPath.replace(/[/\\]/g, '-').toLowerCase() : '__root__',
+    title: loomYaml.title || formatLoomTitle(loomPath),
+    summary: loomYaml.summary || (loomPath ? '' : 'Markdown files stored at the weave root'),
+    tags: loomYaml.tags || [],
+    strands: []
+  };
+
+  map.set(loomPath, node);
+  return node;
+}
+
+function walkWeaveDirectory({ weaveDir, weaveSlug, weaveNode, flat }) {
+  const loomMap = new Map();
+
+  const walk = (currentDir, relativeDir = '') => {
+    const entries = fs.readdirSync(currentDir, { withFileTypes: true });
+
+    for (const entry of entries) {
+      if (IGNORED_SEGMENTS.has(entry.name)) continue;
+      if (entry.name.startsWith('.')) continue;
+
+      const entryPath = path.join(currentDir, entry.name);
+      const relativePath = relativeDir ? path.join(relativeDir, entry.name) : entry.name;
+
+      if (entry.isDirectory()) {
+        walk(entryPath, relativePath);
+        continue;
+      }
+
+      if (!entry.isFile()) continue;
+      if (!entry.name.toLowerCase().endsWith('.md')) continue;
+      if (entry.name === 'weave.yaml' || entry.name === 'loom.yaml') continue;
+
+      const strand = loadStrand(entryPath);
+      const normalized = relativePath.replace(/\\/g, '/');
+      const loomPath = path.posix.dirname(normalized);
+      const key = loomPath === '.' ? '' : loomPath;
+      const loomNode = ensureLoomNode(loomMap, weaveDir, key);
+
+      loomNode.strands.push(strand);
+      flat.push({
+        weave: weaveSlug,
+        loom: key || null,
+        ...strand
+      });
+    }
+  };
+
+  walk(weaveDir);
+  weaveNode.looms = Array.from(loomMap.values()).sort((a, b) => a.title.localeCompare(b.title));
+}
+
 function buildIndex() {
   const tags = loadYAML(TAGS_FILE) || {};
   const tree = [];
@@ -50,7 +125,12 @@ function buildIndex() {
     process.exit(1);
   }
 
-  for (const weaveSlug of listDirs(WEAVES_DIR)) {
+  const weaveDirs = fs
+    .readdirSync(WEAVES_DIR, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+
+  for (const weaveSlug of weaveDirs) {
     const weaveDir = path.join(WEAVES_DIR, weaveSlug);
     const weaveYaml = loadYAML(path.join(weaveDir, 'weave.yaml')) || {};
     const weaveNode = {
@@ -60,33 +140,7 @@ function buildIndex() {
       looms: []
     };
 
-    const loomsDir = path.join(weaveDir, 'looms');
-    if (fs.existsSync(loomsDir)) {
-      for (const loomSlug of listDirs(loomsDir)) {
-        const loomDir = path.join(loomsDir, loomSlug);
-        const loomYaml = loadYAML(path.join(loomDir, 'loom.yaml')) || {};
-        const strandsDir = path.join(loomDir, 'strands');
-        const loomNode = {
-          slug: loomSlug,
-          title: loomYaml.title || loomSlug,
-          summary: loomYaml.summary || '',
-          tags: loomYaml.tags || [],
-          strands: []
-        };
-        if (fs.existsSync(strandsDir)) {
-          for (const file of listFiles(strandsDir).filter((f) => f.endsWith('.md'))) {
-            const strand = loadStrand(path.join(strandsDir, file));
-            loomNode.strands.push(strand);
-            flat.push({
-              weave: weaveSlug,
-              loom: loomSlug,
-              ...strand
-            });
-          }
-        }
-        weaveNode.looms.push(loomNode);
-      }
-    }
+    walkWeaveDirectory({ weaveDir, weaveSlug, weaveNode, flat });
     tree.push(weaveNode);
   }
 

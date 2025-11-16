@@ -27,7 +27,7 @@
 
 Frame Codex is a data-only knowledge repository designed to be the canonical source of structured information for AI systems. This repository contains:
 
-- **Pure content** - Weaves, looms, strands, tags, and schemas
+- **Pure content** - Weaves (top-level directories), looms (any folder inside a weave), strands (markdown files), tags, and schemas
 - **Markdown-only** - The primary source of truth (OpenStrand ingests any file type and serializes to markdown)
 - **No UI** - The viewer interface lives at [frame.dev/codex](https://frame.dev/codex)
 - **LLM-optimized** - Structured for knowledge graph ingestion by OpenStrand and other AI systems
@@ -37,7 +37,7 @@ Frame Codex is a data-only knowledge repository designed to be the canonical sou
 - **Frame Codex**: Public markdown knowledge repository (this repo) - read-only, curated, version-controlled
 - **OpenStrand**: Full personal knowledge management platform at [openstrand.ai](https://openstrand.ai) - supports any file type (images, videos, PDFs, code), AI analysis, serialization to markdown, private workspaces, and advanced features
 
-**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands, ensuring compatibility across the ecosystem.
+**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` prefix required) and strands are any markdown files within a weave.
 
 ## 🔄 Automated Indexing Workflow
 
@@ -48,7 +48,7 @@ Frame Codex uses a **hybrid NLP + LLM approach** with smart caching and manual o
 1. **TF-IDF Analysis** - Extracts keywords based on term frequency and inverse document frequency
 2. **N-gram Extraction** - Identifies multi-word phrases and technical terms
 3. **Vocabulary Matching** - Auto-tags content using controlled vocabulary from `tags/index.yaml`
-4. **Schema Validation** - Ensures compliance with OpenStrand schema (weave/loom/strand structure)
+4. **Schema Validation** - Ensures compliance with OpenStrand schema (weave/loom/strand structure with organic folders)
 5. **Duplicate Detection** - Catches near-duplicate content using fuzzy matching
 6. **Content Quality** - Minimum length, forbidden patterns (lorem ipsum, TODO)
 
@@ -156,13 +156,18 @@ codex/
 │   └── strand.schema.yaml
 ├── tags/               # Controlled vocabulary
 │   └── index.yaml     # Subjects, topics, subtopics
-├── weaves/            # Knowledge universes
-│   ├── frame/         # Frame ecosystem knowledge
-│   ├── technology/    # Technology & CS
-│   └── science/       # Scientific knowledge
+├── weaves/            # Knowledge universes (each top-level folder = weave)
+│   ├── frame/
+│   │   ├── weave.yaml
+│   │   ├── overview.md                     # Strand at weave root
+│   │   ├── research/                      # Loom (folder) inferred automatically
+│   │   │   ├── loom.yaml (optional)
+│   │   │   └── roadmap.md
+│   │   └── guides/building/primer.md      # Nested loom (guides/building)
+│   └── wiki/
 ├── docs/              # Documentation & static assets
-│   ├── logos/         # Logos (codex.svg, openstrand.svg)
-│   └── assets/        # Images and misc static files
+│   ├── logos/
+│   └── assets/
 ├── scripts/           # Build and utility scripts
 │   └── build-index.mjs
 └── index.json        # Generated search index
@@ -179,9 +184,9 @@ Frame.dev and OpenStrand consume this content via:
 3. **Index File** - Pre-compiled `index.json` for search
 
 ```javascript
-// Example: Fetch a strand
+// Example: Fetch a strand (file at any depth inside a weave)
 const response = await fetch(
-  'https://raw.githubusercontent.com/framersai/codex/main/weaves/frame/looms/openstrand/strands/architecture.md'
+  'https://raw.githubusercontent.com/framersai/codex/main/weaves/frame/openstrand/architecture.md'
 );
 const content = await response.text();
 ```

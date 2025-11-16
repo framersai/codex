@@ -316,7 +316,7 @@ class CodexCacheDB {
    * @returns {Promise<void>}
    * 
    * @example
-   * await cache.updateLoomStats('weaves/tech/looms/python', {
+   * await cache.updateLoomStats('weaves/tech/python', {
    *   totalFiles: 25,
    *   totalKeywords: 450,
    *   avgDifficulty: 'intermediate',
@@ -352,7 +352,7 @@ class CodexCacheDB {
    * @returns {Promise<Object|null>} Cached stats or null
    * 
    * @example
-   * const stats = await cache.getLoomStats('weaves/tech/looms/python');
+   * const stats = await cache.getLoomStats('weaves/tech/python');
    * console.log(`Loom has ${stats.totalFiles} strands`);
    */
   async getLoomStats(loomPath) {

@@ -356,7 +356,7 @@ Looms are YAML manifest files that organize strands into collections.
 ### File Location
 
 ```
-weaves/[weave-name]/looms/[loom-name]/loom.yaml
+weaves/[weave-name]/[optional-folder-path]/loom.yaml
 ```
 
 ### Required Fields
@@ -453,7 +453,7 @@ description: string
 scope: string (what this weave encompasses)
 boundaries: string (what's excluded)
 
-looms: array<string> (loom slugs in this weave)
+looms: array<string> (folder-relative loom slugs in this weave)
 
 metadata:
   domain: string
@@ -565,7 +565,7 @@ npm run validate
 Or validate specific files:
 
 ```bash
-npm run validate -- --files "weaves/tech/looms/python/strands/intro.md"
+npm run validate -- --files "weaves/tech/python/intro.md"
 ```
 
 ### Schema Compliance

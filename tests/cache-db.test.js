@@ -149,7 +149,7 @@ describe('CodexCacheDB', () => {
 
   describe('loom statistics', () => {
     it('should save and retrieve loom stats', async () => {
-      const loomPath = 'weaves/tech/looms/python';
+    const loomPath = 'weaves/tech/python';
       const stats = {
         totalFiles: 25,
         totalKeywords: 450,

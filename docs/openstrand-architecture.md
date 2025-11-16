@@ -93,7 +93,19 @@ This weave contains looms for:
 - Frame API reference
 - Architecture patterns
 
-Each loom contains strands (individual documents) that can reference each other.
+💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.
+
+```
+weaves/frame/
+├── weave.yaml
+├── overview.md
+├── openstrand/
+│   ├── loom.yaml
+│   └── architecture.md
+└── guides/agentos/deployment.md
+```
+
+Each folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.
 
 ### Metadata Schema
 

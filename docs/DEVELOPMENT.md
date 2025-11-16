@@ -305,10 +305,9 @@ When a file is uploaded/submitted, the system:
    ```
    weaves/
      [detected-weave]/        # Based on primary subject
-       looms/
-         [detected-loom]/      # Based on topic similarity
-           strands/
-             [filename].md
+       [topic-folder]/        # Any folder = loom (auto-detected)
+         subtopic/
+           [filename].md      # Strand (markdown file)
    ```
 
 ### Similarity Calculation
@@ -338,7 +337,7 @@ function findBestLoom(uploadedContent) {
 - Runs on every PR
 - Validates placement
 - Suggests better loom if similarity is low
-- Posts comment: "Consider moving to `looms/better-match/`"
+- Posts comment: "Consider moving to `weaves/<slug>/better-match/`"
 
 **AI-Powered (Optional):**
 - Only if `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` is set
@@ -614,7 +613,7 @@ node dist/auto-index.js
 
 3. **User Reviews Metadata:**
    - Auto-filled: title, summary, tags, difficulty
-   - Suggested loom: `weaves/technology/looms/programming/`
+   - Suggested loom: `weaves/technology/programming/`
    - User can edit or accept
 
 4. **PR Creation:**
@@ -625,9 +624,9 @@ node dist/auto-index.js
      sha: mainSha
    })
    
-   // Add file
-   await github.repos.createOrUpdateFileContents({
-     path: `weaves/technology/looms/programming/strands/${slug}.md`,
+  // Add file
+  await github.repos.createOrUpdateFileContents({
+    path: `weaves/technology/programming/${slug}.md`,
      content: base64(frontmatter + content),
      branch: branchName
    })
@@ -690,7 +689,7 @@ cat codex-report.json | jq '.summary'
 
 ```bash
 # Test single file
-node scripts/auto-index.js --files "weaves/tech/looms/python/strands/intro.md"
+node scripts/auto-index.js --files "weaves/tech/python/intro.md"
 
 # View extracted keywords
 node -e "
