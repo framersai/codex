@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="docs/logos/codex.svg" alt="Frame Codex" height="56">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/logos/openstrand.svg" alt="OpenStrand" height="56">
+  <a href="https://frame.dev" target="_blank" rel="noopener">
+    <img src="https://raw.githubusercontent.com/framersai/frame.dev/refs/heads/master/public/frame-logo-transparent.png" alt="Frame.dev" width="200" style="border-radius: 12px;">
+  </a>
 
 # Frame Codex
 
@@ -9,7 +9,11 @@
 
 *The OS for humans, the codex of humanity.*
 
-[Browse](https://frame.dev/codex) • [Documentation](../../wiki/codex/README.md) • [Contribute](#contributing)
+[![GitHub](https://img.shields.io/badge/GitHub-framersai%2Fcodex-black?logo=github)](https://github.com/framersai/codex)
+[![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/contributing/how-to-submit.md)
+
+[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contribute](docs/contributing/how-to-submit.md) • [Discord](https://discord.gg/VXXC4SJMKh)
 
 **AI Infrastructure for Superintelligence.**
 
@@ -225,15 +229,16 @@ With attribution requirement.
 
 <div align="center">
   <br/>
-  <p>
-    <a href="https://frame.dev">Frame.dev</a> •
-    <a href="https://frame.dev/codex">Frame Codex</a> •
-    <a href="https://openstrand.ai">OpenStrand</a>
-  </p>
-  <p>
-    <a href="https://github.com/framersai">GitHub</a> •
-    <a href="https://twitter.com/framersai">Twitter</a>
-  </p>
+  
+  ### Connect
+  
+  [Website](https://frame.dev) • [Frame Codex](https://frame.dev/codex) • [OpenStrand](https://openstrand.ai) • [Discord](https://discord.gg/VXXC4SJMKh) • [GitHub](https://github.com/framersai) • [Twitter](https://twitter.com/framersai)
+  
   <br/>
+  
   <sub>Building humanity's knowledge repository for the AI age</sub>
+  
+  <br/>
+  
+  <sub>Made with ❤️ by [Framers](https://frame.dev) • Supported by [OpenAI](https://openai.com)</sub>
 </div>

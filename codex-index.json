@@ -56,7 +56,7 @@
           "best-practices": 0.14285714285714285,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:00:45.519Z"
+        "lastIndexed": "2025-11-16T00:06:59.121Z"
       }
     },
     "validation": {
@@ -190,7 +190,7 @@
           "getting-started": 0.125,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:00:45.578Z"
+        "lastIndexed": "2025-11-16T00:06:59.155Z"
       }
     },
     "validation": {
@@ -266,7 +266,7 @@
           "knowledge": 0.14285714285714285,
           "architecture": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:00:45.587Z"
+        "lastIndexed": "2025-11-16T00:06:59.162Z"
       }
     },
     "validation": {
@@ -396,7 +396,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:00:45.610Z"
+        "lastIndexed": "2025-11-16T00:06:59.172Z"
       }
     },
     "validation": {
@@ -626,7 +626,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:00:45.650Z"
+        "lastIndexed": "2025-11-16T00:06:59.190Z"
       }
     },
     "validation": {
@@ -729,7 +729,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T00:00:45.678Z"
+        "lastIndexed": "2025-11-16T00:06:59.196Z"
       }
     },
     "validation": {
@@ -841,7 +841,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.6666666666666666
         },
-        "lastIndexed": "2025-11-16T00:00:46.549Z"
+        "lastIndexed": "2025-11-16T00:06:59.524Z"
       }
     },
     "validation": {
@@ -960,7 +960,7 @@
           "testing": 0.5,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:00:48.466Z"
+        "lastIndexed": "2025-11-16T00:07:00.585Z"
       }
     },
     "validation": {
@@ -1046,7 +1046,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T00:00:50.391Z"
+        "lastIndexed": "2025-11-16T00:07:04.192Z"
       }
     },
     "validation": {
@@ -1171,7 +1171,7 @@
           "testing": 0.3333333333333333,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T00:00:51.189Z"
+        "lastIndexed": "2025-11-16T00:07:04.872Z"
       }
     },
     "validation": {
@@ -1273,7 +1273,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.5
         },
-        "lastIndexed": "2025-11-16T00:00:52.321Z"
+        "lastIndexed": "2025-11-16T00:07:05.852Z"
       }
     },
     "validation": {
@@ -1330,11 +1330,11 @@
           "openstrand",
           "reference",
           "array",
+          "content",
           "comprehensive",
           "getting",
           "started",
           "unique",
-          "content",
           "display",
           "architecture"
         ],
@@ -1361,7 +1361,6 @@
           "getting-started",
           "architecture",
           "api-reference",
-          "troubleshooting",
           "deployment",
           "testing"
         ],
@@ -1375,24 +1374,21 @@
           "getting-started": 0.75,
           "architecture": 0.42857142857142855,
           "api-reference": 0.125,
-          "troubleshooting": 0.125,
           "deployment": 0.3333333333333333,
           "testing": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T00:00:53.280Z"
+        "lastIndexed": "2025-11-16T00:07:06.773Z"
       }
     },
     "validation": {
-      "valid": false,
-      "errors": [
-        "Contains placeholder text"
-      ],
+      "valid": true,
+      "errors": [],
       "warnings": [],
       "suggestions": [
         "Key phrases found: controlled vocabulary, frame dev, openstrand architecture"
       ]
     },
-    "content": "\r\n# Frame Codex Schema Reference\r\n\r\nThis document provides the complete schema reference for all Frame Codex content types.\r\n\r\n## Weave Schema\r\n\r\nA Weave represents a complete, self-contained universe of knowledge.\r\n\r\n### Required Fields\r\n\r\n- `slug` (string): Unique identifier, lowercase with hyphens\r\n- `title` (string): Human-readable name\r\n- `description` (string): Comprehensive description\r\n\r\n### Optional Fields\r\n\r\n- `maintainedBy` (object): Maintainer information\r\n  - `name` (string): Name of person or organization\r\n  - `url` (string): Contact or website URL\r\n- `license` (string): Content license (default: MIT)\r\n- `tags` (array): Categorization tags from controlled vocabulary\r\n\r\n### Example\r\n\r\n```yaml\r\nslug: frame\r\ntitle: Frame.dev Ecosystem\r\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\r\nmaintainedBy:\r\n  name: Frame.dev Team\r\n  url: https://frame.dev\r\nlicense: MIT\r\ntags:\r\n  - technology\r\n  - ai-infrastructure\r\n  - superintelligence\r\n```\r\n\r\n## Loom Schema\r\n\r\nA Loom is a curated collection of related strands within a weave.\r\n\r\n### Required Fields\r\n\r\n- `slug` (string): Unique identifier within the weave\r\n- `title` (string): Display title\r\n- `summary` (string): Brief description\r\n\r\n### Optional Fields\r\n\r\n- `tags` (array): Subject tags for categorization\r\n- `ordering` (object): How strands are organized\r\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\r\n  - `items` (array): Ordered list of strand slugs\r\n\r\n### Example\r\n\r\n```yaml\r\nslug: getting-started\r\ntitle: Getting Started with Frame\r\nsummary: Essential guides and tutorials for new Frame developers\r\ntags:\r\n  - tutorial\r\n  - beginner\r\nordering:\r\n  type: sequential\r\n  items:\r\n    - installation\r\n    - hello-world\r\n    - core-concepts\r\n    - first-project\r\n```\r\n\r\n## Strand Schema\r\n\r\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\r\n\r\n### Required Fields\r\n\r\n- `id` (string): Globally unique identifier (UUID)\r\n- `slug` (string): URL-friendly identifier\r\n- `title` (string): Display title\r\n\r\n### Optional Fields\r\n\r\n- `summary` (string): Brief abstract (recommended for search)\r\n- `version` (string): Semantic version (default: 1.0.0)\r\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\r\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\r\n- `taxonomy` (object): Categorization\r\n  - `subjects` (array): High-level categories\r\n  - `topics` (array): Specific topics\r\n- `tags` (array): Freeform tags\r\n- `relationships` (object): Connections to other strands\r\n  - `requires` (array): Prerequisites\r\n  - `references` (array): Related strands\r\n  - `seeAlso` (array): External URLs\r\n- `publishing` (object): Publication metadata\r\n  - `created` (string): ISO 8601 timestamp\r\n  - `updated` (string): ISO 8601 timestamp\r\n  - `status` (enum): `draft`, `published`, `archived`\r\n\r\n### Example\r\n\r\n```yaml\r\n---\r\nid: 550e8400-e29b-41d4-a716-446655440000\r\nslug: openstrand-architecture\r\ntitle: OpenStrand Architecture Overview\r\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\r\nversion: 1.2.0\r\ncontentType: markdown\r\ndifficulty: intermediate\r\ntaxonomy:\r\n  subjects:\r\n    - technology\r\n    - ai\r\n  topics:\r\n    - architecture\r\n    - getting-started\r\ntags:\r\n  - openstrand\r\n  - architecture\r\n  - knowledge-graph\r\nrelationships:\r\n  requires:\r\n    - core-concepts\r\n  references:\r\n    - frame-codex-intro\r\n    - api-reference\r\n  seeAlso:\r\n    - https://openstrand.ai\r\n    - https://frame.dev\r\npublishing:\r\n  created: 2025-01-15T00:00:00Z\r\n  updated: 2025-01-15T00:00:00Z\r\n  status: published\r\n---\r\n\r\n# Your content here...\r\n```\r\n\r\n## Validation Rules\r\n\r\n### Slug Format\r\n\r\n- Lowercase letters, numbers, and hyphens only\r\n- No spaces or special characters\r\n- Must be unique within scope (weave/loom)\r\n\r\n### ID Format\r\n\r\n- Must be a valid UUID v4\r\n- Globally unique across all strands\r\n- Generate using `npm run generate-template`\r\n\r\n### Version Format\r\n\r\n- Semantic versioning: `MAJOR.MINOR.PATCH`\r\n- Example: `1.0.0`, `2.1.3`\r\n\r\n### Content Requirements\r\n\r\n- Minimum 100 characters of meaningful content\r\n- No placeholder text (lorem ipsum, TODO, FIXME)\r\n- Proper markdown formatting\r\n- Valid YAML frontmatter\r\n\r\n## Auto-Generated Metadata\r\n\r\nThe indexer automatically generates:\r\n\r\n- **Keywords**: Extracted using TF-IDF algorithm\r\n- **Phrases**: Common multi-word expressions\r\n- **Subjects**: Matched from controlled vocabulary\r\n- **Topics**: Detected from content analysis\r\n- **Difficulty**: Inferred from language complexity\r\n- **Summary**: Generated if missing\r\n\r\nYou can override any auto-generated values by specifying them explicitly in your frontmatter.\r\n\r\n## Controlled Vocabulary\r\n\r\nTags should use terms from the controlled vocabulary when possible:\r\n\r\n### Subjects\r\n- technology, science, philosophy, ai, knowledge, design, security\r\n\r\n### Topics\r\n- getting-started, architecture, api-reference, best-practices, troubleshooting, deployment, testing, performance\r\n\r\n### Difficulty\r\n- b",
-    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules string fields identifier url frame openstrand reference array comprehensive getting started unique content display architecture controlled vocabulary frame dev openstrand architecture npm run frame codex getting started schema reference required fields slug string unique identifier"
+    "content": "\r\n# Frame Codex Schema Reference\r\n\r\nThis document provides the complete schema reference for all Frame Codex content types.\r\n\r\n## Weave Schema\r\n\r\nA Weave represents a complete, self-contained universe of knowledge.\r\n\r\n### Required Fields\r\n\r\n- `slug` (string): Unique identifier, lowercase with hyphens\r\n- `title` (string): Human-readable name\r\n- `description` (string): Comprehensive description\r\n\r\n### Optional Fields\r\n\r\n- `maintainedBy` (object): Maintainer information\r\n  - `name` (string): Name of person or organization\r\n  - `url` (string): Contact or website URL\r\n- `license` (string): Content license (default: MIT)\r\n- `tags` (array): Categorization tags from controlled vocabulary\r\n\r\n### Example\r\n\r\n```yaml\r\nslug: frame\r\ntitle: Frame.dev Ecosystem\r\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\r\nmaintainedBy:\r\n  name: Frame.dev Team\r\n  url: https://frame.dev\r\nlicense: MIT\r\ntags:\r\n  - technology\r\n  - ai-infrastructure\r\n  - superintelligence\r\n```\r\n\r\n## Loom Schema\r\n\r\nA Loom is a curated collection of related strands within a weave.\r\n\r\n### Required Fields\r\n\r\n- `slug` (string): Unique identifier within the weave\r\n- `title` (string): Display title\r\n- `summary` (string): Brief description\r\n\r\n### Optional Fields\r\n\r\n- `tags` (array): Subject tags for categorization\r\n- `ordering` (object): How strands are organized\r\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\r\n  - `items` (array): Ordered list of strand slugs\r\n\r\n### Example\r\n\r\n```yaml\r\nslug: getting-started\r\ntitle: Getting Started with Frame\r\nsummary: Essential guides and tutorials for new Frame developers\r\ntags:\r\n  - tutorial\r\n  - beginner\r\nordering:\r\n  type: sequential\r\n  items:\r\n    - installation\r\n    - hello-world\r\n    - core-concepts\r\n    - first-project\r\n```\r\n\r\n## Strand Schema\r\n\r\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\r\n\r\n### Required Fields\r\n\r\n- `id` (string): Globally unique identifier (UUID)\r\n- `slug` (string): URL-friendly identifier\r\n- `title` (string): Display title\r\n\r\n### Optional Fields\r\n\r\n- `summary` (string): Brief abstract (recommended for search)\r\n- `version` (string): Semantic version (default: 1.0.0)\r\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\r\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\r\n- `taxonomy` (object): Categorization\r\n  - `subjects` (array): High-level categories\r\n  - `topics` (array): Specific topics\r\n- `tags` (array): Freeform tags\r\n- `relationships` (object): Connections to other strands\r\n  - `requires` (array): Prerequisites\r\n  - `references` (array): Related strands\r\n  - `seeAlso` (array): External URLs\r\n- `publishing` (object): Publication metadata\r\n  - `created` (string): ISO 8601 timestamp\r\n  - `updated` (string): ISO 8601 timestamp\r\n  - `status` (enum): `draft`, `published`, `archived`\r\n\r\n### Example\r\n\r\n```yaml\r\n---\r\nid: 550e8400-e29b-41d4-a716-446655440000\r\nslug: openstrand-architecture\r\ntitle: OpenStrand Architecture Overview\r\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\r\nversion: 1.2.0\r\ncontentType: markdown\r\ndifficulty: intermediate\r\ntaxonomy:\r\n  subjects:\r\n    - technology\r\n    - ai\r\n  topics:\r\n    - architecture\r\n    - getting-started\r\ntags:\r\n  - openstrand\r\n  - architecture\r\n  - knowledge-graph\r\nrelationships:\r\n  requires:\r\n    - core-concepts\r\n  references:\r\n    - frame-codex-intro\r\n    - api-reference\r\n  seeAlso:\r\n    - https://openstrand.ai\r\n    - https://frame.dev\r\npublishing:\r\n  created: 2025-01-15T00:00:00Z\r\n  updated: 2025-01-15T00:00:00Z\r\n  status: published\r\n---\r\n\r\n# Your content here...\r\n```\r\n\r\n## Validation Rules\r\n\r\n### Slug Format\r\n\r\n- Lowercase letters, numbers, and hyphens only\r\n- No spaces or special characters\r\n- Must be unique within scope (weave/loom)\r\n\r\n### ID Format\r\n\r\n- Must be a valid UUID v4\r\n- Globally unique across all strands\r\n- Generate using `npm run generate-template`\r\n\r\n### Version Format\r\n\r\n- Semantic versioning: `MAJOR.MINOR.PATCH`\r\n- Example: `1.0.0`, `2.1.3`\r\n\r\n### Content Requirements\r\n\r\n- Minimum 100 characters of meaningful content\r\n- No unfinished sections or test content\r\n- Proper markdown formatting\r\n- Valid YAML frontmatter\r\n\r\n## Auto-Generated Metadata\r\n\r\nThe indexer automatically generates:\r\n\r\n- **Keywords**: Extracted using TF-IDF algorithm\r\n- **Phrases**: Common multi-word expressions\r\n- **Subjects**: Matched from controlled vocabulary\r\n- **Topics**: Detected from content analysis\r\n- **Difficulty**: Inferred from language complexity\r\n- **Summary**: Generated if missing\r\n\r\nYou can override any auto-generated values by specifying them explicitly in your frontmatter.\r\n\r\n## Controlled Vocabulary\r\n\r\nTags should use terms from the controlled vocabulary when possible:\r\n\r\n### Subjects\r\n- technology, science, philosophy, ai, knowledge, design, security\r\n\r\n### Topics\r\n- getting-started, architecture, api-reference, best-practices, troubleshooting, deployment, testing, performance\r\n\r\n### Difficulty\r\n- beginner,",
+    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules string fields identifier url frame openstrand reference array content comprehensive getting started unique display architecture controlled vocabulary frame dev openstrand architecture npm run frame codex getting started schema reference required fields slug string unique identifier"
   }
 ]

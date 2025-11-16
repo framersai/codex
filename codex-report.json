@@ -3,8 +3,8 @@
     "totalFiles": 12,
     "indexedFiles": 12,
     "skippedFiles": 0,
-    "validFiles": 11,
-    "filesWithErrors": 1,
+    "validFiles": 12,
+    "filesWithErrors": 0,
     "filesWithWarnings": 0,
     "filesWithSuggestions": 12
   },
@@ -23,7 +23,7 @@
       "deployment": 8,
       "getting-started": 8,
       "api-reference": 6,
-      "troubleshooting": 6,
+      "troubleshooting": 5,
       "testing": 6,
       "performance": 3
     },
@@ -506,11 +506,6 @@
       },
       {
         "file": "docs/schema-reference.md",
-        "category": "troubleshooting",
-        "score": 0.125
-      },
-      {
-        "file": "docs/schema-reference.md",
         "category": "deployment",
         "score": 0.3333333333333333
       },
@@ -522,18 +517,9 @@
     ]
   },
   "validation": {
-    "commonErrors": {
-      "Contains placeholder text": 1
-    },
+    "commonErrors": {},
     "commonWarnings": {},
-    "fileErrors": [
-      {
-        "path": "docs/schema-reference.md",
-        "errors": [
-          "Contains placeholder text"
-        ]
-      }
-    ],
+    "fileErrors": [],
     "fileWarnings": []
   },
   "vocabulary": {
@@ -610,7 +596,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "7.89s",
+    "timeElapsed": "7.71s",
     "cacheHitRate": "0%",
     "filesProcessed": 12,
     "filesCached": 0,
