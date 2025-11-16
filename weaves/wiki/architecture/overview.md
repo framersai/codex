@@ -25,17 +25,23 @@ Frame Codex is a structured, version-controlled knowledge repository designed as
 
 ## Core Concepts
 
-### Three-Tier Knowledge Organization
+### Four-Tier Knowledge Organization
 
 ```
-Weave (Universe)
-├── Loom (Folder)
-│   ├── Strand (markdown file)
-│   ├── Strand (markdown file)
-│   └── ...
-└── Loom (Folder)
-    └── ...
+Fabric (Whole Codex)
+└── Weave (Universe)
+    ├── Loom (Folder)
+    │   ├── Strand (markdown file)
+    │   ├── Strand (markdown file)
+    │   └── ...
+    └── Loom (Folder)
+        └── ...
 ```
+
+**Fabric**: The entire Codex corpus viewed as one living whole
+- Composed of multiple weaves (e.g., `frame`, `wiki`, `technology`)
+- Enables cross-weave traversal when operating at Fabric scope
+- Used by superintelligence/agents for holistic aggregation and synthesis
 
 **Weave**: Complete, isolated knowledge universe
 - No cross-weave relationships
@@ -60,6 +66,16 @@ Weave (Universe)
 4. **Scalability**: Can grow to millions of strands
 5. **AI-Friendly**: Clear structure for LLM ingestion
 6. **Simple**: Folders = looms, markdown files = strands (auto-detected)
+
+### Superintelligence at Fabric Scope
+
+While weaves remain isolated for organization and provenance, analysis at the **Fabric** level permits traversal across weaves for:
+
+- Cross-domain retrieval and context assembly
+- Whole-of-corpus synthesis and summarization
+- Global topic maps and knowledge graphs
+
+Fabric-level queries always preserve original weave/loom/strand provenance.
 
 ## SQL Cache Layer
 

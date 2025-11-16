@@ -362,7 +362,7 @@ To improve your rate limits, you can optionally set `GH_PAT` or `NEXT_PUBLIC_GH_
 
 **Fallback**: If GraphQL fails or no PAT is provided, the viewer automatically falls back to the REST API.
 
-See [lib/github-graphql.ts](https://github.com/framersai/frame.dev/blob/master/apps/frame.dev/lib/github-graphql.ts) for implementation details.
+See [lib/githubGraphql.ts](https://github.com/framersai/frame.dev/blob/master/apps/frame.dev/lib/githubGraphql.ts) for implementation details.
 
 ### 🔒 Privacy & Data Storage
 
