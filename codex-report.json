@@ -529,7 +529,7 @@
       {
         "file": "docs/openstrand-architecture.md",
         "category": "best-practices",
-        "score": 0.2857142857142857
+        "score": 0.42857142857142855
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -665,7 +665,7 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 151,
+    "totalUniqueTerms": 152,
     "suggestedAdditions": [
       {
         "term": "codex",
@@ -718,7 +718,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "8.52s",
+    "timeElapsed": "43.91s",
     "cacheHitRate": "0%",
     "filesProcessed": 14,
     "filesCached": 0,

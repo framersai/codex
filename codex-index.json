@@ -114,7 +114,7 @@
           "troubleshooting": 0.125,
           "deployment": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T06:46:26.092Z"
+        "lastIndexed": "2025-11-16T15:00:06.961Z"
       }
     },
     "validation": {
@@ -190,7 +190,7 @@
           "knowledge": 0.14285714285714285,
           "architecture": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T06:46:26.102Z"
+        "lastIndexed": "2025-11-16T15:00:07.002Z"
       }
     },
     "validation": {
@@ -309,7 +309,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T06:46:26.191Z"
+        "lastIndexed": "2025-11-16T15:00:07.690Z"
       }
     },
     "validation": {
@@ -414,7 +414,7 @@
           "deployment": 0.16666666666666666,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T06:46:26.210Z"
+        "lastIndexed": "2025-11-16T15:00:08.064Z"
       }
     },
     "validation": {
@@ -544,7 +544,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T06:46:26.222Z"
+        "lastIndexed": "2025-11-16T15:00:08.143Z"
       }
     },
     "validation": {
@@ -774,7 +774,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T06:46:26.253Z"
+        "lastIndexed": "2025-11-16T15:00:08.602Z"
       }
     },
     "validation": {
@@ -877,7 +877,7 @@
           "architecture": 0.14285714285714285,
           "best-practices": 0.14285714285714285
         },
-        "lastIndexed": "2025-11-16T06:46:26.262Z"
+        "lastIndexed": "2025-11-16T15:00:08.713Z"
       }
     },
     "validation": {
@@ -991,7 +991,7 @@
           "testing": 0.16666666666666666,
           "performance": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T06:46:26.476Z"
+        "lastIndexed": "2025-11-16T15:00:13.371Z"
       }
     },
     "validation": {
@@ -1096,7 +1096,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.6666666666666666
         },
-        "lastIndexed": "2025-11-16T06:46:26.990Z"
+        "lastIndexed": "2025-11-16T15:00:16.550Z"
       }
     },
     "validation": {
@@ -1215,7 +1215,7 @@
           "testing": 0.5,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T06:46:28.118Z"
+        "lastIndexed": "2025-11-16T15:00:22.078Z"
       }
     },
     "validation": {
@@ -1301,7 +1301,7 @@
           "testing": 0.5,
           "performance": 0.5
         },
-        "lastIndexed": "2025-11-16T06:46:30.037Z"
+        "lastIndexed": "2025-11-16T15:00:30.034Z"
       }
     },
     "validation": {
@@ -1365,31 +1365,31 @@
         "keywords": [
           "knowledge",
           "infrastructure",
+          "fabric",
           "openstrand",
           "frame",
           "search",
           "immutable",
           "versions",
           "enables",
+          "collection",
           "powered",
           "layer",
           "reference",
           "api",
-          "strands",
-          "strand",
-          "structured"
+          "strands"
         ],
         "phrases": [
           "frame codex",
           "frame dev",
+          "markdown file",
           "openstrand architecture",
           "knowledge infrastructure",
           "looms strands",
           "metadata enables",
+          "strand markdown",
           "weave yaml",
-          "weaves frame",
-          "frame api",
-          "related content"
+          "weaves frame"
         ],
         "subjects": [
           "technology",
@@ -1420,13 +1420,13 @@
           "getting-started": 0.125,
           "architecture": 0.5714285714285714,
           "api-reference": 0.125,
-          "best-practices": 0.2857142857142857,
+          "best-practices": 0.42857142857142855,
           "troubleshooting": 0.25,
           "deployment": 0.3333333333333333,
           "testing": 0.3333333333333333,
           "performance": 0.16666666666666666
         },
-        "lastIndexed": "2025-11-16T06:46:31.180Z"
+        "lastIndexed": "2025-11-16T15:00:34.112Z"
       }
     },
     "validation": {
@@ -1434,11 +1434,11 @@
       "errors": [],
       "warnings": [],
       "suggestions": [
-        "Key phrases found: frame codex, frame dev, openstrand architecture"
+        "Key phrases found: frame codex, frame dev, markdown file"
       ]
     },
-    "content": "\r\n# OpenStrand Architecture Overview\r\n\r\nOpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex. It provides a structured, AI-native way to organize, store, and retrieve humanity's knowledge.\r\n\r\n## Core Concepts\r\n\r\n### The Three-Tier Hierarchy\r\n\r\nOpenStrand organizes knowledge using three fundamental primitives:\r\n\r\n**Strand** - The atomic unit of knowledge\r\n- A single document, image, dataset, or media file\r\n- Contains rich metadata for categorization and discovery\r\n- Can reference other strands within the same weave\r\n- Immutable once published (new versions create new strands)\r\n\r\n**Loom** - A curated collection of related strands\r\n- Groups strands by topic, theme, or learning path\r\n- Defines ordering (sequential, hierarchical, or network)\r\n- Provides context and relationships between strands\r\n- Acts as a module or chapter in the knowledge base\r\n\r\n**Weave** - A complete universe of knowledge\r\n- Self-contained collection with no external dependencies\r\n- Represents a domain, project, or knowledge area\r\n- No relationships exist between different weaves\r\n- Think of it as a separate universe or dimension\r\n\r\n### Why This Structure?\r\n\r\nThe Weave/Loom/Strand architecture solves several key problems:\r\n\r\n1. **Isolation**: Weaves are completely independent, preventing knowledge pollution\r\n2. **Scalability**: Each weave can grow infinitely without affecting others\r\n3. **Clarity**: Clear boundaries make it obvious where knowledge belongs\r\n4. **Versioning**: Strands are immutable, making version control natural\r\n5. **AI-Friendly**: Structured metadata enables semantic search and RAG\r\n\r\n## How It Works\r\n\r\n### Knowledge Flow\r\n\r\n```\r\nWeave (Universe)\r\n  └── Loom (Collection)\r\n        ├── Strand (Document)\r\n        ├── Strand (Image)\r\n        └── Strand (Dataset)\r\n```\r\n\r\n### Example: Frame Ecosystem Weave\r\n\r\n```yaml\r\n# weaves/frame/weave.yaml\r\nslug: frame\r\ntitle: Frame.dev Ecosystem\r\ndescription: Complete knowledge base for Frame products and infrastructure\r\n```\r\n\r\nThis weave contains looms for:\r\n- OpenStrand documentation\r\n- AgentOS guides\r\n- Frame API reference\r\n- Architecture patterns\r\n\r\n💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.\r\n\r\n```\r\nweaves/frame/\r\n├── weave.yaml\r\n├── overview.md\r\n├── openstrand/\r\n│   ├── loom.yaml\r\n│   └── architecture.md\r\n└── guides/agentos/deployment.md\r\n```\r\n\r\nEach folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.\r\n\r\n### Metadata Schema\r\n\r\nEvery strand includes:\r\n- **Identity**: UUID, slug, title\r\n- **Content**: Summary, body, content type\r\n- **Taxonomy**: Subjects, topics, tags\r\n- **Relationships**: Prerequisites, references, related content\r\n- **Publishing**: Dates, status, version\r\n\r\nThis rich metadata enables:\r\n- Semantic search\r\n- Knowledge graph visualization\r\n- Prerequisite tracking\r\n- Learning path generation\r\n- AI-powered recommendations\r\n\r\n## Integration with Frame Codex\r\n\r\nFrame Codex is the public manifestation of OpenStrand's architecture:\r\n\r\n1. **Data Layer**: Codex stores all weaves, looms, and strands as files\r\n2. **Index Layer**: Auto-indexing creates searchable metadata\r\n3. **API Layer**: Frame API exposes the knowledge graph\r\n4. **UI Layer**: Frame.dev provides the browsing interface\r\n\r\n### For LLMs\r\n\r\nThe structure is optimized for Large Language Model consumption:\r\n\r\n- **Structured metadata** enables precise retrieval\r\n- **Clear relationships** provide context\r\n- **Immutable versions** ensure consistency\r\n- **Rich tagging** improves relevance\r\n\r\nLLMs can:\r\n- Navigate the knowledge graph\r\n- Understand prerequisites\r\n- Find related content\r\n- Extract specific information\r\n- Generate summaries\r\n\r\n### For Humans\r\n\r\nThe same structure benefits human users:\r\n\r\n- **Browse by topic** through looms\r\n- **Follow learning paths** with ordered strands\r\n- **Discover connections** via relationships\r\n- **Search semantically** using natural language\r\n- **Track versions** to see evolution\r\n\r\n## Technical Implementation\r\n\r\n### Storage\r\n\r\n- **GitHub**: Primary storage as markdown and YAML files\r\n- **Git**: Version control for all content\r\n- **Raw URLs**: Direct access to any strand\r\n\r\n### Indexing\r\n\r\n- **Auto-indexing**: NLP-powered categorization on every commit\r\n- **TF-IDF**: Keyword extraction for search\r\n- **Validation**: Quality checks before merging\r\n- **Relationships**: Automatic link discovery\r\n\r\n### Access\r\n\r\n- **GitHub API**: Dynamic folder browsing\r\n- **Raw Content**: Direct file fetching\r\n- **Search Index**: Pre-built JSON for client-side search\r\n- **Frame API**: Structured queries with relationships\r\n\r\n## Roadmap\r\n\r\nFuture enhancements planned:\r\n\r\n1. **LLM-Powered QC**: Automated quality control using our own models\r\n2. **Smart Suggestions**: AI-generated metadata improvements\r\n3. **Auto-Relationships**: Discover connections between strands\r\n4. **Translation**: Multi-language support with auto-translation\r\n5. **Embe",
-    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex knowledge infrastructure openstrand frame search immutable versions enables powered layer reference api strands strand structured frame codex frame dev openstrand architecture knowledge infrastructure looms strands metadata enables weave yaml weaves frame frame api related content"
+    "content": "\r\n# OpenStrand Architecture Overview\r\n\r\nOpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex. It provides a structured, AI-native way to organize, store, and retrieve humanity's knowledge.\r\n\r\n## Core Concepts\r\n\r\n### The Four-Tier Hierarchy\r\n\r\nOpenStrand organizes knowledge using four fundamental primitives:\r\n\r\n**Fabric** - A collection of weaves\r\n- The highest level of organization\r\n- Represents an entire knowledge repository or ecosystem\r\n- Example: Frame Codex itself is a fabric\r\n- Contains multiple weaves that are conceptually related but independent\r\n\r\n**Strand** - The atomic unit of knowledge\r\n- A single document, image, dataset, or media file\r\n- Contains rich metadata for categorization and discovery\r\n- Can reference other strands within the same weave\r\n- Immutable once published (new versions create new strands)\r\n\r\n**Loom** - A curated collection of related strands\r\n- Groups strands by topic, theme, or learning path\r\n- Defines ordering (sequential, hierarchical, or network)\r\n- Provides context and relationships between strands\r\n- Acts as a module or chapter in the knowledge base\r\n\r\n**Weave** - A complete universe of knowledge\r\n- Self-contained collection with no external dependencies\r\n- Represents a domain, project, or knowledge area\r\n- No relationships exist between different weaves\r\n- Think of it as a separate universe or dimension\r\n\r\n### Why This Structure?\r\n\r\nThe Fabric/Weave/Loom/Strand architecture solves several key problems:\r\n\r\n1. **Isolation**: Weaves are completely independent, preventing knowledge pollution\r\n2. **Scalability**: Each weave can grow infinitely without affecting others\r\n3. **Clarity**: Clear boundaries make it obvious where knowledge belongs\r\n4. **Versioning**: Strands are immutable, making version control natural\r\n5. **AI-Friendly**: Structured metadata enables semantic search and RAG\r\n\r\n## How It Works\r\n\r\n### Knowledge Flow\r\n\r\n```\r\nFabric (Repository)\r\n  └── Weave (Universe)\r\n        └── Loom (Collection / any subdirectory)\r\n              ├── Strand (Markdown file)\r\n              ├── Strand (Markdown file)\r\n              └── Loom (Nested subdirectory)\r\n                    └── Strand (Markdown file)\r\n```\r\n\r\n### Example: Frame Ecosystem Weave\r\n\r\n```yaml\r\n# weaves/frame/weave.yaml\r\nslug: frame\r\ntitle: Frame.dev Ecosystem\r\ndescription: Complete knowledge base for Frame products and infrastructure\r\n```\r\n\r\nThis weave contains looms for:\r\n- OpenStrand documentation\r\n- AgentOS guides\r\n- Frame API reference\r\n- Architecture patterns\r\n\r\n💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.\r\n\r\n```\r\nweaves/frame/\r\n├── weave.yaml\r\n├── overview.md\r\n├── openstrand/\r\n│   ├── loom.yaml\r\n│   └── architecture.md\r\n└── guides/agentos/deployment.md\r\n```\r\n\r\nEach folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.\r\n\r\n### Metadata Schema\r\n\r\nEvery strand includes:\r\n- **Identity**: UUID, slug, title\r\n- **Content**: Summary, body, content type\r\n- **Taxonomy**: Subjects, topics, tags\r\n- **Relationships**: Prerequisites, references, related content\r\n- **Publishing**: Dates, status, version\r\n\r\nThis rich metadata enables:\r\n- Semantic search\r\n- Knowledge graph visualization\r\n- Prerequisite tracking\r\n- Learning path generation\r\n- AI-powered recommendations\r\n\r\n## Integration with Frame Codex\r\n\r\nFrame Codex is the public manifestation of OpenStrand's architecture:\r\n\r\n1. **Data Layer**: Codex stores all weaves, looms, and strands as files\r\n2. **Index Layer**: Auto-indexing creates searchable metadata\r\n3. **API Layer**: Frame API exposes the knowledge graph\r\n4. **UI Layer**: Frame.dev provides the browsing interface\r\n\r\n### For LLMs\r\n\r\nThe structure is optimized for Large Language Model consumption:\r\n\r\n- **Structured metadata** enables precise retrieval\r\n- **Clear relationships** provide context\r\n- **Immutable versions** ensure consistency\r\n- **Rich tagging** improves relevance\r\n\r\nLLMs can:\r\n- Navigate the knowledge graph\r\n- Understand prerequisites\r\n- Find related content\r\n- Extract specific information\r\n- Generate summaries\r\n\r\n### For Humans\r\n\r\nThe same structure benefits human users:\r\n\r\n- **Browse by topic** through looms\r\n- **Follow learning paths** with ordered strands\r\n- **Discover connections** via relationships\r\n- **Search semantically** using natural language\r\n- **Track versions** to see evolution\r\n\r\n## Technical Implementation\r\n\r\n### Storage\r\n\r\n- **GitHub**: Primary storage as markdown and YAML files\r\n- **Git**: Version control for all content\r\n- **Raw URLs**: Direct access to any strand\r\n\r\n### Indexing\r\n\r\n- **Auto-indexing**: NLP-powered categorization on every commit\r\n- **TF-IDF**: Keyword extraction for search\r\n- **Validation**: Quality checks before merging\r\n- **Relationships**: Automatic link discovery\r\n\r\n### Access\r\n\r\n- **GitHub API**: Dynamic folder browsing\r\n- **Raw Content**: Direct file fetching\r\n- **Search Index**: Pre-built JSON for ",
+    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex knowledge infrastructure fabric openstrand frame search immutable versions enables collection powered layer reference api strands frame codex frame dev markdown file openstrand architecture knowledge infrastructure looms strands metadata enables strand markdown weave yaml weaves frame"
   },
   {
     "path": "docs/RECATALOG_GUIDE.md",
@@ -1528,7 +1528,7 @@
           "deployment": 0.16666666666666666,
           "testing": 0.5
         },
-        "lastIndexed": "2025-11-16T06:46:33.504Z"
+        "lastIndexed": "2025-11-16T15:00:42.217Z"
       }
     },
     "validation": {
@@ -1632,7 +1632,7 @@
           "deployment": 0.3333333333333333,
           "testing": 0.3333333333333333
         },
-        "lastIndexed": "2025-11-16T06:46:34.553Z"
+        "lastIndexed": "2025-11-16T15:00:50.419Z"
       }
     },
     "validation": {
