@@ -12,8 +12,10 @@
 [![GitHub](https://img.shields.io/badge/GitHub-framersai%2Fcodex-black?logo=github)](https://github.com/framersai/codex)
 [![License](https://img.shields.io/badge/License-CC--BY--4.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/contributing/how-to-submit.md)
+[![OpenStrand](https://img.shields.io/badge/Schema-OpenStrand-purple)](https://openstrand.ai)
+[![Build](https://img.shields.io/github/actions/workflow/status/framersai/codex/auto-index.yml?label=Index)](https://github.com/framersai/codex/actions)
 
-[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contribute](docs/contributing/how-to-submit.md) • [Discord](https://discord.gg/VXXC4SJMKh)
+[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/VXXC4SJMKh)
 
 **AI Infrastructure for Superintelligence.**
 
@@ -34,6 +36,81 @@ Frame Codex is a data-only knowledge repository designed to be the canonical sou
 
 - **Frame Codex**: Public markdown knowledge repository (this repo) - read-only, curated, version-controlled
 - **OpenStrand**: Full personal knowledge management platform at [openstrand.ai](https://openstrand.ai) - supports any file type (images, videos, PDFs, code), AI analysis, serialization to markdown, private workspaces, and advanced features
+
+**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands, ensuring compatibility across the ecosystem.
+
+## 🔄 Automated Indexing Workflow
+
+Frame Codex uses a **hybrid NLP + LLM approach** with smart caching and manual override options:
+
+### Static NLP Tools (Always On, No API Keys Required)
+
+1. **TF-IDF Analysis** - Extracts keywords based on term frequency and inverse document frequency
+2. **N-gram Extraction** - Identifies multi-word phrases and technical terms
+3. **Vocabulary Matching** - Auto-tags content using controlled vocabulary from `tags/index.yaml`
+4. **Schema Validation** - Ensures compliance with OpenStrand schema (weave/loom/strand structure)
+5. **Duplicate Detection** - Catches near-duplicate content using fuzzy matching
+6. **Content Quality** - Minimum length, forbidden patterns (lorem ipsum, TODO)
+
+### Optional LLM Enhancement (API Key Required)
+
+Enabled via `OPENAI_API_KEY` secret (set `AI_PROVIDER=disabled` to skip):
+
+1. **Semantic Analysis** - Deep understanding of context and meaning (GPT-4)
+2. **Quality Scoring** - 0-100 score based on clarity, accuracy, completeness
+3. **Tag Suggestions** - AI-powered tag recommendations beyond vocabulary
+4. **Relationship Detection** - Finds connections between strands
+5. **Summary Generation** - Creates concise summaries for missing frontmatter
+
+**Cost**: ~$0.01-0.20 per PR (depending on content length: 100-10K words)
+
+### GitHub Actions Workflows
+
+```mermaid
+graph TD
+    A[Push/PR] --> B{Changed Files?}
+    B -->|Yes| C[SQL Cache Check]
+    C -->|Cache Hit| D[Skip Analysis]
+    C -->|Cache Miss| E[Static NLP Analysis]
+    E --> F{AI Enabled?}
+    F -->|Yes| G[LLM Enhancement]
+    F -->|No| H[Build Index]
+    G --> H
+    D --> H
+    H --> I[Validate Schemas]
+    I -->|Pass| J{Trusted Weaver?}
+    I -->|Fail| K[Block PR]
+    J -->|Yes| L[Auto-Merge]
+    J -->|No| M[Review Required]
+```
+
+**Workflows**:
+- `.github/workflows/auto-index.yml` - Builds index on every commit (static NLP)
+- `.github/workflows/ai-enhance-pr.yml` - Optional AI analysis on PRs
+- `.github/workflows/auto-merge-weavers.yml` - Auto-approves PRs from trusted contributors
+- `.github/workflows/test.yml` - Runs validation suite (no API keys)
+
+### Manual Overrides & Controls
+
+You have full control over automation:
+
+```yaml
+# In .github/secrets (repository settings)
+SQL_CACHE_DISABLED=true          # Force full re-index (bypass cache)
+AI_PROVIDER=disabled             # Disable LLM enhancement entirely
+AUTO_CATALOG_MERGE=false         # Require manual approval for re-catalogs
+```
+
+**Per-file overrides** (in frontmatter):
+```yaml
+---
+skip_ai: true        # Exclude this file from AI analysis
+skip_index: true     # Don't include in search index
+manual_tags: true    # Don't auto-suggest tags
+---
+```
+
+**Gitignore patterns**: Add paths to `.gitignore` or `scripts/auto-index.js` → `IGNORED_PATTERNS` array.
 
 ## Architecture
 
@@ -206,9 +283,55 @@ The Codex is organized hierarchically:
 
 This repository is designed to be consumed by:
 
-- **[Frame.dev](https://frame.dev)** - Web viewer interface
+- **[Frame.dev](https://frame.dev)** - Web viewer interface with GraphQL API support
 - **[OpenStrand](https://openstrand.ai)** - Personal knowledge management
-- **Your Application** - Via API or direct access
+- **Your Application** - Via REST or GraphQL API
+
+### 🔑 GitHub GraphQL API & Rate Limits
+
+The Frame Codex viewer at [frame.dev/codex](https://frame.dev/codex) uses the GitHub GraphQL API for efficient tree fetching:
+
+**Free for Everyone**:
+- No cost to use (GitHub API is free for all public repos)
+- Unauth limit: 60 requests/hour
+- With PAT (Personal Access Token): 5,000 requests/hour
+
+**Optional: Personal Access Token**:
+
+To improve your rate limits, you can optionally set `GH_PAT` or `NEXT_PUBLIC_GH_PAT` as an environment variable:
+
+1. Create token at [github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+2. Required scope: `public_repo` (read public repositories)
+3. Set env var: `export GH_PAT=ghp_xxxxxxxxxxxx`
+4. The viewer will automatically use it for API calls
+
+**Privacy**: Your PAT (if provided) is used only client-side in your browser for GitHub API calls. It never leaves your machine and is not sent to Frame.dev servers.
+
+**Fallback**: If GraphQL fails or no PAT is provided, the viewer automatically falls back to the REST API.
+
+See [lib/github-graphql.ts](https://github.com/framersai/frame.dev/blob/master/apps/frame.dev/lib/github-graphql.ts) for implementation details.
+
+### 🔒 Privacy & Data Storage
+
+**Client-Side Only**:
+- Frame Codex viewer stores data only in your browser (IndexedDB/localStorage)
+- No tracking, analytics, or telemetry
+- No data sent to Frame.dev servers
+- No cookies (except essential session cookies if you're logged in to GitHub)
+
+**What We Store Locally**:
+- Cached index data (for offline access)
+- Your bookmarks and reading history (localStorage)
+- User preferences (theme, font size, sidebar state)
+
+**What We Don't Store**:
+- Personal information
+- GitHub tokens (only used in-memory for API calls)
+- Browsing history beyond your bookmarks
+
+**GDPR Compliance**: Since we don't collect or store personal data on servers, no GDPR consent is required. All data stays in your browser.
+
+**Clear Your Data**: Use browser dev tools (Application → Storage → Clear) or the "Clear Cache" button in Preferences (coming soon).
 
 ## 📄 License
 
