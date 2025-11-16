@@ -21,14 +21,18 @@ Welcome! This guide will walk you through the different ways to contribute knowl
 
 ## Quick Start
 
-The easiest way to submit content is through our **web submission UI** at [frame.dev/codex](https://frame.dev/codex):
+The easiest way to submit content is through our **enhanced contribution modal** at [frame.dev/codex](https://frame.dev/codex):
 
-1. Click the **"Contribute"** button in the Codex viewer
-2. Choose your input method (URL, file upload, or paste)
-3. Review and edit the auto-generated metadata
-4. Click **"Create Pull Request"**
+1. Click the green **"Contribute"** button in the Codex viewer toolbar
+2. Fill in your content (title, summary, markdown body)
+3. Specify or leave blank weave/loom for AI suggestion
+4. Add tags (or use suggested tags from content analysis)
+5. Choose difficulty level (beginner/intermediate/advanced/expert)
+6. Toggle AI enhancement (optional, explains cost vs free static NLP)
+7. Preview final markdown with frontmatter
+8. Click **"Create Pull Request"** (uses GitHub API if you provide PAT, or opens GitHub editor)
 
-That's it! Our maintainers will review your submission.
+That's it! Our automated validation runs, and maintainers review your submission.
 
 ---
 
@@ -36,28 +40,52 @@ That's it! Our maintainers will review your submission.
 
 ### Method 1: Web Submission UI (Recommended)
 
-**Best for:** Quick submissions, URL scraping, beginners
+**Best for:** Quick submissions, beginners, anyone without Git expertise
 
-The web UI provides:
-- ✅ Automatic metadata generation using NLP
-- ✅ Real-time validation
-- ✅ Direct GitHub PR creation
+The enhanced contribution modal provides:
+- ✅ Pre-filled metadata based on current context
+- ✅ Tag suggestions from content analysis
+- ✅ Weave/loom inference (or manual override)
+- ✅ AI enhancement toggle (optional, cost-transparent)
+- ✅ Direct GitHub PR creation via API
+- ✅ Fallback to GitHub web editor (no PAT required)
+- ✅ Preview step showing final markdown
 - ✅ No local setup required
 
 **Steps:**
 
-1. **Access the UI**
+1. **Open Contribution Modal**
    - Go to [frame.dev/codex](https://frame.dev/codex)
-   - Click the "Contribute" dropdown → "Submit Content"
+   - Click the green "Contribute" button in the toolbar
+   - Or use quick actions dropdown (mobile)
 
-2. **Choose Input Method**
-   - **From URL**: Paste any webpage URL to scrape content
-   - **Upload File**: Drag & drop or select a `.md`, `.txt`, or `.json` file
-   - **Paste Content**: Write or paste markdown directly
+2. **Fill in Content**
+   - **Title**: Clear, descriptive title (required)
+   - **Summary**: 20-300 character abstract (required)
+   - **Content**: Write or paste markdown (minimum 100 characters, required)
 
-3. **Review Metadata**
-   - The system auto-generates:
-     - Title (from content or filename)
+3. **Specify Location** (Optional - AI can suggest if left blank)
+   - **Weave**: Which knowledge universe (e.g., technology, science, community)
+   - **Loom**: Topic collection (e.g., programming, algorithms)
+   - System auto-detects from current path or suggests based on content
+
+4. **Add Metadata**
+   - **Tags**: Type and press Enter, or click suggested tags from content analysis
+   - **Difficulty**: Select beginner/intermediate/advanced/expert
+   - **Subjects/Topics**: Auto-suggested from controlled vocabulary
+
+5. **AI Enhancement** (Optional)
+   - Toggle ON: AI analyzes content, suggests better categorization (~$0.01-0.20 cost)
+   - Toggle OFF: Static NLP only (free, still provides quality validation)
+
+6. **GitHub PAT** (Optional)
+   - Provide token for direct API PR creation
+   - Leave blank to open GitHub web editor instead
+
+7. **Preview & Submit**
+   - Review generated markdown with frontmatter
+   - See final file path: `weaves/{weave}/{loom}/{slug}.md`
+   - Click "Create Pull Request"
      - Summary (extractive summarization)
      - Tags (TF-IDF keyword extraction)
      - Difficulty level (heuristic detection)
