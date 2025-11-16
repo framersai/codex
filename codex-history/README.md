@@ -1,25 +1,31 @@
 # Frame Codex History
 
-Automated changelog and activity tracking for Frame Codex.
+Automated changelog and activity tracking for Frame Codex using **append-only JSONL format**.
 
 ## Structure
 
 ```
 codex-history/
-├── git/              # Daily git commit snapshots
-│   ├── 2025-01-15.json
-│   ├── 2025-01-16.json
-│   └── ...
-├── issues/           # Daily GitHub issue/PR activity
-│   ├── 2025-01-15.json
-│   ├── 2025-01-16.json
-│   └── ...
+├── 2025-01.jsonl     # All activity for January 2025 (one JSON per line)
+├── 2025-02.jsonl     # All activity for February 2025
+├── ...
 └── README.md         # This file
 ```
 
-## Git Changelog Format
+**Format:** [JSONL (JSON Lines)](https://jsonlines.org/) - one JSON object per line, one file per month.
 
-Each `git/YYYY-MM-DD.json` file contains:
+**Benefits:**
+- ✅ **Append-only**: No overwrites, safe for concurrent writes
+- ✅ **Deduplication**: Automatically skips existing dates
+- ✅ **Compact**: 12 files/year instead of 365
+- ✅ **Streamable**: Parse line-by-line without loading entire file
+- ✅ **Empty days skipped**: Only records days with activity
+
+## Entry Types
+
+Each line in a `.jsonl` file is one of two types:
+
+### 1. Git Commits
 
 ```json
 {
@@ -47,12 +53,11 @@ Each `git/YYYY-MM-DD.json` file contains:
 }
 ```
 
-## Issue Activity Format
-
-Each `issues/YYYY-MM-DD.json` file contains:
+### 2. GitHub Activity
 
 ```json
 {
+  "type": "github_activity",
   "date": "2025-01-15",
   "repository": "framersai/codex",
   "summary": {
@@ -82,9 +87,10 @@ Each `issues/YYYY-MM-DD.json` file contains:
 
 A GitHub Actions workflow runs daily at 00:00 UTC:
 
-1. **Git Changelog**: Parses the last 7 days of commits
+1. **Git Changelog**: Parses last 7 days of commits
 2. **Issue Activity**: Fetches yesterday's GitHub activity via GraphQL
-3. **Commit**: Pushes new JSON files to `master`
+3. **Append**: Adds new entries to monthly `.jsonl` files (skips duplicates)
+4. **Commit**: Only if new entries were added
 
 ### Manual Trigger
 
@@ -104,116 +110,154 @@ node scripts/generate-changelog.js --since 2025-01-01
 GH_PAT=ghp_xxx node scripts/fetch-issue-activity.js --since 2025-01-01
 ```
 
+## Querying History
+
+### Command Line (jq)
+
+```bash
+# Read all entries for January 2025
+cat codex-history/2025-01.jsonl | jq '.'
+
+# Find all features added
+cat codex-history/2025-01.jsonl | jq 'select(.commits) | .commits[] | select(.type == "feat")'
+
+# Count total commits per day
+cat codex-history/2025-01.jsonl | jq 'select(.commits) | {date, totalCommits}'
+
+# Find issues with specific label
+cat codex-history/2025-01.jsonl | jq 'select(.type == "github_activity") | .created[] | select(.labels | contains(["bug"]))'
+
+# Get activity summary for the month
+cat codex-history/2025-01.jsonl | jq 'select(.type == "github_activity") | .summary'
+```
+
+### JavaScript/TypeScript
+
+```typescript
+import fs from 'fs'
+import readline from 'readline'
+
+// Stream-read JSONL file (memory efficient)
+async function readMonth(year: number, month: number) {
+  const file = `codex-history/${year}-${month.toString().padStart(2, '0')}.jsonl`
+  const entries: any[] = []
+  
+  const rl = readline.createInterface({
+    input: fs.createReadStream(file),
+    crlfDelay: Infinity
+  })
+  
+  for await (const line of rl) {
+    if (line.trim()) {
+      entries.push(JSON.parse(line))
+    }
+  }
+  
+  return entries
+}
+
+// Get all features for January
+const january = await readMonth(2025, 1)
+const features = january
+  .filter(entry => entry.commits)
+  .flatMap(entry => entry.commits.filter(c => c.type === 'feat'))
+
+console.log(`${features.length} features added in January`)
+
+// Get total GitHub activity
+const activity = january
+  .filter(entry => entry.type === 'github_activity')
+  .reduce((sum, entry) => sum + entry.summary.total, 0)
+
+console.log(`${activity} issues/PRs in January`)
+```
+
+### Python
+
+```python
+import json
+
+# Read JSONL file
+def read_month(year, month):
+    file = f'codex-history/{year}-{month:02d}.jsonl'
+    entries = []
+    with open(file, 'r') as f:
+        for line in f:
+            if line.strip():
+                entries.append(json.loads(line))
+    return entries
+
+# Get all features
+january = read_month(2025, 1)
+features = [
+    commit
+    for entry in january if 'commits' in entry
+    for commit in entry['commits'] if commit['type'] == 'feat'
+]
+
+print(f"{len(features)} features added in January")
+```
+
+### AI Prompts
+
+> "Summarize the changes in Frame Codex for January 2025. Focus on new features and bug fixes."
+
+The AI can stream-read `2025-01.jsonl` line-by-line and generate a comprehensive summary without loading the entire file into memory.
+
 ## Configuration
 
-### Required Secrets
+### GitHub Secrets
 
 Add to `framersai/codex` repository settings:
 
+**Required:**
 - `GH_PAT`: GitHub Personal Access Token with `repo` scope
-  - Required for issue/PR activity tracking
-  - Git changelog works without it
+  - Used for issue/PR activity tracking
+  - Generate at: https://github.com/settings/tokens/new?scopes=repo
 
-### Conventional Commits
+**Optional:**
+- None (git changelog works without any secrets)
 
-For best results, use conventional commit format:
+### Workflow Customization
 
-```
-type(scope): description
+Edit `.github/workflows/changelog.yml`:
 
-body (optional)
-```
-
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `chore`: Maintenance
-- `refactor`: Code refactoring
-- `test`: Tests
-- `ci`: CI/CD changes
-
-## Querying History
-
-### Find all features added in January 2025
-
-```bash
-jq '.commits[] | select(.type == "feat")' codex-history/git/2025-01-*.json
+```yaml
+on:
+  schedule:
+    # Change frequency (default: daily at 00:00 UTC)
+    - cron: '0 0 * * *'
 ```
 
-### Count PRs merged per day
+## Storage & Performance
 
-```bash
-jq '.summary.prsMerged' codex-history/issues/*.json
-```
-
-### Get all commits by a specific author
-
-```bash
-jq '.commits[] | select(.author == "John Doe")' codex-history/git/*.json
-```
-
-## AI Consumption
-
-These JSON files are optimized for LLM ingestion:
-
-- **Structured**: Consistent schema across all files
-- **Timestamped**: ISO 8601 dates for easy filtering
-- **Linked**: Direct URLs to commits, issues, PRs
-- **Categorized**: Conventional commit types, labels
-
-Example prompt:
-
-> "Summarize the changes in Frame Codex for the week of January 15-21, 2025. Focus on new features and bug fixes."
-
-The AI can read `git/2025-01-15.json` through `git/2025-01-21.json` and `issues/2025-01-15.json` through `issues/2025-01-21.json` to generate a comprehensive summary.
-
-## Storage
-
-- **Size**: ~10-50 KB per day (depends on activity)
+- **Size**: ~5-30 KB per month (depends on activity)
 - **Retention**: Indefinite (files are small and valuable)
+- **Performance**: Stream-readable, no need to load entire file
 - **Cleanup**: Not needed; history is the point
+- **Deduplication**: Automatic (re-running for same date is a no-op)
 
-## Integration
+## Migration from Old Format
 
-### Frame.dev Codex Viewer
+If you have old daily JSON files (`YYYY-MM-DD.json`), they can coexist with the new format. The workflow only writes to `.jsonl` files.
 
-The Codex viewer can load history files:
+To migrate old files to JSONL:
 
-```typescript
-// Fetch last 7 days of activity
-const dates = getLast7Days()
-const history = await Promise.all(
-  dates.map(date => 
-    fetch(`https://raw.githubusercontent.com/framersai/codex/master/codex-history/git/${date}.json`)
-      .then(r => r.json())
-  )
-)
-```
+```bash
+cd codex-history
 
-### Weekly Summaries
+# Combine all January 2025 JSON files into one JSONL
+for file in 2025-01-*.json; do
+  cat "$file" >> 2025-01.jsonl
+done
 
-Future enhancement: Auto-generate weekly markdown summaries:
-
-```markdown
-# Week of January 15-21, 2025
-
-## Features
-- feat(indexer): add SQL caching (#42)
-- feat(ui): new submission form (#43)
-
-## Bug Fixes
-- fix(validator): handle missing fields (#44)
-
-## Activity
-- 15 commits
-- 5 PRs merged
-- 3 issues closed
+# Clean up old files
+rm 2025-01-*.json
 ```
 
 ## Learn More
 
+- [JSONL Specification](https://jsonlines.org/)
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [GitHub GraphQL API](https://docs.github.com/en/graphql)
-- [Frame Codex Documentation](../docs/DEVELOPMENT.md)
-
+- [Frame Codex Changelog System](../docs/CHANGELOG_SYSTEM.md)

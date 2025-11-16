@@ -62,7 +62,8 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if [ -n "$(git status --porcelain codex-history/)" ]; then
+          # Only check for .jsonl files (new format)
+          if [ -n "$(git status --porcelain codex-history/*.jsonl 2>/dev/null)" ]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
             echo "has_changes=false" >> $GITHUB_OUTPUT
@@ -74,14 +75,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add codex-history/
+          # Only add .jsonl files (ignore old .json files if any)
+          git add codex-history/*.jsonl
           
           DATE=$(date +%Y-%m-%d)
-          git commit -m "chore(changelog): update history for ${DATE}"
+          MONTH=$(date +%Y-%m)
+          git commit -m "chore(changelog): append history for ${DATE} to ${MONTH}.jsonl"
           
           git push origin master
       
       - name: No changes
         if: steps.check.outputs.has_changes == 'false'
-        run: echo "✅ No new activity to record"
+        run: echo "✅ No new activity to record (all dates already exist or no commits/activity)"
 

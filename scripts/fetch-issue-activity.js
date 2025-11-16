@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 /**
- * Fetch GitHub issue and PR activity via GraphQL API
- * Writes daily JSON snapshots of created/closed/merged items
+ * Fetch GitHub issue and PR activity via GraphQL API (append-only JSONL format)
+ * Appends to monthly JSONL files with created/closed/merged items
+ * 
+ * Format: One JSON object per line (JSONL)
+ * File: codex-history/YYYY-MM.jsonl (same file as git changelog)
  * 
  * Usage:
  *   GH_PAT=ghp_xxx node scripts/fetch-issue-activity.js [--since YYYY-MM-DD] [--output-dir path]
@@ -36,7 +39,7 @@ const outputDirIndex = args.indexOf('--output-dir')
 const sinceDate = sinceIndex >= 0 ? args[sinceIndex + 1] : getYesterday()
 const outputDir = outputDirIndex >= 0 
   ? path.resolve(args[outputDirIndex + 1])
-  : path.resolve(__dirname, '../codex-history/issues')
+  : path.resolve(__dirname, '../codex-history')
 
 // Ensure output directory exists
 fs.mkdirSync(outputDir, { recursive: true })
@@ -222,16 +225,35 @@ async function fetchMergedPRs(since) {
 }
 
 /**
- * Write activity JSON for a specific date
+ * Append activity entry to monthly JSONL file
  * @param {string} date - ISO date string
  * @param {object} activity - Activity data
  * @param {string} outputDir - Output directory
+ * @returns {boolean} True if new entry was added
  */
-function writeActivity(date, activity, outputDir) {
-  const filename = `${date}.json`
+function appendActivity(date, activity, outputDir) {
+  const month = date.substring(0, 7) // YYYY-MM
+  const filename = `${month}.jsonl`
   const filepath = path.join(outputDir, filename)
   
+  // Check if this date already has activity recorded
+  if (fs.existsSync(filepath)) {
+    const lines = fs.readFileSync(filepath, 'utf-8').trim().split('\n').filter(Boolean)
+    for (const line of lines) {
+      try {
+        const entry = JSON.parse(line)
+        if (entry.date === date && entry.type === 'github_activity') {
+          console.log(`⏭️  Skipping ${date} (activity already exists)`)
+          return false
+        }
+      } catch (e) {
+        // Skip malformed lines
+      }
+    }
+  }
+  
   const data = {
+    type: 'github_activity',
     date,
     repository: `${REPO_OWNER}/${REPO_NAME}`,
     summary: {
@@ -245,13 +267,22 @@ function writeActivity(date, activity, outputDir) {
     merged: activity.merged
   }
   
-  fs.writeFileSync(filepath, JSON.stringify(data, null, 2))
-  console.log(`✅ Wrote activity to ${filename}`)
+  // Skip if no activity
+  if (data.summary.total === 0) {
+    console.log(`⏭️  Skipping ${date} (no activity)`)
+    return false
+  }
+  
+  // Append as single line
+  fs.appendFileSync(filepath, JSON.stringify(data) + '\n')
+  console.log(`✅ Appended activity for ${date}`)
   console.log(`   Created: ${data.summary.issuesCreated}, Closed: ${data.summary.issuesClosed}, Merged: ${data.summary.prsMerged}`)
+  
+  return true
 }
 
 // Main execution
-console.log('🔍 Fetching GitHub activity...\n')
+console.log('🔍 Fetching GitHub activity (JSONL format)...\n')
 console.log(`Repository: ${REPO_OWNER}/${REPO_NAME}`)
 console.log(`Since: ${sinceDate}\n`)
 
@@ -264,9 +295,13 @@ try {
   
   const activity = { created, closed, merged }
   
-  writeActivity(sinceDate, activity, outputDir)
+  const added = appendActivity(sinceDate, activity, outputDir)
   
-  console.log(`\n✨ Done! Activity written to ${outputDir}`)
+  if (added) {
+    console.log(`\n✨ Done! Activity appended to ${outputDir}`)
+  } else {
+    console.log(`\n✨ No new activity to record`)
+  }
 } catch (error) {
   console.error('❌ Error:', error.message)
   process.exit(1)
