@@ -173,7 +173,6 @@ GH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx
 
 # Optional: AI-powered PR enhancement
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
-# OpenAI API key - supported by OpenAI for open source
 # Get at: https://platform.openai.com/api-keys
 
 # Auto-merge control for catalog updates (default: false)
@@ -195,10 +194,6 @@ AI_PROVIDER=disabled
 - **AI_PROVIDER**: Set to `disabled` to skip AI enhancement
 
 **Note:** The indexer and validator work WITHOUT any API keys. AI enhancement is purely optional for advanced quality analysis.
-
-### Supported by OpenAI
-
-Frame Codex is supported by OpenAI's initiatives to help organizations integrate AI for public good. We use OpenAI API credits to power automated quality analysis and content enhancement. Learn more about OpenAI's programs at [openai.com](https://openai.com).
 
 ## Repository Structure
 
@@ -237,8 +232,4 @@ With attribution requirement.
   <br/>
   
   <sub>Building humanity's knowledge repository for the AI age</sub>
-  
-  <br/>
-  
-  <sub>Made with ❤️ by [Framers](https://frame.dev) • Supported by [OpenAI](https://openai.com)</sub>
 </div>

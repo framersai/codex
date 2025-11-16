@@ -57,7 +57,7 @@ Add to `framersai/codex` repository settings:
 GH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx  # GitHub Personal Access Token (repo scope)
 
 # AI Enhancement (OPTIONAL - only if you want AI-powered PR analysis)
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx  # Supported by OpenAI
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
 
 # Auto-merge control (default: false - requires manual approval)
 AUTO_CATALOG_MERGE=false  # Set to 'true' to auto-merge re-catalog PRs
@@ -71,7 +71,6 @@ AI_PROVIDER=disabled  # Set to 'disabled' to skip AI entirely
 **To enable AI enhancement:**
 ```bash
 OPENAI_API_KEY=sk-...
-# Supported by OpenAI for open source
 ```
 
 **To enable auto-merge for re-catalog PRs:**
@@ -725,7 +724,7 @@ A: Varies by content length:
    - 2K-10K words: ~$0.08-0.20/PR
    - 10K-100K words: ~$0.20-2.00/PR
    
-   We're supported by OpenAI. Can be disabled with `AI_PROVIDER=disabled`.
+   Can be disabled with `AI_PROVIDER=disabled`.
 
 **Q: Can I run everything locally?**  
 A: Yes. `npm run index` works offline. AI enhancement needs API keys.
@@ -752,5 +751,4 @@ A: Submit 5+ high-quality PRs. Maintainers will add you to `WEAVERS.txt`.
 
 ---
 
-*Last updated: 2025-01-15*
 

@@ -42,7 +42,6 @@ async function initializeAI() {
       aiClient = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
       aiProvider = 'openai';
       console.log('✅ Using GPT-4 (OpenAI) for AI enhancement');
-      console.log('ℹ️ Supported by OpenAI for open source projects');
       return true;
     } catch (error) {
       console.warn('⚠️ OpenAI SDK not available:', error.message);

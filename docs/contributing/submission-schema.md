@@ -723,5 +723,5 @@ This schema is versioned using semantic versioning:
 
 ---
 
-*Last updated: 2025-01-15 • Schema version: 2.0.0*
+*Schema version: 2.0.0*
 

@@ -15,7 +15,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@framers/sql-storage-adapter": "workspace:*",
+    "@framers/sql-storage-adapter": "^0.3.6",
     "better-sqlite3": "^11.0.0"
   },
   "devDependencies": {
