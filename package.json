@@ -15,16 +15,16 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@framers/sql-storage-adapter": "^0.3.6",
+    "@framers/sql-storage-adapter": "^0.3.5",
     "better-sqlite3": "^11.0.0"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.1",
     "gray-matter": "^4.0.3",
     "husky": "^8.0.3",
     "js-yaml": "^4.1.0",
     "uuid": "^9.0.1",
-    "vitest": "^1.6.0",
-    "@vitest/coverage-v8": "^1.6.1"
+    "vitest": "^1.6.0"
   },
   "scripts-info": {
     "index": "Build search index with NLP-powered auto-categorization (uses SQL cache for incremental updates)",
@@ -36,5 +36,3 @@
     "prepare": "Install git hooks for pre-commit validation"
   }
 }
-
-
