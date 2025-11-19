@@ -165,6 +165,28 @@ git push
 
 ---
 
+## Search Artifacts (BM25 + MiniLM embeddings)
+
+Frame.dev’s advanced search UI consumes a separate static artifact, `codex-search.json`, which contains:
+
+- BM25 postings (term → docId, term frequency)
+- Document metadata (path, weave, loom, summary, doc length)
+- Packed Float32 embeddings (all-MiniLM-L6-v2, mean pooled, normalized)
+
+Generate it after the main index:
+
+```bash
+cd apps/codex
+npm run build:search
+
+# Commit alongside codex-index.json to publish updated search data
+git add codex-search.json
+```
+
+This command uses `@xenova/transformers` entirely in Node.js (no Python, no API keys) and produces a fully static JSON blob that can be hosted on GitHub Pages or any CDN.
+
+---
+
 ## SQL Cache Architecture
 
 Frame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent incremental indexing.

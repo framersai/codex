@@ -1,39 +1,40 @@
 {
   "summary": {
-    "totalFiles": 14,
-    "indexedFiles": 14,
+    "totalFiles": 5,
+    "indexedFiles": 5,
     "skippedFiles": 0,
-    "validFiles": 14,
+    "validFiles": 19,
     "filesWithErrors": 0,
     "filesWithWarnings": 0,
-    "filesWithSuggestions": 14
+    "filesWithSuggestions": 19
   },
   "categorization": {
     "bySubject": {
-      "technology": 11,
-      "science": 10,
-      "knowledge": 11,
-      "design": 13,
-      "ai": 7,
-      "security": 2
+      "technology": 15,
+      "science": 15,
+      "knowledge": 16,
+      "design": 17,
+      "ai": 9,
+      "security": 3,
+      "philosophy": 3
     },
     "byTopic": {
-      "getting-started": 11,
-      "troubleshooting": 8,
-      "deployment": 8,
-      "architecture": 13,
-      "best-practices": 10,
-      "testing": 8,
-      "performance": 6,
-      "api-reference": 7,
+      "getting-started": 16,
+      "troubleshooting": 9,
+      "deployment": 9,
+      "architecture": 17,
+      "best-practices": 14,
+      "testing": 11,
+      "performance": 8,
+      "api-reference": 12,
       "automation": 1,
       "ci-cd": 1
     },
     "byDifficulty": {
       "[object Object]": 1,
-      "advanced": 3,
-      "intermediate": 8,
-      "beginner": 2
+      "advanced": 5,
+      "intermediate": 9,
+      "beginner": 4
     },
     "confidenceScores": [
       {
@@ -99,7 +100,7 @@
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.3333333333333333
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -124,7 +125,7 @@
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "best-practices",
-        "score": 0.14285714285714285
+        "score": 0.2857142857142857
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -489,17 +490,22 @@
       {
         "file": "docs/openstrand-architecture.md",
         "category": "science",
-        "score": 0.125
+        "score": 0.25
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "philosophy",
+        "score": 0.14285714285714285
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "ai",
-        "score": 0.3333333333333333
+        "score": 0.4444444444444444
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "knowledge",
-        "score": 0.5714285714285714
+        "score": 0.7142857142857143
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -655,6 +661,246 @@
         "file": "docs/schema-reference.md",
         "category": "testing",
         "score": 0.3333333333333333
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "technology",
+        "score": 0.4
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "science",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "philosophy",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "ai",
+        "score": 0.1111111111111111
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "knowledge",
+        "score": 0.42857142857142855
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "design",
+        "score": 0.7142857142857143
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "security",
+        "score": 0.5
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "getting-started",
+        "score": 0.25
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "architecture",
+        "score": 0.7142857142857143
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "api-reference",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "best-practices",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "troubleshooting",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "deployment",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "testing",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "performance",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "science",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "knowledge",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "getting-started",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "api-reference",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "best-practices",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "technology",
+        "score": 0.3
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "science",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "knowledge",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "getting-started",
+        "score": 0.875
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "architecture",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "api-reference",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "best-practices",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "testing",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "performance",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "technology",
+        "score": 0.4
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "knowledge",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "getting-started",
+        "score": 0.5
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "architecture",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "api-reference",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "technology",
+        "score": 0.3
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "philosophy",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "ai",
+        "score": 0.1111111111111111
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "knowledge",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "design",
+        "score": 0.42857142857142855
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "getting-started",
+        "score": 0.5
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "architecture",
+        "score": 0.42857142857142855
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "api-reference",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "best-practices",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "testing",
+        "score": 0.16666666666666666
       }
     ]
   },
@@ -665,19 +911,15 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 151,
+    "totalUniqueTerms": 62,
     "suggestedAdditions": [
       {
-        "term": "codex",
+        "term": "string",
         "frequency": 6
       },
       {
-        "term": "string",
+        "term": "codex",
         "frequency": 5
-      },
-      {
-        "term": "frame",
-        "frequency": 4
       },
       {
         "term": "array",
@@ -688,7 +930,19 @@
         "frequency": 3
       },
       {
+        "term": "frame",
+        "frequency": 3
+      },
+      {
         "term": "description",
+        "frequency": 3
+      },
+      {
+        "term": "auto",
+        "frequency": 3
+      },
+      {
+        "term": "markdown",
         "frequency": 3
       },
       {
@@ -714,14 +968,30 @@
       {
         "term": "enum",
         "frequency": 3
+      },
+      {
+        "term": "github",
+        "frequency": 3
+      },
+      {
+        "term": "photo",
+        "frequency": 3
+      },
+      {
+        "term": "art",
+        "frequency": 3
+      },
+      {
+        "term": "jpg",
+        "frequency": 3
       }
     ]
   },
   "performance": {
-    "timeElapsed": "14.95s",
-    "cacheHitRate": "0%",
-    "filesProcessed": 14,
-    "filesCached": 0,
-    "speedup": "N/A (first run)"
+    "timeElapsed": "10.87s",
+    "cacheHitRate": "280%",
+    "filesProcessed": 5,
+    "filesCached": 14,
+    "speedup": "280% faster"
   }
 }

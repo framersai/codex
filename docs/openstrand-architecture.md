@@ -71,6 +71,19 @@ The Fabric/Weave/Loom/Strand architecture solves several key problems:
 3. **Clarity**: Clear boundaries make it obvious where knowledge belongs
 4. **Versioning**: Strands are immutable, making version control natural
 5. **AI-Friendly**: Structured metadata enables semantic search and RAG
+6. **Fabric-Scope Reasoning**: A single Fabric view allows cross-weave synthesis while preserving provenance
+
+### Superintelligence at Fabric Scope
+
+While weaves remain isolated for organization and provenance, analysis at the **Fabric** level permits traversal
+across weaves for:
+
+- Cross-domain retrieval and context assembly
+- Whole-of-corpus synthesis and summarization
+- Global topic maps and knowledge graphs
+
+Fabric-level queries always preserve original weave/loom/strand provenance. OpenStrand uses this fabric view to let
+agents and superintelligence move seamlessly across domains while still understanding exactly where every fact came from.
 
 ## How It Works
 

@@ -1,0 +1,67 @@
+name: Build and Publish Codex Index
+
+on:
+  push:
+    paths:
+      - 'weaves/**'
+      - 'scripts/**'
+      - 'schema/**'
+      - '.github/workflows/auto-index.yml'
+  workflow_dispatch:
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/codex
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build codex-index.json
+        run: pnpm run index
+
+      - name: Build codex-search.json
+        run: pnpm run build:search
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: codex-search-assets
+          path: apps/codex/*.json
+
+  publish-artifacts:
+    needs: build-index
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v3
+        with:
+          name: codex-search-assets
+          path: apps/codex
+
+      - name: Commit and push JSON assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps/codex/codex-index.json apps/codex/codex-search.json
+          if ! git diff --cached --quiet; then
+            git commit -m "ci(codex): update search index [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
