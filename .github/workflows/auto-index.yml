@@ -15,9 +15,6 @@ on:
 jobs:
   build-index:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/codex
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,6 +23,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
+      
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -44,24 +42,25 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: codex-search-assets
-          path: apps/codex/*.json
+          path: '*.json'
 
   publish-artifacts:
     needs: build-index
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
+      
       - uses: actions/download-artifact@v3
         with:
           name: codex-search-assets
-          path: apps/codex
+          path: .
 
       - name: Commit and push JSON assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add apps/codex/codex-index.json apps/codex/codex-search.json
+          git add codex-index.json codex-search.json codex-report.json
           if ! git diff --cached --quiet; then
             git commit -m "ci(codex): update search index [skip ci]"
             git push
