@@ -8,6 +8,9 @@ on:
       - 'schema/**'
       - '.github/workflows/auto-index.yml'
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - frame-deploy-complete
 
 jobs:
   build-index:
