@@ -270,6 +270,84 @@ class CodexIndexer {
   }
 
   /**
+   * Calculate Flesch-Kincaid Reading Level
+   * Returns grade level (0-18+) and readability score (0-100)
+   */
+  calculateReadingLevel(content) {
+    try {
+      const syllable = require('syllable');
+      
+      // Clean content
+      const cleanContent = content
+        .replace(/```[\s\S]*?```/g, '')
+        .replace(/`[^`]+`/g, '')
+        .replace(/#{1,6}\s/g, '')
+        .trim();
+      
+      // Count sentences, words, syllables
+      const sentences = cleanContent.split(/[.!?]+\s+/).filter(s => s.length > 10);
+      const words = cleanContent.split(/\s+/).filter(w => w.length > 0);
+      
+      if (sentences.length === 0 || words.length === 0) {
+        return { gradeLevel: 0, readabilityScore: 0 };
+      }
+      
+      const totalSyllables = words.reduce((sum, word) => {
+        const clean = word.replace(/[^\w]/g, '');
+        return sum + syllable(clean);
+      }, 0);
+      
+      const avgWordsPerSentence = words.length / sentences.length;
+      const avgSyllablesPerWord = totalSyllables / words.length;
+      
+      // Flesch-Kincaid Grade Level
+      const gradeLevel = Math.max(0, 
+        0.39 * avgWordsPerSentence + 11.8 * avgSyllablesPerWord - 15.59
+      );
+      
+      // Flesch Reading Ease (0-100, higher = easier)
+      const readabilityScore = Math.max(0, Math.min(100,
+        206.835 - 1.015 * avgWordsPerSentence - 84.6 * avgSyllablesPerWord
+      ));
+      
+      return {
+        gradeLevel: Math.round(gradeLevel * 10) / 10,
+        readabilityScore: Math.round(readabilityScore),
+        sentences: sentences.length,
+        words: words.length,
+        syllables: totalSyllables
+      };
+    } catch (error) {
+      console.warn('Reading level calculation failed:', error.message);
+      return { gradeLevel: 0, readabilityScore: 0 };
+    }
+  }
+
+  /**
+   * Extract named entities (people, places, organizations)
+   * Using compromise library for NER
+   */
+  extractEntities(content) {
+    try {
+      const nlp = require('compromise');
+      
+      const doc = nlp(content);
+      
+      const entities = {
+        people: doc.people().out('array').slice(0, 10),
+        places: doc.places().out('array').slice(0, 10),
+        organizations: doc.organizations().out('array').slice(0, 10),
+        topics: doc.topics().out('array').slice(0, 15)
+      };
+      
+      return entities;
+    } catch (error) {
+      console.warn('Entity extraction failed:', error.message);
+      return { people: [], places: [], organizations: [], topics: [] };
+    }
+  }
+
+  /**
    * Validate content quality
    */
   validateContent(metadata, content, filePath) {
@@ -408,6 +486,12 @@ class CodexIndexer {
       // Auto-categorize using NLP
       const analysis = this.autoCategorize(content, metadata);
       
+      // Calculate reading level
+      const readingLevel = this.calculateReadingLevel(content);
+      
+      // Extract named entities
+      const entities = this.extractEntities(content);
+      
       // Validate
       const validation = this.validateContent(metadata, content, relativePath);
       
@@ -428,6 +512,19 @@ class CodexIndexer {
             topics: analysis.categories.topics,
             difficulty: analysis.categories.difficulty,
             confidence: analysis.categories.confidence,
+            readingLevel: readingLevel.gradeLevel,
+            readabilityScore: readingLevel.readabilityScore,
+            statistics: {
+              sentences: readingLevel.sentences,
+              words: readingLevel.words,
+              syllables: readingLevel.syllables
+            },
+            entities: {
+              people: entities.people,
+              places: entities.places,
+              organizations: entities.organizations,
+              topics: entities.topics
+            },
             lastIndexed: new Date().toISOString()
           }
         },
