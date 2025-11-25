@@ -440,7 +440,7 @@
       {
         "file": "schema/strand.schema.yaml",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.2222222222222222
       },
       {
         "file": "schema/strand.schema.yaml",
@@ -911,7 +911,7 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 222,
+    "totalUniqueTerms": 221,
     "suggestedAdditions": [
       {
         "term": "codex",
@@ -934,6 +934,10 @@
         "frequency": 4
       },
       {
+        "term": "description",
+        "frequency": 3
+      },
+      {
         "term": "jpg",
         "frequency": 3
       },
@@ -952,7 +956,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "10.87s",
+    "timeElapsed": "10.54s",
     "cacheHitRate": "0%",
     "filesProcessed": 19,
     "filesCached": 0,
