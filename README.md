@@ -38,6 +38,7 @@ Frame Codex is a data-only knowledge repository designed to be the canonical sou
 - **OpenStrand**: Full personal knowledge management platform at [openstrand.ai](https://openstrand.ai) - supports any file type (images, videos, PDFs, code), AI analysis, serialization to markdown, private workspaces, and advanced features
 
 **Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` or `strands/` prefixes required) and strands are any markdown files within a weave.
+Strand frontmatter now supports both `extractiveSummary` (deterministic NLP) and `aiSummary` (LLM) fields, plus a `notes` array for short bullet annotations that surface inside the Frame.dev viewer.
 
 ## 🔄 Automated Indexing Workflow
 
