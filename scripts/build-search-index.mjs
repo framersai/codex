@@ -14,7 +14,7 @@
 
 import fs from 'fs'
 import path from 'path'
-import { pipeline } from '@xenova/transformers'
+import { pipeline } from '@huggingface/transformers'
 
 const ROOT = process.cwd()
 const INDEX_PATH = path.join(ROOT, 'codex-index.json')
