@@ -59,6 +59,9 @@ Weave (Universe)
 - **Looms** curate related strands into coherent learning paths
 - **Weaves** represent complete, isolated knowledge universes
 - **No cross-weave relationships** (each weave is independent)
+- **Subfolders are SUBTOPICS** - folder depth determines topic specificity (deeper = more specific)
+- **Topics are hierarchical** - must narrow scope as you go deeper in the folder tree
+- **Tags are independent** - can be shared freely across any folder level
 
 ---
 
@@ -82,9 +85,9 @@ difficulty: enum [beginner, intermediate, advanced, expert]
 
 ```yaml
 taxonomy:
-  subjects: array<string>
-  topics: array<string>
-  subtopics: array<string>
+  subjects: array<string>          # High-level categories
+  topics: array<string>            # ⚠️ MUST match folder depth (see below)
+  subtopics: array<string>         # Even more specific narrowing
   concepts: array<object>
     - term: string
       weight: number (0-1)
@@ -93,7 +96,27 @@ taxonomy:
     - name: string
       level: enum [introduce, develop, master]
 
-tags: array<string>
+tags: array<string>               # ✓ Independent - NO hierarchy
+
+# ─────────────────────────────────────────────────────────────────────
+# ⚠️  CRITICAL: Topics vs Tags
+# ─────────────────────────────────────────────────────────────────────
+# 
+# TOPICS are HIERARCHICAL:
+#   - Subfolders = subtopics of parent folder
+#   - Topics MUST become MORE SPECIFIC as folder depth increases
+#   - A file in /programming/python/async/ must have topics about async Python
+#   - NOT broad topics like "web-development"
+#
+# TAGS are INDEPENDENT:
+#   - No hierarchy, flat structure
+#   - Can be shared across ANY folder level
+#   - A deeply nested file can share tags with root files
+#   - Example: both /python/async/coroutines.md and /overview.md can use
+#     the tag "best-practices"
+#
+# See: openstrand-architecture.md#hierarchical-topic-structure-critical-rule
+# ─────────────────────────────────────────────────────────────────────
 
 relationships:
   requires: array<string> (slugs of prerequisite strands)

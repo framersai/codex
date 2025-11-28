@@ -128,6 +128,91 @@ weaves/frame/
 
 Each folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.
 
+### Hierarchical Topic Structure (Critical Rule)
+
+**Folder depth determines topic specificity.** This is a fundamental OpenStrand principle:
+
+> 📐 **Subfolders are SUBTOPICS of their parent folder. Topics MUST become more specific as you go deeper.**
+
+#### How It Works
+
+```
+weaves/technology/                     # Topic: technology (broad)
+├── programming/                       # Topic: programming (more specific)
+│   ├── python/                        # Topic: python (even more specific)
+│   │   └── async/                     # Topic: async-python (most specific)
+│   │       └── coroutines.md          # Strand about Python coroutines
+│   └── rust/                          # Topic: rust (sibling to python)
+│       └── memory-safety.md
+└── infrastructure/                    # Topic: infrastructure (sibling to programming)
+    └── kubernetes/
+        └── networking.md
+```
+
+**The hierarchy implies:**
+- `programming/` is a subtopic of `technology/`
+- `python/` is a subtopic of `programming/`
+- `async/` is a subtopic of `python/`
+- Content in `async/` MUST be about async Python, not general async concepts
+
+#### Topics vs Tags: The Critical Distinction
+
+| Aspect | **Topics** (Hierarchical) | **Tags** (Independent) |
+|--------|---------------------------|------------------------|
+| Structure | Tree-like, parent-child | Flat, no hierarchy |
+| Inheritance | Child topics MUST narrow parent scope | No inheritance |
+| Sharing | Cannot share across unrelated branches | Can share across ANY level |
+| Purpose | Determines WHERE content lives | Describes WHAT content covers |
+| Example | `programming > python > async` | `best-practices`, `tutorial`, `advanced` |
+
+#### Correct vs Incorrect Examples
+
+✅ **CORRECT** - Topics narrow as depth increases:
+```yaml
+# File: weaves/technology/programming/python/async/coroutines.md
+taxonomy:
+  subjects: [technology]
+  topics: [async-programming, coroutines]  # Specific to this subloom
+tags: [python, best-practices, tutorial]   # Tags can be anything relevant
+```
+
+❌ **INCORRECT** - Topics too broad for location:
+```yaml
+# File: weaves/technology/programming/python/async/coroutines.md
+taxonomy:
+  subjects: [technology]
+  topics: [programming, web-development]  # TOO BROAD! Should be about async
+tags: [python]
+```
+
+❌ **INCORRECT** - Content doesn't match folder hierarchy:
+```yaml
+# File: weaves/technology/programming/python/async/kubernetes-networking.md
+# WRONG LOCATION! This should be in weaves/technology/infrastructure/kubernetes/
+```
+
+#### Why This Matters
+
+1. **AI Navigation**: Superintelligence uses folder structure to understand topic relationships
+2. **Search Precision**: Queries can filter by hierarchy depth for specificity
+3. **Knowledge Graph**: Parent-child topic relationships are inferred from paths
+4. **Validation**: The indexer can detect misplaced content by comparing topics to path
+5. **Learning Paths**: Sequential traversal respects topic dependencies
+
+#### Tags Are Free-Form
+
+Unlike topics, **tags have no hierarchy**. A deeply nested strand can share tags with root-level content:
+
+```yaml
+# weaves/technology/programming/python/async/coroutines.md
+tags: [best-practices, performance, tutorial]
+
+# weaves/technology/overview.md  
+tags: [best-practices, getting-started]  # Same "best-practices" tag is fine!
+```
+
+Both files share `best-practices` because tags describe cross-cutting concerns, not hierarchical position.
+
 ### Metadata Schema
 
 Every strand includes:

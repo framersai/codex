@@ -113,8 +113,10 @@ A Strand is an atomic unit of knowledge - a document, image, or dataset.
 - `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`
 - `taxonomy` (object): Categorization
   - `subjects` (array): High-level categories
-  - `topics` (array): Specific topics
-- `tags` (array): Freeform tags
+  - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**
+- `tags` (array): Freeform tags **✓ Independent - can be shared across any level**
+
+> **⚠️ Topics vs Tags**: Topics are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases. Tags are INDEPENDENT and can be freely shared. See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule).
 - `relationships` (object): Connections to other strands
   - `requires` (array): Prerequisites
   - `references` (array): Related strands
