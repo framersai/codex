@@ -12,7 +12,7 @@ taxonomy:
   topics:
     - api-reference
     - architecture
-tags: schema, yaml, validation, weave, loom, strand
+tags: [schema, yaml, validation, weave, loom, strand]
 relationships:
   references:
     - openstrand-architecture

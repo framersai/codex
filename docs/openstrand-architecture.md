@@ -14,7 +14,7 @@ taxonomy:
   topics:
     - architecture
     - getting-started
-tags: openstrand, architecture, knowledge-graph, weave, loom, strand
+tags: [openstrand, architecture, knowledge-graph, weave, loom, strand]
 relationships:
   references:
     - frame-codex-intro

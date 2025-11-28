@@ -12,7 +12,7 @@ taxonomy:
   topics:
     - automation
     - ci-cd
-tags: changelog, automation, github-actions, git, graphql
+tags: [changelog, automation, github-actions, git, graphql]
 relationships:
   references:
     - development-guide
