@@ -10,9 +10,12 @@
     "validate": "node scripts/validate.js",
     "check-duplicates": "node scripts/validate.js --skip-duplicates=false",
     "generate-template": "node scripts/validate.js --generate",
+    "ai-enhance": "node scripts/ai-enhance.js",
     "test": "vitest run",
+    "test:unit": "node --test tests/llm.test.js",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "test:integration": "RUN_INTEGRATION_TESTS=1 node --test tests/llm.test.js",
     "prepare": "husky install"
   },
   "dependencies": {
