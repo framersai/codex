@@ -10,11 +10,12 @@
   },
   "categorization": {
     "bySubject": {
-      "technology": 15,
+      "technology": 18,
       "science": 15,
-      "knowledge": 16,
+      "ai": 13,
+      "knowledge": 19,
       "design": 17,
-      "ai": 9,
+      "media": 10,
       "philosophy": 3,
       "security": 3
     },
@@ -22,11 +23,13 @@
       "getting-started": 16,
       "troubleshooting": 9,
       "deployment": 9,
+      "configuration": 16,
+      "metadata": 19,
       "architecture": 17,
+      "api-reference": 17,
       "best-practices": 14,
       "testing": 11,
       "performance": 8,
-      "api-reference": 12,
       "automation": 1,
       "ci-cd": 1
     },
@@ -40,7 +43,7 @@
       {
         "file": "weaves/frame/openstrand/architecture.md",
         "category": "technology",
-        "score": 0.1
+        "score": 0.06666666666666667
       },
       {
         "file": "weaves/frame/openstrand/architecture.md",
@@ -49,8 +52,13 @@
       },
       {
         "file": "weaves/frame/openstrand/architecture.md",
+        "category": "ai",
+        "score": 0.25
+      },
+      {
+        "file": "weaves/frame/openstrand/architecture.md",
         "category": "knowledge",
-        "score": 0.14285714285714285
+        "score": 0.38461538461538464
       },
       {
         "file": "weaves/frame/openstrand/architecture.md",
@@ -60,7 +68,7 @@
       {
         "file": "weaves/frame/openstrand/architecture.md",
         "category": "getting-started",
-        "score": 0.125
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/frame/openstrand/architecture.md",
@@ -73,24 +81,39 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "weaves/frame/openstrand/architecture.md",
+        "category": "configuration",
+        "score": 0.25
+      },
+      {
+        "file": "weaves/frame/openstrand/architecture.md",
+        "category": "metadata",
+        "score": 0.375
+      },
+      {
         "file": "weaves/frame/weave.yaml",
         "category": "technology",
-        "score": 0.2
+        "score": 0.13333333333333333
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "knowledge",
-        "score": 0.14285714285714285
+        "score": 0.23076923076923078
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "architecture",
-        "score": 0.14285714285714285
+        "score": 0.125
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "metadata",
+        "score": 0.375
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "technology",
-        "score": 0.6
+        "score": 0.5333333333333333
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -100,12 +123,12 @@
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "ai",
-        "score": 0.3333333333333333
+        "score": 0.25
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "knowledge",
-        "score": 0.5714285714285714
+        "score": 0.7692307692307693
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -114,13 +137,23 @@
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
+        "category": "media",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
         "category": "getting-started",
-        "score": 0.25
+        "score": 0.2222222222222222
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
         "category": "architecture",
-        "score": 0.7142857142857143
+        "score": 0.625
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -143,6 +176,16 @@
         "score": 0.5
       },
       {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "configuration",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "metadata",
+        "score": 0.125
+      },
+      {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "technology",
         "score": 0.4
@@ -160,12 +203,12 @@
       {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.3333333333333333
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "knowledge",
-        "score": 0.42857142857142855
+        "score": 0.46153846153846156
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
@@ -179,18 +222,23 @@
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "media",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
         "category": "getting-started",
-        "score": 0.25
+        "score": 0.2222222222222222
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "architecture",
-        "score": 0.7142857142857143
+        "score": 0.625
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "api-reference",
-        "score": 0.375
+        "score": 0.3333333333333333
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
@@ -218,6 +266,16 @@
         "score": 0.3333333333333333
       },
       {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "configuration",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "metadata",
+        "score": 0.5
+      },
+      {
         "file": "weaves/wiki/examples/gallery-demo.md",
         "category": "science",
         "score": 0.125
@@ -225,17 +283,22 @@
       {
         "file": "weaves/wiki/examples/gallery-demo.md",
         "category": "knowledge",
-        "score": 0.14285714285714285
+        "score": 0.15384615384615385
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "media",
+        "score": 0.2857142857142857
       },
       {
         "file": "weaves/wiki/examples/gallery-demo.md",
         "category": "getting-started",
-        "score": 0.125
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/wiki/examples/gallery-demo.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/wiki/examples/gallery-demo.md",
@@ -243,9 +306,14 @@
         "score": 0.14285714285714285
       },
       {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "metadata",
+        "score": 0.25
+      },
+      {
         "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "technology",
-        "score": 0.3
+        "score": 0.26666666666666666
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
@@ -254,8 +322,13 @@
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "ai",
+        "score": 0.08333333333333333
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "knowledge",
-        "score": 0.2857142857142857
+        "score": 0.5384615384615384
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
@@ -264,18 +337,23 @@
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "media",
+        "score": 0.7142857142857143
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "getting-started",
-        "score": 0.875
+        "score": 0.7777777777777778
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "architecture",
-        "score": 0.2857142857142857
+        "score": 0.375
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.2222222222222222
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
@@ -293,9 +371,19 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "configuration",
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "metadata",
+        "score": 0.375
+      },
+      {
         "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "technology",
-        "score": 0.4
+        "score": 0.3333333333333333
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
@@ -304,8 +392,13 @@
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "ai",
+        "score": 0.08333333333333333
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "knowledge",
-        "score": 0.14285714285714285
+        "score": 0.5384615384615384
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
@@ -314,23 +407,38 @@
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "media",
+        "score": 0.5714285714285714
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "getting-started",
-        "score": 0.5
+        "score": 0.4444444444444444
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "architecture",
-        "score": 0.2857142857142857
+        "score": 0.375
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.2222222222222222
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "configuration",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "metadata",
+        "score": 0.5
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "technology",
-        "score": 0.3
+        "score": 0.26666666666666666
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
@@ -345,12 +453,12 @@
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.25
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "knowledge",
-        "score": 0.2857142857142857
+        "score": 0.3076923076923077
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
@@ -359,18 +467,23 @@
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "media",
+        "score": 0.8571428571428571
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "getting-started",
-        "score": 0.5
+        "score": 0.4444444444444444
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "architecture",
-        "score": 0.42857142857142855
+        "score": 0.375
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.2222222222222222
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
@@ -383,9 +496,19 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "configuration",
+        "score": 0.375
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "metadata",
+        "score": 0.625
+      },
+      {
         "file": "weaves/wiki/weave.yaml",
         "category": "technology",
-        "score": 0.5
+        "score": 0.3333333333333333
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -395,7 +518,7 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "knowledge",
-        "score": 0.2857142857142857
+        "score": 0.5384615384615384
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -405,12 +528,17 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "getting-started",
-        "score": 0.125
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "architecture",
-        "score": 0.14285714285714285
+        "score": 0.125
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -423,6 +551,21 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "metadata",
+        "score": 0.375
+      },
+      {
+        "file": "schema/loom.schema.yaml",
+        "category": "technology",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "schema/loom.schema.yaml",
+        "category": "knowledge",
+        "score": 0.07692307692307693
+      },
+      {
         "file": "schema/loom.schema.yaml",
         "category": "design",
         "score": 0.14285714285714285
@@ -430,7 +573,12 @@
       {
         "file": "schema/loom.schema.yaml",
         "category": "architecture",
-        "score": 0.14285714285714285
+        "score": 0.125
+      },
+      {
+        "file": "schema/loom.schema.yaml",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "schema/loom.schema.yaml",
@@ -438,9 +586,29 @@
         "score": 0.14285714285714285
       },
       {
+        "file": "schema/loom.schema.yaml",
+        "category": "configuration",
+        "score": 0.125
+      },
+      {
+        "file": "schema/loom.schema.yaml",
+        "category": "metadata",
+        "score": 0.5
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "technology",
+        "score": 0.3333333333333333
+      },
+      {
         "file": "schema/strand.schema.yaml",
         "category": "ai",
-        "score": 0.2222222222222222
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "knowledge",
+        "score": 0.07692307692307693
       },
       {
         "file": "schema/strand.schema.yaml",
@@ -450,17 +618,42 @@
       {
         "file": "schema/strand.schema.yaml",
         "category": "getting-started",
-        "score": 0.125
+        "score": 0.1111111111111111
       },
       {
         "file": "schema/strand.schema.yaml",
         "category": "architecture",
-        "score": 0.14285714285714285
+        "score": 0.125
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "schema/strand.schema.yaml",
         "category": "best-practices",
         "score": 0.14285714285714285
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "configuration",
+        "score": 0.25
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "metadata",
+        "score": 0.375
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "technology",
+        "score": 0.26666666666666666
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "knowledge",
+        "score": 0.07692307692307693
       },
       {
         "file": "schema/weave.schema.yaml",
@@ -470,12 +663,27 @@
       {
         "file": "schema/weave.schema.yaml",
         "category": "architecture",
-        "score": 0.14285714285714285
+        "score": 0.125
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "schema/weave.schema.yaml",
         "category": "best-practices",
         "score": 0.14285714285714285
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "configuration",
+        "score": 0.125
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "metadata",
+        "score": 0.375
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
@@ -490,12 +698,12 @@
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.08333333333333333
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "knowledge",
-        "score": 0.2857142857142857
+        "score": 0.23076923076923078
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
@@ -505,17 +713,17 @@
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "getting-started",
-        "score": 0.25
+        "score": 0.2222222222222222
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "architecture",
-        "score": 0.2857142857142857
+        "score": 0.25
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "api-reference",
-        "score": 0.25
+        "score": 0.3333333333333333
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
@@ -538,9 +746,164 @@
         "score": 0.3333333333333333
       },
       {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "configuration",
+        "score": 0.5
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "metadata",
+        "score": 0.75
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "technology",
+        "score": 0.6666666666666666
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "ai",
+        "score": 0.25
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "knowledge",
+        "score": 0.38461538461538464
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "security",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "getting-started",
+        "score": 0.2222222222222222
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "architecture",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "api-reference",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "best-practices",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "troubleshooting",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "deployment",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "testing",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "performance",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "configuration",
+        "score": 0.875
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "metadata",
+        "score": 0.875
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "technology",
+        "score": 0.2
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "knowledge",
+        "score": 0.3076923076923077
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "getting-started",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "architecture",
+        "score": 0.125
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "api-reference",
+        "score": 0.2222222222222222
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "best-practices",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "troubleshooting",
+        "score": 0.375
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "deployment",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "testing",
+        "score": 0.5
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "configuration",
+        "score": 0.75
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "metadata",
+        "score": 0.875
+      },
+      {
         "file": "docs/contributing/how-to-submit.md",
         "category": "technology",
-        "score": 0.5
+        "score": 0.4
       },
       {
         "file": "docs/contributing/how-to-submit.md",
@@ -549,8 +912,13 @@
       },
       {
         "file": "docs/contributing/how-to-submit.md",
+        "category": "ai",
+        "score": 0.08333333333333333
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
         "category": "knowledge",
-        "score": 0.14285714285714285
+        "score": 0.38461538461538464
       },
       {
         "file": "docs/contributing/how-to-submit.md",
@@ -559,18 +927,23 @@
       },
       {
         "file": "docs/contributing/how-to-submit.md",
+        "category": "media",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
         "category": "getting-started",
-        "score": 0.625
+        "score": 0.5555555555555556
       },
       {
         "file": "docs/contributing/how-to-submit.md",
         "category": "architecture",
-        "score": 0.42857142857142855
+        "score": 0.375
       },
       {
         "file": "docs/contributing/how-to-submit.md",
         "category": "api-reference",
-        "score": 0.375
+        "score": 0.4444444444444444
       },
       {
         "file": "docs/contributing/how-to-submit.md",
@@ -593,9 +966,19 @@
         "score": 0.6666666666666666
       },
       {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "configuration",
+        "score": 0.375
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "metadata",
+        "score": 0.875
+      },
+      {
         "file": "docs/contributing/submission-schema.md",
         "category": "technology",
-        "score": 0.7
+        "score": 0.7333333333333333
       },
       {
         "file": "docs/contributing/submission-schema.md",
@@ -605,12 +988,12 @@
       {
         "file": "docs/contributing/submission-schema.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.16666666666666666
       },
       {
         "file": "docs/contributing/submission-schema.md",
         "category": "knowledge",
-        "score": 0.5714285714285714
+        "score": 0.6923076923076923
       },
       {
         "file": "docs/contributing/submission-schema.md",
@@ -619,13 +1002,23 @@
       },
       {
         "file": "docs/contributing/submission-schema.md",
+        "category": "media",
+        "score": 0.42857142857142855
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
         "category": "getting-started",
-        "score": 1
+        "score": 0.8888888888888888
       },
       {
         "file": "docs/contributing/submission-schema.md",
         "category": "architecture",
-        "score": 0.7142857142857143
+        "score": 0.75
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "api-reference",
+        "score": 0.1111111111111111
       },
       {
         "file": "docs/contributing/submission-schema.md",
@@ -653,79 +1046,19 @@
         "score": 0.16666666666666666
       },
       {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "technology",
-        "score": 0.7
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "science",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "ai",
-        "score": 0.1111111111111111
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "knowledge",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "design",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "security",
-        "score": 0.16666666666666666
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "getting-started",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "architecture",
-        "score": 0.5714285714285714
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "api-reference",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "best-practices",
-        "score": 0.2857142857142857
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "troubleshooting",
+        "file": "docs/contributing/submission-schema.md",
+        "category": "configuration",
         "score": 0.5
       },
       {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "deployment",
-        "score": 0.3333333333333333
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "testing",
-        "score": 0.5
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "performance",
-        "score": 0.5
+        "file": "docs/contributing/submission-schema.md",
+        "category": "metadata",
+        "score": 1
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "technology",
-        "score": 0.8
+        "score": 0.6
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -740,12 +1073,12 @@
       {
         "file": "docs/openstrand-architecture.md",
         "category": "ai",
-        "score": 0.4444444444444444
+        "score": 0.5833333333333334
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "knowledge",
-        "score": 0.7142857142857143
+        "score": 0.8461538461538461
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -759,18 +1092,23 @@
       },
       {
         "file": "docs/openstrand-architecture.md",
+        "category": "media",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
         "category": "getting-started",
-        "score": 0.375
+        "score": 0.3333333333333333
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "architecture",
-        "score": 0.5714285714285714
+        "score": 0.625
       },
       {
         "file": "docs/openstrand-architecture.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.2222222222222222
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -798,64 +1136,19 @@
         "score": 0.16666666666666666
       },
       {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "technology",
-        "score": 0.3
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "science",
+        "file": "docs/openstrand-architecture.md",
+        "category": "configuration",
         "score": 0.25
       },
       {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "knowledge",
-        "score": 0.42857142857142855
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "design",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "getting-started",
-        "score": 0.375
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "architecture",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "api-reference",
-        "score": 0.125
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "best-practices",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "troubleshooting",
-        "score": 0.375
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "deployment",
-        "score": 0.16666666666666666
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "testing",
-        "score": 0.5
+        "file": "docs/openstrand-architecture.md",
+        "category": "metadata",
+        "score": 0.875
       },
       {
         "file": "docs/schema-reference.md",
         "category": "technology",
-        "score": 0.6
+        "score": 0.6666666666666666
       },
       {
         "file": "docs/schema-reference.md",
@@ -865,12 +1158,12 @@
       {
         "file": "docs/schema-reference.md",
         "category": "ai",
-        "score": 0.1111111111111111
+        "score": 0.16666666666666666
       },
       {
         "file": "docs/schema-reference.md",
         "category": "knowledge",
-        "score": 0.42857142857142855
+        "score": 0.6153846153846154
       },
       {
         "file": "docs/schema-reference.md",
@@ -879,18 +1172,23 @@
       },
       {
         "file": "docs/schema-reference.md",
+        "category": "media",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/schema-reference.md",
         "category": "getting-started",
-        "score": 0.75
+        "score": 0.6666666666666666
       },
       {
         "file": "docs/schema-reference.md",
         "category": "architecture",
-        "score": 0.42857142857142855
+        "score": 0.375
       },
       {
         "file": "docs/schema-reference.md",
         "category": "api-reference",
-        "score": 0.125
+        "score": 0.2222222222222222
       },
       {
         "file": "docs/schema-reference.md",
@@ -901,6 +1199,16 @@
         "file": "docs/schema-reference.md",
         "category": "testing",
         "score": 0.3333333333333333
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "configuration",
+        "score": 0.25
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "metadata",
+        "score": 0.875
       }
     ]
   },
@@ -911,48 +1219,8 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 219,
+    "totalUniqueTerms": 220,
     "suggestedAdditions": [
-      {
-        "term": "string",
-        "frequency": 6
-      },
-      {
-        "term": "codex",
-        "frequency": 5
-      },
-      {
-        "term": "openstrand",
-        "frequency": 4
-      },
-      {
-        "term": "array",
-        "frequency": 4
-      },
-      {
-        "term": "enum",
-        "frequency": 4
-      },
-      {
-        "term": "topics",
-        "frequency": 4
-      },
-      {
-        "term": "description",
-        "frequency": 3
-      },
-      {
-        "term": "jpg",
-        "frequency": 3
-      },
-      {
-        "term": "type",
-        "frequency": 3
-      },
-      {
-        "term": "properties",
-        "frequency": 3
-      },
       {
         "term": "object",
         "frequency": 3
@@ -960,7 +1228,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "47.63s",
+    "timeElapsed": "10.96s",
     "cacheHitRate": "0%",
     "filesProcessed": 19,
     "filesCached": 0,
