@@ -29,28 +29,32 @@ const yaml = require('js-yaml');
 const matter = require('gray-matter');
 
 // Controlled vocabulary for auto-tagging (expandable via NLP)
+// Updated with suggested additions from indexer analysis
 const VOCABULARY = {
   subjects: {
-    technology: ['api', 'code', 'software', 'programming', 'development', 'tech', 'system', 'architecture', 'infrastructure', 'platform'],
+    technology: ['api', 'code', 'software', 'programming', 'development', 'tech', 'system', 'architecture', 'infrastructure', 'platform', 'string', 'array', 'type', 'properties', 'enum'],
     science: ['research', 'study', 'experiment', 'hypothesis', 'theory', 'scientific', 'data', 'analysis'],
     philosophy: ['ethics', 'morality', 'existence', 'consciousness', 'mind', 'thought', 'reasoning'],
-    ai: ['artificial intelligence', 'machine learning', 'neural', 'model', 'training', 'llm', 'agent', 'superintelligence', 'cognitive'],
-    knowledge: ['information', 'data', 'wisdom', 'understanding', 'learning', 'education', 'documentation'],
+    ai: ['artificial intelligence', 'machine learning', 'neural', 'model', 'training', 'llm', 'agent', 'superintelligence', 'cognitive', 'embedding', 'vector', 'semantic'],
+    knowledge: ['information', 'data', 'wisdom', 'understanding', 'learning', 'education', 'documentation', 'codex', 'openstrand', 'strand', 'weave', 'loom', 'fabric'],
     design: ['ux', 'ui', 'interface', 'experience', 'usability', 'accessibility', 'visual'],
     security: ['encryption', 'authentication', 'authorization', 'privacy', 'secure', 'vulnerability'],
+    media: ['image', 'jpg', 'png', 'video', 'audio', 'gallery', 'illustration'],
   },
   topics: {
-    'getting-started': ['tutorial', 'guide', 'introduction', 'beginner', 'start', 'first', 'hello', 'basics'],
-    'architecture': ['design', 'structure', 'pattern', 'system', 'component', 'module', 'framework'],
-    'api-reference': ['endpoint', 'method', 'parameter', 'response', 'request', 'rest', 'graphql', 'sdk'],
+    'getting-started': ['tutorial', 'guide', 'introduction', 'beginner', 'start', 'first', 'hello', 'basics', 'quickstart'],
+    'architecture': ['design', 'structure', 'pattern', 'system', 'component', 'module', 'framework', 'hierarchy'],
+    'api-reference': ['endpoint', 'method', 'parameter', 'response', 'request', 'rest', 'graphql', 'sdk', 'schema'],
     'best-practices': ['recommendation', 'guideline', 'standard', 'convention', 'tip', 'advice', 'pattern'],
     'troubleshooting': ['error', 'issue', 'problem', 'fix', 'solution', 'debug', 'resolve', 'workaround'],
     'deployment': ['deploy', 'production', 'hosting', 'server', 'cloud', 'infrastructure'],
     'testing': ['test', 'qa', 'quality', 'validation', 'verification', 'coverage'],
     'performance': ['optimization', 'speed', 'efficiency', 'scalability', 'caching', 'benchmark'],
+    'configuration': ['config', 'settings', 'options', 'environment', 'env', 'yaml', 'json', 'frontmatter'],
+    'metadata': ['tags', 'topics', 'subjects', 'description', 'summary', 'title', 'author', 'date'],
   },
   difficulty: {
-    beginner: ['basic', 'simple', 'intro', 'fundamental', 'easy', 'start', 'overview'],
+    beginner: ['basic', 'simple', 'intro', 'fundamental', 'easy', 'start', 'overview', 'quickstart'],
     intermediate: ['moderate', 'practical', 'hands-on', 'implement', 'build', 'develop'],
     advanced: ['complex', 'expert', 'optimization', 'performance', 'architecture', 'deep'],
     expert: ['deep-dive', 'internals', 'research', 'cutting-edge', 'novel', 'theoretical'],
