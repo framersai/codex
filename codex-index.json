@@ -114,7 +114,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:29.736Z"
+        "lastIndexed": "2025-11-30T19:01:01.664Z"
       }
     },
     "validation": {
@@ -190,7 +190,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-11-30T18:05:29.756Z"
+        "lastIndexed": "2025-11-30T19:01:01.683Z"
       }
     },
     "validation": {
@@ -312,7 +312,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:29.888Z"
+        "lastIndexed": "2025-11-30T19:01:01.822Z"
       }
     },
     "validation": {
@@ -394,7 +394,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:30.207Z"
+        "lastIndexed": "2025-11-30T19:01:02.135Z"
       }
     },
     "validation": {
@@ -482,7 +482,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:30.299Z"
+        "lastIndexed": "2025-11-30T19:01:02.216Z"
       }
     },
     "validation": {
@@ -573,7 +573,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:30.606Z"
+        "lastIndexed": "2025-11-30T19:01:02.518Z"
       }
     },
     "validation": {
@@ -670,7 +670,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:31.017Z"
+        "lastIndexed": "2025-11-30T19:01:02.928Z"
       }
     },
     "validation": {
@@ -782,7 +782,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:31.590Z"
+        "lastIndexed": "2025-11-30T19:01:03.487Z"
       }
     },
     "validation": {
@@ -884,7 +884,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-11-30T18:05:31.668Z"
+        "lastIndexed": "2025-11-30T19:01:03.563Z"
       }
     },
     "validation": {
@@ -1014,7 +1014,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-11-30T18:05:31.727Z"
+        "lastIndexed": "2025-11-30T19:01:03.622Z"
       }
     },
     "validation": {
@@ -1260,7 +1260,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:31.903Z"
+        "lastIndexed": "2025-11-30T19:01:03.783Z"
       }
     },
     "validation": {
@@ -1363,7 +1363,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-11-30T18:05:32.026Z"
+        "lastIndexed": "2025-11-30T19:01:03.837Z"
       }
     },
     "validation": {
@@ -1496,7 +1496,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:32.533Z"
+        "lastIndexed": "2025-11-30T19:01:04.318Z"
       }
     },
     "validation": {
@@ -1593,7 +1593,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:33.985Z"
+        "lastIndexed": "2025-11-30T19:01:05.859Z"
       }
     },
     "validation": {
@@ -1613,6 +1613,86 @@
     },
     "content": "# Frame Codex Development Guide\n\n## Initial Setup & Cataloging\n\n### First-Time Setup\n\n1. **Install Dependencies**\n```bash\ncd apps/codex\nnpm install\n```\n\n2. **Run Initial Catalog** (categorizes ALL existing content)\n```bash\nnpm run index -- --validate\n```\n\nThis will:\n- Scan all markdown files in `weaves/`, `docs/`, `wiki/`\n- Extract keywords using TF-IDF\n- Auto-categorize using NLP (no LLM, pure statistical)\n- Generate `codex-index.json` (searchable index)\n- Generate `codex-report.json` (analytics)\n- Output validation errors/warnings/suggestions\n\n**First run takes ~30 seconds for 100 files**\n\n### How It Works Subsequently\n\n**Automatic on Every PR Merge:**\n\n1. GitHub Actions triggers `build-index.yml` on push to `main`\n2. Runs `npm run index -- --validate` (static NLP only)\n3. Generates updated index files\n4. Pushes to `index` branch for consumption\n5. **No AI/LLM calls** - pure TF-IDF, n-grams, vocabulary matching\n\n**Static NLP Tools Used:**\n- **TF-IDF**: Keyword extraction (no external API)\n- **N-gram extraction**: Common phrases (local computation)\n- **Vocabulary matching**: Controlled taxonomy (regex/string matching)\n- **Readability scoring**: Flesch-Kincaid (formula-based)\n- **Sentiment heuristics**: Simple keyword patterns\n\n**Cost: $0** - All processing is local/in-CI\n\n---\n\n## Environment Variables & Secrets\n\n### Required GitHub Secrets\n\nAdd to `framersai/codex` repository settings:\n\n```bash\n# Required for auto-merge workflow\nGH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx  # GitHub Personal Access Token (repo scope)\n\n# AI Enhancement (OPTIONAL - only if you want AI-powered PR analysis)\nOPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx\n\n# Auto-merge control (default: false - requires manual approval)\nAUTO_CATALOG_MERGE=false  # Set to 'true' to auto-merge re-catalog PRs\n\n# Configuration (optional)\nAI_PROVIDER=disabled  # Set to 'disabled' to skip AI entirely\n```\n\n### Secret Configuration\n\n**To enable AI enhancement:**\n```bash\nOPENAI_API_KEY=sk-...\n```\n\n**To enable auto-merge for re-catalog PRs:**\n```bash\nAUTO_CATALOG_MERGE=true\n# Default: false (requires manual approval)\n# Recommended: keep false to review metadata changes\n```\n\n**To disable AI enhancement:**\n```bash\nAI_PROVIDER=disabled\n# Or just don't set OPENAI_API_KEY\n```\n\n### Local Development\n\nCreate `.env` in `apps/codex/`:\n\n```bash\n# Optional - only for testing AI enhancement locally\nOPENAI_API_KEY=sk-...\n# or\nANTHROPIC_API_KEY=sk-ant-...\nAI_PROVIDER=openai\n```\n\n**Note:** The indexer and validator work WITHOUT any API keys. AI is only for optional PR enhancement.\n\n---\n\n## Triggering a Full Re-Catalog\n\n### Method 1: Automated Script (Recommended)\n\n```bash\ncd apps/codex\nchmod +x scripts/retrigger-full-catalog.sh\n\n# Dry run first (see what would change)\n./scripts/retrigger-full-catalog.sh --dry-run\n\n# Create PR with changes (requires manual approval)\n./scripts/retrigger-full-catalog.sh\n\n# Force auto-merge (one-time override)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n**What it does:**\n1. Runs full static NLP analysis on ALL files\n2. Creates branch: `catalog/full-reindex-{timestamp}`\n3. Commits updated index files\n4. Creates PR with detailed summary\n5. **Waits for manual approval** (unless `AUTO_CATALOG_MERGE=true`)\n\n**Requirements:**\n- `GH_PAT` environment variable\n\n### Method 2: GitHub Actions Trigger\n\n```bash\n# Via GitHub CLI\ngh workflow run build-index.yml --repo framersai/codex\n\n# Or via web UI\n# Go to: https://github.com/framersai/codex/actions/workflows/build-index.yml\n# Click \"Run workflow\" → \"Run workflow\"\n```\n\n**What it does:**\n- Runs indexer in CI\n- Pushes directly to `index` branch (no PR)\n- Updates live immediately\n\n### Method 3: Local Re-Index\n\n```bash\ncd apps/codex\nnpm run index -- --validate\n\n# Review changes\ncat codex-report.json | jq '.summary'\n\n# Commit manually\ngit add codex-index.json codex-report.json\ngit commit -m \"chore: re-index all content\"\ngit push\n```\n\n**See full guide:** [RECATALOG_GUIDE.md](./RECATALOG_GUIDE.md)\n\n---\n\n## Search Artifacts (BM25 + MiniLM embeddings)\n\nFrame.dev’s advanced search UI consumes a separate static artifact, `codex-search.json`, which contains:\n\n- BM25 postings (term → docId, term frequency)\n- Document metadata (path, weave, loom, summary, doc length)\n- Packed Float32 embeddings (all-MiniLM-L6-v2, mean pooled, normalized)\n\nGenerate it after the main index:\n\n```bash\ncd apps/codex\nnpm run build:search\n\n# Commit alongside codex-index.json to publish updated search data\ngit add codex-search.json\n```\n\nThis command uses `@xenova/transformers` entirely in Node.js (no Python, no API keys) and produces a fully static JSON blob that can be hosted on GitHub Pages or any CDN.\n\n---\n\n## SQL Cache Architecture\n\nFrame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent incremental indexing.\n\n### How It Works\n\n**On First Run:**\n1. Creates `.cache/codex.db` (better-sqlite3 in CI, IndexedDB in browser)\n2. Analyzes ALL files with static NLP (TF-IDF, n-grams)\n3. Stores: file pat",
     "searchText": "development **run initial catalog** (categorizes all existing content)\n\n\nthis will:\n- scan all markdown files in , , \n- extract keywords using tf-idf\n- auto-categorize using nlp (no llm, pure statistical)\n- generate  (searchable index)\n- generate  (analytics)\n- output validation errors/warnings/suggestions\n\n... run const index loom cache null npm bash scripts not seconds await keywords integer cachekey not null npm run run index index validate static nlp auto merge integer not loom strands apps codex auto index"
+  },
+  {
+    "path": "docs/NLP_VOCABULARY_SYSTEM.md",
+    "name": "NLP_VOCABULARY_SYSTEM.md",
+    "type": "file",
+    "metadata": {
+      "title": "NLP VOCABULARY SYSTEM",
+      "summary": "NLP & Vocabulary System Documentation\n\nOverview\n\nThe Codex auto-indexer uses a sophisticated NLP pipeline for content classification, keyword extraction, and auto-tagging",
+      "autoGenerated": {
+        "keywords": [
+          "txt",
+          "terms",
+          "weight",
+          "categories",
+          "vocabulary",
+          "neural",
+          "learning",
+          "classification",
+          "enhance",
+          "machine",
+          "words",
+          "term",
+          "matching",
+          "files",
+          "context"
+        ],
+        "phrases": [
+          "machine learning",
+          "best practices",
+          "nlp vocabulary",
+          "auto indexer",
+          "vocabulary documentation",
+          "documentation overview",
+          "overview codex",
+          "codex auto",
+          "indexer uses",
+          "uses sophisticated"
+        ],
+        "subjects": [],
+        "topics": [],
+        "difficulty": "intermediate",
+        "confidence": {},
+        "readingLevel": 0,
+        "readabilityScore": 0,
+        "statistics": {},
+        "entities": {
+          "people": [
+            "clay |",
+            "Claude/GPT-4"
+          ],
+          "places": [],
+          "organizations": [
+            "NLP & Vocabulary"
+          ],
+          "topics": [
+            "NLP & Vocabulary",
+            "Claude/GPT-4",
+            "clay |"
+          ]
+        },
+        "lastIndexed": "2025-11-30T19:01:06.697Z"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "suggestions": [
+        "Add unique ID (UUID recommended)",
+        "Add version number (semver format)",
+        "Consider adding tags: txt, terms, weight, categories, vocabulary",
+        "Consider adding relationships (requires, references, seeAlso)",
+        "Auto-detected subjects: ",
+        "Auto-detected topics: ",
+        "Suggested difficulty: intermediate",
+        "Key phrases found: machine learning, best practices, nlp vocabulary"
+      ]
+    },
+    "content": "# NLP & Vocabulary System Documentation\n\n## Overview\n\nThe Codex auto-indexer uses a sophisticated NLP pipeline for content classification, keyword extraction, and auto-tagging. This system combines:\n\n1. **External Vocabulary Files** - Extensible text files with domain-specific terms\n2. **Porter Stemmer** - Word normalization for better matching\n3. **N-gram Analysis** - Trigram → Bigram → Unigram weighted matching\n4. **Context-Aware Scoring** - Reduce false positives through contextual analysis\n5. **LLM Assistance** (optional) - AI-powered enhancement via `ai-enhance.js`\n\n## Architecture\n\n```\nvocab/\n├── subjects/           # Domain categories (8 files)\n│   ├── technology.txt  # Programming, frameworks, tools\n│   ├── ai.txt          # Machine learning, LLMs, neural nets\n│   ├── science.txt     # Research, physics, chemistry, biology\n│   ├── philosophy.txt  # Ethics, metaphysics, epistemology\n│   ├── knowledge.txt   # Documentation, learning, OpenStrand\n│   ├── design.txt      # UX/UI, visual design, accessibility\n│   ├── security.txt    # Encryption, auth, vulnerabilities\n│   └── media.txt       # Images, video, audio, formats\n├── topics/             # Content type categories (5 files)\n│   ├── getting-started.txt\n│   ├── architecture.txt\n│   ├── api-reference.txt\n│   ├── best-practices.txt\n│   └── troubleshooting.txt\n├── difficulty/         # Skill levels (4 files)\n│   ├── beginner.txt\n│   ├── intermediate.txt\n│   ├── advanced.txt\n│   └── expert.txt\n└── stopwords.txt       # 500+ stop words for filtering\n```\n\n## N-gram Weighted Matching\n\nThe system prioritizes longer, more specific matches:\n\n| N-gram Type | Weight | Example |\n|-------------|--------|---------|\n| **Trigram** (3 words) | 3.0x | \"machine learning model\" |\n| **Bigram** (2 words) | 2.0x | \"neural network\" |\n| **Unigram** (1 word) | 1.0x | \"tensorflow\" |\n\n### Matching Logic\n\n```javascript\n// Trigrams checked first (highest specificity)\nif (trigramSet.has(\"domain driven design\")) → weight = 3.0\n\n// Then bigrams\nif (bigramSet.has(\"clean architecture\")) → weight = 2.0\n\n// Finally unigrams with stemming\nif (unigramSet.has(\"microservic\") || unigramSet.has(\"microservice\")) → weight = 1.0\n\n// Hyphenated compound terms get 1.5x unigram weight\nif (allPartsMatch(\"event-driven\")) → weight = 1.5\n```\n\n## Context-Aware Scoring\n\nTo avoid false positives (e.g., \"library\" matching programming when discussing a physical library), the system applies context adjustments:\n\n### Negative Context (Score × 0.3)\n\n| Term | Negative Context Words |\n|------|----------------------|\n| library | physical, book, public, municipal, lending |\n| learning | curve, disability, difficulties, disorder |\n| framework | legal, regulatory, policy, theoretical |\n| model | fashion, role, scale, 3d, clay |\n| platform | train, station, political, diving |\n| cloud | weather, rain, storm, sky |\n\n### Positive Context (Score × 1.5)\n\n| Term | Positive Context Words |\n|------|----------------------|\n| library | code, import, npm, package, install, dependency |\n| learning | machine, deep, model, neural, ai, training |\n| framework | web, software, javascript, python, backend |\n| model | machine, learning, neural, language, ai |\n| platform | cloud, software, development, api, saas |\n\n## Porter Stemmer\n\nAll terms are normalized using the Porter Stemming Algorithm:\n\n| Original | Stemmed |\n|----------|---------|\n| programming | program |\n| development | develop |\n| configuration | configur |\n| authentication | authent |\n| microservices | microservic |\n\nThis allows matching word variants automatically.\n\n## Adding Vocabulary Terms\n\nSimply add terms to the appropriate `.txt` file:\n\n```txt\n# vocab/subjects/technology.txt\n# One term per line. Lines starting with # are comments.\n\nkubernetes\nk8s\nhelm-chart\nistio\nservice-mesh\n```\n\n### Best Practices\n\n1. **Use hyphens** for compound terms: `machine-learning`, `event-driven`\n2. **Include variations**: `k8s`, `kubernetes`, `kube`\n3. **Add acronyms**: Both `API` and `application-programming-interface`\n4. **Use lowercase**: Normalization handles case automatically\n5. **Group related terms**: Keep related concepts together\n\n## LLM Enhancement (Optional)\n\nThe `ai-enhance.js` script uses Claude/GPT-4 to:\n\n1. **Auto-fill metadata** - Title, summary, tags\n2. **Suggest categories** - Subject, topic, difficulty\n3. **Detect quality issues** - Missing sections, unclear content\n4. **Generate summaries** - Extractive and abstractive\n\n### Usage\n\n```bash\n# Analyze specific files\nnode scripts/ai-enhance.js --files \"file1.md,file2.md\"\n\n# Apply safe fixes automatically\nnode scripts/ai-enhance.js --files \"file1.md\" --apply-safe-fixes\n```\n\n### Environment Variables\n\n```env\nOPENAI_API_KEY=sk-...\nANTHROPIC_API_KEY=sk-ant-...\nOPENROUTER_API_KEY=sk-or-...\nAI_PROVIDER=anthropic  # or 'openai', 'openrouter', 'disabled'\n```\n\n## Classification Output\n\nThe classifier returns:\n\n```javascript\n{\n  subjects: ['technology', 'ai'],\n  topics: ['architecture', 'best-practices'],\n  difficulty: 'intermedia",
+    "searchText": "nlp vocabulary system nlp & vocabulary system documentation\n\noverview\n\nthe codex auto-indexer uses a sophisticated nlp pipeline for content classification, keyword extraction, and auto-tagging txt terms weight categories vocabulary neural learning classification enhance machine words term matching files context machine learning best practices nlp vocabulary auto indexer vocabulary documentation documentation overview overview codex codex auto indexer uses uses sophisticated"
   },
   {
     "path": "docs/RECATALOG_GUIDE.md",
@@ -1650,16 +1730,16 @@
           "retrigger",
           "validation",
           "report",
+          "merge",
           "index",
           "full",
-          "merge",
+          "changes",
           "monthly",
           "avg",
-          "changes",
-          "scripts",
-          "codex",
           "review",
-          "vocabulary"
+          "prs",
+          "check",
+          "codex"
         ],
         "phrases": [
           "full catalog",
@@ -1708,7 +1788,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:34.790Z"
+        "lastIndexed": "2025-11-30T19:01:07.523Z"
       }
     },
     "validation": {
@@ -1721,7 +1801,7 @@
       ]
     },
     "content": "\n# Frame Codex Re-Catalog Guide\n\nThis guide explains how to trigger a complete re-indexing and metadata update for all Frame Codex content.\n\n---\n\n## When to Re-Catalog\n\nRun a full re-catalog when:\n\n✅ **Initial setup** - First time setting up the repository  \n✅ **Schema changes** - After updating validation rules or metadata schema  \n✅ **Vocabulary updates** - After adding new subjects/topics to controlled vocabulary  \n✅ **Bulk imports** - After importing large amounts of content  \n✅ **Quality audit** - Periodic review of all content (monthly/quarterly)  \n\n❌ **NOT needed for:**\n- Individual PR merges (automatic via GitHub Actions)\n- Small metadata fixes (handled by normal PR flow)\n- Content updates without schema changes\n\n---\n\n## Method 1: GitHub Actions (Recommended)\n\n### Via GitHub Web UI\n\n1. Go to https://github.com/framersai/codex/actions/workflows/build-index.yml\n2. Click **\"Run workflow\"** dropdown (top right)\n3. Select branch: `main`\n4. Click **\"Run workflow\"** button\n5. Wait ~1-2 minutes for completion\n\n### Via GitHub CLI\n\n```bash\ngh workflow run build-index.yml --repo framersai/codex\n```\n\n**What It Does:**\n- Runs `npm run index -- --validate` on ALL files\n- Generates `codex-index.json` and `codex-report.json`\n- Pushes to `index` branch (no PR needed)\n- Updates live immediately on frame.dev/codex\n\n**Cost:** $0 (static NLP only, no AI calls)\n\n---\n\n## Method 2: Local Script with PR Creation\n\n### Using the Re-Catalog Script\n\n```bash\ncd apps/codex\nchmod +x scripts/retrigger-full-catalog.sh\n./scripts/retrigger-full-catalog.sh\n```\n\n**What It Does:**\n1. Runs full static NLP analysis on ALL files\n2. Updates `codex-index.json` and `codex-report.json`\n3. Creates a new branch: `catalog/full-reindex-{timestamp}`\n4. Commits changes\n5. Pushes to GitHub\n6. **Creates a PR** (requires manual approval by default)\n7. Optionally auto-merges if `AUTO_CATALOG_MERGE=true`\n\n**Options:**\n\n```bash\n# Dry run (see what would change, no PR)\n./scripts/retrigger-full-catalog.sh --dry-run\n\n# Force auto-merge (overrides AUTO_CATALOG_MERGE setting)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n**Requirements:**\n- `GH_PAT` environment variable (for PR creation)\n- Git configured with user name/email\n\n**Cost:** $0 (static NLP only)\n\n---\n\n## Method 3: Manual Local Re-Index\n\nFor testing or local development:\n\n```bash\ncd apps/codex\nnpm install\nnpm run index -- --validate\n```\n\n**Output Files:**\n- `codex-index.json` - Full searchable index\n- `codex-report.json` - Analytics and validation report\n\n**To Deploy:**\n```bash\ngit add codex-index.json codex-report.json\ngit commit -m \"chore: manual re-index\"\ngit push\n```\n\n---\n\n## Auto-Merge Configuration\n\n### Default Behavior: Manual Approval Required\n\nBy default, full re-catalog PRs require **manual review and approval**. This is the recommended setting to catch any unexpected metadata changes.\n\n### Enable Auto-Merge\n\nSet this GitHub secret to enable automatic merging:\n\n```bash\nAUTO_CATALOG_MERGE=true\n```\n\n**When enabled:**\n- Re-catalog PRs will auto-merge after validation passes\n- No human review required\n- Faster iteration, but less oversight\n\n**When to enable:**\n- High trust in automation\n- Frequent re-catalogs needed\n- Well-tested vocabulary and schema\n\n**When to keep disabled (recommended):**\n- Initial setup phase\n- Testing new categorization rules\n- Want to review metadata changes\n- Prefer human oversight\n\n### Toggle via Script\n\n```bash\n# With auto-merge\nAUTO_CATALOG_MERGE=true ./scripts/retrigger-full-catalog.sh\n\n# Without auto-merge (default)\n./scripts/retrigger-full-catalog.sh\n\n# Force auto-merge (one-time override)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n---\n\n## What Gets Updated\n\n### Static NLP Analysis (Always Runs)\n\n1. **Keywords Extraction** (TF-IDF)\n   - Identifies most important terms\n   - Filters stop words\n   - Ranks by relevance\n\n2. **Phrase Detection** (N-grams)\n   - Finds common 2-3 word phrases\n   - Identifies repeated patterns\n   - Suggests tags\n\n3. **Category Matching**\n   - Matches against controlled vocabulary\n   - Assigns subjects and topics\n   - Calculates confidence scores\n\n4. **Difficulty Detection**\n   - Heuristic analysis of complexity indicators\n   - Keyword-based classification\n   - Assigns beginner/intermediate/advanced/expert\n\n5. **Summary Generation**\n   - Extractive summarization\n   - Picks most representative sentence\n   - Truncates to 300 characters\n\n6. **Validation**\n   - Schema compliance\n   - Required fields check\n   - Content quality rules\n   - Duplicate detection\n\n### What Does NOT Get Updated\n\n❌ **Manual metadata is preserved:**\n- Explicitly set titles, summaries, tags\n- User-defined relationships\n- Custom categorization\n- Version numbers\n- Author information\n\n✅ **Only auto-generated fields are updated:**\n- `metadata.autoGenerated.*`\n- Missing fields (if not explicitly set)\n- Validation warnings/suggestions\n\n---\n\n## Reviewing Re-Catalog PRs\n\n### What to Check\n\n1. **Metadata Changes**\n   - Are auto-tags accurate?\n   - Is difficulty le",
-    "searchText": "frame codex re-catalog guide complete guide to triggering full re-indexing and metadata updates for all frame codex content catalog run retrigger validation report index full merge monthly avg changes scripts codex review vocabulary full catalog auto merge scripts retrigger retrigger full codex report report json static nlp frame codex codex index index json"
+    "searchText": "frame codex re-catalog guide complete guide to triggering full re-indexing and metadata updates for all frame codex content catalog run retrigger validation report merge index full changes monthly avg review prs check codex full catalog auto merge scripts retrigger retrigger full codex report report json static nlp frame codex codex index index json"
   },
   {
     "path": "docs/contributing/how-to-submit.md",
@@ -1767,11 +1847,11 @@
           "uuidgenerator",
           "net",
           "discord",
-          "quality",
-          "add",
           "token",
           "contribution",
-          "programming"
+          "github",
+          "submit",
+          "add"
         ],
         "phrases": [
           "frame dev",
@@ -1837,7 +1917,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:36.103Z"
+        "lastIndexed": "2025-11-30T19:01:08.862Z"
       }
     },
     "validation": {
@@ -1850,7 +1930,7 @@
       ]
     },
     "content": "\n# How to Submit to Frame Codex\n\nWelcome! This guide will walk you through the different ways to contribute knowledge to Frame Codex.\n\n## Quick Start\n\nThe easiest way to submit content is through our **enhanced contribution modal** at [frame.dev/codex](https://frame.dev/codex):\n\n1. Click the green **\"Contribute\"** button in the Codex viewer toolbar\n2. Fill in your content (title, summary, markdown body)\n3. Specify or leave blank weave/loom for AI suggestion\n4. Add tags (or use suggested tags from content analysis)\n5. Choose difficulty level (beginner/intermediate/advanced/expert)\n6. Toggle AI enhancement (optional, explains cost vs free static NLP)\n7. Preview final markdown with frontmatter\n8. Click **\"Create Pull Request\"** (uses GitHub API if you provide PAT, or opens GitHub editor)\n\nThat's it! Our automated validation runs, and maintainers review your submission.\n\n---\n\n## Submission Methods\n\n### Method 1: Web Submission UI (Recommended)\n\n**Best for:** Quick submissions, beginners, anyone without Git expertise\n\nThe enhanced contribution modal provides:\n- ✅ Pre-filled metadata based on current context\n- ✅ Tag suggestions from content analysis\n- ✅ Weave/loom inference (or manual override)\n- ✅ AI enhancement toggle (optional, cost-transparent)\n- ✅ Direct GitHub PR creation via API\n- ✅ Fallback to GitHub web editor (no PAT required)\n- ✅ Preview step showing final markdown\n- ✅ No local setup required\n\n**Steps:**\n\n1. **Open Contribution Modal**\n   - Go to [frame.dev/codex](https://frame.dev/codex)\n   - Click the green \"Contribute\" button in the toolbar\n   - Or use quick actions dropdown (mobile)\n\n2. **Fill in Content**\n   - **Title**: Clear, descriptive title (required)\n   - **Summary**: 20-300 character abstract (required)\n   - **Content**: Write or paste markdown (minimum 100 characters, required)\n\n3. **Specify Location** (Optional - AI can suggest if left blank)\n   - **Weave**: Which knowledge universe (e.g., technology, science, community)\n   - **Loom**: Topic collection (e.g., programming, algorithms)\n   - System auto-detects from current path or suggests based on content\n\n4. **Add Metadata**\n   - **Tags**: Type and press Enter, or click suggested tags from content analysis\n   - **Difficulty**: Select beginner/intermediate/advanced/expert\n   - **Subjects/Topics**: Auto-suggested from controlled vocabulary\n\n5. **AI Enhancement** (Optional)\n   - Toggle ON: AI analyzes content, suggests better categorization (~$0.01-0.20 cost)\n   - Toggle OFF: Static NLP only (free, still provides quality validation)\n\n6. **GitHub PAT** (Optional)\n   - Provide token for direct API PR creation\n   - Token is used only in your browser to call GitHub APIs directly and is never stored in localStorage, IndexedDB, SQL, or on any Frame.dev server\n   - Leave blank to open GitHub web editor instead\n\n7. **Preview & Submit**\n   - Review generated markdown with frontmatter\n   - See final file path: `weaves/{weave}/{loom}/{slug}.md`\n   - Click \"Create Pull Request\"\n     - Summary (extractive summarization)\n     - Tags (TF-IDF keyword extraction)\n     - Difficulty level (heuristic detection)\n     - Subjects and topics (vocabulary matching)\n   - Edit any field as needed\n\n4. **Provide GitHub Token**\n   - Create a [Personal Access Token](https://github.com/settings/tokens/new?scopes=repo&description=Frame%20Codex%20Submission) with `repo` scope\n   - Paste it into the token field in the Frame Codex UI\n   - The token lives only in that browser tab’s memory while the modal is open, is never persisted in local storage / IndexedDB / SQL, and is sent only to GitHub (never to any Frame.dev backend)\n\n5. **Submit**\n   - Click \"Create Pull Request\"\n   - A new PR will be created on GitHub\n   - You'll receive a link to track the review\n\n**Rate Limits:**\n- 5 submissions per hour per user\n- Resets automatically after 60 minutes\n\n---\n\n### Method 2: GitHub Direct (Advanced)\n\n**Best for:** Bulk submissions, complex content, experienced contributors\n\n**Steps:**\n\n1. **Fork the Repository**\n   ```bash\n   gh repo fork framersai/codex --clone\n   cd codex\n   ```\n\n2. **Create a Branch**\n   ```bash\n   git checkout -b add-my-content\n   ```\n\n3. **Add Your Content**\n   - Place files directly within the target weave. Any folder becomes a loom, and any markdown file becomes a strand:\n     ```\n     weaves/\n       [weave-name]/\n         weave.yaml\n         overview.md                 # Strand at weave root\n         [loom-folder]/              # e.g. guides/, research/, notes/\n           loom.yaml (optional)\n           your-content.md\n           nested/topic/advanced.md  # Nested looms are allowed\n     ```\n   - See [submission-schema.md](./submission-schema.md) for required metadata\n\n4. **Validate Locally**\n   ```bash\n   npm install\n   npm run validate\n   npm run index -- --validate\n   ```\n\n5. **Commit and Push**\n   ```bash\n   git add .\n   git commit -m \"feat: add [your content title]\"\n   git push origin add-my-content\n   ```\n\n6. **Create Pull Request**\n   ```bash\n   gh pr cre",
-    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation recursion submission submissions direct content modal field uuidgenerator net discord quality add token contribution programming frame dev frame codex dev codex add content github com framersai codex content title content analysis create pull pull request"
+    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation recursion submission submissions direct content modal field uuidgenerator net discord token contribution github submit add frame dev frame codex dev codex add content github com framersai codex content title content analysis create pull pull request"
   },
   {
     "path": "docs/contributing/submission-schema.md",
@@ -1900,17 +1980,17 @@
           "array",
           "enum",
           "iso",
-          "programming",
           "8601",
           "computer",
-          "python",
+          "programming",
           "fields",
           "recursion",
           "eca",
+          "python",
           "functions",
-          "science",
           "15t00",
-          "validation"
+          "validation",
+          "yaml"
         ],
         "phrases": [
           "array string",
@@ -1967,7 +2047,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:37.951Z"
+        "lastIndexed": "2025-11-30T19:01:10.752Z"
       }
     },
     "validation": {
@@ -1979,7 +2059,7 @@
       ]
     },
     "content": "\n# Frame Codex Submission Schema Reference\n\nThis document provides the complete technical specification for Frame Codex content schema, including integration with OpenStrand's Educational Content Atom (ECA) standard.\n\n---\n\n## Table of Contents\n\n1. [Schema Overview](#schema-overview)\n2. [Strand Schema (Individual Content)](#strand-schema)\n3. [Loom Schema (Collections)](#loom-schema)\n4. [Weave Schema (Universes)](#weave-schema)\n5. [ECA Integration](#eca-integration)\n6. [Validation Rules](#validation-rules)\n7. [Examples](#examples)\n\n---\n\n## Schema Overview\n\nFrame Codex uses a three-tier knowledge organization:\n\n```\nWeave (Universe)\n├── Loom (Collection)\n│   ├── Strand (Content)\n│   ├── Strand (Content)\n│   └── ...\n├── Loom (Collection)\n│   └── ...\n└── ...\n```\n\n### Key Principles\n\n- **Strands** are atomic, self-contained knowledge units\n- **Looms** curate related strands into coherent learning paths\n- **Weaves** represent complete, isolated knowledge universes\n- **No cross-weave relationships** (each weave is independent)\n- **Subfolders are SUBTOPICS** - folder depth determines topic specificity (deeper = more specific)\n- **Topics are hierarchical** - must narrow scope as you go deeper in the folder tree\n- **Tags are independent** - can be shared freely across any folder level\n\n---\n\n## Strand Schema\n\nStrands are individual markdown files with YAML frontmatter.\n\n### Required Fields\n\n```yaml\nid: string (UUID v4)\nslug: string (lowercase, hyphens, alphanumeric)\ntitle: string (3-100 characters)\nsummary: string (20-300 characters)\nversion: string (semver: x.y.z)\ncontentType: enum [markdown, code, data, media]\ndifficulty: enum [beginner, intermediate, advanced, expert]\n```\n\n### Recommended Fields\n\n```yaml\ntaxonomy:\n  subjects: array<string>          # High-level categories\n  topics: array<string>            # ⚠️ MUST match folder depth (see below)\n  subtopics: array<string>         # Even more specific narrowing\n  concepts: array<object>\n    - term: string\n      weight: number (0-1)\n      definition: string (optional)\n  skills: array<object>\n    - name: string\n      level: enum [introduce, develop, master]\n\ntags: array<string>               # ✓ Independent - NO hierarchy\n\n# ─────────────────────────────────────────────────────────────────────\n# ⚠️  CRITICAL: Topics vs Tags\n# ─────────────────────────────────────────────────────────────────────\n# \n# TOPICS are HIERARCHICAL:\n#   - Subfolders = subtopics of parent folder\n#   - Topics MUST become MORE SPECIFIC as folder depth increases\n#   - A file in /programming/python/async/ must have topics about async Python\n#   - NOT broad topics like \"web-development\"\n#\n# TAGS are INDEPENDENT:\n#   - No hierarchy, flat structure\n#   - Can be shared across ANY folder level\n#   - A deeply nested file can share tags with root files\n#   - Example: both /python/async/coroutines.md and /overview.md can use\n#     the tag \"best-practices\"\n#\n# See: openstrand-architecture.md#hierarchical-topic-structure-critical-rule\n# ─────────────────────────────────────────────────────────────────────\n\nrelationships:\n  requires: array<string> (slugs of prerequisite strands)\n  references: array<string> (slugs of related strands)\n  seeAlso: array<string> (external URLs)\n\npublishing:\n  created: string (ISO 8601 datetime)\n  updated: string (ISO 8601 datetime)\n  status: enum [draft, review, published, archived]\n  license: string (default: CC-BY-4.0)\n  authors: array<string>\n```\n\n### OpenStrand ECA Extended Fields\n\nFrame Codex supports the full OpenStrand Educational Content Atom (ECA) specification for advanced learning design:\n\n```yaml\n# Learning Design\nlearningDesign:\n  objectives: array<object>\n    - id: string\n      description: string\n      bloomsLevel: enum [remember, understand, apply, analyze, evaluate, create]\n      measurable: boolean\n  \n  outcomes: array<object>\n    - id: string\n      description: string\n      assessment: string (optional)\n  \n  pedagogicalApproach: array<enum>\n    # Options: direct_instruction, discovery_learning, problem_based,\n    #          collaborative, experiential, inquiry_based\n  \n  instructionalStrategies: array<string>\n\n# Time Estimates\ntimeEstimates:\n  reading: number (minutes)\n  exercises: number (minutes)\n  projects: number (minutes)\n  total: number (minutes)\n\n# Modality Support\nmodalities:\n  text: boolean\n  visual:\n    diagrams: number\n    images: number\n    charts: number\n  audio:\n    narration: boolean\n    duration: number (seconds, optional)\n  video:\n    embedded: number\n    duration: number (seconds, optional)\n  kinesthetic:\n    simulations: number\n    exercises: number\n\n# Interactive Elements\ninteractiveElements: array<object>\n  - id: string\n    type: enum [quiz, poll, simulation, code_exercise, discussion_prompt, reflection, peer_review]\n    required: boolean\n    data: object (type-specific)\n\n# Assessment\nassessments:\n  formative: array<object>\n    - id: string\n      type: string\n      weight: number (0-1)\n  summative: array<object>\n    - id: string\n      type: s",
-    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string array enum iso programming 8601 computer python fields recursion eca functions science 15t00 validation array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml object string"
+    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string array enum iso 8601 computer programming fields recursion eca python functions 15t00 validation yaml array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml object string"
   },
   {
     "path": "docs/openstrand-architecture.md",
@@ -2029,21 +2109,21 @@
       },
       "autoGenerated": {
         "keywords": [
-          "python",
           "infrastructure",
           "async",
+          "python",
           "programming",
+          "coroutines",
+          "weaves",
+          "fabric",
           "topics",
           "technology",
-          "coroutines",
           "openstrand",
-          "fabric",
-          "weaves",
           "topic",
           "knowledge",
           "hierarchy",
           "depth",
-          "powered"
+          "immutable"
         ],
         "phrases": [
           "frame codex",
@@ -2086,7 +2166,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-11-30T18:05:39.243Z"
+        "lastIndexed": "2025-11-30T19:01:12.090Z"
       }
     },
     "validation": {
@@ -2098,7 +2178,7 @@
       ]
     },
     "content": "\n# OpenStrand Architecture Overview\n\nOpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex. It provides a structured, AI-native way to organize, store, and retrieve humanity's knowledge.\n\n## Core Concepts\n\n### The Four-Tier Hierarchy\n\nOpenStrand organizes knowledge using four fundamental primitives:\n\n**Fabric** - A collection of weaves\n- The highest level of organization\n- Represents an entire knowledge repository or ecosystem\n- Example: Frame Codex itself is a fabric\n- Contains multiple weaves that are conceptually related but independent\n\n**Strand** - The atomic unit of knowledge\n- A single document, image, dataset, or media file\n- Contains rich metadata for categorization and discovery\n- Can reference other strands within the same weave\n- Immutable once published (new versions create new strands)\n\n**Loom** - A curated collection of related strands\n- Groups strands by topic, theme, or learning path\n- Defines ordering (sequential, hierarchical, or network)\n- Provides context and relationships between strands\n- Acts as a module or chapter in the knowledge base\n\n**Weave** - A complete universe of knowledge\n- Self-contained collection with no external dependencies\n- Represents a domain, project, or knowledge area\n- No relationships exist between different weaves\n- Think of it as a separate universe or dimension\n\n### Why This Structure?\n\nThe Fabric/Weave/Loom/Strand architecture solves several key problems:\n\n1. **Isolation**: Weaves are completely independent, preventing knowledge pollution\n2. **Scalability**: Each weave can grow infinitely without affecting others\n3. **Clarity**: Clear boundaries make it obvious where knowledge belongs\n4. **Versioning**: Strands are immutable, making version control natural\n5. **AI-Friendly**: Structured metadata enables semantic search and RAG\n6. **Fabric-Scope Reasoning**: A single Fabric view allows cross-weave synthesis while preserving provenance\n\n### Superintelligence at Fabric Scope\n\nWhile weaves remain isolated for organization and provenance, analysis at the **Fabric** level permits traversal\nacross weaves for:\n\n- Cross-domain retrieval and context assembly\n- Whole-of-corpus synthesis and summarization\n- Global topic maps and knowledge graphs\n\nFabric-level queries always preserve original weave/loom/strand provenance. OpenStrand uses this fabric view to let\nagents and superintelligence move seamlessly across domains while still understanding exactly where every fact came from.\n\n## How It Works\n\n### Knowledge Flow\n\n```\nFabric (Repository)\n  └── Weave (Universe)\n        └── Loom (Collection / any subdirectory)\n              ├── Strand (Markdown file)\n              ├── Strand (Markdown file)\n              └── Loom (Nested subdirectory)\n                    └── Strand (Markdown file)\n```\n\n### Example: Frame Ecosystem Weave\n\n```yaml\n# weaves/frame/weave.yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Complete knowledge base for Frame products and infrastructure\n```\n\nThis weave contains looms for:\n- OpenStrand documentation\n- AgentOS guides\n- Frame API reference\n- Architecture patterns\n\n💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.\n\n```\nweaves/frame/\n├── weave.yaml\n├── overview.md\n├── openstrand/\n│   ├── loom.yaml\n│   └── architecture.md\n└── guides/agentos/deployment.md\n```\n\nEach folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.\n\n### Hierarchical Topic Structure (Critical Rule)\n\n**Folder depth determines topic specificity.** This is a fundamental OpenStrand principle:\n\n> 📐 **Subfolders are SUBTOPICS of their parent folder. Topics MUST become more specific as you go deeper.**\n\n#### How It Works\n\n```\nweaves/technology/                     # Topic: technology (broad)\n├── programming/                       # Topic: programming (more specific)\n│   ├── python/                        # Topic: python (even more specific)\n│   │   └── async/                     # Topic: async-python (most specific)\n│   │       └── coroutines.md          # Strand about Python coroutines\n│   └── rust/                          # Topic: rust (sibling to python)\n│       └── memory-safety.md\n└── infrastructure/                    # Topic: infrastructure (sibling to programming)\n    └── kubernetes/\n        └── networking.md\n```\n\n**The hierarchy implies:**\n- `programming/` is a subtopic of `technology/`\n- `python/` is a subtopic of `programming/`\n- `async/` is a subtopic of `python/`\n- Content in `async/` MUST be about async Python, not general async concepts\n\n#### Topics vs Tags: The Critical Distinction\n\n| Aspect | **Topics** (Hierarchical) | **Tags** (Independent) |\n|--------|---------------------------|------------------------|\n| Structure | Tree-like, parent-child | Flat, no hierarchy |\n| Inheritance | Child topics MUST narrow parent scope | No inheritance |\n| Sharing | Cannot share across unrelated branches | Can share across",
-    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex python infrastructure async programming topics technology coroutines openstrand fabric weaves topic knowledge hierarchy depth powered frame codex weaves technology best practices programming python python async frame dev markdown file technology programming knowledge graph openstrand architecture"
+    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex infrastructure async python programming coroutines weaves fabric topics technology openstrand topic knowledge hierarchy depth immutable frame codex weaves technology best practices programming python python async frame dev markdown file technology programming knowledge graph openstrand architecture"
   },
   {
     "path": "docs/schema-reference.md",
@@ -2145,15 +2225,15 @@
           "array",
           "fields",
           "openstrand",
-          "topics",
           "identifier",
           "url",
-          "reference",
-          "unique",
-          "npm",
+          "topics",
           "enum",
           "template",
+          "reference",
+          "unique",
           "controlled",
+          "npm",
           "valid",
           "comprehensive"
         ],
@@ -2187,7 +2267,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-11-30T18:05:40.176Z"
+        "lastIndexed": "2025-11-30T19:01:13.055Z"
       }
     },
     "validation": {
@@ -2199,6 +2279,6 @@
       ]
     },
     "content": "\n# Frame Codex Schema Reference\n\nThis document provides the complete schema reference for all Frame Codex content types.\n\n## Weave Schema\n\nA Weave represents a complete, self-contained universe of knowledge.\n\n### Required Fields\n\n- `slug` (string): Unique identifier, lowercase with hyphens\n- `title` (string): Human-readable name\n- `description` (string): Comprehensive description\n\n### Optional Fields\n\n- `maintainedBy` (object): Maintainer information\n  - `name` (string): Name of person or organization\n  - `url` (string): Contact or website URL\n- `license` (string): Content license (default: MIT)\n- `tags` (array): Categorization tags from controlled vocabulary\n\n### Example\n\n```yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\nmaintainedBy:\n  name: Frame.dev Team\n  url: https://frame.dev\nlicense: MIT\ntags:\n  - technology\n  - ai-infrastructure\n  - superintelligence\n```\n\n## Loom Schema\n\nA Loom is a curated collection of related strands within a weave.\n\n### Required Fields\n\n- `slug` (string): Unique identifier within the weave\n- `title` (string): Display title\n- `summary` (string): Brief description\n\n### Optional Fields\n\n- `tags` (array): Subject tags for categorization\n- `ordering` (object): How strands are organized\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\n  - `items` (array): Ordered list of strand slugs\n\n### Example\n\n```yaml\nslug: getting-started\ntitle: Getting Started with Frame\nsummary: Essential guides and tutorials for new Frame developers\ntags:\n  - tutorial\n  - beginner\nordering:\n  type: sequential\n  items:\n    - installation\n    - hello-world\n    - core-concepts\n    - first-project\n```\n\n## Strand Schema\n\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\n\n### Required Fields\n\n- `id` (string): Globally unique identifier (UUID)\n- `slug` (string): URL-friendly identifier\n- `title` (string): Display title\n\n### Optional Fields\n\n- `summary` (string): Brief abstract (recommended for search)\n- `version` (string): Semantic version (default: 1.0.0)\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\n- `taxonomy` (object): Categorization\n  - `subjects` (array): High-level categories\n  - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**\n- `tags` (array): Freeform tags **✓ Independent - can be shared across any level**\n\n> **⚠️ Topics vs Tags**: Topics are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases. Tags are INDEPENDENT and can be freely shared. See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule).\n- `relationships` (object): Connections to other strands\n  - `requires` (array): Prerequisites\n  - `references` (array): Related strands\n  - `seeAlso` (array): External URLs\n- `publishing` (object): Publication metadata\n  - `created` (string): ISO 8601 timestamp\n  - `updated` (string): ISO 8601 timestamp\n  - `status` (enum): `draft`, `published`, `archived`\n\n### Example\n\n```yaml\n---\nid: 550e8400-e29b-41d4-a716-446655440000\nslug: openstrand-architecture\ntitle: OpenStrand Architecture Overview\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\nversion: 1.2.0\ncontentType: markdown\ndifficulty: intermediate\ntaxonomy:\n  subjects:\n    - technology\n    - ai\n  topics:\n    - architecture\n    - getting-started\ntags:\n  - openstrand\n  - architecture\n  - knowledge-graph\nrelationships:\n  requires:\n    - core-concepts\n  references:\n    - frame-codex-intro\n    - api-reference\n  seeAlso:\n    - https://openstrand.ai\n    - https://frame.dev\npublishing:\n  created: 2025-01-15T00:00:00Z\n  updated: 2025-01-15T00:00:00Z\n  status: published\n---\n\n# Your content here...\n```\n\n## Validation Rules\n\n### Slug Format\n\n- Lowercase letters, numbers, and hyphens only\n- No spaces or special characters\n- Must be unique within scope (weave/loom)\n\n### ID Format\n\n- Must be a valid UUID v4\n- Globally unique across all strands\n- Generate using `npm run generate-template`\n\n### Version Format\n\n- Semantic versioning: `MAJOR.MINOR.PATCH`\n- Example: `1.0.0`, `2.1.3`\n\n### Content Requirements\n\n- Minimum 100 characters of meaningful content\n- No unfinished sections or test content\n- Proper markdown formatting\n- Valid YAML frontmatter\n\n## Auto-Generated Metadata\n\nThe indexer automatically generates:\n\n- **Keywords**: Extracted using TF-IDF algorithm\n- **Phrases**: Common multi-word expressions\n- **Subjects**: Matched from controlled vocabulary\n- **Topics**: Detected from content analysis\n- **Difficulty**: Inferred from language complexity\n- **Summary**: Generated if missing\n\nYou can override any auto-generated values by specifying them explicitly in your frontmatter.\n\n## Controlled Vocabulary\n\nTags should use terms from the controlled vocabulary when possible:\n\n### Subjects\n- technology, science, philosophy, ai, knowledge, d",
-    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules string array fields openstrand topics identifier url reference unique npm enum template controlled valid comprehensive openstrand architecture controlled vocabulary frame dev npm run frame codex schema reference required fields slug string unique identifier title string"
+    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules string array fields openstrand identifier url topics enum template reference unique controlled npm valid comprehensive openstrand architecture controlled vocabulary frame dev npm run frame codex schema reference required fields slug string unique identifier title string"
   }
 ]

@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalFiles": 19,
-    "indexedFiles": 19,
+    "totalFiles": 20,
+    "indexedFiles": 20,
     "skippedFiles": 0,
-    "validFiles": 19,
+    "validFiles": 20,
     "filesWithErrors": 0,
     "filesWithWarnings": 0,
-    "filesWithSuggestions": 19
+    "filesWithSuggestions": 20
   },
   "categorization": {
     "bySubject": {
@@ -25,7 +25,7 @@
     },
     "byDifficulty": {
       "[object Object]": 1,
-      "intermediate": 16,
+      "intermediate": 17,
       "beginner": 2
     },
     "confidenceScores": []
@@ -37,7 +37,7 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 215,
+    "totalUniqueTerms": 232,
     "suggestedAdditions": [
       {
         "term": "codex",
@@ -86,17 +86,13 @@
       {
         "term": "object",
         "frequency": 3
-      },
-      {
-        "term": "programming",
-        "frequency": 3
       }
     ]
   },
   "performance": {
-    "timeElapsed": "10.80s",
+    "timeElapsed": "11.74s",
     "cacheHitRate": "0%",
-    "filesProcessed": 19,
+    "filesProcessed": 20,
     "filesCached": 0,
     "speedup": "N/A (first run)"
   }
