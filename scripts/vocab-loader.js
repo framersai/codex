@@ -204,6 +204,37 @@ class VocabularyLoader {
       difficulty: new Map()
     };
     this.stemmedIndex = new Map(); // Maps stemmed words to original terms
+    
+    // N-gram weights: trigrams are most specific, then bigrams, then unigrams
+    this.ngramWeights = {
+      trigram: 3.0,  // Highest weight - most specific matches
+      bigram: 2.0,   // Medium weight
+      unigram: 1.0   // Base weight
+    };
+    
+    // Negative context patterns - reduce score when these appear nearby
+    this.negativeContexts = {
+      'library': ['physical', 'book', 'public', 'municipal', 'lending', 'card'],
+      'learning': ['curve', 'disability', 'difficulties', 'disorder'],
+      'framework': ['legal', 'regulatory', 'policy', 'theoretical'],
+      'model': ['fashion', 'role', 'scale', '3d', 'clay'],
+      'platform': ['train', 'station', 'political', 'diving'],
+      'cloud': ['weather', 'rain', 'storm', 'sky'],
+      'node': ['lymph', 'musical'],
+      'tree': ['oak', 'pine', 'forest', 'christmas'],
+      'branch': ['bank', 'tree', 'office'],
+      'shell': ['sea', 'beach', 'turtle', 'egg'],
+      'root': ['plant', 'tree', 'vegetable', 'carrot'],
+    };
+    
+    // Positive context patterns - boost score when these appear nearby
+    this.positiveContexts = {
+      'library': ['code', 'import', 'npm', 'package', 'install', 'dependency', 'software'],
+      'learning': ['machine', 'deep', 'model', 'neural', 'ai', 'training'],
+      'framework': ['web', 'software', 'javascript', 'python', 'backend', 'frontend'],
+      'model': ['machine', 'learning', 'neural', 'language', 'ai', 'trained'],
+      'platform': ['cloud', 'software', 'development', 'api', 'saas'],
+    };
   }
 
   /**
@@ -351,7 +382,96 @@ class VocabularyLoader {
   }
 
   /**
-   * Classify text against all vocabularies
+   * Extract N-grams from text (trigrams first, then bigrams, then unigrams)
+   * @param {string} text - Text to extract n-grams from
+   * @returns {Object} Object with trigrams, bigrams, unigrams arrays
+   */
+  extractNgrams(text) {
+    const words = text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, ' ')
+      .split(/\s+/)
+      .filter(w => w.length > 1);
+    
+    const trigrams = [];
+    const bigrams = [];
+    const unigrams = [];
+    
+    // Extract trigrams (3 words)
+    for (let i = 0; i <= words.length - 3; i++) {
+      const trigram = words.slice(i, i + 3).join(' ');
+      // Also try with hyphens for compound terms
+      const hyphenated = words.slice(i, i + 3).join('-');
+      trigrams.push(trigram, hyphenated);
+    }
+    
+    // Extract bigrams (2 words)
+    for (let i = 0; i <= words.length - 2; i++) {
+      const bigram = words.slice(i, i + 2).join(' ');
+      const hyphenated = words.slice(i, i + 2).join('-');
+      bigrams.push(bigram, hyphenated);
+    }
+    
+    // Extract unigrams (single words, filtered by stop words)
+    for (const word of words) {
+      if (!this.isStopWord(word)) {
+        unigrams.push(word);
+        // Also add stemmed version
+        const stemmed = this.stem(word);
+        if (stemmed !== word) {
+          unigrams.push(stemmed);
+        }
+      }
+    }
+    
+    return { trigrams, bigrams, unigrams };
+  }
+
+  /**
+   * Check context around a matched term to adjust score
+   * @param {string} text - Full text
+   * @param {string} term - Matched term
+   * @param {number} windowSize - Number of words to check around the term
+   * @returns {number} Context adjustment factor (0.0 to 2.0)
+   */
+  getContextScore(text, term, windowSize = 10) {
+    const normalizedTerm = term.toLowerCase().replace(/-/g, ' ');
+    const textLower = text.toLowerCase();
+    
+    // Find term position
+    const termIndex = textLower.indexOf(normalizedTerm);
+    if (termIndex === -1) return 1.0; // No adjustment
+    
+    // Extract context window
+    const beforeStart = Math.max(0, termIndex - 100);
+    const afterEnd = Math.min(text.length, termIndex + normalizedTerm.length + 100);
+    const context = textLower.slice(beforeStart, afterEnd);
+    const contextWords = context.split(/\s+/);
+    
+    let adjustment = 1.0;
+    const firstWord = normalizedTerm.split(/[\s-]/)[0];
+    
+    // Check for negative context
+    const negatives = this.negativeContexts[firstWord] || [];
+    for (const neg of negatives) {
+      if (contextWords.some(w => w.includes(neg))) {
+        adjustment *= 0.3; // Significantly reduce score
+      }
+    }
+    
+    // Check for positive context
+    const positives = this.positiveContexts[firstWord] || [];
+    for (const pos of positives) {
+      if (contextWords.some(w => w.includes(pos))) {
+        adjustment *= 1.5; // Boost score
+      }
+    }
+    
+    return Math.min(adjustment, 2.0); // Cap at 2x boost
+  }
+
+  /**
+   * Classify text against all vocabularies using n-gram matching with context awareness
    * @param {string} text - Text to classify
    * @returns {Object} Classification results with confidence scores
    */
@@ -360,37 +480,128 @@ class VocabularyLoader {
       subjects: [],
       topics: [],
       difficulty: 'intermediate',
-      confidence: {}
+      confidence: {},
+      matches: {} // Detailed match info for debugging
     };
 
-    // Tokenize and stem text
-    const tokens = this.tokenize(text);
-    const stemmedTokens = tokens.map(t => this.stem(t));
-    const tokenSet = new Set([...tokens, ...stemmedTokens]);
+    // Extract n-grams from text
+    const { trigrams, bigrams, unigrams } = this.extractNgrams(text);
+    
+    // Create lookup sets
+    const trigramSet = new Set(trigrams);
+    const bigramSet = new Set(bigrams);
+    const unigramSet = new Set(unigrams);
 
-    // Check subjects
+    // Check subjects with n-gram weighting
     const subjects = this.loadCategory('subjects');
     for (const [subject, terms] of subjects) {
-      const matches = [...terms].filter(t => tokenSet.has(t) || tokenSet.has(this.stem(t)));
-      if (matches.length > 0) {
-        const confidence = Math.min(matches.length / 5, 1); // Normalize to 0-1
+      let score = 0;
+      const matchedTerms = [];
+      
+      for (const term of terms) {
+        const termNormalized = term.toLowerCase();
+        const termWords = termNormalized.split('-');
+        
+        let matched = false;
+        let weight = 0;
+        
+        // Check trigrams first (highest weight)
+        if (termWords.length >= 3 || trigramSet.has(termNormalized) || trigramSet.has(termNormalized.replace(/-/g, ' '))) {
+          const trigramMatch = termNormalized.replace(/-/g, ' ');
+          if (trigramSet.has(trigramMatch) || trigramSet.has(termNormalized)) {
+            matched = true;
+            weight = this.ngramWeights.trigram;
+          }
+        }
+        
+        // Check bigrams (medium weight)
+        if (!matched && (termWords.length >= 2 || bigramSet.has(termNormalized) || bigramSet.has(termNormalized.replace(/-/g, ' ')))) {
+          const bigramMatch = termNormalized.replace(/-/g, ' ');
+          if (bigramSet.has(bigramMatch) || bigramSet.has(termNormalized)) {
+            matched = true;
+            weight = this.ngramWeights.bigram;
+          }
+        }
+        
+        // Check unigrams (base weight)
+        if (!matched) {
+          // For hyphenated terms, check if all parts match
+          if (termWords.length > 1) {
+            const allPartsMatch = termWords.every(part => 
+              unigramSet.has(part) || unigramSet.has(this.stem(part))
+            );
+            if (allPartsMatch) {
+              matched = true;
+              weight = this.ngramWeights.unigram * 1.5; // Slight boost for compound term match
+            }
+          } else if (unigramSet.has(termNormalized) || unigramSet.has(this.stem(termNormalized))) {
+            matched = true;
+            weight = this.ngramWeights.unigram;
+          }
+        }
+        
+        if (matched) {
+          // Apply context adjustment
+          const contextFactor = this.getContextScore(text, term);
+          const adjustedWeight = weight * contextFactor;
+          score += adjustedWeight;
+          matchedTerms.push({ term, weight: adjustedWeight });
+        }
+      }
+      
+      if (score > 0) {
+        const confidence = Math.min(score / 10, 1); // Normalize to 0-1
         results.subjects.push(subject);
         results.confidence[subject] = confidence;
+        results.matches[subject] = matchedTerms;
       }
     }
 
-    // Check topics
+    // Check topics with n-gram weighting
     const topics = this.loadCategory('topics');
     for (const [topic, terms] of topics) {
-      const matches = [...terms].filter(t => tokenSet.has(t) || tokenSet.has(this.stem(t)));
-      if (matches.length > 0) {
-        const confidence = Math.min(matches.length / 3, 1);
+      let score = 0;
+      const matchedTerms = [];
+      
+      for (const term of terms) {
+        const termNormalized = term.toLowerCase();
+        const termWords = termNormalized.split('-');
+        
+        let matched = false;
+        let weight = 0;
+        
+        // Check all n-gram levels
+        if (trigramSet.has(termNormalized.replace(/-/g, ' ')) || trigramSet.has(termNormalized)) {
+          matched = true;
+          weight = this.ngramWeights.trigram;
+        } else if (bigramSet.has(termNormalized.replace(/-/g, ' ')) || bigramSet.has(termNormalized)) {
+          matched = true;
+          weight = this.ngramWeights.bigram;
+        } else if (termWords.length > 1 && termWords.every(part => unigramSet.has(part) || unigramSet.has(this.stem(part)))) {
+          matched = true;
+          weight = this.ngramWeights.unigram * 1.5;
+        } else if (unigramSet.has(termNormalized) || unigramSet.has(this.stem(termNormalized))) {
+          matched = true;
+          weight = this.ngramWeights.unigram;
+        }
+        
+        if (matched) {
+          const contextFactor = this.getContextScore(text, term);
+          const adjustedWeight = weight * contextFactor;
+          score += adjustedWeight;
+          matchedTerms.push({ term, weight: adjustedWeight });
+        }
+      }
+      
+      if (score > 0) {
+        const confidence = Math.min(score / 6, 1);
         results.topics.push(topic);
         results.confidence[topic] = confidence;
+        results.matches[topic] = matchedTerms;
       }
     }
 
-    // Check difficulty
+    // Check difficulty with n-gram weighting
     const difficulty = this.loadCategory('difficulty');
     let maxScore = 0;
     let detectedDifficulty = 'intermediate';
