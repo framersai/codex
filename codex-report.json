@@ -538,131 +538,6 @@
         "score": 0.3333333333333333
       },
       {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "technology",
-        "score": 0.7
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "science",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "ai",
-        "score": 0.1111111111111111
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "knowledge",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "design",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "security",
-        "score": 0.16666666666666666
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "getting-started",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "architecture",
-        "score": 0.5714285714285714
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "api-reference",
-        "score": 0.25
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "best-practices",
-        "score": 0.2857142857142857
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "troubleshooting",
-        "score": 0.5
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "deployment",
-        "score": 0.3333333333333333
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "testing",
-        "score": 0.5
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "performance",
-        "score": 0.5
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "technology",
-        "score": 0.3
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "science",
-        "score": 0.25
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "knowledge",
-        "score": 0.42857142857142855
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "design",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "getting-started",
-        "score": 0.375
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "architecture",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "api-reference",
-        "score": 0.125
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "best-practices",
-        "score": 0.14285714285714285
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "troubleshooting",
-        "score": 0.375
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "deployment",
-        "score": 0.16666666666666666
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "testing",
-        "score": 0.5
-      },
-      {
         "file": "docs/contributing/how-to-submit.md",
         "category": "technology",
         "score": 0.5
@@ -778,6 +653,76 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "technology",
+        "score": 0.7
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "ai",
+        "score": 0.1111111111111111
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "knowledge",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "security",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "getting-started",
+        "score": 0.25
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "architecture",
+        "score": 0.5714285714285714
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "api-reference",
+        "score": 0.25
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "best-practices",
+        "score": 0.2857142857142857
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "troubleshooting",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "deployment",
+        "score": 0.3333333333333333
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "testing",
+        "score": 0.5
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "performance",
+        "score": 0.5
+      },
+      {
         "file": "docs/openstrand-architecture.md",
         "category": "technology",
         "score": 0.8
@@ -853,6 +798,61 @@
         "score": 0.16666666666666666
       },
       {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "technology",
+        "score": 0.3
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "science",
+        "score": 0.25
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "knowledge",
+        "score": 0.42857142857142855
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "design",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "getting-started",
+        "score": 0.375
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "architecture",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "api-reference",
+        "score": 0.125
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "best-practices",
+        "score": 0.14285714285714285
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "troubleshooting",
+        "score": 0.375
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "deployment",
+        "score": 0.16666666666666666
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "testing",
+        "score": 0.5
+      },
+      {
         "file": "docs/schema-reference.md",
         "category": "technology",
         "score": 0.6
@@ -911,15 +911,15 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 220,
+    "totalUniqueTerms": 219,
     "suggestedAdditions": [
-      {
-        "term": "codex",
-        "frequency": 6
-      },
       {
         "term": "string",
         "frequency": 6
+      },
+      {
+        "term": "codex",
+        "frequency": 5
       },
       {
         "term": "openstrand",
@@ -931,6 +931,10 @@
       },
       {
         "term": "enum",
+        "frequency": 4
+      },
+      {
+        "term": "topics",
         "frequency": 4
       },
       {
@@ -956,7 +960,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "11.28s",
+    "timeElapsed": "47.63s",
     "cacheHitRate": "0%",
     "filesProcessed": 19,
     "filesCached": 0,
