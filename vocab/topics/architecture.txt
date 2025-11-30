@@ -1,0 +1,16 @@
+# Architecture Topic Vocabulary
+architecture architectural architect design pattern anti-pattern paradigm
+structure blueprint schema schematic diagram uml c4
+system distributed microservice monolith modular service-oriented soa
+layer tier component module service
+mvc mvvm mvp clean-architecture hexagonal onion domain-driven ddd cqrs
+event-sourcing event-driven saga repository unit-of-work
+infrastructure cloud serverless containerized orchestration kubernetes
+scalability scaling horizontal vertical auto-scaling load-balancing
+high-availability fault-tolerance resilience redundancy disaster-recovery
+data-model entity relationship er-diagram schema normalization sharding
+api-design rest graphql grpc rpc contract versioning
+security-architecture authentication authorization encryption
+performance latency throughput availability reliability maintainability
+diagram sequence-diagram class-diagram component-diagram deployment-diagram
+flowchart data-flow swimlane architecture-decision-record adr rfc

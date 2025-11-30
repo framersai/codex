@@ -1,0 +1,11 @@
+# Best Practices Topic Vocabulary
+best-practice practice recommended recommendation suggest advice guideline
+standard convention norm rule policy protocol procedure process
+quality high-quality professional proper correct appropriate suitable ideal optimal
+effective efficient pattern design-pattern idiom technique method approach strategy
+should must do dont dos-and-donts avoid prefer favor discouraged warning caution
+industry-standard widely-accepted well-established proven battle-tested production-ready
+clean-code readable maintainable scalable testable reusable modular decoupled cohesive
+dry dont-repeat-yourself kiss keep-it-simple yagni solid single-responsibility
+document comment annotate explain describe security secure safe sanitize validate
+performant fast efficient optimize cache lazy-loading

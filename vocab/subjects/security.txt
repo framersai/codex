@@ -1,0 +1,18 @@
+# Security Subject Vocabulary
+security secure cybersecurity infosec appsec netsec
+authentication authn login sign-in sso mfa 2fa totp otp passwordless
+authorization authz permission access-control rbac abac acl privilege
+identity credential username password passphrase secret api-key token
+oauth oauth2 oidc saml jwt bearer session cookie
+encryption decrypt cipher plaintext ciphertext key kms hsm pki certificate
+aes rsa ecdsa sha256 sha512 bcrypt argon2 hash salt hmac
+tls ssl https certificate letsencrypt mtls
+vulnerability cve cvss cwe exploit zero-day attack threat risk
+injection sql-injection xss csrf ssrf xxe rce lfi rfi path-traversal
+broken-access idor dos ddos brute-force phishing social-engineering
+firewall waf ids ips siem edr sandbox quarantine blocklist allowlist
+compliance audit pentest penetration-testing red-team vulnerability-assessment
+pci-dss hipaa gdpr soc2 iso27001 nist owasp fedramp
+privacy pii sensitive-data anonymization pseudonymization data-breach
+code-review static-analysis sast dast sca sbom
+rate-limiting throttling captcha input-validation sanitization escaping

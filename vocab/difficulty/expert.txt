@@ -1,0 +1,13 @@
+# Expert Difficulty Vocabulary
+expert expert-level master masters mastery grandmaster guru wizard ninja virtuoso specialist authority
+deep-dive internals internal under-the-hood implementation-internals low-level bit-level byte-level kernel kernel-level
+research researcher academic academia scholarly scholar paper thesis dissertation publication peer-reviewed journal conference
+cutting-edge bleeding-edge state-of-the-art sota novel novelty innovative innovation breakthrough pioneering revolutionary disruptive experimental frontier
+theoretical theory theorem proof mathematical formal axiom lemma corollary conjecture
+esoteric arcane obscure niche specialized nuanced subtlety intricacy intricate complexity sophisticated
+optimization micro-optimization extreme-performance ultra-performance maximum-performance peak-performance
+zero-copy lock-free wait-free cache-oblivious branch-prediction simd vectorization avx gpu-acceleration cuda opencl
+memory-model memory-ordering memory-barrier atomic atomics cas spinlock mutex semaphore futex lock-free-data-structure
+concurrent-data-structure hazard-pointer rcu garbage-collector-internals jit jit-compiler interpreter-internals compiler-internals
+domain-expert subject-matter-expert sme thought-leader veteran seasoned battle-tested production-hardened
+rare uncommon unusual atypical exceptional edge-case corner-case pathological degenerate worst-case amortized probabilistic non-deterministic

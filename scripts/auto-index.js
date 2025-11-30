@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Frame Codex Auto-Indexer
  * 
@@ -7,7 +8,7 @@
  * 
  * Features:
  * - Keyword extraction using TF-IDF
- * - Auto-categorization based on controlled vocabulary
+ * - Auto-categorization based on extensive external vocabulary with stemming
  * - Summary generation from content
  * - Quality validation
  * - Duplicate detection
@@ -28,43 +29,79 @@ const path = require('path');
 const yaml = require('js-yaml');
 const matter = require('gray-matter');
 
-// Controlled vocabulary for auto-tagging (expandable via NLP)
-// Updated with suggested additions from indexer analysis
-const VOCABULARY = {
-  subjects: {
-    technology: ['api', 'code', 'software', 'programming', 'development', 'tech', 'system', 'architecture', 'infrastructure', 'platform', 'string', 'array', 'type', 'properties', 'enum'],
-    science: ['research', 'study', 'experiment', 'hypothesis', 'theory', 'scientific', 'data', 'analysis'],
-    philosophy: ['ethics', 'morality', 'existence', 'consciousness', 'mind', 'thought', 'reasoning'],
-    ai: ['artificial intelligence', 'machine learning', 'neural', 'model', 'training', 'llm', 'agent', 'superintelligence', 'cognitive', 'embedding', 'vector', 'semantic'],
-    knowledge: ['information', 'data', 'wisdom', 'understanding', 'learning', 'education', 'documentation', 'codex', 'openstrand', 'strand', 'weave', 'loom', 'fabric'],
-    design: ['ux', 'ui', 'interface', 'experience', 'usability', 'accessibility', 'visual'],
-    security: ['encryption', 'authentication', 'authorization', 'privacy', 'secure', 'vulnerability'],
-    media: ['image', 'jpg', 'png', 'video', 'audio', 'gallery', 'illustration'],
-  },
-  topics: {
-    'getting-started': ['tutorial', 'guide', 'introduction', 'beginner', 'start', 'first', 'hello', 'basics', 'quickstart'],
-    'architecture': ['design', 'structure', 'pattern', 'system', 'component', 'module', 'framework', 'hierarchy'],
-    'api-reference': ['endpoint', 'method', 'parameter', 'response', 'request', 'rest', 'graphql', 'sdk', 'schema'],
-    'best-practices': ['recommendation', 'guideline', 'standard', 'convention', 'tip', 'advice', 'pattern'],
-    'troubleshooting': ['error', 'issue', 'problem', 'fix', 'solution', 'debug', 'resolve', 'workaround'],
-    'deployment': ['deploy', 'production', 'hosting', 'server', 'cloud', 'infrastructure'],
-    'testing': ['test', 'qa', 'quality', 'validation', 'verification', 'coverage'],
-    'performance': ['optimization', 'speed', 'efficiency', 'scalability', 'caching', 'benchmark'],
-    'configuration': ['config', 'settings', 'options', 'environment', 'env', 'yaml', 'json', 'frontmatter'],
-    'metadata': ['tags', 'topics', 'subjects', 'description', 'summary', 'title', 'author', 'date'],
-  },
-  difficulty: {
-    beginner: ['basic', 'simple', 'intro', 'fundamental', 'easy', 'start', 'overview', 'quickstart'],
-    intermediate: ['moderate', 'practical', 'hands-on', 'implement', 'build', 'develop'],
-    advanced: ['complex', 'expert', 'optimization', 'performance', 'architecture', 'deep'],
-    expert: ['deep-dive', 'internals', 'research', 'cutting-edge', 'novel', 'theoretical'],
-  }
-};
+// ═══════════════════════════════════════════════════════════════════════════
+// VOCABULARY LOADER - External vocabulary files with stemming & normalization
+// ═══════════════════════════════════════════════════════════════════════════
+const { getVocabularyLoader, PorterStemmer } = require('./vocab-loader');
 
-// Stop words for keyword extraction (expanded list)
-const STOP_WORDS = new Set([
-  'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'been', 'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'should', 'could', 'may', 'might', 'must', 'can', 'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they', 'what', 'which', 'who', 'when', 'where', 'why', 'how', 'all', 'each', 'every', 'both', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'just', 'don', 'now', 'use', 'using', 'used'
-]);
+// Initialize vocabulary from external files
+let vocabLoader = null;
+let VOCABULARY = null;
+let STOP_WORDS = null;
+let stemmer = null;
+
+function initializeVocabulary() {
+  if (vocabLoader) return;
+  
+  try {
+    vocabLoader = getVocabularyLoader();
+    stemmer = new PorterStemmer();
+    
+    // Convert to legacy format for backward compatibility
+    VOCABULARY = vocabLoader.toLegacyFormat();
+    
+    // Convert stop words Set to standard Set
+    STOP_WORDS = vocabLoader.loadStopWords();
+    
+    const stats = vocabLoader.getStats();
+    console.log(`📚 Vocabulary loaded from external files:`);
+    console.log(`   • Stop words: ${stats.stopWords}`);
+    console.log(`   • Subjects: ${Object.keys(stats.subjects).length} categories, ${Object.values(stats.subjects).reduce((a, b) => a + b, 0)} terms`);
+    console.log(`   • Topics: ${Object.keys(stats.topics).length} categories, ${Object.values(stats.topics).reduce((a, b) => a + b, 0)} terms`);
+    console.log(`   • Difficulty: ${Object.keys(stats.difficulty).length} levels, ${Object.values(stats.difficulty).reduce((a, b) => a + b, 0)} terms`);
+    console.log(`   • Stemmed index: ${stats.stemmedIndex} unique stems`);
+  } catch (err) {
+    console.warn(`⚠️ Failed to load external vocabulary, using fallback: ${err.message}`);
+    
+    // Fallback to minimal hardcoded vocabulary
+    VOCABULARY = {
+      subjects: {
+        technology: ['api', 'code', 'software', 'programming', 'development'],
+        science: ['research', 'study', 'experiment', 'hypothesis', 'theory'],
+        philosophy: ['ethics', 'morality', 'existence', 'consciousness'],
+        ai: ['artificial intelligence', 'machine learning', 'neural', 'model'],
+        knowledge: ['information', 'data', 'wisdom', 'learning', 'documentation'],
+      },
+      topics: {
+        'getting-started': ['tutorial', 'guide', 'introduction', 'beginner'],
+        'architecture': ['design', 'structure', 'pattern', 'system'],
+        'troubleshooting': ['error', 'issue', 'problem', 'fix', 'debug'],
+      },
+      difficulty: {
+        beginner: ['basic', 'simple', 'intro', 'fundamental', 'easy'],
+        intermediate: ['moderate', 'practical', 'hands-on', 'implement'],
+        advanced: ['complex', 'expert', 'optimization', 'performance'],
+      }
+    };
+    
+    STOP_WORDS = new Set([
+      'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+      'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'been', 'be',
+      'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'should',
+      'could', 'may', 'might', 'must', 'can', 'this', 'that', 'these', 'those',
+      'i', 'you', 'he', 'she', 'it', 'we', 'they', 'what', 'which', 'who',
+      'when', 'where', 'why', 'how', 'all', 'each', 'every', 'both', 'few',
+      'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only',
+      'own', 'same', 'so', 'than', 'too', 'very', 's', 't', 'just', 'don',
+      'now', 'use', 'using', 'used'
+    ]);
+    
+    stemmer = new PorterStemmer();
+  }
+}
+
+// Initialize on module load
+initializeVocabulary();
 
 class CodexIndexer {
   constructor() {

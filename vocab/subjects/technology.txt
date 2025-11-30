@@ -1,0 +1,31 @@
+# Technology Subject Vocabulary
+javascript typescript python java csharp cpp ruby php swift kotlin scala rust go golang
+html html5 css css3 sass scss tailwind bootstrap webpack vite babel
+react vue angular svelte solid nextjs nuxt gatsby remix
+express fastify nestjs django flask fastapi rails spring laravel phoenix
+node nodejs deno bun npm yarn pnpm
+api rest restful graphql grpc websocket webhook
+database sql nosql postgresql mysql mongodb redis elasticsearch
+docker kubernetes k8s container microservice serverless aws azure gcp cloud
+git github gitlab bitbucket version-control ci cd devops jenkins
+testing test unit integration e2e jest vitest mocha cypress playwright
+security authentication authorization oauth jwt ssl tls https encryption
+performance optimization caching cdn scalability load-balancing
+architecture microservices monolith distributed event-driven
+frontend backend fullstack full-stack middleware
+mobile ios android react-native flutter
+desktop electron tauri
+algorithm data-structure array string object function class interface type
+async await promise callback event loop thread process
+package module library framework sdk toolkit
+compiler interpreter runtime virtual-machine jvm
+ide vscode intellij editor terminal cli command-line
+debug logging monitoring metrics observability
+deploy deployment production staging development environment
+config configuration settings options env yaml json
+code coding codebase source software application app
+web website webpage http https uri url domain dns
+server client host port network protocol tcp udp ip
+file system directory folder path
+memory cpu storage disk cache buffer
+binary executable script shell bash powershell

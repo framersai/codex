@@ -1,0 +1,35 @@
+# AI & Machine Learning Subject Vocabulary
+artificial-intelligence ai machine-learning ml deep-learning dl neural-network nn
+transformer attention encoder decoder seq2seq autoencoder vae gan
+supervised unsupervised semi-supervised self-supervised reinforcement-learning rl
+llm large-language-model language-model foundation-model pretrained fine-tuning
+gpt claude gemini llama mistral falcon palm bert roberta
+openai anthropic google-ai meta-ai microsoft-ai
+chatgpt assistant agent autonomous multi-agent
+prompt prompting prompt-engineering chain-of-thought cot few-shot zero-shot
+rag retrieval-augmented-generation embedding vector semantic similarity
+nlp natural-language-processing nlu nlg text-generation
+sentiment-analysis named-entity-recognition ner pos-tagging
+translation summarization question-answering qa
+tokenizer tokenization bpe sentencepiece
+computer-vision cv image-classification object-detection segmentation
+diffusion stable-diffusion midjourney dalle image-generation text-to-image
+speech-recognition tts text-to-speech asr voice
+training inference model weights parameters hyperparameters
+dataset corpus annotation labeling
+accuracy precision recall f1 loss gradient backpropagation
+optimizer adam sgd learning-rate batch epoch
+overfitting underfitting regularization dropout
+gpu cuda tensorflow pytorch keras jax
+huggingface transformers langchain llamaindex
+quantization pruning distillation lora qlora peft
+mlops model-serving deployment inference-server
+benchmark evaluation metrics leaderboard mmlu
+safety alignment rlhf constitutional-ai guardrails
+bias fairness ethics responsible-ai explainability interpretability
+hallucination grounding factuality
+context-window token-limit long-context
+multimodal vision-language audio-language
+synthetic-data augmentation
+clustering classification regression prediction
+feature-extraction feature-engineering dimensionality-reduction

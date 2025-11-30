@@ -1,0 +1,11 @@
+# Troubleshooting Topic Vocabulary
+troubleshoot troubleshooting debug debugging diagnose diagnosis investigate
+problem issue bug error fault defect failure crash exception warning alert
+fix resolve solution solve repair patch hotfix workaround mitigation
+common-issues known-issues gotcha pitfall caveat edge-case corner-case
+race-condition deadlock memory-leak stack-overflow timeout connection-refused
+step-through breakpoint stack-trace traceback call-stack
+log logging trace tracing profile profiling inspect monitor watch
+root-cause cause source origin culprit trigger symptom indicator
+verify validate test check confirm ensure
+faq frequently-asked q-and-a support help guide how-to tip trick hint advice

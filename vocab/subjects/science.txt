@@ -1,0 +1,27 @@
+# Science Subject Vocabulary
+science scientific research researcher study experiment hypothesis theory
+evidence empirical observation measurement quantitative qualitative
+methodology analysis data dataset sample statistics statistical
+correlation causation variable independent dependent control
+peer-review publication journal citation replication reproducible
+physics quantum mechanics particle atom electron proton neutron
+thermodynamics energy entropy momentum force acceleration velocity
+relativity spacetime gravity electromagnetic radiation wave frequency
+chemistry chemical element compound reaction catalyst enzyme bond
+organic inorganic molecular atomic periodic-table
+biology biological cell organism gene genome dna rna protein
+evolution genetics mutation species ecosystem ecology
+neuroscience brain neuron synapse cognitive cognition
+medicine medical clinical diagnosis treatment therapy pharmaceutical
+mathematics mathematical calculus algebra geometry topology
+statistics probability distribution regression analysis
+computer-science algorithm complexity computation theoretical
+astronomy astrophysics cosmology universe galaxy star planet
+geology earth seismic tectonic mineral fossil
+environmental climate ecology biodiversity conservation
+psychology cognitive behavioral developmental social
+sociology anthropology economics political
+engineering mechanical electrical civil aerospace biomedical
+research-method experiment control-group randomized double-blind
+laboratory lab field-study longitudinal cross-sectional
+hypothesis-testing significance p-value confidence-interval

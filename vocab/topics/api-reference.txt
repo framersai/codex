@@ -1,0 +1,13 @@
+# API Reference Topic Vocabulary
+api api-reference api-documentation endpoint route resource method function
+http https get post put patch delete request response status-code
+parameter query-parameter path-parameter body header cookie
+type schema model object array string number boolean enum interface
+description example sample code-sample snippet usage syntax
+return throw exception error error-code error-message
+authentication auth token api-key bearer oauth jwt
+rate-limit throttle quota limit burst concurrent
+version versioning deprecate deprecated breaking-change backward-compatible
+rest restful graphql grpc soap websocket webhook sse streaming
+sdk client library wrapper binding integration
+test sandbox mock stub fixture postman swagger openapi asyncapi

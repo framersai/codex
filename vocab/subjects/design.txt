@@ -1,0 +1,20 @@
+# Design Subject Vocabulary
+design designer ux user-experience ui user-interface usability accessible
+visual graphic illustration icon logo typography font color palette
+layout composition grid alignment spacing whitespace margin padding
+component element widget button input form modal dialog tooltip menu
+responsive adaptive mobile-first breakpoint viewport media-query
+animation motion transition transform easing keyframe micro-interaction
+prototype wireframe mockup sketch lo-fi hi-fi interactive
+figma sketch adobe-xd invision framer zeplin
+user-research usability-testing a-b-testing persona journey-map
+heuristic principle guideline standard convention pattern anti-pattern
+accessibility a11y wcag aria screen-reader keyboard-navigation contrast
+brand identity style-guide design-system component-library
+hierarchy visual-hierarchy balance symmetry proportion golden-ratio
+heading body-text caption label legibility readability
+gradient shadow border radius opacity blur
+card list table tab accordion carousel pagination
+navigation nav sidebar header footer breadcrumb
+feedback loading spinner progress skeleton empty-state error-state
+dark-mode light-mode theme color-scheme

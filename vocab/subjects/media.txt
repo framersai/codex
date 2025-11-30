@@ -1,0 +1,14 @@
+# Media Subject Vocabulary
+image images photo photograph picture graphic visual illustration
+artwork drawing sketch diagram chart infographic icon logo thumbnail avatar
+jpeg jpg png gif webp avif svg bmp tiff raw psd
+resize crop scale compress optimize convert transform filter
+video movie film clip footage stream live broadcast vod screencast
+mp4 webm mkv avi mov wmv flv
+encode decode transcode render bitrate framerate fps resolution hd 4k
+audio sound music track podcast voice speech recording sample
+mp3 wav aac ogg flac m4a
+animation animate motion 2d 3d cgi vfx keyframe tween sprite
+gallery album collection portfolio slideshow carousel lightbox
+multimedia embed player viewer cdn asset resource library
+upload download import export

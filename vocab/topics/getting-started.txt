@@ -1,0 +1,11 @@
+# Getting Started Topic Vocabulary
+getting-started get-started start started starting begin beginning beginner
+intro introduction introductory welcome onboarding first-steps
+quick-start quickstart jumpstart bootstrap setup install configure initialize
+learn learning tutorial guide walkthrough how-to step-by-step
+basics basic fundamental foundation essential core overview primer 101
+simple simply easy easily straightforward uncomplicated clear
+first initial entry gateway hello-world example sample demo
+minimal minimum no-experience no-prerequisites zero-to from-scratch ground-up
+absolute-beginner complete-beginner newbie novice newcomer starter entry-level
+discover explore understand grasp familiarize acquaint
