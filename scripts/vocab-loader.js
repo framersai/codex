@@ -607,7 +607,7 @@ class VocabularyLoader {
     let detectedDifficulty = 'intermediate';
     
     for (const [level, terms] of difficulty) {
-      const matches = [...terms].filter(t => tokenSet.has(t) || tokenSet.has(this.stem(t)));
+      const matches = [...terms].filter(t => unigramSet.has(t) || unigramSet.has(this.stem(t)));
       if (matches.length > maxScore) {
         maxScore = matches.length;
         detectedDifficulty = level;
