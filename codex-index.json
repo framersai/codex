@@ -88,15 +88,44 @@
         "phrases": [
           "openstrand architecture"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": {
           "overall": "advanced",
           "cognitive": 8,
           "prerequisites": 5,
           "conceptual": 8
         },
-        "confidence": {},
+        "confidence": {
+          "ai": 0.050359712230215826,
+          "design": 0.03867403314917127,
+          "knowledge": 0.20540540540540542,
+          "media": 0.029850746268656716,
+          "philosophy": 0.024154589371980676,
+          "science": 0.034482758620689655,
+          "security": 0.03888888888888889,
+          "technology": 0.07094594594594594,
+          "api-reference": 0.032520325203252036,
+          "architecture": 0.043795620437956206,
+          "best-practices": 0.06451612903225806,
+          "getting-started": 0.027522935779816515,
+          "troubleshooting": 0.05555555555555555
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -114,7 +143,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:35.885Z"
+        "lastIndexed": "2025-12-02T07:05:39.963Z"
       }
     },
     "validation": {
@@ -123,8 +152,8 @@
       "warnings": [],
       "suggestions": [
         "Consider adding tags: openstrand, architecture, condensed, overview, practical",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Key phrases found: openstrand architecture"
       ]
     },
@@ -177,10 +206,31 @@
           "architecture knowledge",
           "knowledge related"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "knowledge",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices"
+        ],
+        "difficulty": "advanced",
+        "confidence": {
+          "ai": 0.007194244604316547,
+          "knowledge": 0.08108108108108109,
+          "philosophy": 0.01932367149758454,
+          "science": 0.019157088122605363,
+          "security": 0.027777777777777776,
+          "technology": 0.033783783783783786,
+          "api-reference": 0.024390243902439025,
+          "architecture": 0.043795620437956206,
+          "best-practices": 0.024193548387096774
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -190,7 +240,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T07:03:35.904Z"
+        "lastIndexed": "2025-12-02T07:05:39.988Z"
       }
     },
     "validation": {
@@ -201,9 +251,9 @@
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, knowledge, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices",
+        "Suggested difficulty: advanced",
         "Key phrases found: slug frame, frame title, title frame"
       ]
     },
@@ -281,15 +331,38 @@
           "cross weave"
         ],
         "subjects": [
-          "technology",
-          "knowledge"
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
         ],
         "topics": [
+          "api-reference",
           "architecture",
-          "getting-started"
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
         ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.06474820143884892,
+          "design": 0.11049723756906077,
+          "knowledge": 0.3891891891891892,
+          "media": 0.04477611940298507,
+          "philosophy": 0.06280193236714976,
+          "science": 0.09195402298850575,
+          "security": 0.07777777777777778,
+          "technology": 0.1891891891891892,
+          "api-reference": 0.13008130081300814,
+          "architecture": 0.145985401459854,
+          "best-practices": 0.12096774193548387,
+          "getting-started": 0.13761467889908258,
+          "troubleshooting": 0.12037037037037036
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -312,7 +385,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:36.031Z"
+        "lastIndexed": "2025-12-02T07:05:40.131Z"
       }
     },
     "validation": {
@@ -363,10 +436,39 @@
           "represents paradigm",
           "paradigm shift"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.1474820143884892,
+          "design": 0.13812154696132597,
+          "knowledge": 0.2972972972972973,
+          "media": 0.1791044776119403,
+          "philosophy": 0.11594202898550725,
+          "science": 0.05363984674329502,
+          "security": 0.1388888888888889,
+          "technology": 0.25,
+          "api-reference": 0.25203252032520324,
+          "architecture": 0.17518248175182483,
+          "best-practices": 0.1693548387096774,
+          "getting-started": 0.22018348623853212,
+          "troubleshooting": 0.1111111111111111
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -394,7 +496,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:36.341Z"
+        "lastIndexed": "2025-12-02T07:05:40.466Z"
       }
     },
     "validation": {
@@ -406,8 +508,8 @@
         "Add version number (semver format)",
         "Consider adding tags: string, authentication, interface, answer, language",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: frame codex, semantic search, natural language"
       ]
@@ -452,10 +554,39 @@
           "sunset https",
           "automatic gallery"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "difficulty": "beginner",
+        "confidence": {
+          "ai": 0.02158273381294964,
+          "design": 0.04419889502762431,
+          "knowledge": 0.04864864864864865,
+          "media": 0.08208955223880597,
+          "philosophy": 0.028985507246376812,
+          "science": 0.01532567049808429,
+          "security": 0.03333333333333333,
+          "technology": 0.05067567567567568,
+          "api-reference": 0.056910569105691054,
+          "architecture": 0.021897810218978103,
+          "best-practices": 0.016129032258064516,
+          "getting-started": 0.03669724770642202,
+          "troubleshooting": 0.009259259259259259
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -482,7 +613,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:36.421Z"
+        "lastIndexed": "2025-12-02T07:05:40.554Z"
       }
     },
     "validation": {
@@ -494,9 +625,9 @@
         "Add version number (semver format)",
         "Consider adding tags: unsplash, photo, images, gallery, https",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
+        "Suggested difficulty: beginner",
         "Key phrases found: https images, images unsplash, unsplash com"
       ]
     },
@@ -540,10 +671,39 @@
           "welcome frame",
           "codex revolutionary"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "difficulty": "beginner",
+        "confidence": {
+          "ai": 0.039568345323741004,
+          "design": 0.16022099447513813,
+          "knowledge": 0.33513513513513515,
+          "media": 0.2537313432835821,
+          "philosophy": 0.0966183574879227,
+          "science": 0.06130268199233716,
+          "security": 0.05555555555555555,
+          "technology": 0.11824324324324324,
+          "api-reference": 0.11382113821138211,
+          "architecture": 0.06569343065693431,
+          "best-practices": 0.04032258064516129,
+          "getting-started": 0.25688073394495414,
+          "troubleshooting": 0.05555555555555555
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -573,7 +733,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:36.724Z"
+        "lastIndexed": "2025-12-02T07:05:40.871Z"
       }
     },
     "validation": {
@@ -585,9 +745,9 @@
         "Add version number (semver format)",
         "Consider adding tags: jpg, tutorials, codex, started, open",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
+        "Suggested difficulty: beginner",
         "Key phrases found: frame codex, wiki tutorials, started frame"
       ]
     },
@@ -631,10 +791,39 @@
           "features guide",
           "inline code"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "difficulty": "beginner",
+        "confidence": {
+          "ai": 0.07194244604316546,
+          "design": 0.16022099447513813,
+          "knowledge": 0.2756756756756757,
+          "media": 0.15671641791044777,
+          "philosophy": 0.09178743961352658,
+          "science": 0.038314176245210725,
+          "security": 0.06111111111111111,
+          "technology": 0.15878378378378377,
+          "api-reference": 0.13008130081300814,
+          "architecture": 0.0948905109489051,
+          "best-practices": 0.08064516129032258,
+          "getting-started": 0.13761467889908258,
+          "troubleshooting": 0.037037037037037035
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -670,7 +859,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:37.134Z"
+        "lastIndexed": "2025-12-02T07:05:41.293Z"
       }
     },
     "validation": {
@@ -682,9 +871,9 @@
         "Add version number (semver format)",
         "Consider adding tags: item, heading, markdown, html, task",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
+        "Suggested difficulty: beginner",
         "Key phrases found: frame codex, item item, item nested"
       ]
     },
@@ -728,10 +917,39 @@
           "saved assets",
           "alt text"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "difficulty": "beginner",
+        "confidence": {
+          "ai": 0.07194244604316546,
+          "design": 0.2154696132596685,
+          "knowledge": 0.3027027027027027,
+          "media": 0.34328358208955223,
+          "philosophy": 0.08695652173913043,
+          "science": 0.06130268199233716,
+          "security": 0.044444444444444446,
+          "technology": 0.13513513513513514,
+          "api-reference": 0.13008130081300814,
+          "architecture": 0.13138686131386862,
+          "best-practices": 0.13709677419354838,
+          "getting-started": 0.1743119266055046,
+          "troubleshooting": 0.05555555555555555
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -782,7 +1000,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:37.702Z"
+        "lastIndexed": "2025-12-02T07:05:41.863Z"
       }
     },
     "validation": {
@@ -794,9 +1012,9 @@
         "Add version number (semver format)",
         "Consider adding tags: photos, assets, audio, drawings, jpg",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
+        "Suggested difficulty: beginner",
         "Key phrases found: assets photos, radial menu, media guide"
       ]
     },
@@ -871,10 +1089,37 @@
           "complete documentation",
           "documentation technical"
         ],
-        "subjects": [],
-        "topics": [],
-        "difficulty": "intermediate",
-        "confidence": {},
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "difficulty": "advanced",
+        "confidence": {
+          "ai": 0.02158273381294964,
+          "design": 0.0055248618784530384,
+          "knowledge": 0.17297297297297298,
+          "philosophy": 0.01932367149758454,
+          "science": 0.01532567049808429,
+          "security": 0.022222222222222223,
+          "technology": 0.07432432432432433,
+          "api-reference": 0.04065040650406504,
+          "architecture": 0.043795620437956206,
+          "best-practices": 0.03225806451612903,
+          "getting-started": 0.01834862385321101,
+          "troubleshooting": 0.018518518518518517
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -884,7 +1129,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T07:03:37.781Z"
+        "lastIndexed": "2025-12-02T07:05:41.942Z"
       }
     },
     "validation": {
@@ -895,9 +1140,9 @@
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
-        "Suggested difficulty: intermediate",
+        "Auto-detected subjects: ai, design, knowledge, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
+        "Suggested difficulty: advanced",
         "Key phrases found: frame codex, codex wiki, meta documentation"
       ]
     },
@@ -1001,10 +1246,37 @@
           "schema org",
           "org draft"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.01079136690647482,
+          "design": 0.016574585635359115,
+          "knowledge": 0.03783783783783784,
+          "philosophy": 0.004830917874396135,
+          "science": 0.0038314176245210726,
+          "security": 0.027777777777777776,
+          "technology": 0.037162162162162164,
+          "api-reference": 0.08130081300813008,
+          "architecture": 0.021897810218978103,
+          "best-practices": 0.016129032258064516,
+          "getting-started": 0.01834862385321101,
+          "troubleshooting": 0.009259259259259259
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1014,7 +1286,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T07:03:37.840Z"
+        "lastIndexed": "2025-12-02T07:05:42.002Z"
       }
     },
     "validation": {
@@ -1026,8 +1298,8 @@
         "Add version number (semver format)",
         "Consider adding tags: string, type, properties, array, schema",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: type string, type object, type array"
       ]
@@ -1243,10 +1515,39 @@
           "minimum maximum",
           "extractivesummary extractivesummary"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.02877697841726619,
+          "design": 0.022099447513812154,
+          "knowledge": 0.11351351351351352,
+          "media": 0.014925373134328358,
+          "philosophy": 0.033816425120772944,
+          "science": 0.01532567049808429,
+          "security": 0.05,
+          "technology": 0.06418918918918919,
+          "api-reference": 0.16260162601626016,
+          "architecture": 0.029197080291970802,
+          "best-practices": 0.016129032258064516,
+          "getting-started": 0.045871559633027525,
+          "troubleshooting": 0.027777777777777776
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1260,7 +1561,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:37.988Z"
+        "lastIndexed": "2025-12-02T07:05:42.157Z"
       }
     },
     "validation": {
@@ -1272,8 +1573,8 @@
         "Add version number (semver format)",
         "Consider adding tags: type, string, array, properties, extractivesummary",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: type string, type array, string description"
       ]
@@ -1350,10 +1651,31 @@
           "schema title",
           "title weave"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.007194244604316547,
+          "design": 0.011049723756906077,
+          "knowledge": 0.02702702702702703,
+          "security": 0.022222222222222223,
+          "technology": 0.037162162162162164,
+          "api-reference": 0.07317073170731707,
+          "architecture": 0.021897810218978103,
+          "best-practices": 0.024193548387096774,
+          "troubleshooting": 0.009259259259259259
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1363,7 +1685,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T07:03:38.028Z"
+        "lastIndexed": "2025-12-02T07:05:42.203Z"
       }
     },
     "validation": {
@@ -1375,8 +1697,8 @@
         "Add version number (semver format)",
         "Consider adding tags: string, type, minlength, schema, maintainedby",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: type string, schema https, https json"
       ]
@@ -1451,14 +1773,40 @@
           "https github"
         ],
         "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
           "technology"
         ],
         "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting",
           "automation",
           "ci-cd"
         ],
         "difficulty": "beginner",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.0539568345323741,
+          "design": 0.08287292817679558,
+          "knowledge": 0.24324324324324326,
+          "media": 0.06716417910447761,
+          "philosophy": 0.04830917874396135,
+          "science": 0.038314176245210725,
+          "security": 0.05555555555555555,
+          "technology": 0.18243243243243243,
+          "api-reference": 0.17073170731707318,
+          "architecture": 0.072992700729927,
+          "best-practices": 0.08064516129032258,
+          "getting-started": 0.10091743119266056,
+          "troubleshooting": 0.16666666666666666
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1496,7 +1844,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:38.524Z"
+        "lastIndexed": "2025-12-02T07:05:42.719Z"
       }
     },
     "validation": {
@@ -1547,10 +1895,39 @@
           "apps codex",
           "auto index"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.09352517985611511,
+          "design": 0.11602209944751381,
+          "knowledge": 0.2864864864864865,
+          "media": 0.11940298507462686,
+          "philosophy": 0.07246376811594203,
+          "science": 0.10344827586206896,
+          "security": 0.1111111111111111,
+          "technology": 0.31756756756756754,
+          "api-reference": 0.2601626016260163,
+          "architecture": 0.1678832116788321,
+          "best-practices": 0.25806451612903225,
+          "getting-started": 0.1559633027522936,
+          "troubleshooting": 0.19444444444444445
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1593,7 +1970,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:39.929Z"
+        "lastIndexed": "2025-12-02T07:05:44.273Z"
       }
     },
     "validation": {
@@ -1605,8 +1982,8 @@
         "Add version number (semver format)",
         "Consider adding tags: run, const, index, loom, cache",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: not null, npm run, run index"
       ]
@@ -1651,10 +2028,39 @@
           "indexer uses",
           "uses sophisticated"
         ],
-        "subjects": [],
-        "topics": [],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.11510791366906475,
+          "design": 0.049723756906077346,
+          "knowledge": 0.2702702702702703,
+          "media": 0.1044776119402985,
+          "philosophy": 0.12560386473429952,
+          "science": 0.13026819923371646,
+          "security": 0.07777777777777778,
+          "technology": 0.25675675675675674,
+          "api-reference": 0.17886178861788618,
+          "architecture": 0.16058394160583941,
+          "best-practices": 0.1774193548387097,
+          "getting-started": 0.1926605504587156,
+          "troubleshooting": 0.08333333333333333
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1673,7 +2079,7 @@
             "clay |"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:40.680Z"
+        "lastIndexed": "2025-12-02T07:05:45.081Z"
       }
     },
     "validation": {
@@ -1685,8 +2091,8 @@
         "Add version number (semver format)",
         "Consider adding tags: txt, terms, weight, categories, vocabulary",
         "Consider adding relationships (requires, references, seeAlso)",
-        "Auto-detected subjects: ",
-        "Auto-detected topics: ",
+        "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
+        "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
         "Suggested difficulty: intermediate",
         "Key phrases found: machine learning, best practices, nlp vocabulary"
       ]
@@ -1754,15 +2160,39 @@
           "index json"
         ],
         "subjects": [
-          "technology",
-          "knowledge"
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
         ],
         "topics": [
-          "deployment",
-          "best-practices"
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting",
+          "deployment"
         ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.07553956834532374,
+          "design": 0.06077348066298342,
+          "knowledge": 0.16216216216216217,
+          "media": 0.04477611940298507,
+          "philosophy": 0.05314009661835749,
+          "science": 0.07279693486590039,
+          "security": 0.10555555555555556,
+          "technology": 0.14527027027027026,
+          "api-reference": 0.11382113821138211,
+          "architecture": 0.051094890510948905,
+          "best-practices": 0.1693548387096774,
+          "getting-started": 0.12844036697247707,
+          "troubleshooting": 0.2037037037037037
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1788,7 +2218,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:41.480Z"
+        "lastIndexed": "2025-12-02T07:05:45.899Z"
       }
     },
     "validation": {
@@ -1866,15 +2296,38 @@
           "pull request"
         ],
         "subjects": [
+          "ai",
+          "design",
           "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
           "technology"
         ],
         "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
           "getting-started",
-          "best-practices"
+          "troubleshooting"
         ],
         "difficulty": "beginner",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.0683453237410072,
+          "design": 0.12154696132596685,
+          "knowledge": 0.3837837837837838,
+          "media": 0.11940298507462686,
+          "philosophy": 0.12560386473429952,
+          "science": 0.0842911877394636,
+          "security": 0.08888888888888889,
+          "technology": 0.1858108108108108,
+          "api-reference": 0.21951219512195122,
+          "architecture": 0.08029197080291971,
+          "best-practices": 0.20967741935483872,
+          "getting-started": 0.30275229357798167,
+          "troubleshooting": 0.21296296296296297
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -1917,7 +2370,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:42.810Z"
+        "lastIndexed": "2025-12-02T07:05:47.258Z"
       }
     },
     "validation": {
@@ -2005,15 +2458,38 @@
           "object string"
         ],
         "subjects": [
-          "technology",
-          "knowledge"
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
         ],
         "topics": [
           "api-reference",
-          "architecture"
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
         ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.07553956834532374,
+          "design": 0.2154696132596685,
+          "knowledge": 0.5081081081081081,
+          "media": 0.16417910447761194,
+          "philosophy": 0.13526570048309178,
+          "science": 0.19540229885057472,
+          "security": 0.08888888888888889,
+          "technology": 0.2533783783783784,
+          "api-reference": 0.23577235772357724,
+          "architecture": 0.1386861313868613,
+          "best-practices": 0.23387096774193547,
+          "getting-started": 0.44036697247706424,
+          "troubleshooting": 0.19444444444444445
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -2047,7 +2523,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:44.723Z"
+        "lastIndexed": "2025-12-02T07:05:49.225Z"
       }
     },
     "validation": {
@@ -2138,16 +2614,38 @@
           "openstrand architecture"
         ],
         "subjects": [
-          "technology",
           "ai",
-          "knowledge"
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology"
         ],
         "topics": [
+          "api-reference",
           "architecture",
-          "getting-started"
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
         ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.12949640287769784,
+          "design": 0.11049723756906077,
+          "knowledge": 0.4594594594594595,
+          "media": 0.11940298507462686,
+          "philosophy": 0.1111111111111111,
+          "science": 0.10344827586206896,
+          "security": 0.08888888888888889,
+          "technology": 0.2195945945945946,
+          "api-reference": 0.17886178861788618,
+          "architecture": 0.1897810218978102,
+          "best-practices": 0.22580645161290322,
+          "getting-started": 0.1926605504587156,
+          "troubleshooting": 0.16666666666666666
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -2166,7 +2664,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T07:03:46.094Z"
+        "lastIndexed": "2025-12-02T07:05:50.575Z"
       }
     },
     "validation": {
@@ -2250,14 +2748,38 @@
           "title string"
         ],
         "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
           "technology"
         ],
         "topics": [
           "api-reference",
-          "architecture"
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
         ],
         "difficulty": "intermediate",
-        "confidence": {},
+        "confidence": {
+          "ai": 0.0539568345323741,
+          "design": 0.06077348066298342,
+          "knowledge": 0.3621621621621622,
+          "media": 0.029850746268656716,
+          "philosophy": 0.13526570048309178,
+          "science": 0.11494252873563218,
+          "security": 0.06666666666666667,
+          "technology": 0.17229729729729729,
+          "api-reference": 0.21138211382113822,
+          "architecture": 0.11678832116788321,
+          "best-practices": 0.1935483870967742,
+          "getting-started": 0.22935779816513763,
+          "troubleshooting": 0.1111111111111111
+        },
         "readingLevel": 0,
         "readabilityScore": 0,
         "statistics": {},
@@ -2267,7 +2789,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T07:03:47.075Z"
+        "lastIndexed": "2025-12-02T07:05:51.540Z"
       }
     },
     "validation": {
