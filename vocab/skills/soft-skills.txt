@@ -1,0 +1,50 @@
+# Soft Skills & Life Skills
+# Transferable skills beyond technical domains
+
+# Communication
+communication writing speaking presentation public-speaking
+documentation technical-writing copywriting editing proofreading
+listening active-listening feedback giving-feedback receiving-feedback
+storytelling narrative persuasion negotiation
+
+# Leadership & Management
+leadership management team-lead project-management
+delegation mentoring coaching supervision
+decision-making strategic-thinking planning organizing
+conflict-resolution mediation facilitation
+
+# Collaboration
+collaboration teamwork cooperation partnership
+cross-functional interdisciplinary remote-work distributed-teams
+pair-programming mob-programming code-review
+
+# Problem Solving
+problem-solving critical-thinking analytical-thinking
+debugging troubleshooting root-cause-analysis
+creative-thinking innovation brainstorming ideation
+research investigation analysis synthesis
+
+# Time & Self Management
+time-management prioritization productivity efficiency
+organization planning scheduling deadline
+self-discipline focus concentration attention
+stress-management work-life-balance burnout-prevention
+
+# Learning & Growth
+learning continuous-learning self-improvement growth-mindset
+adaptability flexibility resilience perseverance
+curiosity experimentation iteration reflection
+knowledge-sharing teaching training onboarding
+
+# Interpersonal
+empathy emotional-intelligence eq
+patience tolerance understanding respect
+networking relationship-building rapport trust
+diversity inclusion equity belonging
+
+# Business & Domain
+business-acumen domain-knowledge industry-knowledge
+stakeholder-management requirements-gathering user-research
+product-thinking customer-focus user-centered
+data-driven metrics-driven evidence-based
+

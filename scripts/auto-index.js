@@ -295,6 +295,23 @@ class CodexIndexer {
       categories.difficulty = metadata.difficulty;
     }
     
+    // ═══════════════════════════════════════════════════════════════════════
+    // AUTOMATED SKILL EXTRACTION FROM CODE
+    // ═══════════════════════════════════════════════════════════════════════
+    // Extract skills from code blocks, imports, and patterns
+    const codeSkills = this.extractSkillsFromCode(content);
+    if (codeSkills.length > 0) {
+      categories.skills = [...new Set([...categories.skills, ...codeSkills])];
+    }
+    
+    // Limit to top 15 skills (prioritize explicit > vocabulary-matched > code-detected)
+    if (categories.skills.length > 15) {
+      // Explicit skills from frontmatter have highest priority
+      const explicit = metadata.skills || [];
+      const rest = categories.skills.filter(s => !explicit.includes(s));
+      categories.skills = [...explicit.slice(0, 10), ...rest.slice(0, 15 - Math.min(explicit.length, 10))];
+    }
+    
     // Discover new vocabulary terms
     keywords.forEach(keyword => {
       this.stats.vocabulary.extractedTerms.add(keyword);
@@ -414,6 +431,244 @@ class CodexIndexer {
       console.warn('Entity extraction failed:', error.message);
       return { people: [], places: [], organizations: [], topics: [] };
     }
+  }
+
+  /**
+   * Extract skills automatically from code blocks, imports, and patterns
+   * Uses NLP and pattern matching for automated skill detection
+   * 
+   * @param {string} content - Document content
+   * @returns {string[]} Array of detected skills
+   */
+  extractSkillsFromCode(content) {
+    const skills = new Set();
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // 1. CODE BLOCK LANGUAGE DETECTION
+    // ═══════════════════════════════════════════════════════════════════════
+    const codeBlockLangs = content.matchAll(/```(\w+)/g);
+    const langToSkill = {
+      'javascript': 'javascript', 'js': 'javascript',
+      'typescript': 'typescript', 'ts': 'typescript',
+      'python': 'python', 'py': 'python',
+      'rust': 'rust', 'rs': 'rust',
+      'go': 'go', 'golang': 'go',
+      'java': 'java',
+      'csharp': 'csharp', 'cs': 'csharp',
+      'cpp': 'cpp', 'c++': 'cpp',
+      'c': 'c',
+      'ruby': 'ruby', 'rb': 'ruby',
+      'php': 'php',
+      'swift': 'swift',
+      'kotlin': 'kotlin', 'kt': 'kotlin',
+      'scala': 'scala',
+      'sql': 'sql',
+      'bash': 'shell', 'sh': 'shell', 'zsh': 'shell', 'shell': 'shell',
+      'powershell': 'powershell', 'ps1': 'powershell',
+      'html': 'html',
+      'css': 'css', 'scss': 'css', 'sass': 'css', 'less': 'css',
+      'yaml': 'yaml', 'yml': 'yaml',
+      'json': 'json',
+      'xml': 'xml',
+      'graphql': 'graphql', 'gql': 'graphql',
+      'dockerfile': 'docker',
+      'terraform': 'terraform', 'tf': 'terraform',
+      'hcl': 'terraform',
+      'jsx': 'react', 'tsx': 'react',
+      'vue': 'vue',
+      'svelte': 'svelte',
+    };
+    
+    for (const match of codeBlockLangs) {
+      const lang = match[1].toLowerCase();
+      if (langToSkill[lang]) {
+        skills.add(langToSkill[lang]);
+      }
+    }
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // 2. IMPORT/REQUIRE STATEMENT ANALYSIS
+    // ═══════════════════════════════════════════════════════════════════════
+    const importPatterns = [
+      // ES6 imports: import X from 'package'
+      /import\s+(?:[\w{},\s*]+\s+from\s+)?['"]([^'"]+)['"]/g,
+      // CommonJS: require('package')
+      /require\s*\(\s*['"]([^'"]+)['"]\s*\)/g,
+      // Python: from X import Y, import X
+      /(?:from\s+(\w+)|^import\s+(\w+))/gm,
+      // Go: import "package"
+      /import\s+(?:\([\s\S]*?\)|["']([^"']+)["'])/g,
+      // Rust: use crate::X
+      /use\s+([\w:]+)/g,
+    ];
+    
+    const packageToSkill = {
+      // React ecosystem
+      'react': 'react', 'react-dom': 'react', 'react-router': 'react',
+      'next': 'nextjs', 'next/': 'nextjs',
+      'gatsby': 'gatsby',
+      '@tanstack/react-query': 'react-query', 'react-query': 'react-query',
+      'redux': 'redux', '@reduxjs/toolkit': 'redux', 'react-redux': 'redux',
+      'zustand': 'zustand', 'jotai': 'jotai', 'recoil': 'recoil',
+      'mobx': 'mobx',
+      
+      // Vue ecosystem
+      'vue': 'vue', '@vue/': 'vue',
+      'nuxt': 'nuxt', '@nuxt/': 'nuxt',
+      'pinia': 'pinia', 'vuex': 'vuex',
+      
+      // Node.js & Backend
+      'express': 'express', 'fastify': 'fastify', 'koa': 'koa',
+      'nestjs': 'nestjs', '@nestjs/': 'nestjs',
+      'hapi': 'hapi', '@hapi/': 'hapi',
+      
+      // Databases
+      'mongoose': 'mongodb', 'mongodb': 'mongodb',
+      'pg': 'postgresql', 'postgres': 'postgresql',
+      'mysql': 'mysql', 'mysql2': 'mysql',
+      'prisma': 'prisma', '@prisma/client': 'prisma',
+      'typeorm': 'typeorm', 'sequelize': 'sequelize',
+      'drizzle-orm': 'drizzle',
+      'redis': 'redis', 'ioredis': 'redis',
+      
+      // Testing
+      'jest': 'jest', '@jest/': 'jest',
+      'vitest': 'vitest',
+      'mocha': 'mocha', 'chai': 'mocha',
+      'cypress': 'cypress',
+      'playwright': 'playwright', '@playwright/': 'playwright',
+      'testing-library': 'testing-library', '@testing-library/': 'testing-library',
+      
+      // Build tools
+      'webpack': 'webpack',
+      'vite': 'vite',
+      'rollup': 'rollup',
+      'esbuild': 'esbuild',
+      'parcel': 'parcel',
+      
+      // Cloud & DevOps
+      'aws-sdk': 'aws', '@aws-sdk/': 'aws',
+      '@azure/': 'azure',
+      '@google-cloud/': 'gcp',
+      'docker': 'docker',
+      'kubernetes': 'kubernetes', '@kubernetes/': 'kubernetes',
+      
+      // GraphQL
+      'graphql': 'graphql', '@graphql/': 'graphql',
+      'apollo': 'apollo', '@apollo/': 'apollo',
+      'urql': 'urql',
+      
+      // Auth
+      'passport': 'authentication', 'jsonwebtoken': 'jwt',
+      'next-auth': 'authentication', '@auth/': 'authentication',
+      'oauth': 'oauth',
+      
+      // Python packages
+      'django': 'django', 'flask': 'flask', 'fastapi': 'fastapi',
+      'pandas': 'pandas', 'numpy': 'numpy',
+      'tensorflow': 'tensorflow', 'torch': 'pytorch', 'pytorch': 'pytorch',
+      'sklearn': 'scikit-learn', 'scikit-learn': 'scikit-learn',
+    };
+    
+    for (const pattern of importPatterns) {
+      const matches = content.matchAll(pattern);
+      for (const match of matches) {
+        const pkg = (match[1] || match[2] || '').toLowerCase();
+        if (!pkg) continue;
+        
+        // Check direct matches
+        for (const [key, skill] of Object.entries(packageToSkill)) {
+          if (pkg === key || pkg.startsWith(key)) {
+            skills.add(skill);
+            break;
+          }
+        }
+      }
+    }
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // 3. PATTERN-BASED SKILL DETECTION
+    // ═══════════════════════════════════════════════════════════════════════
+    const patternSkills = [
+      // Git patterns
+      { pattern: /git\s+(clone|commit|push|pull|merge|rebase|branch)/gi, skill: 'git' },
+      { pattern: /\.git(hub|lab|ignore)/gi, skill: 'git' },
+      
+      // Docker patterns
+      { pattern: /docker\s+(build|run|compose|image|container)/gi, skill: 'docker' },
+      { pattern: /Dockerfile|docker-compose/gi, skill: 'docker' },
+      
+      // Kubernetes patterns
+      { pattern: /kubectl|k8s|kubernetes/gi, skill: 'kubernetes' },
+      { pattern: /\.ya?ml.*kind:\s*(Deployment|Service|Pod|ConfigMap)/gi, skill: 'kubernetes' },
+      
+      // CI/CD patterns
+      { pattern: /github\s*actions?|\.github\/workflows/gi, skill: 'github-actions' },
+      { pattern: /gitlab-ci|\.gitlab-ci\.yml/gi, skill: 'gitlab-ci' },
+      { pattern: /jenkins(file)?/gi, skill: 'jenkins' },
+      
+      // API patterns
+      { pattern: /REST\s*API|RESTful/gi, skill: 'rest-api' },
+      { pattern: /GraphQL\s*(query|mutation|subscription)/gi, skill: 'graphql' },
+      { pattern: /WebSocket|Socket\.io|ws:/gi, skill: 'websockets' },
+      
+      // State management patterns
+      { pattern: /useState|useReducer|useContext/gi, skill: 'react-hooks' },
+      { pattern: /createStore|configureStore|createSlice/gi, skill: 'redux' },
+      
+      // Testing patterns
+      { pattern: /describe\s*\(|it\s*\(|test\s*\(|expect\s*\(/gi, skill: 'testing' },
+      { pattern: /mock|stub|spy|fixture/gi, skill: 'testing' },
+      
+      // Database patterns
+      { pattern: /SELECT\s+.*\s+FROM|INSERT\s+INTO|UPDATE\s+.*\s+SET/gi, skill: 'sql' },
+      { pattern: /CREATE\s+TABLE|ALTER\s+TABLE|DROP\s+TABLE/gi, skill: 'sql' },
+      { pattern: /MongoDB|\.find\(|\.aggregate\(|\.insertOne\(/gi, skill: 'mongodb' },
+      
+      // Security patterns  
+      { pattern: /bcrypt|argon2|scrypt|hash.*password/gi, skill: 'security' },
+      { pattern: /JWT|Bearer\s+token|OAuth|OIDC/gi, skill: 'authentication' },
+      { pattern: /XSS|CSRF|SQL\s*injection|sanitize/gi, skill: 'security' },
+      
+      // Async patterns
+      { pattern: /async\s+function|await\s+|Promise\.|\.then\(/gi, skill: 'async-programming' },
+      { pattern: /Observable|RxJS|subscribe\(/gi, skill: 'reactive-programming' },
+    ];
+    
+    for (const { pattern, skill } of patternSkills) {
+      if (pattern.test(content)) {
+        skills.add(skill);
+      }
+    }
+    
+    // ═══════════════════════════════════════════════════════════════════════
+    // 4. NLP-BASED SOFT SKILL DETECTION
+    // ═══════════════════════════════════════════════════════════════════════
+    try {
+      const nlp = require('compromise');
+      const doc = nlp(content.toLowerCase());
+      
+      // Detect collaboration/teamwork mentions
+      const collabTerms = doc.match('(team|collaborate|together|pair|mob|review|feedback)').out('array');
+      if (collabTerms.length >= 2) skills.add('collaboration');
+      
+      // Detect communication mentions
+      const commTerms = doc.match('(communicate|document|explain|present|write|read)').out('array');
+      if (commTerms.length >= 2) skills.add('communication');
+      
+      // Detect problem-solving mentions
+      const problemTerms = doc.match('(solve|debug|fix|troubleshoot|investigate|analyze)').out('array');
+      if (problemTerms.length >= 2) skills.add('problem-solving');
+      
+      // Detect learning/growth mentions
+      const learnTerms = doc.match('(learn|understand|study|research|explore|discover)').out('array');
+      if (learnTerms.length >= 2) skills.add('continuous-learning');
+      
+    } catch (err) {
+      // NLP optional, continue without it
+    }
+    
+    return Array.from(skills);
   }
 
   /**
