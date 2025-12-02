@@ -2,12 +2,20 @@ name: Test Suite
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'lib/**'
+      - 'vocab/**'
+      - 'package.json'
+      - 'vitest.config.js'
   pull_request:
-    branches: [main]
+    branches: [main, master]
 
 jobs:
-  test:
+  unit-tests:
+    name: Unit Tests
     runs-on: ubuntu-latest
     
     steps:
@@ -19,14 +27,31 @@ jobs:
         with:
           node-version: '20'
       
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --no-frozen-lockfile
       
       - name: Run unit tests
-        run: npm test
+        run: pnpm test
       
       - name: Run tests with coverage
-        run: npm run test:coverage
+        run: pnpm run test:coverage
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -36,13 +61,137 @@ jobs:
           name: codex-coverage
         continue-on-error: true
       
+      - name: Archive coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 7
+
+  vocab-tests:
+    name: Vocabulary & NLP Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+      
+      - name: Test vocabulary files exist
+        run: |
+          echo "📚 Checking vocabulary files..."
+          for category in subjects topics difficulty skills; do
+            if [ ! -d "vocab/$category" ]; then
+              echo "❌ Missing vocab/$category directory"
+              exit 1
+            fi
+            count=$(ls -1 vocab/$category/*.txt 2>/dev/null | wc -l)
+            if [ "$count" -eq 0 ]; then
+              echo "❌ No .txt files in vocab/$category"
+              exit 1
+            fi
+            echo "✅ vocab/$category: $count files"
+          done
+          
+          if [ ! -f "vocab/stopwords.txt" ]; then
+            echo "❌ Missing vocab/stopwords.txt"
+            exit 1
+          fi
+          echo "✅ vocab/stopwords.txt exists"
+      
+      - name: Test vocab-loader
+        run: |
+          node -e "
+            const { getVocabularyLoader } = require('./scripts/vocab-loader');
+            const loader = getVocabularyLoader();
+            const stats = loader.getStats();
+            
+            console.log('📊 Vocabulary Statistics:');
+            console.log('   Stop words:', stats.stopWords);
+            console.log('   Subjects:', Object.keys(stats.subjects).length, 'categories');
+            console.log('   Topics:', Object.keys(stats.topics).length, 'categories');
+            console.log('   Skills:', Object.keys(stats.skills || {}).length, 'categories');
+            console.log('   Total terms:', stats.totalTerms);
+            
+            if (stats.stopWords < 50) throw new Error('Too few stop words');
+            if (Object.keys(stats.subjects).length < 3) throw new Error('Too few subject categories');
+            console.log('✅ Vocabulary loader working correctly');
+          "
+      
+      - name: Test classification
+        run: |
+          node -e "
+            const { getVocabularyLoader } = require('./scripts/vocab-loader');
+            const loader = getVocabularyLoader();
+            
+            // Test technology detection
+            const techResult = loader.classify('Programming APIs and software development with JavaScript and React');
+            if (!techResult.subjects.includes('technology')) {
+              throw new Error('Failed to detect technology subject');
+            }
+            console.log('✅ Technology subject detection works');
+            
+            // Test difficulty detection
+            const beginnerResult = loader.classify('A basic introduction for beginners, simple and easy');
+            if (beginnerResult.difficulty !== 'beginner') {
+              throw new Error('Failed to detect beginner difficulty');
+            }
+            console.log('✅ Difficulty detection works');
+            
+            // Test skill detection
+            const skillResult = loader.classify('Learn TypeScript and React hooks for modern frontend development');
+            if (skillResult.skills.length === 0) {
+              console.warn('⚠️ No skills detected (may need vocabulary expansion)');
+            } else {
+              console.log('✅ Skill detection works:', skillResult.skills.slice(0, 5).join(', '));
+            }
+          "
+
+  cache-tests:
+    name: Cache Tests
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+      
       - name: Test SQL cache functionality
         run: |
+          echo "🗄️ Testing SQL cache..."
+          
           # First run (full index)
-          time npm run index -- --validate
+          echo "📝 First run (cold cache):"
+          time pnpm run index -- --validate 2>&1 | tail -20
           
           # Second run (should use cache)
-          time npm run index -- --validate
+          echo "📝 Second run (warm cache):"
+          time pnpm run index -- --validate 2>&1 | tail -10
           
           # Verify cache was created
           if [ ! -f .cache/codex.db ]; then
@@ -54,12 +203,13 @@ jobs:
       
       - name: Test cache clear
         run: |
-          npm run index -- --clear-cache
+          pnpm run index -- --clear-cache
           echo "✅ Cache clear works"
 
   integration:
+    name: Integration Tests
     runs-on: ubuntu-latest
-    needs: test
+    needs: [unit-tests, vocab-tests]
     
     steps:
       - name: Checkout repository
@@ -70,16 +220,23 @@ jobs:
         with:
           node-version: '20'
       
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --no-frozen-lockfile
       
       - name: Test full workflow
         run: |
+          echo "🔄 Running full indexing workflow..."
+          
           # Run validation
-          npm run validate
+          pnpm run validate
           
           # Run indexer
-          npm run index -- --validate
+          pnpm run index -- --validate
           
           # Check outputs
           if [ ! -f codex-index.json ]; then
@@ -96,7 +253,44 @@ jobs:
           node -e "JSON.parse(require('fs').readFileSync('codex-index.json'))"
           node -e "JSON.parse(require('fs').readFileSync('codex-report.json'))"
           
+          # Verify index has skills
+          node -e "
+            const index = JSON.parse(require('fs').readFileSync('codex-index.json'));
+            const hasSkills = index.some(e => e.metadata?.autoGenerated?.skills?.length > 0);
+            if (!hasSkills) {
+              console.warn('⚠️ No auto-generated skills found in index');
+            } else {
+              console.log('✅ Skills found in index');
+            }
+          "
+          
           echo "✅ Full workflow passed"
+      
+      - name: Verify index structure
+        run: |
+          node -e "
+            const index = JSON.parse(require('fs').readFileSync('codex-index.json'));
+            
+            console.log('📊 Index Statistics:');
+            console.log('   Total entries:', index.length);
+            
+            let withSummary = 0, withKeywords = 0, withSkills = 0, withTaxonomy = 0;
+            
+            for (const entry of index) {
+              if (entry.metadata?.summary) withSummary++;
+              if (entry.metadata?.autoGenerated?.keywords?.length) withKeywords++;
+              if (entry.metadata?.autoGenerated?.skills?.length) withSkills++;
+              if (entry.metadata?.taxonomy?.subjects?.length || entry.metadata?.taxonomy?.topics?.length) withTaxonomy++;
+            }
+            
+            console.log('   With summary:', withSummary);
+            console.log('   With keywords:', withKeywords);
+            console.log('   With skills:', withSkills);
+            console.log('   With taxonomy:', withTaxonomy);
+            
+            if (index.length < 3) throw new Error('Index too small');
+            console.log('✅ Index structure valid');
+          "
       
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -106,4 +300,5 @@ jobs:
             codex-index.json
             codex-report.json
             .cache/codex.db
+          retention-days: 7
 

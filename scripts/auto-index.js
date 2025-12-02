@@ -1234,4 +1234,6 @@ if (require.main === module) {
   });
 }
 
+// Export for both CommonJS and ES module imports
 module.exports = CodexIndexer;
+module.exports.CodexIndexer = CodexIndexer;
