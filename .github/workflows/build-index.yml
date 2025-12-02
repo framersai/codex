@@ -22,9 +22,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .cache/codex.db
-          key: codex-cache-${{ hashFiles('weaves/**/*.md', 'docs/**/*.md', 'wiki/**/*.md') }}
+          # Cache key includes scripts so NLP changes invalidate cache
+          key: codex-cache-v2-${{ hashFiles('scripts/*.js', 'vocab/**/*.txt', 'weaves/**/*.md', 'docs/**/*.md', 'wiki/**/*.md') }}
           restore-keys: |
-            codex-cache-
+            codex-cache-v2-
       
       - name: Install dependencies
         run: npm install
