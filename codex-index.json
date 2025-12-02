@@ -105,6 +105,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "data",
+          "ci",
+          "search",
+          "structur",
+          "tl",
+          "app",
+          "pages",
+          "on",
+          "page",
+          "ts"
+        ],
         "difficulty": {
           "overall": "advanced",
           "cognitive": 8,
@@ -124,7 +136,25 @@
           "architecture": 0.043795620437956206,
           "best-practices": 0.06451612903225806,
           "getting-started": 0.027522935779816515,
-          "troubleshooting": 0.05555555555555555
+          "troubleshooting": 0.05555555555555555,
+          "skill:data": 0.5240384615384616,
+          "skill:ci": 0.5240384615384616,
+          "skill:search": 0.5240384615384616,
+          "skill:structur": 0.5240384615384616,
+          "skill:tl": 0.5240384615384616,
+          "skill:app": 0.5357142857142857,
+          "skill:pages": 0.5357142857142857,
+          "skill:on": 0.5357142857142857,
+          "skill:page": 0.5357142857142857,
+          "skill:ts": 0.5308641975308642,
+          "skill:pip": 0.5308641975308642,
+          "skill:go": 0.5308641975308642,
+          "skill:c": 0.5308641975308642,
+          "skill:io": 0.5308641975308642,
+          "skill:git": 0.5210526315789473,
+          "skill:github": 0.5210526315789473,
+          "skill:control": 0.5210526315789473,
+          "skill:as": 0.5210526315789473
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -143,7 +173,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:45.039Z"
+        "lastIndexed": "2025-12-02T16:53:17.755Z"
       }
     },
     "validation": {
@@ -219,6 +249,14 @@
           "architecture",
           "best-practices"
         ],
+        "skills": [
+          "tl",
+          "on",
+          "ts",
+          "c",
+          "io",
+          "contain"
+        ],
         "difficulty": "advanced",
         "confidence": {
           "ai": 0.007194244604316547,
@@ -229,7 +267,13 @@
           "technology": 0.033783783783783786,
           "api-reference": 0.024390243902439025,
           "architecture": 0.043795620437956206,
-          "best-practices": 0.024193548387096774
+          "best-practices": 0.024193548387096774,
+          "skill:tl": 0.5048076923076923,
+          "skill:on": 0.5089285714285714,
+          "skill:ts": 0.5185185185185185,
+          "skill:c": 0.5185185185185185,
+          "skill:io": 0.5185185185185185,
+          "skill:contain": 0.5052631578947369
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -240,7 +284,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T15:39:45.066Z"
+        "lastIndexed": "2025-12-02T16:53:17.777Z"
       }
     },
     "validation": {
@@ -347,6 +391,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "sql",
+          "schema",
+          "test",
+          "integration",
+          "object",
+          "data",
+          "http",
+          "https",
+          "ci",
+          "cd"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.06474820143884892,
@@ -361,7 +417,44 @@
           "architecture": 0.145985401459854,
           "best-practices": 0.12096774193548387,
           "getting-started": 0.13761467889908258,
-          "troubleshooting": 0.12037037037037036
+          "troubleshooting": 0.12037037037037036,
+          "skill:sql": 0.5625,
+          "skill:schema": 0.5625,
+          "skill:test": 0.5625,
+          "skill:integration": 0.5625,
+          "skill:object": 0.5625,
+          "skill:data": 0.5625,
+          "skill:http": 0.5625,
+          "skill:https": 0.5625,
+          "skill:ci": 0.5625,
+          "skill:cd": 0.5625,
+          "skill:integr": 0.5625,
+          "skill:search": 0.5625,
+          "skill:structur": 0.5625,
+          "skill:app": 0.5267857142857143,
+          "skill:api": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:js": 0.5679012345679012,
+          "skill:ts": 0.5679012345679012,
+          "skill:type": 0.5679012345679012,
+          "skill:pip": 0.5679012345679012,
+          "skill:rust": 0.5679012345679012,
+          "skill:go": 0.5679012345679012,
+          "skill:scala": 0.5679012345679012,
+          "skill:c": 0.5679012345679012,
+          "skill:compos": 0.5679012345679012,
+          "skill:io": 0.5679012345679012,
+          "skill:git": 0.5736842105263158,
+          "skill:github": 0.5736842105263158,
+          "skill:version": 0.5736842105263158,
+          "skill:control": 0.5736842105263158,
+          "skill:merge": 0.5736842105263158,
+          "skill:as": 0.5736842105263158,
+          "skill:code": 0.5736842105263158,
+          "skill:cache": 0.5736842105263158,
+          "skill:merg": 0.5736842105263158,
+          "skill:contain": 0.5736842105263158,
+          "skill:cach": 0.5736842105263158
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -385,7 +478,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:45.207Z"
+        "lastIndexed": "2025-12-02T16:53:17.925Z"
       }
     },
     "validation": {
@@ -453,6 +546,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "authentication",
+          "auth",
+          "oauth",
+          "jwt",
+          "token",
+          "api-design",
+          "rest",
+          "unit",
+          "integration",
+          "async"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.1474820143884892,
@@ -467,7 +572,58 @@
           "architecture": 0.17518248175182483,
           "best-practices": 0.1693548387096774,
           "getting-started": 0.22018348623853212,
-          "troubleshooting": 0.1111111111111111
+          "troubleshooting": 0.1111111111111111,
+          "skill:authentication": 0.6153846153846154,
+          "skill:auth": 0.6153846153846154,
+          "skill:oauth": 0.6153846153846154,
+          "skill:jwt": 0.6153846153846154,
+          "skill:token": 0.6153846153846154,
+          "skill:api-design": 0.6153846153846154,
+          "skill:rest": 0.6153846153846154,
+          "skill:unit": 0.6153846153846154,
+          "skill:integration": 0.6153846153846154,
+          "skill:async": 0.6153846153846154,
+          "skill:await": 0.6153846153846154,
+          "skill:class": 0.6153846153846154,
+          "skill:data": 0.6153846153846154,
+          "skill:security": 0.6153846153846154,
+          "skill:encryption": 0.6153846153846154,
+          "skill:ci": 0.6153846153846154,
+          "skill:authent": 0.6153846153846154,
+          "skill:integr": 0.6153846153846154,
+          "skill:search": 0.6153846153846154,
+          "skill:structur": 0.6153846153846154,
+          "skill:secur": 0.6153846153846154,
+          "skill:encrypt": 0.6153846153846154,
+          "skill:hash": 0.6153846153846154,
+          "skill:tl": 0.6153846153846154,
+          "skill:react": 0.5357142857142857,
+          "skill:app": 0.5357142857142857,
+          "skill:api": 0.5357142857142857,
+          "skill:on": 0.5357142857142857,
+          "skill:js": 0.5617283950617284,
+          "skill:typescript": 0.5617283950617284,
+          "skill:ts": 0.5617283950617284,
+          "skill:type": 0.5617283950617284,
+          "skill:annotation": 0.5617283950617284,
+          "skill:pip": 0.5617283950617284,
+          "skill:c": 0.5617283950617284,
+          "skill:annot": 0.5617283950617284,
+          "skill:gener": 0.5617283950617284,
+          "skill:io": 0.5617283950617284,
+          "skill:git": 0.5789473684210527,
+          "skill:github": 0.5789473684210527,
+          "skill:image": 0.5789473684210527,
+          "skill:as": 0.5789473684210527,
+          "skill:code": 0.5789473684210527,
+          "skill:web": 0.5789473684210527,
+          "skill:cache": 0.5789473684210527,
+          "skill:contain": 0.5789473684210527,
+          "skill:imag": 0.5789473684210527,
+          "skill:manag": 0.5789473684210527,
+          "skill:aw": 0.5789473684210527,
+          "skill:redi": 0.5789473684210527,
+          "skill:cach": 0.5789473684210527
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -496,7 +652,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:45.543Z"
+        "lastIndexed": "2025-12-02T16:53:18.253Z"
       }
     },
     "validation": {
@@ -571,6 +727,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "rest",
+          "data",
+          "http",
+          "https",
+          "ci",
+          "tl",
+          "on",
+          "ts",
+          "go",
+          "c"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.02158273381294964,
@@ -585,7 +753,23 @@
           "architecture": 0.021897810218978103,
           "best-practices": 0.016129032258064516,
           "getting-started": 0.03669724770642202,
-          "troubleshooting": 0.009259259259259259
+          "troubleshooting": 0.009259259259259259,
+          "skill:rest": 0.5288461538461539,
+          "skill:data": 0.5288461538461539,
+          "skill:http": 0.5288461538461539,
+          "skill:https": 0.5288461538461539,
+          "skill:ci": 0.5288461538461539,
+          "skill:tl": 0.5288461538461539,
+          "skill:on": 0.5089285714285714,
+          "skill:ts": 0.5308641975308642,
+          "skill:go": 0.5308641975308642,
+          "skill:c": 0.5308641975308642,
+          "skill:gener": 0.5308641975308642,
+          "skill:io": 0.5308641975308642,
+          "skill:image": 0.531578947368421,
+          "skill:as": 0.531578947368421,
+          "skill:imag": 0.531578947368421,
+          "skill:aw": 0.531578947368421
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -613,7 +797,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:45.636Z"
+        "lastIndexed": "2025-12-02T16:53:18.346Z"
       }
     },
     "validation": {
@@ -688,6 +872,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "function",
+          "data",
+          "http",
+          "https",
+          "ci",
+          "search",
+          "tl",
+          "app",
+          "on"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.039568345323741004,
@@ -702,7 +898,39 @@
           "architecture": 0.06569343065693431,
           "best-practices": 0.04032258064516129,
           "getting-started": 0.25688073394495414,
-          "troubleshooting": 0.05555555555555555
+          "troubleshooting": 0.05555555555555555,
+          "skill:schema": 0.5384615384615384,
+          "skill:function": 0.5384615384615384,
+          "skill:data": 0.5384615384615384,
+          "skill:http": 0.5384615384615384,
+          "skill:https": 0.5384615384615384,
+          "skill:ci": 0.5384615384615384,
+          "skill:search": 0.5384615384615384,
+          "skill:tl": 0.5384615384615384,
+          "skill:app": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:page": 0.5267857142857143,
+          "skill:javascript": 0.5555555555555556,
+          "skill:js": 0.5555555555555556,
+          "skill:ts": 0.5555555555555556,
+          "skill:type": 0.5555555555555556,
+          "skill:go": 0.5555555555555556,
+          "skill:java": 0.5555555555555556,
+          "skill:c": 0.5555555555555556,
+          "skill:gener": 0.5555555555555556,
+          "skill:io": 0.5555555555555556,
+          "skill:git": 0.5684210526315789,
+          "skill:github": 0.5684210526315789,
+          "skill:commit": 0.5684210526315789,
+          "skill:branch": 0.5684210526315789,
+          "skill:image": 0.5684210526315789,
+          "skill:as": 0.5684210526315789,
+          "skill:code": 0.5684210526315789,
+          "skill:web": 0.5684210526315789,
+          "skill:contain": 0.5684210526315789,
+          "skill:imag": 0.5684210526315789,
+          "skill:formatt": 0.5684210526315789,
+          "skill:aw": 0.5684210526315789
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -733,7 +961,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:45.961Z"
+        "lastIndexed": "2025-12-02T16:53:18.660Z"
       }
     },
     "validation": {
@@ -808,6 +1036,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "auth",
+          "graphql",
+          "sql",
+          "schema",
+          "function",
+          "class",
+          "data",
+          "http",
+          "https",
+          "ci"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.07194244604316546,
@@ -822,7 +1062,59 @@
           "architecture": 0.0948905109489051,
           "best-practices": 0.08064516129032258,
           "getting-started": 0.13761467889908258,
-          "troubleshooting": 0.037037037037037035
+          "troubleshooting": 0.037037037037037035,
+          "skill:auth": 0.5625,
+          "skill:graphql": 0.5625,
+          "skill:sql": 0.5625,
+          "skill:schema": 0.5625,
+          "skill:function": 0.5625,
+          "skill:class": 0.5625,
+          "skill:data": 0.5625,
+          "skill:http": 0.5625,
+          "skill:https": 0.5625,
+          "skill:ci": 0.5625,
+          "skill:search": 0.5625,
+          "skill:hash": 0.5625,
+          "skill:tl": 0.5625,
+          "skill:app": 0.5446428571428571,
+          "skill:composition": 0.5446428571428571,
+          "skill:api": 0.5446428571428571,
+          "skill:on": 0.5446428571428571,
+          "skill:composit": 0.5446428571428571,
+          "skill:javascript": 0.6419753086419753,
+          "skill:js": 0.6419753086419753,
+          "skill:typescript": 0.6419753086419753,
+          "skill:ts": 0.6419753086419753,
+          "skill:type": 0.6419753086419753,
+          "skill:python": 0.6419753086419753,
+          "skill:py": 0.6419753086419753,
+          "skill:rust": 0.6419753086419753,
+          "skill:go": 0.6419753086419753,
+          "skill:java": 0.6419753086419753,
+          "skill:cpp": 0.6419753086419753,
+          "skill:c": 0.6419753086419753,
+          "skill:html": 0.6419753086419753,
+          "skill:css": 0.6419753086419753,
+          "skill:scss": 0.6419753086419753,
+          "skill:shell": 0.6419753086419753,
+          "skill:bash": 0.6419753086419753,
+          "skill:powershell": 0.6419753086419753,
+          "skill:gener": 0.6419753086419753,
+          "skill:compos": 0.6419753086419753,
+          "skill:io": 0.6419753086419753,
+          "skill:powershel": 0.6419753086419753,
+          "skill:git": 0.5789473684210527,
+          "skill:github": 0.5789473684210527,
+          "skill:control": 0.5789473684210527,
+          "skill:image": 0.5789473684210527,
+          "skill:as": 0.5789473684210527,
+          "skill:code": 0.5789473684210527,
+          "skill:contain": 0.5789473684210527,
+          "skill:imag": 0.5789473684210527,
+          "skill:manag": 0.5789473684210527,
+          "skill:formatt": 0.5789473684210527,
+          "skill:aw": 0.5789473684210527,
+          "skill:redi": 0.5789473684210527
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -859,7 +1151,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:46.406Z"
+        "lastIndexed": "2025-12-02T16:53:19.089Z"
       }
     },
     "validation": {
@@ -934,6 +1226,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "unit",
+          "object",
+          "class",
+          "data",
+          "ci",
+          "search",
+          "structur",
+          "tl",
+          "app"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.07194244604316546,
@@ -948,7 +1252,44 @@
           "architecture": 0.13138686131386862,
           "best-practices": 0.13709677419354838,
           "getting-started": 0.1743119266055046,
-          "troubleshooting": 0.05555555555555555
+          "troubleshooting": 0.05555555555555555,
+          "skill:schema": 0.5432692307692307,
+          "skill:unit": 0.5432692307692307,
+          "skill:object": 0.5432692307692307,
+          "skill:class": 0.5432692307692307,
+          "skill:data": 0.5432692307692307,
+          "skill:ci": 0.5432692307692307,
+          "skill:search": 0.5432692307692307,
+          "skill:structur": 0.5432692307692307,
+          "skill:tl": 0.5432692307692307,
+          "skill:app": 0.5357142857142857,
+          "skill:composition": 0.5357142857142857,
+          "skill:on": 0.5357142857142857,
+          "skill:composit": 0.5357142857142857,
+          "skill:js": 0.5740740740740741,
+          "skill:ts": 0.5740740740740741,
+          "skill:type": 0.5740740740740741,
+          "skill:annotation": 0.5740740740740741,
+          "skill:py": 0.5740740740740741,
+          "skill:go": 0.5740740740740741,
+          "skill:scala": 0.5740740740740741,
+          "skill:c": 0.5740740740740741,
+          "skill:annot": 0.5740740740740741,
+          "skill:gener": 0.5740740740740741,
+          "skill:compos": 0.5740740740740741,
+          "skill:io": 0.5740740740740741,
+          "skill:git": 0.5631578947368421,
+          "skill:github": 0.5631578947368421,
+          "skill:control": 0.5631578947368421,
+          "skill:merge": 0.5631578947368421,
+          "skill:image": 0.5631578947368421,
+          "skill:as": 0.5631578947368421,
+          "skill:code": 0.5631578947368421,
+          "skill:web": 0.5631578947368421,
+          "skill:merg": 0.5631578947368421,
+          "skill:imag": 0.5631578947368421,
+          "skill:manag": 0.5631578947368421,
+          "skill:aw": 0.5631578947368421
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1000,7 +1341,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:47.028Z"
+        "lastIndexed": "2025-12-02T16:53:19.677Z"
       }
     },
     "validation": {
@@ -1105,6 +1446,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "integration",
+          "data",
+          "ci",
+          "deployment",
+          "integr",
+          "tl",
+          "deploy",
+          "on",
+          "ts"
+        ],
         "difficulty": "advanced",
         "confidence": {
           "ai": 0.02158273381294964,
@@ -1118,7 +1471,24 @@
           "architecture": 0.043795620437956206,
           "best-practices": 0.03225806451612903,
           "getting-started": 0.01834862385321101,
-          "troubleshooting": 0.018518518518518517
+          "troubleshooting": 0.018518518518518517,
+          "skill:schema": 0.5384615384615384,
+          "skill:integration": 0.5384615384615384,
+          "skill:data": 0.5384615384615384,
+          "skill:ci": 0.5384615384615384,
+          "skill:deployment": 0.5384615384615384,
+          "skill:integr": 0.5384615384615384,
+          "skill:tl": 0.5384615384615384,
+          "skill:deploy": 0.5384615384615384,
+          "skill:on": 0.5089285714285714,
+          "skill:ts": 0.5246913580246914,
+          "skill:go": 0.5246913580246914,
+          "skill:c": 0.5246913580246914,
+          "skill:io": 0.5246913580246914,
+          "skill:as": 0.531578947368421,
+          "skill:code": 0.531578947368421,
+          "skill:contain": 0.531578947368421,
+          "skill:cach": 0.531578947368421
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1129,7 +1499,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T15:39:47.109Z"
+        "lastIndexed": "2025-12-02T16:53:19.906Z"
       }
     },
     "validation": {
@@ -1262,6 +1632,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "object",
+          "http",
+          "https",
+          "tl",
+          "app",
+          "on",
+          "js",
+          "ts",
+          "type"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.01079136690647482,
@@ -1275,7 +1657,20 @@
           "architecture": 0.021897810218978103,
           "best-practices": 0.016129032258064516,
           "getting-started": 0.01834862385321101,
-          "troubleshooting": 0.009259259259259259
+          "troubleshooting": 0.009259259259259259,
+          "skill:schema": 0.5240384615384616,
+          "skill:object": 0.5240384615384616,
+          "skill:http": 0.5240384615384616,
+          "skill:https": 0.5240384615384616,
+          "skill:tl": 0.5240384615384616,
+          "skill:app": 0.5178571428571429,
+          "skill:on": 0.5178571428571429,
+          "skill:js": 0.5308641975308642,
+          "skill:ts": 0.5308641975308642,
+          "skill:type": 0.5308641975308642,
+          "skill:c": 0.5308641975308642,
+          "skill:io": 0.5308641975308642,
+          "skill:as": 0.5105263157894737
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1286,7 +1681,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T15:39:47.173Z"
+        "lastIndexed": "2025-12-02T16:53:19.966Z"
       }
     },
     "validation": {
@@ -1532,6 +1927,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "object",
+          "http",
+          "https",
+          "ci",
+          "tl",
+          "app",
+          "on",
+          "js",
+          "ts"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.02877697841726619,
@@ -1546,7 +1953,25 @@
           "architecture": 0.029197080291970802,
           "best-practices": 0.016129032258064516,
           "getting-started": 0.045871559633027525,
-          "troubleshooting": 0.027777777777777776
+          "troubleshooting": 0.027777777777777776,
+          "skill:schema": 0.5288461538461539,
+          "skill:object": 0.5288461538461539,
+          "skill:http": 0.5288461538461539,
+          "skill:https": 0.5288461538461539,
+          "skill:ci": 0.5288461538461539,
+          "skill:tl": 0.5288461538461539,
+          "skill:app": 0.5178571428571429,
+          "skill:on": 0.5178571428571429,
+          "skill:js": 0.5493827160493827,
+          "skill:ts": 0.5493827160493827,
+          "skill:type": 0.5493827160493827,
+          "skill:pip": 0.5493827160493827,
+          "skill:c": 0.5493827160493827,
+          "skill:less": 0.5493827160493827,
+          "skill:gener": 0.5493827160493827,
+          "skill:io": 0.5493827160493827,
+          "skill:version": 0.5157894736842106,
+          "skill:as": 0.5157894736842106
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1561,7 +1986,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:47.330Z"
+        "lastIndexed": "2025-12-02T16:53:20.124Z"
       }
     },
     "validation": {
@@ -1664,6 +2089,18 @@
           "best-practices",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "object",
+          "http",
+          "https",
+          "tl",
+          "on",
+          "js",
+          "type",
+          "c",
+          "io"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.007194244604316547,
@@ -1674,7 +2111,17 @@
           "api-reference": 0.07317073170731707,
           "architecture": 0.021897810218978103,
           "best-practices": 0.024193548387096774,
-          "troubleshooting": 0.009259259259259259
+          "troubleshooting": 0.009259259259259259,
+          "skill:schema": 0.5240384615384616,
+          "skill:object": 0.5240384615384616,
+          "skill:http": 0.5240384615384616,
+          "skill:https": 0.5240384615384616,
+          "skill:tl": 0.5240384615384616,
+          "skill:on": 0.5089285714285714,
+          "skill:js": 0.5246913580246914,
+          "skill:type": 0.5246913580246914,
+          "skill:c": 0.5246913580246914,
+          "skill:io": 0.5246913580246914
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1685,7 +2132,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T15:39:47.376Z"
+        "lastIndexed": "2025-12-02T16:53:20.172Z"
       }
     },
     "validation": {
@@ -1791,6 +2238,18 @@
           "automation",
           "ci-cd"
         ],
+        "skills": [
+          "auth",
+          "token",
+          "graphql",
+          "sql",
+          "schema",
+          "test",
+          "function",
+          "data",
+          "http",
+          "https"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.0539568345323741,
@@ -1805,7 +2264,49 @@
           "architecture": 0.072992700729927,
           "best-practices": 0.08064516129032258,
           "getting-started": 0.10091743119266056,
-          "troubleshooting": 0.16666666666666666
+          "troubleshooting": 0.16666666666666666,
+          "skill:auth": 0.5769230769230769,
+          "skill:token": 0.5769230769230769,
+          "skill:graphql": 0.5769230769230769,
+          "skill:sql": 0.5769230769230769,
+          "skill:schema": 0.5769230769230769,
+          "skill:test": 0.5769230769230769,
+          "skill:function": 0.5769230769230769,
+          "skill:data": 0.5769230769230769,
+          "skill:http": 0.5769230769230769,
+          "skill:https": 0.5769230769230769,
+          "skill:ci": 0.5769230769230769,
+          "skill:cd": 0.5769230769230769,
+          "skill:factori": 0.5769230769230769,
+          "skill:search": 0.5769230769230769,
+          "skill:structur": 0.5769230769230769,
+          "skill:tl": 0.5769230769230769,
+          "skill:app": 0.5267857142857143,
+          "skill:api": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:javascript": 0.5740740740740741,
+          "skill:js": 0.5740740740740741,
+          "skill:typescript": 0.5740740740740741,
+          "skill:ts": 0.5740740740740741,
+          "skill:type": 0.5740740740740741,
+          "skill:go": 0.5740740740740741,
+          "skill:java": 0.5740740740740741,
+          "skill:c": 0.5740740740740741,
+          "skill:bash": 0.5740740740740741,
+          "skill:gener": 0.5740740740740741,
+          "skill:io": 0.5740740740740741,
+          "skill:git": 0.5842105263157895,
+          "skill:github": 0.5842105263157895,
+          "skill:version": 0.5842105263157895,
+          "skill:commit": 0.5842105263157895,
+          "skill:branch": 0.5842105263157895,
+          "skill:merge": 0.5842105263157895,
+          "skill:as": 0.5842105263157895,
+          "skill:code": 0.5842105263157895,
+          "skill:web": 0.5842105263157895,
+          "skill:merg": 0.5842105263157895,
+          "skill:contain": 0.5842105263157895,
+          "skill:cach": 0.5842105263157895
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1844,7 +2345,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:47.877Z"
+        "lastIndexed": "2025-12-02T16:53:20.692Z"
       }
     },
     "validation": {
@@ -1912,6 +2413,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "authentication",
+          "auth",
+          "token",
+          "session",
+          "database",
+          "sql",
+          "schema",
+          "testing",
+          "test",
+          "async"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.09352517985611511,
@@ -1926,7 +2439,79 @@
           "architecture": 0.1678832116788321,
           "best-practices": 0.25806451612903225,
           "getting-started": 0.1559633027522936,
-          "troubleshooting": 0.19444444444444445
+          "troubleshooting": 0.19444444444444445,
+          "skill:authentication": 0.6490384615384616,
+          "skill:auth": 0.6490384615384616,
+          "skill:token": 0.6490384615384616,
+          "skill:session": 0.6490384615384616,
+          "skill:database": 0.6490384615384616,
+          "skill:sql": 0.6490384615384616,
+          "skill:schema": 0.6490384615384616,
+          "skill:testing": 0.6490384615384616,
+          "skill:test": 0.6490384615384616,
+          "skill:async": 0.6490384615384616,
+          "skill:await": 0.6490384615384616,
+          "skill:pure": 0.6490384615384616,
+          "skill:function": 0.6490384615384616,
+          "skill:object": 0.6490384615384616,
+          "skill:programming": 0.6490384615384616,
+          "skill:class": 0.6490384615384616,
+          "skill:data": 0.6490384615384616,
+          "skill:http": 0.6490384615384616,
+          "skill:https": 0.6490384615384616,
+          "skill:ssl": 0.6490384615384616,
+          "skill:ci": 0.6490384615384616,
+          "skill:cd": 0.6490384615384616,
+          "skill:authent": 0.6490384615384616,
+          "skill:databas": 0.6490384615384616,
+          "skill:program": 0.6490384615384616,
+          "skill:algorithm": 0.6490384615384616,
+          "skill:search": 0.6490384615384616,
+          "skill:structur": 0.6490384615384616,
+          "skill:dn": 0.6490384615384616,
+          "skill:hash": 0.6490384615384616,
+          "skill:tl": 0.6490384615384616,
+          "skill:app": 0.5446428571428571,
+          "skill:pages": 0.5446428571428571,
+          "skill:api": 0.5446428571428571,
+          "skill:on": 0.5446428571428571,
+          "skill:page": 0.5446428571428571,
+          "skill:javascript": 0.6111111111111112,
+          "skill:js": 0.6111111111111112,
+          "skill:typescript": 0.6111111111111112,
+          "skill:ts": 0.6111111111111112,
+          "skill:tsc": 0.6111111111111112,
+          "skill:type": 0.6111111111111112,
+          "skill:python": 0.6111111111111112,
+          "skill:py": 0.6111111111111112,
+          "skill:rust": 0.6111111111111112,
+          "skill:go": 0.6111111111111112,
+          "skill:java": 0.6111111111111112,
+          "skill:c": 0.6111111111111112,
+          "skill:sqlite": 0.6111111111111112,
+          "skill:less": 0.6111111111111112,
+          "skill:bash": 0.6111111111111112,
+          "skill:gener": 0.6111111111111112,
+          "skill:io": 0.6111111111111112,
+          "skill:git": 0.6210526315789474,
+          "skill:github": 0.6210526315789474,
+          "skill:version": 0.6210526315789474,
+          "skill:control": 0.6210526315789474,
+          "skill:commit": 0.6210526315789474,
+          "skill:branch": 0.6210526315789474,
+          "skill:merge": 0.6210526315789474,
+          "skill:npm": 0.6210526315789474,
+          "skill:as": 0.6210526315789474,
+          "skill:code": 0.6210526315789474,
+          "skill:web": 0.6210526315789474,
+          "skill:redis": 0.6210526315789474,
+          "skill:cache": 0.6210526315789474,
+          "skill:merg": 0.6210526315789474,
+          "skill:contain": 0.6210526315789474,
+          "skill:manag": 0.6210526315789474,
+          "skill:aw": 0.6210526315789474,
+          "skill:redi": 0.6210526315789474,
+          "skill:cach": 0.6210526315789474
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -1970,7 +2555,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:49.376Z"
+        "lastIndexed": "2025-12-02T16:53:22.180Z"
       }
     },
     "validation": {
@@ -2045,6 +2630,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "authentication",
+          "auth",
+          "integration",
+          "programming",
+          "class",
+          "data",
+          "security",
+          "encryption",
+          "ci",
+          "authent"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.11510791366906475,
@@ -2059,7 +2656,62 @@
           "architecture": 0.16058394160583941,
           "best-practices": 0.1774193548387097,
           "getting-started": 0.1926605504587156,
-          "troubleshooting": 0.08333333333333333
+          "troubleshooting": 0.08333333333333333,
+          "skill:authentication": 0.5913461538461539,
+          "skill:auth": 0.5913461538461539,
+          "skill:integration": 0.5913461538461539,
+          "skill:programming": 0.5913461538461539,
+          "skill:class": 0.5913461538461539,
+          "skill:data": 0.5913461538461539,
+          "skill:security": 0.5913461538461539,
+          "skill:encryption": 0.5913461538461539,
+          "skill:ci": 0.5913461538461539,
+          "skill:authent": 0.5913461538461539,
+          "skill:integr": 0.5913461538461539,
+          "skill:e2": 0.5913461538461539,
+          "skill:program": 0.5913461538461539,
+          "skill:algorithm": 0.5913461538461539,
+          "skill:search": 0.5913461538461539,
+          "skill:network": 0.5913461538461539,
+          "skill:secur": 0.5913461538461539,
+          "skill:encrypt": 0.5913461538461539,
+          "skill:tl": 0.5913461538461539,
+          "skill:app": 0.5357142857142857,
+          "skill:router": 0.5357142857142857,
+          "skill:api": 0.5357142857142857,
+          "skill:on": 0.5357142857142857,
+          "skill:javascript": 0.5802469135802469,
+          "skill:js": 0.5802469135802469,
+          "skill:ts": 0.5802469135802469,
+          "skill:type": 0.5802469135802469,
+          "skill:python": 0.5802469135802469,
+          "skill:py": 0.5802469135802469,
+          "skill:pip": 0.5802469135802469,
+          "skill:go": 0.5802469135802469,
+          "skill:java": 0.5802469135802469,
+          "skill:c": 0.5802469135802469,
+          "skill:bash": 0.5802469135802469,
+          "skill:gener": 0.5802469135802469,
+          "skill:io": 0.5802469135802469,
+          "skill:image": 0.6105263157894737,
+          "skill:kubernetes": 0.6105263157894737,
+          "skill:k8s": 0.6105263157894737,
+          "skill:npm": 0.6105263157894737,
+          "skill:package": 0.6105263157894737,
+          "skill:as": 0.6105263157894737,
+          "skill:code": 0.6105263157894737,
+          "skill:web": 0.6105263157894737,
+          "skill:services": 0.6105263157894737,
+          "skill:cloud": 0.6105263157894737,
+          "skill:platform": 0.6105263157894737,
+          "skill:cache": 0.6105263157894737,
+          "skill:imag": 0.6105263157894737,
+          "skill:kubernet": 0.6105263157894737,
+          "skill:k8": 0.6105263157894737,
+          "skill:packag": 0.6105263157894737,
+          "skill:aw": 0.6105263157894737,
+          "skill:servic": 0.6105263157894737,
+          "skill:cach": 0.6105263157894737
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2079,7 +2731,7 @@
             "clay |"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:50.166Z"
+        "lastIndexed": "2025-12-02T16:53:23.132Z"
       }
     },
     "validation": {
@@ -2177,6 +2829,18 @@
           "troubleshooting",
           "deployment"
         ],
+        "skills": [
+          "auth",
+          "token",
+          "schema",
+          "testing",
+          "test",
+          "class",
+          "data",
+          "http",
+          "https",
+          "ci"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.07553956834532374,
@@ -2191,7 +2855,45 @@
           "architecture": 0.051094890510948905,
           "best-practices": 0.1693548387096774,
           "getting-started": 0.12844036697247707,
-          "troubleshooting": 0.2037037037037037
+          "troubleshooting": 0.2037037037037037,
+          "skill:auth": 0.5673076923076923,
+          "skill:token": 0.5673076923076923,
+          "skill:schema": 0.5673076923076923,
+          "skill:testing": 0.5673076923076923,
+          "skill:test": 0.5673076923076923,
+          "skill:class": 0.5673076923076923,
+          "skill:data": 0.5673076923076923,
+          "skill:http": 0.5673076923076923,
+          "skill:https": 0.5673076923076923,
+          "skill:ci": 0.5673076923076923,
+          "skill:cd": 0.5673076923076923,
+          "skill:search": 0.5673076923076923,
+          "skill:tl": 0.5673076923076923,
+          "skill:deploy": 0.5673076923076923,
+          "skill:app": 0.5267857142857143,
+          "skill:api": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:js": 0.5555555555555556,
+          "skill:ts": 0.5555555555555556,
+          "skill:rust": 0.5555555555555556,
+          "skill:go": 0.5555555555555556,
+          "skill:c": 0.5555555555555556,
+          "skill:less": 0.5555555555555556,
+          "skill:bash": 0.5555555555555556,
+          "skill:gener": 0.5555555555555556,
+          "skill:io": 0.5555555555555556,
+          "skill:git": 0.5894736842105264,
+          "skill:github": 0.5894736842105264,
+          "skill:version": 0.5894736842105264,
+          "skill:control": 0.5894736842105264,
+          "skill:commit": 0.5894736842105264,
+          "skill:branch": 0.5894736842105264,
+          "skill:merge": 0.5894736842105264,
+          "skill:npm": 0.5894736842105264,
+          "skill:as": 0.5894736842105264,
+          "skill:code": 0.5894736842105264,
+          "skill:web": 0.5894736842105264,
+          "skill:merg": 0.5894736842105264
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2218,7 +2920,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:50.986Z"
+        "lastIndexed": "2025-12-02T16:53:23.968Z"
       }
     },
     "validation": {
@@ -2312,6 +3014,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "token",
+          "rest",
+          "sql",
+          "schema",
+          "unit",
+          "test",
+          "function",
+          "programming",
+          "algorithms",
+          "data"
+        ],
         "difficulty": "beginner",
         "confidence": {
           "ai": 0.0683453237410072,
@@ -2326,7 +3040,53 @@
           "architecture": 0.08029197080291971,
           "best-practices": 0.20967741935483872,
           "getting-started": 0.30275229357798167,
-          "troubleshooting": 0.21296296296296297
+          "troubleshooting": 0.21296296296296297,
+          "skill:token": 0.5961538461538461,
+          "skill:rest": 0.5961538461538461,
+          "skill:sql": 0.5961538461538461,
+          "skill:schema": 0.5961538461538461,
+          "skill:unit": 0.5961538461538461,
+          "skill:test": 0.5961538461538461,
+          "skill:function": 0.5961538461538461,
+          "skill:programming": 0.5961538461538461,
+          "skill:algorithms": 0.5961538461538461,
+          "skill:data": 0.5961538461538461,
+          "skill:http": 0.5961538461538461,
+          "skill:https": 0.5961538461538461,
+          "skill:ci": 0.5961538461538461,
+          "skill:cd": 0.5961538461538461,
+          "skill:e2": 0.5961538461538461,
+          "skill:program": 0.5961538461538461,
+          "skill:algorithm": 0.5961538461538461,
+          "skill:search": 0.5961538461538461,
+          "skill:structur": 0.5961538461538461,
+          "skill:tl": 0.5961538461538461,
+          "skill:app": 0.5267857142857143,
+          "skill:api": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:ts": 0.5617283950617284,
+          "skill:type": 0.5617283950617284,
+          "skill:rust": 0.5617283950617284,
+          "skill:go": 0.5617283950617284,
+          "skill:ios": 0.5617283950617284,
+          "skill:c": 0.5617283950617284,
+          "skill:bash": 0.5617283950617284,
+          "skill:gener": 0.5617283950617284,
+          "skill:io": 0.5617283950617284,
+          "skill:git": 0.6,
+          "skill:github": 0.6,
+          "skill:version": 0.6,
+          "skill:control": 0.6,
+          "skill:commit": 0.6,
+          "skill:branch": 0.6,
+          "skill:merge": 0.6,
+          "skill:npm": 0.6,
+          "skill:as": 0.6,
+          "skill:code": 0.6,
+          "skill:web": 0.6,
+          "skill:merg": 0.6,
+          "skill:contain": 0.6,
+          "skill:formatt": 0.6
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2370,7 +3130,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:52.370Z"
+        "lastIndexed": "2025-12-02T16:53:25.338Z"
       }
     },
     "validation": {
@@ -2474,6 +3234,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "auth",
+          "database",
+          "schema",
+          "unit",
+          "test",
+          "integration",
+          "async",
+          "fp",
+          "function",
+          "object"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.07553956834532374,
@@ -2488,7 +3260,59 @@
           "architecture": 0.1386861313868613,
           "best-practices": 0.23387096774193547,
           "getting-started": 0.44036697247706424,
-          "troubleshooting": 0.19444444444444445
+          "troubleshooting": 0.19444444444444445,
+          "skill:auth": 0.6298076923076923,
+          "skill:database": 0.6298076923076923,
+          "skill:schema": 0.6298076923076923,
+          "skill:unit": 0.6298076923076923,
+          "skill:test": 0.6298076923076923,
+          "skill:integration": 0.6298076923076923,
+          "skill:async": 0.6298076923076923,
+          "skill:fp": 0.6298076923076923,
+          "skill:function": 0.6298076923076923,
+          "skill:object": 0.6298076923076923,
+          "skill:programming": 0.6298076923076923,
+          "skill:algorithms": 0.6298076923076923,
+          "skill:data": 0.6298076923076923,
+          "skill:structures": 0.6298076923076923,
+          "skill:http": 0.6298076923076923,
+          "skill:https": 0.6298076923076923,
+          "skill:ci": 0.6298076923076923,
+          "skill:cd": 0.6298076923076923,
+          "skill:databas": 0.6298076923076923,
+          "skill:integr": 0.6298076923076923,
+          "skill:e2": 0.6298076923076923,
+          "skill:program": 0.6298076923076923,
+          "skill:factori": 0.6298076923076923,
+          "skill:algorithm": 0.6298076923076923,
+          "skill:structur": 0.6298076923076923,
+          "skill:network": 0.6298076923076923,
+          "skill:tl": 0.6298076923076923,
+          "skill:app": 0.5267857142857143,
+          "skill:express": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:ts": 0.5555555555555556,
+          "skill:type": 0.5555555555555556,
+          "skill:python": 0.5555555555555556,
+          "skill:py": 0.5555555555555556,
+          "skill:go": 0.5555555555555556,
+          "skill:c": 0.5555555555555556,
+          "skill:bash": 0.5555555555555556,
+          "skill:gener": 0.5555555555555556,
+          "skill:io": 0.5555555555555556,
+          "skill:git": 0.5842105263157895,
+          "skill:github": 0.5842105263157895,
+          "skill:version": 0.5842105263157895,
+          "skill:control": 0.5842105263157895,
+          "skill:image": 0.5842105263157895,
+          "skill:npm": 0.5842105263157895,
+          "skill:as": 0.5842105263157895,
+          "skill:code": 0.5842105263157895,
+          "skill:web": 0.5842105263157895,
+          "skill:merg": 0.5842105263157895,
+          "skill:contain": 0.5842105263157895,
+          "skill:imag": 0.5842105263157895,
+          "skill:manag": 0.5842105263157895
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2523,7 +3347,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:54.330Z"
+        "lastIndexed": "2025-12-02T16:53:27.263Z"
       }
     },
     "validation": {
@@ -2630,6 +3454,18 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "schema",
+          "unit",
+          "integration",
+          "async-programming",
+          "async",
+          "immutable",
+          "programming",
+          "inheritance",
+          "data",
+          "networking"
+        ],
         "difficulty": "intermediate",
         "confidence": {
           "ai": 0.12949640287769784,
@@ -2644,7 +3480,68 @@
           "architecture": 0.1897810218978102,
           "best-practices": 0.22580645161290322,
           "getting-started": 0.1926605504587156,
-          "troubleshooting": 0.16666666666666666
+          "troubleshooting": 0.16666666666666666,
+          "skill:schema": 0.6201923076923077,
+          "skill:unit": 0.6201923076923077,
+          "skill:integration": 0.6201923076923077,
+          "skill:async-programming": 0.6201923076923077,
+          "skill:async": 0.6201923076923077,
+          "skill:immutable": 0.6201923076923077,
+          "skill:programming": 0.6201923076923077,
+          "skill:inheritance": 0.6201923076923077,
+          "skill:data": 0.6201923076923077,
+          "skill:networking": 0.6201923076923077,
+          "skill:http": 0.6201923076923077,
+          "skill:https": 0.6201923076923077,
+          "skill:ssl": 0.6201923076923077,
+          "skill:ci": 0.6201923076923077,
+          "skill:deployment": 0.6201923076923077,
+          "skill:integr": 0.6201923076923077,
+          "skill:async-program": 0.6201923076923077,
+          "skill:immut": 0.6201923076923077,
+          "skill:program": 0.6201923076923077,
+          "skill:inherit": 0.6201923076923077,
+          "skill:search": 0.6201923076923077,
+          "skill:structur": 0.6201923076923077,
+          "skill:network": 0.6201923076923077,
+          "skill:tl": 0.6201923076923077,
+          "skill:deploy": 0.6201923076923077,
+          "skill:app": 0.5267857142857143,
+          "skill:api": 0.5267857142857143,
+          "skill:on": 0.5267857142857143,
+          "skill:js": 0.5864197530864197,
+          "skill:ts": 0.5864197530864197,
+          "skill:type": 0.5864197530864197,
+          "skill:python": 0.5864197530864197,
+          "skill:py": 0.5864197530864197,
+          "skill:rust": 0.5864197530864197,
+          "skill:go": 0.5864197530864197,
+          "skill:asp": 0.5864197530864197,
+          "skill:scala": 0.5864197530864197,
+          "skill:c": 0.5864197530864197,
+          "skill:less": 0.5864197530864197,
+          "skill:annot": 0.5864197530864197,
+          "skill:gener": 0.5864197530864197,
+          "skill:io": 0.5864197530864197,
+          "skill:git": 0.6210526315789474,
+          "skill:github": 0.6210526315789474,
+          "skill:version": 0.6210526315789474,
+          "skill:control": 0.6210526315789474,
+          "skill:commit": 0.6210526315789474,
+          "skill:branch": 0.6210526315789474,
+          "skill:image": 0.6210526315789474,
+          "skill:kubernetes": 0.6210526315789474,
+          "skill:infrastructure": 0.6210526315789474,
+          "skill:as": 0.6210526315789474,
+          "skill:code": 0.6210526315789474,
+          "skill:web": 0.6210526315789474,
+          "skill:merg": 0.6210526315789474,
+          "skill:contain": 0.6210526315789474,
+          "skill:imag": 0.6210526315789474,
+          "skill:kubernet": 0.6210526315789474,
+          "skill:infrastructur": 0.6210526315789474,
+          "skill:aw": 0.6210526315789474,
+          "skill:servic": 0.6210526315789474
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2664,7 +3561,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T15:39:55.736Z"
+        "lastIndexed": "2025-12-02T16:53:28.628Z"
       }
     },
     "validation": {
@@ -2719,33 +3616,33 @@
       },
       "autoGenerated": {
         "keywords": [
+          "skills",
+          "react",
           "string",
+          "spiral",
+          "learning",
           "array",
+          "skill",
+          "typescript",
           "fields",
+          "topics",
           "openstrand",
           "identifier",
           "url",
-          "topics",
-          "enum",
-          "template",
-          "reference",
-          "unique",
-          "controlled",
-          "npm",
-          "valid",
-          "comprehensive"
+          "possible",
+          "enum"
         ],
         "phrases": [
           "openstrand architecture",
+          "spiral learning",
           "controlled vocabulary",
           "frame dev",
           "npm run",
           "frame codex",
+          "learning path",
+          "skills spiral",
           "schema reference",
-          "required fields",
-          "slug string",
-          "unique identifier",
-          "title string"
+          "required fields"
         ],
         "subjects": [
           "ai",
@@ -2764,21 +3661,109 @@
           "getting-started",
           "troubleshooting"
         ],
+        "skills": [
+          "state-management",
+          "authentication",
+          "auth",
+          "api-design",
+          "websocket",
+          "schema",
+          "migration",
+          "testing",
+          "unit",
+          "test"
+        ],
         "difficulty": "intermediate",
         "confidence": {
-          "ai": 0.0539568345323741,
-          "design": 0.06077348066298342,
-          "knowledge": 0.3621621621621622,
-          "media": 0.029850746268656716,
-          "philosophy": 0.13526570048309178,
-          "science": 0.11494252873563218,
-          "security": 0.06666666666666667,
-          "technology": 0.17229729729729729,
-          "api-reference": 0.21138211382113822,
-          "architecture": 0.11678832116788321,
-          "best-practices": 0.1935483870967742,
-          "getting-started": 0.22935779816513763,
-          "troubleshooting": 0.1111111111111111
+          "ai": 0.06115107913669065,
+          "design": 0.09944751381215469,
+          "knowledge": 0.41081081081081083,
+          "media": 0.06716417910447761,
+          "philosophy": 0.14009661835748793,
+          "science": 0.11877394636015326,
+          "security": 0.07777777777777778,
+          "technology": 0.25,
+          "api-reference": 0.2682926829268293,
+          "architecture": 0.16058394160583941,
+          "best-practices": 0.27419354838709675,
+          "getting-started": 0.25688073394495414,
+          "troubleshooting": 0.12962962962962962,
+          "skill:state-management": 0.6490384615384616,
+          "skill:authentication": 0.6490384615384616,
+          "skill:auth": 0.6490384615384616,
+          "skill:api-design": 0.6490384615384616,
+          "skill:websocket": 0.6490384615384616,
+          "skill:schema": 0.6490384615384616,
+          "skill:migration": 0.6490384615384616,
+          "skill:testing": 0.6490384615384616,
+          "skill:unit": 0.6490384615384616,
+          "skill:test": 0.6490384615384616,
+          "skill:object": 0.6490384615384616,
+          "skill:programming": 0.6490384615384616,
+          "skill:data": 0.6490384615384616,
+          "skill:http": 0.6490384615384616,
+          "skill:https": 0.6490384615384616,
+          "skill:security": 0.6490384615384616,
+          "skill:ci": 0.6490384615384616,
+          "skill:cd": 0.6490384615384616,
+          "skill:deployment": 0.6490384615384616,
+          "skill:state-manag": 0.6490384615384616,
+          "skill:authent": 0.6490384615384616,
+          "skill:migrat": 0.6490384615384616,
+          "skill:e2": 0.6490384615384616,
+          "skill:program": 0.6490384615384616,
+          "skill:algorithm": 0.6490384615384616,
+          "skill:search": 0.6490384615384616,
+          "skill:structur": 0.6490384615384616,
+          "skill:network": 0.6490384615384616,
+          "skill:secur": 0.6490384615384616,
+          "skill:tl": 0.6490384615384616,
+          "skill:deploy": 0.6490384615384616,
+          "skill:react": 0.5803571428571429,
+          "skill:react-hooks": 0.5803571428571429,
+          "skill:nextjs": 0.5803571428571429,
+          "skill:app": 0.5803571428571429,
+          "skill:api": 0.5803571428571429,
+          "skill:express": 0.5803571428571429,
+          "skill:on": 0.5803571428571429,
+          "skill:react-hook": 0.5803571428571429,
+          "skill:nextj": 0.5803571428571429,
+          "skill:javascript": 0.6111111111111112,
+          "skill:js": 0.6111111111111112,
+          "skill:nodejs": 0.6111111111111112,
+          "skill:typescript": 0.6111111111111112,
+          "skill:ts": 0.6111111111111112,
+          "skill:type": 0.6111111111111112,
+          "skill:generics": 0.6111111111111112,
+          "skill:python": 0.6111111111111112,
+          "skill:py": 0.6111111111111112,
+          "skill:rust": 0.6111111111111112,
+          "skill:go": 0.6111111111111112,
+          "skill:java": 0.6111111111111112,
+          "skill:asp": 0.6111111111111112,
+          "skill:c": 0.6111111111111112,
+          "skill:bash": 0.6111111111111112,
+          "skill:nodej": 0.6111111111111112,
+          "skill:gener": 0.6111111111111112,
+          "skill:io": 0.6111111111111112,
+          "skill:git": 0.631578947368421,
+          "skill:github": 0.631578947368421,
+          "skill:version": 0.631578947368421,
+          "skill:control": 0.631578947368421,
+          "skill:docker": 0.631578947368421,
+          "skill:image": 0.631578947368421,
+          "skill:kubernetes": 0.631578947368421,
+          "skill:npm": 0.631578947368421,
+          "skill:infrastructure": 0.631578947368421,
+          "skill:as": 0.631578947368421,
+          "skill:code": 0.631578947368421,
+          "skill:web": 0.631578947368421,
+          "skill:contain": 0.631578947368421,
+          "skill:imag": 0.631578947368421,
+          "skill:kubernet": 0.631578947368421,
+          "skill:manag": 0.631578947368421,
+          "skill:formatt": 0.631578947368421,
+          "skill:infrastructur": 0.631578947368421
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2786,10 +3771,14 @@
         "entities": {
           "people": [],
           "places": [],
-          "organizations": [],
-          "topics": []
+          "organizations": [
+            "[Skills & Spiral"
+          ],
+          "topics": [
+            "[Skills & Spiral"
+          ]
         },
-        "lastIndexed": "2025-12-02T15:39:56.748Z"
+        "lastIndexed": "2025-12-02T16:53:29.998Z"
       }
     },
     "validation": {
@@ -2797,10 +3786,10 @@
       "errors": [],
       "warnings": [],
       "suggestions": [
-        "Key phrases found: openstrand architecture, controlled vocabulary, frame dev"
+        "Key phrases found: openstrand architecture, spiral learning, controlled vocabulary"
       ]
     },
-    "content": "\n# Frame Codex Schema Reference\n\nThis document provides the complete schema reference for all Frame Codex content types.\n\n## Weave Schema\n\nA Weave represents a complete, self-contained universe of knowledge.\n\n### Required Fields\n\n- `slug` (string): Unique identifier, lowercase with hyphens\n- `title` (string): Human-readable name\n- `description` (string): Comprehensive description\n\n### Optional Fields\n\n- `maintainedBy` (object): Maintainer information\n  - `name` (string): Name of person or organization\n  - `url` (string): Contact or website URL\n- `license` (string): Content license (default: MIT)\n- `tags` (array): Categorization tags from controlled vocabulary\n\n### Example\n\n```yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\nmaintainedBy:\n  name: Frame.dev Team\n  url: https://frame.dev\nlicense: MIT\ntags:\n  - technology\n  - ai-infrastructure\n  - superintelligence\n```\n\n## Loom Schema\n\nA Loom is a curated collection of related strands within a weave.\n\n### Required Fields\n\n- `slug` (string): Unique identifier within the weave\n- `title` (string): Display title\n- `summary` (string): Brief description\n\n### Optional Fields\n\n- `tags` (array): Subject tags for categorization\n- `ordering` (object): How strands are organized\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\n  - `items` (array): Ordered list of strand slugs\n\n### Example\n\n```yaml\nslug: getting-started\ntitle: Getting Started with Frame\nsummary: Essential guides and tutorials for new Frame developers\ntags:\n  - tutorial\n  - beginner\nordering:\n  type: sequential\n  items:\n    - installation\n    - hello-world\n    - core-concepts\n    - first-project\n```\n\n## Strand Schema\n\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\n\n### Required Fields\n\n- `id` (string): Globally unique identifier (UUID)\n- `slug` (string): URL-friendly identifier\n- `title` (string): Display title\n\n### Optional Fields\n\n- `summary` (string): Brief abstract (recommended for search)\n- `version` (string): Semantic version (default: 1.0.0)\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\n- `taxonomy` (object): Categorization\n  - `subjects` (array): High-level categories\n  - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**\n- `tags` (array): Freeform tags **✓ Independent - can be shared across any level**\n\n> **⚠️ Topics vs Tags**: Topics are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases. Tags are INDEPENDENT and can be freely shared. See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule).\n- `relationships` (object): Connections to other strands\n  - `requires` (array): Prerequisites\n  - `references` (array): Related strands\n  - `seeAlso` (array): External URLs\n- `publishing` (object): Publication metadata\n  - `created` (string): ISO 8601 timestamp\n  - `updated` (string): ISO 8601 timestamp\n  - `status` (enum): `draft`, `published`, `archived`\n\n### Example\n\n```yaml\n---\nid: 550e8400-e29b-41d4-a716-446655440000\nslug: openstrand-architecture\ntitle: OpenStrand Architecture Overview\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\nversion: 1.2.0\ncontentType: markdown\ndifficulty: intermediate\ntaxonomy:\n  subjects:\n    - technology\n    - ai\n  topics:\n    - architecture\n    - getting-started\ntags:\n  - openstrand\n  - architecture\n  - knowledge-graph\nrelationships:\n  requires:\n    - core-concepts\n  references:\n    - frame-codex-intro\n    - api-reference\n  seeAlso:\n    - https://openstrand.ai\n    - https://frame.dev\npublishing:\n  created: 2025-01-15T00:00:00Z\n  updated: 2025-01-15T00:00:00Z\n  status: published\n---\n\n# Your content here...\n```\n\n## Validation Rules\n\n### Slug Format\n\n- Lowercase letters, numbers, and hyphens only\n- No spaces or special characters\n- Must be unique within scope (weave/loom)\n\n### ID Format\n\n- Must be a valid UUID v4\n- Globally unique across all strands\n- Generate using `npm run generate-template`\n\n### Version Format\n\n- Semantic versioning: `MAJOR.MINOR.PATCH`\n- Example: `1.0.0`, `2.1.3`\n\n### Content Requirements\n\n- Minimum 100 characters of meaningful content\n- No unfinished sections or test content\n- Proper markdown formatting\n- Valid YAML frontmatter\n\n## Auto-Generated Metadata\n\nThe indexer automatically generates:\n\n- **Keywords**: Extracted using TF-IDF algorithm\n- **Phrases**: Common multi-word expressions\n- **Subjects**: Matched from controlled vocabulary\n- **Topics**: Detected from content analysis\n- **Difficulty**: Inferred from language complexity\n- **Summary**: Generated if missing\n\nYou can override any auto-generated values by specifying them explicitly in your frontmatter.\n\n## Controlled Vocabulary\n\nTags should use terms from the controlled vocabulary when possible:\n\n### Subjects\n- technology, science, philosophy, ai, knowledge, d",
-    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules string array fields openstrand identifier url topics enum template reference unique controlled npm valid comprehensive openstrand architecture controlled vocabulary frame dev npm run frame codex schema reference required fields slug string unique identifier title string"
+    "content": "\n# Frame Codex Schema Reference\n\nThis document provides the complete schema reference for all Frame Codex content types.\n\n## Weave Schema\n\nA Weave represents a complete, self-contained universe of knowledge.\n\n### Required Fields\n\n- `slug` (string): Unique identifier, lowercase with hyphens\n- `title` (string): Human-readable name\n- `description` (string): Comprehensive description\n\n### Optional Fields\n\n- `maintainedBy` (object): Maintainer information\n  - `name` (string): Name of person or organization\n  - `url` (string): Contact or website URL\n- `license` (string): Content license (default: MIT)\n- `tags` (array): Categorization tags from controlled vocabulary\n\n### Example\n\n```yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\nmaintainedBy:\n  name: Frame.dev Team\n  url: https://frame.dev\nlicense: MIT\ntags:\n  - technology\n  - ai-infrastructure\n  - superintelligence\n```\n\n## Loom Schema\n\nA Loom is a curated collection of related strands within a weave.\n\n### Required Fields\n\n- `slug` (string): Unique identifier within the weave\n- `title` (string): Display title\n- `summary` (string): Brief description\n\n### Optional Fields\n\n- `tags` (array): Subject tags for categorization\n- `ordering` (object): How strands are organized\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\n  - `items` (array): Ordered list of strand slugs\n\n### Example\n\n```yaml\nslug: getting-started\ntitle: Getting Started with Frame\nsummary: Essential guides and tutorials for new Frame developers\ntags:\n  - tutorial\n  - beginner\nordering:\n  type: sequential\n  items:\n    - installation\n    - hello-world\n    - core-concepts\n    - first-project\n```\n\n## Strand Schema\n\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\n\n### Required Fields\n\n- `id` (string): Globally unique identifier (UUID)\n- `slug` (string): URL-friendly identifier\n- `title` (string): Display title\n\n### Optional Fields\n\n- `summary` (string): Brief abstract (recommended for search)\n- `version` (string): Semantic version (default: 1.0.0)\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\n- `taxonomy` (object): Categorization\n  - `subjects` (array): High-level categories\n  - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**\n- `tags` (array): Freeform tags **✓ Independent - can be shared across any level**\n- `skills` (array): Learning prerequisites for spiral learning **🎯 Used for path planning**\n\n> **⚠️ Topics vs Tags vs Skills**:\n> - **Topics** are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases\n> - **Tags** are INDEPENDENT categorization labels - what the content is *about*\n> - **Skills** are PREREQUISITES for learning - what you need to *know* before reading\n> \n> See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule) and [Skills & Spiral Learning](#skills--spiral-learning) below.\n\n- `relationships` (object): Connections to other strands\n  - `requires` (array): Prerequisites\n  - `references` (array): Related strands\n  - `seeAlso` (array): External URLs\n- `publishing` (object): Publication metadata\n  - `created` (string): ISO 8601 timestamp\n  - `updated` (string): ISO 8601 timestamp\n  - `status` (enum): `draft`, `published`, `archived`\n\n### Example\n\n```yaml\n---\nid: 550e8400-e29b-41d4-a716-446655440000\nslug: openstrand-architecture\ntitle: OpenStrand Architecture Overview\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\nversion: 1.2.0\ncontentType: markdown\ndifficulty: intermediate\ntaxonomy:\n  subjects:\n    - technology\n    - ai\n  topics:\n    - architecture\n    - getting-started\ntags:\n  - openstrand\n  - architecture\n  - knowledge-graph\nskills:\n  - typescript\n  - yaml\n  - git\nrelationships:\n  requires:\n    - core-concepts\n  references:\n    - frame-codex-intro\n    - api-reference\n  seeAlso:\n    - https://openstrand.ai\n    - https://frame.dev\npublishing:\n  created: 2025-01-15T00:00:00Z\n  updated: 2025-01-15T00:00:00Z\n  status: published\n---\n\n# Your content here...\n```\n\n## Validation Rules\n\n### Slug Format\n\n- Lowercase letters, numbers, and hyphens only\n- No spaces or special characters\n- Must be unique within scope (weave/loom)\n\n### ID Format\n\n- Must be a valid UUID v4\n- Globally unique across all strands\n- Generate using `npm run generate-template`\n\n### Version Format\n\n- Semantic versioning: `MAJOR.MINOR.PATCH`\n- Example: `1.0.0`, `2.1.3`\n\n### Content Requirements\n\n- Minimum 100 characters of meaningful content\n- No unfinished sections or test content\n- Proper markdown formatting\n- Valid YAML frontmatter\n\n## Auto-Generated Metadata\n\nThe indexer automatically generates:\n\n- **Keywords**: Extracted using TF-IDF algorithm\n- **Phrases**: Common multi-word expressions\n- **Subjects**: Matched from controlled vocabulary\n- **Topics**: Detected from content analysis\n- *",
+    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules skills react string spiral learning array skill typescript fields topics openstrand identifier url possible enum openstrand architecture spiral learning controlled vocabulary frame dev npm run frame codex learning path skills spiral schema reference required fields"
   }
 ]
