@@ -12,11 +12,14 @@ on:
       - 'vitest.config.js'
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   unit-tests:
     name: Unit Tests
     runs-on: ubuntu-latest
+    outputs:
+      coverage: ${{ steps.coverage.outputs.coverage }}
     
     steps:
       - name: Checkout repository
@@ -51,12 +54,23 @@ jobs:
         run: pnpm test
       
       - name: Run tests with coverage
-        run: pnpm run test:coverage
+        id: coverage
+        run: |
+          pnpm run test:coverage
+          # Extract coverage percentage
+          if [ -f coverage/coverage-summary.json ]; then
+            COVERAGE=$(node -e "const c=require('./coverage/coverage-summary.json').total; console.log(Math.round((c.lines.pct+c.branches.pct+c.functions.pct+c.statements.pct)/4))")
+            echo "coverage=$COVERAGE" >> $GITHUB_OUTPUT
+            echo "📊 Coverage: $COVERAGE%"
+          fi
+      
+      - name: Generate badges
+        run: pnpm run badges
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          files: ./coverage/coverage-final.json
+          files: ./coverage/lcov.info
           flags: codex
           name: codex-coverage
         continue-on-error: true
@@ -66,7 +80,14 @@ jobs:
         with:
           name: coverage-report
           path: coverage/
-          retention-days: 7
+          retention-days: 30
+      
+      - name: Archive badges
+        uses: actions/upload-artifact@v4
+        with:
+          name: badges
+          path: docs/badges/
+          retention-days: 90
 
   vocab-tests:
     name: Vocabulary & NLP Tests
@@ -301,4 +322,40 @@ jobs:
             codex-report.json
             .cache/codex.db
           retention-days: 7
+
+  # Commit badges to repo (main branch only)
+  update-badges:
+    name: Update Badges
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Download badges artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: badges
+          path: docs/badges/
+      
+      - name: Commit badges
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes
+          if git diff --quiet docs/badges/; then
+            echo "📊 No badge changes to commit"
+          else
+            git add docs/badges/
+            git commit -m "chore: update coverage badges [skip ci]"
+            git push
+            echo "✅ Badges updated"
+          fi
 
