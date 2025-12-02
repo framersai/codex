@@ -1,0 +1,20 @@
+# Tools - generalized skill terms
+# These represent tool proficiency skills
+
+git github gitlab bitbucket version control commit branch merge rebase
+docker dockerfile container image registry kubernetes k8s
+npm yarn pnpm package manager
+webpack vite rollup esbuild bundler
+eslint prettier linter formatter
+jest vitest mocha testing
+cypress playwright e2e end-to-end
+terraform infrastructure as code iac
+aws amazon web services ec2 s3 lambda
+azure microsoft cloud
+gcp google cloud platform
+vercel netlify deployment
+redis cache memcached
+mongodb mongoose nosql
+graphql apollo
+rest api http
+

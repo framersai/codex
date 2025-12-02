@@ -215,3 +215,6 @@ The vocabulary system is used by:
 - [ ] Custom vocabulary per weave/loom
 - [ ] Learning from user corrections
 - [ ] Multi-language support
+
+
+

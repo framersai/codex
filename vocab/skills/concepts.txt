@@ -1,0 +1,18 @@
+# Concepts - generalized skill terms
+# These represent conceptual proficiency skills
+
+state-management redux mobx zustand recoil
+authentication auth oauth jwt token session
+api-design rest graphql grpc websocket
+database sql nosql schema migration
+testing unit test integration test e2e test tdd bdd
+async-programming promises async await callbacks
+functional-programming fp immutable pure function
+oop object oriented programming class inheritance
+design-patterns singleton factory observer
+algorithms sorting searching data structures
+networking http https tcp udp dns
+security encryption hashing ssl tls
+devops ci cd continuous integration deployment
+agile scrum kanban sprint
+

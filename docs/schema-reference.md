@@ -115,8 +115,15 @@ A Strand is an atomic unit of knowledge - a document, image, or dataset.
   - `subjects` (array): High-level categories
   - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**
 - `tags` (array): Freeform tags **✓ Independent - can be shared across any level**
+- `skills` (array): Learning prerequisites for spiral learning **🎯 Used for path planning**
 
-> **⚠️ Topics vs Tags**: Topics are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases. Tags are INDEPENDENT and can be freely shared. See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule).
+> **⚠️ Topics vs Tags vs Skills**:
+> - **Topics** are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases
+> - **Tags** are INDEPENDENT categorization labels - what the content is *about*
+> - **Skills** are PREREQUISITES for learning - what you need to *know* before reading
+> 
+> See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule) and [Skills & Spiral Learning](#skills--spiral-learning) below.
+
 - `relationships` (object): Connections to other strands
   - `requires` (array): Prerequisites
   - `references` (array): Related strands
@@ -148,6 +155,10 @@ tags:
   - openstrand
   - architecture
   - knowledge-graph
+skills:
+  - typescript
+  - yaml
+  - git
 relationships:
   requires:
     - core-concepts
@@ -236,14 +247,107 @@ npm run check-duplicates
 npm run generate-template -- "My New Document"
 ```
 
+## Skills & Spiral Learning
+
+Skills are a special metadata field designed for the **Spiral Learning Path** feature. Unlike tags (which describe what content is *about*), skills define what a reader needs to *know* before reading.
+
+### Skills vs Tags
+
+| Aspect | Tags | Skills |
+|--------|------|--------|
+| **Purpose** | Categorization | Prerequisites |
+| **Question** | "What is this about?" | "What do I need to know?" |
+| **Specificity** | Can be specific or broad | Should be as generalized as possible |
+| **Examples** | `react-hooks-tutorial`, `nextjs-routing` | `react`, `javascript`, `typescript` |
+| **Use in UI** | Filtering, search, discovery | Learning path calculation |
+
+### Skill Guidelines
+
+1. **Be generalized**: Use `typescript` not `typescript-generics`
+2. **Use lowercase**: `react` not `React` or `REACT`
+3. **Prefer established terms**: `git` not `version-control-system`
+4. **Avoid duplicating tags**: If a tag and skill overlap, prefer the skill
+
+### Common Skills Vocabulary
+
+```yaml
+# Programming Languages
+- javascript
+- typescript
+- python
+- rust
+- go
+
+# Frameworks
+- react
+- nextjs
+- nodejs
+- express
+
+# Tools
+- git
+- docker
+- kubernetes
+- ci-cd
+
+# Concepts
+- state-management
+- api-design
+- authentication
+- testing
+```
+
+### How Skills Power Spiral Learning
+
+The spiral learning algorithm uses skills to:
+
+1. **Build prerequisite graphs**: Skills create edges between strands
+2. **Calculate learning paths**: Find optimal order to learn topics
+3. **Track mastery**: Skills can be marked as "learned" by users
+4. **Personalize recommendations**: Suggest content based on skill gaps
+
+### Example: Skills in Action
+
+```yaml
+# Advanced strand requiring multiple skills
+---
+title: Building a Real-time Dashboard
+difficulty: advanced
+skills:
+  - typescript
+  - react
+  - websockets
+  - state-management
+tags:
+  - dashboard
+  - real-time
+  - tutorial
+---
+```
+
+When a user sets this as their "goal" in the Spiral Path, the system:
+1. Identifies they need `typescript`, `react`, `websockets`, `state-management`
+2. Finds beginner strands that **teach** these skills
+3. Builds an optimal learning path from start → goal
+
+### Skill Detection
+
+The auto-indexer attempts to detect skills from content by:
+- Matching code blocks to language skills
+- Detecting framework imports and usage patterns
+- Identifying prerequisite mentions in text
+
+You can always override auto-detected skills in frontmatter.
+
 ## Best Practices
 
 1. **Always include metadata**: Title and summary are required
 2. **Use UUIDs for IDs**: Generate with `uuidgen` or our template tool
 3. **Tag appropriately**: Use controlled vocabulary when possible
-4. **Link related content**: Build the knowledge graph
-5. **Version your content**: Update version on significant changes
-6. **Write for both humans and AI**: Clear, structured, comprehensive
+4. **Define skills for advanced content**: Help build the learning graph
+5. **Link related content**: Build the knowledge graph
+6. **Version your content**: Update version on significant changes
+7. **Write for both humans and AI**: Clear, structured, comprehensive
 
 ## Schema Evolution
 

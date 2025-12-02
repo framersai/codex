@@ -1,0 +1,18 @@
+# Frameworks - generalized skill terms
+# These represent framework proficiency skills
+
+react reactjs react-hooks usestate useeffect usememo
+nextjs next.js app router pages router getserversideprops
+vue vuejs vue3 composition api vuex pinia
+angular angularjs rxjs
+svelte sveltekit
+express expressjs middleware
+fastify
+nestjs
+django
+flask
+rails ruby on rails
+spring boot springboot
+laravel
+dotnet asp.net
+

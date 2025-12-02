@@ -439,3 +439,6 @@ console.log('\n✅ LLM library tests loaded');
 console.log(`   API keys available: ${hasApiKeys ? 'Yes' : 'No'}`);
 console.log(`   Integration tests: ${hasApiKeys && process.env.RUN_INTEGRATION_TESTS ? 'Enabled' : 'Skipped'}`);
 
+
+
+

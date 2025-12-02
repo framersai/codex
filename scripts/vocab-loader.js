@@ -201,7 +201,8 @@ class VocabularyLoader {
     this.vocabularies = {
       subjects: new Map(),
       topics: new Map(),
-      difficulty: new Map()
+      difficulty: new Map(),
+      skills: new Map()  // Learning prerequisites for spiral learning
     };
     this.stemmedIndex = new Map(); // Maps stemmed words to original terms
     
@@ -384,6 +385,7 @@ class VocabularyLoader {
     this.loadCategory('subjects');
     this.loadCategory('topics');
     this.loadCategory('difficulty');
+    this.loadCategory('skills');  // Learning prerequisites
     return this;
   }
 
@@ -485,6 +487,7 @@ class VocabularyLoader {
     const results = {
       subjects: [],
       topics: [],
+      skills: [],  // Learning prerequisites detected from content
       difficulty: 'intermediate',
       confidence: {},
       matches: {} // Detailed match info for debugging
@@ -607,6 +610,64 @@ class VocabularyLoader {
       }
     }
 
+    // Check skills (learning prerequisites) with n-gram weighting
+    const skills = this.loadCategory('skills');
+    for (const [skillCategory, terms] of skills) {
+      let score = 0;
+      const matchedTerms = [];
+      
+      for (const term of terms) {
+        const termNormalized = term.toLowerCase();
+        const termWords = termNormalized.split('-');
+        
+        let matched = false;
+        let weight = 0;
+        
+        // Check all n-gram levels (same logic as topics)
+        if (trigramSet.has(termNormalized.replace(/-/g, ' ')) || trigramSet.has(termNormalized)) {
+          matched = true;
+          weight = this.ngramWeights.trigram;
+        } else if (bigramSet.has(termNormalized.replace(/-/g, ' ')) || bigramSet.has(termNormalized)) {
+          matched = true;
+          weight = this.ngramWeights.bigram;
+        } else if (termWords.length > 1 && termWords.every(part => unigramSet.has(part) || unigramSet.has(this.stem(part)))) {
+          matched = true;
+          weight = this.ngramWeights.unigram * 1.5;
+        } else if (unigramSet.has(termNormalized) || unigramSet.has(this.stem(termNormalized))) {
+          matched = true;
+          weight = this.ngramWeights.unigram;
+        }
+        
+        if (matched) {
+          const contextFactor = this.getContextScore(text, term);
+          const adjustedWeight = weight * contextFactor;
+          score += adjustedWeight;
+          // For skills, store the actual term (e.g., "typescript" not "programming-languages")
+          matchedTerms.push({ term, weight: adjustedWeight });
+        }
+      }
+      
+      if (score > 0) {
+        // For skills, we add the matched terms themselves (not the category)
+        // This allows granular skill tracking
+        for (const { term, weight } of matchedTerms) {
+          const normalizedSkill = term.toLowerCase().replace(/\s+/g, '-');
+          if (!results.skills.includes(normalizedSkill)) {
+            results.skills.push(normalizedSkill);
+            results.confidence[`skill:${normalizedSkill}`] = Math.min(weight / 3, 1);
+          }
+        }
+        results.matches[`skills:${skillCategory}`] = matchedTerms;
+      }
+    }
+    
+    // Limit skills to top 10 by confidence
+    if (results.skills.length > 10) {
+      results.skills = results.skills
+        .sort((a, b) => (results.confidence[`skill:${b}`] || 0) - (results.confidence[`skill:${a}`] || 0))
+        .slice(0, 10);
+    }
+
     // Check difficulty with n-gram weighting
     const difficulty = this.loadCategory('difficulty');
     let maxScore = 0;
@@ -674,9 +735,13 @@ class VocabularyLoader {
       difficulty: Object.fromEntries(
         [...this.vocabularies.difficulty.entries()].map(([k, v]) => [k, v.size])
       ),
+      skills: Object.fromEntries(
+        [...this.vocabularies.skills.entries()].map(([k, v]) => [k, v.size])
+      ),
       totalTerms: [...this.vocabularies.subjects.values()].reduce((a, b) => a + b.size, 0) +
                   [...this.vocabularies.topics.values()].reduce((a, b) => a + b.size, 0) +
-                  [...this.vocabularies.difficulty.values()].reduce((a, b) => a + b.size, 0),
+                  [...this.vocabularies.difficulty.values()].reduce((a, b) => a + b.size, 0) +
+                  [...this.vocabularies.skills.values()].reduce((a, b) => a + b.size, 0),
       stemmedIndex: this.stemmedIndex.size
     };
   }
@@ -688,7 +753,8 @@ class VocabularyLoader {
     const legacy = {
       subjects: {},
       topics: {},
-      difficulty: {}
+      difficulty: {},
+      skills: {}
     };
 
     for (const [name, terms] of this.vocabularies.subjects) {
@@ -699,6 +765,9 @@ class VocabularyLoader {
     }
     for (const [name, terms] of this.vocabularies.difficulty) {
       legacy.difficulty[name] = [...terms];
+    }
+    for (const [name, terms] of this.vocabularies.skills) {
+      legacy.skills[name] = [...terms];
     }
 
     return legacy;

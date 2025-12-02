@@ -58,6 +58,7 @@ function initializeVocabulary() {
     console.log(`   • Stop words: ${stats.stopWords}`);
     console.log(`   • Subjects: ${Object.keys(stats.subjects).length} categories, ${Object.values(stats.subjects).reduce((a, b) => a + b, 0)} terms`);
     console.log(`   • Topics: ${Object.keys(stats.topics).length} categories, ${Object.values(stats.topics).reduce((a, b) => a + b, 0)} terms`);
+    console.log(`   • Skills: ${Object.keys(stats.skills || {}).length} categories, ${Object.values(stats.skills || {}).reduce((a, b) => a + b, 0)} terms`);
     console.log(`   • Difficulty: ${Object.keys(stats.difficulty).length} levels, ${Object.values(stats.difficulty).reduce((a, b) => a + b, 0)} terms`);
     console.log(`   • Stemmed index: ${stats.stemmedIndex} unique stems`);
   } catch (err) {
@@ -220,6 +221,7 @@ class CodexIndexer {
     const categories = {
       subjects: [],
       topics: [],
+      skills: [],  // Learning prerequisites
       difficulty: 'intermediate', // default
       confidence: {}
     };
@@ -239,6 +241,28 @@ class CodexIndexer {
       if (matches.length > 0) {
         categories.topics.push(topic);
         categories.confidence[topic] = matches.length / terms.length;
+      }
+    }
+    
+    // Match skills (learning prerequisites) with confidence scoring
+    if (VOCABULARY.skills) {
+      for (const [skillCategory, terms] of Object.entries(VOCABULARY.skills)) {
+        const matches = terms.filter(term => text.includes(term));
+        if (matches.length > 0) {
+          // For skills, add the individual matched terms (not the category)
+          // This gives granular skill tracking
+          matches.forEach(match => {
+            const normalizedSkill = match.toLowerCase().replace(/\s+/g, '-');
+            if (!categories.skills.includes(normalizedSkill)) {
+              categories.skills.push(normalizedSkill);
+              categories.confidence[`skill:${normalizedSkill}`] = 0.5 + (matches.length / terms.length) * 0.5;
+            }
+          });
+        }
+      }
+      // Limit to top 10 skills
+      if (categories.skills.length > 10) {
+        categories.skills = categories.skills.slice(0, 10);
       }
     }
     
@@ -262,6 +286,10 @@ class CodexIndexer {
     }
     if (metadata.taxonomy?.topics) {
       categories.topics = [...new Set([...categories.topics, ...metadata.taxonomy.topics])];
+    }
+    // Merge explicit skills from frontmatter
+    if (metadata.skills && Array.isArray(metadata.skills)) {
+      categories.skills = [...new Set([...metadata.skills, ...categories.skills])];
     }
     if (metadata.difficulty) {
       categories.difficulty = metadata.difficulty;
@@ -551,6 +579,7 @@ class CodexIndexer {
             phrases: analysis.phrases,
             subjects: analysis.categories.subjects,
             topics: analysis.categories.topics,
+            skills: analysis.categories.skills,  // Learning prerequisites
             difficulty: analysis.categories.difficulty,
             confidence: analysis.categories.confidence,
             readingLevel: readingLevel.gradeLevel,

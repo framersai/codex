@@ -1,0 +1,21 @@
+# Programming Languages - generalized skill terms
+# These represent language proficiency skills
+
+javascript js ecmascript es6 es2015 es2020 nodejs
+typescript ts tsc tsconfig type annotation generics
+python py python3 pip virtualenv
+rust cargo rustc borrow checker lifetime
+go golang goroutine channel
+java jvm maven gradle spring
+csharp dotnet asp
+ruby rails bundler
+php composer laravel
+swift ios macos
+kotlin android
+scala
+cpp c++ cmake
+c clang gcc
+sql mysql postgresql postgres sqlite
+html css scss sass less
+shell bash zsh powershell
+
