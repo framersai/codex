@@ -48,3 +48,4 @@ stakeholder-management requirements-gathering user-research
 product-thinking customer-focus user-centered
 data-driven metrics-driven evidence-based
 
+

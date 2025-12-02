@@ -340,3 +340,4 @@ if (args.includes('--check')) {
 
 module.exports = { generateBadgeSVG, getCoverageColor, readCoverageSummary };
 
+
