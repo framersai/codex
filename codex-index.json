@@ -115,7 +115,8 @@
           "pages",
           "on",
           "page",
-          "ts"
+          "ts",
+          "communication"
         ],
         "difficulty": {
           "overall": "advanced",
@@ -151,6 +152,9 @@
           "skill:go": 0.5308641975308642,
           "skill:c": 0.5308641975308642,
           "skill:io": 0.5308641975308642,
+          "skill:focus": 0.5069124423963134,
+          "skill:document": 0.5069124423963134,
+          "skill:focu": 0.5069124423963134,
           "skill:git": 0.5210526315789473,
           "skill:github": 0.5210526315789473,
           "skill:control": 0.5210526315789473,
@@ -173,7 +177,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:17.755Z"
+        "lastIndexed": "2025-12-02T17:01:45.315Z"
       }
     },
     "validation": {
@@ -255,6 +259,8 @@
           "ts",
           "c",
           "io",
+          "documentation",
+          "document",
           "contain"
         ],
         "difficulty": "advanced",
@@ -273,6 +279,8 @@
           "skill:ts": 0.5185185185185185,
           "skill:c": 0.5185185185185185,
           "skill:io": 0.5185185185185185,
+          "skill:documentation": 0.5046082949308756,
+          "skill:document": 0.5046082949308756,
           "skill:contain": 0.5052631578947369
         },
         "readingLevel": 0,
@@ -284,7 +292,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T16:53:17.777Z"
+        "lastIndexed": "2025-12-02T17:01:45.340Z"
       }
     },
     "validation": {
@@ -401,7 +409,9 @@
           "http",
           "https",
           "ci",
-          "cd"
+          "cd",
+          "git",
+          "github-actions"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -444,6 +454,23 @@
           "skill:c": 0.5679012345679012,
           "skill:compos": 0.5679012345679012,
           "skill:io": 0.5679012345679012,
+          "skill:documentation": 0.5391705069124424,
+          "skill:analysis": 0.5391705069124424,
+          "skill:synthesis": 0.5391705069124424,
+          "skill:organization": 0.5391705069124424,
+          "skill:focus": 0.5391705069124424,
+          "skill:learning": 0.5391705069124424,
+          "skill:eq": 0.5391705069124424,
+          "skill:trust": 0.5391705069124424,
+          "skill:evidence-based": 0.5391705069124424,
+          "skill:document": 0.5391705069124424,
+          "skill:organ": 0.5391705069124424,
+          "skill:analysi": 0.5391705069124424,
+          "skill:synthesi": 0.5391705069124424,
+          "skill:schedul": 0.5391705069124424,
+          "skill:focu": 0.5391705069124424,
+          "skill:learn": 0.5391705069124424,
+          "skill:adapt": 0.5391705069124424,
           "skill:git": 0.5736842105263158,
           "skill:github": 0.5736842105263158,
           "skill:version": 0.5736842105263158,
@@ -478,7 +505,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:17.925Z"
+        "lastIndexed": "2025-12-02T17:01:45.535Z"
       }
     },
     "validation": {
@@ -556,7 +583,10 @@
           "rest",
           "unit",
           "integration",
-          "async"
+          "async",
+          "typescript",
+          "async-programming",
+          "communication"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -611,6 +641,23 @@
           "skill:annot": 0.5617283950617284,
           "skill:gener": 0.5617283950617284,
           "skill:io": 0.5617283950617284,
+          "skill:feedback": 0.5391705069124424,
+          "skill:management": 0.5391705069124424,
+          "skill:synthesis": 0.5391705069124424,
+          "skill:learning": 0.5391705069124424,
+          "skill:understanding": 0.5391705069124424,
+          "skill:commun": 0.5391705069124424,
+          "skill:present": 0.5391705069124424,
+          "skill:document": 0.5391705069124424,
+          "skill:manag": 0.5391705069124424,
+          "skill:mediat": 0.5391705069124424,
+          "skill:collabor": 0.5391705069124424,
+          "skill:debug": 0.5391705069124424,
+          "skill:synthesi": 0.5391705069124424,
+          "skill:product": 0.5391705069124424,
+          "skill:learn": 0.5391705069124424,
+          "skill:train": 0.5391705069124424,
+          "skill:understand": 0.5391705069124424,
           "skill:git": 0.5789473684210527,
           "skill:github": 0.5789473684210527,
           "skill:image": 0.5789473684210527,
@@ -620,7 +667,6 @@
           "skill:cache": 0.5789473684210527,
           "skill:contain": 0.5789473684210527,
           "skill:imag": 0.5789473684210527,
-          "skill:manag": 0.5789473684210527,
           "skill:aw": 0.5789473684210527,
           "skill:redi": 0.5789473684210527,
           "skill:cach": 0.5789473684210527
@@ -652,7 +698,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:18.253Z"
+        "lastIndexed": "2025-12-02T17:01:45.935Z"
       }
     },
     "validation": {
@@ -766,6 +812,8 @@
           "skill:c": 0.5308641975308642,
           "skill:gener": 0.5308641975308642,
           "skill:io": 0.5308641975308642,
+          "skill:eq": 0.5046082949308756,
+          "skill:adapt": 0.5046082949308756,
           "skill:image": 0.531578947368421,
           "skill:as": 0.531578947368421,
           "skill:imag": 0.531578947368421,
@@ -797,7 +845,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:18.346Z"
+        "lastIndexed": "2025-12-02T17:01:46.038Z"
       }
     },
     "validation": {
@@ -882,7 +930,12 @@
           "search",
           "tl",
           "app",
-          "on"
+          "on",
+          "javascript",
+          "json",
+          "websockets",
+          "collaboration",
+          "communication"
         ],
         "difficulty": "beginner",
         "confidence": {
@@ -919,6 +972,16 @@
           "skill:c": 0.5555555555555556,
           "skill:gener": 0.5555555555555556,
           "skill:io": 0.5555555555555556,
+          "skill:research": 0.5230414746543779,
+          "skill:analysis": 0.5230414746543779,
+          "skill:focus": 0.5230414746543779,
+          "skill:eq": 0.5230414746543779,
+          "skill:write": 0.5230414746543779,
+          "skill:document": 0.5230414746543779,
+          "skill:edit": 0.5230414746543779,
+          "skill:analysi": 0.5230414746543779,
+          "skill:focu": 0.5230414746543779,
+          "skill:learn": 0.5230414746543779,
           "skill:git": 0.5684210526315789,
           "skill:github": 0.5684210526315789,
           "skill:commit": 0.5684210526315789,
@@ -961,7 +1024,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:18.660Z"
+        "lastIndexed": "2025-12-02T17:01:46.460Z"
       }
     },
     "validation": {
@@ -1046,7 +1109,11 @@
           "data",
           "http",
           "https",
-          "ci"
+          "ci",
+          "javascript",
+          "typescript",
+          "html",
+          "json"
         ],
         "difficulty": "beginner",
         "confidence": {
@@ -1103,6 +1170,14 @@
           "skill:compos": 0.6419753086419753,
           "skill:io": 0.6419753086419753,
           "skill:powershel": 0.6419753086419753,
+          "skill:management": 0.5184331797235023,
+          "skill:analysis": 0.5184331797235023,
+          "skill:manag": 0.5184331797235023,
+          "skill:plan": 0.5184331797235023,
+          "skill:mediat": 0.5184331797235023,
+          "skill:analysi": 0.5184331797235023,
+          "skill:synthesi": 0.5184331797235023,
+          "skill:priorit": 0.5184331797235023,
           "skill:git": 0.5789473684210527,
           "skill:github": 0.5789473684210527,
           "skill:control": 0.5789473684210527,
@@ -1111,7 +1186,6 @@
           "skill:code": 0.5789473684210527,
           "skill:contain": 0.5789473684210527,
           "skill:imag": 0.5789473684210527,
-          "skill:manag": 0.5789473684210527,
           "skill:formatt": 0.5789473684210527,
           "skill:aw": 0.5789473684210527,
           "skill:redi": 0.5789473684210527
@@ -1151,7 +1225,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:19.089Z"
+        "lastIndexed": "2025-12-02T17:01:46.949Z"
       }
     },
     "validation": {
@@ -1236,7 +1310,10 @@
           "search",
           "structur",
           "tl",
-          "app"
+          "app",
+          "json",
+          "sql",
+          "collaboration"
         ],
         "difficulty": "beginner",
         "confidence": {
@@ -1278,6 +1355,29 @@
           "skill:gener": 0.5740740740740741,
           "skill:compos": 0.5740740740740741,
           "skill:io": 0.5740740740740741,
+          "skill:management": 0.5529953917050692,
+          "skill:collaboration": 0.5529953917050692,
+          "skill:brainstorming": 0.5529953917050692,
+          "skill:analysis": 0.5529953917050692,
+          "skill:organization": 0.5529953917050692,
+          "skill:learning": 0.5529953917050692,
+          "skill:reflection": 0.5529953917050692,
+          "skill:teaching": 0.5529953917050692,
+          "skill:eq": 0.5529953917050692,
+          "skill:edit": 0.5529953917050692,
+          "skill:narr": 0.5529953917050692,
+          "skill:manag": 0.5529953917050692,
+          "skill:plan": 0.5529953917050692,
+          "skill:organ": 0.5529953917050692,
+          "skill:mediat": 0.5529953917050692,
+          "skill:collabor": 0.5529953917050692,
+          "skill:brainstorm": 0.5529953917050692,
+          "skill:analysi": 0.5529953917050692,
+          "skill:concentr": 0.5529953917050692,
+          "skill:learn": 0.5529953917050692,
+          "skill:adapt": 0.5529953917050692,
+          "skill:reflect": 0.5529953917050692,
+          "skill:teach": 0.5529953917050692,
           "skill:git": 0.5631578947368421,
           "skill:github": 0.5631578947368421,
           "skill:control": 0.5631578947368421,
@@ -1288,7 +1388,6 @@
           "skill:web": 0.5631578947368421,
           "skill:merg": 0.5631578947368421,
           "skill:imag": 0.5631578947368421,
-          "skill:manag": 0.5631578947368421,
           "skill:aw": 0.5631578947368421
         },
         "readingLevel": 0,
@@ -1341,7 +1440,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:19.677Z"
+        "lastIndexed": "2025-12-02T17:01:47.603Z"
       }
     },
     "validation": {
@@ -1485,6 +1584,10 @@
           "skill:go": 0.5246913580246914,
           "skill:c": 0.5246913580246914,
           "skill:io": 0.5246913580246914,
+          "skill:documentation": 0.5092165898617511,
+          "skill:organization": 0.5092165898617511,
+          "skill:document": 0.5092165898617511,
+          "skill:organ": 0.5092165898617511,
           "skill:as": 0.531578947368421,
           "skill:code": 0.531578947368421,
           "skill:contain": 0.531578947368421,
@@ -1499,7 +1602,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T16:53:19.906Z"
+        "lastIndexed": "2025-12-02T17:01:47.683Z"
       }
     },
     "validation": {
@@ -1670,6 +1773,7 @@
           "skill:type": 0.5308641975308642,
           "skill:c": 0.5308641975308642,
           "skill:io": 0.5308641975308642,
+          "skill:eq": 0.5023041474654378,
           "skill:as": 0.5105263157894737
         },
         "readingLevel": 0,
@@ -1681,7 +1785,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T16:53:19.966Z"
+        "lastIndexed": "2025-12-02T17:01:47.742Z"
       }
     },
     "validation": {
@@ -1970,6 +2074,9 @@
           "skill:less": 0.5493827160493827,
           "skill:gener": 0.5493827160493827,
           "skill:io": 0.5493827160493827,
+          "skill:eq": 0.5069124423963134,
+          "skill:mediat": 0.5069124423963134,
+          "skill:synthesi": 0.5069124423963134,
           "skill:version": 0.5157894736842106,
           "skill:as": 0.5157894736842106
         },
@@ -1986,7 +2093,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:20.124Z"
+        "lastIndexed": "2025-12-02T17:01:47.907Z"
       }
     },
     "validation": {
@@ -2121,7 +2228,8 @@
           "skill:js": 0.5246913580246914,
           "skill:type": 0.5246913580246914,
           "skill:c": 0.5246913580246914,
-          "skill:io": 0.5246913580246914
+          "skill:io": 0.5246913580246914,
+          "skill:eq": 0.5023041474654378
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -2132,7 +2240,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-02T16:53:20.172Z"
+        "lastIndexed": "2025-12-02T17:01:47.955Z"
       }
     },
     "validation": {
@@ -2248,7 +2356,12 @@
           "function",
           "data",
           "http",
-          "https"
+          "https",
+          "shell",
+          "json",
+          "typescript",
+          "yaml",
+          "git"
         ],
         "difficulty": "beginner",
         "confidence": {
@@ -2295,6 +2408,18 @@
           "skill:bash": 0.5740740740740741,
           "skill:gener": 0.5740740740740741,
           "skill:io": 0.5740740740740741,
+          "skill:documentation": 0.5276497695852534,
+          "skill:troubleshooting": 0.5276497695852534,
+          "skill:focus": 0.5276497695852534,
+          "skill:eq": 0.5276497695852534,
+          "skill:write": 0.5276497695852534,
+          "skill:document": 0.5276497695852534,
+          "skill:edit": 0.5276497695852534,
+          "skill:plan": 0.5276497695852534,
+          "skill:troubleshoot": 0.5276497695852534,
+          "skill:schedul": 0.5276497695852534,
+          "skill:focu": 0.5276497695852534,
+          "skill:learn": 0.5276497695852534,
           "skill:git": 0.5842105263157895,
           "skill:github": 0.5842105263157895,
           "skill:version": 0.5842105263157895,
@@ -2345,7 +2470,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:20.692Z"
+        "lastIndexed": "2025-12-02T17:01:48.471Z"
       }
     },
     "validation": {
@@ -2423,7 +2548,12 @@
           "schema",
           "testing",
           "test",
-          "async"
+          "async",
+          "shell",
+          "javascript",
+          "yaml",
+          "git",
+          "github-actions"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -2493,6 +2623,25 @@
           "skill:bash": 0.6111111111111112,
           "skill:gener": 0.6111111111111112,
           "skill:io": 0.6111111111111112,
+          "skill:management": 0.543778801843318,
+          "skill:debugging": 0.543778801843318,
+          "skill:analysis": 0.543778801843318,
+          "skill:focus": 0.543778801843318,
+          "skill:iteration": 0.543778801843318,
+          "skill:eq": 0.543778801843318,
+          "skill:trust": 0.543778801843318,
+          "skill:document": 0.543778801843318,
+          "skill:edit": 0.543778801843318,
+          "skill:manag": 0.543778801843318,
+          "skill:mediat": 0.543778801843318,
+          "skill:debug": 0.543778801843318,
+          "skill:analysi": 0.543778801843318,
+          "skill:product": 0.543778801843318,
+          "skill:effici": 0.543778801843318,
+          "skill:schedul": 0.543778801843318,
+          "skill:focu": 0.543778801843318,
+          "skill:adapt": 0.543778801843318,
+          "skill:iter": 0.543778801843318,
           "skill:git": 0.6210526315789474,
           "skill:github": 0.6210526315789474,
           "skill:version": 0.6210526315789474,
@@ -2508,7 +2657,6 @@
           "skill:cache": 0.6210526315789474,
           "skill:merg": 0.6210526315789474,
           "skill:contain": 0.6210526315789474,
-          "skill:manag": 0.6210526315789474,
           "skill:aw": 0.6210526315789474,
           "skill:redi": 0.6210526315789474,
           "skill:cach": 0.6210526315789474
@@ -2555,7 +2703,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:22.180Z"
+        "lastIndexed": "2025-12-02T17:01:49.960Z"
       }
     },
     "validation": {
@@ -2640,7 +2788,11 @@
           "security",
           "encryption",
           "ci",
-          "authent"
+          "authent",
+          "javascript",
+          "shell",
+          "kubernetes",
+          "communication"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -2693,6 +2845,22 @@
           "skill:bash": 0.5802469135802469,
           "skill:gener": 0.5802469135802469,
           "skill:io": 0.5802469135802469,
+          "skill:documentation": 0.5391705069124424,
+          "skill:troubleshooting": 0.5391705069124424,
+          "skill:research": 0.5391705069124424,
+          "skill:analysis": 0.5391705069124424,
+          "skill:learning": 0.5391705069124424,
+          "skill:training": 0.5391705069124424,
+          "skill:eq": 0.5391705069124424,
+          "skill:understanding": 0.5391705069124424,
+          "skill:document": 0.5391705069124424,
+          "skill:mediat": 0.5391705069124424,
+          "skill:troubleshoot": 0.5391705069124424,
+          "skill:analysi": 0.5391705069124424,
+          "skill:priorit": 0.5391705069124424,
+          "skill:learn": 0.5391705069124424,
+          "skill:train": 0.5391705069124424,
+          "skill:understand": 0.5391705069124424,
           "skill:image": 0.6105263157894737,
           "skill:kubernetes": 0.6105263157894737,
           "skill:k8s": 0.6105263157894737,
@@ -2731,7 +2899,7 @@
             "clay |"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:23.132Z"
+        "lastIndexed": "2025-12-02T17:01:50.735Z"
       }
     },
     "validation": {
@@ -2839,7 +3007,12 @@
           "data",
           "http",
           "https",
-          "ci"
+          "ci",
+          "shell",
+          "yaml",
+          "git",
+          "github-actions",
+          "collaboration"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -2882,6 +3055,19 @@
           "skill:bash": 0.5555555555555556,
           "skill:gener": 0.5555555555555556,
           "skill:io": 0.5555555555555556,
+          "skill:documentation": 0.5299539170506913,
+          "skill:troubleshooting": 0.5299539170506913,
+          "skill:analysis": 0.5299539170506913,
+          "skill:iteration": 0.5299539170506913,
+          "skill:eq": 0.5299539170506913,
+          "skill:trust": 0.5299539170506913,
+          "skill:present": 0.5299539170506913,
+          "skill:document": 0.5299539170506913,
+          "skill:mediat": 0.5299539170506913,
+          "skill:troubleshoot": 0.5299539170506913,
+          "skill:analysi": 0.5299539170506913,
+          "skill:schedul": 0.5299539170506913,
+          "skill:iter": 0.5299539170506913,
           "skill:git": 0.5894736842105264,
           "skill:github": 0.5894736842105264,
           "skill:version": 0.5894736842105264,
@@ -2920,7 +3106,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:23.968Z"
+        "lastIndexed": "2025-12-02T17:01:51.632Z"
       }
     },
     "validation": {
@@ -3024,7 +3210,12 @@
           "function",
           "programming",
           "algorithms",
-          "data"
+          "data",
+          "shell",
+          "git",
+          "collaboration",
+          "communication",
+          "continuous-learning"
         ],
         "difficulty": "beginner",
         "confidence": {
@@ -3073,6 +3264,20 @@
           "skill:bash": 0.5617283950617284,
           "skill:gener": 0.5617283950617284,
           "skill:io": 0.5617283950617284,
+          "skill:feedback": 0.532258064516129,
+          "skill:research": 0.532258064516129,
+          "skill:analysis": 0.532258064516129,
+          "skill:focus": 0.532258064516129,
+          "skill:eq": 0.532258064516129,
+          "skill:trust": 0.532258064516129,
+          "skill:commun": 0.532258064516129,
+          "skill:write": 0.532258064516129,
+          "skill:edit": 0.532258064516129,
+          "skill:proofread": 0.532258064516129,
+          "skill:mediat": 0.532258064516129,
+          "skill:analysi": 0.532258064516129,
+          "skill:focu": 0.532258064516129,
+          "skill:learn": 0.532258064516129,
           "skill:git": 0.6,
           "skill:github": 0.6,
           "skill:version": 0.6,
@@ -3130,7 +3335,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:25.338Z"
+        "lastIndexed": "2025-12-02T17:01:53.050Z"
       }
     },
     "validation": {
@@ -3244,7 +3449,12 @@
           "async",
           "fp",
           "function",
-          "object"
+          "object",
+          "yaml",
+          "shell",
+          "collaboration",
+          "communication",
+          "continuous-learning"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -3300,6 +3510,34 @@
           "skill:bash": 0.5555555555555556,
           "skill:gener": 0.5555555555555556,
           "skill:io": 0.5555555555555556,
+          "skill:writing": 0.5668202764976958,
+          "skill:presentation": 0.5668202764976958,
+          "skill:feedback": 0.5668202764976958,
+          "skill:management": 0.5668202764976958,
+          "skill:analysis": 0.5668202764976958,
+          "skill:organization": 0.5668202764976958,
+          "skill:focus": 0.5668202764976958,
+          "skill:learning": 0.5668202764976958,
+          "skill:reflection": 0.5668202764976958,
+          "skill:eq": 0.5668202764976958,
+          "skill:understanding": 0.5668202764976958,
+          "skill:write": 0.5668202764976958,
+          "skill:present": 0.5668202764976958,
+          "skill:document": 0.5668202764976958,
+          "skill:narr": 0.5668202764976958,
+          "skill:manag": 0.5668202764976958,
+          "skill:organ": 0.5668202764976958,
+          "skill:mediat": 0.5668202764976958,
+          "skill:collabor": 0.5668202764976958,
+          "skill:analysi": 0.5668202764976958,
+          "skill:product": 0.5668202764976958,
+          "skill:focu": 0.5668202764976958,
+          "skill:learn": 0.5668202764976958,
+          "skill:adapt": 0.5668202764976958,
+          "skill:reflect": 0.5668202764976958,
+          "skill:train": 0.5668202764976958,
+          "skill:understand": 0.5668202764976958,
+          "skill:divers": 0.5668202764976958,
           "skill:git": 0.5842105263157895,
           "skill:github": 0.5842105263157895,
           "skill:version": 0.5842105263157895,
@@ -3311,8 +3549,7 @@
           "skill:web": 0.5842105263157895,
           "skill:merg": 0.5842105263157895,
           "skill:contain": 0.5842105263157895,
-          "skill:imag": 0.5842105263157895,
-          "skill:manag": 0.5842105263157895
+          "skill:imag": 0.5842105263157895
         },
         "readingLevel": 0,
         "readabilityScore": 0,
@@ -3347,7 +3584,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:27.263Z"
+        "lastIndexed": "2025-12-02T17:01:55.038Z"
       }
     },
     "validation": {
@@ -3464,7 +3701,11 @@
           "programming",
           "inheritance",
           "data",
-          "networking"
+          "networking",
+          "yaml",
+          "git",
+          "kubernetes",
+          "continuous-learning"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -3523,6 +3764,25 @@
           "skill:annot": 0.5864197530864197,
           "skill:gener": 0.5864197530864197,
           "skill:io": 0.5864197530864197,
+          "skill:documentation": 0.5483870967741935,
+          "skill:analysis": 0.5483870967741935,
+          "skill:synthesis": 0.5483870967741935,
+          "skill:organization": 0.5483870967741935,
+          "skill:learning": 0.5483870967741935,
+          "skill:eq": 0.5483870967741935,
+          "skill:understanding": 0.5483870967741935,
+          "skill:respect": 0.5483870967741935,
+          "skill:present": 0.5483870967741935,
+          "skill:document": 0.5483870967741935,
+          "skill:narr": 0.5483870967741935,
+          "skill:plan": 0.5483870967741935,
+          "skill:organ": 0.5483870967741935,
+          "skill:analysi": 0.5483870967741935,
+          "skill:synthesi": 0.5483870967741935,
+          "skill:product": 0.5483870967741935,
+          "skill:learn": 0.5483870967741935,
+          "skill:understand": 0.5483870967741935,
+          "skill:belong": 0.5483870967741935,
           "skill:git": 0.6210526315789474,
           "skill:github": 0.6210526315789474,
           "skill:version": 0.6210526315789474,
@@ -3561,7 +3821,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:28.628Z"
+        "lastIndexed": "2025-12-02T17:01:56.430Z"
       }
     },
     "validation": {
@@ -3671,7 +3931,12 @@
           "migration",
           "testing",
           "unit",
-          "test"
+          "test",
+          "yaml",
+          "shell",
+          "git",
+          "kubernetes",
+          "websockets"
         ],
         "difficulty": "intermediate",
         "confidence": {
@@ -3746,6 +4011,26 @@
           "skill:nodej": 0.6111111111111112,
           "skill:gener": 0.6111111111111112,
           "skill:io": 0.6111111111111112,
+          "skill:documentation": 0.5483870967741935,
+          "skill:management": 0.5483870967741935,
+          "skill:planning": 0.5483870967741935,
+          "skill:troubleshooting": 0.5483870967741935,
+          "skill:analysis": 0.5483870967741935,
+          "skill:organization": 0.5483870967741935,
+          "skill:learning": 0.5483870967741935,
+          "skill:eq": 0.5483870967741935,
+          "skill:write": 0.5483870967741935,
+          "skill:present": 0.5483870967741935,
+          "skill:document": 0.5483870967741935,
+          "skill:manag": 0.5483870967741935,
+          "skill:plan": 0.5483870967741935,
+          "skill:organ": 0.5483870967741935,
+          "skill:mediat": 0.5483870967741935,
+          "skill:troubleshoot": 0.5483870967741935,
+          "skill:analysi": 0.5483870967741935,
+          "skill:product": 0.5483870967741935,
+          "skill:learn": 0.5483870967741935,
+          "skill:teach": 0.5483870967741935,
           "skill:git": 0.631578947368421,
           "skill:github": 0.631578947368421,
           "skill:version": 0.631578947368421,
@@ -3761,7 +4046,6 @@
           "skill:contain": 0.631578947368421,
           "skill:imag": 0.631578947368421,
           "skill:kubernet": 0.631578947368421,
-          "skill:manag": 0.631578947368421,
           "skill:formatt": 0.631578947368421,
           "skill:infrastructur": 0.631578947368421
         },
@@ -3778,7 +4062,7 @@
             "[Skills & Spiral"
           ]
         },
-        "lastIndexed": "2025-12-02T16:53:29.998Z"
+        "lastIndexed": "2025-12-02T17:01:57.826Z"
       }
     },
     "validation": {

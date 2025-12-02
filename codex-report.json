@@ -173,6 +173,21 @@
       },
       {
         "file": "weaves/frame/openstrand/architecture.md",
+        "category": "skill:focus",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/frame/openstrand/architecture.md",
+        "category": "skill:document",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/frame/openstrand/architecture.md",
+        "category": "skill:focu",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/frame/openstrand/architecture.md",
         "category": "skill:git",
         "score": 0.5210526315789473
       },
@@ -260,6 +275,16 @@
         "file": "weaves/frame/weave.yaml",
         "category": "skill:io",
         "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "skill:documentation",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "skill:document",
+        "score": 0.5046082949308756
       },
       {
         "file": "weaves/frame/weave.yaml",
@@ -460,6 +485,91 @@
         "file": "weaves/wiki/architecture/overview.md",
         "category": "skill:io",
         "score": 0.5679012345679012
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:documentation",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:analysis",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:synthesis",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:organization",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:focus",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:learning",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:eq",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:trust",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:evidence-based",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:document",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:organ",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:analysi",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:synthesi",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:schedul",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:focu",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:learn",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/overview.md",
+        "category": "skill:adapt",
+        "score": 0.5391705069124424
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -773,6 +883,91 @@
       },
       {
         "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:feedback",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:management",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:synthesis",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:learning",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:understanding",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:commun",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:present",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:document",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:manag",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:mediat",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:collabor",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:debug",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:synthesi",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:product",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:learn",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:train",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
+        "category": "skill:understand",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/architecture/qa-system.md",
         "category": "skill:git",
         "score": 0.5789473684210527
       },
@@ -814,11 +1009,6 @@
       {
         "file": "weaves/wiki/architecture/qa-system.md",
         "category": "skill:imag",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "weaves/wiki/architecture/qa-system.md",
-        "category": "skill:manag",
         "score": 0.5789473684210527
       },
       {
@@ -960,6 +1150,16 @@
         "file": "weaves/wiki/examples/gallery-demo.md",
         "category": "skill:io",
         "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "skill:eq",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/wiki/examples/gallery-demo.md",
+        "category": "skill:adapt",
+        "score": 0.5046082949308756
       },
       {
         "file": "weaves/wiki/examples/gallery-demo.md",
@@ -1145,6 +1345,56 @@
         "file": "weaves/wiki/tutorials/getting-started.md",
         "category": "skill:io",
         "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:research",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:analysis",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:focus",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:eq",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:write",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:document",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:edit",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:analysi",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:focu",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/tutorials/getting-started.md",
+        "category": "skill:learn",
+        "score": 0.5230414746543779
       },
       {
         "file": "weaves/wiki/tutorials/getting-started.md",
@@ -1473,6 +1723,46 @@
       },
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:management",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:analysis",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:manag",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:plan",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:mediat",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:analysi",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:synthesi",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
+        "category": "skill:priorit",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "skill:git",
         "score": 0.5789473684210527
       },
@@ -1509,11 +1799,6 @@
       {
         "file": "weaves/wiki/tutorials/markdown-features.md",
         "category": "skill:imag",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "weaves/wiki/tutorials/markdown-features.md",
-        "category": "skill:manag",
         "score": 0.5789473684210527
       },
       {
@@ -1723,6 +2008,121 @@
       },
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:management",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:collaboration",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:brainstorming",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:analysis",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:organization",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:learning",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:reflection",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:teaching",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:eq",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:edit",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:narr",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:manag",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:plan",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:organ",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:mediat",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:collabor",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:brainstorm",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:analysi",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:concentr",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:learn",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:adapt",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:reflect",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
+        "category": "skill:teach",
+        "score": 0.5529953917050692
+      },
+      {
+        "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "skill:git",
         "score": 0.5631578947368421
       },
@@ -1769,11 +2169,6 @@
       {
         "file": "weaves/wiki/tutorials/media-guide.md",
         "category": "skill:imag",
-        "score": 0.5631578947368421
-      },
-      {
-        "file": "weaves/wiki/tutorials/media-guide.md",
-        "category": "skill:manag",
         "score": 0.5631578947368421
       },
       {
@@ -1905,6 +2300,26 @@
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:io",
         "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "skill:documentation",
+        "score": 0.5092165898617511
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "skill:organization",
+        "score": 0.5092165898617511
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "skill:document",
+        "score": 0.5092165898617511
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "skill:organ",
+        "score": 0.5092165898617511
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -2045,6 +2460,11 @@
         "file": "schema/loom.schema.yaml",
         "category": "skill:io",
         "score": 0.5308641975308642
+      },
+      {
+        "file": "schema/loom.schema.yaml",
+        "category": "skill:eq",
+        "score": 0.5023041474654378
       },
       {
         "file": "schema/loom.schema.yaml",
@@ -2198,6 +2618,21 @@
       },
       {
         "file": "schema/strand.schema.yaml",
+        "category": "skill:eq",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "skill:mediat",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "schema/strand.schema.yaml",
+        "category": "skill:synthesi",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "schema/strand.schema.yaml",
         "category": "skill:version",
         "score": 0.5157894736842106
       },
@@ -2300,6 +2735,11 @@
         "file": "schema/weave.schema.yaml",
         "category": "skill:io",
         "score": 0.5246913580246914
+      },
+      {
+        "file": "schema/weave.schema.yaml",
+        "category": "skill:eq",
+        "score": 0.5023041474654378
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
@@ -2515,6 +2955,66 @@
         "file": "docs/CHANGELOG_SYSTEM.md",
         "category": "skill:io",
         "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:documentation",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:focus",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:eq",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:write",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:document",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:edit",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:plan",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:schedul",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:focu",
+        "score": 0.5276497695852534
+      },
+      {
+        "file": "docs/CHANGELOG_SYSTEM.md",
+        "category": "skill:learn",
+        "score": 0.5276497695852534
       },
       {
         "file": "docs/CHANGELOG_SYSTEM.md",
@@ -2908,6 +3408,101 @@
       },
       {
         "file": "docs/DEVELOPMENT.md",
+        "category": "skill:management",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:debugging",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:analysis",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:focus",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:iteration",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:eq",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:trust",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:document",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:edit",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:manag",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:mediat",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:debug",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:analysi",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:product",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:effici",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:schedul",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:focu",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:adapt",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:iter",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
         "category": "skill:git",
         "score": 0.6210526315789474
       },
@@ -2979,11 +3574,6 @@
       {
         "file": "docs/DEVELOPMENT.md",
         "category": "skill:contain",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:manag",
         "score": 0.6210526315789474
       },
       {
@@ -3245,6 +3835,86 @@
         "file": "docs/NLP_VOCABULARY_SYSTEM.md",
         "category": "skill:io",
         "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:documentation",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:research",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:analysis",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:learning",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:training",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:eq",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:understanding",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:document",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:mediat",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:analysi",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:priorit",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:learn",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:train",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:understand",
+        "score": 0.5391705069124424
       },
       {
         "file": "docs/NLP_VOCABULARY_SYSTEM.md",
@@ -3538,6 +4208,71 @@
       },
       {
         "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:documentation",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:analysis",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:iteration",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:eq",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:trust",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:present",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:document",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:mediat",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:analysi",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:schedul",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:iter",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
         "category": "skill:git",
         "score": 0.5894736842105264
       },
@@ -3820,6 +4555,76 @@
         "file": "docs/contributing/how-to-submit.md",
         "category": "skill:io",
         "score": 0.5617283950617284
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:feedback",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:research",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:analysis",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:focus",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:eq",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:trust",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:commun",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:write",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:edit",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:proofread",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:mediat",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:analysi",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:focu",
+        "score": 0.532258064516129
+      },
+      {
+        "file": "docs/contributing/how-to-submit.md",
+        "category": "skill:learn",
+        "score": 0.532258064516129
       },
       {
         "file": "docs/contributing/how-to-submit.md",
@@ -4153,6 +4958,146 @@
       },
       {
         "file": "docs/contributing/submission-schema.md",
+        "category": "skill:writing",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:presentation",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:feedback",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:management",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:analysis",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:organization",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:focus",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:learning",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:reflection",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:eq",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:understanding",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:write",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:present",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:document",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:narr",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:manag",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:organ",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:mediat",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:collabor",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:analysi",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:product",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:focu",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:learn",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:adapt",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:reflect",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:train",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:understand",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
+        "category": "skill:divers",
+        "score": 0.5668202764976958
+      },
+      {
+        "file": "docs/contributing/submission-schema.md",
         "category": "skill:git",
         "score": 0.5842105263157895
       },
@@ -4209,11 +5154,6 @@
       {
         "file": "docs/contributing/submission-schema.md",
         "category": "skill:imag",
-        "score": 0.5842105263157895
-      },
-      {
-        "file": "docs/contributing/submission-schema.md",
-        "category": "skill:manag",
         "score": 0.5842105263157895
       },
       {
@@ -4490,6 +5430,101 @@
         "file": "docs/openstrand-architecture.md",
         "category": "skill:io",
         "score": 0.5864197530864197
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:documentation",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:analysis",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:synthesis",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:organization",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:learning",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:eq",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:understanding",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:respect",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:present",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:document",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:narr",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:plan",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:organ",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:analysi",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:synthesi",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:product",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:learn",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:understand",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/openstrand-architecture.md",
+        "category": "skill:belong",
+        "score": 0.5483870967741935
       },
       {
         "file": "docs/openstrand-architecture.md",
@@ -4943,6 +5978,106 @@
       },
       {
         "file": "docs/schema-reference.md",
+        "category": "skill:documentation",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:management",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:planning",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:analysis",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:organization",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:learning",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:eq",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:write",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:present",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:document",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:manag",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:plan",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:organ",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:mediat",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:analysi",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:product",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:learn",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
+        "category": "skill:teach",
+        "score": 0.5483870967741935
+      },
+      {
+        "file": "docs/schema-reference.md",
         "category": "skill:git",
         "score": 0.631578947368421
       },
@@ -5018,11 +6153,6 @@
       },
       {
         "file": "docs/schema-reference.md",
-        "category": "skill:manag",
-        "score": 0.631578947368421
-      },
-      {
-        "file": "docs/schema-reference.md",
         "category": "skill:formatt",
         "score": 0.631578947368421
       },
@@ -5057,7 +6187,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "12.64s",
+    "timeElapsed": "12.87s",
     "cacheHitRate": "0%",
     "filesProcessed": 20,
     "filesCached": 0,
