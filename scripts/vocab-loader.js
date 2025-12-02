@@ -289,20 +289,26 @@ class VocabularyLoader {
       // Skip comments and empty lines
       if (!trimmed || trimmed.startsWith('#')) continue;
       
-      const normalized = this.normalize(trimmed);
-      if (normalized) {
-        terms.add(normalized);
-        
-        // Also add stemmed version
-        const stemmed = this.stem(normalized);
-        if (stemmed) {
-          stemmedTerms.add(stemmed);
+      // Split line by whitespace to get individual terms
+      // This allows vocab files to have space-separated terms on each line
+      const lineTerms = trimmed.split(/\s+/);
+      
+      for (const term of lineTerms) {
+        const normalized = this.normalize(term);
+        if (normalized) {
+          terms.add(normalized);
           
-          // Track original term for stemmed lookup
-          if (!this.stemmedIndex.has(stemmed)) {
-            this.stemmedIndex.set(stemmed, new Set());
+          // Also add stemmed version
+          const stemmed = this.stem(normalized);
+          if (stemmed) {
+            stemmedTerms.add(stemmed);
+            
+            // Track original term for stemmed lookup
+            if (!this.stemmedIndex.has(stemmed)) {
+              this.stemmedIndex.set(stemmed, new Set());
+            }
+            this.stemmedIndex.get(stemmed).add(normalized);
           }
-          this.stemmedIndex.get(stemmed).add(normalized);
         }
       }
     }
