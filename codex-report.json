@@ -1,7 +1,7 @@
 {
   "summary": {
-    "totalFiles": 1,
-    "indexedFiles": 1,
+    "totalFiles": 20,
+    "indexedFiles": 20,
     "skippedFiles": 0,
     "validFiles": 20,
     "filesWithErrors": 0,
@@ -3077,6 +3077,1261 @@
         "score": 0.5842105263157895
       },
       {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "ai",
+        "score": 0.09352517985611511
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "design",
+        "score": 0.11602209944751381
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "knowledge",
+        "score": 0.2864864864864865
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "media",
+        "score": 0.11940298507462686
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "philosophy",
+        "score": 0.07246376811594203
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "science",
+        "score": 0.10344827586206896
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "security",
+        "score": 0.1111111111111111
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "technology",
+        "score": 0.31756756756756754
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "api-reference",
+        "score": 0.2601626016260163
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "architecture",
+        "score": 0.1678832116788321
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "best-practices",
+        "score": 0.25806451612903225
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "getting-started",
+        "score": 0.1559633027522936
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "troubleshooting",
+        "score": 0.19444444444444445
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:authentication",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:auth",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:token",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:session",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:database",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:sql",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:schema",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:testing",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:test",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:async",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:await",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:pure",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:function",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:object",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:programming",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:class",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:data",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:http",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:https",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:ssl",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:ci",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:cd",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:authent",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:databas",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:program",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:algorithm",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:search",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:structur",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:dn",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:hash",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:tl",
+        "score": 0.6490384615384616
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:app",
+        "score": 0.5446428571428571
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:pages",
+        "score": 0.5446428571428571
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:api",
+        "score": 0.5446428571428571
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:on",
+        "score": 0.5446428571428571
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:page",
+        "score": 0.5446428571428571
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:javascript",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:js",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:typescript",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:ts",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:tsc",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:type",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:python",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:py",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:rust",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:go",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:java",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:c",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:sqlite",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:less",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:bash",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:gener",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:io",
+        "score": 0.6111111111111112
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:management",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:debugging",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:analysis",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:focus",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:iteration",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:eq",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:trust",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:document",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:edit",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:manag",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:mediat",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:debug",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:analysi",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:product",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:effici",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:schedul",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:focu",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:adapt",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:iter",
+        "score": 0.543778801843318
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:git",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:github",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:version",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:control",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:commit",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:branch",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:merge",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:npm",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:as",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:code",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:web",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:redis",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:cache",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:merg",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:contain",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:aw",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:redi",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/DEVELOPMENT.md",
+        "category": "skill:cach",
+        "score": 0.6210526315789474
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "ai",
+        "score": 0.11510791366906475
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "design",
+        "score": 0.049723756906077346
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "knowledge",
+        "score": 0.2702702702702703
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "media",
+        "score": 0.1044776119402985
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "philosophy",
+        "score": 0.12560386473429952
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "science",
+        "score": 0.13026819923371646
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "security",
+        "score": 0.07777777777777778
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "technology",
+        "score": 0.25675675675675674
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "api-reference",
+        "score": 0.17886178861788618
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "architecture",
+        "score": 0.16058394160583941
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "best-practices",
+        "score": 0.1774193548387097
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "getting-started",
+        "score": 0.1926605504587156
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "troubleshooting",
+        "score": 0.08333333333333333
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:authentication",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:auth",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:integration",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:programming",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:class",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:data",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:security",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:encryption",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:ci",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:authent",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:integr",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:e2",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:program",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:algorithm",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:search",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:network",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:secur",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:encrypt",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:tl",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:app",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:router",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:api",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:on",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:javascript",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:js",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:ts",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:type",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:python",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:py",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:pip",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:go",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:java",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:c",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:bash",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:gener",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:io",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:documentation",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:research",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:analysis",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:learning",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:training",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:eq",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:understanding",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:document",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:mediat",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:analysi",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:priorit",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:learn",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:train",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:understand",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:image",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:kubernetes",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:k8s",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:npm",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:package",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:as",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:code",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:web",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:services",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:cloud",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:platform",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:cache",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:imag",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:kubernet",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:k8",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:packag",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:aw",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:servic",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
+        "category": "skill:cach",
+        "score": 0.6105263157894737
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "ai",
+        "score": 0.07553956834532374
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "design",
+        "score": 0.06077348066298342
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "knowledge",
+        "score": 0.16216216216216217
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "media",
+        "score": 0.04477611940298507
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "philosophy",
+        "score": 0.05314009661835749
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "science",
+        "score": 0.07279693486590039
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "security",
+        "score": 0.10555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "technology",
+        "score": 0.14527027027027026
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "api-reference",
+        "score": 0.11382113821138211
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "architecture",
+        "score": 0.051094890510948905
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "best-practices",
+        "score": 0.1693548387096774
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "getting-started",
+        "score": 0.12844036697247707
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "troubleshooting",
+        "score": 0.2037037037037037
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:auth",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:token",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:schema",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:testing",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:test",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:class",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:data",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:http",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:https",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:ci",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:cd",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:search",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:tl",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:deploy",
+        "score": 0.5673076923076923
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:app",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:api",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:on",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:js",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:ts",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:rust",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:go",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:c",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:less",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:bash",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:gener",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:io",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:documentation",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:troubleshooting",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:analysis",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:iteration",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:eq",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:trust",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:present",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:document",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:mediat",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:troubleshoot",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:analysi",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:schedul",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:iter",
+        "score": 0.5299539170506913
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:git",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:github",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:version",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:control",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:commit",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:branch",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:merge",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:npm",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:as",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:code",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:web",
+        "score": 0.5894736842105264
+      },
+      {
+        "file": "docs/RECATALOG_GUIDE.md",
+        "category": "skill:merg",
+        "score": 0.5894736842105264
+      },
+      {
         "file": "docs/contributing/how-to-submit.md",
         "category": "ai",
         "score": 0.0683453237410072
@@ -3902,521 +5157,6 @@
         "score": 0.5842105263157895
       },
       {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "ai",
-        "score": 0.09352517985611511
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "design",
-        "score": 0.11602209944751381
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "knowledge",
-        "score": 0.2864864864864865
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "media",
-        "score": 0.11940298507462686
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "philosophy",
-        "score": 0.07246376811594203
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "science",
-        "score": 0.10344827586206896
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "security",
-        "score": 0.1111111111111111
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "technology",
-        "score": 0.31756756756756754
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "api-reference",
-        "score": 0.2601626016260163
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "architecture",
-        "score": 0.1678832116788321
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "best-practices",
-        "score": 0.25806451612903225
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "getting-started",
-        "score": 0.1559633027522936
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "troubleshooting",
-        "score": 0.19444444444444445
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:authentication",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:auth",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:token",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:session",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:database",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:sql",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:schema",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:testing",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:test",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:async",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:await",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:pure",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:function",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:object",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:programming",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:class",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:data",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:http",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:https",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:ssl",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:ci",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:cd",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:authent",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:databas",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:program",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:algorithm",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:search",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:structur",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:dn",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:hash",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:tl",
-        "score": 0.6490384615384616
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:app",
-        "score": 0.5446428571428571
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:pages",
-        "score": 0.5446428571428571
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:api",
-        "score": 0.5446428571428571
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:on",
-        "score": 0.5446428571428571
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:page",
-        "score": 0.5446428571428571
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:javascript",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:js",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:typescript",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:ts",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:tsc",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:type",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:python",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:py",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:rust",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:go",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:java",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:c",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:sqlite",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:less",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:bash",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:gener",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:io",
-        "score": 0.6111111111111112
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:management",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:debugging",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:analysis",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:focus",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:iteration",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:eq",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:trust",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:document",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:edit",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:manag",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:mediat",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:debug",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:analysi",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:product",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:effici",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:schedul",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:focu",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:adapt",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:iter",
-        "score": 0.543778801843318
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:git",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:github",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:version",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:control",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:commit",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:branch",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:merge",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:npm",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:as",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:code",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:web",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:redis",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:cache",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:merg",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:contain",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:aw",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:redi",
-        "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/DEVELOPMENT.md",
-        "category": "skill:cach",
-        "score": 0.6210526315789474
-      },
-      {
         "file": "docs/openstrand-architecture.md",
         "category": "ai",
         "score": 0.12949640287769784
@@ -4880,326 +5620,6 @@
         "file": "docs/openstrand-architecture.md",
         "category": "skill:servic",
         "score": 0.6210526315789474
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "ai",
-        "score": 0.07553956834532374
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "design",
-        "score": 0.06077348066298342
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "knowledge",
-        "score": 0.16216216216216217
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "media",
-        "score": 0.04477611940298507
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "philosophy",
-        "score": 0.05314009661835749
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "science",
-        "score": 0.07279693486590039
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "security",
-        "score": 0.10555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "technology",
-        "score": 0.14527027027027026
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "api-reference",
-        "score": 0.11382113821138211
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "architecture",
-        "score": 0.051094890510948905
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "best-practices",
-        "score": 0.1693548387096774
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "getting-started",
-        "score": 0.12844036697247707
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "troubleshooting",
-        "score": 0.2037037037037037
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:auth",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:token",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:schema",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:testing",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:test",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:class",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:data",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:http",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:https",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:ci",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:cd",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:search",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:tl",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:deploy",
-        "score": 0.5673076923076923
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:app",
-        "score": 0.5267857142857143
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:api",
-        "score": 0.5267857142857143
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:on",
-        "score": 0.5267857142857143
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:js",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:ts",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:rust",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:go",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:c",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:less",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:bash",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:gener",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:io",
-        "score": 0.5555555555555556
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:documentation",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:troubleshooting",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:analysis",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:iteration",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:eq",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:trust",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:present",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:document",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:mediat",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:troubleshoot",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:analysi",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:schedul",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:iter",
-        "score": 0.5299539170506913
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:git",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:github",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:version",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:control",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:commit",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:branch",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:merge",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:npm",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:as",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:code",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:web",
-        "score": 0.5894736842105264
-      },
-      {
-        "file": "docs/RECATALOG_GUIDE.md",
-        "category": "skill:merg",
-        "score": 0.5894736842105264
       },
       {
         "file": "docs/schema-reference.md",
@@ -5740,426 +6160,6 @@
         "file": "docs/schema-reference.md",
         "category": "skill:infrastructur",
         "score": 0.631578947368421
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "ai",
-        "score": 0.11510791366906475
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "design",
-        "score": 0.049723756906077346
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "knowledge",
-        "score": 0.2702702702702703
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "media",
-        "score": 0.1044776119402985
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "philosophy",
-        "score": 0.12560386473429952
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "science",
-        "score": 0.13026819923371646
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "security",
-        "score": 0.07777777777777778
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "technology",
-        "score": 0.25675675675675674
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "api-reference",
-        "score": 0.17886178861788618
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "architecture",
-        "score": 0.16058394160583941
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "best-practices",
-        "score": 0.1774193548387097
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "getting-started",
-        "score": 0.1926605504587156
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "troubleshooting",
-        "score": 0.08333333333333333
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:authentication",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:auth",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:integration",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:programming",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:class",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:data",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:security",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:encryption",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:ci",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:authent",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:integr",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:e2",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:program",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:algorithm",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:search",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:network",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:secur",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:encrypt",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:tl",
-        "score": 0.5913461538461539
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:app",
-        "score": 0.5357142857142857
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:router",
-        "score": 0.5357142857142857
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:api",
-        "score": 0.5357142857142857
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:on",
-        "score": 0.5357142857142857
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:javascript",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:js",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:ts",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:type",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:python",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:py",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:pip",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:go",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:java",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:c",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:bash",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:gener",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:io",
-        "score": 0.5802469135802469
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:documentation",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:troubleshooting",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:research",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:analysis",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:learning",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:training",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:eq",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:understanding",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:document",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:mediat",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:troubleshoot",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:analysi",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:priorit",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:learn",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:train",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:understand",
-        "score": 0.5391705069124424
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:image",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:kubernetes",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:k8s",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:npm",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:package",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:as",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:code",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:web",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:services",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:cloud",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:platform",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:cache",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:imag",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:kubernet",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:k8",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:packag",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:aw",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:servic",
-        "score": 0.6105263157894737
-      },
-      {
-        "file": "docs/NLP_VOCABULARY_SYSTEM.md",
-        "category": "skill:cach",
-        "score": 0.6105263157894737
       }
     ]
   },
@@ -6170,18 +6170,14 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 15,
+    "totalUniqueTerms": 231,
     "suggestedAdditions": [
       {
-        "term": "validation",
-        "frequency": 4
-      },
-      {
-        "term": "topics",
-        "frequency": 4
-      },
-      {
         "term": "slug",
+        "frequency": 3
+      },
+      {
+        "term": "validation",
         "frequency": 3
       },
       {
@@ -6191,10 +6187,10 @@
     ]
   },
   "performance": {
-    "timeElapsed": "6.23s",
-    "cacheHitRate": "1900%",
-    "filesProcessed": 1,
-    "filesCached": 19,
-    "speedup": "1900% faster"
+    "timeElapsed": "13.22s",
+    "cacheHitRate": "0%",
+    "filesProcessed": 20,
+    "filesCached": 0,
+    "speedup": "N/A (first run)"
   }
 }
