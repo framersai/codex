@@ -16,10 +16,10 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/framersai/codex/auto-index.yml?label=Index)](https://github.com/framersai/codex/actions)
 [![Tests](https://img.shields.io/github/actions/workflow/status/framersai/codex/test.yml?label=Tests)](https://github.com/framersai/codex/actions/workflows/test.yml)
 
-![Coverage](docs/badges/coverage.svg)
-![Lines](docs/badges/coverage-lines.svg)
-![Tests](docs/badges/tests.svg)
-![LOC](docs/badges/loc.svg)
+![Coverage](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/coverage.svg)
+![Lines](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/coverage-lines.svg)
+![Tests](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/tests.svg)
+![LOC](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/loc.svg)
 
 [Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Changelog](docs/CHANGELOG_SYSTEM.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/VXXC4SJMKh)
 
