@@ -1,0 +1,246 @@
+name: Auto-Categorize Inbox Strands
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'weaves/inbox/**/*.md'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'Path to specific file to categorize (optional)'
+        required: false
+        type: string
+      force_llm:
+        description: 'Force LLM analysis (skip static fallback)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  categorize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install --no-save @anthropic-ai/sdk openai natural compromise
+
+      - name: Get changed files
+        id: changed-files
+        if: github.event_name == 'push'
+        run: |
+          git fetch origin master
+          CHANGED_FILES=$(git diff --name-only HEAD^..HEAD | grep '^weaves/inbox/.*\.md$' || echo "")
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No inbox files changed"
+            exit 0
+          fi
+          
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Set files to process
+        id: files
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ] && [ -n "${{ inputs.file_path }}" ]; then
+            echo "files=${{ inputs.file_path }}" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.changed-files.outputs.has_changes }}" == "true" ]; then
+            echo "files=${{ steps.changed-files.outputs.files }}" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run intelligent categorization
+        if: steps.files.outputs.has_files == 'true'
+        id: categorize
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FORCE_LLM: ${{ inputs.force_llm || 'false' }}
+        run: |
+          mkdir -p .categorization-results
+          
+          for file in ${{ steps.files.outputs.files }}; do
+            if [ ! -f "$file" ]; then
+              echo "File $file not found, skipping"
+              continue
+            fi
+            
+            echo "📁 Processing: $file"
+            
+            # Run categorization with LLM-first approach
+            node scripts/categorize-strand.js "$file" > ".categorization-results/$(basename "$file" .md).json" 2>&1 || {
+              echo "❌ Categorization failed for $file"
+              echo '{"action":"error","error":"Categorization script failed"}' > ".categorization-results/$(basename "$file" .md).json"
+            }
+          done
+
+      - name: Process categorization results
+        if: steps.files.outputs.has_files == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          for file in ${{ steps.files.outputs.files }}; do
+            result_file=".categorization-results/$(basename "$file" .md).json"
+            
+            if [ ! -f "$result_file" ]; then
+              echo "⚠️  No result for $file, skipping"
+              continue
+            fi
+            
+            action=$(jq -r '.action // "error"' "$result_file")
+            suggested_path=$(jq -r '.suggestion.path // ""' "$result_file")
+            confidence=$(jq -r '.suggestion.confidence // 0' "$result_file")
+            reasoning=$(jq -r '.suggestion.reasoning // ""' "$result_file")
+            method=$(jq -r '.method // "unknown"' "$result_file")
+            
+            filename=$(basename "$file")
+            confidence_pct=$(echo "$confidence * 100" | bc | cut -d. -f1)
+            
+            echo "📊 Result: action=$action, path=$suggested_path, confidence=${confidence_pct}%, method=$method"
+            
+            if [ "$action" == "auto-move" ] && [ -n "$suggested_path" ]; then
+              echo "🚀 Auto-moving $file -> $suggested_path (${confidence_pct}% confidence)"
+              
+              # Create branch
+              branch_name="auto-categorize/$(basename "$file" .md)-$(date +%s)"
+              git checkout -b "$branch_name"
+              
+              # Ensure target directory exists
+              target_dir=$(dirname "${suggested_path}")
+              mkdir -p "$target_dir"
+              
+              # Move file
+              git mv "$file" "$suggested_path"
+              
+              # Commit
+              git commit -m "feat(categorize): Auto-categorize $(basename "$file") → $suggested_path
+
+Confidence: ${confidence_pct}%
+Method: $method
+Reasoning: $reasoning
+
+Auto-categorized by intelligent workflow with LLM analysis."
+              
+              # Push
+              git push -u origin "$branch_name"
+              
+              # Create PR
+              pr_url=$(gh pr create \
+                --title "🤖 Auto-categorize: $filename → $suggested_path" \
+                --body "## Intelligent Auto-Categorization
+
+**Source:** \`$file\`
+**Destination:** \`$suggested_path\`
+**Confidence:** ${confidence_pct}%
+**Method:** $method (${method/llm/🧠 LLM-powered}${method/static/📊 Static NLP})
+
+### 🔍 Reasoning
+$reasoning
+
+### 📝 Analysis Details
+$(jq -r '.suggestion.details // "N/A"' "$result_file")
+
+---
+*Auto-categorized with ${confidence_pct}% confidence using intelligent workflow.*
+*Threshold for auto-merge: ≥80%*" \
+                --label "auto-categorized,bot" \
+                --base master 2>&1)
+              
+              pr_number=$(echo "$pr_url" | grep -oP 'pull/\K[0-9]+' || gh pr list --head "$branch_name" --json number -q '.[0].number')
+              
+              # Auto-merge if confidence >= 80%
+              if [ "$confidence_pct" -ge 80 ] && [ -n "$pr_number" ]; then
+                echo "✅ Auto-merging PR #$pr_number (confidence: ${confidence_pct}%)"
+                gh pr merge "$pr_number" --auto --squash --delete-branch
+              else
+                echo "👀 PR #$pr_number created, awaiting manual review (confidence: ${confidence_pct}%)"
+              fi
+              
+              git checkout master
+              
+            elif [ "$action" == "suggest" ]; then
+              echo "💡 Creating suggestion issue for $file (${confidence_pct}% confidence)"
+              
+              alternatives=$(jq -r '.suggestion.alternatives // [] | map("- **\(.path)** (\(.confidence * 100 | floor)%): \(.reasoning)") | join("\n")' "$result_file")
+              
+              gh issue create \
+                --title "📂 Categorization suggestion: $filename" \
+                --body "## Categorization Suggestion
+
+**File:** \`$file\`
+**Suggested Path:** \`$suggested_path\`
+**Confidence:** ${confidence_pct}%
+**Method:** $method
+
+### 🔍 Reasoning
+$reasoning
+
+### 🔀 Alternative Suggestions
+$alternatives
+
+### ✅ Action Required
+Please review and manually move this file, or comment \`/approve\` to auto-merge.
+
+---
+*Confidence below auto-move threshold (80%). Manual review required.*" \
+                --label "needs-triage,categorization"
+                
+            else
+              echo "⚠️  Manual triage needed for $file"
+              
+              gh issue create \
+                --title "🔍 Manual triage needed: $filename" \
+                --body "## Manual Triage Required
+
+**File:** \`$file\`
+**Analysis Method:** $method
+
+### Issue
+$(jq -r '.error // .suggestion.reasoning // "Could not determine appropriate category"' "$result_file")
+
+### Suggested Action
+Please review the content and manually categorize to:
+- \`weaves/knowledge/\` - General knowledge (CS, AI, math, science)
+- \`weaves/wiki/\` - Frame-specific documentation
+- \`weaves/frame/\` - Frame product/project content
+
+---
+*Auto-categorization could not determine a suitable category with sufficient confidence.*" \
+                --label "needs-triage,manual-review"
+            fi
+          done
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -rf .categorization-results
+          git checkout master 2>/dev/null || true
