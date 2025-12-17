@@ -1,30 +1,32 @@
 {
   "summary": {
-    "totalFiles": 20,
-    "indexedFiles": 20,
+    "totalFiles": 21,
+    "indexedFiles": 21,
     "skippedFiles": 0,
-    "validFiles": 20,
+    "validFiles": 21,
     "filesWithErrors": 0,
     "filesWithWarnings": 0,
-    "filesWithSuggestions": 20
+    "filesWithSuggestions": 21
   },
   "categorization": {
     "bySubject": {
-      "ai": 20,
-      "design": 19,
-      "knowledge": 20,
-      "media": 16,
-      "philosophy": 19,
-      "science": 19,
-      "security": 20,
-      "technology": 20
+      "ai": 21,
+      "design": 20,
+      "knowledge": 21,
+      "media": 17,
+      "philosophy": 20,
+      "science": 20,
+      "security": 21,
+      "technology": 21,
+      "artificial-intelligence": 1
     },
     "byTopic": {
-      "api-reference": 20,
-      "architecture": 20,
-      "best-practices": 20,
-      "getting-started": 18,
-      "troubleshooting": 19,
+      "api-reference": 21,
+      "architecture": 21,
+      "best-practices": 21,
+      "getting-started": 19,
+      "troubleshooting": 20,
+      "tutorial": 1,
       "automation": 1,
       "ci-cd": 1,
       "deployment": 1
@@ -32,6 +34,7 @@
     "byDifficulty": {
       "[object Object]": 1,
       "advanced": 2,
+      "expert": 1,
       "intermediate": 11,
       "beginner": 6
     },
@@ -290,6 +293,531 @@
         "file": "weaves/frame/weave.yaml",
         "category": "skill:contain",
         "score": 0.5052631578947369
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "ai",
+        "score": 0.26258992805755393
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "design",
+        "score": 0.1270718232044199
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "knowledge",
+        "score": 0.24864864864864866
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "media",
+        "score": 0.1044776119402985
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "philosophy",
+        "score": 0.1932367149758454
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "science",
+        "score": 0.15708812260536398
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "security",
+        "score": 0.15555555555555556
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "technology",
+        "score": 0.28716216216216217
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "api-reference",
+        "score": 0.2926829268292683
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "architecture",
+        "score": 0.1897810218978102
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "best-practices",
+        "score": 0.3064516129032258
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "getting-started",
+        "score": 0.1559633027522936
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "troubleshooting",
+        "score": 0.3611111111111111
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:auth",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:token",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:rest",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:schema",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:testing",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:unit",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:test",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:function",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:oop",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:object",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:class",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:data",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:http",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:https",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:security",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:ci",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:cd",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:continuous",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:inherit",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:observ",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:search",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:structur",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:dn",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:secur",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:hash",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:tl",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:continu",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:deploy",
+        "score": 0.6346153846153846
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:app",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:api",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:on",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:js",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:ts",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:type",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:python",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:py",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:pip",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:rust",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:go",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:ios",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:c",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:less",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:gener",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:io",
+        "score": 0.5802469135802469
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:writing",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:documentation",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:feedback",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:debugging",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:research",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:analysis",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:efficiency",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:focus",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:iteration",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:training",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:eq",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:tolerance",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:understanding",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:trust",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:write",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:present",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:document",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:narr",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:mediat",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:debug",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:analysi",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:product",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:effici",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:schedul",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:focu",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:experiment",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:iter",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:train",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:toler",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:understand",
+        "score": 0.5691244239631337
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:git",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:github",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:version",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:control",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:merge",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:registry",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:as",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:code",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:cloud",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:google",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:platform",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:cache",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:merg",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:contain",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:formatt",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:servic",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:googl",
+        "score": 0.6263157894736842
+      },
+      {
+        "file": "weaves/inbox/evals.md",
+        "category": "skill:cach",
+        "score": 0.6263157894736842
       },
       {
         "file": "weaves/wiki/architecture/overview.md",
@@ -6170,15 +6698,11 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 231,
+    "totalUniqueTerms": 243,
     "suggestedAdditions": [
       {
         "term": "slug",
-        "frequency": 3
-      },
-      {
-        "term": "validation",
-        "frequency": 3
+        "frequency": 4
       },
       {
         "term": "properties",
@@ -6187,9 +6711,9 @@
     ]
   },
   "performance": {
-    "timeElapsed": "12.99s",
+    "timeElapsed": "17.52s",
     "cacheHitRate": "0%",
-    "filesProcessed": 20,
+    "filesProcessed": 21,
     "filesCached": 0,
     "speedup": "N/A (first run)"
   }
