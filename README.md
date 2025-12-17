@@ -33,10 +33,12 @@
 
 Frame Codex is a data-only knowledge repository designed to be the canonical source of structured information for AI systems. This repository contains:
 
-- **Pure content** - Weaves (top-level directories), looms (any folder inside a weave), strands (markdown files), tags, and schemas
+- **Pure content** - [Weaves](./weaves) (top-level directories), looms (any folder inside a weave), strands (markdown files), tags, and schemas
 - **Markdown-only** - The primary source of truth (OpenStrand ingests any file type and serializes to markdown)
 - **No UI** - The viewer interface lives at [frame.dev/codex](https://frame.dev/codex)
 - **LLM-optimized** - Structured for knowledge graph ingestion by OpenStrand and other AI systems
+
+**📚 Browse the knowledge weaves:** All content is organized in the [`/weaves`](./weaves) directory.
 
 ### Frame Codex vs OpenStrand
 
