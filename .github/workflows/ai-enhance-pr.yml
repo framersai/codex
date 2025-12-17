@@ -101,7 +101,7 @@ jobs:
               body: `🤖 **AI Suggestion:** ${suggestion.message}
               
 ${suggestion.details ? `\n${suggestion.details}\n` : ''}
-${suggestion.suggestedFix ? `\n**Suggested fix:**\n\`\`\`${suggestion.language || 'yaml'}\n${suggestion.suggestedFix}\n\`\`\`` : ''}
+${suggestion.suggestedFix ? `\n**Suggested fix:**\n\\\`\\\`\\\`${suggestion.language || 'yaml'}\n${suggestion.suggestedFix}\n\\\`\\\`\\\`` : ''}
               
 *Confidence: ${suggestion.confidence || 'medium'}*`
             }));
