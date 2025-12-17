@@ -3,9 +3,9 @@
     <img src="./frame-logo-transparent.png" alt="Frame.dev" width="200" style="border-radius: 12px;">
   </a>
 
-# Frame Codex
+# Fabric Codex
 
-**The codex of humanity for LLM knowledge retrieval**
+**Fabric Codex at [frame.dev](https://frame.dev/codex)** - The best and most optimized collection of humanity's knowledge and research, designed for both AI consumption and human exploration.
 
 *The OS for humans, the codex of humanity.*
 
@@ -31,26 +31,29 @@
 
 ## Overview
 
-Frame Codex is a data-only knowledge repository designed to be the canonical source of structured information for AI systems. This repository contains:
+Fabric Codex is a data-only knowledge repository designed as the canonical source of structured information for AI systems and humans alike. **At [frame.dev/codex](https://frame.dev/codex), Fabric Codex offers the best and most optimized collection of humanity's knowledge and research** - curated for both AI consumption (LLM ingestion, semantic search) and human exploration (beautiful UI, discovery).
+
+This repository contains:
 
 - **Pure content** - [Weaves](./weaves) (top-level directories), looms (any folder inside a weave), strands (markdown files), tags, and schemas
 - **Markdown-only** - The primary source of truth (OpenStrand ingests any file type and serializes to markdown)
 - **No UI** - The viewer interface lives at [frame.dev/codex](https://frame.dev/codex)
 - **LLM-optimized** - Structured for knowledge graph ingestion by OpenStrand and other AI systems
+- **AI + Human Friendly** - YAML frontmatter, semantic embeddings, and beautiful rendering for optimal consumption by both machines and people
 
 **📚 Browse the knowledge weaves:** All content is organized in the [`/weaves`](./weaves) directory.
 
-### Frame Codex vs OpenStrand
+### Fabric Codex vs OpenStrand
 
-- **Frame Codex**: Public markdown knowledge repository (this repo) - read-only, curated, version-controlled
+- **Fabric Codex**: Public markdown knowledge repository (this repo) - read-only, curated, version-controlled
 - **OpenStrand**: Full personal knowledge management platform at [openstrand.ai](https://openstrand.ai) - supports any file type (images, videos, PDFs, code), AI analysis, serialization to markdown, private workspaces, and advanced features
 
-**Schema**: Frame Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` or `strands/` prefixes required) and strands are any markdown files within a weave.
+**Schema**: Fabric Codex follows the [OpenStrand schema specification](https://openstrand.ai/docs/schema) for weaves, looms, and strands. Looms are now inferred from folders (no `looms/` or `strands/` prefixes required) and strands are any markdown files within a weave.
 Strand frontmatter now supports both `extractiveSummary` (deterministic NLP) and `aiSummary` (LLM) fields, plus a `notes` array for short bullet annotations that surface inside the Frame.dev viewer.
 
 ## 🔄 Automated Indexing Workflow
 
-Frame Codex uses a **hybrid NLP + LLM approach** with smart caching and manual override options:
+Fabric Codex uses a **hybrid NLP + LLM approach** with smart caching and manual override options:
 
 ### Static NLP Tools (Always On, No API Keys Required)
 
@@ -126,14 +129,14 @@ manual_tags: true    # Don't auto-suggest tags
 
 The Codex uses the OpenStrand four-tier knowledge hierarchy:
 
-- **Fabric** - Collection of weaves (Frame Codex itself is a fabric containing multiple knowledge universes)
+- **Fabric** - Collection of weaves (Fabric Codex itself is a fabric containing multiple knowledge universes)
 - **Weave** - Complete knowledge universe with no cross-weave dependencies (e.g., `weaves/technology/`, `weaves/science/`)
 - **Loom** - Any subdirectory inside a weave, curated collection of related strands (topic/module, auto-detected from folder structure)
 - **Strand** - Atomic knowledge unit (individual markdown file at any depth within its weave)
 
 ### SQL Cache Layer
 
-Frame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent caching:
+Fabric Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent caching:
 
 **CI/GitHub Actions (better-sqlite3):**
 - Stores file metadata, SHA hashes, and analysis results in `.cache/codex.db`
@@ -221,7 +224,7 @@ const content = await response.text();
 
 ### Using Frame.dev as the Codex Viewer
 
-The primary UI for browsing Frame Codex lives at [`https://frame.dev/codex`](https://frame.dev/codex):
+The primary UI for browsing Fabric Codex lives at [`https://frame.dev/codex`](https://frame.dev/codex):
 
 - **Browse**: Tree + outline view with loom/strand badges
 - **Search**: NLP-enhanced client-side search (names + content, typo-tolerant)
@@ -231,7 +234,7 @@ The primary UI for browsing Frame Codex lives at [`https://frame.dev/codex`](htt
 > Privacy: The Frame.dev Codex UI stores bookmarks, history, preferences, and SQL cache **only in your browser**.  
 > GitHub Personal Access Tokens (PATs), if you choose to provide one, are held only in memory while the contribution modal is open and are sent directly to GitHub—never to any Frame.dev backend and never written to localStorage/IndexedDB/SQL.
 
-### Pointing Frame Codex UI at Your Own Repository
+### Pointing Fabric Codex UI at Your Own Repository
 
 You can reuse the Frame.dev Codex viewer to render *any* GitHub-hosted Codex-style repository:
 
@@ -351,7 +354,7 @@ This repository is designed to be consumed by:
 
 ### 🔑 GitHub GraphQL API & Rate Limits
 
-The Frame Codex viewer at [frame.dev/codex](https://frame.dev/codex) uses the GitHub GraphQL API for efficient tree fetching:
+The Fabric Codex viewer at [frame.dev/codex](https://frame.dev/codex) uses the GitHub GraphQL API for efficient tree fetching:
 
 **Free for Everyone**:
 - No cost to use (GitHub API is free for all public repos)
@@ -376,7 +379,7 @@ See [lib/githubGraphql.ts](https://github.com/framersai/frame.dev/blob/master/ap
 ### 🔒 Privacy & Data Storage
 
 **Client-Side Only**:
-- Frame Codex viewer stores data only in your browser (IndexedDB/localStorage)
+- Fabric Codex viewer stores data only in your browser (IndexedDB/localStorage)
 - No tracking, analytics, or telemetry
 - No data sent to Frame.dev servers
 - No cookies (except essential session cookies if you're logged in to GitHub)
@@ -397,7 +400,7 @@ See [lib/githubGraphql.ts](https://github.com/framersai/frame.dev/blob/master/ap
 
 ## 📄 License
 
-Frame Codex content is licensed under [CC-BY-4.0](LICENSE), making it free for:
+Fabric Codex content is licensed under [CC-BY-4.0](LICENSE), making it free for:
 - Commercial use
 - Modification
 - Distribution
@@ -412,7 +415,7 @@ With attribution requirement.
   
   ### Connect
   
-  [Website](https://frame.dev) • [Frame Codex](https://frame.dev/codex) • [OpenStrand](https://openstrand.ai) • [Discord](https://discord.gg/VXXC4SJMKh) • [GitHub](https://github.com/framersai) • [Twitter](https://twitter.com/framersai)
+  [Website](https://frame.dev) • [Fabric Codex](https://frame.dev/codex) • [OpenStrand](https://openstrand.ai) • [Discord](https://discord.gg/VXXC4SJMKh) • [GitHub](https://github.com/framersai) • [Twitter](https://twitter.com/framersai)
   
   <br/>
   

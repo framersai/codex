@@ -1,4 +1,4 @@
-# Frame Codex Contribution
+# Fabric Codex Contribution
 
 ## Summary
 <!-- Provide a brief description of what knowledge you're adding -->
@@ -78,7 +78,7 @@ Validation output...
 ---
 
 ## Auto-Review Checklist (For Reviewers)
-- [ ] Content adds value to Frame Codex
+- [ ] Content adds value to Fabric Codex
 - [ ] Metadata is complete and accurate
 - [ ] Schema validation passes
 - [ ] No duplicate content
@@ -101,7 +101,7 @@ npm run check-duplicates -- --path <new-content-path>
 ---
 
 By submitting this PR, I confirm that:
-1. The content adheres to Frame Codex quality standards
+1. The content adheres to Fabric Codex quality standards
 2. I have the right to contribute this content (or it is under a license allowing redistribution)
 3. The content is free to republish under CC-BY-4.0 (or a compatible license)
 

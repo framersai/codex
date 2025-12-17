@@ -18,14 +18,24 @@ async function categorizewithLLM(content, metadata, filePath) {
   
   const forceLLM = process.env.FORCE_LLM === 'true';
   
-  // Define category structure
+  // Define category structure with proper AI/ML hierarchy
   const categories = {
     knowledge: {
-      description: 'General knowledge - CS, AI, ML, math, science, programming',
-      subdirs: ['ai-ml', 'computer-science', 'mathematics', 'science', 'programming', 'engineering']
+      description: 'General knowledge - CS, AI/ML, math, science, programming (NOT Frame-specific)',
+      subdirs: [
+        'artificial-intelligence',                      // Main AI category
+        'artificial-intelligence/machine-learning',     // ML is subset of AI
+        'artificial-intelligence/generative-ai',        // GenAI under AI
+        'artificial-intelligence/generative-ai/llms',   // LLMs under GenAI
+        'computer-science', 
+        'mathematics', 
+        'science', 
+        'programming', 
+        'engineering'
+      ]
     },
     wiki: {
-      description: 'Frame-specific documentation - architecture, guides, tutorials about Frame itself',
+      description: 'Frame wiki - ONLY high-level Frame management, architecture, how Frame itself works. NOT general knowledge.',
       subdirs: ['architecture', 'tutorials', 'examples', 'contributing']
     },
     frame: {
@@ -50,7 +60,10 @@ ${JSON.stringify(categories, null, 2)}
 
 RULES:
 1. **knowledge/** - General CS/AI/ML/science content NOT specific to Frame
-2. **wiki/** - Frame documentation, architecture, how-tos about Frame itself  
+   - Use 'artificial-intelligence' for AI content (NOT 'ai-ml')
+   - Machine Learning goes in 'artificial-intelligence/machine-learning'
+   - LLMs/GenAI go in 'artificial-intelligence/generative-ai/llms'
+2. **wiki/** - ONLY high-level Frame management/architecture/how Frame itself works. NOT tutorials or general knowledge.
 3. **frame/** - Frame product announcements, roadmap, internal projects
 
 TASK:
@@ -68,7 +81,7 @@ Respond with ONLY valid JSON (no markdown, no code blocks):
 }
 
 Example for LLM evaluation content:
-{"weave":"knowledge","subdir":"ai-ml","confidence":0.95,"reasoning":"Content about LLM/RAG evaluation is general AI/ML knowledge, not Frame-specific","alternatives":[{"path":"weaves/wiki/tutorials","confidence":0.3,"reasoning":"Could be a Frame tutorial if it teaches Frame's eval system"}]}`;
+{"weave":"knowledge","subdir":"artificial-intelligence/generative-ai/llms","confidence":0.95,"reasoning":"LLM/RAG evaluation is generative AI knowledge under artificial-intelligence, not Frame-specific","alternatives":[{"path":"weaves/wiki/tutorials","confidence":0.3,"reasoning":"Could be a Frame tutorial if it teaches Frame's eval system"}]}`;
 
   try {
     let response;
@@ -157,10 +170,18 @@ function categorizeWithStatic(content, metadata, filePath) {
   
   // Category keywords (high-signal terms)
   const categorySignals = {
-    'knowledge/ai-ml': [
+    'knowledge/artificial-intelligence/generative-ai/llms': [
       'llm', 'language model', 'gpt', 'claude', 'embedding', 'rag', 'retrieval',
+      'prompt engineering', 'prompt', 'completion', 'chat', 'assistant'
+    ],
+    'knowledge/artificial-intelligence/machine-learning': [
       'machine learning', 'deep learning', 'neural network', 'transformer',
-      'evaluation', 'benchmark', 'helm', 'training', 'inference', 'prompt'
+      'training', 'inference', 'model', 'dataset', 'supervised', 'unsupervised',
+      'evaluation', 'benchmark', 'helm'
+    ],
+    'knowledge/artificial-intelligence': [
+      'artificial intelligence', 'ai', 'intelligent agent', 'expert system',
+      'knowledge representation', 'reasoning', 'planning'
     ],
     'knowledge/computer-science': [
       'algorithm', 'data structure', 'complexity', 'big-o', 'sorting',
@@ -172,11 +193,11 @@ function categorizeWithStatic(content, metadata, filePath) {
     ],
     'wiki/architecture': [
       'frame architecture', 'frame design', 'frame system', 'frame component',
-      'codex architecture', 'openstrand', 'strand', 'weave', 'loom'
+      'frame management', 'frame wiki', 'how frame works'
     ],
     'wiki/tutorials': [
-      'how to', 'getting started', 'guide', 'tutorial', 'walkthrough',
-      'step by step', 'example', 'quickstart'
+      'frame tutorial', 'frame guide', 'using frame', 'frame walkthrough',
+      'frame quickstart', 'frame getting started'
     ],
     'frame/announcements': [
       'announcing', 'release', 'launch', 'new feature', 'roadmap',
@@ -219,13 +240,17 @@ function categorizeWithStatic(content, metadata, filePath) {
       method: 'static-fallback',
       suggestion: {
         path: `weaves/knowledge/general/${path.basename(filePath)}`,
-        confidence: 0.3,
+        parts = bestCategory.split('/');
+  const weave = parts[0];
+  const subdir = parts.slice(1).join
         reasoning: 'No strong category signals detected. Defaulting to general knowledge.',
         alternatives: []
       }
     };
   }
-  
+  parts = cat.split('/');
+    const w = parts[0];
+    const s = parts.slice(1).join
   const [bestCategory, bestScore] = sorted[0];
   const [weave, subdir] = bestCategory.split('/');
   const targetPath = `weaves/${weave}/${subdir}/${path.basename(filePath)}`;
