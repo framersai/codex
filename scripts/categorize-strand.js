@@ -240,19 +240,17 @@ function categorizeWithStatic(content, metadata, filePath) {
       method: 'static-fallback',
       suggestion: {
         path: `weaves/knowledge/general/${path.basename(filePath)}`,
-        parts = bestCategory.split('/');
-  const weave = parts[0];
-  const subdir = parts.slice(1).join
+        confidence: 0.3,
         reasoning: 'No strong category signals detected. Defaulting to general knowledge.',
         alternatives: []
       }
     };
   }
-  parts = cat.split('/');
-    const w = parts[0];
-    const s = parts.slice(1).join
+
   const [bestCategory, bestScore] = sorted[0];
-  const [weave, subdir] = bestCategory.split('/');
+  const parts = bestCategory.split('/');
+  const weave = parts[0];
+  const subdir = parts.slice(1).join('/');
   const targetPath = `weaves/${weave}/${subdir}/${path.basename(filePath)}`;
   
   // Normalize confidence (cap at 0.75 for static analysis)
@@ -260,9 +258,11 @@ function categorizeWithStatic(content, metadata, filePath) {
   const confidence = Math.min(0.75, bestScore / maxScore * 0.75);
   
   const alternatives = sorted.slice(1, 4).map(([cat, score]) => {
-    const [w, s] = cat.split('/');
+    const catParts = cat.split('/');
+    const altWeave = catParts[0];
+    const altSubdir = catParts.slice(1).join('/');
     return {
-      path: `weaves/${w}/${s}/${path.basename(filePath)}`,
+      path: `weaves/${altWeave}/${altSubdir}/${path.basename(filePath)}`,
       confidence: Math.min(0.75, score / maxScore * 0.75),
       reasoning: `Matched ${Math.round(score)} category keywords`
     };
