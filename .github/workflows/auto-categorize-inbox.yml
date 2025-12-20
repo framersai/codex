@@ -155,7 +155,6 @@ jobs:
               pr_url=$(gh pr create \
                 --title "🤖 Auto-categorize: $filename → $suggested_path" \
                 --body "$(echo -e "$pr_body")" \
-                --label "auto-categorized,bot" \
                 --base master 2>&1)
               
               pr_number=$(echo "$pr_url" | grep -oP 'pull/\K[0-9]+' || gh pr list --head "$branch_name" --json number -q '.[0].number')
@@ -175,8 +174,7 @@ jobs:
               issue_body="## Categorization Suggestion\n\n**File:** \`$file\`\n**Suggested Path:** \`$suggested_path\`\n**Confidence:** ${confidence_pct}%\n**Method:** $method\n\n**Reasoning:** $reasoning"
               gh issue create \
                 --title "📂 Categorization suggestion: $filename" \
-                --body "$(echo -e "$issue_body")" \
-                --label "needs-triage,categorization"
+                --body "$(echo -e "$issue_body")" || true
 
             else
               echo "⚠️  Manual triage needed for $file"
