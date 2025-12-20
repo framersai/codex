@@ -176,12 +176,14 @@ jobs:
               # Auto-merge if confidence >= 70%
               if [ "$confidence_pct" -ge 70 ] && [ -n "$pr_number" ]; then
                 echo "✅ Auto-merging PR #$pr_number (confidence: ${confidence_pct}%)"
-                gh pr merge "$pr_number" --auto --squash --delete-branch
+                gh pr merge "$pr_number" --squash --delete-branch || echo "⚠️ Auto-merge failed, PR remains open"
               else
                 echo "👀 PR #$pr_number created, awaiting manual review (confidence: ${confidence_pct}%)"
               fi
-              
+
+              # Return to master and sync with remote for next file
               git checkout master
+              git pull origin master || true
               
             elif [ "$action" == "suggest" ]; then
               echo "💡 Creating suggestion issue for $file (${confidence_pct}% confidence)"
