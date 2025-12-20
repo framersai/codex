@@ -177,7 +177,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:22.405Z"
+        "lastIndexed": "2025-12-20T16:38:02.869Z"
       }
     },
     "validation": {
@@ -407,7 +407,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:22.661Z"
+        "lastIndexed": "2025-12-20T16:38:03.124Z"
       }
     },
     "validation": {
@@ -612,7 +612,7 @@
             "Hierarchy & Vocabulary"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:22.845Z"
+        "lastIndexed": "2025-12-20T16:38:03.275Z"
       }
     },
     "validation": {
@@ -724,7 +724,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T15:56:22.875Z"
+        "lastIndexed": "2025-12-20T16:38:03.304Z"
       }
     },
     "validation": {
@@ -970,7 +970,7 @@
             "Producer & Consumer"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:24.389Z"
+        "lastIndexed": "2025-12-20T16:38:04.695Z"
       }
     },
     "validation": {
@@ -1275,7 +1275,7 @@
             "s1 & s2"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:31.529Z"
+        "lastIndexed": "2025-12-20T16:38:11.630Z"
       }
     },
     "validation": {
@@ -1291,291 +1291,6 @@
     },
     "content": "# Python Senior Interview Crash Course\n## From Fundamentals to Staff-Level Mastery\n\n---\n\n## Table of Contents\n\n1. [Python Internals You Must Know](#1-python-internals)\n2. [Data Structures Deep Dive](#2-data-structures)\n3. [Complexity Analysis Refresher](#3-complexity-analysis)\n4. [Core Algorithm Patterns](#4-algorithm-patterns)\n5. [Advanced Python Features](#5-advanced-python)\n6. [Concurrency & Parallelism](#6-concurrency)\n7. [Object-Oriented Design](#7-oop-design)\n8. [LeetCode Patterns & Solutions](#8-leetcode-patterns)\n9. [System Design in Python](#9-system-design)\n10. [Senior-Level Interview Questions](#10-senior-questions)\n\n---\n\n## 1. Python Internals You Must Know {#1-python-internals}\n\n### Memory Management\n\n#### Everything is an Object\n\n```python\n# In Python, EVERYTHING is an object - even integers and functions\nx = 42\nprint(type(x))        # <class 'int'>\nprint(id(x))          # Memory address\nprint(x.__class__)    # <class 'int'>\nprint(x.__add__(8))   # 50 - even operators are methods!\n\n# Functions are first-class objects\ndef greet(name):\n    return f\"Hello, {name}\"\n\nprint(type(greet))           # <class 'function'>\nprint(greet.__name__)        # 'greet'\nprint(greet.__code__.co_varnames)  # ('name',)\n```\n\n#### Reference Counting + Garbage Collection\n\n```python\nimport sys\nimport gc\n\n# Reference counting\na = [1, 2, 3]\nprint(sys.getrefcount(a))  # 2 (a + temporary reference from getrefcount)\n\nb = a  # Another reference\nprint(sys.getrefcount(a))  # 3\n\ndel b  # Remove reference\nprint(sys.getrefcount(a))  # 2\n\n# Circular references - need garbage collector\nclass Node:\n    def __init__(self):\n        self.parent = None\n        self.children = []\n\nparent = Node()\nchild = Node()\nparent.children.append(child)\nchild.parent = parent  # Circular reference!\n\n# Reference counting alone won't free these\n# Python's GC detects and collects cycles\ndel parent\ndel child\ngc.collect()  # Force garbage collection\n```\n\n#### Small Integer Caching (-5 to 256)\n\n```python\n# Python caches small integers for performance\na = 256\nb = 256\nprint(a is b)  # True - same object!\n\na = 257\nb = 257\nprint(a is b)  # False - different objects!\n\n# String interning for identifiers\ns1 = \"hello\"\ns2 = \"hello\"\nprint(s1 is s2)  # True - interned\n\ns1 = \"hello world!\"\ns2 = \"hello world!\"\nprint(s1 is s2)  # False - not interned (has space/special chars)\n\n# Force interning\nimport sys\ns1 = sys.intern(\"hello world!\")\ns2 = sys.intern(\"hello world!\")\nprint(s1 is s2)  # True\n```\n\n#### Mutability Deep Dive\n\n```python\n# Mutable: list, dict, set, custom objects\n# Immutable: int, float, str, tuple, frozenset, bytes\n\n# The Classic Gotcha: Default Mutable Arguments\ndef append_to(element, lst=[]):  # DANGEROUS!\n    lst.append(element)\n    return lst\n\nprint(append_to(1))  # [1]\nprint(append_to(2))  # [1, 2] - WHAT?! Same list reused!\n\n# Correct pattern\ndef append_to_fixed(element, lst=None):\n    if lst is None:\n        lst = []\n    lst.append(element)\n    return lst\n\n# Why tuples can contain mutable objects\nt = ([1, 2], [3, 4])\nt[0].append(3)  # This works!\nprint(t)  # ([1, 2, 3], [3, 4])\n# t[0] = [5, 6]  # This fails - can't reassign tuple element\n\n# Tuple \"immutability\" means you can't change which objects it references\n# But you CAN mutate those objects if they're mutable\n```\n\n### The Global Interpreter Lock (GIL)\n\n```python\n\"\"\"\nTHE GIL: Python's Most Misunderstood Feature\n\nWhat it is:\n- A mutex that protects access to Python objects\n- Only ONE thread can execute Python bytecode at a time\n- Exists in CPython (reference implementation)\n\nWhat it means:\n- CPU-bound multithreading won't give speedup\n- I/O-bound multithreading WILL work (GIL released during I/O)\n- Use multiprocessing for CPU parallelism\n\"\"\"\n\nimport threading\nimport time\n\n# This WON'T be faster with multiple threads (CPU-bound)\ndef cpu_bound(n):\n    count = 0\n    for i in range(n):\n        count += i\n    return count\n\n# Single thread\nstart = time.time()\ncpu_bound(10_000_000)\ncpu_bound(10_000_000)\nprint(f\"Sequential: {time.time() - start:.2f}s\")\n\n# Two threads - NOT faster due to GIL!\nstart = time.time()\nt1 = threading.Thread(target=cpu_bound, args=(10_000_000,))\nt2 = threading.Thread(target=cpu_bound, args=(10_000_000,))\nt1.start(); t2.start()\nt1.join(); t2.join()\nprint(f\"Threaded: {time.time() - start:.2f}s\")  # Same or slower!\n\n# Solution: multiprocessing (separate interpreter per process)\nfrom multiprocessing import Pool\n\nstart = time.time()\nwith Pool(2) as p:\n    p.map(cpu_bound, [10_000_000, 10_000_000])\nprint(f\"Multiprocess: {time.time() - start:.2f}s\")  # ~2x faster!\n```\n\n### Python Object Model\n\n```python\n# __slots__: Memory optimization for many instances\nclass PointRegular:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nclass PointSlots:\n    __slots__ = ['x', 'y']  # No __dict__, fixed attributes\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nimport sys\nregular = PointRegular(1, 2)\nslotted = PointSlots(1, 2)\n\nprint(sys.getsizeof(regular.__dict__))",
     "searchText": "python senior interview crash course [python internals you must know](#1-python-internals) 2. [data structures deep dive](#2-data-structures) 3. [complexity analysis refresher](#3-complexity-analysis) 4. def nums return int list class lst mid str print node range len cache pass list int int int nums nums def __init__ __init__ self self cache return self nums mid self self len nums"
-  },
-  {
-    "path": "weaves/inbox/typescript_crash_course.md",
-    "name": "typescript_crash_course.md",
-    "type": "file",
-    "metadata": {
-      "title": "TypeScript Crash Course",
-      "summary": "[Type System Fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [Type Guards & Narrowing](#3-type-guards-narrowing) 4.",
-      "difficulty": "advanced",
-      "tags": [
-        "typescript",
-        "v",
-        "rust",
-        "r",
-        "sql",
-        "string",
-        "type",
-        "number"
-      ],
-      "taxonomy": {
-        "topics": [
-          "tutorial",
-          "api-reference",
-          "architecture",
-          "best-practices"
-        ],
-        "subjects": [
-          "technology",
-          "artificial-intelligence"
-        ]
-      },
-      "source": {
-        "type": "manual",
-        "creator": "Anonymous Creator",
-        "creatorType": "session",
-        "createdAt": "2025-12-20T00:30:37.574Z",
-        "sessionId": "204f13d9-11b6-4c1c-97c4-76b50be079aa"
-      },
-      "autoGenerated": {
-        "keywords": [
-          "string",
-          "type",
-          "const",
-          "function",
-          "extends",
-          "types",
-          "typescript",
-          "void",
-          "interface",
-          "return",
-          "null",
-          "keyof",
-          "undefined",
-          "infer",
-          "age"
-        ],
-        "phrases": [
-          "string type",
-          "string string",
-          "console log",
-          "types type",
-          "value string",
-          "extends string",
-          "type type",
-          "string age",
-          "user string",
-          "types typescript"
-        ],
-        "subjects": [
-          "ai",
-          "design",
-          "knowledge",
-          "media",
-          "philosophy",
-          "science",
-          "security",
-          "technology",
-          "artificial-intelligence"
-        ],
-        "topics": [
-          "api-reference",
-          "architecture",
-          "best-practices",
-          "getting-started",
-          "troubleshooting",
-          "tutorial"
-        ],
-        "skills": [
-          "redux",
-          "zustand",
-          "rest",
-          "database",
-          "sql",
-          "test",
-          "promises",
-          "async",
-          "await",
-          "immutable",
-          "typescript",
-          "react",
-          "websockets",
-          "react-hooks",
-          "testing"
-        ],
-        "difficulty": "advanced",
-        "confidence": {
-          "ai": 0.10071942446043165,
-          "design": 0.27624309392265195,
-          "knowledge": 0.1891891891891892,
-          "media": 0.15671641791044777,
-          "philosophy": 0.15942028985507245,
-          "science": 0.0842911877394636,
-          "security": 0.1388888888888889,
-          "technology": 0.3108108108108108,
-          "api-reference": 0.4065040650406504,
-          "architecture": 0.13138686131386862,
-          "best-practices": 0.20967741935483872,
-          "getting-started": 0.1743119266055046,
-          "troubleshooting": 0.25,
-          "skill:redux": 0.6586538461538461,
-          "skill:zustand": 0.6586538461538461,
-          "skill:rest": 0.6586538461538461,
-          "skill:database": 0.6586538461538461,
-          "skill:sql": 0.6586538461538461,
-          "skill:test": 0.6586538461538461,
-          "skill:promises": 0.6586538461538461,
-          "skill:async": 0.6586538461538461,
-          "skill:await": 0.6586538461538461,
-          "skill:immutable": 0.6586538461538461,
-          "skill:pure": 0.6586538461538461,
-          "skill:function": 0.6586538461538461,
-          "skill:oop": 0.6586538461538461,
-          "skill:object": 0.6586538461538461,
-          "skill:class": 0.6586538461538461,
-          "skill:inheritance": 0.6586538461538461,
-          "skill:factory": 0.6586538461538461,
-          "skill:data": 0.6586538461538461,
-          "skill:http": 0.6586538461538461,
-          "skill:https": 0.6586538461538461,
-          "skill:ci": 0.6586538461538461,
-          "skill:cd": 0.6586538461538461,
-          "skill:databas": 0.6586538461538461,
-          "skill:migrat": 0.6586538461538461,
-          "skill:e2": 0.6586538461538461,
-          "skill:promis": 0.6586538461538461,
-          "skill:callback": 0.6586538461538461,
-          "skill:immut": 0.6586538461538461,
-          "skill:inherit": 0.6586538461538461,
-          "skill:search": 0.6586538461538461,
-          "skill:network": 0.6586538461538461,
-          "skill:dn": 0.6586538461538461,
-          "skill:tl": 0.6586538461538461,
-          "skill:react": 0.6071428571428571,
-          "skill:usestate": 0.6071428571428571,
-          "skill:app": 0.6071428571428571,
-          "skill:pages": 0.6071428571428571,
-          "skill:vue": 0.6071428571428571,
-          "skill:composition": 0.6071428571428571,
-          "skill:api": 0.6071428571428571,
-          "skill:express": 0.6071428571428571,
-          "skill:on": 0.6071428571428571,
-          "skill:usest": 0.6071428571428571,
-          "skill:page": 0.6071428571428571,
-          "skill:composit": 0.6071428571428571,
-          "skill:javascript": 0.6481481481481481,
-          "skill:js": 0.6481481481481481,
-          "skill:typescript": 0.6481481481481481,
-          "skill:ts": 0.6481481481481481,
-          "skill:tsc": 0.6481481481481481,
-          "skill:tsconfig": 0.6481481481481481,
-          "skill:type": 0.6481481481481481,
-          "skill:annotation": 0.6481481481481481,
-          "skill:generics": 0.6481481481481481,
-          "skill:rust": 0.6481481481481481,
-          "skill:go": 0.6481481481481481,
-          "skill:java": 0.6481481481481481,
-          "skill:asp": 0.6481481481481481,
-          "skill:bundler": 0.6481481481481481,
-          "skill:ios": 0.6481481481481481,
-          "skill:c": 0.6481481481481481,
-          "skill:html": 0.6481481481481481,
-          "skill:css": 0.6481481481481481,
-          "skill:less": 0.6481481481481481,
-          "skill:annot": 0.6481481481481481,
-          "skill:gener": 0.6481481481481481,
-          "skill:compos": 0.6481481481481481,
-          "skill:io": 0.6481481481481481,
-          "skill:management": 0.5414746543778802,
-          "skill:focus": 0.5414746543778802,
-          "skill:training": 0.5414746543778802,
-          "skill:eq": 0.5414746543778802,
-          "skill:present": 0.5414746543778802,
-          "skill:document": 0.5414746543778802,
-          "skill:listen": 0.5414746543778802,
-          "skill:narr": 0.5414746543778802,
-          "skill:manag": 0.5414746543778802,
-          "skill:mediat": 0.5414746543778802,
-          "skill:debug": 0.5414746543778802,
-          "skill:product": 0.5414746543778802,
-          "skill:focu": 0.5414746543778802,
-          "skill:learn": 0.5414746543778802,
-          "skill:flexibl": 0.5414746543778802,
-          "skill:iter": 0.5414746543778802,
-          "skill:train": 0.5414746543778802,
-          "skill:version": 0.5947368421052631,
-          "skill:merge": 0.5947368421052631,
-          "skill:container": 0.5947368421052631,
-          "skill:as": 0.5947368421052631,
-          "skill:code": 0.5947368421052631,
-          "skill:cache": 0.5947368421052631,
-          "skill:merg": 0.5947368421052631,
-          "skill:contain": 0.5947368421052631,
-          "skill:aw": 0.5947368421052631,
-          "skill:redi": 0.5947368421052631,
-          "skill:cach": 0.5947368421052631
-        },
-        "readingLevel": 0,
-        "readabilityScore": 0,
-        "statistics": {},
-        "entities": {
-          "people": [
-            "[\"Alice\",",
-            "\"Alice\",",
-            "\"Alice\",",
-            "\"Alice\",",
-            "\"Alice\",",
-            "\"Alice\");",
-            "\"Alice\");",
-            "Skip",
-            "<li",
-            "index)}</li>"
-          ],
-          "places": [
-            "Creating",
-            "ConstructorParameters<typeof Point>;",
-            "InstanceType<typeof Point>;",
-            "\"./dist\",",
-            "\"dist\"]"
-          ],
-          "organizations": [
-            "Mode & Compiler",
-            "Patterns & Anti-",
-            "AnimalType & {",
-            "Animal & {",
-            "API design",
-            "State management",
-            "K> & Partial<Pick<T,",
-            "HasId & HasName>(item:",
-            "Inference & Defaults",
-            "THISPARAMETERTYPE & OMITTHISPARAMETER"
-          ],
-          "topics": [
-            "string & {",
-            "string & {",
-            "\"lg\"",
-            "(AsProp<C> & P);",
-            "string & {",
-            "string & {",
-            "Patterns & Anti-",
-            "Mode & Compiler",
-            "With union",
-            "Filter union",
-            "type N =",
-            "number & string",
-            "Logger & ErrorHandler;",
-            "Named & Aged;",
-            "Intersection & Union"
-          ]
-        },
-        "lastIndexed": "2025-12-20T15:56:39.237Z"
-      }
-    },
-    "validation": {
-      "valid": true,
-      "errors": [],
-      "warnings": [],
-      "suggestions": [
-        "Add unique ID (UUID recommended)",
-        "Add version number (semver format)",
-        "Consider adding relationships (requires, references, seeAlso)",
-        "Key phrases found: string type, string string, console log"
-      ]
-    },
-    "content": "# TypeScript Crash Course\n## From Fundamentals to Senior-Level Mastery\n\n---\n\n## Table of Contents\n\n1. [Type System Fundamentals](#1-type-system-fundamentals)\n2. [any vs unknown vs never vs void](#2-any-unknown-never-void)\n3. [Type Guards & Narrowing](#3-type-guards-narrowing)\n4. [Interfaces vs Types](#4-interfaces-vs-types)\n5. [Generics Deep Dive](#5-generics)\n6. [Utility Types Mastery](#6-utility-types)\n7. [Advanced Types](#7-advanced-types)\n8. [Conditional Types](#8-conditional-types)\n9. [Mapped Types](#9-mapped-types)\n10. [Template Literal Types](#10-template-literal-types)\n11. [Declaration Merging & Module Augmentation](#11-declaration-merging)\n12. [Strict Mode & Compiler Options](#12-strict-mode)\n13. [Common Patterns & Anti-Patterns](#13-patterns)\n14. [Real-World Scenarios](#14-real-world)\n15. [Interview Questions & Answers](#15-interview-questions)\n\n---\n\n## 1. Type System Fundamentals {#1-type-system-fundamentals}\n\n### Primitive Types\n\n```typescript\n// Basic primitives\nlet str: string = \"hello\";\nlet num: number = 42;\nlet bool: boolean = true;\nlet big: bigint = 100n;\nlet sym: symbol = Symbol(\"id\");\n\n// null and undefined (different in strict mode!)\nlet n: null = null;\nlet u: undefined = undefined;\n\n// Arrays\nlet nums: number[] = [1, 2, 3];\nlet strs: Array<string> = [\"a\", \"b\", \"c\"];  // Generic syntax\n\n// Tuples (fixed-length arrays with specific types)\nlet tuple: [string, number] = [\"hello\", 42];\nlet namedTuple: [name: string, age: number] = [\"Alice\", 30];\n\n// Tuple with rest elements\nlet mixedTuple: [string, ...number[]] = [\"hello\", 1, 2, 3];\n\n// readonly tuple\nlet readonlyTuple: readonly [string, number] = [\"hello\", 42];\n// readonlyTuple[0] = \"world\"; // Error!\n```\n\n### Object Types\n\n```typescript\n// Object type annotation\nlet person: { name: string; age: number } = {\n  name: \"Alice\",\n  age: 30\n};\n\n// Optional properties\nlet config: { host: string; port?: number } = {\n  host: \"localhost\"\n  // port is optional\n};\n\n// Readonly properties\nlet point: { readonly x: number; readonly y: number } = {\n  x: 10,\n  y: 20\n};\n// point.x = 5; // Error!\n\n// Index signatures\nlet dictionary: { [key: string]: number } = {\n  apple: 1,\n  banana: 2\n};\n\n// Index signature with specific keys\ninterface StringMap {\n  [key: string]: string;\n  length: number; // Error! Must be string (compatible with index)\n}\n\n// Mixed index signatures\ninterface MixedMap {\n  [key: string]: string | number;\n  length: number;  // OK - number is compatible\n  name: string;    // OK - string is compatible\n}\n```\n\n### Function Types\n\n```typescript\n// Function type annotation\nlet add: (a: number, b: number) => number;\nadd = (x, y) => x + y;  // Parameters inferred from type\n\n// Function declaration with types\nfunction greet(name: string, greeting?: string): string {\n  return `${greeting ?? \"Hello\"}, ${name}!`;\n}\n\n// Default parameters\nfunction createUser(name: string, age: number = 18): User {\n  return { name, age };\n}\n\n// Rest parameters\nfunction sum(...numbers: number[]): number {\n  return numbers.reduce((a, b) => a + b, 0);\n}\n\n// Function overloads\nfunction parse(input: string): string[];\nfunction parse(input: string, limit: number): string[];\nfunction parse(input: string, limit?: number): string[] {\n  // Implementation\n  return limit ? input.split(\",\", limit) : input.split(\",\");\n}\n\n// Call signatures (for objects that are callable)\ninterface ClickHandler {\n  (event: MouseEvent): void;\n  description: string;\n}\n\n// Construct signatures\ninterface DateConstructor {\n  new (value: number): Date;\n  (value: number): string;  // Can also be called without new\n}\n\n// this parameter (explicit this type)\ninterface Button {\n  label: string;\n  onClick(this: Button): void;\n}\n\nconst button: Button = {\n  label: \"Submit\",\n  onClick() {\n    console.log(this.label);  // 'this' is typed as Button\n  }\n};\n```\n\n### Literal Types\n\n```typescript\n// String literals\nlet direction: \"north\" | \"south\" | \"east\" | \"west\";\ndirection = \"north\";  // OK\n// direction = \"up\";  // Error!\n\n// Numeric literals\nlet diceRoll: 1 | 2 | 3 | 4 | 5 | 6;\n\n// Boolean literal (rarely used directly)\nlet trueOnly: true = true;\n\n// const assertions (infer most specific type)\nconst config = {\n  endpoint: \"/api\",\n  method: \"GET\"\n} as const;\n// Type: { readonly endpoint: \"/api\"; readonly method: \"GET\" }\n\n// Without as const:\nconst configMutable = {\n  endpoint: \"/api\",\n  method: \"GET\"\n};\n// Type: { endpoint: string; method: string }\n\n// Array as const\nconst colors = [\"red\", \"green\", \"blue\"] as const;\n// Type: readonly [\"red\", \"green\", \"blue\"]\ntype Color = typeof colors[number];  // \"red\" | \"green\" | \"blue\"\n```\n\n---\n\n## 2. any vs unknown vs never vs void {#2-any-unknown-never-void}\n\n### The Type Hierarchy\n\n```\n                    unknown (top type - all types assignable to it)\n                        │\n         ┌──────────────┼──────────────┐\n         │              │              │\n      string         number        object    ... (all other types)\n         │              │              │\n         └─────────",
-    "searchText": "typescript crash course [type system fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [type guards & narrowing](#3-type-guards-narrowing) 4. string type const function extends types typescript void interface return null keyof undefined infer age string type string string console log types type value string extends string type type string age user string types typescript"
   },
   {
     "path": "weaves/knowledge/ai-ml/llm-rag-evaluation.md",
@@ -1615,8 +1330,8 @@
           "eval",
           "benchmark",
           "regression",
-          "llm",
           "leaderboard",
+          "llm",
           "judge",
           "metrics",
           "test",
@@ -1835,7 +1550,7 @@
             "RAG systems"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:44.725Z"
+        "lastIndexed": "2025-12-20T16:38:15.421Z"
       }
     },
     "validation": {
@@ -1850,7 +1565,292 @@
       ]
     },
     "content": "# EVALS.md — LLM & RAG Evaluation Playbook\n\nA practical, research-grounded guide to model selection, regression testing, and production-grade evaluation.\n\n---\n\n## Table of Contents\n\n1. [Goals & Philosophy](#1-goals--philosophy)\n2. [Understanding Leaderboards](#2-understanding-leaderboards)\n3. [Public Benchmarks Reference](#3-public-benchmarks-reference)\n4. [Evaluation Frameworks & Tooling](#4-evaluation-frameworks--tooling)\n5. [Evaluation Design (What to Actually Do)](#5-evaluation-design-what-to-actually-do)\n6. [Repo Structure & Test Case Schema](#6-repo-structure--test-case-schema)\n7. [Metrics & Grading Strategy](#7-metrics--grading-strategy)\n8. [CI/CD Policy & Release Gates](#8-cicd-policy--release-gates)\n9. [RAG-Specific Evaluation](#9-rag-specific-evaluation)\n10. [Tool Use & Agent Evaluation](#10-tool-use--agent-evaluation)\n11. [Production Observability](#11-production-observability)\n12. [Security & Adversarial Testing](#12-security--adversarial-testing)\n13. [Quick-Start Blueprint](#13-quick-start-blueprint)\n14. [References](#14-references)\n\n---\n\n## 1. Goals & Philosophy\n\n### Goals\n\n- **Catch regressions** before they reach users (prompt/chain/model changes)\n- **Compare models/providers** using a consistent harness and versioned datasets\n- **Measure product KPIs** that correlate with user success—not just benchmark scores\n- **Produce decision-ready reports** covering quality, latency, cost, safety, and reliability\n\n### Non-Goals\n\n- \"Win\" public leaderboards at the expense of product requirements\n- Rely on a single metric or judge model for high-stakes decisions\n- Treat leaderboards as ground truth rather than screening signals\n\n### Core Principle\n\n> **Public leaderboards shortlist; your internal eval suite selects.**\n\nLeaderboards help narrow candidates quickly, but they rarely match your product's distributions, constraints, failure costs, or toolchain [[1]](#ref-1). A recurring failure mode is *Goodharting*: once a metric becomes the target, it loses value as measurement—especially when models optimize for narrow benchmarks [[2]](#ref-2).\n\n---\n\n## 2. Understanding Leaderboards\n\n### Interpretation Checklist\n\nBefore trusting any leaderboard, verify:\n\n| Question | Why It Matters |\n|----------|----------------|\n| **Task distribution?** | Chatty assistants ≠ domain QA ≠ extraction ≠ tool-use [[1]](#ref-1) |\n| **Scoring protocol?** | Pairwise preference, exact match, rubric, LLM-judge, human labelers [[3]](#ref-3) |\n| **Prompts/formatting?** | Small formatting changes can shift results significantly [[4]](#ref-4) |\n| **Known biases?** | Verbosity bias, position bias, contamination, data leakage [[3]](#ref-3)[[5]](#ref-5) |\n| **Uncertainty published?** | Confidence intervals matter for meaningful rankings [[6]](#ref-6) |\n\n### Common Pitfalls\n\n- **Position bias**: Models prefer answers in certain positions (first/last)\n- **Verbosity bias**: Longer responses often score higher regardless of quality\n- **Self-enhancement bias**: LLM judges favor outputs from similar models\n- **Contamination**: Test data leaked into training sets\n- **Style gaming**: Models tuned to match evaluator preferences rather than actual quality\n\nSee \"The Leaderboard Illusion\" [[2]](#ref-2) for systematic analysis of these issues.\n\n---\n\n## 3. Public Benchmarks Reference\n\nUse these for **screening candidates**—then validate on your own task suite.\n\n### A. Human Preference & Chat Quality\n\n**Use when:** You care about helpfulness, writing quality, and conversational coherence.\n\n| Benchmark | Description | Key Caveat |\n|-----------|-------------|------------|\n| **Chatbot Arena** [[7]](#ref-7) | Crowd-sourced pairwise battles → Elo/Bradley-Terry rankings | Sensitive to style; can be gamed |\n| **MT-Bench** [[3]](#ref-3) | Multi-turn questions + LLM-as-a-judge methodology | Documents judge biases and mitigations |\n| **Arena-Hard** [[8]](#ref-8) | Harder subset derived from live arena data | Better signal but smaller sample |\n\n### B. Instruction Following\n\n**Use when:** You need quick win-rate signals for general instruction-following.\n\n| Benchmark | Description | Key Caveat |\n|-----------|-------------|------------|\n| **AlpacaEval 2.0** [[9]](#ref-9)[[10]](#ref-10) | Automated pairwise eval with length-controlled variants | LLM-judge can inherit biases |\n\n### C. Multi-Metric Transparency\n\n**Use when:** You want breadth across scenarios (accuracy, robustness, fairness, calibration, efficiency).\n\n| Benchmark | Description |\n|-----------|-------------|\n| **HELM** [[11]](#ref-11)[[12]](#ref-12) | Stanford CRFM taxonomy of scenarios + metrics; useful as a benchmarking mindset |\n\n### D. Open-Model Standard Benchmarks\n\n**Use when:** Comparing open-weights or self-hosted models on academic benchmarks.\n\n| Resource | Description | Key Caveat |\n|----------|-------------|------------|\n| **HF Open LLM Leaderboard** [[4]](#ref-4)[[13]](#ref-13) | Fixed benchmark suite via EleutherAI harness | Scores can differ from papers due to prompts/versions |\n| **Eleuthe",
-    "searchText": "evals.md — llm & rag evaluation playbook md — llm & rag evaluation playbook\na practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## table of contents\n1. ref evaluation evals eval benchmark regression llm leaderboard judge metrics test golden openai arxiv tool ref ref rag evaluation benchmark description swe bench arxiv ref llm judge phoenix ref tracing evaluation github https https github"
+    "searchText": "evals.md — llm & rag evaluation playbook md — llm & rag evaluation playbook\na practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## table of contents\n1. ref evaluation evals eval benchmark regression leaderboard llm judge metrics test golden openai arxiv tool ref ref rag evaluation benchmark description swe bench arxiv ref llm judge phoenix ref tracing evaluation github https https github"
+  },
+  {
+    "path": "weaves/knowledge/programming/typescript_crash_course.md",
+    "name": "typescript_crash_course.md",
+    "type": "file",
+    "metadata": {
+      "title": "TypeScript Crash Course",
+      "summary": "[Type System Fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [Type Guards & Narrowing](#3-type-guards-narrowing) 4.",
+      "difficulty": "advanced",
+      "tags": [
+        "typescript",
+        "v",
+        "rust",
+        "r",
+        "sql",
+        "string",
+        "type",
+        "number"
+      ],
+      "taxonomy": {
+        "topics": [
+          "tutorial",
+          "api-reference",
+          "architecture",
+          "best-practices"
+        ],
+        "subjects": [
+          "technology",
+          "artificial-intelligence"
+        ]
+      },
+      "source": {
+        "type": "manual",
+        "creator": "Anonymous Creator",
+        "creatorType": "session",
+        "createdAt": "2025-12-20T00:30:37.574Z",
+        "sessionId": "204f13d9-11b6-4c1c-97c4-76b50be079aa"
+      },
+      "autoGenerated": {
+        "keywords": [
+          "string",
+          "type",
+          "const",
+          "function",
+          "extends",
+          "typescript",
+          "void",
+          "interface",
+          "return",
+          "null",
+          "keyof",
+          "types",
+          "undefined",
+          "infer",
+          "age"
+        ],
+        "phrases": [
+          "string type",
+          "string string",
+          "console log",
+          "types type",
+          "value string",
+          "extends string",
+          "type type",
+          "string age",
+          "user string",
+          "types typescript"
+        ],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology",
+          "artificial-intelligence"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting",
+          "tutorial"
+        ],
+        "skills": [
+          "redux",
+          "zustand",
+          "rest",
+          "database",
+          "sql",
+          "test",
+          "promises",
+          "async",
+          "await",
+          "immutable",
+          "typescript",
+          "react",
+          "websockets",
+          "react-hooks",
+          "testing"
+        ],
+        "difficulty": "advanced",
+        "confidence": {
+          "ai": 0.10071942446043165,
+          "design": 0.27624309392265195,
+          "knowledge": 0.1891891891891892,
+          "media": 0.15671641791044777,
+          "philosophy": 0.15942028985507245,
+          "science": 0.0842911877394636,
+          "security": 0.1388888888888889,
+          "technology": 0.3108108108108108,
+          "api-reference": 0.4065040650406504,
+          "architecture": 0.13138686131386862,
+          "best-practices": 0.20967741935483872,
+          "getting-started": 0.1743119266055046,
+          "troubleshooting": 0.25,
+          "skill:redux": 0.6586538461538461,
+          "skill:zustand": 0.6586538461538461,
+          "skill:rest": 0.6586538461538461,
+          "skill:database": 0.6586538461538461,
+          "skill:sql": 0.6586538461538461,
+          "skill:test": 0.6586538461538461,
+          "skill:promises": 0.6586538461538461,
+          "skill:async": 0.6586538461538461,
+          "skill:await": 0.6586538461538461,
+          "skill:immutable": 0.6586538461538461,
+          "skill:pure": 0.6586538461538461,
+          "skill:function": 0.6586538461538461,
+          "skill:oop": 0.6586538461538461,
+          "skill:object": 0.6586538461538461,
+          "skill:class": 0.6586538461538461,
+          "skill:inheritance": 0.6586538461538461,
+          "skill:factory": 0.6586538461538461,
+          "skill:data": 0.6586538461538461,
+          "skill:http": 0.6586538461538461,
+          "skill:https": 0.6586538461538461,
+          "skill:ci": 0.6586538461538461,
+          "skill:cd": 0.6586538461538461,
+          "skill:databas": 0.6586538461538461,
+          "skill:migrat": 0.6586538461538461,
+          "skill:e2": 0.6586538461538461,
+          "skill:promis": 0.6586538461538461,
+          "skill:callback": 0.6586538461538461,
+          "skill:immut": 0.6586538461538461,
+          "skill:inherit": 0.6586538461538461,
+          "skill:search": 0.6586538461538461,
+          "skill:network": 0.6586538461538461,
+          "skill:dn": 0.6586538461538461,
+          "skill:tl": 0.6586538461538461,
+          "skill:react": 0.6071428571428571,
+          "skill:usestate": 0.6071428571428571,
+          "skill:app": 0.6071428571428571,
+          "skill:pages": 0.6071428571428571,
+          "skill:vue": 0.6071428571428571,
+          "skill:composition": 0.6071428571428571,
+          "skill:api": 0.6071428571428571,
+          "skill:express": 0.6071428571428571,
+          "skill:on": 0.6071428571428571,
+          "skill:usest": 0.6071428571428571,
+          "skill:page": 0.6071428571428571,
+          "skill:composit": 0.6071428571428571,
+          "skill:javascript": 0.6481481481481481,
+          "skill:js": 0.6481481481481481,
+          "skill:typescript": 0.6481481481481481,
+          "skill:ts": 0.6481481481481481,
+          "skill:tsc": 0.6481481481481481,
+          "skill:tsconfig": 0.6481481481481481,
+          "skill:type": 0.6481481481481481,
+          "skill:annotation": 0.6481481481481481,
+          "skill:generics": 0.6481481481481481,
+          "skill:rust": 0.6481481481481481,
+          "skill:go": 0.6481481481481481,
+          "skill:java": 0.6481481481481481,
+          "skill:asp": 0.6481481481481481,
+          "skill:bundler": 0.6481481481481481,
+          "skill:ios": 0.6481481481481481,
+          "skill:c": 0.6481481481481481,
+          "skill:html": 0.6481481481481481,
+          "skill:css": 0.6481481481481481,
+          "skill:less": 0.6481481481481481,
+          "skill:annot": 0.6481481481481481,
+          "skill:gener": 0.6481481481481481,
+          "skill:compos": 0.6481481481481481,
+          "skill:io": 0.6481481481481481,
+          "skill:management": 0.5414746543778802,
+          "skill:focus": 0.5414746543778802,
+          "skill:training": 0.5414746543778802,
+          "skill:eq": 0.5414746543778802,
+          "skill:present": 0.5414746543778802,
+          "skill:document": 0.5414746543778802,
+          "skill:listen": 0.5414746543778802,
+          "skill:narr": 0.5414746543778802,
+          "skill:manag": 0.5414746543778802,
+          "skill:mediat": 0.5414746543778802,
+          "skill:debug": 0.5414746543778802,
+          "skill:product": 0.5414746543778802,
+          "skill:focu": 0.5414746543778802,
+          "skill:learn": 0.5414746543778802,
+          "skill:flexibl": 0.5414746543778802,
+          "skill:iter": 0.5414746543778802,
+          "skill:train": 0.5414746543778802,
+          "skill:version": 0.5947368421052631,
+          "skill:merge": 0.5947368421052631,
+          "skill:container": 0.5947368421052631,
+          "skill:as": 0.5947368421052631,
+          "skill:code": 0.5947368421052631,
+          "skill:cache": 0.5947368421052631,
+          "skill:merg": 0.5947368421052631,
+          "skill:contain": 0.5947368421052631,
+          "skill:aw": 0.5947368421052631,
+          "skill:redi": 0.5947368421052631,
+          "skill:cach": 0.5947368421052631
+        },
+        "readingLevel": 0,
+        "readabilityScore": 0,
+        "statistics": {},
+        "entities": {
+          "people": [
+            "[\"Alice\",",
+            "\"Alice\",",
+            "\"Alice\",",
+            "\"Alice\",",
+            "\"Alice\",",
+            "\"Alice\");",
+            "\"Alice\");",
+            "Skip",
+            "<li",
+            "index)}</li>"
+          ],
+          "places": [
+            "Creating",
+            "ConstructorParameters<typeof Point>;",
+            "InstanceType<typeof Point>;",
+            "\"./dist\",",
+            "\"dist\"]"
+          ],
+          "organizations": [
+            "Mode & Compiler",
+            "Patterns & Anti-",
+            "AnimalType & {",
+            "Animal & {",
+            "API design",
+            "State management",
+            "K> & Partial<Pick<T,",
+            "HasId & HasName>(item:",
+            "Inference & Defaults",
+            "THISPARAMETERTYPE & OMITTHISPARAMETER"
+          ],
+          "topics": [
+            "string & {",
+            "string & {",
+            "\"lg\"",
+            "(AsProp<C> & P);",
+            "string & {",
+            "string & {",
+            "Patterns & Anti-",
+            "Mode & Compiler",
+            "With union",
+            "Filter union",
+            "type N =",
+            "number & string",
+            "Logger & ErrorHandler;",
+            "Named & Aged;",
+            "Intersection & Union"
+          ]
+        },
+        "lastIndexed": "2025-12-20T16:38:23.938Z"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "suggestions": [
+        "Add unique ID (UUID recommended)",
+        "Add version number (semver format)",
+        "Consider adding relationships (requires, references, seeAlso)",
+        "Key phrases found: string type, string string, console log"
+      ]
+    },
+    "content": "# TypeScript Crash Course\n## From Fundamentals to Senior-Level Mastery\n\n---\n\n## Table of Contents\n\n1. [Type System Fundamentals](#1-type-system-fundamentals)\n2. [any vs unknown vs never vs void](#2-any-unknown-never-void)\n3. [Type Guards & Narrowing](#3-type-guards-narrowing)\n4. [Interfaces vs Types](#4-interfaces-vs-types)\n5. [Generics Deep Dive](#5-generics)\n6. [Utility Types Mastery](#6-utility-types)\n7. [Advanced Types](#7-advanced-types)\n8. [Conditional Types](#8-conditional-types)\n9. [Mapped Types](#9-mapped-types)\n10. [Template Literal Types](#10-template-literal-types)\n11. [Declaration Merging & Module Augmentation](#11-declaration-merging)\n12. [Strict Mode & Compiler Options](#12-strict-mode)\n13. [Common Patterns & Anti-Patterns](#13-patterns)\n14. [Real-World Scenarios](#14-real-world)\n15. [Interview Questions & Answers](#15-interview-questions)\n\n---\n\n## 1. Type System Fundamentals {#1-type-system-fundamentals}\n\n### Primitive Types\n\n```typescript\n// Basic primitives\nlet str: string = \"hello\";\nlet num: number = 42;\nlet bool: boolean = true;\nlet big: bigint = 100n;\nlet sym: symbol = Symbol(\"id\");\n\n// null and undefined (different in strict mode!)\nlet n: null = null;\nlet u: undefined = undefined;\n\n// Arrays\nlet nums: number[] = [1, 2, 3];\nlet strs: Array<string> = [\"a\", \"b\", \"c\"];  // Generic syntax\n\n// Tuples (fixed-length arrays with specific types)\nlet tuple: [string, number] = [\"hello\", 42];\nlet namedTuple: [name: string, age: number] = [\"Alice\", 30];\n\n// Tuple with rest elements\nlet mixedTuple: [string, ...number[]] = [\"hello\", 1, 2, 3];\n\n// readonly tuple\nlet readonlyTuple: readonly [string, number] = [\"hello\", 42];\n// readonlyTuple[0] = \"world\"; // Error!\n```\n\n### Object Types\n\n```typescript\n// Object type annotation\nlet person: { name: string; age: number } = {\n  name: \"Alice\",\n  age: 30\n};\n\n// Optional properties\nlet config: { host: string; port?: number } = {\n  host: \"localhost\"\n  // port is optional\n};\n\n// Readonly properties\nlet point: { readonly x: number; readonly y: number } = {\n  x: 10,\n  y: 20\n};\n// point.x = 5; // Error!\n\n// Index signatures\nlet dictionary: { [key: string]: number } = {\n  apple: 1,\n  banana: 2\n};\n\n// Index signature with specific keys\ninterface StringMap {\n  [key: string]: string;\n  length: number; // Error! Must be string (compatible with index)\n}\n\n// Mixed index signatures\ninterface MixedMap {\n  [key: string]: string | number;\n  length: number;  // OK - number is compatible\n  name: string;    // OK - string is compatible\n}\n```\n\n### Function Types\n\n```typescript\n// Function type annotation\nlet add: (a: number, b: number) => number;\nadd = (x, y) => x + y;  // Parameters inferred from type\n\n// Function declaration with types\nfunction greet(name: string, greeting?: string): string {\n  return `${greeting ?? \"Hello\"}, ${name}!`;\n}\n\n// Default parameters\nfunction createUser(name: string, age: number = 18): User {\n  return { name, age };\n}\n\n// Rest parameters\nfunction sum(...numbers: number[]): number {\n  return numbers.reduce((a, b) => a + b, 0);\n}\n\n// Function overloads\nfunction parse(input: string): string[];\nfunction parse(input: string, limit: number): string[];\nfunction parse(input: string, limit?: number): string[] {\n  // Implementation\n  return limit ? input.split(\",\", limit) : input.split(\",\");\n}\n\n// Call signatures (for objects that are callable)\ninterface ClickHandler {\n  (event: MouseEvent): void;\n  description: string;\n}\n\n// Construct signatures\ninterface DateConstructor {\n  new (value: number): Date;\n  (value: number): string;  // Can also be called without new\n}\n\n// this parameter (explicit this type)\ninterface Button {\n  label: string;\n  onClick(this: Button): void;\n}\n\nconst button: Button = {\n  label: \"Submit\",\n  onClick() {\n    console.log(this.label);  // 'this' is typed as Button\n  }\n};\n```\n\n### Literal Types\n\n```typescript\n// String literals\nlet direction: \"north\" | \"south\" | \"east\" | \"west\";\ndirection = \"north\";  // OK\n// direction = \"up\";  // Error!\n\n// Numeric literals\nlet diceRoll: 1 | 2 | 3 | 4 | 5 | 6;\n\n// Boolean literal (rarely used directly)\nlet trueOnly: true = true;\n\n// const assertions (infer most specific type)\nconst config = {\n  endpoint: \"/api\",\n  method: \"GET\"\n} as const;\n// Type: { readonly endpoint: \"/api\"; readonly method: \"GET\" }\n\n// Without as const:\nconst configMutable = {\n  endpoint: \"/api\",\n  method: \"GET\"\n};\n// Type: { endpoint: string; method: string }\n\n// Array as const\nconst colors = [\"red\", \"green\", \"blue\"] as const;\n// Type: readonly [\"red\", \"green\", \"blue\"]\ntype Color = typeof colors[number];  // \"red\" | \"green\" | \"blue\"\n```\n\n---\n\n## 2. any vs unknown vs never vs void {#2-any-unknown-never-void}\n\n### The Type Hierarchy\n\n```\n                    unknown (top type - all types assignable to it)\n                        │\n         ┌──────────────┼──────────────┐\n         │              │              │\n      string         number        object    ... (all other types)\n         │              │              │\n         └─────────",
+    "searchText": "typescript crash course [type system fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [type guards & narrowing](#3-type-guards-narrowing) 4. string type const function extends typescript void interface return null keyof types undefined infer age string type string string console log types type value string extends string type type string age user string types typescript"
   },
   {
     "path": "weaves/wiki/architecture/overview.md",
@@ -2045,7 +2045,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:46.700Z"
+        "lastIndexed": "2025-12-20T16:38:25.961Z"
       }
     },
     "validation": {
@@ -2238,7 +2238,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:49.697Z"
+        "lastIndexed": "2025-12-20T16:38:28.983Z"
       }
     },
     "validation": {
@@ -2385,7 +2385,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:50.518Z"
+        "lastIndexed": "2025-12-20T16:38:29.797Z"
       }
     },
     "validation": {
@@ -2564,7 +2564,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:52.891Z"
+        "lastIndexed": "2025-12-20T16:38:32.171Z"
       }
     },
     "validation": {
@@ -2765,7 +2765,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:55.482Z"
+        "lastIndexed": "2025-12-20T16:38:34.788Z"
       }
     },
     "validation": {
@@ -2980,7 +2980,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-12-20T15:56:58.703Z"
+        "lastIndexed": "2025-12-20T16:38:37.976Z"
       }
     },
     "validation": {
@@ -3142,7 +3142,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T15:56:59.124Z"
+        "lastIndexed": "2025-12-20T16:38:38.452Z"
       }
     },
     "validation": {
@@ -3325,7 +3325,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T15:56:59.422Z"
+        "lastIndexed": "2025-12-20T16:38:39.326Z"
       }
     },
     "validation": {
@@ -3633,7 +3633,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:00.191Z"
+        "lastIndexed": "2025-12-20T16:38:40.182Z"
       }
     },
     "validation": {
@@ -3780,7 +3780,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T15:57:00.401Z"
+        "lastIndexed": "2025-12-20T16:38:40.384Z"
       }
     },
     "validation": {
@@ -4010,7 +4010,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:02.895Z"
+        "lastIndexed": "2025-12-20T16:38:42.840Z"
       }
     },
     "validation": {
@@ -4243,7 +4243,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:08.714Z"
+        "lastIndexed": "2025-12-20T16:38:48.555Z"
       }
     },
     "validation": {
@@ -4439,7 +4439,7 @@
             "clay |"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:11.637Z"
+        "lastIndexed": "2025-12-20T16:38:51.445Z"
       }
     },
     "validation": {
@@ -4646,7 +4646,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:14.581Z"
+        "lastIndexed": "2025-12-20T16:38:54.419Z"
       }
     },
     "validation": {
@@ -4875,7 +4875,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:19.202Z"
+        "lastIndexed": "2025-12-20T16:38:58.968Z"
       }
     },
     "validation": {
@@ -5124,7 +5124,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:25.126Z"
+        "lastIndexed": "2025-12-20T16:39:04.838Z"
       }
     },
     "validation": {
@@ -5361,7 +5361,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:29.109Z"
+        "lastIndexed": "2025-12-20T16:39:08.754Z"
       }
     },
     "validation": {
@@ -5602,7 +5602,7 @@
             "[Skills & Spiral"
           ]
         },
-        "lastIndexed": "2025-12-20T15:57:32.989Z"
+        "lastIndexed": "2025-12-20T16:39:12.604Z"
       }
     },
     "validation": {
