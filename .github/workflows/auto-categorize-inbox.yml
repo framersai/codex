@@ -94,10 +94,13 @@ jobs:
             echo "📁 Processing: $file"
             
             # Run categorization with LLM-first approach
-            node scripts/categorize-strand.js "$file" > ".categorization-results/$(basename "$file" .md).json" 2>&1 || {
+            result_file=".categorization-results/$(basename "$file" .md).json"
+            if node scripts/categorize-strand.js "$file" > "$result_file" 2>/dev/null; then
+              echo "✓ Categorized $file"
+            else
               echo "❌ Categorization failed for $file"
-              echo '{"action":"error","error":"Categorization script failed"}' > ".categorization-results/$(basename "$file" .md).json"
-            }
+              echo '{"action":"error","error":"Categorization script failed"}' > "$result_file"
+            fi
           done
 
       - name: Process categorization results

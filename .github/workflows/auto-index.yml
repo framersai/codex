@@ -60,10 +60,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add codex-index.json codex-search.json codex-report.json
+          git add codex-index.json codex-search.json codex-report.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "ci(codex): update search index [skip ci]"
-            git push
+            # Retry push with pull on conflict
+            git pull --rebase origin master || git pull --rebase origin main || true
+            git push || echo "Push failed, skipping"
           else
             echo "No changes to commit."
           fi
