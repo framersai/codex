@@ -269,7 +269,7 @@ function categorizeWithStatic(content, metadata, filePath) {
   });
   
   return {
-    action: confidence >= 0.8 ? 'auto-move' : 'suggest',
+    action: confidence >= 0.7 ? 'auto-move' : 'suggest',
     method: 'static-nlp',
     suggestion: {
       path: targetPath,

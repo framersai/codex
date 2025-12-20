@@ -159,8 +159,8 @@ jobs:
               
               pr_number=$(echo "$pr_url" | grep -oP 'pull/\K[0-9]+' || gh pr list --head "$branch_name" --json number -q '.[0].number')
               
-              # Auto-merge if confidence >= 80%
-              if [ "$confidence_pct" -ge 80 ] && [ -n "$pr_number" ]; then
+              # Auto-merge if confidence >= 70%
+              if [ "$confidence_pct" -ge 70 ] && [ -n "$pr_number" ]; then
                 echo "✅ Auto-merging PR #$pr_number (confidence: ${confidence_pct}%)"
                 gh pr merge "$pr_number" --auto --squash --delete-branch
               else
