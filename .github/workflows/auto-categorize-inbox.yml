@@ -142,36 +142,16 @@ jobs:
               git mv "$file" "$suggested_path"
               
               # Commit
-              git commit -m "feat(categorize): Auto-categorize $(basename "$file") → $suggested_path
+              git commit -m "feat(categorize): Auto-categorize $(basename "$file") [${confidence_pct}%]"
 
-Confidence: ${confidence_pct}%
-Method: $method
-Reasoning: $reasoning
-
-Auto-categorized by intelligent workflow with LLM analysis."
-              
               # Push
               git push -u origin "$branch_name"
-              
+
               # Create PR
+              pr_body="## Auto-Categorization\n\n**Source:** \`$file\`\n**Destination:** \`$suggested_path\`\n**Confidence:** ${confidence_pct}%\n**Method:** $method\n\n**Reasoning:** $reasoning"
               pr_url=$(gh pr create \
                 --title "🤖 Auto-categorize: $filename → $suggested_path" \
-                --body "## Intelligent Auto-Categorization
-
-**Source:** \`$file\`
-**Destination:** \`$suggested_path\`
-**Confidence:** ${confidence_pct}%
-**Method:** $method (${method/llm/🧠 LLM-powered}${method/static/📊 Static NLP})
-
-### 🔍 Reasoning
-$reasoning
-
-### 📝 Analysis Details
-$(jq -r '.suggestion.details // "N/A"' "$result_file")
-
----
-*Auto-categorized with ${confidence_pct}% confidence using intelligent workflow.*
-*Threshold for auto-merge: ≥80%*" \
+                --body "$(echo -e "$pr_body")" \
                 --label "auto-categorized,bot" \
                 --base master 2>&1)
               
@@ -189,52 +169,19 @@ $(jq -r '.suggestion.details // "N/A"' "$result_file")
               
             elif [ "$action" == "suggest" ]; then
               echo "💡 Creating suggestion issue for $file (${confidence_pct}% confidence)"
-              
-              alternatives=$(jq -r '.suggestion.alternatives // [] | map("- **\(.path)** (\(.confidence * 100 | floor)%): \(.reasoning)") | join("\n")' "$result_file")
-              
+              issue_body="## Categorization Suggestion\n\n**File:** \`$file\`\n**Suggested Path:** \`$suggested_path\`\n**Confidence:** ${confidence_pct}%\n**Method:** $method\n\n**Reasoning:** $reasoning"
               gh issue create \
                 --title "📂 Categorization suggestion: $filename" \
-                --body "## Categorization Suggestion
-
-**File:** \`$file\`
-**Suggested Path:** \`$suggested_path\`
-**Confidence:** ${confidence_pct}%
-**Method:** $method
-
-### 🔍 Reasoning
-$reasoning
-
-### 🔀 Alternative Suggestions
-$alternatives
-
-### ✅ Action Required
-Please review and manually move this file, or comment \`/approve\` to auto-merge.
-
----
-*Confidence below auto-move threshold (80%). Manual review required.*" \
+                --body "$(echo -e "$issue_body")" \
                 --label "needs-triage,categorization"
-                
+
             else
               echo "⚠️  Manual triage needed for $file"
-              
+              error_msg=$(jq -r '.error // .suggestion.reasoning // "Could not determine appropriate category"' "$result_file")
+              issue_body="## Manual Triage Required\n\n**File:** \`$file\`\n**Method:** $method\n\n**Issue:** $error_msg"
               gh issue create \
                 --title "🔍 Manual triage needed: $filename" \
-                --body "## Manual Triage Required
-
-**File:** \`$file\`
-**Analysis Method:** $method
-
-### Issue
-$(jq -r '.error // .suggestion.reasoning // "Could not determine appropriate category"' "$result_file")
-
-### Suggested Action
-Please review the content and manually categorize to:
-- \`weaves/knowledge/\` - General knowledge (CS, AI, math, science)
-- \`weaves/wiki/\` - Frame-specific documentation
-- \`weaves/frame/\` - Frame product/project content
-
----
-*Auto-categorization could not determine a suitable category with sufficient confidence.*" \
+                --body "$(echo -e "$issue_body")" \
                 --label "needs-triage,manual-review"
             fi
           done

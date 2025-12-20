@@ -95,54 +95,40 @@ jobs:
             }
             
             // Build review comments
-            const comments = report.suggestions.map(suggestion => ({
-              path: suggestion.file,
-              line: suggestion.line || 1,
-              body: `🤖 **AI Suggestion:** ${suggestion.message}
-              
-${suggestion.details ? `\n${suggestion.details}\n` : ''}
-${suggestion.suggestedFix ? `\n**Suggested fix:**\n\\\`\\\`\\\`${suggestion.language || 'yaml'}\n${suggestion.suggestedFix}\n\\\`\\\`\\\`` : ''}
-              
-*Confidence: ${suggestion.confidence || 'medium'}*`
-            }));
-            
+            const comments = report.suggestions.map(suggestion => {
+              let body = '🤖 **AI Suggestion:** ' + suggestion.message;
+              if (suggestion.details) body += '\n\n' + suggestion.details;
+              body += '\n\n*Confidence: ' + (suggestion.confidence || 'medium') + '*';
+              return { path: suggestion.file, line: suggestion.line || 1, body };
+            });
+
             // Post review with suggestions
+            const reviewBody = '## 🤖 AI-Powered Content Analysis\n\n' +
+              'I have ' + report.suggestions.length + ' suggestion(s) to improve quality.\n\n' +
+              '**Quality Score:** ' + (report.qualityScore || 'N/A') + '/100\n' +
+              '**Completeness:** ' + (report.completeness || 'N/A') + '%\n\n' +
+              '*Powered by ' + (report.model || 'AI') + '*';
+
             await github.rest.pulls.createReview({
               owner,
               repo,
               pull_number,
               event: 'COMMENT',
-              body: `## 🤖 AI-Powered Content Analysis
-              
-I've analyzed your contribution and have ${report.suggestions.length} suggestion(s) to improve quality and discoverability.
-              
-**Analysis Summary:**
-- **Quality Score:** ${report.qualityScore || 'N/A'}/100
-- **Completeness:** ${report.completeness || 'N/A'}%
-- **Auto-detected tags:** ${report.autoTags?.join(', ') || 'None'}
-- **Suggested difficulty:** ${report.suggestedDifficulty || 'intermediate'}
-              
-These are suggestions, not requirements. Feel free to accept, modify, or ignore them based on your judgment.
-              
-*Powered by ${report.model || 'AI'} • [Learn more](https://github.com/framersai/codex/wiki/AI-Enhancement)*`,
-              comments: comments.slice(0, 10) // Limit to 10 inline comments
+              body: reviewBody,
+              comments: comments.slice(0, 10)
             });
-            
+
             // If there are more than 10 suggestions, post them as a separate comment
             if (comments.length > 10) {
-              const additionalSuggestions = report.suggestions.slice(10).map((s, i) => 
-                `${i + 11}. **${s.file}**: ${s.message}`
+              const additionalSuggestions = report.suggestions.slice(10).map((s, i) =>
+                (i + 11) + '. **' + s.file + '**: ' + s.message
               ).join('\n');
-              
+
               await github.rest.issues.createComment({
                 owner,
                 repo,
                 issue_number: pull_number,
-                body: `## Additional AI Suggestions
-                
-${additionalSuggestions}
-                
-*See the full report in the workflow artifacts.*`
+                body: '## Additional AI Suggestions\n\n' + additionalSuggestions
               });
             }
       
@@ -197,28 +183,17 @@ ${additionalSuggestions}
             }
             
             // Post summary as a comment
+            const summaryBody = '## 📊 Content Quality Report\n\n' +
+              '**Quality:** ' + (report.qualityScore || 'N/A') + '/100 | ' +
+              '**Completeness:** ' + (report.completeness || 'N/A') + '%\n\n' +
+              '**Difficulty:** ' + (report.suggestedDifficulty || 'intermediate') + '\n\n' +
+              (report.recommendations ? '**Recommendations:**\n' + report.recommendations.map(r => '- ' + r).join('\n') : '');
+
             await github.rest.issues.createComment({
               owner,
               repo,
               issue_number: pull_number,
-              body: `## 📊 Content Quality Report
-              
-| Metric | Score |
-|--------|-------|
-| Overall Quality | ${report.qualityScore || 'N/A'}/100 |
-| Completeness | ${report.completeness || 'N/A'}% |
-| Readability | ${report.readability || 'N/A'} |
-| SEO Score | ${report.seoScore || 'N/A'}/100 |
-              
-**Auto-detected Metadata:**
-- **Subjects:** ${report.autoTags?.slice(0, 5).join(', ') || 'None'}
-- **Difficulty:** ${report.suggestedDifficulty || 'intermediate'}
-- **Estimated Reading Time:** ${report.estimatedReadingTime || 'N/A'} min
-              
-**Recommendations:**
-${report.recommendations?.map(r => `- ${r}`).join('\n') || 'None'}
-              
-*Want automatic improvements? Add the \`auto-enhance\` label to enable safe auto-fixes.*`
+              body: summaryBody
             });
 
   quality-gate:
@@ -260,22 +235,13 @@ ${report.recommendations?.map(r => `- ${r}`).join('\n') || 'None'}
           script: |
             const { owner, repo } = context.repo;
             const pull_number = context.payload.pull_request.number;
-            
+            const warningBody = '## ⚠️ Quality Gate Warning\n\n' +
+              'The AI analysis detected that this content may benefit from improvements.\n\n' +
+              '**This is not blocking** - maintainers can still approve and merge.';
             await github.rest.issues.createComment({
               owner,
               repo,
               issue_number: pull_number,
-              body: `## ⚠️ Quality Gate Warning
-              
-The AI analysis detected that this content may benefit from additional improvements before merging.
-              
-**This is not blocking** - maintainers can still approve and merge. However, consider:
-              
-1. Reviewing the AI suggestions above
-2. Adding more detailed metadata
-3. Expanding the content for better clarity
-4. Ensuring all required fields are present
-              
-Questions? Ask in our [Discord](https://discord.gg/framersai) or tag a maintainer.`
+              body: warningBody
             });
 
