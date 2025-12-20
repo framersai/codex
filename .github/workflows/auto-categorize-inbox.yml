@@ -86,17 +86,22 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           FORCE_LLM: ${{ inputs.force_llm || 'false' }}
+          FILES_TO_PROCESS: ${{ steps.files.outputs.files }}
         run: |
           mkdir -p .categorization-results
-          
-          for file in ${{ steps.files.outputs.files }}; do
+
+          # Write files to temp file to avoid subshell issues
+          echo "$FILES_TO_PROCESS" > /tmp/files_to_process.txt
+
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then continue; fi
             if [ ! -f "$file" ]; then
               echo "File $file not found, skipping"
               continue
             fi
-            
+
             echo "📁 Processing: $file"
-            
+
             # Run categorization with LLM-first approach
             result_file=".categorization-results/$(basename "$file" .md).json"
             if node scripts/categorize-strand.js "$file" > "$result_file" 2>/dev/null; then
@@ -105,17 +110,22 @@ jobs:
               echo "❌ Categorization failed for $file"
               echo '{"action":"error","error":"Categorization script failed"}' > "$result_file"
             fi
-          done
+          done < /tmp/files_to_process.txt
 
       - name: Process categorization results
         if: steps.files.outputs.has_files == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+          FILES_TO_PROCESS: ${{ steps.files.outputs.files }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          for file in ${{ steps.files.outputs.files }}; do
+
+          # Write files to temp file to avoid subshell issues
+          echo "$FILES_TO_PROCESS" > /tmp/files_to_process.txt
+
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then continue; fi
             result_file=".categorization-results/$(basename "$file" .md).json"
             
             if [ ! -f "$result_file" ]; then
@@ -188,7 +198,7 @@ jobs:
                 --title "🔍 Manual triage needed: $filename" \
                 --body "$(echo -e "$issue_body")" || true
             fi
-          done
+          done < /tmp/files_to_process.txt
 
       - name: Cleanup
         if: always()
