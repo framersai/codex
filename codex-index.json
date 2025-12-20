@@ -177,7 +177,7 @@
             "RAG & Search"
           ]
         },
-        "lastIndexed": "2025-12-20T00:27:57.453Z"
+        "lastIndexed": "2025-12-20T00:30:09.700Z"
       }
     },
     "validation": {
@@ -407,7 +407,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T00:27:57.708Z"
+        "lastIndexed": "2025-12-20T00:30:09.964Z"
       }
     },
     "validation": {
@@ -612,7 +612,7 @@
             "Hierarchy & Vocabulary"
           ]
         },
-        "lastIndexed": "2025-12-20T00:27:57.869Z"
+        "lastIndexed": "2025-12-20T00:30:10.118Z"
       }
     },
     "validation": {
@@ -724,7 +724,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T00:27:57.892Z"
+        "lastIndexed": "2025-12-20T00:30:10.142Z"
       }
     },
     "validation": {
@@ -970,7 +970,7 @@
             "Producer & Consumer"
           ]
         },
-        "lastIndexed": "2025-12-20T00:27:59.290Z"
+        "lastIndexed": "2025-12-20T00:30:11.538Z"
       }
     },
     "validation": {
@@ -986,6 +986,311 @@
     },
     "content": "# Kafka Practical Guide\n\n## From Zero to Production with Python Examples\n\n---\n\n## What is Kafka, Really?\n\n```\n┌─────────────────────────────────────────────────────────────────────────────┐\n│                    KAFKA IN ONE SENTENCE                                    │\n├─────────────────────────────────────────────────────────────────────────────┤\n│                                                                             │\n│  Kafka is a distributed commit log that lets services talk to each other    │\n│  without waiting for responses.                                             │\n│                                                                             │\n│  Think of it as a SUPER FAST, PERSISTENT, DISTRIBUTED message board:        │\n│                                                                             │\n│  • Producers POST messages to topics                                        │\n│  • Consumers READ messages from topics                                      │\n│  • Messages are STORED (not deleted after reading)                          │\n│  • Multiple consumers can read the SAME messages                            │\n│                                                                             │\n└─────────────────────────────────────────────────────────────────────────────┘\n```\n\n### The Mental Model\n\n```\nTRADITIONAL API CALL (Synchronous):\n══════════════════════════════════\n\n  Order Service                    Email Service\n       │                                │\n       │  POST /send-email              │\n       │───────────────────────────────►│\n       │        (waiting...)            │ Sending email...\n       │        (still waiting...)      │ (takes 2 seconds)\n       │◄───────────────────────────────│\n       │  200 OK                        │\n       │                                │\n  \n  Problem: Order Service is BLOCKED for 2 seconds!\n  If Email Service is down, Order Service FAILS!\n\n\nKAFKA (Asynchronous):\n════════════════════\n\n  Order Service          Kafka              Email Service\n       │                   │                      │\n       │  \"order.created\"  │                      │\n       │──────────────────►│                      │\n       │  (instant!)       │                      │\n       │                   │   (when ready)       │\n       │                   │─────────────────────►│\n       │                   │                      │ Sending email...\n       │                   │                      │\n  \n  ✅ Order Service continues immediately\n  ✅ Email Service can be down temporarily (Kafka stores messages)\n  ✅ Multiple services can react to same event\n```\n\n---\n\n## Where Kafka Fits in Real Systems\n\n### Example 1: E-Commerce Order Flow\n\n```\n┌─────────────────────────────────────────────────────────────────────────────┐\n│                    E-COMMERCE WITH KAFKA                                    │\n├─────────────────────────────────────────────────────────────────────────────┤\n│                                                                             │\n│  User places order                                                          │\n│        │                                                                    │\n│        ▼                                                                    │\n│  ┌───────────────┐                                                          │\n│  │ Order Service │                                                          │\n│  │               │─────┐                                                    │\n│  │ 1. Save order │     │                                                    │\n│  │ 2. Publish    │     │                                                    │\n│  └───────────────┘     │                                                    │\n│                        ▼                                                    │\n│              ┌─────────────────┐                                            │\n│              │      KAFKA      │                                            │\n│              │                 │                                            │\n│              │ Topic: \"orders\" │                                            │\n│              │ ┌─────────────┐ │                                            │\n│              │ │ order.created│ │                                           │\n│              │ │ {id: 123,   │ │                                            │\n│              │ │  items: [...]}│                                            │\n│              │ └─────────────┘ │                                            │\n│              └────────┬────────┘                                            │\n│                       │                                                     │\n│         ┌─────────────┼─────────────┬─────────────┐                         │\n│         ▼             ▼             ▼             ▼                         │\n│   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐                   │\n│   │ Inventory│  │  Email   │  │ Analytics│",
     "searchText": "kafka practical guide async producer (non-blocking)\n\n\n### 2. batch consumer (high throughput)\n\n\n### 3. dead letter queue (error handling)\n\n\n### 4. kafka consumer event print message order def producer import messages json orders str batch email self consumer self producer localhost 9092 lambda json bootstrap_servers localhost kafka import import json encode utf value_deserializer lambda json loads"
+  },
+  {
+    "path": "weaves/inbox/python_senior_interview_crash_course.md",
+    "name": "python_senior_interview_crash_course.md",
+    "type": "file",
+    "metadata": {
+      "title": "Python Senior Interview Crash Course",
+      "summary": "[Python Internals You Must Know](#1-python-internals) 2. [Data Structures Deep Dive](#2-data-structures) 3. [Complexity Analysis Refresher](#3-complexity-analysis) 4.",
+      "difficulty": "expert",
+      "tags": [
+        "python",
+        "v",
+        "r",
+        "sql",
+        "numpy",
+        "self",
+        "return",
+        "def"
+      ],
+      "taxonomy": {
+        "topics": [
+          "api-reference",
+          "architecture"
+        ],
+        "subjects": [
+          "technology",
+          "artificial-intelligence"
+        ]
+      },
+      "source": {
+        "type": "manual",
+        "creator": "Anonymous Creator",
+        "creatorType": "session",
+        "createdAt": "2025-12-20T00:28:56.465Z",
+        "sessionId": "204f13d9-11b6-4c1c-97c4-76b50be079aa"
+      },
+      "autoGenerated": {
+        "keywords": [
+          "def",
+          "nums",
+          "return",
+          "int",
+          "list",
+          "class",
+          "lst",
+          "mid",
+          "str",
+          "print",
+          "node",
+          "range",
+          "len",
+          "cache",
+          "pass"
+        ],
+        "phrases": [
+          "list int",
+          "int int",
+          "nums nums",
+          "def __init__",
+          "__init__ self",
+          "self cache",
+          "return self",
+          "nums mid",
+          "self self",
+          "len nums"
+        ],
+        "subjects": [
+          "ai",
+          "design",
+          "knowledge",
+          "media",
+          "philosophy",
+          "science",
+          "security",
+          "technology",
+          "artificial-intelligence"
+        ],
+        "topics": [
+          "api-reference",
+          "architecture",
+          "best-practices",
+          "getting-started",
+          "troubleshooting"
+        ],
+        "skills": [
+          "token",
+          "session",
+          "rest",
+          "database",
+          "sql",
+          "schema",
+          "migration",
+          "testing",
+          "test",
+          "async",
+          "python",
+          "mongodb",
+          "async-programming",
+          "collaboration",
+          "communication"
+        ],
+        "difficulty": "expert",
+        "confidence": {
+          "ai": 0.09352517985611511,
+          "design": 0.2154696132596685,
+          "knowledge": 0.25405405405405407,
+          "media": 0.23134328358208955,
+          "philosophy": 0.15458937198067632,
+          "science": 0.13026819923371646,
+          "security": 0.1,
+          "technology": 0.32094594594594594,
+          "api-reference": 0.3983739837398374,
+          "architecture": 0.21897810218978103,
+          "best-practices": 0.2903225806451613,
+          "getting-started": 0.25688073394495414,
+          "troubleshooting": 0.3333333333333333,
+          "skill:token": 0.7259615384615384,
+          "skill:session": 0.7259615384615384,
+          "skill:rest": 0.7259615384615384,
+          "skill:database": 0.7259615384615384,
+          "skill:sql": 0.7259615384615384,
+          "skill:schema": 0.7259615384615384,
+          "skill:migration": 0.7259615384615384,
+          "skill:testing": 0.7259615384615384,
+          "skill:test": 0.7259615384615384,
+          "skill:async": 0.7259615384615384,
+          "skill:await": 0.7259615384615384,
+          "skill:fp": 0.7259615384615384,
+          "skill:immutable": 0.7259615384615384,
+          "skill:function": 0.7259615384615384,
+          "skill:oop": 0.7259615384615384,
+          "skill:object": 0.7259615384615384,
+          "skill:oriented": 0.7259615384615384,
+          "skill:programming": 0.7259615384615384,
+          "skill:class": 0.7259615384615384,
+          "skill:inheritance": 0.7259615384615384,
+          "skill:singleton": 0.7259615384615384,
+          "skill:factory": 0.7259615384615384,
+          "skill:observer": 0.7259615384615384,
+          "skill:sorting": 0.7259615384615384,
+          "skill:data": 0.7259615384615384,
+          "skill:structures": 0.7259615384615384,
+          "skill:http": 0.7259615384615384,
+          "skill:https": 0.7259615384615384,
+          "skill:ci": 0.7259615384615384,
+          "skill:databas": 0.7259615384615384,
+          "skill:migrat": 0.7259615384615384,
+          "skill:immut": 0.7259615384615384,
+          "skill:orient": 0.7259615384615384,
+          "skill:program": 0.7259615384615384,
+          "skill:inherit": 0.7259615384615384,
+          "skill:factori": 0.7259615384615384,
+          "skill:observ": 0.7259615384615384,
+          "skill:algorithm": 0.7259615384615384,
+          "skill:sort": 0.7259615384615384,
+          "skill:search": 0.7259615384615384,
+          "skill:structur": 0.7259615384615384,
+          "skill:network": 0.7259615384615384,
+          "skill:dn": 0.7259615384615384,
+          "skill:hash": 0.7259615384615384,
+          "skill:tl": 0.7259615384615384,
+          "skill:continu": 0.7259615384615384,
+          "skill:deploy": 0.7259615384615384,
+          "skill:app": 0.5625,
+          "skill:composition": 0.5625,
+          "skill:api": 0.5625,
+          "skill:express": 0.5625,
+          "skill:django": 0.5625,
+          "skill:on": 0.5625,
+          "skill:composit": 0.5625,
+          "skill:ts": 0.6049382716049383,
+          "skill:type": 0.6049382716049383,
+          "skill:generics": 0.6049382716049383,
+          "skill:python": 0.6049382716049383,
+          "skill:py": 0.6049382716049383,
+          "skill:go": 0.6049382716049383,
+          "skill:c": 0.6049382716049383,
+          "skill:mysql": 0.6049382716049383,
+          "skill:postgresql": 0.6049382716049383,
+          "skill:postgres": 0.6049382716049383,
+          "skill:less": 0.6049382716049383,
+          "skill:annot": 0.6049382716049383,
+          "skill:gener": 0.6049382716049383,
+          "skill:compos": 0.6049382716049383,
+          "skill:io": 0.6049382716049383,
+          "skill:postgr": 0.6049382716049383,
+          "skill:documentation": 0.5576036866359447,
+          "skill:management": 0.5576036866359447,
+          "skill:analysis": 0.5576036866359447,
+          "skill:efficiency": 0.5576036866359447,
+          "skill:flexibility": 0.5576036866359447,
+          "skill:iteration": 0.5576036866359447,
+          "skill:eq": 0.5576036866359447,
+          "skill:write": 0.5576036866359447,
+          "skill:speak": 0.5576036866359447,
+          "skill:document": 0.5576036866359447,
+          "skill:edit": 0.5576036866359447,
+          "skill:manag": 0.5576036866359447,
+          "skill:deleg": 0.5576036866359447,
+          "skill:plan": 0.5576036866359447,
+          "skill:mediat": 0.5576036866359447,
+          "skill:cooper": 0.5576036866359447,
+          "skill:analysi": 0.5576036866359447,
+          "skill:priorit": 0.5576036866359447,
+          "skill:product": 0.5576036866359447,
+          "skill:effici": 0.5576036866359447,
+          "skill:schedul": 0.5576036866359447,
+          "skill:iter": 0.5576036866359447,
+          "skill:reflect": 0.5576036866359447,
+          "skill:train": 0.5576036866359447,
+          "skill:git": 0.6473684210526316,
+          "skill:github": 0.6473684210526316,
+          "skill:version": 0.6473684210526316,
+          "skill:control": 0.6473684210526316,
+          "skill:commit": 0.6473684210526316,
+          "skill:merge": 0.6473684210526316,
+          "skill:container": 0.6473684210526316,
+          "skill:manager": 0.6473684210526316,
+          "skill:as": 0.6473684210526316,
+          "skill:code": 0.6473684210526316,
+          "skill:lambda": 0.6473684210526316,
+          "skill:google": 0.6473684210526316,
+          "skill:redis": 0.6473684210526316,
+          "skill:cache": 0.6473684210526316,
+          "skill:merg": 0.6473684210526316,
+          "skill:contain": 0.6473684210526316,
+          "skill:aw": 0.6473684210526316,
+          "skill:servic": 0.6473684210526316,
+          "skill:googl": 0.6473684210526316,
+          "skill:redi": 0.6473684210526316,
+          "skill:cach": 0.6473684210526316
+        },
+        "readingLevel": 0,
+        "readabilityScore": 0,
+        "statistics": {},
+        "entities": {
+          "people": [
+            "(GIL)",
+            "(GIL",
+            "GIL!",
+            "len= 0,",
+            "len= 1,",
+            "len= 5,",
+            "evens =",
+            "evens =",
+            "[('alice',",
+            "('alice',"
+          ],
+          "places": [
+            "In-place",
+            "In-place",
+            "In-place,",
+            "dist",
+            "dist",
+            "dist",
+            "Islands (Grid",
+            "Define state:",
+            "House Robber"
+          ],
+          "organizations": [
+            "[Concurrency & Parallelism](#6-concurrency)",
+            "Patterns & Solutions](#8-leetcode-patterns)",
+            "[System Design",
+            "Memory Management",
+            "s1 & s2",
+            "c1 & c2",
+            "O(log n)       │",
+            "log n)     │",
+            "For n =",
+            "s1 & s2"
+          ],
+          "topics": [
+            "Sorted data,",
+            "GC",
+            "System Design",
+            "Patterns & Solutions",
+            "Sharing data",
+            "Concurrency & Parallelism",
+            "Hints & Generics",
+            "Generators & Iterators",
+            "\"\"\"Place n queens",
+            "BFS & DFS",
+            "Ceiling division",
+            "O(log n) search",
+            "acc * n)  #",
+            "# n ×",
+            "s1 & s2"
+          ]
+        },
+        "lastIndexed": "2025-12-20T00:30:18.503Z"
+      }
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "suggestions": [
+        "Add unique ID (UUID recommended)",
+        "Add version number (semver format)",
+        "Consider adding relationships (requires, references, seeAlso)",
+        "Key phrases found: list int, int int, nums nums"
+      ]
+    },
+    "content": "# Python Senior Interview Crash Course\n## From Fundamentals to Staff-Level Mastery\n\n---\n\n## Table of Contents\n\n1. [Python Internals You Must Know](#1-python-internals)\n2. [Data Structures Deep Dive](#2-data-structures)\n3. [Complexity Analysis Refresher](#3-complexity-analysis)\n4. [Core Algorithm Patterns](#4-algorithm-patterns)\n5. [Advanced Python Features](#5-advanced-python)\n6. [Concurrency & Parallelism](#6-concurrency)\n7. [Object-Oriented Design](#7-oop-design)\n8. [LeetCode Patterns & Solutions](#8-leetcode-patterns)\n9. [System Design in Python](#9-system-design)\n10. [Senior-Level Interview Questions](#10-senior-questions)\n\n---\n\n## 1. Python Internals You Must Know {#1-python-internals}\n\n### Memory Management\n\n#### Everything is an Object\n\n```python\n# In Python, EVERYTHING is an object - even integers and functions\nx = 42\nprint(type(x))        # <class 'int'>\nprint(id(x))          # Memory address\nprint(x.__class__)    # <class 'int'>\nprint(x.__add__(8))   # 50 - even operators are methods!\n\n# Functions are first-class objects\ndef greet(name):\n    return f\"Hello, {name}\"\n\nprint(type(greet))           # <class 'function'>\nprint(greet.__name__)        # 'greet'\nprint(greet.__code__.co_varnames)  # ('name',)\n```\n\n#### Reference Counting + Garbage Collection\n\n```python\nimport sys\nimport gc\n\n# Reference counting\na = [1, 2, 3]\nprint(sys.getrefcount(a))  # 2 (a + temporary reference from getrefcount)\n\nb = a  # Another reference\nprint(sys.getrefcount(a))  # 3\n\ndel b  # Remove reference\nprint(sys.getrefcount(a))  # 2\n\n# Circular references - need garbage collector\nclass Node:\n    def __init__(self):\n        self.parent = None\n        self.children = []\n\nparent = Node()\nchild = Node()\nparent.children.append(child)\nchild.parent = parent  # Circular reference!\n\n# Reference counting alone won't free these\n# Python's GC detects and collects cycles\ndel parent\ndel child\ngc.collect()  # Force garbage collection\n```\n\n#### Small Integer Caching (-5 to 256)\n\n```python\n# Python caches small integers for performance\na = 256\nb = 256\nprint(a is b)  # True - same object!\n\na = 257\nb = 257\nprint(a is b)  # False - different objects!\n\n# String interning for identifiers\ns1 = \"hello\"\ns2 = \"hello\"\nprint(s1 is s2)  # True - interned\n\ns1 = \"hello world!\"\ns2 = \"hello world!\"\nprint(s1 is s2)  # False - not interned (has space/special chars)\n\n# Force interning\nimport sys\ns1 = sys.intern(\"hello world!\")\ns2 = sys.intern(\"hello world!\")\nprint(s1 is s2)  # True\n```\n\n#### Mutability Deep Dive\n\n```python\n# Mutable: list, dict, set, custom objects\n# Immutable: int, float, str, tuple, frozenset, bytes\n\n# The Classic Gotcha: Default Mutable Arguments\ndef append_to(element, lst=[]):  # DANGEROUS!\n    lst.append(element)\n    return lst\n\nprint(append_to(1))  # [1]\nprint(append_to(2))  # [1, 2] - WHAT?! Same list reused!\n\n# Correct pattern\ndef append_to_fixed(element, lst=None):\n    if lst is None:\n        lst = []\n    lst.append(element)\n    return lst\n\n# Why tuples can contain mutable objects\nt = ([1, 2], [3, 4])\nt[0].append(3)  # This works!\nprint(t)  # ([1, 2, 3], [3, 4])\n# t[0] = [5, 6]  # This fails - can't reassign tuple element\n\n# Tuple \"immutability\" means you can't change which objects it references\n# But you CAN mutate those objects if they're mutable\n```\n\n### The Global Interpreter Lock (GIL)\n\n```python\n\"\"\"\nTHE GIL: Python's Most Misunderstood Feature\n\nWhat it is:\n- A mutex that protects access to Python objects\n- Only ONE thread can execute Python bytecode at a time\n- Exists in CPython (reference implementation)\n\nWhat it means:\n- CPU-bound multithreading won't give speedup\n- I/O-bound multithreading WILL work (GIL released during I/O)\n- Use multiprocessing for CPU parallelism\n\"\"\"\n\nimport threading\nimport time\n\n# This WON'T be faster with multiple threads (CPU-bound)\ndef cpu_bound(n):\n    count = 0\n    for i in range(n):\n        count += i\n    return count\n\n# Single thread\nstart = time.time()\ncpu_bound(10_000_000)\ncpu_bound(10_000_000)\nprint(f\"Sequential: {time.time() - start:.2f}s\")\n\n# Two threads - NOT faster due to GIL!\nstart = time.time()\nt1 = threading.Thread(target=cpu_bound, args=(10_000_000,))\nt2 = threading.Thread(target=cpu_bound, args=(10_000_000,))\nt1.start(); t2.start()\nt1.join(); t2.join()\nprint(f\"Threaded: {time.time() - start:.2f}s\")  # Same or slower!\n\n# Solution: multiprocessing (separate interpreter per process)\nfrom multiprocessing import Pool\n\nstart = time.time()\nwith Pool(2) as p:\n    p.map(cpu_bound, [10_000_000, 10_000_000])\nprint(f\"Multiprocess: {time.time() - start:.2f}s\")  # ~2x faster!\n```\n\n### Python Object Model\n\n```python\n# __slots__: Memory optimization for many instances\nclass PointRegular:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nclass PointSlots:\n    __slots__ = ['x', 'y']  # No __dict__, fixed attributes\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nimport sys\nregular = PointRegular(1, 2)\nslotted = PointSlots(1, 2)\n\nprint(sys.getsizeof(regular.__dict__))",
+    "searchText": "python senior interview crash course [python internals you must know](#1-python-internals) 2. [data structures deep dive](#2-data-structures) 3. [complexity analysis refresher](#3-complexity-analysis) 4. def nums return int list class lst mid str print node range len cache pass list int int int nums nums def __init__ __init__ self self cache return self nums mid self self len nums"
   },
   {
     "path": "weaves/knowledge/ai-ml/llm-rag-evaluation.md",
@@ -1026,14 +1331,14 @@
           "benchmark",
           "regression",
           "leaderboard",
-          "judge",
           "llm",
-          "tool",
+          "judge",
           "metrics",
           "test",
           "golden",
-          "https",
-          "openai"
+          "openai",
+          "arxiv",
+          "tool"
         ],
         "phrases": [
           "ref ref",
@@ -1245,7 +1550,7 @@
             "RAG systems"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:01.251Z"
+        "lastIndexed": "2025-12-20T00:30:22.258Z"
       }
     },
     "validation": {
@@ -1260,7 +1565,7 @@
       ]
     },
     "content": "# EVALS.md — LLM & RAG Evaluation Playbook\n\nA practical, research-grounded guide to model selection, regression testing, and production-grade evaluation.\n\n---\n\n## Table of Contents\n\n1. [Goals & Philosophy](#1-goals--philosophy)\n2. [Understanding Leaderboards](#2-understanding-leaderboards)\n3. [Public Benchmarks Reference](#3-public-benchmarks-reference)\n4. [Evaluation Frameworks & Tooling](#4-evaluation-frameworks--tooling)\n5. [Evaluation Design (What to Actually Do)](#5-evaluation-design-what-to-actually-do)\n6. [Repo Structure & Test Case Schema](#6-repo-structure--test-case-schema)\n7. [Metrics & Grading Strategy](#7-metrics--grading-strategy)\n8. [CI/CD Policy & Release Gates](#8-cicd-policy--release-gates)\n9. [RAG-Specific Evaluation](#9-rag-specific-evaluation)\n10. [Tool Use & Agent Evaluation](#10-tool-use--agent-evaluation)\n11. [Production Observability](#11-production-observability)\n12. [Security & Adversarial Testing](#12-security--adversarial-testing)\n13. [Quick-Start Blueprint](#13-quick-start-blueprint)\n14. [References](#14-references)\n\n---\n\n## 1. Goals & Philosophy\n\n### Goals\n\n- **Catch regressions** before they reach users (prompt/chain/model changes)\n- **Compare models/providers** using a consistent harness and versioned datasets\n- **Measure product KPIs** that correlate with user success—not just benchmark scores\n- **Produce decision-ready reports** covering quality, latency, cost, safety, and reliability\n\n### Non-Goals\n\n- \"Win\" public leaderboards at the expense of product requirements\n- Rely on a single metric or judge model for high-stakes decisions\n- Treat leaderboards as ground truth rather than screening signals\n\n### Core Principle\n\n> **Public leaderboards shortlist; your internal eval suite selects.**\n\nLeaderboards help narrow candidates quickly, but they rarely match your product's distributions, constraints, failure costs, or toolchain [[1]](#ref-1). A recurring failure mode is *Goodharting*: once a metric becomes the target, it loses value as measurement—especially when models optimize for narrow benchmarks [[2]](#ref-2).\n\n---\n\n## 2. Understanding Leaderboards\n\n### Interpretation Checklist\n\nBefore trusting any leaderboard, verify:\n\n| Question | Why It Matters |\n|----------|----------------|\n| **Task distribution?** | Chatty assistants ≠ domain QA ≠ extraction ≠ tool-use [[1]](#ref-1) |\n| **Scoring protocol?** | Pairwise preference, exact match, rubric, LLM-judge, human labelers [[3]](#ref-3) |\n| **Prompts/formatting?** | Small formatting changes can shift results significantly [[4]](#ref-4) |\n| **Known biases?** | Verbosity bias, position bias, contamination, data leakage [[3]](#ref-3)[[5]](#ref-5) |\n| **Uncertainty published?** | Confidence intervals matter for meaningful rankings [[6]](#ref-6) |\n\n### Common Pitfalls\n\n- **Position bias**: Models prefer answers in certain positions (first/last)\n- **Verbosity bias**: Longer responses often score higher regardless of quality\n- **Self-enhancement bias**: LLM judges favor outputs from similar models\n- **Contamination**: Test data leaked into training sets\n- **Style gaming**: Models tuned to match evaluator preferences rather than actual quality\n\nSee \"The Leaderboard Illusion\" [[2]](#ref-2) for systematic analysis of these issues.\n\n---\n\n## 3. Public Benchmarks Reference\n\nUse these for **screening candidates**—then validate on your own task suite.\n\n### A. Human Preference & Chat Quality\n\n**Use when:** You care about helpfulness, writing quality, and conversational coherence.\n\n| Benchmark | Description | Key Caveat |\n|-----------|-------------|------------|\n| **Chatbot Arena** [[7]](#ref-7) | Crowd-sourced pairwise battles → Elo/Bradley-Terry rankings | Sensitive to style; can be gamed |\n| **MT-Bench** [[3]](#ref-3) | Multi-turn questions + LLM-as-a-judge methodology | Documents judge biases and mitigations |\n| **Arena-Hard** [[8]](#ref-8) | Harder subset derived from live arena data | Better signal but smaller sample |\n\n### B. Instruction Following\n\n**Use when:** You need quick win-rate signals for general instruction-following.\n\n| Benchmark | Description | Key Caveat |\n|-----------|-------------|------------|\n| **AlpacaEval 2.0** [[9]](#ref-9)[[10]](#ref-10) | Automated pairwise eval with length-controlled variants | LLM-judge can inherit biases |\n\n### C. Multi-Metric Transparency\n\n**Use when:** You want breadth across scenarios (accuracy, robustness, fairness, calibration, efficiency).\n\n| Benchmark | Description |\n|-----------|-------------|\n| **HELM** [[11]](#ref-11)[[12]](#ref-12) | Stanford CRFM taxonomy of scenarios + metrics; useful as a benchmarking mindset |\n\n### D. Open-Model Standard Benchmarks\n\n**Use when:** Comparing open-weights or self-hosted models on academic benchmarks.\n\n| Resource | Description | Key Caveat |\n|----------|-------------|------------|\n| **HF Open LLM Leaderboard** [[4]](#ref-4)[[13]](#ref-13) | Fixed benchmark suite via EleutherAI harness | Scores can differ from papers due to prompts/versions |\n| **Eleuthe",
-    "searchText": "evals.md — llm & rag evaluation playbook md — llm & rag evaluation playbook\na practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## table of contents\n1. ref evaluation evals eval benchmark regression leaderboard judge llm tool metrics test golden https openai ref ref rag evaluation benchmark description swe bench arxiv ref llm judge phoenix ref tracing evaluation github https https github"
+    "searchText": "evals.md — llm & rag evaluation playbook md — llm & rag evaluation playbook\na practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## table of contents\n1. ref evaluation evals eval benchmark regression leaderboard llm judge metrics test golden openai arxiv tool ref ref rag evaluation benchmark description swe bench arxiv ref llm judge phoenix ref tracing evaluation github https https github"
   },
   {
     "path": "weaves/wiki/architecture/overview.md",
@@ -1305,20 +1610,20 @@
       "autoGenerated": {
         "keywords": [
           "codex",
-          "files",
-          "sql",
-          "organization",
-          "caching",
-          "automation",
-          "auto",
           "frame",
-          "analysis",
-          "static",
+          "organization",
+          "automation",
+          "files",
+          "auto",
+          "sql",
+          "loom",
           "nlp",
           "whole",
-          "cache",
           "storage",
-          "idf"
+          "idf",
+          "fabric",
+          "caching",
+          "folder"
         ],
         "phrases": [
           "frame codex",
@@ -1455,7 +1760,7 @@
             "- Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:01.950Z"
+        "lastIndexed": "2025-12-20T00:30:23.638Z"
       }
     },
     "validation": {
@@ -1467,7 +1772,7 @@
       ]
     },
     "content": "\n# Frame Codex Architecture Overview\n\nFrame Codex is a structured, version-controlled knowledge repository designed as the canonical source of truth for AI systems and human learners.\n\n## Core Concepts\n\n### Four-Tier Knowledge Organization\n\n```\nFabric (Whole Codex)\n└── Weave (Universe)\n    ├── Loom (Folder)\n    │   ├── Strand (markdown file)\n    │   ├── Strand (markdown file)\n    │   └── ...\n    └── Loom (Folder)\n        └── ...\n```\n\n**Fabric**: The entire Codex corpus viewed as one living whole\n- Composed of multiple weaves (e.g., `frame`, `wiki`, `technology`)\n- Enables cross-weave traversal when operating at Fabric scope\n- Used by superintelligence/agents for holistic aggregation and synthesis\n\n**Weave**: Complete, isolated knowledge universe\n- No cross-weave relationships\n- Independent scope and taxonomy\n- Examples: `wiki`, `frame`, `technology`\n\n**Loom**: Any folder inside a weave\n- Organized by topic or module\n- No explicit `looms/` prefix needed\n- Metadata in optional `loom.yaml`\n\n**Strand**: Any markdown file inside a weave\n- Self-contained, focused on one concept\n- Rich metadata in YAML frontmatter\n- No explicit `strands/` folder needed\n\n### Why This Structure?\n\n1. **Modularity**: Each strand is independent and reusable\n2. **Discoverability**: Looms (folders) provide natural organization\n3. **Isolation**: Weaves prevent namespace collisions\n4. **Scalability**: Can grow to millions of strands\n5. **AI-Friendly**: Clear structure for LLM ingestion\n6. **Simple**: Folders = looms, markdown files = strands (auto-detected)\n\n### Superintelligence at Fabric Scope\n\nWhile weaves remain isolated for organization and provenance, analysis at the **Fabric** level permits traversal across weaves for:\n\n- Cross-domain retrieval and context assembly\n- Whole-of-corpus synthesis and summarization\n- Global topic maps and knowledge graphs\n\nFabric-level queries always preserve original weave/loom/strand provenance.\n\n## SQL Cache Layer\n\nFrame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent caching.\n\n### Performance\n\n- **First run**: ~30s for 100 files (full analysis)\n- **Subsequent**: ~2-5s for 5 changed files (85-95% speedup)\n- **Storage**: ~500KB-2MB for 100 files\n\n### How It Works\n\n1. **SHA-based change detection**: Only re-process modified files\n2. **Loom-scoped caching**: Store aggregate stats per loom (folder)\n3. **Keyword caching**: Pre-computed TF-IDF scores\n4. **GitHub Actions cache**: Persistent across CI runs\n\n### Cache Tables\n\n```sql\nfiles       -- File metadata, SHA, analysis JSON\nkeywords    -- Extracted keywords with TF-IDF scores\nstats       -- Loom/weave aggregate statistics\n```\n\n## Static NLP Pipeline\n\n**No LLM calls, $0 cost, runs in CI:**\n\n1. **TF-IDF**: Keyword extraction and ranking\n2. **N-grams**: Common phrase detection\n3. **Vocabulary matching**: Auto-categorization\n4. **Readability scoring**: Flesch-Kincaid grade level\n5. **Sentiment heuristics**: Simple keyword patterns\n\n### Output\n\n- `codex-index.json`: Searchable index for frame.dev/codex\n- `codex-report.json`: Analytics and validation results\n\n## Automation Workflows\n\n### On Every PR\n\n1. **Schema validation**: Required fields, types, enums\n2. **Content quality**: Length, forbidden patterns, duplicates\n3. **Static NLP**: Auto-categorization and tagging\n4. **Optional AI**: GPT-4 quality analysis (if `OPENAI_API_KEY` set)\n\n### Auto-Merge (Trusted Weavers)\n\n- Users in `.github/WEAVERS.txt` get auto-approved + merged\n- Requires 5+ high-quality contributions\n- Validation must pass\n\n### Full Re-Catalog\n\n- Triggered manually or on schedule\n- Updates all metadata and statistics\n- Creates PR (manual approval by default)\n- Toggle: `AUTO_CATALOG_MERGE=true`\n\n## OpenStrand Integration\n\nFrame Codex implements the **Educational Content Atom (ECA)** specification:\n\n- **Learning Design**: Objectives, outcomes, Bloom's taxonomy\n- **Time Estimates**: Reading, exercises, projects\n- **Modalities**: Text, visual, audio, video, kinesthetic\n- **Assessments**: Formative and summative\n- **Accessibility**: WCAG compliance, reading levels\n- **Quality Metrics**: Peer review, evidence-based claims\n\n### Frame Codex vs OpenStrand\n\n- **Frame Codex**: Public markdown repository (this repo)\n- **OpenStrand**: Full PKMS at openstrand.ai (all file types, AI analysis, private workspaces)\n\n## Repository Structure\n\n```\ncodex/\n├── weaves/              # Knowledge universes\n│   ├── wiki/           # Meta-documentation\n│   │   ├── weave.yaml\n│   │   ├── architecture/    # Loom (folder)\n│   │   │   └── overview.md  # Strand (markdown file)\n│   │   └── ...\n│   ├── frame/          # Frame ecosystem knowledge\n│   │   ├── weave.yaml\n│   │   ├── openstrand/      # Loom (folder)\n│   │   │   └── architecture.md  # Strand (markdown file)\n│   │   └── ...\n│   └── technology/     # Tech & CS content\n├── schema/             # Validation schemas\n├── docs/               # Development guides\n├── scripts/            # Automation scripts\n├── tes",
-    "searchText": "frame codex architecture overview high-level architecture of frame codex: three-tier knowledge organization, sql caching, static nlp, and automation codex files sql organization caching automation auto frame analysis static nlp whole cache storage idf frame codex loom folder strand markdown markdown file static nlp codex architecture architecture overview tier knowledge knowledge organization cross weave"
+    "searchText": "frame codex architecture overview high-level architecture of frame codex: three-tier knowledge organization, sql caching, static nlp, and automation codex frame organization automation files auto sql loom nlp whole storage idf fabric caching folder frame codex loom folder strand markdown markdown file static nlp codex architecture architecture overview tier knowledge knowledge organization cross weave"
   },
   {
     "path": "weaves/wiki/architecture/qa-system.md",
@@ -1479,20 +1784,20 @@
       "autoGenerated": {
         "keywords": [
           "string",
-          "interface",
           "authentication",
           "onnx",
+          "interface",
           "typescript",
           "embedding",
           "intent",
-          "answer",
-          "code",
-          "language",
           "codex",
-          "search",
           "similarity",
           "runtime",
-          "const"
+          "const",
+          "answer",
+          "code",
+          "security",
+          "understanding"
         ],
         "phrases": [
           "frame codex",
@@ -1648,7 +1953,7 @@
             "PAT             │"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:03.078Z"
+        "lastIndexed": "2025-12-20T00:30:25.710Z"
       }
     },
     "validation": {
@@ -1658,7 +1963,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: string, interface, authentication, onnx, typescript",
+        "Consider adding tags: string, authentication, onnx, interface, typescript",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -1667,7 +1972,7 @@
       ]
     },
     "content": "# Q&A System Architecture\n\nThe Frame Codex Q&A system represents a paradigm shift in knowledge retrieval—combining the precision of semantic search with the intuition of natural language understanding. This document outlines the architecture, implementation, and philosophy behind our question-answering oracle.\n\n## Philosophy: Questions as Knowledge Traversal\n\nTraditional search treats queries as keyword matching exercises. The Frame Codex Q&A system treats **questions as journeys through the knowledge graph**. When you ask \"How does authentication work?\", you're not looking for documents containing \"authentication\"—you're seeking understanding of a concept's mechanics, relationships, and implications.\n\n## Core Architecture\n\n```\n┌─────────────────────────────────────────────────────────────┐\n│                         User Interface                        │\n│  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐  │\n│  │   Question   │  │   Suggested  │  │  Answer Cards   │  │\n│  │    Input     │  │  Questions   │  │  (Contextual)   │  │\n│  └──────┬──────┘  └──────────────┘  └─────────▲────────┘  │\n└─────────┼────────────────────────────────────────┼──────────┘\n          │                                         │\n┌─────────▼─────────────────────────────────────────┼──────────┐\n│                    Question Processor              │          │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────▼────────┐ │\n│  │   Intent     │  │   Entity     │  │  Answer Builder   │ │\n│  │  Analyzer    │  │  Extractor   │  │  (Multi-source)   │ │\n│  └──────┬──────┘  └──────┬──────┘  └─────────▲────────┘ │\n└─────────┼─────────────────┼───────────────────┼──────────┘\n          │                 │                   │\n┌─────────▼─────────────────▼───────────────────┼──────────┐\n│                  Semantic Search Engine         │          │\n│  ┌──────────────┐  ┌──────────────┐  ┌───────▼────────┐ │\n│  │   ONNX       │  │  Embedding   │  │  Similarity    │ │\n│  │  Runtime     │  │   Index      │  │   Scoring      │ │\n│  └──────────────┘  └──────────────┘  └────────────────┘ │\n└───────────────────────────────────────────────────────────┘\n```\n\n## Components\n\n### 1. Question Input Interface\n\nThe entry point for natural language queries with intelligent features:\n\n- **Auto-complete** based on common questions and recent queries\n- **Voice input** with real-time transcription\n- **Question templates** for common patterns\n- **Multi-language** support with automatic translation\n\n### 2. Question Processor\n\nTransforms natural language into structured queries:\n\n#### Intent Analyzer\n- Classifies question types: How, What, Where, Why, When\n- Identifies action verbs: implement, configure, debug, optimize\n- Detects scope: specific file, concept, or system-wide\n\n#### Entity Extractor\n- Identifies key concepts: authentication, React hooks, API endpoints\n- Extracts constraints: \"in TypeScript\", \"for production\", \"with examples\"\n- Recognizes relationships: \"difference between X and Y\"\n\n### 3. Semantic Search Engine\n\nThe heart of intelligent retrieval:\n\n#### ONNX Runtime Web\n- Runs MiniLM-L6-v2 model entirely in the browser\n- No server calls = complete privacy\n- ~22MB model size with 384-dimensional embeddings\n- Sub-100ms inference time\n\n#### Embedding Index\n- Pre-computed embeddings for all strands\n- Stored in `codex-embeddings.json`\n- Hierarchical indexing: strand → section → paragraph\n- Incremental updates on new content\n\n#### Similarity Scoring\n- Cosine similarity for semantic matching\n- BM25 for keyword relevance\n- Hybrid scoring: 0.7 × semantic + 0.3 × keyword\n- Context window expansion for better answers\n\n### 4. Answer Builder\n\nConstructs comprehensive, contextual responses:\n\n- **Multi-source synthesis**: Combines relevant sections from multiple strands\n- **Code extraction**: Highlights relevant code snippets\n- **Visual aids**: Includes diagrams and images when helpful\n- **Related links**: Suggests deeper reading\n- **Confidence scoring**: Shows relevance percentage\n\n## Data Flow\n\n```\n1. User asks: \"How do I implement authentication with JWT?\"\n   ↓\n2. Intent: HOW_TO + IMPLEMENT\n   Entities: [\"authentication\", \"JWT\"]\n   Constraints: [\"implementation\"]\n   ↓\n3. Query embedding: [0.23, -0.45, 0.67, ...] (384 dims)\n   ↓\n4. Search index for nearest neighbors\n   - auth-jwt-guide.md (0.92 similarity)\n   - security-best-practices.md (0.87 similarity)\n   - api-design.md (0.76 similarity)\n   ↓\n5. Extract relevant sections + expand context\n   ↓\n6. Build answer with:\n   - Summary paragraph\n   - Step-by-step implementation\n   - Code examples\n   - Security considerations\n   - Links to full strands\n```\n\n## Embedding Generation\n\n### Pre-processing Pipeline\n\n```typescript\ninterface EmbeddingEntry {\n  id: string              // Unique identifier\n  path: string           // Strand path\n  content: string        // Text content\n  embedding: number[]    // 384-dimensional vector\n  metadata: {\n    type: 'strand' | 'section' | 'code'\n    title: string\n    tags: string[]",
-    "searchText": "qa system q&a system architecture\n\nthe frame codex q&a system represents a paradigm shift in knowledge retrieval—combining the precision of semantic search with the intuition of natural language understanding string interface authentication onnx typescript embedding intent answer code language codex search similarity runtime const frame codex semantic search natural language multi source onnx runtime typescript interface architecture frame codex represents represents paradigm paradigm shift"
+    "searchText": "qa system q&a system architecture\n\nthe frame codex q&a system represents a paradigm shift in knowledge retrieval—combining the precision of semantic search with the intuition of natural language understanding string authentication onnx interface typescript embedding intent codex similarity runtime const answer code security understanding frame codex semantic search natural language multi source onnx runtime typescript interface architecture frame codex represents represents paradigm paradigm shift"
   },
   {
     "path": "weaves/wiki/examples/gallery-demo.md",
@@ -1684,12 +1989,12 @@
           "gallery",
           "600",
           "com",
-          "https",
           "image",
           "400",
           "1506905925346",
           "21bda4d32df4",
           "deco",
+          "https",
           "demo",
           "sunset",
           "automatic"
@@ -1795,7 +2100,7 @@
             "- **Art Deco Frames**:"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:03.369Z"
+        "lastIndexed": "2025-12-20T00:30:26.274Z"
       }
     },
     "validation": {
@@ -1814,7 +2119,7 @@
       ]
     },
     "content": "# Art Deco Gallery Demo\n\nThis strand demonstrates the automatic gallery generation for multiple images.\n\n## Individual Images\n\nSingle images display normally:\n\n![A beautiful sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800)\n\n## Automatic Gallery Wall\n\nWhen you have 3 or more images in sequence, they transform into a stunning Art Deco gallery:\n\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600)\n![Ocean waves](https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600)\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600)\n![Desert dunes](https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600)\n![City lights](https://images.unsplash.com/photo-1514565131-fce0801e5785?w=600)\n\n## Gallery with Captions\n\nThe gallery preserves your image alt text as captions:\n\n![The Golden Gate Bridge at sunset](https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=600)\n![New York City skyline](https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=600)\n![Paris Eiffel Tower](https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600)\n![Tokyo at night](https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=600)\n\n## Mixed Content\n\nRegular text breaks the gallery grouping:\n\n![First image](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400)\n![Second image](https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400)\n\nSome text in between...\n\n![Third image](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400)\n![Fourth image](https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400)\n\n## Features\n\n- **Golden Ratio Layout**: Images are sized using φ (1.618)\n- **Art Deco Frames**: Each image gets an ornate golden frame\n- **Hover Effects**: Images scale up on hover\n- **Responsive**: Adapts to mobile screens\n- **Theme Aware**: Works with light, dark, and sepia themes\n- **Lightbox Ready**: Click to view full size (coming soon)\n\n---\n\nmetadata:\ntitle: Gallery Demo\ntags: [examples, media, gallery]\ncreated: 2024-01-01\n",
-    "searchText": "gallery demo individual images\n\nsingle images display normally:\n\n![a beautiful sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800)\n\nautomatic gallery wall\n\nwhen you have 3 or more images in sequence, they transform into a stunning art deco gallery:\n\n![mountain landscape](https://images... images unsplash photo gallery 600 com https image 400 1506905925346 21bda4d32df4 deco demo sunset automatic https images images unsplash unsplash com com photo photo 1506905925346 1506905925346 21bda4d32df4 image https gallery demo sunset https automatic gallery"
+    "searchText": "gallery demo individual images\n\nsingle images display normally:\n\n![a beautiful sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800)\n\nautomatic gallery wall\n\nwhen you have 3 or more images in sequence, they transform into a stunning art deco gallery:\n\n![mountain landscape](https://images... images unsplash photo gallery 600 com image 400 1506905925346 21bda4d32df4 deco https demo sunset automatic https images images unsplash unsplash com com photo photo 1506905925346 1506905925346 21bda4d32df4 image https gallery demo sunset https automatic gallery"
   },
   {
     "path": "weaves/wiki/tutorials/getting-started.md",
@@ -1835,11 +2140,11 @@
           "wiki",
           "deco",
           "audio",
-          "open",
           "welcome",
           "bold",
           "panel",
-          "syntax"
+          "syntax",
+          "editor"
         ],
         "phrases": [
           "frame codex",
@@ -1974,7 +2279,7 @@
             "Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:04.266Z"
+        "lastIndexed": "2025-12-20T00:30:27.948Z"
       }
     },
     "validation": {
@@ -1993,7 +2298,7 @@
       ]
     },
     "content": "# Getting Started with Frame Codex\n\nWelcome to the **Frame Codex** — a revolutionary knowledge system that combines the elegance of Art Deco with the power of modern AI. This tutorial will guide you through the basics of navigating, reading, and contributing to the Codex.\n\n## What is Frame Codex?\n\nFrame Codex is a **four-tier hierarchical knowledge base** designed for both humans and AI to explore, learn, and grow together. Think of it as the **Hitchhiker's Guide to the Galaxy** meets the **Library of Alexandria**, wrapped in golden Art Deco splendor.\n\n### The Four-Tier Architecture\n\n1. **Fabric** — The entire knowledge universe (the whole Codex)\n2. **Weave** — A thematic collection (e.g., \"Wiki\", \"Tutorials\", \"Research\")\n3. **Loom** — A category within a weave (e.g., \"Architecture\", \"Examples\")\n4. **Strand** — An individual document (like this one!)\n\n```\nFabric (Frame Codex)\n└── Weave (wiki)\n    └── Loom (tutorials)\n        └── Strand (getting-started.md)\n```\n\n## Navigation Basics\n\n### The Sidebar\n\nThe left sidebar shows your current location in the hierarchy:\n\n- **Weaves** are shown in bold with distinctive colors\n- **Looms** are nested underneath weaves\n- **Strands** appear as clickable items within looms\n- Current selection is highlighted with a golden ring\n\n### The Content Area\n\nThe center panel displays your selected strand in beautiful markdown rendering with:\n\n- Syntax highlighting for code blocks\n- Auto-generated galleries for multiple images\n- Embedded media support (audio, video, drawings)\n- Interactive elements\n\n### The Metadata Panel\n\nThe right sidebar shows:\n\n- **File info** — path, size, last modified\n- **Tags** — auto-suggested or manual keywords\n- **Readability** — Flesch-Kincaid score and estimated reading time\n- **Vocabulary** — domain-specific terms found in the strand\n- **Sentiment** — emotional tone analysis\n\n## Your First Strand\n\nLet's create your first knowledge strand!\n\n### 1. Open the Editor\n\nPress the **Edit** button in the toolbar (or press `E` on your keyboard).\n\n### 2. Write Your Content\n\nUse the split-pane editor to write in Markdown:\n\n```markdown\n# My First Strand\n\nThis is a paragraph of text.\n\n## A Subheading\n\n- Bullet point 1\n- Bullet point 2\n\n**Bold text** and *italic text* work too!\n```\n\n### 3. Add Media\n\nClick the **sparkle icon** ✨ to open the radial media menu:\n\n- 📷 **Camera** — Take a photo or upload an image\n- 🎙️ **Voice** — Record audio notes\n- 🎨 **Draw** — Open the infinite whiteboard canvas\n- 💻 **Code** — Insert syntax-highlighted code blocks\n\n### 4. Save Your Draft\n\nClick **Save Draft** to store locally (auto-saves every 5 seconds).\n\n### 5. Publish Your Changes\n\nClick **Publish** to create a pull request on GitHub!\n\nThe system will:\n1. Fork the repository (if needed)\n2. Upload your media assets\n3. Create a branch\n4. Commit your changes\n5. Open a PR for review\n\n## Markdown Features\n\nFrame Codex supports **GitHub Flavored Markdown** with special enhancements:\n\n### Basic Formatting\n\n```markdown\n**Bold** \n*Italic* \n`Inline code` \n~~Strikethrough~~\n```\n\n### Links and References\n\n```markdown\n[External link](https://example.com)\n[Internal strand](/wiki/architecture/overview)\n```\n\n### Images\n\n```markdown\n![Single image](./photo.jpg)\n```\n\nWhen you add 3+ images in a row, they automatically become a gallery!\n\n```markdown\n![Photo 1](./img1.jpg)\n![Photo 2](./img2.jpg)\n![Photo 3](./img3.jpg)\n![Photo 4](./img4.jpg)\n```\n\n### Code Blocks\n\n````markdown\n```javascript\nfunction fibonacci(n) {\n  if (n <= 1) return n\n  return fibonacci(n - 1) + fibonacci(n - 2)\n}\n```\n````\n\n### Tables\n\n```markdown\n| Feature | Status |\n|---------|--------|\n| Gallery | ✅ |\n| Voice | ✅ |\n| Whiteboard | ✅ |\n```\n\n### Math (Coming Soon)\n\n```markdown\nInline: $E = mc^2$\n\nBlock:\n$$\n\\phi = \\frac{1 + \\sqrt{5}}{2} \\approx 1.618\n$$\n```\n\n## Media as Strands\n\nIn Frame Codex, **everything is a strand** — including media files!\n\n### Photos\n\nWhen you capture a photo, it becomes a strand in `./assets/photos/` and is automatically:\n- Timestamped\n- Linked to the parent strand\n- Indexed for search\n- Added to the gallery if there are multiple\n\n### Audio\n\nVoice recordings are saved as `./assets/audio/*.webm` and can be:\n- Played inline\n- Transcribed (coming soon)\n- Tagged with keywords\n- Searched by content\n\n### Drawings\n\nWhiteboard sketches export as SVG to `./assets/drawings/` and retain:\n- Full vector quality\n- Infinite canvas context\n- Golden ratio guides\n- Layer information\n\n## The Recursive Nature of Strands\n\nHere's where it gets magical: **strands can contain strands**.\n\nA single media collection can be treated as one logical strand with a `catalog.json` schema:\n\n```json\n{\n  \"type\": \"gallery\",\n  \"title\": \"Art Deco Architecture Photos\",\n  \"strands\": [\n    \"./chrysler-building.jpg\",\n    \"./empire-state.jpg\",\n    \"./rockefeller-center.jpg\"\n  ],\n  \"metadata\": {\n    \"location\": \"New York City\",\n    \"period\": \"1920-1940\",\n    \"style\": \"Art Deco\"\n  }\n}\n```\n\nThis catalog **itself becomes a traversable node** in the knowled",
-    "searchText": "getting started getting started with frame codex\n\nwelcome to the **frame codex** — a revolutionary knowledge system that combines the elegance of art deco with the power of modern ai jpg tutorials photo media codex drawings photos wiki deco audio open welcome bold panel syntax frame codex wiki tutorials started frame code blocks save draft markdown features jpg photo codex welcome welcome frame codex revolutionary"
+    "searchText": "getting started getting started with frame codex\n\nwelcome to the **frame codex** — a revolutionary knowledge system that combines the elegance of art deco with the power of modern ai jpg tutorials photo media codex drawings photos wiki deco audio welcome bold panel syntax editor frame codex wiki tutorials started frame code blocks save draft markdown features jpg photo codex welcome welcome frame codex revolutionary"
   },
   {
     "path": "weaves/wiki/tutorials/markdown-features.md",
@@ -2006,19 +2311,19 @@
         "keywords": [
           "item",
           "heading",
+          "markdown",
           "html",
           "jpg",
-          "lists",
           "aligned",
-          "markdown",
+          "lists",
           "nested",
-          "fibonacci",
-          "another",
-          "task",
-          "don",
           "details",
           "gallery",
-          "headings"
+          "fibonacci",
+          "task",
+          "headings",
+          "supports",
+          "italic"
         ],
         "phrases": [
           "frame codex",
@@ -2175,7 +2480,7 @@
             "- Art Deco"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:05.298Z"
+        "lastIndexed": "2025-12-20T00:30:29.827Z"
       }
     },
     "validation": {
@@ -2185,7 +2490,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: item, heading, html, jpg, lists",
+        "Consider adding tags: item, heading, markdown, html, jpg",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -2194,7 +2499,7 @@
       ]
     },
     "content": "# Markdown Features Guide\n\nFrame Codex supports **GitHub Flavored Markdown (GFM)** plus custom enhancements for knowledge management. This guide covers every feature available to you.\n\n## Philosophy\n\n> \"Markdown is a lightweight markup language with plain-text formatting syntax designed so that it can be converted to HTML and many other formats.\"\n\nIn Frame Codex, markdown serves as the **universal language** for human-readable knowledge that machines can also parse, index, and synthesize.\n\n## Text Formatting\n\n### Basic Emphasis\n\n```markdown\n*italic* or _italic_\n**bold** or __bold__\n***bold italic*** or ___bold italic___\n~~strikethrough~~\n`inline code`\n```\n\n**Renders as:**\n\n*italic* or _italic_  \n**bold** or __bold__  \n***bold italic*** or ___bold italic___  \n~~strikethrough~~  \n`inline code`\n\n### Subscript and Superscript\n\n```markdown\nH~2~O  \nE = mc^2^\n```\n\nH~2~O  \nE = mc^2^\n\n## Headings\n\n```markdown\n# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n##### Heading 5\n###### Heading 6\n```\n\n**Best practices:**\n- Use one `#` heading per strand (the title)\n- Start hierarchy at `##` for sections\n- Don't skip levels (e.g., `##` → `####`)\n- Keep headings concise and descriptive\n\n## Lists\n\n### Unordered Lists\n\n```markdown\n- Item 1\n- Item 2\n  - Nested item 2.1\n  - Nested item 2.2\n- Item 3\n\n* Also works\n+ This too\n```\n\n- Item 1\n- Item 2\n  - Nested item 2.1\n  - Nested item 2.2\n- Item 3\n\n### Ordered Lists\n\n```markdown\n1. First item\n2. Second item\n   1. Nested ordered\n   2. Another nested\n3. Third item\n```\n\n1. First item\n2. Second item\n   1. Nested ordered\n   2. Another nested\n3. Third item\n\n### Task Lists\n\n```markdown\n- [x] Completed task\n- [ ] Uncompleted task\n- [ ] Another task\n```\n\n- [x] Completed task\n- [ ] Uncompleted task\n- [ ] Another task\n\n## Links\n\n### External Links\n\n```markdown\n[OpenAI](https://openai.com)\n[Link with title](https://example.com \"Example Site\")\n```\n\n[OpenAI](https://openai.com)\n\n### Internal Strand Links\n\n```markdown\n[Architecture Overview](/wiki/architecture/overview)\n[Getting Started](./getting-started)\n```\n\n### Autolinks\n\n```markdown\nhttps://frame.dev automatically becomes a link\n```\n\nhttps://frame.dev\n\n### Reference Links\n\n```markdown\nI love [Frame Codex][1] and [OpenStrand][2].\n\n[1]: https://frame.dev\n[2]: https://github.com/openstrand\n```\n\n## Images\n\n### Single Image\n\n```markdown\n![Alt text](./image.jpg)\n![With title](./image.jpg \"Image Title\")\n```\n\n### Automatic Gallery (3+ Images)\n\nWhen you add 3 or more images consecutively, Frame Codex automatically creates a **golden-framed Art Deco gallery**:\n\n```markdown\n![Photo 1](./img1.jpg)\n![Photo 2](./img2.jpg)\n![Photo 3](./img3.jpg)\n![Photo 4](./img4.jpg)\n```\n\nFeatures:\n- Golden ratio layout (φ ≈ 1.618)\n- Art Deco corner ornaments\n- Hover effects\n- Responsive grid\n- Theme-aware styling\n\n### Image Sizing (HTML)\n\n```markdown\n<img src=\"./logo.png\" width=\"300\" alt=\"Logo\">\n```\n\n## Code\n\n### Inline Code\n\n```markdown\nUse `const` instead of `var` in JavaScript.\n```\n\nUse `const` instead of `var` in JavaScript.\n\n### Code Blocks\n\n````markdown\n```javascript\nfunction fibonacci(n) {\n  if (n <= 1) return n\n  return fibonacci(n - 1) + fibonacci(n - 2)\n}\n```\n````\n\nSupported languages include:\n- `javascript` / `typescript` / `jsx` / `tsx`\n- `python` / `rust` / `go` / `c` / `cpp` / `java`\n- `bash` / `shell` / `powershell`\n- `json` / `yaml` / `toml` / `xml`\n- `markdown` / `html` / `css` / `scss`\n- `sql` / `graphql`\n- And many more!\n\n### Code with Line Numbers\n\n````markdown\n```typescript {1,3-5}\nconst phi = (1 + Math.sqrt(5)) / 2  // highlighted\nconst fibonacci = (n: number): number => {\n  if (n <= 1) return n  // highlighted\n  return fibonacci(n - 1) + fibonacci(n - 2)  // highlighted\n}\n```\n````\n\n## Tables\n\n```markdown\n| Feature | Status | Priority |\n|---------|--------|----------|\n| Gallery | ✅ Done | High |\n| Voice Recorder | ✅ Done | Medium |\n| Q&A System | 🚧 In Progress | High |\n| API | 📋 Planned | Low |\n```\n\n**Alignment:**\n\n```markdown\n| Left-aligned | Center-aligned | Right-aligned |\n|:------------|:--------------:|--------------:|\n| Text        | Text           | Text          |\n```\n\n| Left-aligned | Center-aligned | Right-aligned |\n|:------------|:--------------:|--------------:|\n| Text        | Text           | Text          |\n\n## Blockquotes\n\n```markdown\n> \"The best way to predict the future is to invent it.\"\n> — Alan Kay\n\n> Nested quotes:\n>> \"Knowledge is power.\"\n>> — Francis Bacon\n```\n\n> \"The best way to predict the future is to invent it.\"  \n> — Alan Kay\n\n## Horizontal Rules\n\n```markdown\n---\n***\n___\n```\n\nAll three render as:\n\n---\n\n## HTML Support\n\nFrame Codex supports raw HTML for advanced layouts:\n\n```html\n<div style=\"text-align: center; padding: 2rem; background: linear-gradient(135deg, #FFD700, #B8860B); border-radius: 0.5rem;\">\n  <h3>Art Deco Box</h3>\n  <p>Custom styled content</p>\n</div>\n```\n\n### Details/Summary (Collapsible)\n\n```markdown\n<details>\n<summary>Click to expand</summary>\n\nHidden content goes here!\n\n- Can contain markdown\n- And ",
-    "searchText": "markdown features markdown features guide\n\nframe codex supports **github flavored markdown (gfm)** plus custom enhancements for knowledge management item heading html jpg lists aligned markdown nested fibonacci another task don details gallery headings frame codex item item item nested nested item heading heading markdown features codex supports text text features guide inline code"
+    "searchText": "markdown features markdown features guide\n\nframe codex supports **github flavored markdown (gfm)** plus custom enhancements for knowledge management item heading markdown html jpg aligned lists nested details gallery fibonacci task headings supports italic frame codex item item item nested nested item heading heading markdown features codex supports text text features guide inline code"
   },
   {
     "path": "weaves/wiki/tutorials/media-guide.md",
@@ -2209,16 +2514,16 @@
           "assets",
           "audio",
           "drawings",
-          "jpg",
           "media",
+          "jpg",
           "svg",
-          "drawing",
           "voice",
+          "click",
           "upload",
           "radial",
           "menu",
-          "click",
           "zoom",
+          "photo",
           "capture"
         ],
         "phrases": [
@@ -2390,7 +2695,7 @@
             "San Francisco,"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:06.586Z"
+        "lastIndexed": "2025-12-20T00:30:32.130Z"
       }
     },
     "validation": {
@@ -2400,7 +2705,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: photos, assets, audio, drawings, jpg",
+        "Consider adding tags: photos, assets, audio, drawings, media",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -2409,7 +2714,7 @@
       ]
     },
     "content": "# Media Guide: Photos, Audio, Drawings & More\n\nFrame Codex treats **all media as first-class knowledge strands**. This guide shows you how to capture, upload, organize, and reference multimedia content in your Codex.\n\n## Philosophy: Everything is a Strand\n\nIn traditional knowledge bases, media files are mere \"attachments.\" In Frame Codex, they are **strands** — interconnected nodes in the knowledge graph.\n\nA photo isn't just decoration—it's a semantic object with:\n- **Context** (when, where, why it was taken)\n- **Relationships** (linked to parent strand, related concepts)\n- **Metadata** (tags, sentiment, visual features)\n- **Discoverability** (searchable, indexed, recommended)\n\n## The Radial Media Menu\n\nTo insert media, press the **sparkle icon** ✨ in the editor. This opens the **Art Deco Radial Menu** with options arranged in a circle:\n\n### Available Options\n\n| Icon | Type | Description |\n|------|------|-------------|\n| 📷 | **Camera** | Capture or upload photos |\n| 🎙️ | **Voice** | Record audio notes |\n| 🎨 | **Draw** | Open whiteboard canvas |\n| 💻 | **Code** | Insert code blocks |\n| 🖼️ | **Image** | Upload from file system |\n| 🔗 | **Link** | Insert external links |\n| #️⃣ | **Tag** | Add semantic tags |\n| ✍️ | **Heading** | Insert section heading |\n\n## 📷 Photos\n\n### Capture with Camera\n\n1. Click **Camera** in the radial menu\n2. A Polaroid-style UI appears\n3. Click **Capture** to take a photo\n4. Apply retro filters:\n   - **Sepia** — Vintage warmth\n   - **Noir** — Black & white\n   - **Vintage** — Faded 1970s look\n5. Click **Use Photo** to insert\n\nThe photo is automatically:\n- Saved to `./assets/photos/photo-{timestamp}.jpg`\n- Linked in the markdown: `![Photo](./assets/photos/photo-xxx.jpg)`\n- Uploaded when you publish (via PR workflow)\n\n### Upload from File\n\n1. Click **Image** in the radial menu\n2. Select file from your device\n3. Image is copied to `./assets/photos/`\n4. Reference inserted in markdown\n\n### Gallery Wall\n\nWhen you add **3 or more photos** in sequence, they automatically transform into an **Art Deco gallery**:\n\n```markdown\n![Golden Gate](./assets/photos/golden-gate.jpg)\n![Bay Bridge](./assets/photos/bay-bridge.jpg)\n![Alcatraz](./assets/photos/alcatraz.jpg)\n```\n\n**Features:**\n- Golden ratio layout (φ ≈ 1.618)\n- Ornate golden frames\n- Hover to zoom\n- Click for lightbox (coming soon)\n- Responsive grid\n\n### Best Practices\n\n✅ **Do:**\n- Add descriptive alt text\n- Optimize images (< 2MB recommended)\n- Use consistent naming (lowercase, hyphens)\n- Group related photos together\n\n❌ **Don't:**\n- Upload extremely large files (>10MB)\n- Use generic names like `image1.jpg`\n- Forget to publish your assets!\n\n## 🎙️ Voice Recordings\n\n### Record Audio\n\n1. Click **Voice** in the radial menu\n2. A retro cassette tape UI appears\n3. Click **Record** to start\n4. Watch the VU meter visualize your voice\n5. Click **Pause** to pause (reels stop spinning)\n6. Click **Stop** to finish\n7. Review and **Use Recording**\n\nThe audio is automatically:\n- Saved as `./assets/audio/voice-{timestamp}.webm`\n- Inserted as `<audio controls src=\"./assets/audio/voice-xxx.webm\"></audio>`\n- Optimized for web playback\n\n### Audio Notes Use Cases\n\n**Personal Knowledge Management:**\n- Quick voice memos while reading\n- Reflections after completing a task\n- Verbal explanations of complex ideas\n\n**Collaboration:**\n- Leave voice comments on a strand\n- Narrate a tutorial or walkthrough\n- Record interviews or conversations\n\n**Learning:**\n- Practice pronunciation\n- Record lecture snippets\n- Audio flashcards\n\n### Transcription (Coming Soon)\n\nVoice recordings will be transcribed using Whisper.js (client-side) so you can:\n- Search audio content by words\n- Generate captions automatically\n- Convert speech to markdown\n\n## 🎨 Drawings & Whiteboard\n\n### The Infinite Canvas\n\n1. Click **Draw** in the radial menu\n2. The **Art Deco Whiteboard** opens fullscreen\n3. Draw freely with pan & zoom\n4. Toggle **Grid** for precision\n5. Toggle **Golden Guides** for φ-ratio composition\n6. Click **Export** to save\n\n### Canvas Features\n\n- **Infinite pan** — Never run out of space\n- **Zoom** — Pinch or scroll to zoom in/out\n- **Drawing tools** — Pen, shapes, text, arrows\n- **Undo/Redo** — Never lose your work\n- **Dark mode** — Auto-adapts to your theme\n- **SVG export** — Perfect vector quality\n\n### Golden Ratio Guides\n\nEnable guides to see:\n- **Vertical lines** at 38.2% and 61.8%\n- **Horizontal lines** at 38.2% and 61.8%\n- **Concentric circles** for focal points\n\nThese are based on φ (phi) and help create visually balanced compositions.\n\n### Drawings as Strands\n\nExported drawings are saved as:\n- `./assets/drawings/drawing-{timestamp}.svg`\n- Inserted as `![Drawing](./assets/drawings/drawing-xxx.svg)`\n- Fully scalable and editable (SVG format)\n\n### Use Cases\n\n**Brainstorming:**\n- Mind maps\n- Concept diagrams\n- Flowcharts\n\n**Teaching:**\n- Annotate screenshots\n- Sketch explanations\n- Draw diagrams\n\n**Design:**\n- UI wireframes\n- Architecture sketches\n- Visual notes\n\n## 📂 Asset Org",
-    "searchText": "media guide media guide: photos, audio, drawings & more\n\nframe codex treats **all media as first-class knowledge strands** photos assets audio drawings jpg media svg drawing voice upload radial menu click zoom capture assets photos radial menu media guide audio drawings golden gate guide photos photos audio frame codex saved assets alt text"
+    "searchText": "media guide media guide: photos, audio, drawings & more\n\nframe codex treats **all media as first-class knowledge strands** photos assets audio drawings media jpg svg voice click upload radial menu zoom photo capture assets photos radial menu media guide audio drawings golden gate guide photos photos audio frame codex saved assets alt text"
   },
   {
     "path": "weaves/wiki/weave.yaml",
@@ -2452,20 +2757,20 @@
       "autoGenerated": {
         "keywords": [
           "meta",
-          "contains",
           "maintainers",
           "wiki",
-          "documentation",
           "codex",
-          "technical",
+          "documentation",
+          "contains",
           "slug",
+          "technical",
           "organization",
           "indexing",
           "contributing",
           "contribution",
           "deployment",
           "contributed",
-          "subject"
+          "audience"
         ],
         "phrases": [
           "frame codex",
@@ -2552,7 +2857,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T00:28:06.756Z"
+        "lastIndexed": "2025-12-20T00:30:32.432Z"
       }
     },
     "validation": {
@@ -2570,7 +2875,7 @@
       ]
     },
     "content": "slug: wiki\ntitle: \"Frame Codex Wiki\"\ndescription: \"Complete documentation and technical architecture for Frame Codex, OpenStrand, and the knowledge organization system\"\n\nscope: |\n  This weave contains all meta-documentation about Frame Codex itself:\n  - How the Codex works (architecture, indexing, caching)\n  - Contribution guides and schemas\n  - OpenStrand integration details\n  - Development and deployment guides\n\nboundaries: |\n  This weave does NOT contain:\n  - Actual knowledge content (see other weaves)\n  - User-contributed strands (those go in subject-specific weaves)\n\nlooms:\n  - architecture\n  - contributing\n  - development\n\nmetadata:\n  domain: meta-documentation\n  audience: [contributors, developers, maintainers]\n  license: CC-BY-4.0\n\ntags: [wiki, documentation, meta, architecture, contributing]\n\npublishing:\n  status: published\n  maintainers: [jddunn]\n\n",
-    "searchText": "frame codex wiki slug: wiki\ntitle: \"frame codex wiki\"\ndescription: \"complete documentation and technical architecture for frame codex, openstrand, and the knowledge organization system\"\n\nscope: |\n  this weave contains all meta-documentation about frame codex itself:\n  - how the codex works (architecture, indexing... meta contains maintainers wiki documentation codex technical slug organization indexing contributing contribution deployment contributed subject frame codex codex wiki meta documentation slug wiki wiki title title frame wiki description description complete complete documentation documentation technical"
+    "searchText": "frame codex wiki slug: wiki\ntitle: \"frame codex wiki\"\ndescription: \"complete documentation and technical architecture for frame codex, openstrand, and the knowledge organization system\"\n\nscope: |\n  this weave contains all meta-documentation about frame codex itself:\n  - how the codex works (architecture, indexing... meta maintainers wiki codex documentation contains slug technical organization indexing contributing contribution deployment contributed audience frame codex codex wiki meta documentation slug wiki wiki title title frame wiki description description complete complete documentation documentation technical"
   },
   {
     "path": "schema/loom.schema.yaml",
@@ -2643,19 +2948,19 @@
         "keywords": [
           "string",
           "type",
-          "object",
-          "array",
           "2020",
-          "enum",
           "slug",
+          "object",
           "properties",
+          "array",
+          "ordering",
+          "enum",
+          "items",
           "org",
           "pattern",
-          "ordering",
-          "items",
           "schema",
-          "required",
-          "alpha"
+          "alpha",
+          "weight"
         ],
         "phrases": [
           "type string",
@@ -2735,7 +3040,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T00:28:06.878Z"
+        "lastIndexed": "2025-12-20T00:30:32.648Z"
       }
     },
     "validation": {
@@ -2745,7 +3050,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: string, type, object, array, 2020",
+        "Consider adding tags: string, type, 2020, slug, object",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -2754,7 +3059,7 @@
       ]
     },
     "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Loom\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n  summary:\n    type: string\n  tags:\n    type: array\n    items: { type: string }\n  ordering:\n    type: string\n    enum: [manual, alpha, date, weight]\n    default: manual\n  relationships:\n    type: array\n    items:\n      type: object\n      properties:\n        targetSlug: { type: string }\n        type:\n          type: string\n          enum: [follows, parallels, contrasts, extends, applies]\n        strength: { type: number, minimum: 0, maximum: 1 }\n\n\n",
-    "searchText": "loom $schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: loom\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n  summary:\n    type: string\n  tags:\n    type: array\n    items: { type: string }\n  ordering:\n    type:... string type object array 2020 enum slug properties org pattern ordering items schema required alpha type string type object type array array items items type schema https https json json schema schema org org draft"
+    "searchText": "loom $schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: loom\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n  summary:\n    type: string\n  tags:\n    type: array\n    items: { type: string }\n  ordering:\n    type:... string type 2020 slug object properties array ordering enum items org pattern schema alpha weight type string type object type array array items items type schema https https json json schema schema org org draft"
   },
   {
     "path": "schema/strand.schema.yaml",
@@ -2938,19 +3243,19 @@
         "keywords": [
           "string",
           "type",
-          "array",
           "extractivesummary",
+          "array",
           "maximum",
           "object",
-          "enum",
-          "minimum",
           "properties",
+          "minimum",
+          "enum",
           "items",
-          "description",
           "strandfrontmatter",
           "aisummary",
           "abstractive",
-          "produced"
+          "contenttype",
+          "description"
         ],
         "phrases": [
           "type string",
@@ -3043,7 +3348,7 @@
             "[lesson,"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:07.202Z"
+        "lastIndexed": "2025-12-20T00:30:33.237Z"
       }
     },
     "validation": {
@@ -3053,7 +3358,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: string, type, array, extractivesummary, maximum",
+        "Consider adding tags: string, type, extractivesummary, array, maximum",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -3062,7 +3367,7 @@
       ]
     },
     "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: StrandFrontmatter\ntype: object\nrequired: [id, slug, title, version, contentType]\nproperties:\n  id: { type: string, format: uuid }\n  slug: { type: string, pattern: \"^[a-z0-9-]+$\" }\n  title: { type: string }\n  summary:\n    type: string\n    description: \"Deprecated alias retained for backward compatibility. Use extractiveSummary instead.\"\n  extractiveSummary:\n    type: string\n    description: \"Deterministic summary generated by the static NLP pipeline (TF-IDF, n-grams).\"\n  aiSummary:\n    type: string\n    description: \"Optional abstractive summary produced by LLM providers.\"\n  notes:\n    type: array\n    items: { type: string }\n    description: \"Curated bullet notes for this strand.\"\n  version: { type: string, pattern: \"^\\\\d+\\\\.\\\\d+\\\\.\\\\d+$\" }\n  contentType:\n    type: string\n    enum: [lesson, reference, exercise, assessment, project, discussion, resource]\n  difficulty:\n    type: object\n    properties:\n      overall: { enum: [beginner, intermediate, advanced, expert] }\n      cognitive: { type: number, minimum: 1, maximum: 10 }\n      prerequisites: { type: number, minimum: 0, maximum: 10 }\n      conceptual: { type: number, minimum: 1, maximum: 10 }\n  taxonomy:\n    type: object\n    properties:\n      subject: { type: array, items: { type: string } }\n      topic: { type: array, items: { type: string } }\n      subtopic: { type: array, items: { type: string } }\n      concepts:\n        type: array\n        items:\n          type: object\n          properties:\n            term: { type: string }\n            weight: { type: number, minimum: 0, maximum: 1 }\n  relationships:\n    type: array\n    items:\n      type: object\n      properties:\n        targetSlug: { type: string }\n        type: { enum: [follows, parallels, contrasts, extends, applies, synthesizes] }\n        strength: { type: number, minimum: 0, maximum: 1 }\n        bidirectional: { type: boolean, default: false }\n  publishing:\n    type: object\n    properties:\n      status: { enum: [draft, review, published, archived] }\n      license: { type: string, default: MIT }\n",
-    "searchText": "strandfrontmatter use extractivesummary instead.\"\n  extractivesummary:\n    type: string\n    description: \"deterministic summary generated by the static nlp pipeline (tf-idf, n-grams).\"\n  aisummary:\n    type: string\n    description: \"optional abstractive summary produced by llm providers.\"\n  notes:\n    type: array\n... string type array extractivesummary maximum object enum minimum properties items description strandfrontmatter aisummary abstractive produced type string type array string description type object array items items type object properties type minimum minimum maximum extractivesummary extractivesummary"
+    "searchText": "strandfrontmatter use extractivesummary instead.\"\n  extractivesummary:\n    type: string\n    description: \"deterministic summary generated by the static nlp pipeline (tf-idf, n-grams).\"\n  aisummary:\n    type: string\n    description: \"optional abstractive summary produced by llm providers.\"\n  notes:\n    type: array\n... string type extractivesummary array maximum object properties minimum enum items strandfrontmatter aisummary abstractive contenttype description type string type array string description type object array items items type object properties type minimum minimum maximum extractivesummary extractivesummary"
   },
   {
     "path": "schema/weave.schema.yaml",
@@ -3111,15 +3416,15 @@
           "maintainedby",
           "slug",
           "2020",
+          "license",
           "schema",
           "org",
           "object",
-          "pattern",
-          "license",
-          "required",
           "properties",
+          "pattern",
           "draft",
-          "title"
+          "required",
+          "mit"
         ],
         "phrases": [
           "type string",
@@ -3190,7 +3495,7 @@
           "organizations": [],
           "topics": []
         },
-        "lastIndexed": "2025-12-20T00:28:07.291Z"
+        "lastIndexed": "2025-12-20T00:30:33.390Z"
       }
     },
     "validation": {
@@ -3209,7 +3514,7 @@
       ]
     },
     "content": "$schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: Weave\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n    minLength: 3\n  description:\n    type: string\n  maintainedBy:\n    type: string\n  license:\n    type: string\n    default: MIT\n  tags:\n    type: array\n    items:\n      type: string\n\n\n",
-    "searchText": "weave $schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: weave\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n    minlength: 3\n  description:\n    type: string\n  maintainedby:\n    type: string\n  license:\n    typ... string type minlength maintainedby slug 2020 schema org object pattern license required properties draft title type string schema https https json json schema schema org org draft draft 2020 2020 schema schema title title weave"
+    "searchText": "weave $schema: \"https://json-schema.org/draft/2020-12/schema\"\ntitle: weave\ntype: object\nrequired: [slug, title]\nproperties:\n  slug:\n    type: string\n    pattern: \"^[a-z0-9-]+$\"\n  title:\n    type: string\n    minlength: 3\n  description:\n    type: string\n  maintainedby:\n    type: string\n  license:\n    typ... string type minlength maintainedby slug 2020 license schema org object properties pattern draft required mit type string schema https https json json schema schema org org draft draft 2020 2020 schema schema title title weave"
   },
   {
     "path": "docs/CHANGELOG_SYSTEM.md",
@@ -3254,15 +3559,15 @@
           "git",
           "activity",
           "2025",
-          "issues",
           "conventional",
-          "commit",
+          "issues",
           "gh_pat",
           "feat",
           "author",
           "fix",
-          "january",
           "codex",
+          "commit",
+          "january",
           "changes"
         ],
         "phrases": [
@@ -3420,7 +3725,7 @@
             "\"John Doe\","
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:08.324Z"
+        "lastIndexed": "2025-12-20T00:30:35.188Z"
       }
     },
     "validation": {
@@ -3432,7 +3737,7 @@
       ]
     },
     "content": "\n# Frame Codex Changelog System\n\nFrame Codex automatically tracks and records all changes, issues, and pull requests in a structured, machine-readable format.\n\n## Overview\n\nThe changelog system runs daily via GitHub Actions and generates:\n\n1. **Git Changelog**: Parsed conventional commits with metadata\n2. **Issue Activity**: Created, closed, and merged issues/PRs\n3. **JSON Snapshots**: One file per day for easy querying\n\nAll history is stored in `codex-history/` and committed to the repository.\n\n## Why This Matters\n\n### For Humans\n\n- **Transparency**: See exactly what changed and when\n- **Accountability**: Track who contributed what\n- **Discovery**: Find related changes quickly\n\n### For AI\n\n- **Structured Data**: Consistent JSON schema for LLM consumption\n- **Contextual**: Links to commits, issues, PRs for deep dives\n- **Queryable**: Filter by date, type, author, or label\n\n## How It Works\n\n### Daily Automation\n\nEvery day at 00:00 UTC, a GitHub Actions workflow:\n\n1. **Fetches Git History**\n   - Parses last 7 days of commits\n   - Extracts conventional commit metadata\n   - Writes `codex-history/git/YYYY-MM-DD.json`\n\n2. **Fetches GitHub Activity** (if `GH_PAT` is set)\n   - Queries GraphQL API for yesterday's activity\n   - Collects created/closed issues and merged PRs\n   - Writes `codex-history/issues/YYYY-MM-DD.json`\n\n3. **Commits Changes**\n   - Adds new JSON files\n   - Pushes to `master` branch\n\n### Manual Generation\n\nYou can also generate history manually:\n\n```bash\ncd apps/codex\n\n# Git changelog for a date range\nnode scripts/generate-changelog.js --since 2025-01-01\n\n# Issue activity (requires GH_PAT)\nGH_PAT=ghp_xxx node scripts/fetch-issue-activity.js --since 2025-01-01\n```\n\n## Data Formats\n\n### Git Changelog\n\n`codex-history/git/YYYY-MM-DD.json`:\n\n```json\n{\n  \"date\": \"2025-01-15\",\n  \"totalCommits\": 5,\n  \"byType\": {\n    \"feat\": [\n      {\n        \"sha\": \"abc1234\",\n        \"author\": \"John Doe\",\n        \"date\": \"2025-01-15T10:30:00Z\",\n        \"url\": \"https://github.com/framersai/codex/commit/abc1234\",\n        \"type\": \"feat\",\n        \"scope\": \"indexer\",\n        \"description\": \"add SQL caching\"\n      }\n    ],\n    \"fix\": [...],\n    \"chore\": [...]\n  },\n  \"commits\": [...]\n}\n```\n\n### Issue Activity\n\n`codex-history/issues/YYYY-MM-DD.json`:\n\n```json\n{\n  \"date\": \"2025-01-15\",\n  \"repository\": \"framersai/codex\",\n  \"summary\": {\n    \"issuesCreated\": 2,\n    \"issuesClosed\": 1,\n    \"prsMerged\": 3,\n    \"total\": 6\n  },\n  \"created\": [\n    {\n      \"number\": 42,\n      \"title\": \"Add new feature\",\n      \"url\": \"https://github.com/framersai/codex/issues/42\",\n      \"createdAt\": \"2025-01-15T14:20:00Z\",\n      \"author\": \"johndoe\",\n      \"labels\": [\"enhancement\"]\n    }\n  ],\n  \"closed\": [...],\n  \"merged\": [...]\n}\n```\n\n## Conventional Commits\n\nFor best results, use conventional commit format:\n\n```\ntype(scope): description\n\nOptional body with more details\n```\n\n### Commit Types\n\n- `feat`: New feature\n- `fix`: Bug fix\n- `docs`: Documentation only\n- `chore`: Maintenance (deps, config, etc.)\n- `refactor`: Code refactoring\n- `test`: Tests\n- `ci`: CI/CD changes\n- `perf`: Performance improvements\n\n### Examples\n\n```bash\n# Good\ngit commit -m \"feat(indexer): add SQL caching for 10x speedup\"\ngit commit -m \"fix(validator): handle missing required fields\"\ngit commit -m \"docs: update submission guide with ECA fields\"\n\n# Also fine (fallback to \"other\" type)\ngit commit -m \"Update README\"\n```\n\n## Querying History\n\n### Command Line (jq)\n\n```bash\n# Find all features added in January\njq '.commits[] | select(.type == \"feat\")' codex-history/git/2025-01-*.json\n\n# Count PRs merged per day\njq '.summary.prsMerged' codex-history/issues/*.json\n\n# Get commits by author\njq '.commits[] | select(.author == \"John Doe\")' codex-history/git/*.json\n\n# Find issues with specific label\njq '.created[] | select(.labels | contains([\"bug\"]))' codex-history/issues/*.json\n```\n\n### JavaScript/TypeScript\n\n```typescript\nimport fs from 'fs'\nimport path from 'path'\n\n// Load all git changelogs for a month\nfunction loadMonth(year: number, month: number) {\n  const dir = 'codex-history/git'\n  const files = fs.readdirSync(dir)\n    .filter(f => f.startsWith(`${year}-${month.toString().padStart(2, '0')}`))\n    .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')))\n  \n  return files\n}\n\n// Get all features\nconst january = loadMonth(2025, 1)\nconst features = january.flatMap(day => \n  day.commits.filter(c => c.type === 'feat')\n)\n\nconsole.log(`${features.length} features added in January`)\n```\n\n### AI Prompts\n\n> \"Summarize the changes in Frame Codex for the week of January 15-21, 2025. Focus on new features and bug fixes.\"\n\nThe AI can read the relevant JSON files and generate a comprehensive summary.\n\n## Configuration\n\n### GitHub Secrets\n\nAdd to `framersai/codex` repository settings:\n\n**Required:**\n- `GH_PAT`: GitHub Personal Access Token with `repo` scope\n  - Used for issue/PR activity tracking\n  - Generate at: https://github.com/settings/tokens/new?scopes=repo\n\n**Optional:**\n- None (git chang",
-    "searchText": "frame codex changelog system automated changelog and activity tracking using git commits and github api commits changelog git activity 2025 issues conventional commit gh_pat feat author fix january codex changes codex git github com frame codex codex issues framersai codex github actions git changelog conventional commit yyyy json https github"
+    "searchText": "frame codex changelog system automated changelog and activity tracking using git commits and github api commits changelog git activity 2025 conventional issues gh_pat feat author fix codex commit january changes codex git github com frame codex codex issues framersai codex github actions git changelog conventional commit yyyy json https github"
   },
   {
     "path": "docs/DEVELOPMENT.md",
@@ -3444,20 +3749,20 @@
       "autoGenerated": {
         "keywords": [
           "const",
-          "cache",
-          "index",
-          "null",
           "loom",
-          "run",
+          "null",
+          "index",
+          "cache",
           "npm",
+          "run",
           "bash",
           "scripts",
-          "integer",
           "cachekey",
-          "cached",
-          "files",
           "codex",
-          "keywords"
+          "cached",
+          "keywords",
+          "auto",
+          "javascript"
         ],
         "phrases": [
           "not null",
@@ -3653,7 +3958,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:10.960Z"
+        "lastIndexed": "2025-12-20T00:30:39.515Z"
       }
     },
     "validation": {
@@ -3663,7 +3968,7 @@
       "suggestions": [
         "Add unique ID (UUID recommended)",
         "Add version number (semver format)",
-        "Consider adding tags: const, cache, index, null, loom",
+        "Consider adding tags: const, loom, null, index, cache",
         "Consider adding relationships (requires, references, seeAlso)",
         "Auto-detected subjects: ai, design, knowledge, media, philosophy, science, security, technology",
         "Auto-detected topics: api-reference, architecture, best-practices, getting-started, troubleshooting",
@@ -3672,7 +3977,7 @@
       ]
     },
     "content": "# Frame Codex Development Guide\n\n## Initial Setup & Cataloging\n\n### First-Time Setup\n\n1. **Install Dependencies**\n```bash\ncd apps/codex\nnpm install\n```\n\n2. **Run Initial Catalog** (categorizes ALL existing content)\n```bash\nnpm run index -- --validate\n```\n\nThis will:\n- Scan all markdown files in `weaves/`, `docs/`, `wiki/`\n- Extract keywords using TF-IDF\n- Auto-categorize using NLP (no LLM, pure statistical)\n- Generate `codex-index.json` (searchable index)\n- Generate `codex-report.json` (analytics)\n- Output validation errors/warnings/suggestions\n\n**First run takes ~30 seconds for 100 files**\n\n### How It Works Subsequently\n\n**Automatic on Every PR Merge:**\n\n1. GitHub Actions triggers `build-index.yml` on push to `main`\n2. Runs `npm run index -- --validate` (static NLP only)\n3. Generates updated index files\n4. Pushes to `index` branch for consumption\n5. **No AI/LLM calls** - pure TF-IDF, n-grams, vocabulary matching\n\n**Static NLP Tools Used:**\n- **TF-IDF**: Keyword extraction (no external API)\n- **N-gram extraction**: Common phrases (local computation)\n- **Vocabulary matching**: Controlled taxonomy (regex/string matching)\n- **Readability scoring**: Flesch-Kincaid (formula-based)\n- **Sentiment heuristics**: Simple keyword patterns\n\n**Cost: $0** - All processing is local/in-CI\n\n---\n\n## Environment Variables & Secrets\n\n### Required GitHub Secrets\n\nAdd to `framersai/codex` repository settings:\n\n```bash\n# Required for auto-merge workflow\nGH_PAT=ghp_xxxxxxxxxxxxxxxxxxxx  # GitHub Personal Access Token (repo scope)\n\n# AI Enhancement (OPTIONAL - only if you want AI-powered PR analysis)\nOPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx\n\n# Auto-merge control (default: false - requires manual approval)\nAUTO_CATALOG_MERGE=false  # Set to 'true' to auto-merge re-catalog PRs\n\n# Configuration (optional)\nAI_PROVIDER=disabled  # Set to 'disabled' to skip AI entirely\n```\n\n### Secret Configuration\n\n**To enable AI enhancement:**\n```bash\nOPENAI_API_KEY=sk-...\n```\n\n**To enable auto-merge for re-catalog PRs:**\n```bash\nAUTO_CATALOG_MERGE=true\n# Default: false (requires manual approval)\n# Recommended: keep false to review metadata changes\n```\n\n**To disable AI enhancement:**\n```bash\nAI_PROVIDER=disabled\n# Or just don't set OPENAI_API_KEY\n```\n\n### Local Development\n\nCreate `.env` in `apps/codex/`:\n\n```bash\n# Optional - only for testing AI enhancement locally\nOPENAI_API_KEY=sk-...\n# or\nANTHROPIC_API_KEY=sk-ant-...\nAI_PROVIDER=openai\n```\n\n**Note:** The indexer and validator work WITHOUT any API keys. AI is only for optional PR enhancement.\n\n---\n\n## Triggering a Full Re-Catalog\n\n### Method 1: Automated Script (Recommended)\n\n```bash\ncd apps/codex\nchmod +x scripts/retrigger-full-catalog.sh\n\n# Dry run first (see what would change)\n./scripts/retrigger-full-catalog.sh --dry-run\n\n# Create PR with changes (requires manual approval)\n./scripts/retrigger-full-catalog.sh\n\n# Force auto-merge (one-time override)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n**What it does:**\n1. Runs full static NLP analysis on ALL files\n2. Creates branch: `catalog/full-reindex-{timestamp}`\n3. Commits updated index files\n4. Creates PR with detailed summary\n5. **Waits for manual approval** (unless `AUTO_CATALOG_MERGE=true`)\n\n**Requirements:**\n- `GH_PAT` environment variable\n\n### Method 2: GitHub Actions Trigger\n\n```bash\n# Via GitHub CLI\ngh workflow run build-index.yml --repo framersai/codex\n\n# Or via web UI\n# Go to: https://github.com/framersai/codex/actions/workflows/build-index.yml\n# Click \"Run workflow\" → \"Run workflow\"\n```\n\n**What it does:**\n- Runs indexer in CI\n- Pushes directly to `index` branch (no PR)\n- Updates live immediately\n\n### Method 3: Local Re-Index\n\n```bash\ncd apps/codex\nnpm run index -- --validate\n\n# Review changes\ncat codex-report.json | jq '.summary'\n\n# Commit manually\ngit add codex-index.json codex-report.json\ngit commit -m \"chore: re-index all content\"\ngit push\n```\n\n**See full guide:** [RECATALOG_GUIDE.md](./RECATALOG_GUIDE.md)\n\n---\n\n## Search Artifacts (BM25 + MiniLM embeddings)\n\nFrame.dev’s advanced search UI consumes a separate static artifact, `codex-search.json`, which contains:\n\n- BM25 postings (term → docId, term frequency)\n- Document metadata (path, weave, loom, summary, doc length)\n- Packed Float32 embeddings (all-MiniLM-L6-v2, mean pooled, normalized)\n\nGenerate it after the main index:\n\n```bash\ncd apps/codex\nnpm run build:search\n\n# Commit alongside codex-index.json to publish updated search data\ngit add codex-search.json\n```\n\nThis command uses `@xenova/transformers` entirely in Node.js (no Python, no API keys) and produces a fully static JSON blob that can be hosted on GitHub Pages or any CDN.\n\n---\n\n## SQL Cache Architecture\n\nFrame Codex uses [@framers/sql-storage-adapter](https://github.com/framersai/sql-storage-adapter) for intelligent incremental indexing.\n\n### How It Works\n\n**On First Run:**\n1. Creates `.cache/codex.db` (better-sqlite3 in CI, IndexedDB in browser)\n2. Analyzes ALL files with static NLP (TF-IDF, n-grams)\n3. Stores: file pat",
-    "searchText": "development **run initial catalog** (categorizes all existing content)\n\n\nthis will:\n- scan all markdown files in , , \n- extract keywords using tf-idf\n- auto-categorize using nlp (no llm, pure statistical)\n- generate  (searchable index)\n- generate  (analytics)\n- output validation errors/warnings/suggestions\n\n... const cache index null loom run npm bash scripts integer cachekey cached files codex keywords not null npm run run index index validate static nlp auto merge integer not loom strands apps codex auto index"
+    "searchText": "development **run initial catalog** (categorizes all existing content)\n\n\nthis will:\n- scan all markdown files in , , \n- extract keywords using tf-idf\n- auto-categorize using nlp (no llm, pure statistical)\n- generate  (searchable index)\n- generate  (analytics)\n- output validation errors/warnings/suggestions\n\n... const loom null index cache npm run bash scripts cachekey codex cached keywords auto javascript not null npm run run index index validate static nlp auto merge integer not loom strands apps codex auto index"
   },
   {
     "path": "docs/NLP_VOCABULARY_SYSTEM.md",
@@ -3688,13 +3993,13 @@
           "weight",
           "categories",
           "neural",
-          "files",
           "classification",
           "enhance",
-          "words",
           "term",
           "matching",
           "vocabulary",
+          "files",
+          "words",
           "learning",
           "porter",
           "unigram"
@@ -3849,7 +4154,7 @@
             "clay |"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:12.293Z"
+        "lastIndexed": "2025-12-20T00:30:41.649Z"
       }
     },
     "validation": {
@@ -3868,7 +4173,7 @@
       ]
     },
     "content": "# NLP & Vocabulary System Documentation\n\n## Overview\n\nThe Codex auto-indexer uses a sophisticated NLP pipeline for content classification, keyword extraction, and auto-tagging. This system combines:\n\n1. **External Vocabulary Files** - Extensible text files with domain-specific terms\n2. **Porter Stemmer** - Word normalization for better matching\n3. **N-gram Analysis** - Trigram → Bigram → Unigram weighted matching\n4. **Context-Aware Scoring** - Reduce false positives through contextual analysis\n5. **LLM Assistance** (optional) - AI-powered enhancement via `ai-enhance.js`\n\n## Architecture\n\n```\nvocab/\n├── subjects/           # Domain categories (8 files)\n│   ├── technology.txt  # Programming, frameworks, tools\n│   ├── ai.txt          # Machine learning, LLMs, neural nets\n│   ├── science.txt     # Research, physics, chemistry, biology\n│   ├── philosophy.txt  # Ethics, metaphysics, epistemology\n│   ├── knowledge.txt   # Documentation, learning, OpenStrand\n│   ├── design.txt      # UX/UI, visual design, accessibility\n│   ├── security.txt    # Encryption, auth, vulnerabilities\n│   └── media.txt       # Images, video, audio, formats\n├── topics/             # Content type categories (5 files)\n│   ├── getting-started.txt\n│   ├── architecture.txt\n│   ├── api-reference.txt\n│   ├── best-practices.txt\n│   └── troubleshooting.txt\n├── difficulty/         # Skill levels (4 files)\n│   ├── beginner.txt\n│   ├── intermediate.txt\n│   ├── advanced.txt\n│   └── expert.txt\n└── stopwords.txt       # 500+ stop words for filtering\n```\n\n## N-gram Weighted Matching\n\nThe system prioritizes longer, more specific matches:\n\n| N-gram Type | Weight | Example |\n|-------------|--------|---------|\n| **Trigram** (3 words) | 3.0x | \"machine learning model\" |\n| **Bigram** (2 words) | 2.0x | \"neural network\" |\n| **Unigram** (1 word) | 1.0x | \"tensorflow\" |\n\n### Matching Logic\n\n```javascript\n// Trigrams checked first (highest specificity)\nif (trigramSet.has(\"domain driven design\")) → weight = 3.0\n\n// Then bigrams\nif (bigramSet.has(\"clean architecture\")) → weight = 2.0\n\n// Finally unigrams with stemming\nif (unigramSet.has(\"microservic\") || unigramSet.has(\"microservice\")) → weight = 1.0\n\n// Hyphenated compound terms get 1.5x unigram weight\nif (allPartsMatch(\"event-driven\")) → weight = 1.5\n```\n\n## Context-Aware Scoring\n\nTo avoid false positives (e.g., \"library\" matching programming when discussing a physical library), the system applies context adjustments:\n\n### Negative Context (Score × 0.3)\n\n| Term | Negative Context Words |\n|------|----------------------|\n| library | physical, book, public, municipal, lending |\n| learning | curve, disability, difficulties, disorder |\n| framework | legal, regulatory, policy, theoretical |\n| model | fashion, role, scale, 3d, clay |\n| platform | train, station, political, diving |\n| cloud | weather, rain, storm, sky |\n\n### Positive Context (Score × 1.5)\n\n| Term | Positive Context Words |\n|------|----------------------|\n| library | code, import, npm, package, install, dependency |\n| learning | machine, deep, model, neural, ai, training |\n| framework | web, software, javascript, python, backend |\n| model | machine, learning, neural, language, ai |\n| platform | cloud, software, development, api, saas |\n\n## Porter Stemmer\n\nAll terms are normalized using the Porter Stemming Algorithm:\n\n| Original | Stemmed |\n|----------|---------|\n| programming | program |\n| development | develop |\n| configuration | configur |\n| authentication | authent |\n| microservices | microservic |\n\nThis allows matching word variants automatically.\n\n## Adding Vocabulary Terms\n\nSimply add terms to the appropriate `.txt` file:\n\n```txt\n# vocab/subjects/technology.txt\n# One term per line. Lines starting with # are comments.\n\nkubernetes\nk8s\nhelm-chart\nistio\nservice-mesh\n```\n\n### Best Practices\n\n1. **Use hyphens** for compound terms: `machine-learning`, `event-driven`\n2. **Include variations**: `k8s`, `kubernetes`, `kube`\n3. **Add acronyms**: Both `API` and `application-programming-interface`\n4. **Use lowercase**: Normalization handles case automatically\n5. **Group related terms**: Keep related concepts together\n\n## LLM Enhancement (Optional)\n\nThe `ai-enhance.js` script uses Claude/GPT-4 to:\n\n1. **Auto-fill metadata** - Title, summary, tags\n2. **Suggest categories** - Subject, topic, difficulty\n3. **Detect quality issues** - Missing sections, unclear content\n4. **Generate summaries** - Extractive and abstractive\n\n### Usage\n\n```bash\n# Analyze specific files\nnode scripts/ai-enhance.js --files \"file1.md,file2.md\"\n\n# Apply safe fixes automatically\nnode scripts/ai-enhance.js --files \"file1.md\" --apply-safe-fixes\n```\n\n### Environment Variables\n\n```env\nOPENAI_API_KEY=sk-...\nANTHROPIC_API_KEY=sk-ant-...\nOPENROUTER_API_KEY=sk-or-...\nAI_PROVIDER=anthropic  # or 'openai', 'openrouter', 'disabled'\n```\n\n## Classification Output\n\nThe classifier returns:\n\n```javascript\n{\n  subjects: ['technology', 'ai'],\n  topics: ['architecture', 'best-practices'],\n  difficulty: 'intermedia",
-    "searchText": "nlp vocabulary system nlp & vocabulary system documentation\n\noverview\n\nthe codex auto-indexer uses a sophisticated nlp pipeline for content classification, keyword extraction, and auto-tagging txt terms weight categories neural files classification enhance words term matching vocabulary learning porter unigram machine learning best practices nlp vocabulary auto indexer vocabulary documentation documentation overview overview codex codex auto indexer uses uses sophisticated"
+    "searchText": "nlp vocabulary system nlp & vocabulary system documentation\n\noverview\n\nthe codex auto-indexer uses a sophisticated nlp pipeline for content classification, keyword extraction, and auto-tagging txt terms weight categories neural classification enhance term matching vocabulary files words learning porter unigram machine learning best practices nlp vocabulary auto indexer vocabulary documentation documentation overview overview codex codex auto indexer uses uses sophisticated"
   },
   {
     "path": "docs/RECATALOG_GUIDE.md",
@@ -3903,19 +4208,19 @@
         "keywords": [
           "catalog",
           "retrigger",
-          "run",
           "report",
-          "merge",
-          "index",
+          "run",
           "validation",
-          "review",
+          "merge",
           "full",
-          "changes",
+          "index",
           "codex",
-          "prs",
+          "review",
+          "changes",
           "scripts",
+          "prs",
           "auto_catalog_merge",
-          "monthly"
+          "auto"
         ],
         "phrases": [
           "full catalog",
@@ -4056,7 +4361,7 @@
             "GitHub"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:13.697Z"
+        "lastIndexed": "2025-12-20T00:30:43.898Z"
       }
     },
     "validation": {
@@ -4069,7 +4374,7 @@
       ]
     },
     "content": "\n# Frame Codex Re-Catalog Guide\n\nThis guide explains how to trigger a complete re-indexing and metadata update for all Frame Codex content.\n\n---\n\n## When to Re-Catalog\n\nRun a full re-catalog when:\n\n✅ **Initial setup** - First time setting up the repository  \n✅ **Schema changes** - After updating validation rules or metadata schema  \n✅ **Vocabulary updates** - After adding new subjects/topics to controlled vocabulary  \n✅ **Bulk imports** - After importing large amounts of content  \n✅ **Quality audit** - Periodic review of all content (monthly/quarterly)  \n\n❌ **NOT needed for:**\n- Individual PR merges (automatic via GitHub Actions)\n- Small metadata fixes (handled by normal PR flow)\n- Content updates without schema changes\n\n---\n\n## Method 1: GitHub Actions (Recommended)\n\n### Via GitHub Web UI\n\n1. Go to https://github.com/framersai/codex/actions/workflows/build-index.yml\n2. Click **\"Run workflow\"** dropdown (top right)\n3. Select branch: `main`\n4. Click **\"Run workflow\"** button\n5. Wait ~1-2 minutes for completion\n\n### Via GitHub CLI\n\n```bash\ngh workflow run build-index.yml --repo framersai/codex\n```\n\n**What It Does:**\n- Runs `npm run index -- --validate` on ALL files\n- Generates `codex-index.json` and `codex-report.json`\n- Pushes to `index` branch (no PR needed)\n- Updates live immediately on frame.dev/codex\n\n**Cost:** $0 (static NLP only, no AI calls)\n\n---\n\n## Method 2: Local Script with PR Creation\n\n### Using the Re-Catalog Script\n\n```bash\ncd apps/codex\nchmod +x scripts/retrigger-full-catalog.sh\n./scripts/retrigger-full-catalog.sh\n```\n\n**What It Does:**\n1. Runs full static NLP analysis on ALL files\n2. Updates `codex-index.json` and `codex-report.json`\n3. Creates a new branch: `catalog/full-reindex-{timestamp}`\n4. Commits changes\n5. Pushes to GitHub\n6. **Creates a PR** (requires manual approval by default)\n7. Optionally auto-merges if `AUTO_CATALOG_MERGE=true`\n\n**Options:**\n\n```bash\n# Dry run (see what would change, no PR)\n./scripts/retrigger-full-catalog.sh --dry-run\n\n# Force auto-merge (overrides AUTO_CATALOG_MERGE setting)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n**Requirements:**\n- `GH_PAT` environment variable (for PR creation)\n- Git configured with user name/email\n\n**Cost:** $0 (static NLP only)\n\n---\n\n## Method 3: Manual Local Re-Index\n\nFor testing or local development:\n\n```bash\ncd apps/codex\nnpm install\nnpm run index -- --validate\n```\n\n**Output Files:**\n- `codex-index.json` - Full searchable index\n- `codex-report.json` - Analytics and validation report\n\n**To Deploy:**\n```bash\ngit add codex-index.json codex-report.json\ngit commit -m \"chore: manual re-index\"\ngit push\n```\n\n---\n\n## Auto-Merge Configuration\n\n### Default Behavior: Manual Approval Required\n\nBy default, full re-catalog PRs require **manual review and approval**. This is the recommended setting to catch any unexpected metadata changes.\n\n### Enable Auto-Merge\n\nSet this GitHub secret to enable automatic merging:\n\n```bash\nAUTO_CATALOG_MERGE=true\n```\n\n**When enabled:**\n- Re-catalog PRs will auto-merge after validation passes\n- No human review required\n- Faster iteration, but less oversight\n\n**When to enable:**\n- High trust in automation\n- Frequent re-catalogs needed\n- Well-tested vocabulary and schema\n\n**When to keep disabled (recommended):**\n- Initial setup phase\n- Testing new categorization rules\n- Want to review metadata changes\n- Prefer human oversight\n\n### Toggle via Script\n\n```bash\n# With auto-merge\nAUTO_CATALOG_MERGE=true ./scripts/retrigger-full-catalog.sh\n\n# Without auto-merge (default)\n./scripts/retrigger-full-catalog.sh\n\n# Force auto-merge (one-time override)\n./scripts/retrigger-full-catalog.sh --auto-merge\n```\n\n---\n\n## What Gets Updated\n\n### Static NLP Analysis (Always Runs)\n\n1. **Keywords Extraction** (TF-IDF)\n   - Identifies most important terms\n   - Filters stop words\n   - Ranks by relevance\n\n2. **Phrase Detection** (N-grams)\n   - Finds common 2-3 word phrases\n   - Identifies repeated patterns\n   - Suggests tags\n\n3. **Category Matching**\n   - Matches against controlled vocabulary\n   - Assigns subjects and topics\n   - Calculates confidence scores\n\n4. **Difficulty Detection**\n   - Heuristic analysis of complexity indicators\n   - Keyword-based classification\n   - Assigns beginner/intermediate/advanced/expert\n\n5. **Summary Generation**\n   - Extractive summarization\n   - Picks most representative sentence\n   - Truncates to 300 characters\n\n6. **Validation**\n   - Schema compliance\n   - Required fields check\n   - Content quality rules\n   - Duplicate detection\n\n### What Does NOT Get Updated\n\n❌ **Manual metadata is preserved:**\n- Explicitly set titles, summaries, tags\n- User-defined relationships\n- Custom categorization\n- Version numbers\n- Author information\n\n✅ **Only auto-generated fields are updated:**\n- `metadata.autoGenerated.*`\n- Missing fields (if not explicitly set)\n- Validation warnings/suggestions\n\n---\n\n## Reviewing Re-Catalog PRs\n\n### What to Check\n\n1. **Metadata Changes**\n   - Are auto-tags accurate?\n   - Is difficulty le",
-    "searchText": "frame codex re-catalog guide complete guide to triggering full re-indexing and metadata updates for all frame codex content catalog retrigger run report merge index validation review full changes codex prs scripts auto_catalog_merge monthly full catalog auto merge scripts retrigger retrigger full codex report report json static nlp frame codex codex index index json"
+    "searchText": "frame codex re-catalog guide complete guide to triggering full re-indexing and metadata updates for all frame codex content catalog retrigger report run validation merge full index codex review changes scripts prs auto_catalog_merge auto full catalog auto merge scripts retrigger retrigger full codex report report json static nlp frame codex codex index index json"
   },
   {
     "path": "docs/contributing/how-to-submit.md",
@@ -4105,21 +4410,21 @@
       },
       "autoGenerated": {
         "keywords": [
-          "recursion",
           "submission",
           "submissions",
           "direct",
+          "recursion",
           "modal",
-          "field",
           "uuidgenerator",
           "net",
           "discord",
           "contribution",
-          "submit",
-          "token",
-          "content",
           "quality",
-          "codex"
+          "codex",
+          "content",
+          "token",
+          "submit",
+          "clear"
         ],
         "phrases": [
           "frame dev",
@@ -4285,7 +4590,7 @@
             "PAT** (Optional)"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:15.916Z"
+        "lastIndexed": "2025-12-20T00:30:47.357Z"
       }
     },
     "validation": {
@@ -4298,7 +4603,7 @@
       ]
     },
     "content": "\n# How to Submit to Frame Codex\n\nWelcome! This guide will walk you through the different ways to contribute knowledge to Frame Codex.\n\n## Quick Start\n\nThe easiest way to submit content is through our **enhanced contribution modal** at [frame.dev/codex](https://frame.dev/codex):\n\n1. Click the green **\"Contribute\"** button in the Codex viewer toolbar\n2. Fill in your content (title, summary, markdown body)\n3. Specify or leave blank weave/loom for AI suggestion\n4. Add tags (or use suggested tags from content analysis)\n5. Choose difficulty level (beginner/intermediate/advanced/expert)\n6. Toggle AI enhancement (optional, explains cost vs free static NLP)\n7. Preview final markdown with frontmatter\n8. Click **\"Create Pull Request\"** (uses GitHub API if you provide PAT, or opens GitHub editor)\n\nThat's it! Our automated validation runs, and maintainers review your submission.\n\n---\n\n## Submission Methods\n\n### Method 1: Web Submission UI (Recommended)\n\n**Best for:** Quick submissions, beginners, anyone without Git expertise\n\nThe enhanced contribution modal provides:\n- ✅ Pre-filled metadata based on current context\n- ✅ Tag suggestions from content analysis\n- ✅ Weave/loom inference (or manual override)\n- ✅ AI enhancement toggle (optional, cost-transparent)\n- ✅ Direct GitHub PR creation via API\n- ✅ Fallback to GitHub web editor (no PAT required)\n- ✅ Preview step showing final markdown\n- ✅ No local setup required\n\n**Steps:**\n\n1. **Open Contribution Modal**\n   - Go to [frame.dev/codex](https://frame.dev/codex)\n   - Click the green \"Contribute\" button in the toolbar\n   - Or use quick actions dropdown (mobile)\n\n2. **Fill in Content**\n   - **Title**: Clear, descriptive title (required)\n   - **Summary**: 20-300 character abstract (required)\n   - **Content**: Write or paste markdown (minimum 100 characters, required)\n\n3. **Specify Location** (Optional - AI can suggest if left blank)\n   - **Weave**: Which knowledge universe (e.g., technology, science, community)\n   - **Loom**: Topic collection (e.g., programming, algorithms)\n   - System auto-detects from current path or suggests based on content\n\n4. **Add Metadata**\n   - **Tags**: Type and press Enter, or click suggested tags from content analysis\n   - **Difficulty**: Select beginner/intermediate/advanced/expert\n   - **Subjects/Topics**: Auto-suggested from controlled vocabulary\n\n5. **AI Enhancement** (Optional)\n   - Toggle ON: AI analyzes content, suggests better categorization (~$0.01-0.20 cost)\n   - Toggle OFF: Static NLP only (free, still provides quality validation)\n\n6. **GitHub PAT** (Optional)\n   - Provide token for direct API PR creation\n   - Token is used only in your browser to call GitHub APIs directly and is never stored in localStorage, IndexedDB, SQL, or on any Frame.dev server\n   - Leave blank to open GitHub web editor instead\n\n7. **Preview & Submit**\n   - Review generated markdown with frontmatter\n   - See final file path: `weaves/{weave}/{loom}/{slug}.md`\n   - Click \"Create Pull Request\"\n     - Summary (extractive summarization)\n     - Tags (TF-IDF keyword extraction)\n     - Difficulty level (heuristic detection)\n     - Subjects and topics (vocabulary matching)\n   - Edit any field as needed\n\n4. **Provide GitHub Token**\n   - Create a [Personal Access Token](https://github.com/settings/tokens/new?scopes=repo&description=Frame%20Codex%20Submission) with `repo` scope\n   - Paste it into the token field in the Frame Codex UI\n   - The token lives only in that browser tab’s memory while the modal is open, is never persisted in local storage / IndexedDB / SQL, and is sent only to GitHub (never to any Frame.dev backend)\n\n5. **Submit**\n   - Click \"Create Pull Request\"\n   - A new PR will be created on GitHub\n   - You'll receive a link to track the review\n\n**Rate Limits:**\n- 5 submissions per hour per user\n- Resets automatically after 60 minutes\n\n---\n\n### Method 2: GitHub Direct (Advanced)\n\n**Best for:** Bulk submissions, complex content, experienced contributors\n\n**Steps:**\n\n1. **Fork the Repository**\n   ```bash\n   gh repo fork framersai/codex --clone\n   cd codex\n   ```\n\n2. **Create a Branch**\n   ```bash\n   git checkout -b add-my-content\n   ```\n\n3. **Add Your Content**\n   - Place files directly within the target weave. Any folder becomes a loom, and any markdown file becomes a strand:\n     ```\n     weaves/\n       [weave-name]/\n         weave.yaml\n         overview.md                 # Strand at weave root\n         [loom-folder]/              # e.g. guides/, research/, notes/\n           loom.yaml (optional)\n           your-content.md\n           nested/topic/advanced.md  # Nested looms are allowed\n     ```\n   - See [submission-schema.md](./submission-schema.md) for required metadata\n\n4. **Validate Locally**\n   ```bash\n   npm install\n   npm run validate\n   npm run index -- --validate\n   ```\n\n5. **Commit and Push**\n   ```bash\n   git add .\n   git commit -m \"feat: add [your content title]\"\n   git push origin add-my-content\n   ```\n\n6. **Create Pull Request**\n   ```bash\n   gh pr cre",
-    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation recursion submission submissions direct modal field uuidgenerator net discord contribution submit token content quality codex frame dev frame codex dev codex add content github com framersai codex content title content analysis create pull pull request"
+    "searchText": "how to submit to frame codex complete guide to contributing knowledge to frame codex using the submission ui, github, or manual pr creation submission submissions direct recursion modal uuidgenerator net discord contribution quality codex content token submit clear frame dev frame codex dev codex add content github com framersai codex content title content analysis create pull pull request"
   },
   {
     "path": "docs/contributing/submission-schema.md",
@@ -4346,19 +4651,19 @@
         "keywords": [
           "string",
           "array",
-          "enum",
           "iso",
-          "8601",
+          "enum",
           "computer",
-          "programming",
-          "recursion",
+          "8601",
           "eca",
           "fields",
-          "functions",
+          "programming",
           "15t00",
           "boolean",
+          "recursion",
           "slugs",
-          "algorithms"
+          "algorithms",
+          "validation"
         ],
         "phrases": [
           "array string",
@@ -4534,7 +4839,7 @@
             "[alice,"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:18.949Z"
+        "lastIndexed": "2025-12-20T00:30:51.958Z"
       }
     },
     "validation": {
@@ -4546,7 +4851,7 @@
       ]
     },
     "content": "\n# Frame Codex Submission Schema Reference\n\nThis document provides the complete technical specification for Frame Codex content schema, including integration with OpenStrand's Educational Content Atom (ECA) standard.\n\n---\n\n## Table of Contents\n\n1. [Schema Overview](#schema-overview)\n2. [Strand Schema (Individual Content)](#strand-schema)\n3. [Loom Schema (Collections)](#loom-schema)\n4. [Weave Schema (Universes)](#weave-schema)\n5. [ECA Integration](#eca-integration)\n6. [Validation Rules](#validation-rules)\n7. [Examples](#examples)\n\n---\n\n## Schema Overview\n\nFrame Codex uses a three-tier knowledge organization:\n\n```\nWeave (Universe)\n├── Loom (Collection)\n│   ├── Strand (Content)\n│   ├── Strand (Content)\n│   └── ...\n├── Loom (Collection)\n│   └── ...\n└── ...\n```\n\n### Key Principles\n\n- **Strands** are atomic, self-contained knowledge units\n- **Looms** curate related strands into coherent learning paths\n- **Weaves** represent complete, isolated knowledge universes\n- **No cross-weave relationships** (each weave is independent)\n- **Subfolders are SUBTOPICS** - folder depth determines topic specificity (deeper = more specific)\n- **Topics are hierarchical** - must narrow scope as you go deeper in the folder tree\n- **Tags are independent** - can be shared freely across any folder level\n\n---\n\n## Strand Schema\n\nStrands are individual markdown files with YAML frontmatter.\n\n### Required Fields\n\n```yaml\nid: string (UUID v4)\nslug: string (lowercase, hyphens, alphanumeric)\ntitle: string (3-100 characters)\nsummary: string (20-300 characters)\nversion: string (semver: x.y.z)\ncontentType: enum [markdown, code, data, media]\ndifficulty: enum [beginner, intermediate, advanced, expert]\n```\n\n### Recommended Fields\n\n```yaml\ntaxonomy:\n  subjects: array<string>          # High-level categories\n  topics: array<string>            # ⚠️ MUST match folder depth (see below)\n  subtopics: array<string>         # Even more specific narrowing\n  concepts: array<object>\n    - term: string\n      weight: number (0-1)\n      definition: string (optional)\n  skills: array<object>\n    - name: string\n      level: enum [introduce, develop, master]\n\ntags: array<string>               # ✓ Independent - NO hierarchy\n\n# ─────────────────────────────────────────────────────────────────────\n# ⚠️  CRITICAL: Topics vs Tags\n# ─────────────────────────────────────────────────────────────────────\n# \n# TOPICS are HIERARCHICAL:\n#   - Subfolders = subtopics of parent folder\n#   - Topics MUST become MORE SPECIFIC as folder depth increases\n#   - A file in /programming/python/async/ must have topics about async Python\n#   - NOT broad topics like \"web-development\"\n#\n# TAGS are INDEPENDENT:\n#   - No hierarchy, flat structure\n#   - Can be shared across ANY folder level\n#   - A deeply nested file can share tags with root files\n#   - Example: both /python/async/coroutines.md and /overview.md can use\n#     the tag \"best-practices\"\n#\n# See: openstrand-architecture.md#hierarchical-topic-structure-critical-rule\n# ─────────────────────────────────────────────────────────────────────\n\nrelationships:\n  requires: array<string> (slugs of prerequisite strands)\n  references: array<string> (slugs of related strands)\n  seeAlso: array<string> (external URLs)\n\npublishing:\n  created: string (ISO 8601 datetime)\n  updated: string (ISO 8601 datetime)\n  status: enum [draft, review, published, archived]\n  license: string (default: CC-BY-4.0)\n  authors: array<string>\n```\n\n### OpenStrand ECA Extended Fields\n\nFrame Codex supports the full OpenStrand Educational Content Atom (ECA) specification for advanced learning design:\n\n```yaml\n# Learning Design\nlearningDesign:\n  objectives: array<object>\n    - id: string\n      description: string\n      bloomsLevel: enum [remember, understand, apply, analyze, evaluate, create]\n      measurable: boolean\n  \n  outcomes: array<object>\n    - id: string\n      description: string\n      assessment: string (optional)\n  \n  pedagogicalApproach: array<enum>\n    # Options: direct_instruction, discovery_learning, problem_based,\n    #          collaborative, experiential, inquiry_based\n  \n  instructionalStrategies: array<string>\n\n# Time Estimates\ntimeEstimates:\n  reading: number (minutes)\n  exercises: number (minutes)\n  projects: number (minutes)\n  total: number (minutes)\n\n# Modality Support\nmodalities:\n  text: boolean\n  visual:\n    diagrams: number\n    images: number\n    charts: number\n  audio:\n    narration: boolean\n    duration: number (seconds, optional)\n  video:\n    embedded: number\n    duration: number (seconds, optional)\n  kinesthetic:\n    simulations: number\n    exercises: number\n\n# Interactive Elements\ninteractiveElements: array<object>\n  - id: string\n    type: enum [quiz, poll, simulation, code_exercise, discussion_prompt, reflection, peer_review]\n    required: boolean\n    data: object (type-specific)\n\n# Assessment\nassessments:\n  formative: array<object>\n    - id: string\n      type: string\n      weight: number (0-1)\n  summative: array<object>\n    - id: string\n      type: s",
-    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string array enum iso 8601 computer programming recursion eca fields functions 15t00 boolean slugs algorithms array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml object string"
+    "searchText": "frame codex submission schema reference complete technical reference for frame codex content schema, including all fields, validation rules, and openstrand eca integration string array iso enum computer 8601 eca fields programming 15t00 boolean recursion slugs algorithms validation array string array object string iso frame codex iso 8601 computer science 2025 15t00 15t00 00z fields yaml object string"
   },
   {
     "path": "docs/openstrand-architecture.md",
@@ -4596,21 +4901,21 @@
       },
       "autoGenerated": {
         "keywords": [
-          "async",
           "infrastructure",
+          "async",
           "programming",
           "python",
           "weaves",
           "technology",
-          "coroutines",
           "fabric",
           "openstrand",
           "knowledge",
           "topics",
-          "incorrect",
+          "coroutines",
           "topic",
+          "incorrect",
           "powered",
-          "hierarchy"
+          "versions"
         ],
         "phrases": [
           "frame codex",
@@ -4771,7 +5076,7 @@
             "- **Rich"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:21.037Z"
+        "lastIndexed": "2025-12-20T00:30:55.054Z"
       }
     },
     "validation": {
@@ -4783,7 +5088,7 @@
       ]
     },
     "content": "\n# OpenStrand Architecture Overview\n\nOpenStrand is the knowledge infrastructure that powers Frame.dev and Frame Codex. It provides a structured, AI-native way to organize, store, and retrieve humanity's knowledge.\n\n## Core Concepts\n\n### The Four-Tier Hierarchy\n\nOpenStrand organizes knowledge using four fundamental primitives:\n\n**Fabric** - A collection of weaves\n- The highest level of organization\n- Represents an entire knowledge repository or ecosystem\n- Example: Frame Codex itself is a fabric\n- Contains multiple weaves that are conceptually related but independent\n\n**Strand** - The atomic unit of knowledge\n- A single document, image, dataset, or media file\n- Contains rich metadata for categorization and discovery\n- Can reference other strands within the same weave\n- Immutable once published (new versions create new strands)\n\n**Loom** - A curated collection of related strands\n- Groups strands by topic, theme, or learning path\n- Defines ordering (sequential, hierarchical, or network)\n- Provides context and relationships between strands\n- Acts as a module or chapter in the knowledge base\n\n**Weave** - A complete universe of knowledge\n- Self-contained collection with no external dependencies\n- Represents a domain, project, or knowledge area\n- No relationships exist between different weaves\n- Think of it as a separate universe or dimension\n\n### Why This Structure?\n\nThe Fabric/Weave/Loom/Strand architecture solves several key problems:\n\n1. **Isolation**: Weaves are completely independent, preventing knowledge pollution\n2. **Scalability**: Each weave can grow infinitely without affecting others\n3. **Clarity**: Clear boundaries make it obvious where knowledge belongs\n4. **Versioning**: Strands are immutable, making version control natural\n5. **AI-Friendly**: Structured metadata enables semantic search and RAG\n6. **Fabric-Scope Reasoning**: A single Fabric view allows cross-weave synthesis while preserving provenance\n\n### Superintelligence at Fabric Scope\n\nWhile weaves remain isolated for organization and provenance, analysis at the **Fabric** level permits traversal\nacross weaves for:\n\n- Cross-domain retrieval and context assembly\n- Whole-of-corpus synthesis and summarization\n- Global topic maps and knowledge graphs\n\nFabric-level queries always preserve original weave/loom/strand provenance. OpenStrand uses this fabric view to let\nagents and superintelligence move seamlessly across domains while still understanding exactly where every fact came from.\n\n## How It Works\n\n### Knowledge Flow\n\n```\nFabric (Repository)\n  └── Weave (Universe)\n        └── Loom (Collection / any subdirectory)\n              ├── Strand (Markdown file)\n              ├── Strand (Markdown file)\n              └── Loom (Nested subdirectory)\n                    └── Strand (Markdown file)\n```\n\n### Example: Frame Ecosystem Weave\n\n```yaml\n# weaves/frame/weave.yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Complete knowledge base for Frame products and infrastructure\n```\n\nThis weave contains looms for:\n- OpenStrand documentation\n- AgentOS guides\n- Frame API reference\n- Architecture patterns\n\n💡 **Physical layout**: Loosely structured folders — no `looms/` or `strands/` prefixes are required.\n\n```\nweaves/frame/\n├── weave.yaml\n├── overview.md\n├── openstrand/\n│   ├── loom.yaml\n│   └── architecture.md\n└── guides/agentos/deployment.md\n```\n\nEach folder inside `weaves/frame/` is treated as a loom, and every markdown file (at any depth) is a strand that can reference other strands.\n\n### Hierarchical Topic Structure (Critical Rule)\n\n**Folder depth determines topic specificity.** This is a fundamental OpenStrand principle:\n\n> 📐 **Subfolders are SUBTOPICS of their parent folder. Topics MUST become more specific as you go deeper.**\n\n#### How It Works\n\n```\nweaves/technology/                     # Topic: technology (broad)\n├── programming/                       # Topic: programming (more specific)\n│   ├── python/                        # Topic: python (even more specific)\n│   │   └── async/                     # Topic: async-python (most specific)\n│   │       └── coroutines.md          # Strand about Python coroutines\n│   └── rust/                          # Topic: rust (sibling to python)\n│       └── memory-safety.md\n└── infrastructure/                    # Topic: infrastructure (sibling to programming)\n    └── kubernetes/\n        └── networking.md\n```\n\n**The hierarchy implies:**\n- `programming/` is a subtopic of `technology/`\n- `python/` is a subtopic of `programming/`\n- `async/` is a subtopic of `python/`\n- Content in `async/` MUST be about async Python, not general async concepts\n\n#### Topics vs Tags: The Critical Distinction\n\n| Aspect | **Topics** (Hierarchical) | **Tags** (Independent) |\n|--------|---------------------------|------------------------|\n| Structure | Tree-like, parent-child | Flat, no hierarchy |\n| Inheritance | Child topics MUST narrow parent scope | No inheritance |\n| Sharing | Cannot share across unrelated branches | Can share across",
-    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex async infrastructure programming python weaves technology coroutines fabric openstrand knowledge topics incorrect topic powered hierarchy frame codex weaves technology best practices programming python python async frame dev markdown file technology programming knowledge graph openstrand architecture"
+    "searchText": "openstrand architecture overview comprehensive guide to openstrand's knowledge infrastructure, explaining how weaves, looms, and strands work together to create the foundation for frame codex infrastructure async programming python weaves technology fabric openstrand knowledge topics coroutines topic incorrect powered versions frame codex weaves technology best practices programming python python async frame dev markdown file technology programming knowledge graph openstrand architecture"
   },
   {
     "path": "docs/schema-reference.md",
@@ -4838,9 +5143,9 @@
           "identifier",
           "openstrand",
           "possible",
-          "url",
-          "enum",
-          "topics"
+          "topics",
+          "npm",
+          "url"
         ],
         "phrases": [
           "openstrand architecture",
@@ -5012,7 +5317,7 @@
             "[Skills & Spiral"
           ]
         },
-        "lastIndexed": "2025-12-20T00:28:23.111Z"
+        "lastIndexed": "2025-12-20T00:30:58.065Z"
       }
     },
     "validation": {
@@ -5024,6 +5329,6 @@
       ]
     },
     "content": "\n# Frame Codex Schema Reference\n\nThis document provides the complete schema reference for all Frame Codex content types.\n\n## Weave Schema\n\nA Weave represents a complete, self-contained universe of knowledge.\n\n### Required Fields\n\n- `slug` (string): Unique identifier, lowercase with hyphens\n- `title` (string): Human-readable name\n- `description` (string): Comprehensive description\n\n### Optional Fields\n\n- `maintainedBy` (object): Maintainer information\n  - `name` (string): Name of person or organization\n  - `url` (string): Contact or website URL\n- `license` (string): Content license (default: MIT)\n- `tags` (array): Categorization tags from controlled vocabulary\n\n### Example\n\n```yaml\nslug: frame\ntitle: Frame.dev Ecosystem\ndescription: Comprehensive knowledge base for Frame.dev products and infrastructure\nmaintainedBy:\n  name: Frame.dev Team\n  url: https://frame.dev\nlicense: MIT\ntags:\n  - technology\n  - ai-infrastructure\n  - superintelligence\n```\n\n## Loom Schema\n\nA Loom is a curated collection of related strands within a weave.\n\n### Required Fields\n\n- `slug` (string): Unique identifier within the weave\n- `title` (string): Display title\n- `summary` (string): Brief description\n\n### Optional Fields\n\n- `tags` (array): Subject tags for categorization\n- `ordering` (object): How strands are organized\n  - `type` (enum): `sequential`, `hierarchical`, or `network`\n  - `items` (array): Ordered list of strand slugs\n\n### Example\n\n```yaml\nslug: getting-started\ntitle: Getting Started with Frame\nsummary: Essential guides and tutorials for new Frame developers\ntags:\n  - tutorial\n  - beginner\nordering:\n  type: sequential\n  items:\n    - installation\n    - hello-world\n    - core-concepts\n    - first-project\n```\n\n## Strand Schema\n\nA Strand is an atomic unit of knowledge - a document, image, or dataset.\n\n### Required Fields\n\n- `id` (string): Globally unique identifier (UUID)\n- `slug` (string): URL-friendly identifier\n- `title` (string): Display title\n\n### Optional Fields\n\n- `summary` (string): Brief abstract (recommended for search)\n- `version` (string): Semantic version (default: 1.0.0)\n- `contentType` (enum): `markdown`, `code`, `data`, or `media`\n- `difficulty` (enum): `beginner`, `intermediate`, `advanced`, or `expert`\n- `taxonomy` (object): Categorization\n  - `subjects` (array): High-level categories\n  - `topics` (array): Specific topics **⚠️ MUST match folder depth - see note below**\n- `tags` (array): Freeform tags **✓ Independent - can be shared across any level**\n- `skills` (array): Learning prerequisites for spiral learning **🎯 Used for path planning**\n\n> **⚠️ Topics vs Tags vs Skills**:\n> - **Topics** are HIERARCHICAL and must become MORE SPECIFIC as folder depth increases\n> - **Tags** are INDEPENDENT categorization labels - what the content is *about*\n> - **Skills** are PREREQUISITES for learning - what you need to *know* before reading\n> \n> See [Hierarchical Topic Structure](./openstrand-architecture.md#hierarchical-topic-structure-critical-rule) and [Skills & Spiral Learning](#skills--spiral-learning) below.\n\n- `relationships` (object): Connections to other strands\n  - `requires` (array): Prerequisites\n  - `references` (array): Related strands\n  - `seeAlso` (array): External URLs\n- `publishing` (object): Publication metadata\n  - `created` (string): ISO 8601 timestamp\n  - `updated` (string): ISO 8601 timestamp\n  - `status` (enum): `draft`, `published`, `archived`\n\n### Example\n\n```yaml\n---\nid: 550e8400-e29b-41d4-a716-446655440000\nslug: openstrand-architecture\ntitle: OpenStrand Architecture Overview\nsummary: Comprehensive guide to OpenStrand's system architecture and design principles\nversion: 1.2.0\ncontentType: markdown\ndifficulty: intermediate\ntaxonomy:\n  subjects:\n    - technology\n    - ai\n  topics:\n    - architecture\n    - getting-started\ntags:\n  - openstrand\n  - architecture\n  - knowledge-graph\nskills:\n  - typescript\n  - yaml\n  - git\nrelationships:\n  requires:\n    - core-concepts\n  references:\n    - frame-codex-intro\n    - api-reference\n  seeAlso:\n    - https://openstrand.ai\n    - https://frame.dev\npublishing:\n  created: 2025-01-15T00:00:00Z\n  updated: 2025-01-15T00:00:00Z\n  status: published\n---\n\n# Your content here...\n```\n\n## Validation Rules\n\n### Slug Format\n\n- Lowercase letters, numbers, and hyphens only\n- No spaces or special characters\n- Must be unique within scope (weave/loom)\n\n### ID Format\n\n- Must be a valid UUID v4\n- Globally unique across all strands\n- Generate using `npm run generate-template`\n\n### Version Format\n\n- Semantic versioning: `MAJOR.MINOR.PATCH`\n- Example: `1.0.0`, `2.1.3`\n\n### Content Requirements\n\n- Minimum 100 characters of meaningful content\n- No unfinished sections or test content\n- Proper markdown formatting\n- Valid YAML frontmatter\n\n## Auto-Generated Metadata\n\nThe indexer automatically generates:\n\n- **Keywords**: Extracted using TF-IDF algorithm\n- **Phrases**: Common multi-word expressions\n- **Subjects**: Matched from controlled vocabulary\n- **Topics**: Detected from content analysis\n- *",
-    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules skills string spiral react learning skill array typescript fields identifier openstrand possible url enum topics openstrand architecture spiral learning controlled vocabulary frame dev npm run frame codex learning path skills spiral schema reference required fields"
+    "searchText": "frame codex schema reference complete reference for weave, loom, and strand schemas with examples and validation rules skills string spiral react learning skill array typescript fields identifier openstrand possible topics npm url openstrand architecture spiral learning controlled vocabulary frame dev npm run frame codex learning path skills spiral schema reference required fields"
   }
 ]
