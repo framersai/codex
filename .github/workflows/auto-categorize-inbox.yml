@@ -66,10 +66,14 @@ jobs:
         id: files
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ] && [ -n "${{ inputs.file_path }}" ]; then
-            echo "files=${{ inputs.file_path }}" >> $GITHUB_OUTPUT
+            echo "files<<EOF" >> $GITHUB_OUTPUT
+            echo "${{ inputs.file_path }}" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
             echo "has_files=true" >> $GITHUB_OUTPUT
           elif [ "${{ steps.changed-files.outputs.has_changes }}" == "true" ]; then
-            echo "files=${{ steps.changed-files.outputs.files }}" >> $GITHUB_OUTPUT
+            echo "files<<EOF" >> $GITHUB_OUTPUT
+            echo "${{ steps.changed-files.outputs.files }}" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
             echo "has_files=true" >> $GITHUB_OUTPUT
           else
             echo "has_files=false" >> $GITHUB_OUTPUT
