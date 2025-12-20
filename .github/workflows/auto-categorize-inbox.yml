@@ -181,8 +181,7 @@ jobs:
               issue_body="## Manual Triage Required\n\n**File:** \`$file\`\n**Method:** $method\n\n**Issue:** $error_msg"
               gh issue create \
                 --title "🔍 Manual triage needed: $filename" \
-                --body "$(echo -e "$issue_body")" \
-                --label "needs-triage,manual-review"
+                --body "$(echo -e "$issue_body")" || true
             fi
           done
 

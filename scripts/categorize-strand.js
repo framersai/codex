@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 
 // LLM Analysis (primary method)
-async function categorizewithLLM(content, metadata, filePath) {
+async function categorizeWithLLM(content, metadata, filePath) {
   const Anthropic = require('@anthropic-ai/sdk').default;
   const OpenAI = require('openai').default;
   
