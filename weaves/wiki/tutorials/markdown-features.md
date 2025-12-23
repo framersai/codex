@@ -214,6 +214,33 @@ const fibonacci = (n: number): number => {
 ```
 ````
 
+### Executable Code Blocks
+
+Add `exec` after the language to make code blocks **runnable**:
+
+````markdown
+```javascript exec
+console.log("This code can be executed!");
+```
+````
+
+**Supported languages:**
+- **JavaScript/TypeScript** - Runs in browser via Web Worker
+- **Python/Bash** - Runs on backend (requires server with execution enabled)
+- **Go/Rust** - Runs via external playground APIs
+
+**Example:**
+
+```javascript exec
+// Click the Run button to execute this code!
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(n => n * 2);
+console.log("Original:", numbers);
+console.log("Doubled:", doubled);
+```
+
+See the full [Executable Code Guide](./executable-code) for details.
+
 ## Tables
 
 ```markdown

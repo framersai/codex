@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="400" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="120" height="100" fill="#0F0F0F"/>
+    <g transform="translate(22, 4)">
+        <polygon points="0,0 34,0 30,30 0,26" fill="#C4A77D" stroke="#b4976d" stroke-width="0.5"/>
+        <polygon points="34,0 76,0 76,22 42,30 30,30" fill="#B8956E" stroke="#a8855e" stroke-width="0.5"/>
+        <polygon points="0,26 30,30 26,60 0,60" fill="#A67C52" stroke="#966c42" stroke-width="0.5"/>
+        <polygon points="30,30 42,30 46,60 26,60" fill="#8B6942" stroke="#7b5932" stroke-width="0.5"/>
+        <polygon points="42,30 76,22 76,60 46,60" fill="#755C30" stroke="#654c20" stroke-width="0.5"/>
+    </g>
+    <text x="60" y="88" font-family="Georgia, serif" font-size="26" font-weight="400" fill="#F5F5F5" text-anchor="middle">Quarry</text>
+</svg>

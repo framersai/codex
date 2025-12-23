@@ -57,3 +57,73 @@ properties:
     properties:
       status: { enum: [draft, review, published, archived] }
       license: { type: string, default: MIT }
+  tags:
+    type: array
+    items: { type: string }
+    description: "Free-form tags for categorization"
+  blockSummaries:
+    type: array
+    description: "Block-level metadata including tags, summaries, and worthiness signals"
+    items:
+      type: object
+      properties:
+        blockId: { type: string }
+        blockType:
+          type: string
+          enum: [heading, paragraph, code, list, blockquote, table, html]
+        headingLevel: { type: number, minimum: 1, maximum: 6 }
+        startLine: { type: number }
+        endLine: { type: number }
+        extractive:
+          type: string
+          description: "Extractive summary of block content"
+        tags:
+          type: array
+          items: { type: string }
+          description: "Block-level tags (not subjects/topics, just tags)"
+        suggestedTags:
+          type: array
+          description: "Auto-suggested tags pending user approval"
+          items:
+            type: object
+            properties:
+              tag: { type: string }
+              confidence: { type: number, minimum: 0, maximum: 1 }
+              source: { enum: [llm, nlp, existing] }
+              reasoning: { type: string }
+        worthinessScore:
+          type: number
+          minimum: 0
+          maximum: 1
+          description: "Combined worthiness score for tagging"
+        worthinessSignals:
+          type: object
+          description: "Individual signals used to calculate worthiness"
+          properties:
+            topicShift: { type: number, minimum: 0, maximum: 1 }
+            entityDensity: { type: number, minimum: 0, maximum: 1 }
+            semanticNovelty: { type: number, minimum: 0, maximum: 1 }
+        warrantsNewIllustration: { type: boolean }
+  autoTagConfig:
+    type: object
+    description: "Per-document auto-tagging configuration override"
+    properties:
+      documentAutoTag: { type: boolean }
+      blockAutoTag: { type: boolean }
+      useLLM: { type: boolean }
+      llmProviderOrder:
+        type: array
+        items: { enum: [claude, openai, openrouter] }
+      preferExistingTags: { type: boolean }
+      maxNewTagsPerBlock: { type: number, minimum: 0 }
+      maxNewTagsPerDocument: { type: number, minimum: 0 }
+      confidenceThreshold: { type: number, minimum: 0, maximum: 1 }
+      blockWorthinessThreshold: { type: number, minimum: 0, maximum: 1 }
+      enableTagBubbling: { type: boolean }
+      tagBubblingThreshold: { type: number, minimum: 1 }
+      worthinessWeights:
+        type: object
+        properties:
+          topicShift: { type: number, minimum: 0, maximum: 1 }
+          entityDensity: { type: number, minimum: 0, maximum: 1 }
+          semanticNovelty: { type: number, minimum: 0, maximum: 1 }

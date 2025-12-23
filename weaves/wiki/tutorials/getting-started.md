@@ -137,13 +137,16 @@ When you add 3+ images in a row, they automatically become a gallery!
 ### Code Blocks
 
 ````markdown
-```javascript
+```javascript exec
 function fibonacci(n) {
   if (n <= 1) return n
   return fibonacci(n - 1) + fibonacci(n - 2)
 }
+console.log("Fibonacci(10) =", fibonacci(10));
 ```
 ````
+
+**Pro tip:** Add `exec` after the language to make code blocks **runnable**! See the [Executable Code Guide](./executable-code) for details.
 
 ### Tables
 
