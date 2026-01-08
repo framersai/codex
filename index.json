@@ -1,0 +1,597 @@
+{
+  "generatedAt": "2026-01-08T21:23:45.620Z",
+  "tags": {
+    "subjects": [
+      "computing",
+      "knowledge-systems",
+      "education",
+      "ai",
+      "design"
+    ],
+    "topics": [
+      "openstrand",
+      "architecture",
+      "ingestion",
+      "schema",
+      "rag",
+      "graph"
+    ],
+    "subtopics": [
+      "api",
+      "pipelines",
+      "metadata",
+      "search",
+      "embeddings",
+      "indexing"
+    ]
+  },
+  "tree": [
+    {
+      "slug": "frame",
+      "title": "Frame",
+      "description": "The Frame weave: documentation, architecture, and knowledge related to the Frame ecosystem. This weave is a self-contained universe; no relationships to strands outside of this weave.\n",
+      "looms": [
+        {
+          "slug": "openstrand",
+          "title": "Openstrand",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": "3c3ac6d5-8cc2-4106-9f4a-4f6134c3d0b2",
+              "slug": "openstrand-architecture",
+              "title": "OpenStrand Architecture – Condensed Overview",
+              "summary": "A practical, implementation-focused overview of OpenStrand's architecture for ingestion and RAG.",
+              "path": "weaves/frame/openstrand/architecture.md",
+              "contentType": "reference",
+              "difficulty": {
+                "overall": "advanced",
+                "cognitive": 8,
+                "prerequisites": 5,
+                "conceptual": 8
+              },
+              "tags": [
+                "openstrand",
+                "architecture",
+                "api",
+                "pipelines",
+                "metadata",
+                "search",
+                "embeddings"
+              ],
+              "relationships": [
+                {
+                  "targetSlug": "openstrand-ingestion",
+                  "type": "follows",
+                  "strength": 0.7,
+                  "bidirectional": false
+                }
+              ],
+              "hasBlocks": true,
+              "blockCount": 9
+            },
+            {
+              "id": "openstrand-overview",
+              "slug": "openstrand-overview",
+              "title": "OpenStrand Overview",
+              "summary": "What OpenStrand is, why it exists, and how strands, looms, and weaves map to the analog OS.",
+              "path": "weaves/frame/openstrand/overview.md",
+              "contentType": "markdown",
+              "difficulty": "beginner",
+              "tags": [],
+              "relationships": [
+                {
+                  "targetSlug": "openstrand-architecture",
+                  "type": "extends",
+                  "strength": 0.8
+                },
+                {
+                  "targetSlug": "openstrand-hierarchy",
+                  "type": "references",
+                  "strength": 0.7
+                }
+              ],
+              "hasBlocks": true,
+              "blockCount": 67
+            }
+          ]
+        },
+        {
+          "slug": "openstrand-schema",
+          "title": "Openstrand / Schema",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": "openstrand-hierarchy",
+              "slug": "openstrand-hierarchy",
+              "title": "Hierarchy & Vocabulary",
+              "summary": "Complete guide to OpenStrand hierarchical organization: Fabric, Weave, Loom, and Strand.",
+              "path": "weaves/frame/openstrand/schema/hierarchy.md",
+              "contentType": "reference",
+              "difficulty": "intermediate",
+              "tags": [],
+              "relationships": [
+                {
+                  "targetSlug": "openstrand-overview",
+                  "type": "extends",
+                  "strength": 0.8
+                },
+                {
+                  "targetSlug": "openstrand-architecture",
+                  "type": "references",
+                  "strength": 0.7
+                }
+              ],
+              "hasBlocks": true,
+              "blockCount": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "knowledge",
+      "title": "knowledge",
+      "description": "",
+      "looms": [
+        {
+          "slug": "ai-ml",
+          "title": "Ai Ml",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": null,
+              "slug": "llm_rag_evaluation",
+              "title": "EVALS.md — LLM & RAG Evaluation Playbook",
+              "summary": "md — LLM & RAG Evaluation Playbook\nA practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## Table of Contents\n1.",
+              "path": "weaves/knowledge/ai-ml/llm_rag_evaluation.md",
+              "contentType": "reference",
+              "difficulty": "expert",
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 222
+            }
+          ]
+        },
+        {
+          "slug": "programming",
+          "title": "Programming",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": null,
+              "slug": "kafka_practical_guide",
+              "title": "Kafka Practical Guide",
+              "summary": "Async Producer (Non-Blocking)\n\n\n### 2. Batch Consumer (High Throughput)\n\n\n### 3. Dead Letter Queue (Error Handling)\n\n\n### 4.",
+              "path": "weaves/knowledge/programming/kafka_practical_guide.md",
+              "contentType": "reference",
+              "difficulty": "expert",
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 66
+            },
+            {
+              "id": null,
+              "slug": "python_senior_interview_crash_course",
+              "title": "Python Senior Interview Crash Course",
+              "summary": "[Python Internals You Must Know](#1-python-internals) 2. [Data Structures Deep Dive](#2-data-structures) 3. [Complexity Analysis Refresher](#3-complexity-analysis) 4.",
+              "path": "weaves/knowledge/programming/python_senior_interview_crash_course.md",
+              "contentType": "reference",
+              "difficulty": "expert",
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 105
+            },
+            {
+              "id": null,
+              "slug": "typescript_crash_course",
+              "title": "TypeScript Crash Course",
+              "summary": "[Type System Fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [Type Guards & Narrowing](#3-type-guards-narrowing) 4.",
+              "path": "weaves/knowledge/programming/typescript_crash_course.md",
+              "contentType": "reference",
+              "difficulty": "advanced",
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 139
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wiki",
+      "title": "Frame Codex Wiki",
+      "description": "Complete documentation and technical architecture for Frame Codex, OpenStrand, and the knowledge organization system",
+      "looms": [
+        {
+          "slug": "architecture",
+          "title": "Architecture",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": "8f4e7c3a-9b2d-4e1a-a5f6-1c8d9e0b2f3a",
+              "slug": "codex-architecture-overview",
+              "title": "Frame Codex Architecture Overview",
+              "summary": "High-level architecture of Frame Codex: three-tier knowledge organization, SQL caching, static NLP, and automation",
+              "path": "weaves/wiki/architecture/overview.md",
+              "contentType": "markdown",
+              "difficulty": "intermediate",
+              "tags": [],
+              "relationships": {
+                "references": [
+                  "sql-cache-architecture",
+                  "nlp-pipeline",
+                  "automation-workflows"
+                ]
+              },
+              "hasBlocks": true,
+              "blockCount": 45
+            },
+            {
+              "id": null,
+              "slug": "qa-system",
+              "title": "qa-system",
+              "summary": "",
+              "path": "weaves/wiki/architecture/qa-system.md",
+              "contentType": "reference",
+              "difficulty": null,
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 78
+            }
+          ]
+        },
+        {
+          "slug": "examples",
+          "title": "Examples",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": null,
+              "slug": "gallery-demo",
+              "title": "gallery-demo",
+              "summary": "",
+              "path": "weaves/wiki/examples/gallery-demo.md",
+              "contentType": "reference",
+              "difficulty": null,
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 14
+            }
+          ]
+        },
+        {
+          "slug": "tutorials",
+          "title": "Tutorials",
+          "summary": "",
+          "tags": [],
+          "strands": [
+            {
+              "id": null,
+              "slug": "executable-code",
+              "title": "Executable Code Blocks",
+              "summary": "Run code directly in the FABRIC Codex - JavaScript, TypeScript, Python, and more",
+              "path": "weaves/wiki/tutorials/executable-code.md",
+              "contentType": "reference",
+              "difficulty": "intermediate",
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 69
+            },
+            {
+              "id": null,
+              "slug": "getting-started",
+              "title": "getting-started",
+              "summary": "",
+              "path": "weaves/wiki/tutorials/getting-started.md",
+              "contentType": "reference",
+              "difficulty": null,
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 80
+            },
+            {
+              "id": null,
+              "slug": "markdown-features",
+              "title": "markdown-features",
+              "summary": "",
+              "path": "weaves/wiki/tutorials/markdown-features.md",
+              "contentType": "reference",
+              "difficulty": null,
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 140
+            },
+            {
+              "id": null,
+              "slug": "media-guide",
+              "title": "media-guide",
+              "summary": "",
+              "path": "weaves/wiki/tutorials/media-guide.md",
+              "contentType": "reference",
+              "difficulty": null,
+              "tags": [],
+              "relationships": [],
+              "hasBlocks": true,
+              "blockCount": 97
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "flat": [
+    {
+      "weave": "frame",
+      "loom": "openstrand",
+      "id": "3c3ac6d5-8cc2-4106-9f4a-4f6134c3d0b2",
+      "slug": "openstrand-architecture",
+      "title": "OpenStrand Architecture – Condensed Overview",
+      "summary": "A practical, implementation-focused overview of OpenStrand's architecture for ingestion and RAG.",
+      "path": "weaves/frame/openstrand/architecture.md",
+      "contentType": "reference",
+      "difficulty": {
+        "overall": "advanced",
+        "cognitive": 8,
+        "prerequisites": 5,
+        "conceptual": 8
+      },
+      "tags": [
+        "openstrand",
+        "architecture",
+        "api",
+        "pipelines",
+        "metadata",
+        "search",
+        "embeddings"
+      ],
+      "relationships": [
+        {
+          "targetSlug": "openstrand-ingestion",
+          "type": "follows",
+          "strength": 0.7,
+          "bidirectional": false
+        }
+      ],
+      "hasBlocks": true,
+      "blockCount": 9
+    },
+    {
+      "weave": "frame",
+      "loom": "openstrand",
+      "id": "openstrand-overview",
+      "slug": "openstrand-overview",
+      "title": "OpenStrand Overview",
+      "summary": "What OpenStrand is, why it exists, and how strands, looms, and weaves map to the analog OS.",
+      "path": "weaves/frame/openstrand/overview.md",
+      "contentType": "markdown",
+      "difficulty": "beginner",
+      "tags": [],
+      "relationships": [
+        {
+          "targetSlug": "openstrand-architecture",
+          "type": "extends",
+          "strength": 0.8
+        },
+        {
+          "targetSlug": "openstrand-hierarchy",
+          "type": "references",
+          "strength": 0.7
+        }
+      ],
+      "hasBlocks": true,
+      "blockCount": 67
+    },
+    {
+      "weave": "frame",
+      "loom": "openstrand/schema",
+      "id": "openstrand-hierarchy",
+      "slug": "openstrand-hierarchy",
+      "title": "Hierarchy & Vocabulary",
+      "summary": "Complete guide to OpenStrand hierarchical organization: Fabric, Weave, Loom, and Strand.",
+      "path": "weaves/frame/openstrand/schema/hierarchy.md",
+      "contentType": "reference",
+      "difficulty": "intermediate",
+      "tags": [],
+      "relationships": [
+        {
+          "targetSlug": "openstrand-overview",
+          "type": "extends",
+          "strength": 0.8
+        },
+        {
+          "targetSlug": "openstrand-architecture",
+          "type": "references",
+          "strength": 0.7
+        }
+      ],
+      "hasBlocks": true,
+      "blockCount": 35
+    },
+    {
+      "weave": "knowledge",
+      "loom": "ai-ml",
+      "id": null,
+      "slug": "llm_rag_evaluation",
+      "title": "EVALS.md — LLM & RAG Evaluation Playbook",
+      "summary": "md — LLM & RAG Evaluation Playbook\nA practical, research-grounded guide to model selection, regression testing, and production-grade evaluation. ---\n## Table of Contents\n1.",
+      "path": "weaves/knowledge/ai-ml/llm_rag_evaluation.md",
+      "contentType": "reference",
+      "difficulty": "expert",
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 222
+    },
+    {
+      "weave": "knowledge",
+      "loom": "programming",
+      "id": null,
+      "slug": "kafka_practical_guide",
+      "title": "Kafka Practical Guide",
+      "summary": "Async Producer (Non-Blocking)\n\n\n### 2. Batch Consumer (High Throughput)\n\n\n### 3. Dead Letter Queue (Error Handling)\n\n\n### 4.",
+      "path": "weaves/knowledge/programming/kafka_practical_guide.md",
+      "contentType": "reference",
+      "difficulty": "expert",
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 66
+    },
+    {
+      "weave": "knowledge",
+      "loom": "programming",
+      "id": null,
+      "slug": "python_senior_interview_crash_course",
+      "title": "Python Senior Interview Crash Course",
+      "summary": "[Python Internals You Must Know](#1-python-internals) 2. [Data Structures Deep Dive](#2-data-structures) 3. [Complexity Analysis Refresher](#3-complexity-analysis) 4.",
+      "path": "weaves/knowledge/programming/python_senior_interview_crash_course.md",
+      "contentType": "reference",
+      "difficulty": "expert",
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 105
+    },
+    {
+      "weave": "knowledge",
+      "loom": "programming",
+      "id": null,
+      "slug": "typescript_crash_course",
+      "title": "TypeScript Crash Course",
+      "summary": "[Type System Fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs never vs void](#2-any-unknown-never-void) 3. [Type Guards & Narrowing](#3-type-guards-narrowing) 4.",
+      "path": "weaves/knowledge/programming/typescript_crash_course.md",
+      "contentType": "reference",
+      "difficulty": "advanced",
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 139
+    },
+    {
+      "weave": "wiki",
+      "loom": "architecture",
+      "id": "8f4e7c3a-9b2d-4e1a-a5f6-1c8d9e0b2f3a",
+      "slug": "codex-architecture-overview",
+      "title": "Frame Codex Architecture Overview",
+      "summary": "High-level architecture of Frame Codex: three-tier knowledge organization, SQL caching, static NLP, and automation",
+      "path": "weaves/wiki/architecture/overview.md",
+      "contentType": "markdown",
+      "difficulty": "intermediate",
+      "tags": [],
+      "relationships": {
+        "references": [
+          "sql-cache-architecture",
+          "nlp-pipeline",
+          "automation-workflows"
+        ]
+      },
+      "hasBlocks": true,
+      "blockCount": 45
+    },
+    {
+      "weave": "wiki",
+      "loom": "architecture",
+      "id": null,
+      "slug": "qa-system",
+      "title": "qa-system",
+      "summary": "",
+      "path": "weaves/wiki/architecture/qa-system.md",
+      "contentType": "reference",
+      "difficulty": null,
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 78
+    },
+    {
+      "weave": "wiki",
+      "loom": "examples",
+      "id": null,
+      "slug": "gallery-demo",
+      "title": "gallery-demo",
+      "summary": "",
+      "path": "weaves/wiki/examples/gallery-demo.md",
+      "contentType": "reference",
+      "difficulty": null,
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 14
+    },
+    {
+      "weave": "wiki",
+      "loom": "tutorials",
+      "id": null,
+      "slug": "executable-code",
+      "title": "Executable Code Blocks",
+      "summary": "Run code directly in the FABRIC Codex - JavaScript, TypeScript, Python, and more",
+      "path": "weaves/wiki/tutorials/executable-code.md",
+      "contentType": "reference",
+      "difficulty": "intermediate",
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 69
+    },
+    {
+      "weave": "wiki",
+      "loom": "tutorials",
+      "id": null,
+      "slug": "getting-started",
+      "title": "getting-started",
+      "summary": "",
+      "path": "weaves/wiki/tutorials/getting-started.md",
+      "contentType": "reference",
+      "difficulty": null,
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 80
+    },
+    {
+      "weave": "wiki",
+      "loom": "tutorials",
+      "id": null,
+      "slug": "markdown-features",
+      "title": "markdown-features",
+      "summary": "",
+      "path": "weaves/wiki/tutorials/markdown-features.md",
+      "contentType": "reference",
+      "difficulty": null,
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 140
+    },
+    {
+      "weave": "wiki",
+      "loom": "tutorials",
+      "id": null,
+      "slug": "media-guide",
+      "title": "media-guide",
+      "summary": "",
+      "path": "weaves/wiki/tutorials/media-guide.md",
+      "contentType": "reference",
+      "difficulty": null,
+      "tags": [],
+      "relationships": [],
+      "hasBlocks": true,
+      "blockCount": 97
+    }
+  ]
+}
