@@ -45,6 +45,37 @@ Markdown File
 └─────────────────────┘
 ```
 
+## Hybrid Tagging: Inline + NLP
+
+The block tagging system supports **two complementary approaches** that work together:
+
+### Inline Tags (Explicit)
+Write hashtags directly in your markdown content:
+
+```markdown
+This paragraph explains React hooks for state management. #react #hooks #frontend
+```
+
+**Inline tags features:**
+- Extracted with **100% confidence** (explicit user intent)
+- Source type: `inline`
+- Displayed with a **blue** badge in the UI
+- Take precedence over NLP suggestions for the same tag
+- Pattern: `#tag-name`, `#hierarchical/tag`, `#kebab-case-tag`
+
+### NLP Tags (Automatic)
+The system automatically suggests tags via:
+- Vocabulary matching against `tags/index.yaml`
+- TF-IDF keyword extraction
+- Document tag propagation
+- Language detection for code blocks
+
+### Hybrid Behavior
+When the same tag appears both inline and via NLP:
+1. The inline version takes precedence (confidence 1.0)
+2. NLP duplicates are filtered out
+3. Both sources are tracked in stats
+
 ## Worthiness Scoring
 
 Not every block needs tags. The system calculates a "worthiness score" (0-1) based on:
@@ -62,12 +93,13 @@ Blocks with worthiness ≥ 0.5 are prioritized for tagging.
 
 Tags come from multiple sources, each with a confidence score:
 
-| Source | Confidence | Description |
-|--------|------------|-------------|
-| `nlp` | 0.3-0.85 | Vocabulary matching, TF-IDF extraction |
-| `existing` | 0.35-0.75 | Propagated from document tags, prior blocks |
-| `llm` | 0.5-0.95 | AI-suggested with reasoning |
-| `user` | 1.0 | Manually confirmed by contributors |
+| Source | Confidence | Color | Description |
+|--------|------------|-------|-------------|
+| `inline` | 1.0 | Blue | Explicit #hashtag written in content |
+| `user` | 1.0 | Emerald | Manually confirmed by contributors |
+| `llm` | 0.5-0.95 | Violet | AI-suggested with chain-of-thought reasoning |
+| `nlp` | 0.3-0.85 | Cyan | Vocabulary matching, TF-IDF extraction |
+| `existing` | 0.35-0.75 | Emerald | Propagated from document tags, prior blocks |
 
 ## Reading Block Tags in the Viewer
 

@@ -45,10 +45,11 @@ properties:
         type: object
         description: "Tag counts by source"
         properties:
-          nlp: { type: integer, minimum: 0 }
-          llm: { type: integer, minimum: 0 }
-          existing: { type: integer, minimum: 0 }
-          user: { type: integer, minimum: 0 }
+          inline: { type: integer, minimum: 0, description: "Explicit #hashtags in content" }
+          nlp: { type: integer, minimum: 0, description: "Vocabulary/TF-IDF extraction" }
+          llm: { type: integer, minimum: 0, description: "AI-suggested with reasoning" }
+          existing: { type: integer, minimum: 0, description: "Propagated from document" }
+          user: { type: integer, minimum: 0, description: "Manually confirmed" }
       blocksByType:
         type: object
         description: "Block counts by type"

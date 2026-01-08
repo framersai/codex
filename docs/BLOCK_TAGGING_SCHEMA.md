@@ -92,8 +92,22 @@ suggestedTags:
 |----------|------|----------|-------------|
 | `tag` | string | Yes | The suggested tag |
 | `confidence` | 0.0-1.0 | Yes | Confidence score |
-| `source` | enum | Yes | Tag source (`nlp`, `llm`, `existing`, `user`) |
+| `source` | enum | Yes | Tag source (see Source Types below) |
 | `reasoning` | string | No | Explanation for AI-suggested tags |
+
+### Source Types
+
+The `source` field indicates how a tag was generated:
+
+| Source | Confidence | UI Color | Description |
+|--------|------------|----------|-------------|
+| `inline` | 1.0 | Blue | Explicit `#hashtag` written directly in content |
+| `user` | 1.0 | Emerald | Manually confirmed by human contributors |
+| `llm` | 0.5-0.95 | Violet | AI-suggested with chain-of-thought reasoning |
+| `nlp` | 0.3-0.85 | Cyan | Vocabulary matching, TF-IDF keyword extraction |
+| `existing` | 0.35-0.75 | Emerald | Propagated from document-level tags or prior blocks |
+
+**Hybrid Tagging:** The system supports both inline and automatic tagging. Inline tags (explicit `#hashtag` in content) are extracted with 100% confidence and take precedence over NLP/LLM suggestions for the same tag. This allows authors to explicitly mark important tags while still benefiting from automatic suggestions.
 
 ## Worthiness Object
 

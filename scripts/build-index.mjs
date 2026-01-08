@@ -33,7 +33,7 @@ const blocksIndex = {
     uniqueTags: 0,
     worthyBlocks: 0,
     pendingSuggestions: 0,
-    tagsBySource: { nlp: 0, llm: 0, existing: 0, user: 0 },
+    tagsBySource: { inline: 0, nlp: 0, llm: 0, existing: 0, user: 0 },
     blocksByType: {}
   },
   tagIndex: {},

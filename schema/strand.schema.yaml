@@ -103,8 +103,8 @@ properties:
                 description: "Confidence score (0-1)"
               source:
                 type: string
-                enum: [nlp, llm, existing, user]
-                description: "How the tag was suggested"
+                enum: [inline, nlp, llm, existing, user]
+                description: "How the tag was suggested: inline (explicit #hashtag), nlp (vocabulary/TF-IDF), llm (AI), existing (propagated), user (manual)"
               reasoning:
                 type: string
                 description: "Optional explanation for AI-suggested tags"
