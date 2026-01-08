@@ -1,0 +1,119 @@
+name: AI Enhance Block Tags
+
+on:
+  # Manual trigger with options
+  workflow_dispatch:
+    inputs:
+      max_cost:
+        description: 'Maximum cost in USD'
+        required: false
+        default: '5.00'
+      provider:
+        description: 'LLM Provider'
+        required: false
+        default: 'openai'
+        type: choice
+        options:
+          - openai
+          - anthropic
+      model:
+        description: 'Model to use (leave empty for default)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run (no changes)'
+        required: false
+        default: false
+        type: boolean
+  
+  # Trigger on PR with enhancement label
+  pull_request:
+    types: [labeled]
+
+jobs:
+  ai-enhance:
+    runs-on: ubuntu-latest
+    # Only run on manual trigger or when 'ai-enhance' label is added
+    if: |
+      github.event_name == 'workflow_dispatch' || 
+      (github.event_name == 'pull_request' && github.event.label.name == 'ai-enhance')
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # For PRs, checkout the PR branch
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Ensure blocks are processed
+        run: |
+          node scripts/block-processor.js --all
+          node lib/block-tagging.js --all
+
+      - name: Run AI Enhancement
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          PROVIDER="${{ github.event.inputs.provider || 'openai' }}"
+          MAX_COST="${{ github.event.inputs.max_cost || '5.00' }}"
+          MODEL="${{ github.event.inputs.model || '' }}"
+          DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+          
+          CMD="node scripts/ai-enhance-blocks.js --all --provider $PROVIDER --max-cost $MAX_COST"
+          
+          if [ -n "$MODEL" ]; then
+            CMD="$CMD --model $MODEL"
+          fi
+          
+          if [ "$DRY_RUN" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          
+          echo "Running: $CMD"
+          $CMD
+
+      - name: Rebuild indexes
+        run: pnpm run index
+
+      - name: Commit AI enhancements
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add modified strand files and indexes
+          git add weaves/ codex-*.json
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "feat(blocks): AI-enhanced block tags [skip ci]
+            
+            Provider: ${{ github.event.inputs.provider || 'openai' }}
+            Max Cost: \$${{ github.event.inputs.max_cost || '5.00' }}"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Create summary
+        run: |
+          echo "## AI Block Enhancement Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Provider: ${{ github.event.inputs.provider || 'openai' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Max Cost: \$${{ github.event.inputs.max_cost || '5.00' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Dry Run: ${{ github.event.inputs.dry_run || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the logs for detailed processing results." >> $GITHUB_STEP_SUMMARY
+
