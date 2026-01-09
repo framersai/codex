@@ -22,6 +22,9 @@ const read = (p) => fs.readFileSync(p, 'utf8');
 const safeRead = (p) => (fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : null);
 const IGNORED_SEGMENTS = new Set(['.git', '.github', '.DS_Store', 'node_modules', '.cache']);
 
+// Auto-confirm suggested tags with confidence >= this threshold
+const AUTO_CONFIRM_THRESHOLD = 0.5;
+
 // Block index accumulator
 const blocksIndex = {
   generatedAt: null,
@@ -33,6 +36,7 @@ const blocksIndex = {
     uniqueTags: 0,
     worthyBlocks: 0,
     pendingSuggestions: 0,
+    autoConfirmedTags: 0, // NEW: Track auto-confirmed tags
     tagsBySource: { inline: 0, nlp: 0, llm: 0, existing: 0, user: 0 },
     blocksByType: {}
   },
@@ -58,7 +62,7 @@ function processBlocks(strandPath, title, blocks) {
   }
 
   blocksIndex.stats.totalStrands++;
-  
+
   const strandBlocks = {
     path: strandPath,
     title: title,
@@ -70,17 +74,33 @@ function processBlocks(strandPath, title, blocks) {
 
   for (const block of blocks) {
     blocksIndex.stats.totalBlocks++;
-    
+
     // Count block types
     const blockType = block.type || 'unknown';
     blocksIndex.stats.blocksByType[blockType] = (blocksIndex.stats.blocksByType[blockType] || 0) + 1;
 
-    // Process accepted tags
-    const tags = block.tags || [];
+    // Start with existing accepted tags
+    const tags = [...(block.tags || [])];
+    const suggestedTags = block.suggestedTags || [];
+
+    // AUTO-CONFIRM: Promote high-confidence suggestedTags to tags
+    const remainingSuggestions = [];
+    for (const st of suggestedTags) {
+      if (st.confidence >= AUTO_CONFIRM_THRESHOLD && !tags.includes(st.tag)) {
+        // Auto-confirm this tag
+        tags.push(st.tag);
+        blocksIndex.stats.autoConfirmedTags++;
+      } else if (!tags.includes(st.tag)) {
+        // Keep as suggestion
+        remainingSuggestions.push(st);
+      }
+    }
+
+    // Process accepted tags (including auto-confirmed ones)
     for (const tag of tags) {
       blocksIndex.stats.totalTags++;
       uniqueTagsSet.add(tag);
-      
+
       // Add to inverted tag index
       if (!blocksIndex.tagIndex[tag]) {
         blocksIndex.tagIndex[tag] = [];
@@ -93,11 +113,10 @@ function processBlocks(strandPath, title, blocks) {
     }
     strandBlocks.tagCount += tags.length;
 
-    // Process suggested tags
-    const suggestedTags = block.suggestedTags || [];
-    if (suggestedTags.length > 0) {
+    // Process remaining suggested tags (below threshold)
+    if (remainingSuggestions.length > 0) {
       blocksIndex.stats.pendingSuggestions++;
-      for (const st of suggestedTags) {
+      for (const st of remainingSuggestions) {
         const source = st.source || 'nlp';
         blocksIndex.stats.tagsBySource[source] = (blocksIndex.stats.tagsBySource[source] || 0) + 1;
       }
@@ -110,7 +129,7 @@ function processBlocks(strandPath, title, blocks) {
       strandBlocks.worthyBlockCount++;
     }
 
-    // Add block to strand entry
+    // Add block to strand entry (with auto-confirmed tags merged)
     strandBlocks.blocks.push({
       id: block.id,
       line: block.line,
@@ -118,8 +137,8 @@ function processBlocks(strandPath, title, blocks) {
       type: block.type,
       headingLevel: block.headingLevel,
       headingText: block.headingText,
-      tags: block.tags || [],
-      suggestedTags: block.suggestedTags || [],
+      tags: tags,  // Now includes auto-confirmed tags
+      suggestedTags: remainingSuggestions,  // Only low-confidence suggestions remain
       worthiness: block.worthiness,
       extractiveSummary: block.extractiveSummary,
       warrantsIllustration: block.warrantsIllustration
@@ -138,12 +157,12 @@ function loadStrand(filePath) {
   const slug = fmData.slug || path.basename(filePath, '.md');
   const tags = (fmData.taxonomy?.topic || []).concat(fmData.taxonomy?.subtopic || []);
   const strandPath = path.relative(ROOT, filePath).replace(/\\/g, '/');
-  
+
   // Process block-level tags from frontmatter
   if (fmData.blocks && Array.isArray(fmData.blocks)) {
     processBlocks(strandPath, title, fmData.blocks);
   }
-  
+
   return {
     id: fmData.id || null,
     slug,
@@ -285,10 +304,10 @@ function buildIndex() {
   // Build blocks index
   blocksIndex.generatedAt = now;
   blocksIndex.stats.uniqueTags = uniqueTagsSet.size;
-  
+
   const blocksOutPath = path.join(ROOT, 'codex-blocks.json');
   fs.writeFileSync(blocksOutPath, JSON.stringify(blocksIndex, null, 2), 'utf8');
-  
+
   console.log(`✅ Wrote ${blocksOutPath}`);
   console.log(`   📊 Block Stats:`);
   console.log(`      - Strands with blocks: ${blocksIndex.stats.totalStrands}`);
@@ -296,6 +315,7 @@ function buildIndex() {
   console.log(`      - Total block tags: ${blocksIndex.stats.totalTags}`);
   console.log(`      - Unique tags: ${blocksIndex.stats.uniqueTags}`);
   console.log(`      - Worthy blocks (≥0.5): ${blocksIndex.stats.worthyBlocks}`);
+  console.log(`      - Auto-confirmed tags: ${blocksIndex.stats.autoConfirmedTags}`);
   console.log(`      - Pending suggestions: ${blocksIndex.stats.pendingSuggestions}`);
 }
 

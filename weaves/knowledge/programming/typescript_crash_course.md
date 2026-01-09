@@ -1,9 +1,9 @@
 ---
-title: "TypeScript Crash Course"
-summary: "[Type System Fundamentals](#1-type-system-fundamentals)
-2. [any vs unknown vs never vs void](#2-any-unknown-never-void)
-3. [Type Guards & Narrowing](#3-type-guards-narrowing)
-4."
+title: TypeScript Crash Course
+summary: >-
+  [Type System Fundamentals](#1-type-system-fundamentals) 2. [any vs unknown vs
+  never vs void](#2-any-unknown-never-void) 3. [Type Guards &
+  Narrowing](#3-type-guards-narrowing) 4.
 difficulty: advanced
 tags:
   - typescript
@@ -25,10 +25,4192 @@ taxonomy:
     - artificial-intelligence
 source:
   type: manual
-  creator: "Anonymous Creator"
+  creator: Anonymous Creator
   creatorType: session
-  createdAt: "2025-12-20T00:30:37.574Z"
-  sessionId: "204f13d9-11b6-4c1c-97c4-76b50be079aa"
+  createdAt: '2025-12-20T00:30:37.574Z'
+  sessionId: 204f13d9-11b6-4c1c-97c4-76b50be079aa
+blocks:
+  - id: typescript-crash-course
+    line: 1
+    endLine: 1
+    type: heading
+    headingLevel: 1
+    headingText: TypeScript Crash Course
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: crash
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: course
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.9
+      signals:
+        topicShift: 0.5
+        entityDensity: 1
+        semanticNovelty: 1
+        structuralImportance: 1
+  - id: from-fundamentals-to-senior-level-mastery
+    line: 2
+    endLine: 2
+    type: heading
+    headingLevel: 2
+    headingText: From Fundamentals to Senior-Level Mastery
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: from
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: fundamentals
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: senior-level
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.899
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.95
+  - id: block-4
+    line: 4
+    endLine: 4
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.558
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.45
+  - id: table-of-contents
+    line: 6
+    endLine: 6
+    type: heading
+    headingLevel: 2
+    headingText: Table of Contents
+    tags: []
+    suggestedTags:
+      - tag: table
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: contents
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: block-8
+    line: 8
+    endLine: 22
+    type: list
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.787
+      signals:
+        topicShift: 1
+        entityDensity: 0.709
+        semanticNovelty: 1
+        structuralImportance: 0.6
+  - id: block-24
+    line: 24
+    endLine: 24
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 1-type-system-fundamentals-1-type-system-fundament
+    line: 26
+    endLine: 26
+    type: heading
+    headingLevel: 2
+    headingText: '1. Type System Fundamentals {#1-type-system-fundamentals}'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: system
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: fundamentals
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: primitive-types
+    line: 28
+    endLine: 28
+    type: heading
+    headingLevel: 3
+    headingText: Primitive Types
+    tags: []
+    suggestedTags:
+      - tag: primitive
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-30
+    line: 30
+    endLine: 56
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.706
+      signals:
+        topicShift: 0.962
+        entityDensity: 0.275
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: object-types
+    line: 58
+    endLine: 58
+    type: heading
+    headingLevel: 3
+    headingText: Object Types
+    tags: []
+    suggestedTags:
+      - tag: object
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.804
+      signals:
+        topicShift: 0.962
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-60
+    line: 60
+    endLine: 98
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.71
+      signals:
+        topicShift: 0.96
+        entityDensity: 0.293
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: function-types
+    line: 100
+    endLine: 100
+    type: heading
+    headingLevel: 3
+    headingText: Function Types
+    tags: []
+    suggestedTags:
+      - tag: function
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-102
+    line: 102
+    endLine: 154
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.675
+      signals:
+        topicShift: 0.711
+        entityDensity: 0.35
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: literal-types
+    line: 156
+    endLine: 156
+    type: heading
+    headingLevel: 3
+    headingText: Literal Types
+    tags: []
+    suggestedTags:
+      - tag: literal
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.806
+      signals:
+        topicShift: 0.971
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-158
+    line: 158
+    endLine: 188
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.694
+      signals:
+        topicShift: 0.954
+        entityDensity: 0.233
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-190
+    line: 190
+    endLine: 190
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 2-any-vs-unknown-vs-never-vs-void-2-any-unknown-ne
+    line: 192
+    endLine: 192
+    type: heading
+    headingLevel: 2
+    headingText: '2. any vs unknown vs never vs void {#2-any-unknown-never-void}'
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: unknown
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: never
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: void
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.623
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.1
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: the-type-hierarchy
+    line: 194
+    endLine: 194
+    type: heading
+    headingLevel: 3
+    headingText: The Type Hierarchy
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-196
+    line: 196
+    endLine: 208
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.628
+      signals:
+        topicShift: 0.739
+        entityDensity: 0.14
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: any-the-escape-hatch-avoid
+    line: 210
+    endLine: 210
+    type: heading
+    headingLevel: 3
+    headingText: 'any: The Escape Hatch (Avoid!)'
+    tags: []
+    suggestedTags:
+      - tag: escape
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: hatch
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: avoid
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.785
+      signals:
+        topicShift: 0.865
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-212
+    line: 212
+    endLine: 238
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.677
+      signals:
+        topicShift: 0.768
+        entityDensity: 0.312
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: unknown-the-type-safe-any
+    line: 240
+    endLine: 240
+    type: heading
+    headingLevel: 3
+    headingText: 'unknown: The Type-Safe any'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: unknown
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: type-safe
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.704
+      signals:
+        topicShift: 0.669
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-242
+    line: 242
+    endLine: 298
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.662
+      signals:
+        topicShift: 0.755
+        entityDensity: 0.266
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: never-the-impossible-type
+    line: 300
+    endLine: 300
+    type: heading
+    headingLevel: 3
+    headingText: 'never: The Impossible Type'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: never
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: impossible
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 0.873
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-302
+    line: 302
+    endLine: 356
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.601
+      signals:
+        topicShift: 0.433
+        entityDensity: 0.278
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: void-no-return-value
+    line: 358
+    endLine: 358
+    type: heading
+    headingLevel: 3
+    headingText: 'void: No Return Value'
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: void
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: return
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: value
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.791
+      signals:
+        topicShift: 0.857
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-360
+    line: 360
+    endLine: 397
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.583
+      signals:
+        topicShift: 0.406
+        entityDensity: 0.228
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: comparison-table
+    line: 399
+    endLine: 399
+    type: heading
+    headingLevel: 3
+    headingText: Comparison Table
+    tags: []
+    suggestedTags:
+      - tag: comparison
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: table
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-401
+    line: 401
+    endLine: 432
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.699
+      signals:
+        topicShift: 0.96
+        entityDensity: 0.249
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-434
+    line: 434
+    endLine: 434
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 3-type-guards-narrowing-3-type-guards-narrowing
+    line: 436
+    endLine: 436
+    type: heading
+    headingLevel: 2
+    headingText: '3. Type Guards & Narrowing {#3-type-guards-narrowing}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: guards
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: narrowing
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.74
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.571
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: built-in-type-guards
+    line: 438
+    endLine: 438
+    type: heading
+    headingLevel: 3
+    headingText: Built-in Type Guards
+    tags: []
+    suggestedTags:
+      - tag: built-in
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: guards
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.699
+      signals:
+        topicShift: 0.333
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-440
+    line: 440
+    endLine: 515
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.727
+      signals:
+        topicShift: 0.977
+        entityDensity: 0.347
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: custom-type-guards-type-predicates
+    line: 517
+    endLine: 517
+    type: heading
+    headingLevel: 3
+    headingText: Custom Type Guards (Type Predicates)
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: guards
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: custom
+        confidence: 0.375
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.847
+      signals:
+        topicShift: 0.97
+        entityDensity: 0.833
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-519
+    line: 519
+    endLine: 594
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.697
+      signals:
+        topicShift: 0.831
+        entityDensity: 0.345
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: discriminated-unions-tagged-unions
+    line: 596
+    endLine: 596
+    type: heading
+    headingLevel: 3
+    headingText: Discriminated Unions (Tagged Unions)
+    tags: []
+    suggestedTags:
+      - tag: unions
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: discriminated
+        confidence: 0.375
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: tagged
+        confidence: 0.375
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.845
+      signals:
+        topicShift: 1
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-598
+    line: 598
+    endLine: 675
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.734
+      signals:
+        topicShift: 0.988
+        entityDensity: 0.366
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-677
+    line: 677
+    endLine: 677
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 4-interfaces-vs-types-4-interfaces-vs-types
+    line: 679
+    endLine: 679
+    type: heading
+    headingLevel: 2
+    headingText: '4. Interfaces vs Types {#4-interfaces-vs-types}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: interfaces
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 4-interfaces-vs-types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: key-differences
+    line: 681
+    endLine: 681
+    type: heading
+    headingLevel: 3
+    headingText: Key Differences
+    tags: []
+    suggestedTags:
+      - tag: differences
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-683
+    line: 683
+    endLine: 816
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.733
+      signals:
+        topicShift: 0.984
+        entityDensity: 0.365
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: when-to-use-what
+    line: 818
+    endLine: 818
+    type: heading
+    headingLevel: 3
+    headingText: When to Use What
+    tags: []
+    suggestedTags:
+      - tag: when
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: what
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.782
+      signals:
+        topicShift: 0.937
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-820
+    line: 820
+    endLine: 872
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.719
+      signals:
+        topicShift: 0.868
+        entityDensity: 0.399
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-874
+    line: 874
+    endLine: 874
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 5-generics-deep-dive-5-generics
+    line: 876
+    endLine: 876
+    type: heading
+    headingLevel: 2
+    headingText: '5. Generics Deep Dive {#5-generics}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: generics
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: deep
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: dive
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: generic-basics
+    line: 878
+    endLine: 878
+    type: heading
+    headingLevel: 3
+    headingText: Generic Basics
+    tags: []
+    suggestedTags:
+      - tag: generic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: basics
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: generics
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-880
+    line: 880
+    endLine: 926
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.749
+      signals:
+        topicShift: 1
+        entityDensity: 0.416
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: generic-constraints
+    line: 928
+    endLine: 928
+    type: heading
+    headingLevel: 3
+    headingText: Generic Constraints
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: constraints
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: generics
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: generic
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-930
+    line: 930
+    endLine: 972
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.746
+      signals:
+        topicShift: 1
+        entityDensity: 0.406
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: generic-inference-defaults
+    line: 974
+    endLine: 974
+    type: heading
+    headingLevel: 3
+    headingText: Generic Inference & Defaults
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: inference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: defaults
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: generics
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: generic
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-976
+    line: 976
+    endLine: 1015
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.743
+      signals:
+        topicShift: 0.959
+        entityDensity: 0.423
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: advanced-generic-patterns
+    line: 1017
+    endLine: 1017
+    type: heading
+    headingLevel: 3
+    headingText: Advanced Generic Patterns
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: advanced
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: generics
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1019
+    line: 1019
+    endLine: 1095
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.934
+        entityDensity: 0.365
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1097
+    line: 1097
+    endLine: 1097
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 6-utility-types-mastery-6-utility-types
+    line: 1099
+    endLine: 1099
+    type: heading
+    headingLevel: 2
+    headingText: '6. Utility Types Mastery {#6-utility-types}'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: utility
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: mastery
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: built-in-utility-types
+    line: 1101
+    endLine: 1101
+    type: heading
+    headingLevel: 3
+    headingText: Built-in Utility Types
+    tags: []
+    suggestedTags:
+      - tag: built-in
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: utility
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.679
+      signals:
+        topicShift: 0.23
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1103
+    line: 1103
+    endLine: 1217
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.753
+      signals:
+        topicShift: 1
+        entityDensity: 0.433
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: string-manipulation-types
+    line: 1219
+    endLine: 1219
+    type: heading
+    headingLevel: 3
+    headingText: String Manipulation Types
+    tags: []
+    suggestedTags:
+      - tag: manipulation
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1221
+    line: 1221
+    endLine: 1245
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.702
+      signals:
+        topicShift: 0.756
+        entityDensity: 0.422
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: building-custom-utility-types
+    line: 1247
+    endLine: 1247
+    type: heading
+    headingLevel: 3
+    headingText: Building Custom Utility Types
+    tags: []
+    suggestedTags:
+      - tag: building
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: custom
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: utility
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.838
+      signals:
+        topicShift: 0.965
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1249
+    line: 1249
+    endLine: 1320
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.761
+      signals:
+        topicShift: 1
+        entityDensity: 0.463
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1322
+    line: 1322
+    endLine: 1322
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 7-advanced-types-7-advanced-types
+    line: 1324
+    endLine: 1324
+    type: heading
+    headingLevel: 2
+    headingText: '7. Advanced Types {#7-advanced-types}'
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: advanced
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 7-advanced-types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: index-types
+    line: 1326
+    endLine: 1326
+    type: heading
+    headingLevel: 3
+    headingText: Index Types
+    tags: []
+    suggestedTags:
+      - tag: index
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: 7-advanced-types
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.712
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1328
+    line: 1328
+    endLine: 1370
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.691
+      signals:
+        topicShift: 0.856
+        entityDensity: 0.298
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: intersection-union-types
+    line: 1372
+    endLine: 1372
+    type: heading
+    headingLevel: 3
+    headingText: Intersection & Union Types
+    tags: []
+    suggestedTags:
+      - tag: intersection
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: union
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.783
+      signals:
+        topicShift: 0.941
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1374
+    line: 1374
+    endLine: 1422
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.705
+      signals:
+        topicShift: 0.87
+        entityDensity: 0.346
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: type-assertions-casting
+    line: 1424
+    endLine: 1424
+    type: heading
+    headingLevel: 3
+    headingText: Type Assertions & Casting
+    tags: []
+    suggestedTags:
+      - tag: assertions
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: casting
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.73
+      signals:
+        topicShift: 0.675
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1426
+    line: 1426
+    endLine: 1471
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.71
+      signals:
+        topicShift: 0.949
+        entityDensity: 0.302
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1473
+    line: 1473
+    endLine: 1473
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 8-conditional-types-8-conditional-types
+    line: 1475
+    endLine: 1475
+    type: heading
+    headingLevel: 2
+    headingText: '8. Conditional Types {#8-conditional-types}'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: conditional
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 8-conditional-types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: basic-conditional-types
+    line: 1477
+    endLine: 1477
+    type: heading
+    headingLevel: 3
+    headingText: Basic Conditional Types
+    tags: []
+    suggestedTags:
+      - tag: basic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 8-conditional-types
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: conditional
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.669
+      signals:
+        topicShift: 0.184
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1479
+    line: 1479
+    endLine: 1509
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.746
+      signals:
+        topicShift: 1
+        entityDensity: 0.403
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: infer-keyword
+    line: 1511
+    endLine: 1511
+    type: heading
+    headingLevel: 3
+    headingText: Infer Keyword
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: infer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: keyword
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.785
+      signals:
+        topicShift: 0.865
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1513
+    line: 1513
+    endLine: 1553
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.678
+      signals:
+        topicShift: 0.754
+        entityDensity: 0.33
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: distributive-conditional-types
+    line: 1555
+    endLine: 1555
+    type: heading
+    headingLevel: 3
+    headingText: Distributive Conditional Types
+    tags: []
+    suggestedTags:
+      - tag: distributive
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.824
+      signals:
+        topicShift: 0.96
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1557
+    line: 1557
+    endLine: 1603
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.716
+      signals:
+        topicShift: 0.953
+        entityDensity: 0.322
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: complex-conditional-patterns
+    line: 1605
+    endLine: 1605
+    type: heading
+    headingLevel: 3
+    headingText: Complex Conditional Patterns
+    tags: []
+    suggestedTags:
+      - tag: complex
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: conditional
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.828
+      signals:
+        topicShift: 0.976
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1607
+    line: 1607
+    endLine: 1651
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.715
+      signals:
+        topicShift: 0.94
+        entityDensity: 0.328
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1653
+    line: 1653
+    endLine: 1653
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 9-mapped-types-9-mapped-types
+    line: 1655
+    endLine: 1655
+    type: heading
+    headingLevel: 2
+    headingText: '9. Mapped Types {#9-mapped-types}'
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: mapped
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 9-mapped-types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: basic-mapped-types
+    line: 1657
+    endLine: 1657
+    type: heading
+    headingLevel: 3
+    headingText: Basic Mapped Types
+    tags: []
+    suggestedTags:
+      - tag: basic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 9-mapped-types
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: mapped
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.669
+      signals:
+        topicShift: 0.184
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1659
+    line: 1659
+    endLine: 1690
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: types
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.915
+        entityDensity: 0.381
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: modifiers-in-mapped-types
+    line: 1692
+    endLine: 1692
+    type: heading
+    headingLevel: 3
+    headingText: Modifiers in Mapped Types
+    tags: []
+    suggestedTags:
+      - tag: modifiers
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 9-mapped-types
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.778
+      signals:
+        topicShift: 0.915
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1694
+    line: 1694
+    endLine: 1721
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: 9-mapped-types
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.741
+      signals:
+        topicShift: 1
+        entityDensity: 0.385
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: key-remapping-as-clause
+    line: 1723
+    endLine: 1723
+    type: heading
+    headingLevel: 3
+    headingText: Key Remapping (as clause)
+    tags: []
+    suggestedTags:
+      - tag: remapping
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: clause
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1725
+    line: 1725
+    endLine: 1769
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.753
+      signals:
+        topicShift: 1
+        entityDensity: 0.432
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: advanced-mapped-type-patterns
+    line: 1771
+    endLine: 1771
+    type: heading
+    headingLevel: 3
+    headingText: Advanced Mapped Type Patterns
+    tags: []
+    suggestedTags:
+      - tag: advanced
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: mapped
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 9-mapped-types
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.793
+      signals:
+        topicShift: 0.742
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1773
+    line: 1773
+    endLine: 1838
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.694
+      signals:
+        topicShift: 0.723
+        entityDensity: 0.417
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1840
+    line: 1840
+    endLine: 1840
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 10-template-literal-types-10-template-literal-type
+    line: 1842
+    endLine: 1842
+    type: heading
+    headingLevel: 2
+    headingText: '10. Template Literal Types {#10-template-literal-types}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: template
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: literal
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: basic-template-literals
+    line: 1844
+    endLine: 1844
+    type: heading
+    headingLevel: 3
+    headingText: Basic Template Literals
+    tags: []
+    suggestedTags:
+      - tag: basic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: literals
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: template
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: literal
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.766
+      signals:
+        topicShift: 0.667
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1846
+    line: 1846
+    endLine: 1873
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.718
+      signals:
+        topicShift: 0.971
+        entityDensity: 0.315
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-matching-with-template-literals
+    line: 1875
+    endLine: 1875
+    type: heading
+    headingLevel: 3
+    headingText: Pattern Matching with Template Literals
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pattern
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: matching
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: with
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: template
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.798
+      signals:
+        topicShift: 0.933
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1877
+    line: 1877
+    endLine: 1928
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.736
+      signals:
+        topicShift: 1
+        entityDensity: 0.364
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: practical-template-literal-patterns
+    line: 1930
+    endLine: 1930
+    type: heading
+    headingLevel: 3
+    headingText: Practical Template Literal Patterns
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: practical
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: literal
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: template
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.845
+      signals:
+        topicShift: 1
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1932
+    line: 1932
+    endLine: 1975
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.749
+      signals:
+        topicShift: 1
+        entityDensity: 0.417
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1977
+    line: 1977
+    endLine: 1977
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 11-declaration-merging-module-augmentation-11-decl
+    line: 1979
+    endLine: 1979
+    type: heading
+    headingLevel: 2
+    headingText: '11. Declaration Merging & Module Augmentation {#11-declaration-merging}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: declaration
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: merging
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: module
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.754
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.625
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: interface-merging
+    line: 1981
+    endLine: 1981
+    type: heading
+    headingLevel: 3
+    headingText: Interface Merging
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: interface
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: merging
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.722
+      signals:
+        topicShift: 0.553
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1983
+    line: 1983
+    endLine: 2010
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: interface
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.676
+      signals:
+        topicShift: 0.734
+        entityDensity: 0.336
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: namespace-merging
+    line: 2012
+    endLine: 2012
+    type: heading
+    headingLevel: 3
+    headingText: Namespace Merging
+    tags: []
+    suggestedTags:
+      - tag: namespace
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: merging
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2014
+    line: 2014
+    endLine: 2062
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: namespace
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.76
+      signals:
+        topicShift: 1
+        entityDensity: 0.461
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: module-augmentation
+    line: 2064
+    endLine: 2064
+    type: heading
+    headingLevel: 3
+    headingText: Module Augmentation
+    tags: []
+    suggestedTags:
+      - tag: module
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: augmentation
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2066
+    line: 2066
+    endLine: 2105
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: module
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.672
+      signals:
+        topicShift: 0.766
+        entityDensity: 0.296
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: global-augmentation
+    line: 2107
+    endLine: 2107
+    type: heading
+    headingLevel: 3
+    headingText: Global Augmentation
+    tags: []
+    suggestedTags:
+      - tag: global
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: augmentation
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2109
+    line: 2109
+    endLine: 2152
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.674
+      signals:
+        topicShift: 0.662
+        entityDensity: 0.384
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2154
+    line: 2154
+    endLine: 2154
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 12-strict-mode-compiler-options-12-strict-mode
+    line: 2156
+    endLine: 2156
+    type: heading
+    headingLevel: 2
+    headingText: '12. Strict Mode & Compiler Options {#12-strict-mode}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strict
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: mode
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: compiler
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.754
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.625
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: strict-mode-options
+    line: 2158
+    endLine: 2158
+    type: heading
+    headingLevel: 3
+    headingText: Strict Mode Options
+    tags: []
+    suggestedTags:
+      - tag: options
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strict
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: mode
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.65
+      signals:
+        topicShift: 0.087
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2160
+    line: 2160
+    endLine: 2285
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.731
+      signals:
+        topicShift: 1
+        entityDensity: 0.344
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: other-important-compiler-options
+    line: 2287
+    endLine: 2287
+    type: heading
+    headingLevel: 3
+    headingText: Other Important Compiler Options
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: other
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: important
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: compiler
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: options
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.845
+      signals:
+        topicShift: 1
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2289
+    line: 2289
+    endLine: 2330
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.757
+      signals:
+        topicShift: 0.972
+        entityDensity: 0.472
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2332
+    line: 2332
+    endLine: 2332
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 13-common-patterns-anti-patterns-13-patterns
+    line: 2334
+    endLine: 2334
+    type: heading
+    headingLevel: 2
+    headingText: '13. Common Patterns & Anti-Patterns {#13-patterns}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: common
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: anti-patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.74
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.571
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: anti-patterns-to-avoid
+    line: 2336
+    endLine: 2336
+    type: heading
+    headingLevel: 3
+    headingText: Anti-Patterns to Avoid
+    tags: []
+    suggestedTags:
+      - tag: avoid
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: anti-patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.631
+      signals:
+        topicShift: 0.304
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2338
+    line: 2338
+    endLine: 2443
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.705
+      signals:
+        topicShift: 0.882
+        entityDensity: 0.333
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: best-practices
+    line: 2445
+    endLine: 2445
+    type: heading
+    headingLevel: 3
+    headingText: Best Practices
+    tags: []
+    suggestedTags:
+      - tag: best
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: practices
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2447
+    line: 2447
+    endLine: 2542
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: ff0000
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.744
+      signals:
+        topicShift: 1
+        entityDensity: 0.398
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2544
+    line: 2544
+    endLine: 2544
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 14-real-world-scenarios-14-real-world
+    line: 2546
+    endLine: 2546
+    type: heading
+    headingLevel: 2
+    headingText: '14. Real-World Scenarios {#14-real-world}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: real-world
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: scenarios
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 14-real-world
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: api-response-handling
+    line: 2548
+    endLine: 2548
+    type: heading
+    headingLevel: 3
+    headingText: API Response Handling
+    tags: []
+    suggestedTags:
+      - tag: response
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: handling
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2550
+    line: 2550
+    endLine: 2658
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.758
+      signals:
+        topicShift: 1
+        entityDensity: 0.453
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: react-component-patterns
+    line: 2660
+    endLine: 2660
+    type: heading
+    headingLevel: 3
+    headingText: React Component Patterns
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: component
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2662
+    line: 2662
+    endLine: 2798
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.752
+      signals:
+        topicShift: 0.775
+        entityDensity: 0.608
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: state-management-types
+    line: 2800
+    endLine: 2800
+    type: heading
+    headingLevel: 3
+    headingText: State Management Types
+    tags: []
+    suggestedTags:
+      - tag: state
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: management
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: types
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2802
+    line: 2802
+    endLine: 2891
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.708
+      signals:
+        topicShift: 0.69
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2893
+    line: 2893
+    endLine: 2893
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 15-interview-questions-answers-15-interview-questi
+    line: 2895
+    endLine: 2895
+    type: heading
+    headingLevel: 2
+    headingText: '15. Interview Questions & Answers {#15-interview-questions}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: interview
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: questions
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: answers
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.74
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.571
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: beginner-questions
+    line: 2897
+    endLine: 2897
+    type: heading
+    headingLevel: 3
+    headingText: Beginner Questions
+    tags: []
+    suggestedTags:
+      - tag: beginner
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: questions
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.717
+      signals:
+        topicShift: 0.529
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2899
+    line: 2899
+    endLine: 2950
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.716
+      signals:
+        topicShift: 1
+        entityDensity: 0.284
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: intermediate-questions
+    line: 2952
+    endLine: 2952
+    type: heading
+    headingLevel: 3
+    headingText: Intermediate Questions
+    tags: []
+    suggestedTags:
+      - tag: intermediate
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: questions
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2954
+    line: 2954
+    endLine: 3039
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.715
+      signals:
+        topicShift: 1
+        entityDensity: 0.28
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: senior-questions
+    line: 3041
+    endLine: 3041
+    type: heading
+    headingLevel: 3
+    headingText: Senior Questions
+    tags: []
+    suggestedTags:
+      - tag: senior
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: questions
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3043
+    line: 3043
+    endLine: 3172
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.734
+      signals:
+        topicShift: 1
+        entityDensity: 0.354
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3174
+    line: 3174
+    endLine: 3174
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: quick-reference-cheat-sheet
+    line: 3176
+    endLine: 3176
+    type: heading
+    headingLevel: 2
+    headingText: Quick Reference Cheat Sheet
+    tags: []
+    suggestedTags:
+      - tag: quick
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: reference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: cheat
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.798
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.8
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: block-3178
+    line: 3178
+    endLine: 3221
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.757
+      signals:
+        topicShift: 1
+        entityDensity: 0.377
+        semanticNovelty: 1
+        structuralImportance: 0.75
+  - id: block-3223
+    line: 3223
+    endLine: 3223
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.54
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.4
 ---
 # TypeScript Crash Course
 ## From Fundamentals to Senior-Level Mastery

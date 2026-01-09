@@ -1,18 +1,16 @@
 ---
-title: "Kafka Practical Guide"
-summary: "Async Producer (Non-Blocking)
+title: Kafka Practical Guide
+summary: |-
+  Async Producer (Non-Blocking)
 
 
-
-### 2. Batch Consumer (High Throughput)
-
+  ### 2. Batch Consumer (High Throughput)
 
 
-### 3. Dead Letter Queue (Error Handling)
+  ### 3. Dead Letter Queue (Error Handling)
 
 
-
-### 4."
+  ### 4.
 difficulty: expert
 tags:
   - python
@@ -33,10 +31,1773 @@ taxonomy:
     - artificial-intelligence
 source:
   type: manual
-  creator: "Anonymous Creator"
+  creator: Anonymous Creator
   creatorType: session
-  createdAt: "2025-12-20T00:25:42.930Z"
-  sessionId: "204f13d9-11b6-4c1c-97c4-76b50be079aa"
+  createdAt: '2025-12-20T00:25:42.930Z'
+  sessionId: 204f13d9-11b6-4c1c-97c4-76b50be079aa
+blocks:
+  - id: kafka-practical-guide
+    line: 1
+    endLine: 1
+    type: heading
+    headingLevel: 1
+    headingText: Kafka Practical Guide
+    tags: []
+    suggestedTags:
+      - tag: kafka
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: practical
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: guide
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.81
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.75
+        semanticNovelty: 0.864
+        structuralImportance: 1
+  - id: from-zero-to-production-with-python-examples
+    line: 3
+    endLine: 3
+    type: heading
+    headingLevel: 2
+    headingText: From Zero to Production with Python Examples
+    tags: []
+    suggestedTags:
+      - tag: from
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: zero
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: production
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.865
+      signals:
+        topicShift: 1
+        entityDensity: 0.625
+        semanticNovelty: 0.882
+        structuralImportance: 0.95
+  - id: block-5
+    line: 5
+    endLine: 5
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.558
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.45
+  - id: what-is-kafka-really
+    line: 7
+    endLine: 7
+    type: heading
+    headingLevel: 2
+    headingText: 'What is Kafka, Really?'
+    tags: []
+    suggestedTags:
+      - tag: what
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: really
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: kafka
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.72
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 0.862
+        structuralImportance: 0.85
+  - id: block-9
+    line: 9
+    endLine: 25
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: go
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: messages
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.621
+      signals:
+        topicShift: 0.861
+        entityDensity: 0.205
+        semanticNovelty: 0.763
+        structuralImportance: 0.7
+  - id: the-mental-model
+    line: 27
+    endLine: 27
+    type: heading
+    headingLevel: 3
+    headingText: The Mental Model
+    tags: []
+    suggestedTags:
+      - tag: mental
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: model
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 0.93
+        entityDensity: 0.75
+        semanticNovelty: 0.967
+        structuralImportance: 0.7
+  - id: block-29
+    line: 29
+    endLine: 63
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.65
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: react
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: service
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.654
+      signals:
+        topicShift: 1
+        entityDensity: 0.351
+        semanticNovelty: 0.606
+        structuralImportance: 0.7
+  - id: block-65
+    line: 65
+    endLine: 65
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: where-kafka-fits-in-real-systems
+    line: 67
+    endLine: 67
+    type: heading
+    headingLevel: 2
+    headingText: Where Kafka Fits in Real Systems
+    tags: []
+    suggestedTags:
+      - tag: where
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: fits
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.751
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.714
+        semanticNovelty: 0.876
+        structuralImportance: 0.85
+  - id: example-1-e-commerce-order-flow
+    line: 69
+    endLine: 69
+    type: heading
+    headingLevel: 3
+    headingText: 'Example 1: E-Commerce Order Flow'
+    tags: []
+    suggestedTags:
+      - tag: example
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: e-commerce
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.757
+      signals:
+        topicShift: 1
+        entityDensity: 0.583
+        semanticNovelty: 0.829
+        structuralImportance: 0.7
+  - id: block-71
+    line: 71
+    endLine: 112
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: service
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: kafka
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.54
+      signals:
+        topicShift: 0.738
+        entityDensity: 0.141
+        semanticNovelty: 0.562
+        structuralImportance: 0.7
+  - id: example-2-real-time-analytics-pipeline
+    line: 114
+    endLine: 114
+    type: heading
+    headingLevel: 3
+    headingText: 'Example 2: Real-Time Analytics Pipeline'
+    tags: []
+    suggestedTags:
+      - tag: real-time
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: analytics
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: example
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.802
+      signals:
+        topicShift: 0.906
+        entityDensity: 0.75
+        semanticNovelty: 0.942
+        structuralImportance: 0.7
+  - id: block-116
+    line: 116
+    endLine: 145
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: events
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.582
+      signals:
+        topicShift: 0.75
+        entityDensity: 0.112
+        semanticNovelty: 0.793
+        structuralImportance: 0.7
+  - id: example-3-microservices-event-bus
+    line: 147
+    endLine: 147
+    type: heading
+    headingLevel: 3
+    headingText: 'Example 3: Microservices Event Bus'
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: microservices
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: service
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.781
+      signals:
+        topicShift: 0.86
+        entityDensity: 0.75
+        semanticNovelty: 0.881
+        structuralImportance: 0.7
+  - id: block-149
+    line: 149
+    endLine: 176
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: microservices
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.598
+      signals:
+        topicShift: 0.864
+        entityDensity: 0.193
+        semanticNovelty: 0.663
+        structuralImportance: 0.7
+  - id: block-178
+    line: 178
+    endLine: 178
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: kafka-core-concepts
+    line: 180
+    endLine: 180
+    type: heading
+    headingLevel: 2
+    headingText: Kafka Core Concepts
+    tags: []
+    suggestedTags:
+      - tag: kafka
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: core
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: concepts
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.758
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.75
+        semanticNovelty: 0.864
+        structuralImportance: 0.85
+  - id: block-182
+    line: 182
+    endLine: 244
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.598
+      signals:
+        topicShift: 0.882
+        entityDensity: 0.203
+        semanticNovelty: 0.631
+        structuralImportance: 0.7
+  - id: block-246
+    line: 246
+    endLine: 246
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: python-setup
+    line: 248
+    endLine: 248
+    type: heading
+    headingLevel: 2
+    headingText: Python Setup
+    tags: []
+    suggestedTags:
+      - tag: setup
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.752
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 0.941
+        structuralImportance: 0.85
+  - id: installation
+    line: 250
+    endLine: 250
+    type: heading
+    headingLevel: 3
+    headingText: Installation
+    tags: []
+    suggestedTags:
+      - tag: installation
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.769
+      signals:
+        topicShift: 1
+        entityDensity: 0.5
+        semanticNovelty: 0.996
+        structuralImportance: 0.7
+  - id: block-252
+    line: 252
+    endLine: 270
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: javascript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: installation
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.648
+      signals:
+        topicShift: 1
+        entityDensity: 0.245
+        semanticNovelty: 0.707
+        structuralImportance: 0.7
+  - id: docker-compose-for-local-dev
+    line: 272
+    endLine: 272
+    type: heading
+    headingLevel: 3
+    headingText: Docker Compose for Local Dev
+    tags: []
+    suggestedTags:
+      - tag: docker
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: compose
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: local
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.724
+      signals:
+        topicShift: 0.686
+        entityDensity: 0.667
+        semanticNovelty: 0.878
+        structuralImportance: 0.7
+  - id: block-274
+    line: 274
+    endLine: 298
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: '2181'
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: '9092'
+        confidence: 0.5625
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: zookeeper
+        confidence: 0.5625
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.704
+      signals:
+        topicShift: 0.806
+        entityDensity: 0.5
+        semanticNovelty: 0.863
+        structuralImportance: 0.7
+  - id: block-300
+    line: 300
+    endLine: 300
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: basic-producer-consumer
+    line: 302
+    endLine: 302
+    type: heading
+    headingLevel: 2
+    headingText: Basic Producer & Consumer
+    tags: []
+    suggestedTags:
+      - tag: basic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: producer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: consumer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.705
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 0.788
+        structuralImportance: 0.85
+  - id: simple-producer
+    line: 304
+    endLine: 304
+    type: heading
+    headingLevel: 3
+    headingText: Simple Producer
+    tags: []
+    suggestedTags:
+      - tag: simple
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: producer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.707
+      signals:
+        topicShift: 0.592
+        entityDensity: 0.667
+        semanticNovelty: 0.887
+        structuralImportance: 0.7
+  - id: block-306
+    line: 306
+    endLine: 348
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: producer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.597
+      signals:
+        topicShift: 0.708
+        entityDensity: 0.395
+        semanticNovelty: 0.558
+        structuralImportance: 0.7
+  - id: simple-consumer
+    line: 350
+    endLine: 350
+    type: heading
+    headingLevel: 3
+    headingText: Simple Consumer
+    tags: []
+    suggestedTags:
+      - tag: consumer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: simple
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.777
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 0.828
+        structuralImportance: 0.7
+  - id: block-352
+    line: 352
+    endLine: 386
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: kafka
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.581
+      signals:
+        topicShift: 0.805
+        entityDensity: 0.374
+        semanticNovelty: 0.406
+        structuralImportance: 0.7
+  - id: block-388
+    line: 388
+    endLine: 388
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: real-world-pattern-order-processing-system
+    line: 390
+    endLine: 390
+    type: heading
+    headingLevel: 2
+    headingText: 'Real-World Pattern: Order Processing System'
+    tags: []
+    suggestedTags:
+      - tag: real-world
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pattern
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.793
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.917
+        semanticNovelty: 0.831
+        structuralImportance: 0.85
+  - id: the-producer-order-service
+    line: 392
+    endLine: 392
+    type: heading
+    headingLevel: 3
+    headingText: The Producer (Order Service)
+    tags: []
+    suggestedTags:
+      - tag: service
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: producer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.736
+      signals:
+        topicShift: 0.796
+        entityDensity: 0.8
+        semanticNovelty: 0.657
+        structuralImportance: 0.7
+  - id: block-394
+    line: 394
+    endLine: 492
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.551
+      signals:
+        topicShift: 0.683
+        entityDensity: 0.465
+        semanticNovelty: 0.265
+        structuralImportance: 0.7
+  - id: consumer-email-service
+    line: 494
+    endLine: 494
+    type: heading
+    headingLevel: 3
+    headingText: 'Consumer: Email Service'
+    tags: []
+    suggestedTags:
+      - tag: email
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: service
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.788
+      signals:
+        topicShift: 0.909
+        entityDensity: 0.875
+        semanticNovelty: 0.711
+        structuralImportance: 0.7
+  - id: block-496
+    line: 496
+    endLine: 568
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.545
+      signals:
+        topicShift: 0.682
+        entityDensity: 0.47
+        semanticNovelty: 0.231
+        structuralImportance: 0.7
+  - id: consumer-inventory-service
+    line: 570
+    endLine: 570
+    type: heading
+    headingLevel: 3
+    headingText: 'Consumer: Inventory Service'
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: inventory
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: consumer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: service
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.771
+      signals:
+        topicShift: 0.813
+        entityDensity: 0.875
+        semanticNovelty: 0.722
+        structuralImportance: 0.7
+  - id: block-572
+    line: 572
+    endLine: 653
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.545
+      signals:
+        topicShift: 0.627
+        entityDensity: 0.478
+        semanticNovelty: 0.274
+        structuralImportance: 0.7
+  - id: consumer-analytics-service
+    line: 655
+    endLine: 655
+    type: heading
+    headingLevel: 3
+    headingText: 'Consumer: Analytics Service'
+    tags: []
+    suggestedTags:
+      - tag: analytics
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: service
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: consumer
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.776
+      signals:
+        topicShift: 0.832
+        entityDensity: 0.875
+        semanticNovelty: 0.729
+        structuralImportance: 0.7
+  - id: block-657
+    line: 657
+    endLine: 716
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.611
+      signals:
+        topicShift: 0.779
+        entityDensity: 0.599
+        semanticNovelty: 0.301
+        structuralImportance: 0.7
+  - id: block-718
+    line: 718
+    endLine: 718
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: running-the-full-system
+    line: 720
+    endLine: 720
+    type: heading
+    headingLevel: 2
+    headingText: Running the Full System
+    tags: []
+    suggestedTags:
+      - tag: running
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: full
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: system
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.741
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 0.968
+        structuralImportance: 0.85
+  - id: block-722
+    line: 722
+    endLine: 739
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: service
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: order
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: terminal
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.727
+      signals:
+        topicShift: 0.948
+        entityDensity: 0.539
+        semanticNovelty: 0.786
+        structuralImportance: 0.7
+  - id: block-741
+    line: 741
+    endLine: 741
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: production-patterns
+    line: 743
+    endLine: 743
+    type: heading
+    headingLevel: 2
+    headingText: Production Patterns
+    tags: []
+    suggestedTags:
+      - tag: production
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.759
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 0.973
+        structuralImportance: 0.85
+  - id: 1-async-producer-non-blocking
+    line: 745
+    endLine: 745
+    type: heading
+    headingLevel: 3
+    headingText: 1. Async Producer (Non-Blocking)
+    tags: []
+    suggestedTags:
+      - tag: async
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: producer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: non-blocking
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.772
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 0.884
+        structuralImportance: 0.7
+  - id: block-747
+    line: 747
+    endLine: 812
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: async
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.598
+      signals:
+        topicShift: 0.854
+        entityDensity: 0.467
+        semanticNovelty: 0.327
+        structuralImportance: 0.7
+  - id: 2-batch-consumer-high-throughput
+    line: 814
+    endLine: 814
+    type: heading
+    headingLevel: 3
+    headingText: 2. Batch Consumer (High Throughput)
+    tags: []
+    suggestedTags:
+      - tag: batch
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: consumer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: high
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.782
+      signals:
+        topicShift: 0.927
+        entityDensity: 0.75
+        semanticNovelty: 0.82
+        structuralImportance: 0.7
+  - id: block-816
+    line: 816
+    endLine: 876
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: bash
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.577
+      signals:
+        topicShift: 0.645
+        entityDensity: 0.44
+        semanticNovelty: 0.466
+        structuralImportance: 0.7
+  - id: 3-dead-letter-queue-error-handling
+    line: 878
+    endLine: 878
+    type: heading
+    headingLevel: 3
+    headingText: 3. Dead Letter Queue (Error Handling)
+    tags: []
+    suggestedTags:
+      - tag: dead
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: letter
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: queue
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.786
+        semanticNovelty: 0.959
+        structuralImportance: 0.7
+  - id: block-880
+    line: 880
+    endLine: 955
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.605
+      signals:
+        topicShift: 0.887
+        entityDensity: 0.519
+        semanticNovelty: 0.263
+        structuralImportance: 0.7
+  - id: 4-exactly-once-processing-idempotent
+    line: 957
+    endLine: 957
+    type: heading
+    headingLevel: 3
+    headingText: 4. Exactly-Once Processing (Idempotent)
+    tags: []
+    suggestedTags:
+      - tag: exactly-once
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: processing
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: idempotent
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.777
+      signals:
+        topicShift: 0.968
+        entityDensity: 0.6
+        semanticNovelty: 0.943
+        structuralImportance: 0.7
+  - id: block-959
+    line: 959
+    endLine: 1033
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.594
+      signals:
+        topicShift: 0.894
+        entityDensity: 0.46
+        semanticNovelty: 0.278
+        structuralImportance: 0.7
+  - id: block-1035
+    line: 1035
+    endLine: 1035
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: async-kafka-with-asyncio
+    line: 1037
+    endLine: 1037
+    type: heading
+    headingLevel: 2
+    headingText: Async Kafka with asyncio
+    tags: []
+    suggestedTags:
+      - tag: async
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: kafka
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: with
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.66
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.4
+        semanticNovelty: 0.814
+        structuralImportance: 0.85
+  - id: block-1039
+    line: 1039
+    endLine: 1111
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.552
+      signals:
+        topicShift: 0.642
+        entityDensity: 0.455
+        semanticNovelty: 0.323
+        structuralImportance: 0.7
+  - id: block-1113
+    line: 1113
+    endLine: 1113
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: kafka-vs-other-queues
+    line: 1115
+    endLine: 1115
+    type: heading
+    headingLevel: 2
+    headingText: Kafka vs Other Queues
+    tags: []
+    suggestedTags:
+      - tag: other
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: queues
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: kafka
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.717
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 0.847
+        structuralImportance: 0.85
+  - id: block-1117
+    line: 1117
+    endLine: 1167
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.568
+      signals:
+        topicShift: 0.664
+        entityDensity: 0.216
+        semanticNovelty: 0.681
+        structuralImportance: 0.7
+  - id: block-1169
+    line: 1169
+    endLine: 1169
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: quick-reference
+    line: 1171
+    endLine: 1171
+    type: heading
+    headingLevel: 2
+    headingText: Quick Reference
+    tags: []
+    suggestedTags:
+      - tag: quick
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: reference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.763
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 0.995
+        structuralImportance: 0.85
+  - id: block-1173
+    line: 1173
+    endLine: 1218
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: bash
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: consumer
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: kafka
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.648
+      signals:
+        topicShift: 1
+        entityDensity: 0.427
+        semanticNovelty: 0.483
+        structuralImportance: 0.7
+  - id: block-1220
+    line: 1220
+    endLine: 1220
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: interview-talking-points
+    line: 1222
+    endLine: 1222
+    type: heading
+    headingLevel: 2
+    headingText: Interview Talking Points
+    tags: []
+    suggestedTags:
+      - tag: interview
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: talking
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: points
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.784
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.75
+        semanticNovelty: 0.993
+        structuralImportance: 0.85
+  - id: block-1224
+    line: 1224
+    endLine: 1250
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.647
+      signals:
+        topicShift: 1
+        entityDensity: 0.242
+        semanticNovelty: 0.617
+        structuralImportance: 0.75
+  - id: block-1252
+    line: 1252
+    endLine: 1252
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.54
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.4
 ---
 # Kafka Practical Guide
 

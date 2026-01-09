@@ -1,9 +1,9 @@
 ---
-title: "Python Senior Interview Crash Course"
-summary: "[Python Internals You Must Know](#1-python-internals)
-2. [Data Structures Deep Dive](#2-data-structures)
-3. [Complexity Analysis Refresher](#3-complexity-analysis)
-4."
+title: Python Senior Interview Crash Course
+summary: >-
+  [Python Internals You Must Know](#1-python-internals) 2. [Data Structures Deep
+  Dive](#2-data-structures) 3. [Complexity Analysis
+  Refresher](#3-complexity-analysis) 4.
 difficulty: expert
 tags:
   - python
@@ -23,10 +23,3086 @@ taxonomy:
     - artificial-intelligence
 source:
   type: manual
-  creator: "Anonymous Creator"
+  creator: Anonymous Creator
   creatorType: session
-  createdAt: "2025-12-20T00:28:56.465Z"
-  sessionId: "204f13d9-11b6-4c1c-97c4-76b50be079aa"
+  createdAt: '2025-12-20T00:28:56.465Z'
+  sessionId: 204f13d9-11b6-4c1c-97c4-76b50be079aa
+blocks:
+  - id: python-senior-interview-crash-course
+    line: 1
+    endLine: 1
+    type: heading
+    headingLevel: 1
+    headingText: Python Senior Interview Crash Course
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: senior
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: interview
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.858
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.833
+        semanticNovelty: 1
+        structuralImportance: 1
+  - id: from-fundamentals-to-staff-level-mastery
+    line: 2
+    endLine: 2
+    type: heading
+    headingLevel: 2
+    headingText: From Fundamentals to Staff-Level Mastery
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: from
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: fundamentals
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: staff-level
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.899
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.95
+  - id: block-4
+    line: 4
+    endLine: 4
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.558
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.45
+  - id: table-of-contents
+    line: 6
+    endLine: 6
+    type: heading
+    headingLevel: 2
+    headingText: Table of Contents
+    tags: []
+    suggestedTags:
+      - tag: table
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: contents
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: block-8
+    line: 8
+    endLine: 17
+    type: list
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: senior
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.82
+      signals:
+        topicShift: 1
+        entityDensity: 0.841
+        semanticNovelty: 1
+        structuralImportance: 0.6
+  - id: block-19
+    line: 19
+    endLine: 19
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 1-python-internals-you-must-know-1-python-internal
+    line: 21
+    endLine: 21
+    type: heading
+    headingLevel: 2
+    headingText: '1. Python Internals You Must Know {#1-python-internals}'
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: internals
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: must
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.785
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: memory-management
+    line: 23
+    endLine: 23
+    type: heading
+    headingLevel: 3
+    headingText: Memory Management
+    tags: []
+    suggestedTags:
+      - tag: memory
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: management
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: everything-is-an-object
+    line: 25
+    endLine: 25
+    type: heading
+    headingLevel: 4
+    headingText: Everything is an Object
+    tags: []
+    suggestedTags:
+      - tag: everything
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: object
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.693
+      signals:
+        topicShift: 1
+        entityDensity: 0.4
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-27
+    line: 27
+    endLine: 42
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: print
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: internals
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.697
+      signals:
+        topicShift: 0.88
+        entityDensity: 0.304
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: reference-counting-garbage-collection
+    line: 44
+    endLine: 44
+    type: heading
+    headingLevel: 4
+    headingText: Reference Counting + Garbage Collection
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: reference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: counting
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: garbage
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.759
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-46
+    line: 46
+    endLine: 76
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: reference
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.628
+      signals:
+        topicShift: 0.611
+        entityDensity: 0.245
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: small-integer-caching--5-to-256
+    line: 78
+    endLine: 78
+    type: heading
+    headingLevel: 4
+    headingText: Small Integer Caching (-5 to 256)
+    tags: []
+    suggestedTags:
+      - tag: small
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: integer
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: caching
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.735
+      signals:
+        topicShift: 1
+        entityDensity: 0.571
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-80
+    line: 80
+    endLine: 104
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hello
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: print
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.664
+      signals:
+        topicShift: 0.874
+        entityDensity: 0.176
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: mutability-deep-dive
+    line: 106
+    endLine: 106
+    type: heading
+    headingLevel: 4
+    headingText: Mutability Deep Dive
+    tags: []
+    suggestedTags:
+      - tag: mutability
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: deep
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: dive
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.78
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-108
+    line: 108
+    endLine: 135
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: print
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: sql
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.721
+      signals:
+        topicShift: 1
+        entityDensity: 0.303
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: the-global-interpreter-lock-gil
+    line: 137
+    endLine: 137
+    type: heading
+    headingLevel: 3
+    headingText: The Global Interpreter Lock (GIL)
+    tags: []
+    suggestedTags:
+      - tag: global
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: interpreter
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: lock
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.827
+      signals:
+        topicShift: 0.971
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-139
+    line: 139
+    endLine: 185
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: print
+        confidence: 0.65
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.708
+      signals:
+        topicShift: 0.903
+        entityDensity: 0.329
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: python-object-model
+    line: 187
+    endLine: 187
+    type: heading
+    headingLevel: 3
+    headingText: Python Object Model
+    tags: []
+    suggestedTags:
+      - tag: object
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: model
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.817
+      signals:
+        topicShift: 0.924
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-189
+    line: 189
+    endLine: 244
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.755
+      signals:
+        topicShift: 1
+        entityDensity: 0.44
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-246
+    line: 246
+    endLine: 246
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 2-data-structures-deep-dive-2-data-structures
+    line: 248
+    endLine: 248
+    type: heading
+    headingLevel: 2
+    headingText: '2. Data Structures Deep Dive {#2-data-structures}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: data
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: structures
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: deep
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.776
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.714
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: python-built-in-structures-under-the-hood
+    line: 250
+    endLine: 250
+    type: heading
+    headingLevel: 3
+    headingText: 'Python Built-in Structures: Under the Hood'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: built-in
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: structures
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.79
+      signals:
+        topicShift: 0.742
+        entityDensity: 0.786
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: lists-dynamic-arrays
+    line: 252
+    endLine: 252
+    type: heading
+    headingLevel: 4
+    headingText: Lists (Dynamic Arrays)
+    tags: []
+    suggestedTags:
+      - tag: lists
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: dynamic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: arrays
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.78
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-254
+    line: 254
+    endLine: 302
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: lists
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: sql
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.714
+      signals:
+        topicShift: 1
+        entityDensity: 0.274
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: dictionaries-hash-maps
+    line: 304
+    endLine: 304
+    type: heading
+    headingLevel: 4
+    headingText: Dictionaries (Hash Maps)
+    tags: []
+    suggestedTags:
+      - tag: dictionaries
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: hash
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: maps
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.78
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-306
+    line: 306
+    endLine: 371
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.712
+      signals:
+        topicShift: 0.971
+        entityDensity: 0.29
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: sets-hash-sets
+    line: 373
+    endLine: 373
+    type: heading
+    headingLevel: 4
+    headingText: Sets (Hash Sets)
+    tags: []
+    suggestedTags:
+      - tag: self
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sets
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: hash
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.766
+      signals:
+        topicShift: 0.932
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.55
+  - id: block-375
+    line: 375
+    endLine: 413
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.693
+      signals:
+        topicShift: 0.961
+        entityDensity: 0.224
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: collections-module-power-tools
+    line: 415
+    endLine: 415
+    type: heading
+    headingLevel: 3
+    headingText: 'Collections Module: Power Tools'
+    tags: []
+    suggestedTags:
+      - tag: collections
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: module
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: power
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.87
+      signals:
+        topicShift: 1
+        entityDensity: 0.9
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-417
+    line: 417
+    endLine: 515
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.727
+      signals:
+        topicShift: 0.969
+        entityDensity: 0.353
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: heaps-priority-queues
+    line: 517
+    endLine: 517
+    type: heading
+    headingLevel: 3
+    headingText: Heaps (Priority Queues)
+    tags: []
+    suggestedTags:
+      - tag: heaps
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: priority
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: queues
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.833
+      signals:
+        topicShift: 1
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-519
+    line: 519
+    endLine: 583
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: heaps
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.693
+      signals:
+        topicShift: 0.904
+        entityDensity: 0.268
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-585
+    line: 585
+    endLine: 585
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 3-complexity-analysis-refresher-3-complexity-analy
+    line: 587
+    endLine: 587
+    type: heading
+    headingLevel: 2
+    headingText: '3. Complexity Analysis Refresher {#3-complexity-analysis}'
+    tags: []
+    suggestedTags:
+      - tag: complexity
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: analysis
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: refresher
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: big-o-cheat-sheet
+    line: 589
+    endLine: 589
+    type: heading
+    headingLevel: 3
+    headingText: Big O Cheat Sheet
+    tags: []
+    suggestedTags:
+      - tag: cheat
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: sheet
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-591
+    line: 591
+    endLine: 611
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: heaps
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: complexity
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: operations
+        confidence: 0.375
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.701
+      signals:
+        topicShift: 1
+        entityDensity: 0.225
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: python-operation-complexities
+    line: 613
+    endLine: 613
+    type: heading
+    headingLevel: 3
+    headingText: Python Operation Complexities
+    tags: []
+    suggestedTags:
+      - tag: operation
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: complexities
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: operations
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.824
+      signals:
+        topicShift: 0.958
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-615
+    line: 615
+    endLine: 703
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: operations
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.718
+      signals:
+        topicShift: 1
+        entityDensity: 0.293
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: space-complexity
+    line: 705
+    endLine: 705
+    type: heading
+    headingLevel: 3
+    headingText: Space Complexity
+    tags: []
+    suggestedTags:
+      - tag: space
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: complexity
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-707
+    line: 707
+    endLine: 738
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.68
+      signals:
+        topicShift: 0.794
+        entityDensity: 0.303
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-740
+    line: 740
+    endLine: 740
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 4-core-algorithm-patterns-4-algorithm-patterns
+    line: 742
+    endLine: 742
+    type: heading
+    headingLevel: 2
+    headingText: '4. Core Algorithm Patterns {#4-algorithm-patterns}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: core
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: algorithm
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: pattern-1-two-pointers
+    line: 744
+    endLine: 744
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 1: Two Pointers'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pattern
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pointers
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.82
+      signals:
+        topicShift: 1
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-746
+    line: 746
+    endLine: 850
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.697
+      signals:
+        topicShift: 0.937
+        entityDensity: 0.26
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-2-sliding-window
+    line: 852
+    endLine: 852
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 2: Sliding Window'
+    tags: []
+    suggestedTags:
+      - tag: sliding
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: window
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.82
+      signals:
+        topicShift: 1
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-854
+    line: 854
+    endLine: 958
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.676
+      signals:
+        topicShift: 0.794
+        entityDensity: 0.289
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-3-binary-search
+    line: 960
+    endLine: 960
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 3: Binary Search'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: binary
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: search
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.82
+      signals:
+        topicShift: 1
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-962
+    line: 962
+    endLine: 1070
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.678
+      signals:
+        topicShift: 0.87
+        entityDensity: 0.235
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-4-bfs-dfs
+    line: 1072
+    endLine: 1072
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 4: BFS & DFS'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.789
+      signals:
+        topicShift: 0.991
+        entityDensity: 0.583
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1074
+    line: 1074
+    endLine: 1219
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.67
+      signals:
+        topicShift: 0.795
+        entityDensity: 0.263
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-5-dynamic-programming
+    line: 1221
+    endLine: 1221
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 5: Dynamic Programming'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: dynamic
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: programming
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.82
+      signals:
+        topicShift: 1
+        entityDensity: 0.7
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1223
+    line: 1223
+    endLine: 1377
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.708
+      signals:
+        topicShift: 0.976
+        entityDensity: 0.27
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: pattern-6-backtracking
+    line: 1379
+    endLine: 1379
+    type: heading
+    headingLevel: 3
+    headingText: 'Pattern 6: Backtracking'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: backtracking
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pattern
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.801
+      signals:
+        topicShift: 1
+        entityDensity: 0.625
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1381
+    line: 1381
+    endLine: 1533
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.71
+      signals:
+        topicShift: 0.989
+        entityDensity: 0.268
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1535
+    line: 1535
+    endLine: 1535
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 5-advanced-python-features-5-advanced-python
+    line: 1537
+    endLine: 1537
+    type: heading
+    headingLevel: 2
+    headingText: '5. Advanced Python Features {#5-advanced-python}'
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: advanced
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: features
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: generators-iterators
+    line: 1539
+    endLine: 1539
+    type: heading
+    headingLevel: 3
+    headingText: Generators & Iterators
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: generators
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: iterators
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.77
+      signals:
+        topicShift: 1
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1541
+    line: 1541
+    endLine: 1620
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.702
+      signals:
+        topicShift: 0.973
+        entityDensity: 0.249
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: decorators
+    line: 1622
+    endLine: 1622
+    type: heading
+    headingLevel: 3
+    headingText: Decorators
+    tags: []
+    suggestedTags:
+      - tag: decorators
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.77
+      signals:
+        topicShift: 1
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1624
+    line: 1624
+    endLine: 1731
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.708
+      signals:
+        topicShift: 0.95
+        entityDensity: 0.293
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: context-managers
+    line: 1733
+    endLine: 1733
+    type: heading
+    headingLevel: 3
+    headingText: Context Managers
+    tags: []
+    suggestedTags:
+      - tag: context
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: managers
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1735
+    line: 1735
+    endLine: 1815
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.685
+      signals:
+        topicShift: 0.769
+        entityDensity: 0.346
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: type-hints-generics
+    line: 1817
+    endLine: 1817
+    type: heading
+    headingLevel: 3
+    headingText: Type Hints & Generics
+    tags: []
+    suggestedTags:
+      - tag: type
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: hints
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: generics
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1819
+    line: 1819
+    endLine: 1931
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.767
+      signals:
+        topicShift: 0.914
+        entityDensity: 0.557
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1933
+    line: 1933
+    endLine: 1933
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 6-concurrency-parallelism-6-concurrency
+    line: 1935
+    endLine: 1935
+    type: heading
+    headingLevel: 2
+    headingText: '6. Concurrency & Parallelism {#6-concurrency}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: concurrency
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: parallelism
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 6-concurrency
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: threading-io-bound-tasks
+    line: 1937
+    endLine: 1937
+    type: heading
+    headingLevel: 3
+    headingText: Threading (I/O-bound tasks)
+    tags: []
+    suggestedTags:
+      - tag: threading
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: o-bound
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: tasks
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.77
+      signals:
+        topicShift: 1
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-1939
+    line: 1939
+    endLine: 2060
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.679
+      signals:
+        topicShift: 0.793
+        entityDensity: 0.303
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: multiprocessing-cpu-bound-tasks
+    line: 2062
+    endLine: 2062
+    type: heading
+    headingLevel: 3
+    headingText: Multiprocessing (CPU-bound tasks)
+    tags: []
+    suggestedTags:
+      - tag: multiprocessing
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: cpu-bound
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: tasks
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.762
+      signals:
+        topicShift: 0.959
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2064
+    line: 2064
+    endLine: 2144
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: multiprocessing
+        confidence: 0.7
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.709
+      signals:
+        topicShift: 0.888
+        entityDensity: 0.346
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: asyncio-asyncawait
+    line: 2146
+    endLine: 2146
+    type: heading
+    headingLevel: 3
+    headingText: Asyncio (Async/Await)
+    tags: []
+    suggestedTags:
+      - tag: asyncio
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: async
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: await
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.77
+      signals:
+        topicShift: 1
+        entityDensity: 0.5
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2148
+    line: 2148
+    endLine: 2262
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.593
+      signals:
+        topicShift: 0.28
+        entityDensity: 0.367
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2264
+    line: 2264
+    endLine: 2264
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 7-object-oriented-design-7-oop-design
+    line: 2266
+    endLine: 2266
+    type: heading
+    headingLevel: 2
+    headingText: '7. Object-Oriented Design {#7-oop-design}'
+    tags: []
+    suggestedTags:
+      - tag: object-oriented
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: design
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: 7-oop-design
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: solid-principles
+    line: 2268
+    endLine: 2268
+    type: heading
+    headingLevel: 3
+    headingText: SOLID Principles
+    tags: []
+    suggestedTags:
+      - tag: solid
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: principles
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2270
+    line: 2270
+    endLine: 2490
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.75
+      signals:
+        topicShift: 1
+        entityDensity: 0.419
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: design-patterns
+    line: 2492
+    endLine: 2492
+    type: heading
+    headingLevel: 3
+    headingText: Design Patterns
+    tags: []
+    suggestedTags:
+      - tag: patterns
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: design
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+      - tag: 7-oop-design
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2494
+    line: 2494
+    endLine: 2632
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.763
+      signals:
+        topicShift: 0.977
+        entityDensity: 0.488
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2634
+    line: 2634
+    endLine: 2634
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 8-leetcode-patterns-solutions-8-leetcode-patterns
+    line: 2636
+    endLine: 2636
+    type: heading
+    headingLevel: 2
+    headingText: '8. LeetCode Patterns & Solutions {#8-leetcode-patterns}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leetcode
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: solutions
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.55
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.776
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.714
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: must-know-problems-by-pattern
+    line: 2638
+    endLine: 2638
+    type: heading
+    headingLevel: 3
+    headingText: Must-Know Problems by Pattern
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: must-know
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: problems
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: pattern
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: patterns
+        confidence: 0.44999999999999996
+        source: existing
+        reasoning: Consistent with prior block tags
+    worthiness:
+      score: 0.795
+      signals:
+        topicShift: 1
+        entityDensity: 0.6
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-2640
+    line: 2640
+    endLine: 3159
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.731
+      signals:
+        topicShift: 0.993
+        entityDensity: 0.348
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3161
+    line: 3161
+    endLine: 3161
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 9-system-design-in-python-9-system-design
+    line: 3163
+    endLine: 3163
+    type: heading
+    headingLevel: 2
+    headingText: '9. System Design in Python {#9-system-design}'
+    tags: []
+    suggestedTags:
+      - tag: system
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: design
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.74
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.571
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: rate-limiter
+    line: 3165
+    endLine: 3165
+    type: heading
+    headingLevel: 3
+    headingText: Rate Limiter
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rate
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: limiter
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3167
+    line: 3167
+    endLine: 3256
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.727
+      signals:
+        topicShift: 0.848
+        entityDensity: 0.45
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: lru-cache
+    line: 3258
+    endLine: 3258
+    type: heading
+    headingLevel: 3
+    headingText: LRU Cache
+    tags: []
+    suggestedTags:
+      - tag: cache
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3260
+    line: 3260
+    endLine: 3344
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.702
+      signals:
+        topicShift: 0.764
+        entityDensity: 0.415
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: url-shortener
+    line: 3346
+    endLine: 3346
+    type: heading
+    headingLevel: 3
+    headingText: URL Shortener
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: shortener
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.812
+      signals:
+        topicShift: 1
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3348
+    line: 3348
+    endLine: 3410
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.666
+      signals:
+        topicShift: 0.682
+        entityDensity: 0.34
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3412
+    line: 3412
+    endLine: 3412
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: 10-senior-level-interview-questions-10-senior-ques
+    line: 3414
+    endLine: 3414
+    type: heading
+    headingLevel: 2
+    headingText: '10. Senior-Level Interview Questions {#10-senior-questions}'
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: senior-level
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: interview
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: questions
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: behavioral-technical-discussion-questions
+    line: 3416
+    endLine: 3416
+    type: heading
+    headingLevel: 3
+    headingText: Behavioral / Technical Discussion Questions
+    tags: []
+    suggestedTags:
+      - tag: behavioral
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: technical
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: discussion
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.748
+      signals:
+        topicShift: 0.684
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3418
+    line: 3418
+    endLine: 3436
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: reference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.693
+      signals:
+        topicShift: 1
+        entityDensity: 0.193
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3438
+    line: 3438
+    endLine: 3467
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.669
+      signals:
+        topicShift: 0.734
+        entityDensity: 0.31
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3469
+    line: 3469
+    endLine: 3499
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.722
+      signals:
+        topicShift: 1
+        entityDensity: 0.307
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3501
+    line: 3501
+    endLine: 3524
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.8
+        source: nlp
+        reasoning: Detected programming language
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: phase
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.723
+      signals:
+        topicShift: 1
+        entityDensity: 0.313
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: code-review-exercise
+    line: 3526
+    endLine: 3526
+    type: heading
+    headingLevel: 3
+    headingText: Code Review Exercise
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: review
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: exercise
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.798
+      signals:
+        topicShift: 0.829
+        entityDensity: 0.75
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3528
+    line: 3528
+    endLine: 3609
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.719
+      signals:
+        topicShift: 0.919
+        entityDensity: 0.36
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3611
+    line: 3611
+    endLine: 3611
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.523
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.35
+  - id: quick-reference
+    line: 3613
+    endLine: 3613
+    type: heading
+    headingLevel: 2
+    headingText: Quick Reference
+    tags: []
+    suggestedTags:
+      - tag: quick
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: reference
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.764
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.667
+        semanticNovelty: 1
+        structuralImportance: 0.85
+  - id: block-3615
+    line: 3615
+    endLine: 3651
+    type: code
+    tags: []
+    suggestedTags:
+      - tag: v
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.75
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.7000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: search
+        confidence: 0.5625
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: sorted
+        confidence: 0.5625
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+    worthiness:
+      score: 0.733
+      signals:
+        topicShift: 1
+        entityDensity: 0.353
+        semanticNovelty: 1
+        structuralImportance: 0.7
+  - id: block-3653
+    line: 3653
+    endLine: 3653
+    type: list
+    tags: []
+    suggestedTags: []
+    worthiness:
+      score: 0.54
+      signals:
+        topicShift: 1
+        entityDensity: 0
+        semanticNovelty: 1
+        structuralImportance: 0.4
+  - id: block-3655
+    line: 3655
+    endLine: 3662
+    type: paragraph
+    tags: []
+    suggestedTags:
+      - tag: r
+        confidence: 0.6000000000000001
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: good
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: luck
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: with
+        confidence: 0.6
+        source: nlp
+        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.44
+      signals:
+        topicShift: 0.5
+        entityDensity: 0.167
+        semanticNovelty: 1
+        structuralImportance: 0.28
 ---
 # Python Senior Interview Crash Course
 ## From Fundamentals to Staff-Level Mastery
