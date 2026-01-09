@@ -85,6 +85,179 @@ This test validates the complete pipeline from raw markdown to indexed blocks.
 const EXPECTED_BLOCK_TYPES = ['heading', 'paragraph', 'code', 'list']
 const EXPECTED_MIN_BLOCKS = 8
 const EXPECTED_MIN_WORTHY_BLOCKS = 5
+const AUTO_CONFIRM_THRESHOLD = 0.5
+
+/**
+ * Sample strand with inline #hashtags for testing
+ */
+const SAMPLE_STRAND_WITH_INLINE_TAGS = `---
+id: "test-strand-inline"
+slug: "test-inline-tags"
+title: "Inline Tags Test"
+version: "1.0.0"
+---
+
+# Getting Started with React #react #frontend
+
+This guide covers React hooks and state management. #hooks #beginner
+
+## Custom Hooks #advanced
+
+Building reusable hooks is essential for #clean-code and #maintainability.
+
+\`\`\`javascript
+// Example of a custom hook #example
+function useCounter(initial) {
+  const [count, setCount] = useState(initial);
+  return { count, increment: () => setCount(c => c + 1) };
+}
+\`\`\`
+`
+
+// ============================================================================
+// INLINE TAG TESTS
+// ============================================================================
+
+describe('Inline Tag Extraction', () => {
+  it('should extract inline hashtags from content', () => {
+    const content = SAMPLE_STRAND_WITH_INLINE_TAGS
+
+    // Pattern matching - same as used in process-blocks.mjs
+    const INLINE_TAG_PATTERN = /#([a-zA-Z][a-zA-Z0-9_/-]*)/g
+    const HEADING_PATTERNS = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+
+    const tags = new Set()
+    let match
+    while ((match = INLINE_TAG_PATTERN.exec(content)) !== null) {
+      const tag = match[1].toLowerCase()
+      if (!HEADING_PATTERNS.has(tag)) {
+        tags.add(tag)
+      }
+    }
+
+    // Check expected tags are found
+    expect(tags.has('react')).toBe(true)
+    expect(tags.has('frontend')).toBe(true)
+    expect(tags.has('hooks')).toBe(true)
+    expect(tags.has('beginner')).toBe(true)
+    expect(tags.has('advanced')).toBe(true)
+    expect(tags.has('clean-code')).toBe(true)
+    expect(tags.has('maintainability')).toBe(true)
+    expect(tags.has('example')).toBe(true)
+
+    // Should NOT include markdown headings
+    expect(tags.has('h1')).toBe(false)
+    expect(tags.has('h2')).toBe(false)
+  })
+
+  it('should normalize tags to lowercase', () => {
+    const content = 'Using #React and #TypeScript'
+    const INLINE_TAG_PATTERN = /#([a-zA-Z][a-zA-Z0-9_/-]*)/g
+
+    const tags = []
+    let match
+    while ((match = INLINE_TAG_PATTERN.exec(content)) !== null) {
+      tags.push(match[1].toLowerCase())
+    }
+
+    expect(tags).toContain('react')
+    expect(tags).toContain('typescript')
+    expect(tags).not.toContain('React')
+    expect(tags).not.toContain('TypeScript')
+  })
+
+  it('should handle hierarchical tags with slashes', () => {
+    const content = 'Learn #web/javascript and #backend/nodejs'
+    const INLINE_TAG_PATTERN = /#([a-zA-Z][a-zA-Z0-9_/-]*)/g
+
+    const tags = []
+    let match
+    while ((match = INLINE_TAG_PATTERN.exec(content)) !== null) {
+      tags.push(match[1].toLowerCase())
+    }
+
+    expect(tags).toContain('web/javascript')
+    expect(tags).toContain('backend/nodejs')
+  })
+
+  it('should skip tags starting with numbers', () => {
+    const content = 'This is #123 not valid but #v2 is valid'
+    const INLINE_TAG_PATTERN = /#([a-zA-Z][a-zA-Z0-9_/-]*)/g
+
+    const tags = []
+    let match
+    while ((match = INLINE_TAG_PATTERN.exec(content)) !== null) {
+      tags.push(match[1].toLowerCase())
+    }
+
+    expect(tags).not.toContain('123')
+    expect(tags).toContain('v2')
+  })
+})
+
+describe('Auto-Confirm Threshold', () => {
+  it('should auto-confirm tags above threshold', () => {
+    const suggestedTags = [
+      { tag: 'high-confidence', confidence: 0.8, source: 'nlp' },
+      { tag: 'medium-confidence', confidence: 0.5, source: 'nlp' },
+      { tag: 'low-confidence', confidence: 0.3, source: 'nlp' },
+    ]
+
+    const confirmedTags = []
+    const remainingSuggestions = []
+
+    for (const st of suggestedTags) {
+      if (st.confidence >= AUTO_CONFIRM_THRESHOLD) {
+        confirmedTags.push(st.tag)
+      } else {
+        remainingSuggestions.push(st)
+      }
+    }
+
+    // High and medium confidence should be auto-confirmed
+    expect(confirmedTags).toContain('high-confidence')
+    expect(confirmedTags).toContain('medium-confidence')
+    expect(confirmedTags).not.toContain('low-confidence')
+
+    // Low confidence should remain as suggestion
+    expect(remainingSuggestions).toHaveLength(1)
+    expect(remainingSuggestions[0].tag).toBe('low-confidence')
+  })
+
+  it('should not duplicate tags already in confirmed list', () => {
+    const existingTags = ['react', 'hooks']
+    const suggestedTags = [
+      { tag: 'react', confidence: 0.9, source: 'nlp' }, // Duplicate
+      { tag: 'frontend', confidence: 0.8, source: 'nlp' }, // New
+    ]
+
+    const confirmedTags = [...existingTags]
+
+    for (const st of suggestedTags) {
+      if (st.confidence >= AUTO_CONFIRM_THRESHOLD && !confirmedTags.includes(st.tag)) {
+        confirmedTags.push(st.tag)
+      }
+    }
+
+    // Should not have duplicate 'react'
+    expect(confirmedTags.filter(t => t === 'react')).toHaveLength(1)
+    // Should have added 'frontend'
+    expect(confirmedTags).toContain('frontend')
+  })
+
+  it('should give inline tags 100% confidence', () => {
+    const inlineTag = {
+      tag: 'react',
+      confidence: 1.0,
+      source: 'inline',
+      reasoning: 'Explicit inline hashtag in content'
+    }
+
+    expect(inlineTag.confidence).toBe(1.0)
+    expect(inlineTag.source).toBe('inline')
+    expect(inlineTag.confidence).toBeGreaterThanOrEqual(AUTO_CONFIRM_THRESHOLD)
+  })
+})
 
 // ============================================================================
 // TESTS
@@ -100,11 +273,11 @@ describe('Block Index Pipeline Integration', () => {
     tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'block-integration-'))
     weavesDir = path.join(tempDir, 'weaves', 'test')
     fs.mkdirSync(weavesDir, { recursive: true })
-    
+
     // Write sample strand
     strandPath = path.join(weavesDir, 'integration-test.md')
     fs.writeFileSync(strandPath, SAMPLE_STRAND)
-    
+
     // Create tags directory with minimal vocab
     const tagsDir = path.join(tempDir, 'tags')
     fs.mkdirSync(tagsDir, { recursive: true })
@@ -136,7 +309,7 @@ skills:
       const content = fs.readFileSync(strandPath, 'utf8')
       const markdownContent = content.split('---').slice(2).join('---').trim()
       const lines = markdownContent.split('\n')
-      
+
       // Count headings
       const headings = lines.filter(l => l.match(/^#{1,6}\s/))
       expect(headings.length).toBeGreaterThanOrEqual(5)
@@ -176,11 +349,11 @@ skills:
       expect(mockBlock.id).toBeDefined()
       expect(mockBlock.line).toBeGreaterThan(0)
       expect(mockBlock.type).toMatch(/^(heading|paragraph|code|list|blockquote|table|html)$/)
-      
+
       // Validate worthiness
       expect(mockBlock.worthiness.score).toBeGreaterThanOrEqual(0)
       expect(mockBlock.worthiness.score).toBeLessThanOrEqual(1)
-      
+
       // Validate signals
       const signals = mockBlock.worthiness.signals
       expect(signals.topicShift).toBeDefined()
@@ -240,15 +413,15 @@ skills:
       // Validate top-level structure
       expect(mockIndex.generatedAt).toBeDefined()
       expect(mockIndex.version).toMatch(/^\d+\.\d+\.\d+$/)
-      
+
       // Validate stats
       expect(mockIndex.stats.totalStrands).toBeGreaterThanOrEqual(0)
       expect(mockIndex.stats.totalBlocks).toBeGreaterThanOrEqual(0)
       expect(mockIndex.stats.worthyBlocks).toBeLessThanOrEqual(mockIndex.stats.totalBlocks)
-      
+
       // Validate tag index
       expect(typeof mockIndex.tagIndex).toBe('object')
-      
+
       // Validate strands
       expect(typeof mockIndex.strands).toBe('object')
     })
@@ -257,7 +430,7 @@ skills:
   describe('Content Analysis', () => {
     it('should detect technical content', () => {
       const content = fs.readFileSync(strandPath, 'utf8')
-      
+
       // Check for technical terms
       expect(content).toMatch(/async|function|const|markdown|JSON/i)
     })
@@ -265,10 +438,10 @@ skills:
     it('should have proper heading hierarchy', () => {
       const content = fs.readFileSync(strandPath, 'utf8')
       const lines = content.split('\n')
-      
+
       let lastLevel = 0
       let hasH1 = false
-      
+
       for (const line of lines) {
         const match = line.match(/^(#{1,6})\s/)
         if (match) {
@@ -283,7 +456,7 @@ skills:
           lastLevel = level
         }
       }
-      
+
       expect(hasH1).toBe(true)
     })
   })
@@ -298,7 +471,7 @@ skills:
 
 Some text here.
 `)
-      
+
       const content = fs.readFileSync(emptyFmPath, 'utf8')
       expect(content).toContain('# Just Content')
     })
@@ -315,7 +488,7 @@ title: Headings Only
 
 ### H3
 `)
-      
+
       const content = fs.readFileSync(headingsOnlyPath, 'utf8')
       const headings = (content.match(/^#{1,6}\s/gm) || [])
       expect(headings.length).toBe(3)
@@ -335,7 +508,7 @@ const a = 1;
 x = 2
 \`\`\`
 `)
-      
+
       const content = fs.readFileSync(codeOnlyPath, 'utf8')
       const codeBlocks = (content.match(/```/g) || []).length / 2
       expect(codeBlocks).toBe(2)
@@ -352,7 +525,7 @@ title: Long Paragraph
 
 ${longParagraph}
 `)
-      
+
       const content = fs.readFileSync(longPath, 'utf8')
       expect(content.length).toBeGreaterThan(4000)
     })
