@@ -41,13 +41,343 @@
       "deployment": 1
     },
     "byDifficulty": {
-      "[object Object]": 1,
       "beginner": 14,
+      "[object Object]": 1,
       "intermediate": 12,
       "advanced": 3,
       "expert": 3
     },
     "confidenceScores": [
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "ai",
+        "score": 0.0539568345323741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "design",
+        "score": 0.08287292817679558
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "knowledge",
+        "score": 0.21621621621621623
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "media",
+        "score": 0.05223880597014925
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "philosophy",
+        "score": 0.057971014492753624
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "science",
+        "score": 0.038314176245210725
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "security",
+        "score": 0.05555555555555555
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "technology",
+        "score": 0.14864864864864866
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "api-reference",
+        "score": 0.10569105691056911
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "architecture",
+        "score": 0.10218978102189781
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "best-practices",
+        "score": 0.12903225806451613
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "getting-started",
+        "score": 0.11009174311926606
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "troubleshooting",
+        "score": 0.1111111111111111
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:state-management",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:database",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:sql",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:schema",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:function",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:data",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:ci",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:state-manag",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:databas",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:structur",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:hash",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:tl",
+        "score": 0.5576923076923077
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:react",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:react-hooks",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:usestate",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:useeffect",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:app",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:api",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:on",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:react-hook",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:usest",
+        "score": 0.5803571428571429
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:javascript",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:js",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:ts",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:type",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:pip",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:java",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:c",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:sqlite",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:bash",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:gener",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:io",
+        "score": 0.5740740740740741
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:management",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:analysis",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:eq",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:write",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:document",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:manag",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:analysi",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:priorit",
+        "score": 0.5184331797235023
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:git",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:github",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:version",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:control",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:commit",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:branch",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:merge",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:npm",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:as",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:code",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:web",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:merg",
+        "score": 0.5789473684210527
+      },
+      {
+        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
+        "category": "skill:aw",
+        "score": 0.5789473684210527
+      },
       {
         "file": "weaves/frame/openstrand/architecture.md",
         "category": "ai",
@@ -8019,336 +8349,6 @@
         "score": 0.6210526315789474
       },
       {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "ai",
-        "score": 0.0539568345323741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "design",
-        "score": 0.08287292817679558
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "knowledge",
-        "score": 0.21621621621621623
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "media",
-        "score": 0.05223880597014925
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "philosophy",
-        "score": 0.057971014492753624
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "science",
-        "score": 0.038314176245210725
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "security",
-        "score": 0.05555555555555555
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "technology",
-        "score": 0.14864864864864866
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "api-reference",
-        "score": 0.10569105691056911
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "architecture",
-        "score": 0.10218978102189781
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "best-practices",
-        "score": 0.12903225806451613
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "getting-started",
-        "score": 0.11009174311926606
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "troubleshooting",
-        "score": 0.1111111111111111
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:state-management",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:database",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:sql",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:schema",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:function",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:data",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:ci",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:state-manag",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:databas",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:structur",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:hash",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:tl",
-        "score": 0.5576923076923077
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:react",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:react-hooks",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:usestate",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:useeffect",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:app",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:api",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:on",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:react-hook",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:usest",
-        "score": 0.5803571428571429
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:javascript",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:js",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:ts",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:type",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:pip",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:java",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:c",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:sqlite",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:bash",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:gener",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:io",
-        "score": 0.5740740740740741
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:management",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:analysis",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:eq",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:write",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:document",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:manag",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:analysi",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:priorit",
-        "score": 0.5184331797235023
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:git",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:github",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:version",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:control",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:commit",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:branch",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:merge",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:npm",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:as",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:code",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:web",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:merg",
-        "score": 0.5789473684210527
-      },
-      {
-        "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
-        "category": "skill:aw",
-        "score": 0.5789473684210527
-      },
-      {
         "file": "docs/NLP_VOCABULARY_SYSTEM.md",
         "category": "ai",
         "score": 0.11510791366906475
@@ -10931,10 +10931,10 @@
     "suggestedAdditions": [
       {
         "term": "block",
-        "frequency": 6
+        "frequency": 5
       },
       {
-        "term": "frame",
+        "term": "tagging",
         "frequency": 4
       },
       {
@@ -10950,23 +10950,27 @@
         "frequency": 4
       },
       {
-        "term": "blocks",
-        "frequency": 4
-      },
-      {
-        "term": "tagging",
-        "frequency": 4
-      },
-      {
         "term": "2020",
         "frequency": 3
       },
       {
-        "term": "technology",
+        "term": "topics",
+        "frequency": 3
+      },
+      {
+        "term": "frame",
         "frequency": 3
       },
       {
         "term": "const",
+        "frequency": 3
+      },
+      {
+        "term": "auto",
+        "frequency": 3
+      },
+      {
+        "term": "blocks",
         "frequency": 3
       },
       {
@@ -10976,7 +10980,7 @@
     ]
   },
   "performance": {
-    "timeElapsed": "89.60s",
+    "timeElapsed": "90.78s",
     "cacheHitRate": "0%",
     "filesProcessed": 33,
     "filesCached": 0,
