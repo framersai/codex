@@ -38,23 +38,35 @@ blocks:
     headingText: TypeScript Crash Course
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: crash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: course
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -73,23 +85,35 @@ blocks:
     headingText: From Fundamentals to Senior-Level Mastery
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: from
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fundamentals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: senior-level
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -105,7 +129,39 @@ blocks:
     endLine: 4
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.558
       signals:
@@ -121,14 +177,38 @@ blocks:
     headingText: Table of Contents
     tags: []
     suggestedTags:
-      - tag: table
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: contents
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -143,25 +223,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.787
       signals:
@@ -174,7 +266,39 @@ blocks:
     endLine: 24
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -190,26 +314,38 @@ blocks:
     headingText: '1. Type System Fundamentals {#1-type-system-fundamentals}'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: system
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fundamentals
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -225,10 +361,6 @@ blocks:
     headingText: Primitive Types
     tags: []
     suggestedTags:
-      - tag: primitive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
@@ -237,11 +369,27 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -258,24 +406,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: number
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -293,11 +453,27 @@ blocks:
     headingText: Object Types
     tags: []
     suggestedTags:
-      - tag: object
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -305,10 +481,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.804
       signals:
@@ -322,24 +498,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: string
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: number
-        confidence: 0.75
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -357,11 +545,27 @@ blocks:
     headingText: Function Types
     tags: []
     suggestedTags:
-      - tag: function
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -369,10 +573,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -386,24 +590,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -421,11 +637,15 @@ blocks:
     headingText: Literal Types
     tags: []
     suggestedTags:
-      - tag: literal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -433,14 +653,22 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.806
       signals:
@@ -454,24 +682,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: type
-        confidence: 0.75
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -486,7 +730,39 @@ blocks:
     endLine: 190
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -502,26 +778,38 @@ blocks:
     headingText: '2. any vs unknown vs never vs void {#2-any-unknown-never-void}'
     tags: []
     suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: unknown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: never
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: void
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.623
       signals:
@@ -537,15 +825,15 @@ blocks:
     headingText: The Type Hierarchy
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: hierarchy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: typescript
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -553,10 +841,22 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.833
       signals:
@@ -571,25 +871,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.7
+      - tag: string
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.628
       signals:
@@ -605,23 +917,35 @@ blocks:
     headingText: 'any: The Escape Hatch (Avoid!)'
     tags: []
     suggestedTags:
-      - tag: escape
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hatch
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: avoid
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -638,24 +962,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: number
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -673,18 +1009,38 @@ blocks:
     headingText: 'unknown: The Type-Safe any'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: unknown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: type-safe
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.704
       signals:
@@ -698,24 +1054,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -733,23 +1109,35 @@ blocks:
     headingText: 'never: The Impossible Type'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: never
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: impossible
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -766,24 +1154,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -801,23 +1201,35 @@ blocks:
     headingText: 'void: No Return Value'
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: void
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: return
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: value
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -834,24 +1246,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -869,15 +1293,35 @@ blocks:
     headingText: Comparison Table
     tags: []
     suggestedTags:
-      - tag: comparison
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: table
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -894,24 +1338,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -926,7 +1382,39 @@ blocks:
     endLine: 434
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -942,23 +1430,35 @@ blocks:
     headingText: '3. Type Guards & Narrowing {#3-type-guards-narrowing}'
     tags: []
     suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: guards
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: narrowing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: typescript
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -977,11 +1477,15 @@ blocks:
     headingText: Built-in Type Guards
     tags: []
     suggestedTags:
-      - tag: built-in
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -989,14 +1493,22 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: guards
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.699
       signals:
@@ -1010,24 +1522,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1046,25 +1570,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: guards
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: custom
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.847
       signals:
@@ -1078,24 +1614,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1113,22 +1665,38 @@ blocks:
     headingText: Discriminated Unions (Tagged Unions)
     tags: []
     suggestedTags:
-      - tag: unions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: discriminated
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tagged
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.845
       signals:
@@ -1142,24 +1710,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1174,7 +1762,39 @@ blocks:
     endLine: 677
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1190,26 +1810,38 @@ blocks:
     headingText: '4. Interfaces vs Types {#4-interfaces-vs-types}'
     tags: []
     suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: interfaces
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 4-interfaces-vs-types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -1225,11 +1857,35 @@ blocks:
     headingText: Key Differences
     tags: []
     suggestedTags:
-      - tag: differences
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1246,24 +1902,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1281,15 +1953,35 @@ blocks:
     headingText: When to Use What
     tags: []
     suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1306,24 +1998,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1338,7 +2050,39 @@ blocks:
     endLine: 874
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1354,23 +2098,35 @@ blocks:
     headingText: '5. Generics Deep Dive {#5-generics}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: generics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deep
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1389,22 +2145,38 @@ blocks:
     headingText: Generic Basics
     tags: []
     suggestedTags:
-      - tag: generic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: basics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: generics
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -1418,24 +2190,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1453,22 +2241,42 @@ blocks:
     headingText: Generic Constraints
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: constraints
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: generics
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: generic
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -1482,24 +2290,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1517,26 +2341,38 @@ blocks:
     headingText: Generic Inference & Defaults
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: inference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: defaults
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: generics
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: generic
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.795
       signals:
@@ -1550,24 +2386,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1585,26 +2441,38 @@ blocks:
     headingText: Advanced Generic Patterns
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: advanced
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: generics
-        confidence: 0.44999999999999996
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.833
       signals:
@@ -1618,24 +2486,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1650,7 +2538,39 @@ blocks:
     endLine: 1097
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1666,23 +2586,35 @@ blocks:
     headingText: '6. Utility Types Mastery {#6-utility-types}'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: utility
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mastery
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: typescript
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1701,11 +2633,27 @@ blocks:
     headingText: Built-in Utility Types
     tags: []
     suggestedTags:
-      - tag: built-in
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1713,14 +2661,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: utility
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: types
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.679
       signals:
@@ -1734,24 +2678,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1769,15 +2729,23 @@ blocks:
     headingText: String Manipulation Types
     tags: []
     suggestedTags:
-      - tag: manipulation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1786,6 +2754,10 @@ blocks:
         source: existing
         reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1802,24 +2774,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1837,23 +2825,35 @@ blocks:
     headingText: Building Custom Utility Types
     tags: []
     suggestedTags:
-      - tag: building
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: custom
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: utility
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1871,23 +2871,35 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1902,7 +2914,39 @@ blocks:
     endLine: 1322
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1918,26 +2962,38 @@ blocks:
     headingText: '7. Advanced Types {#7-advanced-types}'
     tags: []
     suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: advanced
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 7-advanced-types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.748
       signals:
@@ -1953,11 +3009,27 @@ blocks:
     headingText: Index Types
     tags: []
     suggestedTags:
-      - tag: index
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1965,14 +3037,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: 7-advanced-types
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.712
       signals:
@@ -1986,24 +3054,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2021,15 +3105,15 @@ blocks:
     headingText: Intersection & Union Types
     tags: []
     suggestedTags:
-      - tag: intersection
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: union
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2037,7 +3121,19 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2054,24 +3150,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2089,15 +3197,15 @@ blocks:
     headingText: Type Assertions & Casting
     tags: []
     suggestedTags:
-      - tag: assertions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: casting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2105,7 +3213,19 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2122,24 +3242,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2154,7 +3294,39 @@ blocks:
     endLine: 1473
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2170,23 +3342,35 @@ blocks:
     headingText: '8. Conditional Types {#8-conditional-types}'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: conditional
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 8-conditional-types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: typescript
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2205,15 +3389,27 @@ blocks:
     headingText: Basic Conditional Types
     tags: []
     suggestedTags:
-      - tag: basic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 8-conditional-types
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2221,10 +3417,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: conditional
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.669
       signals:
@@ -2239,23 +3435,35 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: number
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2273,18 +3481,38 @@ blocks:
     headingText: Infer Keyword
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: infer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: keyword
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.785
       signals:
@@ -2298,24 +3526,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2333,14 +3577,6 @@ blocks:
     headingText: Distributive Conditional Types
     tags: []
     suggestedTags:
-      - tag: distributive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
@@ -2349,7 +3585,27 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2366,24 +3622,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2401,19 +3669,35 @@ blocks:
     headingText: Complex Conditional Patterns
     tags: []
     suggestedTags:
-      - tag: complex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: conditional
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2430,24 +3714,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2462,7 +3758,39 @@ blocks:
     endLine: 1653
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2478,23 +3806,35 @@ blocks:
     headingText: '9. Mapped Types {#9-mapped-types}'
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: mapped
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 9-mapped-types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: typescript
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2513,15 +3853,27 @@ blocks:
     headingText: Basic Mapped Types
     tags: []
     suggestedTags:
-      - tag: basic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 9-mapped-types
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2529,10 +3881,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: mapped
-        confidence: 0.44999999999999996
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.669
       signals:
@@ -2547,25 +3899,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: types
-        confidence: 0.7
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -2581,15 +3945,15 @@ blocks:
     headingText: Modifiers in Mapped Types
     tags: []
     suggestedTags:
-      - tag: modifiers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 9-mapped-types
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2597,7 +3961,19 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2615,25 +3991,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: 9-mapped-types
-        confidence: 0.7
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.741
       signals:
@@ -2649,15 +4037,35 @@ blocks:
     headingText: Key Remapping (as clause)
     tags: []
     suggestedTags:
-      - tag: remapping
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: clause
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2674,24 +4082,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2709,23 +4133,35 @@ blocks:
     headingText: Advanced Mapped Type Patterns
     tags: []
     suggestedTags:
-      - tag: advanced
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mapped
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 9-mapped-types
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2742,24 +4178,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2774,7 +4226,39 @@ blocks:
     endLine: 1840
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2790,26 +4274,38 @@ blocks:
     headingText: '10. Template Literal Types {#10-template-literal-types}'
     tags: []
     suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: template
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: literal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -2825,26 +4321,38 @@ blocks:
     headingText: Basic Template Literals
     tags: []
     suggestedTags:
-      - tag: basic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: literals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: template
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: literal
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.766
       signals:
@@ -2858,24 +4366,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2893,26 +4417,38 @@ blocks:
     headingText: Pattern Matching with Template Literals
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: pattern
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: matching
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: template
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.798
       signals:
@@ -2926,24 +4462,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2961,26 +4517,38 @@ blocks:
     headingText: Practical Template Literal Patterns
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: practical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: literal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pattern
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: template
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.845
       signals:
@@ -2994,24 +4562,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3026,7 +4610,39 @@ blocks:
     endLine: 1977
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3042,22 +4658,38 @@ blocks:
     headingText: '11. Declaration Merging & Module Augmentation {#11-declaration-merging}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: declaration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: merging
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: module
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.754
       signals:
@@ -3073,18 +4705,38 @@ blocks:
     headingText: Interface Merging
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: interface
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: merging
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.722
       signals:
@@ -3098,26 +4750,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
+        reasoning: 'Vocabulary match: subjects'
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: typescript
-        confidence: 0.7000000000000001
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: interface
-        confidence: 0.7
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.676
       signals:
@@ -3133,18 +4801,38 @@ blocks:
     headingText: Namespace Merging
     tags: []
     suggestedTags:
-      - tag: namespace
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: merging
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -3158,23 +4846,35 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: namespace
-        confidence: 0.7
+      - tag: type
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: typescript
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3193,14 +4893,38 @@ blocks:
     headingText: Module Augmentation
     tags: []
     suggestedTags:
-      - tag: module
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: augmentation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -3214,26 +4938,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: number
-        confidence: 0.75
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: type
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: module
-        confidence: 0.7
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.672
       signals:
@@ -3249,14 +4985,38 @@ blocks:
     headingText: Global Augmentation
     tags: []
     suggestedTags:
-      - tag: global
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: augmentation
-        confidence: 0.44999999999999996
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -3270,24 +5030,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: v
-        confidence: 0.75
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: r
-        confidence: 0.75
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3302,7 +5074,39 @@ blocks:
     endLine: 2154
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3318,23 +5122,35 @@ blocks:
     headingText: '12. Strict Mode & Compiler Options {#12-strict-mode}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strict
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mode
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: compiler
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3353,11 +5169,23 @@ blocks:
     headingText: Strict Mode Options
     tags: []
     suggestedTags:
-      - tag: options
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3365,14 +5193,14 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strict
-        confidence: 0.44999999999999996
+      - tag: type
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: mode
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.65
       signals:
@@ -3386,24 +5214,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3421,26 +5261,38 @@ blocks:
     headingText: Other Important Compiler Options
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: other
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: important
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: compiler
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: options
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.845
       signals:
@@ -3455,23 +5307,35 @@ blocks:
     tags: []
     suggestedTags:
       - tag: typescript
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: type
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3486,7 +5350,39 @@ blocks:
     endLine: 2332
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3502,22 +5398,38 @@ blocks:
     headingText: '13. Common Patterns & Anti-Patterns {#13-patterns}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: common
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: anti-patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.74
       signals:
@@ -3533,11 +5445,15 @@ blocks:
     headingText: Anti-Patterns to Avoid
     tags: []
     suggestedTags:
-      - tag: avoid
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3545,14 +5461,22 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: patterns
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: anti-patterns
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.631
       signals:
@@ -3566,24 +5490,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3601,19 +5537,35 @@ blocks:
     headingText: Best Practices
     tags: []
     suggestedTags:
-      - tag: best
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practices
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: rust
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3634,20 +5586,41 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: javascript
-        confidence: 0.8
+        lineNumber: 48
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3662,7 +5635,39 @@ blocks:
     endLine: 2544
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3678,22 +5683,38 @@ blocks:
     headingText: '14. Real-World Scenarios {#14-real-world}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: real-world
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: scenarios
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 14-real-world
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.748
       signals:
@@ -3709,15 +5730,39 @@ blocks:
     headingText: API Response Handling
     tags: []
     suggestedTags:
-      - tag: response
-        confidence: 0.6
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: handling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3734,24 +5779,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3769,22 +5834,38 @@ blocks:
     headingText: React Component Patterns
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: react
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: component
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.833
       signals:
@@ -3798,24 +5879,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3833,23 +5926,35 @@ blocks:
     headingText: State Management Types
     tags: []
     suggestedTags:
-      - tag: state
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: management
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: types
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: typescript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3866,24 +5971,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -3898,7 +6015,39 @@ blocks:
     endLine: 2893
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3914,26 +6063,38 @@ blocks:
     headingText: '15. Interview Questions & Answers {#15-interview-questions}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: typescript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: interview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: questions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: answers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.74
       signals:
@@ -3949,18 +6110,38 @@ blocks:
     headingText: Beginner Questions
     tags: []
     suggestedTags:
-      - tag: beginner
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: questions
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.717
       signals:
@@ -3974,24 +6155,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -4009,18 +6206,38 @@ blocks:
     headingText: Intermediate Questions
     tags: []
     suggestedTags:
-      - tag: intermediate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: questions
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -4034,24 +6251,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: string
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -4069,18 +6302,38 @@ blocks:
     headingText: Senior Questions
     tags: []
     suggestedTags:
-      - tag: senior
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: questions
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -4094,24 +6347,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -4126,7 +6395,39 @@ blocks:
     endLine: 3174
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -4142,19 +6443,35 @@ blocks:
     headingText: Quick Reference Cheat Sheet
     tags: []
     suggestedTags:
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: cheat
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4171,24 +6488,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
       - tag: typescript
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: rust
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -4203,7 +6532,39 @@ blocks:
     endLine: 3223
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: rust
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: string
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: type
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: number
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.54
       signals:

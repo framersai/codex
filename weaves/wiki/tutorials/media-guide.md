@@ -7,19 +7,7 @@ blocks:
     headingLevel: 1
     headingText: 'Media Guide: Photos, Audio, Drawings & More'
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: guide
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.773
       signals:
@@ -32,27 +20,7 @@ blocks:
     endLine: 4
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: guide
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: treats
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.511
       signals:
@@ -68,19 +36,7 @@ blocks:
     headingLevel: 2
     headingText: 'Philosophy: Everything is a Strand'
     tags: []
-    suggestedTags:
-      - tag: philosophy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: everything
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.866
       signals:
@@ -94,26 +50,10 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: knowledge
-        confidence: 0.6
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.515
       signals:
@@ -128,22 +68,14 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: context
-        confidence: 0.6
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.6
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: where
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.581
       signals:
@@ -158,19 +90,7 @@ blocks:
     headingLevel: 2
     headingText: The Radial Media Menu
     tags: []
-    suggestedTags:
-      - tag: radial
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: menu
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.828
       signals:
@@ -183,19 +103,7 @@ blocks:
     endLine: 18
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: radial
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: menu
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.382
       signals:
@@ -211,14 +119,10 @@ blocks:
     headingText: Available Options
     tags: []
     suggestedTags:
-      - tag: available
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: options
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
     worthiness:
       score: 0.777
       signals:
@@ -231,19 +135,7 @@ blocks:
     endLine: 30
     type: table
     tags: []
-    suggestedTags:
-      - tag: insert
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '------'
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: upload
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.597
       signals:
@@ -258,11 +150,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F4F7 Photos"
     tags: []
-    suggestedTags:
-      - tag: photos
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.698
       signals:
@@ -277,19 +165,7 @@ blocks:
     headingLevel: 3
     headingText: Capture with Camera
     tags: []
-    suggestedTags:
-      - tag: capture
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: camera
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.744
       signals:
@@ -302,27 +178,7 @@ blocks:
     endLine: 43
     type: list
     tags: []
-    suggestedTags:
-      - tag: click
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: vintage
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: radial
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.581
       signals:
@@ -335,19 +191,7 @@ blocks:
     endLine: 45
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: automatically
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.458
       signals:
@@ -360,27 +204,7 @@ blocks:
     endLine: 48
     type: list
     tags: []
-    suggestedTags:
-      - tag: photo
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: upload
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: saved
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.471
       signals:
@@ -395,19 +219,7 @@ blocks:
     headingLevel: 3
     headingText: Upload from File
     tags: []
-    suggestedTags:
-      - tag: from
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: file
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: upload
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.744
       signals:
@@ -420,27 +232,7 @@ blocks:
     endLine: 55
     type: list
     tags: []
-    suggestedTags:
-      - tag: image
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: radial
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.504
       signals:
@@ -455,15 +247,7 @@ blocks:
     headingLevel: 3
     headingText: Gallery Wall
     tags: []
-    suggestedTags:
-      - tag: gallery
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: wall
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.797
       signals:
@@ -476,27 +260,7 @@ blocks:
     endLine: 60
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: more
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.448
       signals:
@@ -509,23 +273,7 @@ blocks:
     endLine: 65
     type: code
     tags: []
-    suggestedTags:
-      - tag: photos
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: alcatraz
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.727
       signals:
@@ -538,19 +286,7 @@ blocks:
     endLine: 72
     type: list
     tags: []
-    suggestedTags:
-      - tag: golden
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: features
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ratio
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.613
       signals:
@@ -565,15 +301,7 @@ blocks:
     headingLevel: 3
     headingText: Best Practices
     tags: []
-    suggestedTags:
-      - tag: best
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practices
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.803
       signals:
@@ -599,27 +327,7 @@ blocks:
     endLine: 80
     type: list
     tags: []
-    suggestedTags:
-      - tag: descriptive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: text
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: optimize
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photo
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.5
       signals:
@@ -646,19 +354,7 @@ blocks:
     endLine: 85
     type: list
     tags: []
-    suggestedTags:
-      - tag: upload
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: extremely
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: large
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.558
       signals:
@@ -673,15 +369,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F399️ Voice Recordings"
     tags: []
-    suggestedTags:
-      - tag: voice
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recordings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.791
       signals:
@@ -696,19 +384,7 @@ blocks:
     headingLevel: 3
     headingText: Record Audio
     tags: []
-    suggestedTags:
-      - tag: record
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: audio
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recordings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.765
       signals:
@@ -721,27 +397,7 @@ blocks:
     endLine: 97
     type: list
     tags: []
-    suggestedTags:
-      - tag: click
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: voice
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: recordings
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: record
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: pause
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.591
       signals:
@@ -754,15 +410,7 @@ blocks:
     endLine: 99
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: automatically
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: audio
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.465
       signals:
@@ -775,23 +423,7 @@ blocks:
     endLine: 102
     type: list
     tags: []
-    suggestedTags:
-      - tag: audio
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: voice
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: webm
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.476
       signals:
@@ -806,23 +438,7 @@ blocks:
     headingLevel: 3
     headingText: Audio Notes Use Cases
     tags: []
-    suggestedTags:
-      - tag: notes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: cases
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: audio
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: pause
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.735
       signals:
@@ -835,23 +451,7 @@ blocks:
     endLine: 109
     type: list
     tags: []
-    suggestedTags:
-      - tag: personal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: management
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: voice
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.616
       signals:
@@ -864,19 +464,7 @@ blocks:
     endLine: 114
     type: list
     tags: []
-    suggestedTags:
-      - tag: collaboration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: leave
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: voice
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.579
       signals:
@@ -889,23 +477,7 @@ blocks:
     endLine: 119
     type: list
     tags: []
-    suggestedTags:
-      - tag: learning
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practice
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pronunciation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: audio
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.603
       signals:
@@ -920,19 +492,7 @@ blocks:
     headingLevel: 3
     headingText: Transcription (Coming Soon)
     tags: []
-    suggestedTags:
-      - tag: transcription
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: soon
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.817
       signals:
@@ -945,19 +505,7 @@ blocks:
     endLine: 123
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: recordings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: will
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: voice
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.541
       signals:
@@ -973,17 +521,9 @@ blocks:
     tags: []
     suggestedTags:
       - tag: search
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: content
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: audio
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.567
       signals:
@@ -998,15 +538,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F3A8 Drawings & Whiteboard"
     tags: []
-    suggestedTags:
-      - tag: drawings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: whiteboard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.77
       signals:
@@ -1021,15 +553,7 @@ blocks:
     headingLevel: 3
     headingText: The Infinite Canvas
     tags: []
-    suggestedTags:
-      - tag: infinite
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: canvas
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.787
       signals:
@@ -1042,27 +566,7 @@ blocks:
     endLine: 137
     type: list
     tags: []
-    suggestedTags:
-      - tag: click
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: draw
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: toggle
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: whiteboard
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.577
       signals:
@@ -1077,15 +581,7 @@ blocks:
     headingLevel: 3
     headingText: Canvas Features
     tags: []
-    suggestedTags:
-      - tag: features
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: canvas
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.793
       signals:
@@ -1098,27 +594,7 @@ blocks:
     endLine: 146
     type: list
     tags: []
-    suggestedTags:
-      - tag: never
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: zoom
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: infinite
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.605
       signals:
@@ -1133,19 +609,7 @@ blocks:
     headingLevel: 3
     headingText: Golden Ratio Guides
     tags: []
-    suggestedTags:
-      - tag: golden
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ratio
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: guides
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.808
       signals:
@@ -1158,15 +622,7 @@ blocks:
     endLine: 150
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: enable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: guides
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.494
       signals:
@@ -1179,19 +635,7 @@ blocks:
     endLine: 153
     type: list
     tags: []
-    suggestedTags:
-      - tag: lines
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: vertical
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: horizontal
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.555
       signals:
@@ -1204,19 +648,7 @@ blocks:
     endLine: 156
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: based
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: help
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.481
       signals:
@@ -1231,15 +663,7 @@ blocks:
     headingLevel: 3
     headingText: Drawings as Strands
     tags: []
-    suggestedTags:
-      - tag: strands
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.74
       signals:
@@ -1252,19 +676,7 @@ blocks:
     endLine: 159
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: exported
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: saved
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.454
       signals:
@@ -1277,19 +689,7 @@ blocks:
     endLine: 162
     type: list
     tags: []
-    suggestedTags:
-      - tag: drawings
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.54
       signals:
@@ -1304,11 +704,7 @@ blocks:
     headingLevel: 3
     headingText: Use Cases
     tags: []
-    suggestedTags:
-      - tag: cases
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.79
       signals:
@@ -1322,18 +718,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: brainstorming
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mind
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: maps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
     worthiness:
       score: 0.664
       signals:
@@ -1346,23 +734,7 @@ blocks:
     endLine: 174
     type: list
     tags: []
-    suggestedTags:
-      - tag: teaching
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: annotate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: screenshots
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.618
       signals:
@@ -1377,17 +749,13 @@ blocks:
     tags: []
     suggestedTags:
       - tag: design
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: wireframes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: architecture
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.647
       signals:
@@ -1402,19 +770,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F4C2 Asset Organization"
     tags: []
-    suggestedTags:
-      - tag: asset
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: organization
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.814
       signals:
@@ -1427,19 +783,7 @@ blocks:
     endLine: 184
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: organized
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: three
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.509
       signals:
@@ -1454,26 +798,10 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: audio
-        confidence: 0.6
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: asset
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.601
       signals:
@@ -1486,15 +814,7 @@ blocks:
     endLine: 192
     type: list
     tags: []
-    suggestedTags:
-      - tag: naming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: convention
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.704
       signals:
@@ -1507,23 +827,7 @@ blocks:
     endLine: 200
     type: code
     tags: []
-    suggestedTags:
-      - tag: typescript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: type
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: timestamp
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: examples
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.745
       signals:
@@ -1538,19 +842,7 @@ blocks:
     headingLevel: 3
     headingText: Asset as Strands
     tags: []
-    suggestedTags:
-      - tag: strands
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: asset
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.753
       signals:
@@ -1563,27 +855,7 @@ blocks:
     endLine: 205
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: each
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: asset
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.454
       signals:
@@ -1597,18 +869,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: markdown
-        confidence: 0.375
+      - tag: architecture
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: title
-        confidence: 0.375
+        reasoning: 'Vocabulary match: topics'
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: golden
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.744
       signals:
@@ -1624,14 +892,10 @@ blocks:
     headingText: "\U0001F5C2️ Catalog Schema"
     tags: []
     suggestedTags:
-      - tag: catalog
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: schema
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.812
       signals:
@@ -1644,27 +908,7 @@ blocks:
     endLine: 219
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: group
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: related
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: asset
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: catalog
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.441
       signals:
@@ -1678,26 +922,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: architecture
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: asset
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.6
+        reasoning: 'Vocabulary match: topics'
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: francisco
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.617
       signals:
@@ -1710,19 +942,7 @@ blocks:
     endLine: 239
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: single
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: catalog
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.486
       signals:
@@ -1736,26 +956,10 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: markdown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: architecture
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: catalog
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: asset
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.739
       signals:
@@ -1768,19 +972,7 @@ blocks:
     endLine: 245
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: entire
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: collection
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: becomes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.48
       signals:
@@ -1795,19 +987,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F3AC Video (Coming Soon)"
     tags: []
-    suggestedTags:
-      - tag: video
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: soon
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.83
       signals:
@@ -1820,15 +1000,7 @@ blocks:
     endLine: 248
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: future
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: support
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.578
       signals:
@@ -1843,18 +1015,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: screen
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recordings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: video
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subjects'
     worthiness:
       score: 0.646
       signals:
@@ -1869,23 +1033,7 @@ blocks:
     headingLevel: 2
     headingText: "\U0001F3B5 Music & Podcasts (Coming Soon)"
     tags: []
-    suggestedTags:
-      - tag: music
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: podcasts
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coming
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: soon
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.825
       signals:
@@ -1898,15 +1046,7 @@ blocks:
     endLine: 256
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: future
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: support
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.578
       signals:
@@ -1920,19 +1060,7 @@ blocks:
     endLine: 260
     type: list
     tags: []
-    suggestedTags:
-      - tag: waveform
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: visualization
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: chapter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.632
       signals:
@@ -1948,18 +1076,10 @@ blocks:
     headingText: 'Advanced: Media Metadata'
     tags: []
     suggestedTags:
-      - tag: advanced
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: metadata
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.878
       signals:
@@ -1974,23 +1094,7 @@ blocks:
     headingLevel: 3
     headingText: EXIF Data (Photos)
     tags: []
-    suggestedTags:
-      - tag: exif
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: data
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metadata
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.765
       signals:
@@ -2003,19 +1107,7 @@ blocks:
     endLine: 266
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: automatically
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: extract
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photos
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.492
       signals:
@@ -2028,19 +1120,7 @@ blocks:
     endLine: 270
     type: list
     tags: []
-    suggestedTags:
-      - tag: camera
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: model
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coordinates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.649
       signals:
@@ -2055,15 +1135,7 @@ blocks:
     headingLevel: 3
     headingText: Audio Waveform
     tags: []
-    suggestedTags:
-      - tag: audio
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: waveform
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.771
       signals:
@@ -2076,19 +1148,7 @@ blocks:
     endLine: 274
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: voice
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recordings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: generate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.571
       signals:
@@ -2102,23 +1162,7 @@ blocks:
     endLine: 278
     type: list
     tags: []
-    suggestedTags:
-      - tag: amplitude
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: visualization
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: duration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: generate
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.652
       signals:
@@ -2135,9 +1179,9 @@ blocks:
     tags: []
     suggestedTags:
       - tag: metadata
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.782
       signals:
@@ -2150,15 +1194,7 @@ blocks:
     endLine: 282
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: drawings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: preserve
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.64
       signals:
@@ -2172,23 +1208,7 @@ blocks:
     endLine: 286
     type: list
     tags: []
-    suggestedTags:
-      - tag: canvas
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dimensions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: layer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metadata
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.646
       signals:
@@ -2203,15 +1223,7 @@ blocks:
     headingLevel: 2
     headingText: Publishing Media
     tags: []
-    suggestedTags:
-      - tag: publishing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.832
       signals:
@@ -2224,23 +1236,7 @@ blocks:
     endLine: 291
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: click
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: publish
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: publishing
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.478
       signals:
@@ -2254,22 +1250,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: saved
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: assets
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: uploaded
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.605
       signals:
@@ -2284,19 +1268,7 @@ blocks:
     headingLevel: 2
     headingText: Best Practices Summary
     tags: []
-    suggestedTags:
-      - tag: best
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practices
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: summary
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.876
       signals:
@@ -2324,27 +1296,7 @@ blocks:
     endLine: 306
     type: list
     tags: []
-    suggestedTags:
-      - tag: descriptive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: filenames
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: text
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: assets
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.465
       signals:
@@ -2372,27 +1324,7 @@ blocks:
     endLine: 314
     type: list
     tags: []
-    suggestedTags:
-      - tag: upload
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: copyrighted
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: material
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: uploaded
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.599
       signals:
@@ -2407,11 +1339,7 @@ blocks:
     headingLevel: 2
     headingText: See Also
     tags: []
-    suggestedTags:
-      - tag: also
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.858
       signals:
@@ -2425,14 +1353,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: wiki
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tutorials
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.704
       signals:
@@ -2458,19 +1382,7 @@ blocks:
     endLine: 325
     type: list
     tags: []
-    suggestedTags:
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: knowledge
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.413
       signals:
@@ -2496,23 +1408,7 @@ blocks:
     endLine: 334
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: audio
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tutorials
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: metadata
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.452
       signals:

@@ -44,18 +44,38 @@ blocks:
     headingText: Kafka Practical Guide
     tags: []
     suggestedTags:
-      - tag: kafka
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: guide
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.81
       signals:
@@ -71,19 +91,35 @@ blocks:
     headingText: From Zero to Production with Python Examples
     tags: []
     suggestedTags:
-      - tag: from
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: zero
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: production
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -99,7 +135,39 @@ blocks:
     endLine: 5
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.558
       signals:
@@ -115,18 +183,38 @@ blocks:
     headingText: 'What is Kafka, Really?'
     tags: []
     suggestedTags:
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: really
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: kafka
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.72
       signals:
@@ -140,26 +228,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: go
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: react
-        confidence: 0.7000000000000001
+        reasoning: 'Vocabulary match: subjects'
+      - tag: topics
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: '
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: messages
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.621
       signals:
@@ -175,14 +283,38 @@ blocks:
     headingText: The Mental Model
     tags: []
     suggestedTags:
-      - tag: mental
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: model
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -196,26 +328,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: react
-        confidence: 0.6000000000000001
+      - tag: event
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: service
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.654
       signals:
@@ -228,7 +380,39 @@ blocks:
     endLine: 65
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -244,22 +428,38 @@ blocks:
     headingText: Where Kafka Fits in Real Systems
     tags: []
     suggestedTags:
-      - tag: where
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fits
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: react
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.44999999999999996
+      - tag: self
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.751
       signals:
@@ -275,15 +475,35 @@ blocks:
     headingText: 'Example 1: E-Commerce Order Flow'
     tags: []
     suggestedTags:
-      - tag: example
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: e-commerce
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -300,23 +520,39 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: service
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: kafka
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: bash
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -335,18 +571,38 @@ blocks:
     headingText: 'Example 2: Real-Time Analytics Pipeline'
     tags: []
     suggestedTags:
-      - tag: real-time
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: analytics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: example
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.802
       signals:
@@ -360,23 +616,39 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: event
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: events
-        confidence: 0.6
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: bash
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -395,15 +667,31 @@ blocks:
     headingText: 'Example 3: Microservices Event Bus'
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: microservices
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -411,10 +699,6 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: service
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.781
       signals:
@@ -428,26 +712,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: v
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: order
-        confidence: 0.75
+        reasoning: 'Vocabulary match: subjects'
+      - tag: topics
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: '
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: microservices
-        confidence: 0.7
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.598
       signals:
@@ -460,7 +764,39 @@ blocks:
     endLine: 178
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -476,18 +812,38 @@ blocks:
     headingText: Kafka Core Concepts
     tags: []
     suggestedTags:
-      - tag: kafka
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: core
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: concepts
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.758
       signals:
@@ -501,24 +857,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: topics
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: '
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: react
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -533,7 +909,39 @@ blocks:
     endLine: 246
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -549,11 +957,35 @@ blocks:
     headingText: Python Setup
     tags: []
     suggestedTags:
-      - tag: setup
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -572,10 +1004,38 @@ blocks:
     headingText: Installation
     tags: []
     suggestedTags:
-      - tag: installation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.769
       signals:
@@ -589,26 +1049,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.7
+      - tag: react
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: installation
-        confidence: 0.7
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.648
       signals:
@@ -624,23 +1104,35 @@ blocks:
     headingText: Docker Compose for Local Dev
     tags: []
     suggestedTags:
-      - tag: docker
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: compose
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: local
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -657,26 +1149,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.7
+      - tag: bash
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: '2181'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '9092'
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: zookeeper
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.704
       signals:
@@ -689,7 +1197,39 @@ blocks:
     endLine: 300
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -705,19 +1245,35 @@ blocks:
     headingText: Basic Producer & Consumer
     tags: []
     suggestedTags:
-      - tag: basic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: producer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: consumer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -736,14 +1292,38 @@ blocks:
     headingText: Simple Producer
     tags: []
     suggestedTags:
-      - tag: simple
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: producer
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.707
       signals:
@@ -757,26 +1337,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.7
+      - tag: event
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: producer
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.597
       signals:
@@ -792,14 +1388,38 @@ blocks:
     headingText: Simple Consumer
     tags: []
     suggestedTags:
-      - tag: consumer
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: simple
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.777
       signals:
@@ -813,26 +1433,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: order
-        confidence: 0.75
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.7
+      - tag: react
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: kafka
-        confidence: 0.7
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.581
       signals:
@@ -845,7 +1481,39 @@ blocks:
     endLine: 388
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -861,15 +1529,35 @@ blocks:
     headingText: 'Real-World Pattern: Order Processing System'
     tags: []
     suggestedTags:
-      - tag: real-world
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pattern
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -888,11 +1576,27 @@ blocks:
     headingText: The Producer (Order Service)
     tags: []
     suggestedTags:
-      - tag: service
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -900,10 +1604,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: producer
-        confidence: 0.44999999999999996
+      - tag: event
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.736
       signals:
@@ -917,24 +1621,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -952,22 +1676,42 @@ blocks:
     headingText: 'Consumer: Email Service'
     tags: []
     suggestedTags:
-      - tag: email
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.44999999999999996
+      - tag: go
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: service
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.788
       signals:
@@ -981,24 +1725,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1016,22 +1776,38 @@ blocks:
     headingText: 'Consumer: Inventory Service'
     tags: []
     suggestedTags:
-      - tag: v
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: inventory
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: consumer
-        confidence: 0.44999999999999996
+      - tag: bash
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: service
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.771
       signals:
@@ -1045,24 +1821,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1080,22 +1872,38 @@ blocks:
     headingText: 'Consumer: Analytics Service'
     tags: []
     suggestedTags:
-      - tag: analytics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: service
-        confidence: 0.44999999999999996
+      - tag: go
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: consumer
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.776
       signals:
@@ -1109,26 +1917,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.611
       signals:
@@ -1141,7 +1965,39 @@ blocks:
     endLine: 718
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1157,18 +2013,38 @@ blocks:
     headingText: Running the Full System
     tags: []
     suggestedTags:
-      - tag: running
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: full
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: system
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.741
       signals:
@@ -1182,26 +2058,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: python
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: service
-        confidence: 0.7
+      - tag: go
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: terminal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.727
       signals:
@@ -1214,7 +2106,39 @@ blocks:
     endLine: 741
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1230,14 +2154,38 @@ blocks:
     headingText: Production Patterns
     tags: []
     suggestedTags:
-      - tag: production
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -1253,18 +2201,38 @@ blocks:
     headingText: 1. Async Producer (Non-Blocking)
     tags: []
     suggestedTags:
-      - tag: async
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: producer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: non-blocking
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.772
       signals:
@@ -1278,26 +2246,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: go
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: self
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: order
-        confidence: 0.75
+      - tag: bash
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: async
-        confidence: 0.7
+      - tag: go
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.598
       signals:
@@ -1313,19 +2301,35 @@ blocks:
     headingText: 2. Batch Consumer (High Throughput)
     tags: []
     suggestedTags:
-      - tag: batch
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: consumer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: high
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1342,24 +2346,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: go
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: self
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1377,18 +2401,38 @@ blocks:
     headingText: 3. Dead Letter Queue (Error Handling)
     tags: []
     suggestedTags:
-      - tag: dead
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: letter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: queue
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.833
       signals:
@@ -1402,26 +2446,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.605
       signals:
@@ -1437,18 +2497,38 @@ blocks:
     headingText: 4. Exactly-Once Processing (Idempotent)
     tags: []
     suggestedTags:
-      - tag: exactly-once
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: processing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: idempotent
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.777
       signals:
@@ -1462,24 +2542,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1494,7 +2590,39 @@ blocks:
     endLine: 1035
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1510,18 +2638,38 @@ blocks:
     headingText: Async Kafka with asyncio
     tags: []
     suggestedTags:
-      - tag: async
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: kafka
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.66
       signals:
@@ -1535,26 +2683,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: event
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.552
       signals:
@@ -1567,7 +2735,39 @@ blocks:
     endLine: 1113
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1583,22 +2783,38 @@ blocks:
     headingText: Kafka vs Other Queues
     tags: []
     suggestedTags:
-      - tag: other
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: queues
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: order
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: kafka
-        confidence: 0.44999999999999996
+      - tag: event
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.717
       signals:
@@ -1612,24 +2828,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: v
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: go
-        confidence: 0.75
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: pipelines
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: event
-        confidence: 0.7000000000000001
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1644,7 +2880,39 @@ blocks:
     endLine: 1169
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1660,14 +2928,38 @@ blocks:
     headingText: Quick Reference
     tags: []
     suggestedTags:
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.763
       signals:
@@ -1681,26 +2973,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: go
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: consumer
-        confidence: 0.7
+      - tag: react
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: kafka
-        confidence: 0.7
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.648
       signals:
@@ -1713,7 +3021,39 @@ blocks:
     endLine: 1220
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1729,19 +3069,35 @@ blocks:
     headingText: Interview Talking Points
     tags: []
     suggestedTags:
-      - tag: interview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: talking
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: points
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1758,24 +3114,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: v
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: event
-        confidence: 0.75
+        reasoning: 'Vocabulary match: subjects'
+      - tag: architecture
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: bash
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: order
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1790,7 +3166,39 @@ blocks:
     endLine: 1252
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: bash
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: go
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: react
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: order
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: event
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.54
       signals:

@@ -41,11 +41,23 @@ blocks:
     headingText: OpenStrand Overview
     tags: []
     suggestedTags:
-      - tag: overview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -61,27 +73,7 @@ blocks:
     endLine: 5
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: os-for-humans
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: openstrand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: schema
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.491
       signals:
@@ -94,27 +86,7 @@ blocks:
     endLine: 9
     type: list
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: weave
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: schema
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: os-for-humans
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: fabric
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.483
       signals:
@@ -127,27 +99,7 @@ blocks:
     endLine: 12
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: like
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: openstrand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: goal
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ship
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.478
       signals:
@@ -160,7 +112,27 @@ blocks:
     endLine: 13
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -177,6 +149,22 @@ blocks:
     tags: []
     suggestedTags:
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -192,27 +180,7 @@ blocks:
     endLine: 18
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: traditional
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: management
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: openstrand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.49
       signals:
@@ -228,18 +196,26 @@ blocks:
     headingText: The Problem with Existing Solutions
     tags: []
     suggestedTags:
-      - tag: problem
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: existing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.758
       signals:
@@ -253,26 +229,34 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: experience
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structure
-        confidence: 0.6
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: os-for-humans
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ship
-        confidence: 0.44999999999999996
+      - tag: knowledge-graph
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: approach
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.668
       signals:
@@ -288,11 +272,23 @@ blocks:
     headingText: The OpenStrand Solution
     tags: []
     suggestedTags:
-      - tag: solution
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -309,15 +305,23 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: adds
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: invisible
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -335,26 +339,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: openstrand
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: control
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: structure
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ship
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.582
       signals:
@@ -368,26 +380,30 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: target
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: type
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ship
-        confidence: 0.44999999999999996
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.639
       signals:
@@ -400,7 +416,27 @@ blocks:
     endLine: 55
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -416,14 +452,26 @@ blocks:
     headingText: The Four-Tier Hierarchy
     tags: []
     suggestedTags:
-      - tag: four-tier
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hierarchy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.733
       signals:
@@ -436,27 +484,7 @@ blocks:
     endLine: 60
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: organizes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: four-tier
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.476
       signals:
@@ -472,26 +500,26 @@ blocks:
     headingText: Fabric → Your Entire Knowledge Base
     tags: []
     suggestedTags:
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: entire
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
+      - tag: ai-native
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.748
       signals:
@@ -504,27 +532,7 @@ blocks:
     endLine: 63
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fabric
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: root
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.388
       signals:
@@ -538,14 +546,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: containing
-        confidence: 0.5
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.518
       signals:
@@ -559,22 +583,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: practice
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weaves
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: directory
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.502
       signals:
@@ -590,22 +618,30 @@ blocks:
     headingText: Weave → Self-Contained Domains
     tags: []
     suggestedTags:
-      - tag: weave
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: self-contained
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: domains
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weaves
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.768
       signals:
@@ -618,27 +654,7 @@ blocks:
     endLine: 72
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: complete
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: independent
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weaves
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.456
       signals:
@@ -652,26 +668,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: dependencies
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: other
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: weaves
-        confidence: 0.44999999999999996
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weave
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.556
       signals:
@@ -685,15 +705,23 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: weave
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weaves
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -712,18 +740,30 @@ blocks:
     headingText: Loom → Curated Topics
     tags: []
     suggestedTags:
-      - tag: loom
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: curated
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: topics
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: '
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.778
       signals:
@@ -737,18 +777,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: groups
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: related
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: loom
-        confidence: 0.55
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.504
       signals:
@@ -763,19 +811,27 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: define
-        confidence: 0.6
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: learning
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: paths
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
       - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -792,22 +848,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: weave
-        confidence: 0.44999999999999996
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weaves
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.581
       signals:
@@ -823,23 +883,23 @@ blocks:
     headingText: Strand → Atomic Knowledge Units
     tags: []
     suggestedTags:
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: atomic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -855,23 +915,7 @@ blocks:
     endLine: 95
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: smallest
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: unit
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.44
       signals:
@@ -885,18 +929,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: rich
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: yaml
-        confidence: 0.6
+        reasoning: 'Vocabulary match: subjects'
+      - tag: embeddings
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: frontmatter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.618
       signals:
@@ -909,7 +969,27 @@ blocks:
     endLine: 101
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -925,18 +1005,30 @@ blocks:
     headingText: How AI Agents Use OpenStrand
     tags: []
     suggestedTags:
-      - tag: agents
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.44999999999999996
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.797
       signals:
@@ -950,26 +1042,30 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: os-for-humans
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
-        confidence: 0.6000000000000001
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.55
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: just
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: humans
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -986,14 +1082,26 @@ blocks:
     headingText: Traversal Patterns
     tags: []
     suggestedTags:
-      - tag: traversal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.794
       signals:
@@ -1007,18 +1115,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: agentinstructions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: yaml
-        confidence: 0.44999999999999996
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: traversal
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.646
       signals:
@@ -1031,23 +1147,7 @@ blocks:
     endLine: 116
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: knowledge-graph
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: know
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: navigate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: agents
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.471
       signals:
@@ -1063,14 +1163,26 @@ blocks:
     headingText: Citation Behavior
     tags: []
     suggestedTags:
-      - tag: citation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: behavior
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.801
       signals:
@@ -1084,18 +1196,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: agentinstructions
-        confidence: 0.44999999999999996
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: yaml
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: citation
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.633
       signals:
@@ -1108,23 +1228,7 @@ blocks:
     endLine: 126
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: answering
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: questions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: agents
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.489
       signals:
@@ -1140,15 +1244,27 @@ blocks:
     headingText: Tone and Detail
     tags: []
     suggestedTags:
-      - tag: tone
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: detail
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1165,22 +1281,34 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: educational
-        confidence: 0.6
+      - tag: education
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: yaml
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: tone
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: detail
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.576
       signals:
@@ -1193,27 +1321,7 @@ blocks:
     endLine: 136
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: os-for-humans
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: same
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: presented
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.439
       signals:
@@ -1229,14 +1337,30 @@ blocks:
     headingText: Semantic Search
     tags: []
     suggestedTags:
-      - tag: semantic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: search
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.796
       signals:
@@ -1250,19 +1374,23 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: every
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: automatically
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1280,26 +1408,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: meaning-based
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: find
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
+      - tag: ai-native
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: search
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.538
       signals:
@@ -1312,7 +1444,27 @@ blocks:
     endLine: 144
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1328,22 +1480,26 @@ blocks:
     headingText: The Value of Structured Knowledge
     tags: []
     suggestedTags:
-      - tag: value
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structured
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
+      - tag: ai-native
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.694
       signals:
@@ -1359,11 +1515,23 @@ blocks:
     headingText: For Individuals
     tags: []
     suggestedTags:
-      - tag: individuals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1380,26 +1548,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: second
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: brain
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: build
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
+      - tag: ai-native
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.588
       signals:
@@ -1415,11 +1587,23 @@ blocks:
     headingText: For Teams
     tags: []
     suggestedTags:
-      - tag: teams
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1436,26 +1620,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: shared
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: source
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: truth
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
+      - tag: ai-native
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.57
       signals:
@@ -1471,7 +1659,27 @@ blocks:
     headingText: For the AI Era
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1488,22 +1696,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: future-proof
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: protocol
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: source
-        confidence: 0.44999999999999996
+      - tag: os-for-humans
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.57
       signals:
@@ -1516,7 +1732,27 @@ blocks:
     endLine: 166
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1533,13 +1769,29 @@ blocks:
     tags: []
     suggestedTags:
       - tag: design
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: principles
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -1553,14 +1805,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: openstrand
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: shared
-        confidence: 0.55
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
       - tag: os-for-humans
         confidence: 0.5
         source: existing
@@ -1585,7 +1849,27 @@ blocks:
     endLine: 177
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1601,14 +1885,26 @@ blocks:
     headingText: Getting Started
     tags: []
     suggestedTags:
-      - tag: getting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: started
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -1624,22 +1920,26 @@ blocks:
     headingText: Quick Start (5 minutes)
     tags: []
     suggestedTags:
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: start
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: minutes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: started
-        confidence: 0.44999999999999996
+      - tag: openstrand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.789
       signals:
@@ -1653,22 +1953,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: weaves
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: my-topic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: create
+      - tag: schema
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.586
       signals:
@@ -1684,15 +1992,23 @@ blocks:
     headingText: Example Strand
     tags: []
     suggestedTags:
-      - tag: example
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1709,26 +2025,30 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
+      - tag: architecture
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: react
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: os-for-humans
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: introduction
-        confidence: 0.30000000000000004
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: javascript
-        confidence: 0.30000000000000004
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.677
       signals:
@@ -1741,7 +2061,27 @@ blocks:
     endLine: 207
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1757,14 +2097,26 @@ blocks:
     headingText: Next Steps
     tags: []
     suggestedTags:
-      - tag: next
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: steps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -1778,18 +2130,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: want
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deeper
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: explore
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.581
       signals:
@@ -1804,26 +2164,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: schema
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: hierarchy
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
       - tag: architecture
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: os-for-humans
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: ai-native
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.614
       signals:

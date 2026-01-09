@@ -36,23 +36,35 @@ blocks:
     headingText: Python Senior Interview Crash Course
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: senior
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: interview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -71,23 +83,35 @@ blocks:
     headingText: From Fundamentals to Staff-Level Mastery
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: from
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fundamentals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: staff-level
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -103,7 +127,39 @@ blocks:
     endLine: 4
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.558
       signals:
@@ -119,14 +175,38 @@ blocks:
     headingText: Table of Contents
     tags: []
     suggestedTags:
-      - tag: table
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: contents
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -140,22 +220,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: python
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: senior
-        confidence: 0.55
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: def
         confidence: 0.5
         source: existing
@@ -172,7 +268,39 @@ blocks:
     endLine: 19
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -189,21 +317,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: python
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: internals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: must
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.785
       signals:
@@ -219,15 +363,35 @@ blocks:
     headingText: Memory Management
     tags: []
     suggestedTags:
-      - tag: memory
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: management
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -246,19 +410,35 @@ blocks:
     headingText: Everything is an Object
     tags: []
     suggestedTags:
-      - tag: everything
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: object
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -275,26 +455,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: python
-        confidence: 0.6000000000000001
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: print
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: internals
-        confidence: 0.55
+      - tag: numpy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.697
       signals:
@@ -310,22 +502,38 @@ blocks:
     headingText: Reference Counting + Garbage Collection
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: counting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: garbage
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -339,26 +547,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: reference
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.628
       signals:
@@ -374,19 +594,35 @@ blocks:
     headingText: Small Integer Caching (-5 to 256)
     tags: []
     suggestedTags:
-      - tag: small
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: integer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: caching
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -403,26 +639,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: python
-        confidence: 0.6000000000000001
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: hello
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: print
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.664
       signals:
@@ -438,19 +686,31 @@ blocks:
     headingText: Mutability Deep Dive
     tags: []
     suggestedTags:
-      - tag: mutability
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deep
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -471,24 +731,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: print
-        confidence: 0.7
+      - tag: return
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: sql
-        confidence: 0.6000000000000001
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -506,23 +782,35 @@ blocks:
     headingText: The Global Interpreter Lock (GIL)
     tags: []
     suggestedTags:
-      - tag: global
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: interpreter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: lock
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -540,25 +828,37 @@ blocks:
     tags: []
     suggestedTags:
       - tag: python
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: print
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.708
       signals:
@@ -574,15 +874,35 @@ blocks:
     headingText: Python Object Model
     tags: []
     suggestedTags:
-      - tag: object
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: model
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -599,24 +919,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -631,7 +967,39 @@ blocks:
     endLine: 246
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -647,23 +1015,35 @@ blocks:
     headingText: '2. Data Structures Deep Dive {#2-data-structures}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: data
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structures
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deep
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -682,22 +1062,38 @@ blocks:
     headingText: 'Python Built-in Structures: Under the Hood'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: built-in
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: structures
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.79
       signals:
@@ -713,19 +1109,35 @@ blocks:
     headingText: Lists (Dynamic Arrays)
     tags: []
     suggestedTags:
-      - tag: lists
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dynamic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: arrays
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -742,24 +1154,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: lists
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: sql
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -777,19 +1205,35 @@ blocks:
     headingText: Dictionaries (Hash Maps)
     tags: []
     suggestedTags:
-      - tag: dictionaries
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: maps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -806,24 +1250,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: python
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -841,18 +1305,38 @@ blocks:
     headingText: Sets (Hash Sets)
     tags: []
     suggestedTags:
-      - tag: self
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: sets
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hash
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.766
       signals:
@@ -866,24 +1350,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -901,19 +1405,35 @@ blocks:
     headingText: 'Collections Module: Power Tools'
     tags: []
     suggestedTags:
-      - tag: collections
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: module
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: power
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -930,24 +1450,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -965,19 +1505,35 @@ blocks:
     headingText: Heaps (Priority Queues)
     tags: []
     suggestedTags:
-      - tag: heaps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: priority
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: queues
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -994,26 +1550,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: numpy
-        confidence: 0.75
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: heaps
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.693
       signals:
@@ -1026,7 +1598,39 @@ blocks:
     endLine: 585
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1042,19 +1646,35 @@ blocks:
     headingText: '3. Complexity Analysis Refresher {#3-complexity-analysis}'
     tags: []
     suggestedTags:
-      - tag: complexity
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: analysis
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: refresher
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1073,14 +1693,38 @@ blocks:
     headingText: Big O Cheat Sheet
     tags: []
     suggestedTags:
-      - tag: cheat
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sheet
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.795
       signals:
@@ -1094,26 +1738,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: heaps
-        confidence: 0.44999999999999996
+      - tag: r
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: complexity
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: operations
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.701
       signals:
@@ -1129,15 +1793,11 @@ blocks:
     headingText: Python Operation Complexities
     tags: []
     suggestedTags:
-      - tag: operation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: complexities
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1145,10 +1805,26 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: operations
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.824
       signals:
@@ -1162,26 +1838,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: operations
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.718
       signals:
@@ -1197,14 +1889,38 @@ blocks:
     headingText: Space Complexity
     tags: []
     suggestedTags:
-      - tag: space
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: complexity
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -1218,24 +1934,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1250,7 +1982,39 @@ blocks:
     endLine: 740
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1266,22 +2030,38 @@ blocks:
     headingText: '4. Core Algorithm Patterns {#4-algorithm-patterns}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: core
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: algorithm
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -1297,22 +2077,38 @@ blocks:
     headingText: 'Pattern 1: Two Pointers'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: pattern
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pointers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.82
       signals:
@@ -1326,24 +2122,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1361,26 +2173,38 @@ blocks:
     headingText: 'Pattern 2: Sliding Window'
     tags: []
     suggestedTags:
-      - tag: sliding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: window
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: patterns
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: pattern
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.82
       signals:
@@ -1394,24 +2218,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1429,26 +2269,42 @@ blocks:
     headingText: 'Pattern 3: Binary Search'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: binary
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: search
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: pattern
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.82
       signals:
@@ -1462,24 +2318,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1497,7 +2373,31 @@ blocks:
     headingText: 'Pattern 4: BFS & DFS'
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1505,14 +2405,6 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: patterns
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: pattern
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.789
       signals:
@@ -1526,24 +2418,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1561,26 +2469,38 @@ blocks:
     headingText: 'Pattern 5: Dynamic Programming'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: dynamic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: programming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pattern
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: patterns
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.82
       signals:
@@ -1594,24 +2514,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1629,22 +2565,38 @@ blocks:
     headingText: 'Pattern 6: Backtracking'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: backtracking
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pattern
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: patterns
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.801
       signals:
@@ -1658,24 +2610,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1690,7 +2662,39 @@ blocks:
     endLine: 1535
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1707,22 +2711,34 @@ blocks:
     tags: []
     suggestedTags:
       - tag: python
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: advanced
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: features
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1741,18 +2757,38 @@ blocks:
     headingText: Generators & Iterators
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: generators
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: iterators
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.77
       signals:
@@ -1766,24 +2802,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1801,11 +2853,35 @@ blocks:
     headingText: Decorators
     tags: []
     suggestedTags:
-      - tag: decorators
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1822,24 +2898,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1857,15 +2953,35 @@ blocks:
     headingText: Context Managers
     tags: []
     suggestedTags:
-      - tag: context
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: managers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1882,24 +2998,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: sql
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: self
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1917,19 +3049,35 @@ blocks:
     headingText: Type Hints & Generics
     tags: []
     suggestedTags:
-      - tag: type
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hints
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: generics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1946,24 +3094,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1978,7 +3138,39 @@ blocks:
     endLine: 1933
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1994,22 +3186,38 @@ blocks:
     headingText: '6. Concurrency & Parallelism {#6-concurrency}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: concurrency
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: parallelism
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 6-concurrency
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -2025,19 +3233,35 @@ blocks:
     headingText: Threading (I/O-bound tasks)
     tags: []
     suggestedTags:
-      - tag: threading
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: o-bound
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tasks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2054,24 +3278,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2089,22 +3329,38 @@ blocks:
     headingText: Multiprocessing (CPU-bound tasks)
     tags: []
     suggestedTags:
-      - tag: multiprocessing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: cpu-bound
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: tasks
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.762
       signals:
@@ -2118,26 +3374,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: self
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: multiprocessing
-        confidence: 0.7
+      - tag: numpy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.709
       signals:
@@ -2153,18 +3425,42 @@ blocks:
     headingText: Asyncio (Async/Await)
     tags: []
     suggestedTags:
-      - tag: asyncio
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: async
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: await
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.77
       signals:
@@ -2178,24 +3474,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2210,7 +3522,39 @@ blocks:
     endLine: 2264
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2226,19 +3570,39 @@ blocks:
     headingText: '7. Object-Oriented Design {#7-oop-design}'
     tags: []
     suggestedTags:
-      - tag: object-oriented
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: design
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: 7-oop-design
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2257,15 +3621,35 @@ blocks:
     headingText: SOLID Principles
     tags: []
     suggestedTags:
-      - tag: solid
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: principles
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2282,24 +3666,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2317,22 +3717,42 @@ blocks:
     headingText: Design Patterns
     tags: []
     suggestedTags:
-      - tag: patterns
-        confidence: 0.6
+      - tag: design
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: design
-        confidence: 0.44999999999999996
+      - tag: sql
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: 7-oop-design
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -2346,24 +3766,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2378,7 +3818,39 @@ blocks:
     endLine: 2634
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2394,22 +3866,38 @@ blocks:
     headingText: '8. LeetCode Patterns & Solutions {#8-leetcode-patterns}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leetcode
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: solutions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.55
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.776
       signals:
@@ -2425,26 +3913,38 @@ blocks:
     headingText: Must-Know Problems by Pattern
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: must-know
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: problems
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pattern
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: patterns
-        confidence: 0.44999999999999996
+      - tag: v
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.795
       signals:
@@ -2458,24 +3958,44 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2490,7 +4010,39 @@ blocks:
     endLine: 3161
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2506,15 +4058,39 @@ blocks:
     headingText: '9. System Design in Python {#9-system-design}'
     tags: []
     suggestedTags:
-      - tag: system
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: design
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
       - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2533,18 +4109,38 @@ blocks:
     headingText: Rate Limiter
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: rate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: limiter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.812
       signals:
@@ -2558,24 +4154,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2593,11 +4201,35 @@ blocks:
     headingText: LRU Cache
     tags: []
     suggestedTags:
-      - tag: cache
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2614,24 +4246,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2649,15 +4297,35 @@ blocks:
     headingText: URL Shortener
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: shortener
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2674,24 +4342,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: numpy
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: self
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2706,7 +4390,39 @@ blocks:
     endLine: 3412
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2722,26 +4438,38 @@ blocks:
     headingText: '10. Senior-Level Interview Questions {#10-senior-questions}'
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.7000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: senior-level
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: interview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: questions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -2757,23 +4485,35 @@ blocks:
     headingText: Behavioral / Technical Discussion Questions
     tags: []
     suggestedTags:
-      - tag: behavioral
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: technical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: discussion
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2790,26 +4530,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
       - tag: python
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.693
       signals:
@@ -2823,23 +4575,39 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: python
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: numpy
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2856,24 +4624,40 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: self
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2889,26 +4673,42 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: schema
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: r
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: phase
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.723
       signals:
@@ -2924,23 +4724,35 @@ blocks:
     headingText: Code Review Exercise
     tags: []
     suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: review
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exercise
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2957,24 +4769,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: def
-        confidence: 0.75
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: return
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: python
-        confidence: 0.6000000000000001
+      - tag: def
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -2989,7 +4813,39 @@ blocks:
     endLine: 3611
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3005,15 +4861,35 @@ blocks:
     headingText: Quick Reference
     tags: []
     suggestedTags:
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3030,26 +4906,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: v
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: r
-        confidence: 0.75
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: def
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: search
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sorted
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.733
       signals:
@@ -3062,7 +4958,39 @@ blocks:
     endLine: 3653
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: v
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: r
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: numpy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: self
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: return
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: def
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.54
       signals:
@@ -3075,27 +5003,7 @@ blocks:
     endLine: 3662
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: r
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: good
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: luck
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: v
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.44
       signals:

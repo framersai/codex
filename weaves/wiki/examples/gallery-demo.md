@@ -7,19 +7,7 @@ blocks:
     headingLevel: 1
     headingText: Art Deco Gallery Demo
     tags: []
-    suggestedTags:
-      - tag: deco
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: demo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.808
       signals:
@@ -32,27 +20,7 @@ blocks:
     endLine: 4
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: demonstrates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: demo
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.464
       signals:
@@ -67,15 +35,7 @@ blocks:
     headingLevel: 2
     headingText: Individual Images
     tags: []
-    suggestedTags:
-      - tag: individual
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: images
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.781
       signals:
@@ -88,19 +48,7 @@ blocks:
     endLine: 10
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: images
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: single
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: display
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.366
       signals:
@@ -115,19 +63,7 @@ blocks:
     headingLevel: 2
     headingText: Automatic Gallery Wall
     tags: []
-    suggestedTags:
-      - tag: automatic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: wall
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.851
       signals:
@@ -140,23 +76,7 @@ blocks:
     endLine: 20
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: images
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: unsplash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.409
       signals:
@@ -171,19 +91,7 @@ blocks:
     headingLevel: 2
     headingText: Gallery with Captions
     tags: []
-    suggestedTags:
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: captions
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.777
       signals:
@@ -196,27 +104,7 @@ blocks:
     endLine: 29
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: images
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: unsplash
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: captions
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.445
       signals:
@@ -231,15 +119,7 @@ blocks:
     headingLevel: 2
     headingText: Mixed Content
     tags: []
-    suggestedTags:
-      - tag: mixed
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: content
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.857
       signals:
@@ -252,27 +132,7 @@ blocks:
     endLine: 41
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: unsplash
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: images
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: image
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gallery
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.432
       signals:
@@ -287,11 +147,7 @@ blocks:
     headingLevel: 2
     headingText: Features
     tags: []
-    suggestedTags:
-      - tag: features
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.818
       signals:
@@ -304,23 +160,7 @@ blocks:
     endLine: 49
     type: list
     tags: []
-    suggestedTags:
-      - tag: images
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: image
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: golden
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hover
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.621
       signals:
@@ -346,19 +186,7 @@ blocks:
     endLine: 57
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: gallery
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: metadata
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: title
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.491
       signals:

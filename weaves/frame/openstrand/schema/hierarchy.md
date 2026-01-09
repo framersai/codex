@@ -40,11 +40,19 @@ blocks:
     headingText: Hierarchy & Vocabulary
     tags: []
     suggestedTags:
-      - tag: vocabulary
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -60,27 +68,7 @@ blocks:
     endLine: 5
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: organizes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hierarchy
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.484
       signals:
@@ -94,18 +82,22 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: knowledge-graph
-        confidence: 0.7000000000000001
+      - tag: schema
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.65
+      - tag: hierarchy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: openstrand
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.757
       signals:
@@ -119,22 +111,34 @@ blocks:
     type: table
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: openstrand
-        confidence: 0.65
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weaves
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: complete
-        confidence: 0.30000000000000004
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.533
       signals:
@@ -147,7 +151,23 @@ blocks:
     endLine: 20
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -163,18 +183,22 @@ blocks:
     headingText: Node Levels in the Viewer
     tags: []
     suggestedTags:
-      - tag: node
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: levels
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: viewer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.687
       signals:
@@ -187,27 +211,7 @@ blocks:
     endLine: 25
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: hierarchy
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: weaves
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: viewer
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.44
       signals:
@@ -223,11 +227,19 @@ blocks:
     headingText: Schema Goals
     tags: []
     suggestedTags:
-      - tag: goals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -243,27 +255,7 @@ blocks:
     endLine: 30
     type: list
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: schema
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: weaves
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.474
       signals:
@@ -276,7 +268,23 @@ blocks:
     endLine: 32
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -292,15 +300,19 @@ blocks:
     headingText: Why This Hierarchy Matters
     tags: []
     suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: matters
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -319,14 +331,26 @@ blocks:
     headingText: For Semantic Search
     tags: []
     suggestedTags:
-      - tag: semantic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: search
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.788
       signals:
@@ -339,23 +363,7 @@ blocks:
     endLine: 38
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: each
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: layer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: provides
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: search
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.464
       signals:
@@ -369,14 +377,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: search
         confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: within
-        confidence: 0.5625
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
@@ -396,10 +416,26 @@ blocks:
     headingText: For AI Traversal
     tags: []
     suggestedTags:
-      - tag: traversal
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.814
       signals:
@@ -413,15 +449,23 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: tells
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: agents
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -439,18 +483,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: breadth-first
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: explore
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: looms
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.621
       signals:
@@ -466,14 +518,22 @@ blocks:
     headingText: For Knowledge Graphs
     tags: []
     suggestedTags:
-      - tag: knowledge
-        confidence: 0.6
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: graphs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
@@ -490,27 +550,7 @@ blocks:
     endLine: 53
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: maps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: graph
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hierarchy
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge-graph
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: graphs
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.495
       signals:
@@ -524,26 +564,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strands
-        confidence: 0.6
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: nodes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: relationships
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: looms
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: graphs
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.603
       signals:
@@ -556,7 +596,23 @@ blocks:
     endLine: 59
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -572,18 +628,18 @@ blocks:
     headingText: The Value of Structured Knowledge
     tags: []
     suggestedTags:
-      - tag: value
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structured
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: knowledge-graph
         confidence: 0.5
         source: existing
@@ -601,26 +657,34 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: knowledge-graph
-        confidence: 0.6000000000000001
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: schema
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: case
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benefit
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '----------'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: graph
-        confidence: 0.44999999999999996
+      - tag: hierarchy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.591
       signals:
@@ -634,10 +698,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: '----------'
-        confidence: 0.44999999999999996
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -653,22 +729,22 @@ blocks:
     headingText: Hierarchical Topic Structure
     tags: []
     suggestedTags:
-      - tag: hierarchical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: topic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structure
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structured
-        confidence: 0.44999999999999996
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.741
       signals:
@@ -682,22 +758,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: folder
-        confidence: 0.6
+      - tag: openstrand
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: depth
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: determines
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: topic
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.524
       signals:
@@ -711,26 +791,30 @@ blocks:
     type: blockquote
     tags: []
     suggestedTags:
-      - tag: subfolders
-        confidence: 0.6
+      - tag: topics
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: '
       - tag: subtopics
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: their
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: topic
-        confidence: 0.55
+        reasoning: 'Vocabulary match: '
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: folder
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.576
       signals:
@@ -746,10 +830,22 @@ blocks:
     headingText: How It Works
     tags: []
     suggestedTags:
-      - tag: works
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.818
       signals:
@@ -763,26 +859,22 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: topic
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: subtopics
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: python
+      - tag: schema
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: programming
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.615
       signals:
@@ -795,27 +887,7 @@ blocks:
     endLine: 97
     type: list
     tags: []
-    suggestedTags:
-      - tag: topic
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: subtopics
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: python
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: async
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: subtopic
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.448
       signals:
@@ -832,21 +904,25 @@ blocks:
     tags: []
     suggestedTags:
       - tag: topics
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tags
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: subtopics
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: '
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: topic
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.745
       signals:
@@ -860,26 +936,26 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: inheritance
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: share
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: topic
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: subtopics
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: topics
-        confidence: 0.55
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: '
+      - tag: schema
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.566
       signals:
@@ -892,7 +968,23 @@ blocks:
     endLine: 109
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -908,14 +1000,22 @@ blocks:
     headingText: Next Steps
     tags: []
     suggestedTags:
-      - tag: next
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: steps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: schema
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.774
       signals:
@@ -929,18 +1029,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: architecture
-        confidence: 0.7000000000000001
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: overview
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.5625
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: hierarchy
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: knowledge-graph
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.592
       signals:

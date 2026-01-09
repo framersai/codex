@@ -16,6 +16,7 @@
     "blocks:ai": "node scripts/ai-enhance-blocks.js --all",
     "blocks:migrate": "node scripts/migrate-block-tags.js",
     "blocks:all": "npm run blocks:process && npm run blocks:tag && npm run build:index",
+    "process": "node scripts/process-blocks.mjs",
     "test": "vitest run",
     "test:unit": "node --test tests/llm.test.js",
     "test:watch": "vitest",

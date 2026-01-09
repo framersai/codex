@@ -50,23 +50,7 @@ blocks:
     endLine: 3
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: openstrand
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: architecture
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: api
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: this
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.428
       signals:
@@ -82,10 +66,14 @@ blocks:
     headingText: Key Ideas
     tags: []
     suggestedTags:
-      - tag: ideas
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.884
       signals:
@@ -99,26 +87,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strands
-        confidence: 0.6
+      - tag: ingestion
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: pipelines
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: api
+      - tag: architecture
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: pipelines
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: assets
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.536
       signals:
@@ -135,13 +123,17 @@ blocks:
     tags: []
     suggestedTags:
       - tag: ingestion
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mapping
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.825
       signals:
@@ -155,26 +147,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strands
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: openstrand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: api
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
       - tag: search
-        confidence: 0.6000000000000001
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: embeddings
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: weave
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.534
       signals:
@@ -190,7 +178,19 @@ blocks:
     headingText: RAG & Search
     tags: []
     suggestedTags:
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -207,22 +207,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: search
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: flat
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: inverted
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: index
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.51
       signals:
@@ -238,10 +238,14 @@ blocks:
     headingText: Governance & SEO
     tags: []
     suggestedTags:
-      - tag: governance
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: openstrand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.825
       signals:
@@ -255,26 +259,14 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strands
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: openstrand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: api
+      - tag: architecture
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: index
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: short
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.514
       signals:

@@ -30,19 +30,23 @@ blocks:
     headingText: Executable Code Blocks
     tags: []
     suggestedTags:
-      - tag: executable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -58,27 +62,7 @@ blocks:
     endLine: 5
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: code
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: executable
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: blocks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fabric
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.436
       signals:
@@ -91,7 +75,27 @@ blocks:
     endLine: 6
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.558
       signals:
@@ -107,14 +111,26 @@ blocks:
     headingText: Quick Start
     tags: []
     suggestedTags:
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: start
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -127,27 +143,7 @@ blocks:
     endLine: 11
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: after
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: language
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: executable
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.457
       signals:
@@ -161,10 +157,10 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: markdown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
@@ -173,14 +169,14 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: executable
-        confidence: 0.44999999999999996
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: exec
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.537
       signals:
@@ -194,18 +190,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: console
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hello
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fabric
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.535
       signals:
@@ -219,7 +223,27 @@ blocks:
     endLine: 16
     type: code
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.645
       signals:
@@ -232,27 +256,7 @@ blocks:
     endLine: 19
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: this
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: renders
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.338
       signals:
@@ -265,7 +269,27 @@ blocks:
     endLine: 20
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -281,14 +305,26 @@ blocks:
     headingText: Supported Languages
     tags: []
     suggestedTags:
-      - tag: supported
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: languages
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.756
       signals:
@@ -304,26 +340,26 @@ blocks:
     headingText: Client-Side Execution (Browser)
     tags: []
     suggestedTags:
-      - tag: client-side
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: execution
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: browser
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.44999999999999996
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.758
       signals:
@@ -337,22 +373,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: directly
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: languages
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: browser
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.504
       signals:
@@ -367,23 +407,23 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: worker
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.55
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: execution
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
       - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -400,26 +440,30 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.6000000000000001
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: numbers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
       - tag: code-execution
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: execution
-        confidence: 0.44999999999999996
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.634
       signals:
@@ -433,26 +477,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: javascript
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: typescript
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: user
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.55
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.62
       signals:
@@ -468,26 +512,26 @@ blocks:
     headingText: Backend Execution (Server)
     tags: []
     suggestedTags:
-      - tag: backend
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: server
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.44999999999999996
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: execution
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.724
       signals:
@@ -500,27 +544,7 @@ blocks:
     endLine: 63
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: require
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: running
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.414
       signals:
@@ -534,26 +558,26 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.6000000000000001
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: 'true'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.55
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: backend
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: server
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.617
       signals:
@@ -567,26 +591,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.7000000000000001
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: datetime
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: code-execution
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: import
+      - tag: javascript
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: backend
-        confidence: 0.44999999999999996
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.615
       signals:
@@ -602,18 +626,30 @@ blocks:
     headingText: External Playground APIs
     tags: []
     suggestedTags:
-      - tag: external
-        confidence: 0.6
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: playground
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: apis
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.746
       signals:
@@ -626,19 +662,7 @@ blocks:
     endLine: 86
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: services
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: external
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.48
       signals:
@@ -652,26 +676,26 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: '----------'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: play
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: graceful
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: playground
-        confidence: 0.55
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: services
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.657
       signals:
@@ -685,26 +709,30 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: python
-        confidence: 0.8
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: code-execution
-        confidence: 0.6000000000000001
+        reasoning: 'Vocabulary match: subjects'
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: main
+      - tag: code-execution
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: import
-        confidence: 0.44999999999999996
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: playground
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.662
       signals:
@@ -718,10 +746,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: '----------'
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -737,18 +781,26 @@ blocks:
     headingText: Regular vs Executable Blocks
     tags: []
     suggestedTags:
-      - tag: regular
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: executable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.719
       signals:
@@ -764,26 +816,26 @@ blocks:
     headingText: Regular Code Block (No Execution)
     tags: []
     suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: block
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: regular
-        confidence: 0.44999999999999996
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: blocks
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.72
       signals:
@@ -797,26 +849,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: code
-        confidence: 0.55
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
       - tag: javascript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: regular
-        confidence: 0.44999999999999996
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: blocks
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.508
       signals:
@@ -832,26 +884,26 @@ blocks:
     headingText: Executable Code Block
     tags: []
     suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: executable
-        confidence: 0.44999999999999996
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: blocks
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: block
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.682
       signals:
@@ -865,10 +917,10 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: greet
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
@@ -877,14 +929,14 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: name
+      - tag: typescript
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: console
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.624
       signals:
@@ -897,7 +949,27 @@ blocks:
     endLine: 132
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -913,10 +985,26 @@ blocks:
     headingText: Features
     tags: []
     suggestedTags:
-      - tag: features
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.719
       signals:
@@ -932,15 +1020,23 @@ blocks:
     headingText: Execution Status
     tags: []
     suggestedTags:
-      - tag: execution
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: status
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -956,27 +1052,7 @@ blocks:
     endLine: 138
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: shows
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: blocks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: block
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.43
       signals:
@@ -990,22 +1066,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: tutorial
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: execution
-        confidence: 0.55
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ready
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: execute
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.574
       signals:
@@ -1021,14 +1105,26 @@ blocks:
     headingText: Output Display
     tags: []
     suggestedTags:
-      - tag: output
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: display
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.772
       signals:
@@ -1041,27 +1137,7 @@ blocks:
     endLine: 146
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: code-execution
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: appears
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: block
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.388
       signals:
@@ -1074,19 +1150,7 @@ blocks:
     endLine: 150
     type: list
     tags: []
-    suggestedTags:
-      - tag: output
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: copy
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: button
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.479
       signals:
@@ -1102,14 +1166,26 @@ blocks:
     headingText: Offline Support
     tags: []
     suggestedTags:
-      - tag: offline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: support
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.77
       signals:
@@ -1123,14 +1199,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: shows
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.6
+        reasoning: 'Vocabulary match: subjects'
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: javascript
         confidence: 0.5
         source: existing
@@ -1155,7 +1239,27 @@ blocks:
     endLine: 158
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1171,14 +1275,26 @@ blocks:
     headingText: Best Practices
     tags: []
     suggestedTags:
-      - tag: best
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: practices
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.759
       signals:
@@ -1193,7 +1309,27 @@ blocks:
     headingLevel: 3
     headingText: Do
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.77
       signals:
@@ -1206,27 +1342,7 @@ blocks:
     endLine: 166
     type: list
     tags: []
-    suggestedTags:
-      - tag: examples
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: shows
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: exec
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: self-contained
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.427
       signals:
@@ -1241,7 +1357,27 @@ blocks:
     headingLevel: 3
     headingText: Don't
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.755
       signals:
@@ -1254,23 +1390,7 @@ blocks:
     endLine: 172
     type: list
     tags: []
-    suggestedTags:
-      - tag: code-execution
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: that
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.424
       signals:
@@ -1286,26 +1406,26 @@ blocks:
     headingText: 'Example: Good Executable Block'
     tags: []
     suggestedTags:
-      - tag: example
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: good
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: executable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: examples
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: exec
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.84
       signals:
@@ -1319,10 +1439,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: fibonacci
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
         confidence: 0.5
         source: existing
@@ -1331,14 +1455,14 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: exec
-        confidence: 0.44999999999999996
+      - tag: typescript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: self-contained
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.645
       signals:
@@ -1351,7 +1475,27 @@ blocks:
     endLine: 189
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1367,10 +1511,26 @@ blocks:
     headingText: Security
     tags: []
     suggestedTags:
-      - tag: security
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.719
       signals:
@@ -1386,15 +1546,23 @@ blocks:
     headingText: Client-Side (JavaScript/TypeScript)
     tags: []
     suggestedTags:
-      - tag: client-side
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: javascript
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1411,18 +1579,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: access
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: runs
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sandboxed
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.63
       signals:
@@ -1438,14 +1614,22 @@ blocks:
     headingText: Backend (Python/Bash)
     tags: []
     suggestedTags:
-      - tag: backend
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: bash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: python
         confidence: 0.5
         source: existing
@@ -1463,18 +1647,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: feature-flagged
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: disabled
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: default
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.62
       signals:
@@ -1490,18 +1682,30 @@ blocks:
     headingText: External APIs (Go/Rust)
     tags: []
     suggestedTags:
-      - tag: external
-        confidence: 0.6
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: apis
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: rust
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.713
       signals:
@@ -1515,22 +1719,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: uses
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: official
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: playground
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: access
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.568
       signals:
@@ -1543,7 +1751,27 @@ blocks:
     endLine: 213
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1559,19 +1787,23 @@ blocks:
     headingText: Enabling Backend Execution
     tags: []
     suggestedTags:
-      - tag: enabling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: backend
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: execution
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1587,27 +1819,7 @@ blocks:
     endLine: 218
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: enable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: bash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: python
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: execution
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.496
       signals:
@@ -1621,22 +1833,22 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: execution
-        confidence: 0.65
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: enable
-        confidence: 0.65
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: 'true'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: bash
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: python
         confidence: 0.5
         source: existing
@@ -1654,22 +1866,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: then
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: restart
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: backend
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.528
       signals:
@@ -1683,7 +1899,27 @@ blocks:
     endLine: 228
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1699,14 +1935,26 @@ blocks:
     headingText: Output Persistence
     tags: []
     suggestedTags:
-      - tag: output
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: persistence
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.727
       signals:
@@ -1719,27 +1967,7 @@ blocks:
     endLine: 235
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: then
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: output
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: code-execution
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: results
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.409
       signals:
@@ -1753,14 +1981,26 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: markdown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: output
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.502
       signals:
@@ -1774,14 +2014,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: hello
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fabric
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.567
       signals:
@@ -1796,15 +2048,23 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: exec-meta
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: lang
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1821,14 +2081,26 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: allows
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: tutorial
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.571
       signals:
@@ -1843,18 +2115,26 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: share
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: executed
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: results
-        confidence: 0.44999999999999996
+      - tag: tutorial
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: code-execution
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: javascript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: typescript
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.605
       signals:

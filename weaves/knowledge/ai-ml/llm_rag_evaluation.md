@@ -37,19 +37,39 @@ blocks:
     headingText: EVALS.md — LLM & RAG Evaluation Playbook
     tags: []
     suggestedTags:
-      - tag: evals
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: playbook
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -65,23 +85,7 @@ blocks:
     endLine: 4
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: practical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: research-grounded
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: guide
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.469
       signals:
@@ -94,7 +98,39 @@ blocks:
     endLine: 5
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.558
       signals:
@@ -110,14 +146,38 @@ blocks:
     headingText: Table of Contents
     tags: []
     suggestedTags:
-      - tag: table
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: contents
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.721
       signals:
@@ -131,15 +191,43 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: evaluation
-        confidence: 0.75
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: leaderboard
-        confidence: 0.6000000000000001
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -155,7 +243,39 @@ blocks:
     endLine: 24
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -171,14 +291,38 @@ blocks:
     headingText: 1. Goals & Philosophy
     tags: []
     suggestedTags:
-      - tag: goals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: philosophy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.716
       signals:
@@ -194,10 +338,38 @@ blocks:
     headingText: Goals
     tags: []
     suggestedTags:
-      - tag: goals
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.623
       signals:
@@ -211,22 +383,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: langchain
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: catch
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: regressions
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: before
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.547
       signals:
@@ -242,14 +434,38 @@ blocks:
     headingText: Non-Goals
     tags: []
     suggestedTags:
-      - tag: non-goals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: goals
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.765
       signals:
@@ -263,26 +479,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: leaderboard
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: before
-        confidence: 0.44999999999999996
+      - tag: evaluation
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: public
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.546
       signals:
@@ -298,14 +526,38 @@ blocks:
     headingText: Core Principle
     tags: []
     suggestedTags:
-      - tag: core
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: principle
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.808
       signals:
@@ -319,11 +571,31 @@ blocks:
     type: blockquote
     tags: []
     suggestedTags:
-      - tag: shortlist
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -331,14 +603,6 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: public
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.585
       signals:
@@ -351,27 +615,7 @@ blocks:
     endLine: 46
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-1
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: ref-2
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: narrow
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: failure
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: helm
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.467
       signals:
@@ -384,7 +628,39 @@ blocks:
     endLine: 47
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -400,18 +676,38 @@ blocks:
     headingText: 2. Understanding Leaderboards
     tags: []
     suggestedTags:
-      - tag: understanding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.745
       signals:
@@ -427,14 +723,38 @@ blocks:
     headingText: Interpretation Checklist
     tags: []
     suggestedTags:
-      - tag: interpretation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: checklist
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.81
       signals:
@@ -448,22 +768,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: before
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: trusting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.543
       signals:
@@ -482,22 +818,47 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-3
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-4
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
       - tag: ref-5
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 6
       - tag: ref-6
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 7
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.552
       signals:
@@ -513,14 +874,38 @@ blocks:
     headingText: Common Pitfalls
     tags: []
     suggestedTags:
-      - tag: common
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pitfalls
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.81
       signals:
@@ -534,15 +919,23 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: bias
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: models
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -551,6 +944,14 @@ blocks:
         source: existing
         reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -571,18 +972,39 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: illusion
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 1
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.508
       signals:
@@ -598,7 +1020,39 @@ blocks:
     endLine: 73
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -614,18 +1068,38 @@ blocks:
     headingText: 3. Public Benchmarks Reference
     tags: []
     suggestedTags:
-      - tag: public
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmarks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.761
       signals:
@@ -638,19 +1112,7 @@ blocks:
     endLine: 78
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: screening
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: candidates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.497
       signals:
@@ -666,22 +1128,38 @@ blocks:
     headingText: A. Human Preference & Chat Quality
     tags: []
     suggestedTags:
-      - tag: human
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: preference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: chat
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reference
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.792
       signals:
@@ -695,22 +1173,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: care
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: about
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: candidates
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.511
       signals:
@@ -728,22 +1222,45 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-3
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-8
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: arena
-        confidence: 0.6
+        lineNumber: 5
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: candidates
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.587
       signals:
@@ -759,14 +1276,38 @@ blocks:
     headingText: B. Instruction Following
     tags: []
     suggestedTags:
-      - tag: instruction
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: following
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.797
       signals:
@@ -779,27 +1320,7 @@ blocks:
     endLine: 91
     type: list
     tags: []
-    suggestedTags:
-      - tag: need
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: quick
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: instruction
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: following
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.463
       signals:
@@ -817,22 +1338,44 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-10
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: benchmark
-        confidence: 0.6
+        lineNumber: 3
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: description
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: caveat
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.606
       signals:
@@ -848,14 +1391,38 @@ blocks:
     headingText: C. Multi-Metric Transparency
     tags: []
     suggestedTags:
-      - tag: multi-metric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: transparency
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.791
       signals:
@@ -869,18 +1436,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: want
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: breadth
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.557
       signals:
@@ -898,19 +1489,41 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-12
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: '-----------'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.55
+        lineNumber: 3
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -929,22 +1542,38 @@ blocks:
     headingText: D. Open-Model Standard Benchmarks
     tags: []
     suggestedTags:
-      - tag: open-model
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: standard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmarks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.805
       signals:
@@ -957,27 +1586,7 @@ blocks:
     endLine: 107
     type: list
     tags: []
-    suggestedTags:
-      - tag: comparing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: open-weights
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: benchmark
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: benchmarks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.486
       signals:
@@ -995,20 +1604,43 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-13
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-14
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: '-----------'
-        confidence: 0.65
+        lineNumber: 4
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1026,18 +1658,46 @@ blocks:
     headingText: E. Embeddings & Retrieval (Critical for RAG)
     tags: []
     suggestedTags:
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: embeddings
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: retrieval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: critical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.715
       signals:
@@ -1051,22 +1711,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: choosing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: embedding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: embeddings
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.566
       signals:
@@ -1084,22 +1760,44 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-16
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: benchmark
-        confidence: 0.55
+        lineNumber: 3
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: benchmarks
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: '-----------'
-        confidence: 0.55
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.62
       signals:
@@ -1115,18 +1813,38 @@ blocks:
     headingText: F. Tool Use & Function Calling
     tags: []
     suggestedTags:
-      - tag: tool
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: function
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: calling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.777
       signals:
@@ -1140,22 +1858,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: your
-        confidence: 0.6
+      - tag: api
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: system
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: tool
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.509
       signals:
@@ -1173,19 +1911,41 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-18
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: description
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '-----------'
-        confidence: 0.55
+        lineNumber: 3
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1204,18 +1964,38 @@ blocks:
     headingText: G. Software Engineering & Coding Agents
     tags: []
     suggestedTags:
-      - tag: software
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: engineering
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.803
       signals:
@@ -1229,22 +2009,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: need
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: realistic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: when
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.531
       signals:
@@ -1262,22 +2058,46 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-20
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-21
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
       - tag: ref-22
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: swe-bench
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 6
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.561
       signals:
@@ -1293,18 +2113,38 @@ blocks:
     headingText: H. Serving Performance & Systems
     tags: []
     suggestedTags:
-      - tag: serving
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: performance
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: systems
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.788
       signals:
@@ -1318,18 +2158,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: latency
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: throughput
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.585
       signals:
@@ -1347,22 +2207,44 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-24
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: inference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: description
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 3
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.594
       signals:
@@ -1375,7 +2257,39 @@ blocks:
     endLine: 149
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1391,15 +2305,35 @@ blocks:
     headingText: 4. Evaluation Frameworks & Tooling
     tags: []
     suggestedTags:
-      - tag: frameworks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tooling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1418,18 +2352,38 @@ blocks:
     headingText: A. Standardized Benchmark Runners
     tags: []
     suggestedTags:
-      - tag: standardized
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: runners
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.808
       signals:
@@ -1447,20 +2401,44 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-25
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-26
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
       - tag: ref-27
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 6
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1478,19 +2456,39 @@ blocks:
     headingText: B. Prompt & Chain Regression Testing (CI-Friendly)
     tags: []
     suggestedTags:
-      - tag: prompt
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: chain
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: regression
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1507,19 +2505,35 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: unit
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tests
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: behavior
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1541,22 +2555,45 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-29
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-30
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: evaluation
-        confidence: 0.6000000000000001
+        lineNumber: 5
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: eval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.534
       signals:
@@ -1569,27 +2606,7 @@ blocks:
     endLine: 172
     type: list
     tags: []
-    suggestedTags:
-      - tag: ref-31
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: recommendation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: create
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.448
       signals:
@@ -1605,22 +2622,42 @@ blocks:
     headingText: C. RAG-Specific Evaluation & Observability
     tags: []
     suggestedTags:
-      - tag: rag-specific
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: observability
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: eval
-        confidence: 0.44999999999999996
+      - tag: https
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.707
       signals:
@@ -1638,22 +2675,50 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-33
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-34
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-35
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-36
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
+      - tag: ref-37
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 5
+      - tag: ref-38
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 6
+      - tag: ref-39
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 6
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.511
       signals:
@@ -1666,27 +2731,7 @@ blocks:
     endLine: 184
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-40
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: academic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: grounding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: eval
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.385
       signals:
@@ -1702,14 +2747,38 @@ blocks:
     headingText: D. Vendor-Native Tooling
     tags: []
     suggestedTags:
-      - tag: vendor-native
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tooling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.796
       signals:
@@ -1727,22 +2796,49 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-41
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-42
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-43
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
       - tag: ref-44
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 5
+      - tag: ref-45
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 6
+      - tag: ref-46
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 6
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.557
       signals:
@@ -1755,7 +2851,39 @@ blocks:
     endLine: 194
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -1772,21 +2900,41 @@ blocks:
     tags: []
     suggestedTags:
       - tag: design
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: eval
-        confidence: 0.44999999999999996
+      - tag: https
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.733
       signals:
@@ -1802,18 +2950,38 @@ blocks:
     headingText: 'Step 1: Define Capability Slices'
     tags: []
     suggestedTags:
-      - tag: step
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: define
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: capability
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.824
       signals:
@@ -1826,23 +2994,7 @@ blocks:
     endLine: 201
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: write
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: down
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: what
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: capability
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.481
       signals:
@@ -1856,26 +3008,46 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: must
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: step
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: correct
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: validity
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: capability
-        confidence: 0.44999999999999996
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.632
       signals:
@@ -1888,27 +3060,7 @@ blocks:
     endLine: 212
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-11
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: scenario
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: helm
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.466
       signals:
@@ -1924,18 +3076,38 @@ blocks:
     headingText: 'Step 2: Build an Internal Golden Set (Version It)'
     tags: []
     suggestedTags:
-      - tag: build
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: internal
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: step
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.818
       signals:
@@ -1949,18 +3121,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: create
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dataset
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.559
       signals:
@@ -1975,18 +3167,46 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: inputs
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: prompt
-        confidence: 0.6
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: context
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.587
       signals:
@@ -2000,18 +3220,42 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: maintain
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: three
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: splits
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.597
       signals:
@@ -2026,22 +3270,38 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: split
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: purpose
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '-------'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: splits
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.658
       signals:
@@ -2059,19 +3319,36 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mirrors
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: langsmith
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 1
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2091,18 +3368,42 @@ blocks:
     headingText: 'Step 3: Choose Metrics That Match Failure Cost'
     tags: []
     suggestedTags:
-      - tag: step
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: choose
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metrics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.834
       signals:
@@ -2116,18 +3417,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: combine
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deterministic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: checks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.507
       signals:
@@ -2144,10 +3465,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: '-------'
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2163,19 +3512,39 @@ blocks:
     headingText: 6. Repo Structure & Test Case Schema
     tags: []
     suggestedTags:
-      - tag: repo
-        confidence: 0.6
+      - tag: schema
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structure
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: test
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2194,14 +3563,38 @@ blocks:
     headingText: Recommended Layout
     tags: []
     suggestedTags:
-      - tag: recommended
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: layout
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.809
       signals:
@@ -2215,22 +3608,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: yaml
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: repo
-        confidence: 0.55
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: golden
-        confidence: 0.44999999999999996
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: jsonl
-        confidence: 0.44999999999999996
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.658
       signals:
@@ -2246,26 +3655,42 @@ blocks:
     headingText: Test Case Schema (JSONL)
     tags: []
     suggestedTags:
-      - tag: case
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: schema
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: test
-        confidence: 0.44999999999999996
+      - tag: hugging-face
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: jsonl
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.767
       signals:
@@ -2278,27 +3703,7 @@ blocks:
     endLine: 265
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: each
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: line
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pytest
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: test
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: case
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.479
       signals:
@@ -2316,22 +3721,39 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: grounded_qa
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: yaml
-        confidence: 0.44999999999999996
+        lineNumber: 6
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: jsonl
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: json
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.742
       signals:
@@ -2344,7 +3766,39 @@ blocks:
     endLine: 284
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2360,18 +3814,38 @@ blocks:
     headingText: 7. Metrics & Grading Strategy
     tags: []
     suggestedTags:
-      - tag: metrics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: grading
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strategy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.728
       signals:
@@ -2387,11 +3861,35 @@ blocks:
     headingText: Evaluation Pyramid
     tags: []
     suggestedTags:
-      - tag: pyramid
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -2408,18 +3906,38 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: level
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: runs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.727
       signals:
@@ -2433,22 +3951,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: metrics
-        confidence: 0.55
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: runs
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: deterministic
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: checks
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.609
       signals:
@@ -2464,18 +3998,38 @@ blocks:
     headingText: Deterministic Checks (CI Required)
     tags: []
     suggestedTags:
-      - tag: required
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: deterministic
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: checks
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.793
       signals:
@@ -2489,18 +4043,42 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: these
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.511
       signals:
@@ -2515,22 +4093,46 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: json
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: schema
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: required
-        confidence: 0.55
+        reasoning: 'Vocabulary match: topics'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: checks
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.666
       signals:
@@ -2543,27 +4145,7 @@ blocks:
     endLine: 308
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-29
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: ref-30
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: frameworks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: like
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: promptfoo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.47
       signals:
@@ -2579,18 +4161,38 @@ blocks:
     headingText: Model-Based Scoring (LLM-as-a-Judge)
     tags: []
     suggestedTags:
-      - tag: model-based
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: scoring
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: llm-as-a-judge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.776
       signals:
@@ -2603,27 +4205,7 @@ blocks:
     endLine: 312
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-3
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: carefully
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: these
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ref-30
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.468
       signals:
@@ -2637,26 +4219,42 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: avoid
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: judge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: llm-as-a-judge
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: promptfoo
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: mitigation
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.614
       signals:
@@ -2669,27 +4267,7 @@ blocks:
     endLine: 325
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: ref-41
-        confidence: 1
-        source: inline
-        reasoning: Explicit inline hashtag in content
-      - tag: high-stakes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: releases
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: multiple
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: judge
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.481
       signals:
@@ -2705,18 +4283,38 @@ blocks:
     headingText: Human Review (Calibration & Audits)
     tags: []
     suggestedTags:
-      - tag: human
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: review
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: calibration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.774
       signals:
@@ -2729,19 +4327,7 @@ blocks:
     endLine: 329
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: maintain
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: monthly
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: calibration
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.493
       signals:
@@ -2755,22 +4341,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: labels
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: anchor
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: releases
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: human
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.582
       signals:
@@ -2783,7 +4389,39 @@ blocks:
     endLine: 334
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -2799,22 +4437,38 @@ blocks:
     headingText: 8. CI/CD Policy & Release Gates
     tags: []
     suggestedTags:
-      - tag: policy
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: release
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: releases
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.71
       signals:
@@ -2830,14 +4484,38 @@ blocks:
     headingText: PR Checks (Fast)
     tags: []
     suggestedTags:
-      - tag: checks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fast
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.793
       signals:
@@ -2851,10 +4529,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: eval-smoke
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.644
       signals:
@@ -2869,22 +4575,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: cases
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: across
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: core
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: checks
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.546
       signals:
@@ -2898,22 +4620,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: fail
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hard-gate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fails
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: core
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.574
       signals:
@@ -2929,18 +4671,42 @@ blocks:
     headingText: Merge to Main (Full Regression)
     tags: []
     suggestedTags:
-      - tag: merge
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: main
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: full
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.801
       signals:
@@ -2953,19 +4719,7 @@ blocks:
     endLine: 352
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: eval-regression
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: regression
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: full
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.413
       signals:
@@ -2979,22 +4733,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: regression
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: publish
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: report
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.615
       signals:
@@ -3010,18 +4780,38 @@ blocks:
     headingText: Release Candidate (Holdout Only)
     tags: []
     suggestedTags:
-      - tag: release
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: candidate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: holdout
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.834
       signals:
@@ -3034,19 +4824,7 @@ blocks:
     endLine: 361
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: once
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: holdout
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.461
       signals:
@@ -3060,18 +4838,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: human
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: review
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: required
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.611
       signals:
@@ -3087,18 +4889,38 @@ blocks:
     headingText: Example Gate Configuration
     tags: []
     suggestedTags:
-      - tag: example
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: configuration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.828
       signals:
@@ -3112,14 +4934,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: 'true'
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gate
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.713
       signals:
@@ -3135,14 +4989,38 @@ blocks:
     headingText: Reporting Requirements
     tags: []
     suggestedTags:
-      - tag: reporting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: requirements
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.808
       signals:
@@ -3156,26 +5034,42 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: every
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: eval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: must
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: reporting
-        confidence: 0.44999999999999996
+      - tag: https
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.511
       signals:
@@ -3190,26 +5084,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: hash
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gate
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: configuration
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: config
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: prompt
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.647
       signals:
@@ -3223,22 +5129,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: store
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: under
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: eval
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.714
       signals:
@@ -3252,7 +5174,39 @@ blocks:
     endLine: 400
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3268,18 +5222,42 @@ blocks:
     headingText: 9. RAG-Specific Evaluation
     tags: []
     suggestedTags:
-      - tag: rag-specific
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: eval
-        confidence: 0.44999999999999996
+      - tag: https
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.646
       signals:
@@ -3292,27 +5270,7 @@ blocks:
     endLine: 405
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: systems
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fail
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: multiple
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: eval
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: rag-specific
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.481
       signals:
@@ -3328,14 +5286,38 @@ blocks:
     headingText: Component Metrics
     tags: []
     suggestedTags:
-      - tag: component
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metrics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.794
       signals:
@@ -3353,22 +5335,44 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-34
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: context
-        confidence: 0.6
+        lineNumber: 5
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: question
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recall
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.595
       signals:
@@ -3388,14 +5392,43 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: triad
-        confidence: 0.6
+        lineNumber: 1
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: rag-specific
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.658
       signals:
@@ -3409,22 +5442,38 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: context
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: answer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: relevance
+      - tag: python
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: question
-        confidence: 0.44999999999999996
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.654
       signals:
@@ -3440,14 +5489,38 @@ blocks:
     headingText: Practical Approach
     tags: []
     suggestedTags:
-      - tag: practical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: approach
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.808
       signals:
@@ -3461,18 +5534,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: label
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: retrieval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: relevance
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.527
       signals:
@@ -3486,22 +5579,46 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: with
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: label
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: start
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: small
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.583
       signals:
@@ -3519,18 +5636,46 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 2
       - tag: ref-34
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-36
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-38
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
+      - tag: rag
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.521
       signals:
@@ -3543,7 +5688,39 @@ blocks:
     endLine: 448
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3559,15 +5736,35 @@ blocks:
     headingText: 10. Tool Use & Agent Evaluation
     tags: []
     suggestedTags:
-      - tag: tool
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: agent
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3586,19 +5783,35 @@ blocks:
     headingText: 'Principle: Prefer Executable Evaluation'
     tags: []
     suggestedTags:
-      - tag: principle
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: prefer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: executable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3615,18 +5828,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: outputs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: meant
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.51
       signals:
@@ -3641,26 +5874,42 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: approach
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '----------'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: tool
-        confidence: 0.44999999999999996
+      - tag: hugging-face
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: when
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.613
       signals:
@@ -3676,10 +5925,38 @@ blocks:
     headingText: Benchmarks
     tags: []
     suggestedTags:
-      - tag: benchmarks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.76
       signals:
@@ -3697,19 +5974,42 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 1
       - tag: ref-19
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 2
       - tag: ref-20
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: swe-bench
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 3
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3728,14 +6028,38 @@ blocks:
     headingText: What to Check
     tags: []
     suggestedTags:
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: check
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -3749,18 +6073,46 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: 'true'
-        confidence: 0.6
+      - tag: schema
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: check
-        confidence: 0.55
+        reasoning: 'Vocabulary match: topics'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: tool
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.782
       signals:
@@ -3773,7 +6125,39 @@ blocks:
     endLine: 484
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -3789,14 +6173,38 @@ blocks:
     headingText: 11. Production Observability
     tags: []
     suggestedTags:
-      - tag: production
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: observability
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.742
       signals:
@@ -3809,27 +6217,7 @@ blocks:
     endLine: 489
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: offline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: catch
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tool
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: production
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.475
       signals:
@@ -3845,14 +6233,38 @@ blocks:
     headingText: The Production Loop
     tags: []
     suggestedTags:
-      - tag: loop
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: production
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.787
       signals:
@@ -3866,23 +6278,39 @@ blocks:
     type: code
     tags: []
     suggestedTags:
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
       - tag: python
-        confidence: 0.8
-        source: nlp
-        reasoning: Detected programming language
-      - tag: tracing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sampling
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: eval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -3901,14 +6329,38 @@ blocks:
     headingText: What to Instrument
     tags: []
     suggestedTags:
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: instrument
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.764
       signals:
@@ -3922,18 +6374,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: inputs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: outputs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tool
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.637
       signals:
@@ -3949,14 +6421,38 @@ blocks:
     headingText: Tool Options
     tags: []
     suggestedTags:
-      - tag: options
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tool
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.762
       signals:
@@ -3974,22 +6470,45 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-45
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 4
       - tag: ref-38
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: evaluation
-        confidence: 0.6000000000000001
+        lineNumber: 5
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: tracing
-        confidence: 0.55
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.544
       signals:
@@ -4005,10 +6524,38 @@ blocks:
     headingText: Alerting
     tags: []
     suggestedTags:
-      - tag: alerting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.768
       signals:
@@ -4022,10 +6569,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: alerts
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.575
       signals:
@@ -4040,18 +6615,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: drift
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: judge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: scores
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.634
       signals:
@@ -4064,7 +6663,39 @@ blocks:
     endLine: 529
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -4080,18 +6711,38 @@ blocks:
     headingText: 12. Security & Adversarial Testing
     tags: []
     suggestedTags:
-      - tag: security
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: adversarial
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: testing
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.735
       signals:
@@ -4107,18 +6758,38 @@ blocks:
     headingText: Minimum Bar (Hard Stop for Release)
     tags: []
     suggestedTags:
-      - tag: minimum
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: stop
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.801
       signals:
@@ -4132,26 +6803,42 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: attempts
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: testing
-        confidence: 0.44999999999999996
+      - tag: hugging-face
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: test
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: category
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.646
       signals:
@@ -4165,18 +6852,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: failure
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hard
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: stop
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.513
       signals:
@@ -4192,14 +6903,38 @@ blocks:
     headingText: Recommended Tools
     tags: []
     suggestedTags:
-      - tag: recommended
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tools
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.806
       signals:
@@ -4217,19 +6952,36 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
-      - tag: promptfoo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: red-teaming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mode
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        lineNumber: 1
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4245,7 +6997,39 @@ blocks:
     endLine: 551
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -4261,14 +7045,38 @@ blocks:
     headingText: 13. Quick-Start Blueprint
     tags: []
     suggestedTags:
-      - tag: quick-start
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blueprint
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.747
       signals:
@@ -4284,15 +7092,35 @@ blocks:
     headingText: Evaluation Stack (One Reasonable Default)
     tags: []
     suggestedTags:
-      - tag: stack
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: reasonable
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4313,22 +7141,52 @@ blocks:
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-9
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-15
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-17
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
       - tag: ref-19
         confidence: 1
         source: inline
         reasoning: Explicit inline hashtag in content
+        lineNumber: 3
+      - tag: ref-23
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 3
+      - tag: ref-29
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 4
+      - tag: ref-30
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 4
+      - tag: ref-32
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 5
+      - tag: ref-36
+        confidence: 1
+        source: inline
+        reasoning: Explicit inline hashtag in content
+        lineNumber: 6
     worthiness:
       score: 0.547
       signals:
@@ -4344,14 +7202,38 @@ blocks:
     headingText: Decision Rules
     tags: []
     suggestedTags:
-      - tag: decision
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: rules
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.809
       signals:
@@ -4365,18 +7247,38 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: choose
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: candidate
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: that
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.56
       signals:
@@ -4391,18 +7293,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: passes
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: gates
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.639
       signals:
@@ -4416,18 +7342,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: never
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ship
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: model
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.516
       signals:
@@ -4443,18 +7389,38 @@ blocks:
     headingText: Adding New Tests (Developer Workflow)
     tags: []
     suggestedTags:
-      - tag: adding
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tests
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: developer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.849
       signals:
@@ -4468,26 +7434,42 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: adding
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: golden
-        confidence: 0.5
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: jsonl
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: model
-        confidence: 0.44999999999999996
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: developer
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.617
       signals:
@@ -4503,18 +7485,38 @@ blocks:
     headingText: Example Make Targets
     tags: []
     suggestedTags:
-      - tag: example
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: make
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: targets
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.829
       signals:
@@ -4529,22 +7531,34 @@ blocks:
     tags: []
     suggestedTags:
       - tag: python
-        confidence: 0.75
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: golden
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: jsonl
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: evals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4560,7 +7574,39 @@ blocks:
     endLine: 605
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -4576,10 +7622,38 @@ blocks:
     headingText: 14. References
     tags: []
     suggestedTags:
-      - tag: references
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.719
       signals:
@@ -4595,14 +7669,34 @@ blocks:
     headingText: Leaderboards & Benchmarks
     tags: []
     suggestedTags:
-      - tag: leaderboards
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmarks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: leaderboard
         confidence: 0.5
         source: existing
@@ -4620,22 +7714,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: lmsys
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-1
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: chatbot
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.542
       signals:
@@ -4648,23 +7758,7 @@ blocks:
     endLine: 613
     type: html
     tags: []
-    suggestedTags:
-      - tag: leaderboard
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: leaderboards
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ref-2
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: illusion
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.486
       signals:
@@ -4677,19 +7771,7 @@ blocks:
     endLine: 615
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-3
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mt-bench
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: llm-as-a-judge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.429
       signals:
@@ -4703,23 +7785,35 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: hugging-face
-        confidence: 0.7000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-4
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hugging
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: face
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4735,19 +7829,7 @@ blocks:
     endLine: 619
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-5
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: analysis
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.468
       signals:
@@ -4760,23 +7842,7 @@ blocks:
     endLine: 621
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-6
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: statistical
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: methods
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: leaderboard
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.44
       signals:
@@ -4790,10 +7856,26 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: lmsys
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
@@ -4806,10 +7888,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-7
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.532
       signals:
@@ -4822,27 +7904,7 @@ blocks:
     endLine: 625
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-8
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: arena-hard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pipeline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: lmsys
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.436
       signals:
@@ -4856,14 +7918,30 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-9
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: alpacaeval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
@@ -4885,18 +7963,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-10
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: length-controlled
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: alpacaeval
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.514
       signals:
@@ -4910,19 +8008,35 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-11
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: holistic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -4938,27 +8052,7 @@ blocks:
     endLine: 633
     type: html
     tags: []
-    suggestedTags:
-      - tag: helm
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: stanford
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: crfm
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: benchmark
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.492
       signals:
@@ -4972,26 +8066,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: hugging-face
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: leaderboard
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-13
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: hugging
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: face
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.637
       signals:
@@ -5005,26 +8111,42 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: evaluation
-        confidence: 0.6000000000000001
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: eleutherai
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-14
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.625
       signals:
@@ -5038,22 +8160,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-15
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mteb
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: massive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: benchmark
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.615
       signals:
@@ -5067,26 +8205,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: hugging-face
-        confidence: 0.7000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: leaderboard
-        confidence: 0.6000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: hugging
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: face
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: mteb
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.604
       signals:
@@ -5100,18 +8250,34 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-17
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: berkeley
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: function
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: leaderboard
         confidence: 0.5
         source: existing
@@ -5128,27 +8294,7 @@ blocks:
     endLine: 645
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-18
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: bfcl
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ast-based
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: function
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.433
       signals:
@@ -5162,19 +8308,35 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-19
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: swe-bench
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluating
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5191,18 +8353,42 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-20
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: verified
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: swe-bench
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.54
       signals:
@@ -5216,18 +8402,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-21
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: livecodebench
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: continuously
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.563
       signals:
@@ -5241,10 +8447,30 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: livebench
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
@@ -5253,14 +8479,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-22
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evolving
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.504
       signals:
@@ -5273,23 +8495,7 @@ blocks:
     endLine: 655
     type: html
     tags: []
-    suggestedTags:
-      - tag: mlcommons
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: ref-23
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mlperf
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.496
       signals:
@@ -5302,23 +8508,7 @@ blocks:
     endLine: 657
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-24
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: inference
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: mlcommons
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: mlperf
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.384
       signals:
@@ -5334,15 +8524,35 @@ blocks:
     headingText: Evaluation Frameworks & Tools
     tags: []
     suggestedTags:
-      - tag: frameworks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tools
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5359,14 +8569,22 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: hugging-face
-        confidence: 0.7000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: lighteval
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
@@ -5376,6 +8594,10 @@ blocks:
         source: existing
         reasoning: Propagated from document tags
       - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5392,14 +8614,26 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: opencompass
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
@@ -5408,10 +8642,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: mlcommons
-        confidence: 0.44999999999999996
+      - tag: leaderboard
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.597
       signals:
@@ -5425,26 +8659,38 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: helm
-        confidence: 0.6000000000000001
+      - tag: python
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: github
-        confidence: 0.55
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: mlcommons
-        confidence: 0.44999999999999996
+      - tag: leaderboard
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frameworks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.522
       signals:
@@ -5458,43 +8704,26 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: openai
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evals
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: opencompass
-        confidence: 0.44999999999999996
+      - tag: pytest
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-    worthiness:
-      score: 0.56
-      signals:
-        topicShift: 0.484
-        entityDensity: 1
-        semanticNovelty: 0.657
-        structuralImportance: 0.235
-  - id: block-669
-    line: 669
-    endLine: 669
-    type: html
-    tags: []
-    suggestedTags:
-      - tag: promptfoo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
@@ -5507,10 +8736,23 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-29
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+    worthiness:
+      score: 0.56
+      signals:
+        topicShift: 0.484
+        entityDensity: 1
+        semanticNovelty: 0.657
+        structuralImportance: 0.235
+  - id: block-669
+    line: 669
+    endLine: 669
+    type: html
+    tags: []
+    suggestedTags: []
     worthiness:
       score: 0.47
       signals:
@@ -5524,15 +8766,23 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: deepeval
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
       - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5541,6 +8791,14 @@ blocks:
         source: existing
         reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5556,27 +8814,7 @@ blocks:
     endLine: 673
     type: html
     tags: []
-    suggestedTags:
-      - tag: evaluation
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: openai
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: opencompass
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ref-31
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.497
       signals:
@@ -5592,11 +8830,39 @@ blocks:
     headingText: RAG Evaluation & Observability
     tags: []
     suggestedTags:
-      - tag: observability
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5612,27 +8878,7 @@ blocks:
     endLine: 677
     type: html
     tags: []
-    suggestedTags:
-      - tag: ragas
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: ref-32
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: component-wise
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.441
       signals:
@@ -5645,19 +8891,7 @@ blocks:
     endLine: 679
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-33
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metrics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: ragas
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.422
       signals:
@@ -5671,26 +8905,42 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: trulens
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ragas
-        confidence: 0.44999999999999996
+      - tag: leaderboard
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ref-34
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: triad
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.594
       signals:
@@ -5703,23 +8953,7 @@ blocks:
     endLine: 683
     type: html
     tags: []
-    suggestedTags:
-      - tag: relevance
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: metrics
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: trulens
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: ref-35
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.461
       signals:
@@ -5733,14 +8967,26 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: phoenix
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: helm
         confidence: 0.5
         source: existing
@@ -5750,6 +8996,10 @@ blocks:
         source: existing
         reasoning: Propagated from document tags
       - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5765,23 +9015,7 @@ blocks:
     endLine: 687
     type: html
     tags: []
-    suggestedTags:
-      - tag: phoenix
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: ref-37
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: documentation
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.435
       signals:
@@ -5794,27 +9028,7 @@ blocks:
     endLine: 689
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-38
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: langsmith
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: langchain
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.452
       signals:
@@ -5827,19 +9041,7 @@ blocks:
     endLine: 691
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-39
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: langsmith
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.434
       signals:
@@ -5853,15 +9055,35 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: ref-40
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: retrieval-augmented
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -5880,14 +9102,38 @@ blocks:
     headingText: Vendor Documentation
     tags: []
     suggestedTags:
-      - tag: vendor
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: documentation
-        confidence: 0.44999999999999996
+      - tag: python
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.803
       signals:
@@ -5901,22 +9147,42 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: openai
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: graders
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: https
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-41
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.56
       signals:
@@ -5930,10 +9196,26 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: anthropic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
@@ -5942,14 +9224,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-42
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: claude
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.537
       signals:
@@ -5963,10 +9241,30 @@ blocks:
     type: html
     tags: []
     suggestedTags:
-      - tag: google
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: evaluation
         confidence: 0.5
         source: existing
@@ -5975,14 +9273,10 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: ref-43
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: vertex
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.512
       signals:
@@ -5995,27 +9289,7 @@ blocks:
     endLine: 703
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-44
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: documentation
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: google
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: vertex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.414
       signals:
@@ -6028,27 +9302,7 @@ blocks:
     endLine: 705
     type: html
     tags: []
-    suggestedTags:
-      - tag: weave
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: https
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: ref-45
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weights
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.488
       signals:
@@ -6061,19 +9315,7 @@ blocks:
     endLine: 707
     type: html
     tags: []
-    suggestedTags:
-      - tag: ref-46
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: evaluation
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: weave
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.368
       signals:
@@ -6086,7 +9328,39 @@ blocks:
     endLine: 709
     type: list
     tags: []
-    suggestedTags: []
+    suggestedTags:
+      - tag: python
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: pytest
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: hugging-face
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: langchain
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: helm
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: evaluation
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: https
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: leaderboard
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.54
       signals:
@@ -6099,19 +9373,7 @@ blocks:
     endLine: 711
     type: list
     tags: []
-    suggestedTags:
-      - tag: '2025'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: last
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: updated
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.479
       signals:

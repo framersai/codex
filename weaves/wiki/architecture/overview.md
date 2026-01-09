@@ -38,15 +38,27 @@ blocks:
     headingText: Frame Codex Architecture Overview
     tags: []
     suggestedTags:
-      - tag: frame
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: architecture
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -62,23 +74,7 @@ blocks:
     endLine: 5
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: structured
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.459
       signals:
@@ -94,14 +90,30 @@ blocks:
     headingText: Core Concepts
     tags: []
     suggestedTags:
-      - tag: core
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: concepts
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.893
       signals:
@@ -117,18 +129,30 @@ blocks:
     headingText: Four-Tier Knowledge Organization
     tags: []
     suggestedTags:
-      - tag: four-tier
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: knowledge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: organization
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.808
       signals:
@@ -142,26 +166,30 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: loom
-        confidence: 0.6000000000000001
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: folder
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: weave
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: codex
-        confidence: 0.44999999999999996
+      - tag: loom
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.657
       signals:
@@ -175,26 +203,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: weave
-        confidence: 0.6000000000000001
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: frame
-        confidence: 0.44999999999999996
+      - tag: sql-cache
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.501
       signals:
@@ -207,27 +239,7 @@ blocks:
     endLine: 29
     type: list
     tags: []
-    suggestedTags:
-      - tag: weave
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: complete
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: isolated
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: knowledge
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.497
       signals:
@@ -241,22 +253,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: loom
-        confidence: 0.7000000000000001
+      - tag: metadata
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: weave
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: folder
-        confidence: 0.44999999999999996
+      - tag: loom
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: inside
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.535
       signals:
@@ -269,27 +293,7 @@ blocks:
     endLine: 39
     type: list
     tags: []
-    suggestedTags:
-      - tag: strand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: markdown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: file
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weave
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: folder
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.471
       signals:
@@ -305,14 +309,30 @@ blocks:
     headingText: Why This Structure?
     tags: []
     suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structure
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.814
       signals:
@@ -326,26 +346,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strand
-        confidence: 0.75
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: ingestion
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: loom
-        confidence: 0.7000000000000001
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: looms
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: folders
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.59
       signals:
@@ -361,18 +393,30 @@ blocks:
     headingText: Superintelligence at Fabric Scope
     tags: []
     suggestedTags:
-      - tag: superintelligence
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: scope
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.766
       signals:
@@ -385,27 +429,7 @@ blocks:
     endLine: 53
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: weave
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: weaves
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fabric
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.423
       signals:
@@ -419,14 +443,38 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strand
-        confidence: 0.7000000000000001
+      - tag: ai
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: graph
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: strands
-        confidence: 0.65
+      - tag: weave
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.508
       signals:
@@ -439,27 +487,7 @@ blocks:
     endLine: 59
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: fabric-level
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: queries
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: always
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weave
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: loom
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
+    suggestedTags: []
     worthiness:
       score: 0.476
       signals:
@@ -475,18 +503,30 @@ blocks:
     headingText: SQL Cache Layer
     tags: []
     suggestedTags:
-      - tag: sql-cache
-        confidence: 0.6000000000000001
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: cache
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: layer
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.864
       signals:
@@ -499,23 +539,7 @@ blocks:
     endLine: 63
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: sql-storage-adapter
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: loom
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: frame
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.481
       signals:
@@ -531,10 +555,30 @@ blocks:
     headingText: Performance
     tags: []
     suggestedTags:
-      - tag: performance
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.766
       signals:
@@ -548,18 +592,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: performance
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: files
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sql-storage-adapter
-        confidence: 0.44999999999999996
+        reasoning: 'Vocabulary match: topics'
+      - tag: architecture
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.538
       signals:
@@ -575,10 +635,30 @@ blocks:
     headingText: How It Works
     tags: []
     suggestedTags:
-      - tag: works
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.82
       signals:
@@ -592,14 +672,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: loom
-        confidence: 0.6000000000000001
+      - tag: architecture
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: caching
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: sql-cache
         confidence: 0.5
         source: existing
@@ -608,10 +696,6 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: cache
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
     worthiness:
       score: 0.605
       signals:
@@ -627,18 +711,30 @@ blocks:
     headingText: Cache Tables
     tags: []
     suggestedTags:
-      - tag: tables
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: sql-cache
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: cache
-        confidence: 0.44999999999999996
+      - tag: nlp
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.774
       signals:
@@ -652,14 +748,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: keywords
-        confidence: 0.6
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: files
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: architecture
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
       - tag: weave
         confidence: 0.5
         source: existing
@@ -668,7 +764,15 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -687,14 +791,26 @@ blocks:
     headingText: Static NLP Pipeline
     tags: []
     suggestedTags:
-      - tag: static
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: pipeline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: nlp
         confidence: 0.5
         source: existing
@@ -712,19 +828,23 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: calls
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: cost
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: runs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -745,26 +865,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: keyword
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: keywords
-        confidence: 0.55
+        reasoning: 'Vocabulary match: subjects'
+      - tag: architecture
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: tf-idf
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: extraction
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.638
       signals:
@@ -780,10 +908,30 @@ blocks:
     headingText: Output
     tags: []
     suggestedTags:
-      - tag: output
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.766
       signals:
@@ -797,22 +945,34 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: json
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: codex-index
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: searchable
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.534
       signals:
@@ -828,14 +988,30 @@ blocks:
     headingText: Automation Workflows
     tags: []
     suggestedTags:
-      - tag: automation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: workflows
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.848
       signals:
@@ -851,10 +1027,30 @@ blocks:
     headingText: On Every PR
     tags: []
     suggestedTags:
-      - tag: every
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.828
       signals:
@@ -868,11 +1064,35 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: quality
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: api
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -880,14 +1100,6 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: schema
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: validation
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
     worthiness:
       score: 0.596
       signals:
@@ -903,19 +1115,27 @@ blocks:
     headingText: Auto-Merge (Trusted Weavers)
     tags: []
     suggestedTags:
-      - tag: auto-merge
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: trusted
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weavers
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -932,26 +1152,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: users
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: github
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: weave
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: quality
-        confidence: 0.44999999999999996
+      - tag: loom
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: validation
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.523
       signals:
@@ -967,14 +1191,30 @@ blocks:
     headingText: Full Re-Catalog
     tags: []
     suggestedTags:
-      - tag: full
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: re-catalog
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.799
       signals:
@@ -988,19 +1228,27 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: triggered
-        confidence: 0.6
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: manually
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: schedule
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1024,14 +1272,30 @@ blocks:
     tags: []
     suggestedTags:
       - tag: openstrand
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: integration
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1048,19 +1312,31 @@ blocks:
     type: paragraph
     tags: []
     suggestedTags:
-      - tag: frame
-        confidence: 0.6
+      - tag: education
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: implements
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
@@ -1080,10 +1356,22 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: reading
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
+      - tag: design
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: subjects'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: loom
         confidence: 0.5
         source: existing
@@ -1092,14 +1380,14 @@ blocks:
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: openstrand
-        confidence: 0.44999999999999996
+      - tag: sql-cache
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: learning
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.655
       signals:
@@ -1115,22 +1403,34 @@ blocks:
     headingText: Frame Codex vs OpenStrand
     tags: []
     suggestedTags:
+      - tag: openstrand
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
       - tag: strand
         confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
-      - tag: openstrand
-        confidence: 0.44999999999999996
+      - tag: sql-cache
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.44999999999999996
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
         source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.772
       signals:
@@ -1143,27 +1443,7 @@ blocks:
     endLine: 136
     type: list
     tags: []
-    suggestedTags:
-      - tag: strand
-        confidence: 0.6000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: openstrand
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: nlp
-        confidence: 0.5
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.476
       signals:
@@ -1179,14 +1459,30 @@ blocks:
     headingText: Repository Structure
     tags: []
     suggestedTags:
-      - tag: repository
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: structure
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.81
       signals:
@@ -1200,24 +1496,36 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: weave
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
       - tag: openstrand
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
       - tag: architecture
-        confidence: 0.6000000000000001
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: schema
+        confidence: 0.7
+        source: nlp
+        reasoning: 'Vocabulary match: topics'
+      - tag: weave
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
       - tag: loom
-        confidence: 0.6000000000000001
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
         source: existing
         reasoning: Propagated from document tags
     worthiness:
@@ -1232,27 +1540,7 @@ blocks:
     endLine: 162
     type: list
     tags: []
-    suggestedTags:
-      - tag: loom
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: strand
-        confidence: 0.7000000000000001
-        source: existing
-        reasoning: Propagated from document tags
-      - tag: looms
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: openstrand
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.498
       signals:
@@ -1268,14 +1556,30 @@ blocks:
     headingText: Learn More
     tags: []
     suggestedTags:
-      - tag: learn
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: more
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+      - tag: architecture
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.875
       signals:
@@ -1289,14 +1593,30 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: docs
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: development
+      - tag: architecture
         confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: weave
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: loom
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: strand
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: sql-cache
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
+      - tag: nlp
+        confidence: 0.5
+        source: existing
+        reasoning: Propagated from document tags
     worthiness:
       score: 0.721
       signals:

@@ -7,19 +7,7 @@ blocks:
     headingLevel: 1
     headingText: Getting Started with Frame Codex
     tags: []
-    suggestedTags:
-      - tag: getting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: started
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.765
       signals:
@@ -32,19 +20,7 @@ blocks:
     endLine: 4
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: started
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: with
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.30000000000000004
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.435
       signals:
@@ -59,19 +35,7 @@ blocks:
     headingLevel: 2
     headingText: What is Frame Codex?
     tags: []
-    suggestedTags:
-      - tag: what
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: frame
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.796
       signals:
@@ -84,19 +48,7 @@ blocks:
     endLine: 8
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: started
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.458
       signals:
@@ -112,14 +64,10 @@ blocks:
     headingText: The Four-Tier Architecture
     tags: []
     suggestedTags:
-      - tag: four-tier
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
       - tag: architecture
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.677
       signals:
@@ -132,27 +80,7 @@ blocks:
     endLine: 14
     type: list
     tags: []
-    suggestedTags:
-      - tag: weave
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: architecture
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fabric
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.486
       signals:
@@ -165,27 +93,7 @@ blocks:
     endLine: 21
     type: code
     tags: []
-    suggestedTags:
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: frame
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: started
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: weave
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fabric
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.638
       signals:
@@ -200,15 +108,7 @@ blocks:
     headingLevel: 2
     headingText: Navigation Basics
     tags: []
-    suggestedTags:
-      - tag: navigation
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: basics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.856
       signals:
@@ -223,11 +123,7 @@ blocks:
     headingLevel: 3
     headingText: The Sidebar
     tags: []
-    suggestedTags:
-      - tag: sidebar
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.715
       signals:
@@ -253,23 +149,7 @@ blocks:
     endLine: 32
     type: list
     tags: []
-    suggestedTags:
-      - tag: weaves
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: looms
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: weave
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.537
       signals:
@@ -284,15 +164,7 @@ blocks:
     headingLevel: 3
     headingText: The Content Area
     tags: []
-    suggestedTags:
-      - tag: content
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: area
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.753
       signals:
@@ -305,23 +177,7 @@ blocks:
     endLine: 37
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: center
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: panel
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: displays
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: with
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.395
       signals:
@@ -334,19 +190,7 @@ blocks:
     endLine: 41
     type: list
     tags: []
-    suggestedTags:
-      - tag: syntax
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: highlighting
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: code
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.591
       signals:
@@ -363,13 +207,9 @@ blocks:
     tags: []
     suggestedTags:
       - tag: metadata
-        confidence: 0.6
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: panel
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.75
       signals:
@@ -382,19 +222,7 @@ blocks:
     endLine: 46
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: right
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sidebar
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: shows
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.44
       signals:
@@ -408,18 +236,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: file
-        confidence: 0.6
+      - tag: ai
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: info
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: path
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subjects'
     worthiness:
       score: 0.525
       signals:
@@ -434,19 +254,7 @@ blocks:
     headingLevel: 2
     headingText: Your First Strand
     tags: []
-    suggestedTags:
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: first
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strand
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.815
       signals:
@@ -459,23 +267,7 @@ blocks:
     endLine: 56
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: create
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: first
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: strand
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.332
       signals:
@@ -490,15 +282,7 @@ blocks:
     headingLevel: 3
     headingText: 1. Open the Editor
     tags: []
-    suggestedTags:
-      - tag: open
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: editor
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.684
       signals:
@@ -511,27 +295,7 @@ blocks:
     endLine: 60
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: press
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: editor
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: edit
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: button
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.378
       signals:
@@ -546,19 +310,7 @@ blocks:
     headingLevel: 3
     headingText: 2. Write Your Content
     tags: []
-    suggestedTags:
-      - tag: write
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: content
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.756
       signals:
@@ -571,23 +323,7 @@ blocks:
     endLine: 64
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: split-pane
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: editor
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: edit
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: write
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.446
       signals:
@@ -601,18 +337,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: text
-        confidence: 0.6
+      - tag: rag
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: bullet
-        confidence: 0.5
+        reasoning: 'Vocabulary match: topics'
+      - tag: graph
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: point
-        confidence: 0.5
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.676
       signals:
@@ -627,11 +359,7 @@ blocks:
     headingLevel: 3
     headingText: 3. Add Media
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.775
       signals:
@@ -644,23 +372,7 @@ blocks:
     endLine: 81
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: click
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sparkle
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: icon
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.386
       signals:
@@ -673,19 +385,7 @@ blocks:
     endLine: 85
     type: list
     tags: []
-    suggestedTags:
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: camera
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: take
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.5
       signals:
@@ -700,19 +400,7 @@ blocks:
     headingLevel: 3
     headingText: 4. Save Your Draft
     tags: []
-    suggestedTags:
-      - tag: save
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: draft
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.787
       signals:
@@ -725,19 +413,7 @@ blocks:
     endLine: 90
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: save
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: click
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: draft
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.468
       signals:
@@ -752,19 +428,7 @@ blocks:
     headingLevel: 3
     headingText: 5. Publish Your Changes
     tags: []
-    suggestedTags:
-      - tag: publish
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: changes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.788
       signals:
@@ -777,19 +441,7 @@ blocks:
     endLine: 95
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: create
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: click
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: publish
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.488
       signals:
@@ -802,27 +454,7 @@ blocks:
     endLine: 100
     type: list
     tags: []
-    suggestedTags:
-      - tag: your
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: changes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: create
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: fork
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: repository
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.581
       signals:
@@ -837,15 +469,7 @@ blocks:
     headingLevel: 2
     headingText: Markdown Features
     tags: []
-    suggestedTags:
-      - tag: markdown
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: features
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.827
       signals:
@@ -858,23 +482,7 @@ blocks:
     endLine: 105
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: frame
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: supports
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.537
       signals:
@@ -892,15 +500,7 @@ blocks:
     headingLevel: 3
     headingText: Basic Formatting
     tags: []
-    suggestedTags:
-      - tag: basic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: formatting
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.807
       signals:
@@ -913,23 +513,7 @@ blocks:
     endLine: 113
     type: code
     tags: []
-    suggestedTags:
-      - tag: bold
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: italic
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.622
       signals:
@@ -944,15 +528,7 @@ blocks:
     headingLevel: 3
     headingText: Links and References
     tags: []
-    suggestedTags:
-      - tag: links
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: references
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.744
       signals:
@@ -966,22 +542,10 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: external
-        confidence: 0.6
+      - tag: architecture
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: link
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: links
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: topics'
     worthiness:
       score: 0.716
       signals:
@@ -996,11 +560,7 @@ blocks:
     headingLevel: 3
     headingText: Images
     tags: []
-    suggestedTags:
-      - tag: images
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.761
       signals:
@@ -1013,23 +573,7 @@ blocks:
     endLine: 126
     type: code
     tags: []
-    suggestedTags:
-      - tag: single
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: image
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: images
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.699
       signals:
@@ -1042,23 +586,7 @@ blocks:
     endLine: 129
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: they
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: images
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: image
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.491
       signals:
@@ -1071,15 +599,7 @@ blocks:
     endLine: 135
     type: code
     tags: []
-    suggestedTags:
-      - tag: photo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.724
       signals:
@@ -1094,15 +614,7 @@ blocks:
     headingLevel: 3
     headingText: Code Blocks
     tags: []
-    suggestedTags:
-      - tag: code
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.786
       signals:
@@ -1115,19 +627,7 @@ blocks:
     endLine: 140
     type: code
     tags: []
-    suggestedTags:
-      - tag: javascript
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: exec
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.639
       signals:
@@ -1140,15 +640,7 @@ blocks:
     endLine: 145
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: fibonacci
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: return
-        confidence: 0.30000000000000004
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.561
       signals:
@@ -1180,23 +672,7 @@ blocks:
     endLine: 149
     type: list
     tags: []
-    suggestedTags:
-      - tag: code
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: exec
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: blocks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: after
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.423
       signals:
@@ -1211,11 +687,7 @@ blocks:
     headingLevel: 3
     headingText: Tables
     tags: []
-    suggestedTags:
-      - tag: tables
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.767
       signals:
@@ -1228,19 +700,7 @@ blocks:
     endLine: 159
     type: code
     tags: []
-    suggestedTags:
-      - tag: feature
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: status
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.685
       signals:
@@ -1255,19 +715,7 @@ blocks:
     headingLevel: 3
     headingText: Math (Coming Soon)
     tags: []
-    suggestedTags:
-      - tag: math
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: coming
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: soon
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.824
       signals:
@@ -1280,23 +728,7 @@ blocks:
     endLine: 170
     type: code
     tags: []
-    suggestedTags:
-      - tag: inline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: block
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: blocks
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: markdown
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.71
       signals:
@@ -1311,15 +743,7 @@ blocks:
     headingLevel: 2
     headingText: Media as Strands
     tags: []
-    suggestedTags:
-      - tag: media
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.79
       signals:
@@ -1332,27 +756,7 @@ blocks:
     endLine: 175
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: frame
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: everything
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: media
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.452
       signals:
@@ -1367,11 +771,7 @@ blocks:
     headingLevel: 3
     headingText: Photos
     tags: []
-    suggestedTags:
-      - tag: photos
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.758
       signals:
@@ -1384,27 +784,7 @@ blocks:
     endLine: 178
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: when
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: capture
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: photo
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: photos
-        confidence: 0.55
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.418
       signals:
@@ -1418,22 +798,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: timestamped
-        confidence: 0.375
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: linked
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: parent
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.515
       signals:
@@ -1448,11 +816,7 @@ blocks:
     headingLevel: 3
     headingText: Audio
     tags: []
-    suggestedTags:
-      - tag: audio
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.755
       signals:
@@ -1465,27 +829,7 @@ blocks:
     endLine: 186
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: voice
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: recordings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: saved
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: parent
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.439
       signals:
@@ -1499,18 +843,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: played
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: inline
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: transcribed
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.632
       signals:
@@ -1525,11 +861,7 @@ blocks:
     headingLevel: 3
     headingText: Drawings
     tags: []
-    suggestedTags:
-      - tag: drawings
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.758
       signals:
@@ -1542,27 +874,7 @@ blocks:
     endLine: 194
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: whiteboard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sketches
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: export
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: drawings
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.468
       signals:
@@ -1575,19 +887,7 @@ blocks:
     endLine: 198
     type: list
     tags: []
-    suggestedTags:
-      - tag: full
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: vector
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: quality
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.627
       signals:
@@ -1602,19 +902,7 @@ blocks:
     headingLevel: 2
     headingText: The Recursive Nature of Strands
     tags: []
-    suggestedTags:
-      - tag: recursive
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: nature
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.789
       signals:
@@ -1627,19 +915,7 @@ blocks:
     endLine: 205
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: strands
-        confidence: 0.65
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: here
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: where
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.46
       signals:
@@ -1653,18 +929,14 @@ blocks:
     type: code
     tags: []
     suggestedTags:
-      - tag: typescript
-        confidence: 0.8
+      - tag: architecture
+        confidence: 0.7
         source: nlp
-        reasoning: Detected programming language
-      - tag: deco
-        confidence: 0.5
+        reasoning: 'Vocabulary match: topics'
+      - tag: metadata
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.717
       signals:
@@ -1677,19 +949,7 @@ blocks:
     endLine: 224
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: this
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: catalog
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: itself
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.451
       signals:
@@ -1704,11 +964,7 @@ blocks:
     headingLevel: 2
     headingText: Themes
     tags: []
-    suggestedTags:
-      - tag: themes
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.816
       signals:
@@ -1721,23 +977,7 @@ blocks:
     endLine: 228
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: frame
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: codex
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: supports
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: themes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.466
       signals:
@@ -1750,27 +990,7 @@ blocks:
     endLine: 232
     type: list
     tags: []
-    suggestedTags:
-      - tag: light
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: dark
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: sepia
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: themes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.6
       signals:
@@ -1783,19 +1003,7 @@ blocks:
     endLine: 235
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: themes
-        confidence: 0.7
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: strands
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: codex
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.407
       signals:
@@ -1810,15 +1018,7 @@ blocks:
     headingLevel: 2
     headingText: Keyboard Shortcuts
     tags: []
-    suggestedTags:
-      - tag: keyboard
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: shortcuts
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.858
       signals:
@@ -1831,19 +1031,7 @@ blocks:
     endLine: 239
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: speed
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: your
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: workflow
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.5
       signals:
@@ -1858,14 +1046,10 @@ blocks:
     type: table
     tags: []
     suggestedTags:
-      - tag: toggle
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: keyboard
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.645
       signals:
@@ -1880,15 +1064,7 @@ blocks:
     headingLevel: 2
     headingText: Next Steps
     tags: []
-    suggestedTags:
-      - tag: next
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: steps
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.86
       signals:
@@ -1901,27 +1077,7 @@ blocks:
     endLine: 253
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: that
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: know
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: basics
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: themes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.468
       signals:
@@ -1935,26 +1091,10 @@ blocks:
     type: list
     tags: []
     suggestedTags:
-      - tag: wiki
-        confidence: 0.6
+      - tag: search
+        confidence: 0.7
         source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tutorials
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: know
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: themes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: contributing
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+        reasoning: 'Vocabulary match: subtopics'
     worthiness:
       score: 0.563
       signals:
@@ -1980,27 +1120,7 @@ blocks:
     endLine: 261
     type: list
     tags: []
-    suggestedTags:
-      - tag: welcome
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: fabric
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: know
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: themes
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: your
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
+    suggestedTags: []
     worthiness:
       score: 0.415
       signals:
@@ -2026,23 +1146,7 @@ blocks:
     endLine: 271
     type: paragraph
     tags: []
-    suggestedTags:
-      - tag: beginner
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: '2024-01-15'
-        confidence: 0.6
-        source: nlp
-        reasoning: TF-IDF keyword extraction
-      - tag: tutorials
-        confidence: 0.44999999999999996
-        source: existing
-        reasoning: Consistent with prior block tags
-      - tag: metadata
-        confidence: 0.375
-        source: nlp
-        reasoning: TF-IDF keyword extraction
+    suggestedTags: []
     worthiness:
       score: 0.487
       signals:
