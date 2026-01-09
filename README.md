@@ -125,6 +125,65 @@ manual_tags: true    # Don't auto-suggest tags
 
 **Gitignore patterns**: Add paths to `.gitignore` or `scripts/auto-index.js` → `IGNORED_PATTERNS` array.
 
+## 🏷️ Block Tagging
+
+Frame Codex supports **block-level tagging** for granular content discovery. Every paragraph, heading, code block, and list can have associated tags.
+
+### Inline Tags (Recommended)
+
+Add tags directly in your markdown using `#hashtag` syntax:
+
+```markdown
+This section covers React hooks for state management. #react #hooks #frontend
+
+## Custom Hooks #advanced
+
+Building reusable hooks is essential for #clean-code and #maintainability.
+```
+
+**Rules:**
+- Must start with a letter: `#react` ✓, `#123` ✗
+- Can contain letters, numbers, hyphens, underscores, slashes: `#web/javascript` ✓
+- Case-insensitive (normalized to lowercase): `#React` → `react`
+- Reserved patterns skipped: `#h1` - `#h6` (markdown headings)
+
+**Inline tags get 100% confidence** and always appear in the final index.
+
+### Automatic NLP Tags
+
+In addition to inline tags, the Codex pipeline automatically suggests tags using:
+
+1. **Vocabulary Matching** - From `tags/index.yaml` controlled vocabulary
+2. **TF-IDF Extraction** - Statistically significant terms
+3. **Document Propagation** - Inherits relevant tags from document metadata
+
+Suggested tags with **≥50% confidence are auto-confirmed** during index build.
+
+### Tag Sources & Colors
+
+| Source | Confidence | Color | Description |
+|--------|------------|-------|-------------|
+| `inline` | 100% | Blue | Explicit `#hashtag` in content |
+| `user` | 100% | Emerald | Manually confirmed by contributor |
+| `nlp` | 30-85% | Cyan | Vocabulary + TF-IDF extraction |
+| `llm` | 50-95% | Violet | AI-suggested (optional) |
+| `existing` | 35-75% | Emerald | Propagated from document tags |
+
+### CLI Commands
+
+```bash
+# Process blocks and calculate worthiness
+node scripts/block-processor.js --all
+
+# Build the blocks index (includes auto-confirm)
+npm run build:index
+
+# View block stats
+cat codex-blocks.json | jq '.stats'
+```
+
+See [HYBRID_TAGGING_DATAFLOW.md](docs/HYBRID_TAGGING_DATAFLOW.md) for complete architecture.
+
 ## Architecture
 
 The Codex uses the OpenStrand four-tier knowledge hierarchy:
