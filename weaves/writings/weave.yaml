@@ -1,0 +1,26 @@
+slug: writings
+title: "Writings"
+description: "Writing workspace - drafts from writing mode and long-form content"
+
+scope: |
+  This weave contains writing drafts and published works:
+  - Works in progress from Writing Mode
+  - Published articles and essays
+  - Creative writing projects
+  - Blog posts and content pieces
+
+boundaries: |
+  This weave does NOT contain:
+  - Quick notes (see notes weave)
+  - Personal reflections (see reflections weave)
+  - Reference documentation (see wiki weave)
+
+metadata:
+  domain: writing
+  audience: [authors, writers, content-creators]
+
+tags: [writing, drafts, articles, essays, content]
+
+publishing:
+  status: published
+  maintainers: [jddunn]

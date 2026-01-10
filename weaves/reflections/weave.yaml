@@ -1,0 +1,27 @@
+slug: reflections
+title: "Reflections"
+description: "Personal reflections - journal entries, thoughts, and introspection"
+
+scope: |
+  This weave contains personal reflection content:
+  - Daily journal entries
+  - Reflection Mode captures
+  - Personal thoughts and insights
+  - Gratitude logs and mindfulness notes
+
+boundaries: |
+  This weave does NOT contain:
+  - Quick notes or tasks (see notes weave)
+  - Long-form writing projects (see writings weave)
+  - Reference material (see wiki weave)
+
+metadata:
+  domain: personal
+  audience: [self]
+  visibility: private
+
+tags: [reflections, journal, thoughts, personal, mindfulness]
+
+publishing:
+  status: private
+  maintainers: [jddunn]

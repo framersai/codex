@@ -1,0 +1,32 @@
+slug: notes
+title: "Notes"
+description: "Quick notes and supernotes - fast capture for ideas, tasks, and snippets"
+
+scope: |
+  This weave contains quick capture content:
+  - Supernotes with supertags (#task, #idea, #meeting, etc.)
+  - Quick notes and fleeting thoughts
+  - Task lists and reminders
+  - Meeting notes and action items
+  - Code snippets and bookmarks
+
+boundaries: |
+  This weave does NOT contain:
+  - Long-form writing (see writings weave)
+  - Personal reflections (see reflections weave)
+  - Reference documentation (see wiki weave)
+
+looms:
+  - tasks
+  - ideas
+  - meetings
+
+metadata:
+  domain: capture
+  audience: [self]
+
+tags: [notes, supernotes, quick-capture, tasks, ideas]
+
+publishing:
+  status: published
+  maintainers: [jddunn]

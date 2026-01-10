@@ -1,30 +1,36 @@
 slug: wiki
-title: "Frame Codex Wiki"
-description: "Complete documentation and technical architecture for Frame Codex, OpenStrand, and the knowledge organization system"
+title: "Wiki"
+description: "Knowledge base - contains Frame documentation, OpenStrand spec, and reference material"
 
 scope: |
-  This weave contains all meta-documentation about Frame Codex itself:
-  - How the Codex works (architecture, indexing, caching)
-  - Contribution guides and schemas
-  - OpenStrand integration details
-  - Development and deployment guides
+  This weave contains reference documentation and knowledge:
+  - Frame application documentation and guides
+  - OpenStrand specification and schema docs
+  - Technical architecture documentation
+  - Contribution guides and development docs
+  - General knowledge and reference material
 
 boundaries: |
   This weave does NOT contain:
-  - Actual knowledge content (see other weaves)
-  - User-contributed strands (those go in subject-specific weaves)
+  - Personal reflections (see reflections weave)
+  - Writing drafts (see writings weave)
+  - Quick notes and tasks (see notes weave)
 
 looms:
+  - frame
+  - openstrand
   - architecture
   - contributing
   - development
+  - examples
+  - tutorials
 
 metadata:
-  domain: meta-documentation
-  audience: [contributors, developers, maintainers]
+  domain: knowledge
+  audience: [everyone, contributors, developers]
   license: CC-BY-4.0
 
-tags: [wiki, documentation, meta, architecture, contributing]
+tags: [wiki, knowledge, documentation, reference, frame, openstrand]
 
 publishing:
   status: published
