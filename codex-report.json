@@ -1,39 +1,39 @@
 {
   "summary": {
-    "totalFiles": 33,
-    "indexedFiles": 33,
+    "totalFiles": 42,
+    "indexedFiles": 42,
     "skippedFiles": 0,
-    "validFiles": 33,
+    "validFiles": 42,
     "filesWithErrors": 0,
     "filesWithWarnings": 0,
-    "filesWithSuggestions": 33
+    "filesWithSuggestions": 42
   },
   "categorization": {
     "bySubject": {
-      "ai": 33,
-      "design": 32,
-      "knowledge": 33,
-      "media": 29,
-      "philosophy": 32,
-      "science": 32,
-      "security": 33,
-      "technology": 33,
-      "knowledge-management": 2,
-      "ai-infrastructure": 2,
+      "ai": 42,
+      "design": 41,
+      "knowledge": 42,
+      "media": 34,
+      "philosophy": 41,
+      "science": 41,
+      "security": 42,
+      "technology": 42,
+      "knowledge-management": 4,
+      "ai-infrastructure": 4,
       "artificial-intelligence": 4,
       "programming": 1
     },
     "byTopic": {
-      "api-reference": 33,
-      "architecture": 33,
-      "best-practices": 33,
-      "getting-started": 31,
-      "troubleshooting": 32,
-      "openstrand": 2,
-      "fabric-codex": 1,
-      "semantic-web": 1,
-      "schema": 1,
-      "hierarchy": 1,
+      "api-reference": 42,
+      "architecture": 42,
+      "best-practices": 42,
+      "getting-started": 37,
+      "troubleshooting": 38,
+      "openstrand": 4,
+      "fabric-codex": 2,
+      "semantic-web": 2,
+      "schema": 2,
+      "hierarchy": 2,
       "tutorial": 4,
       "how-to": 1,
       "automation": 1,
@@ -41,13 +41,1588 @@
       "deployment": 1
     },
     "byDifficulty": {
-      "beginner": 14,
-      "[object Object]": 1,
-      "intermediate": 12,
-      "advanced": 3,
-      "expert": 3
+      "expert": 6,
+      "advanced": 2,
+      "intermediate": 16,
+      "[object Object]": 2,
+      "beginner": 16
     },
     "confidenceScores": [
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "ai",
+        "score": 0.014388489208633094
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "design",
+        "score": 0.011049723756906077
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "knowledge",
+        "score": 0.15135135135135136
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "media",
+        "score": 0.014925373134328358
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "philosophy",
+        "score": 0.024154589371980676
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "science",
+        "score": 0.019157088122605363
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "security",
+        "score": 0.016666666666666666
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "technology",
+        "score": 0.02364864864864865
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "api-reference",
+        "score": 0.016260162601626018
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "architecture",
+        "score": 0.0072992700729927005
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "best-practices",
+        "score": 0.024193548387096774
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "getting-started",
+        "score": 0.01834862385321101
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:programming",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:data",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:program",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:search",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:tl",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:on",
+        "score": 0.5089285714285714
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:c",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:gener",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:io",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:documentation",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:research",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:learning",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:reflection",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:document",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:learn",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:reflect",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:as",
+        "score": 0.5105263157894737
+      },
+      {
+        "file": "weaves/knowledge/weave.yaml",
+        "category": "skill:contain",
+        "score": 0.5105263157894737
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "ai",
+        "score": 0.01079136690647482
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "design",
+        "score": 0.027624309392265192
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "knowledge",
+        "score": 0.08648648648648649
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "philosophy",
+        "score": 0.024154589371980676
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "science",
+        "score": 0.0038314176245210726
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "security",
+        "score": 0.027777777777777776
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "technology",
+        "score": 0.030405405405405407
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "api-reference",
+        "score": 0.024390243902439025
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "architecture",
+        "score": 0.0072992700729927005
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "best-practices",
+        "score": 0.03225806451612903
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:data",
+        "score": 0.5096153846153846
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:tl",
+        "score": 0.5096153846153846
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:on",
+        "score": 0.5089285714285714
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:ts",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:c",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:io",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:writing",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:documentation",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:reflection",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:document",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:reflect",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:as",
+        "score": 0.5157894736842106
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:code",
+        "score": 0.5157894736842106
+      },
+      {
+        "file": "weaves/notes/weave.yaml",
+        "category": "skill:contain",
+        "score": 0.5157894736842106
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "ai",
+        "score": 0.01079136690647482
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "design",
+        "score": 0.016574585635359115
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "knowledge",
+        "score": 0.05405405405405406
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "philosophy",
+        "score": 0.028985507246376812
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "science",
+        "score": 0.011494252873563218
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "security",
+        "score": 0.016666666666666666
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "technology",
+        "score": 0.02364864864864865
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "api-reference",
+        "score": 0.016260162601626018
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "architecture",
+        "score": 0.0072992700729927005
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "best-practices",
+        "score": 0.016129032258064516
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "getting-started",
+        "score": 0.01834862385321101
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "troubleshooting",
+        "score": 0.009259259259259259
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:data",
+        "score": 0.5096153846153846
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:tl",
+        "score": 0.5096153846153846
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:on",
+        "score": 0.5089285714285714
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:ts",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:c",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:io",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:writing",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:reflection",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:reflect",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:as",
+        "score": 0.5105263157894737
+      },
+      {
+        "file": "weaves/reflections/weave.yaml",
+        "category": "skill:contain",
+        "score": 0.5105263157894737
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "ai",
+        "score": 0.0035971223021582736
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "design",
+        "score": 0.0055248618784530384
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "knowledge",
+        "score": 0.08648648648648649
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "philosophy",
+        "score": 0.00966183574879227
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "science",
+        "score": 0.007662835249042145
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "security",
+        "score": 0.027777777777777776
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "technology",
+        "score": 0.04391891891891892
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "api-reference",
+        "score": 0.024390243902439025
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "architecture",
+        "score": 0.0364963503649635
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "best-practices",
+        "score": 0.016129032258064516
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "getting-started",
+        "score": 0.01834862385321101
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "troubleshooting",
+        "score": 0.018518518518518517
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:tl",
+        "score": 0.5048076923076923
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:app",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:api",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:on",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:ts",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:type",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:c",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:io",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:documentation",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/wiki/frame/loom.yaml",
+        "category": "skill:document",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "ai",
+        "score": 0.050359712230215826
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "design",
+        "score": 0.03867403314917127
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "knowledge",
+        "score": 0.20540540540540542
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "media",
+        "score": 0.029850746268656716
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "philosophy",
+        "score": 0.024154589371980676
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "science",
+        "score": 0.034482758620689655
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "security",
+        "score": 0.03888888888888889
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "technology",
+        "score": 0.07094594594594594
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "api-reference",
+        "score": 0.032520325203252036
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "architecture",
+        "score": 0.043795620437956206
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "best-practices",
+        "score": 0.06451612903225806
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "getting-started",
+        "score": 0.027522935779816515
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "troubleshooting",
+        "score": 0.05555555555555555
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:data",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:ci",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:search",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:structur",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:tl",
+        "score": 0.5240384615384616
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:app",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:pages",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:on",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:page",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:ts",
+        "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:pip",
+        "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:go",
+        "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:c",
+        "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:io",
+        "score": 0.5308641975308642
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:focus",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:document",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:focu",
+        "score": 0.5069124423963134
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:git",
+        "score": 0.5210526315789473
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:github",
+        "score": 0.5210526315789473
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:control",
+        "score": 0.5210526315789473
+      },
+      {
+        "file": "weaves/wiki/openstrand/architecture.md",
+        "category": "skill:as",
+        "score": 0.5210526315789473
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "ai",
+        "score": 0.0035971223021582736
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "design",
+        "score": 0.022099447513812154
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "knowledge",
+        "score": 0.11351351351351352
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "philosophy",
+        "score": 0.00966183574879227
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "science",
+        "score": 0.007662835249042145
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "security",
+        "score": 0.022222222222222223
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "technology",
+        "score": 0.030405405405405407
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "api-reference",
+        "score": 0.024390243902439025
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "architecture",
+        "score": 0.0364963503649635
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "best-practices",
+        "score": 0.016129032258064516
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:schema",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:ci",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:tl",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:app",
+        "score": 0.5178571428571429
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:on",
+        "score": 0.5178571428571429
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:ts",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:type",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:c",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:io",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:documentation",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/wiki/openstrand/loom.yaml",
+        "category": "skill:document",
+        "score": 0.5046082949308756
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "ai",
+        "score": 0.08992805755395683
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "design",
+        "score": 0.15469613259668508
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "knowledge",
+        "score": 0.4594594594594595
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "media",
+        "score": 0.09701492537313433
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "philosophy",
+        "score": 0.12077294685990338
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "science",
+        "score": 0.09195402298850575
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "security",
+        "score": 0.11666666666666667
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "technology",
+        "score": 0.2195945945945946
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "api-reference",
+        "score": 0.17073170731707318
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "architecture",
+        "score": 0.15328467153284672
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "best-practices",
+        "score": 0.13709677419354838
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "getting-started",
+        "score": 0.28440366972477066
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "troubleshooting",
+        "score": 0.12962962962962962
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:authentication",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:auth",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:oauth",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:jwt",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:database",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:schema",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:unit",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:data",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:http",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:https",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:security",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:ci",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:authent",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:databas",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:inherit",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:search",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:structur",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:secur",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:tl",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:react",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:app",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:api",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:on",
+        "score": 0.5357142857142857
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:javascript",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:ts",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:type",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:rust",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:go",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:java",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:c",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:gener",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:io",
+        "score": 0.5555555555555556
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:documentation",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:management",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:collaboration",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:learning",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:onboarding",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:eq",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:trust",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:write",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:present",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:document",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:manag",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:organ",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:collabor",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:learn",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:train",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:onboard",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:understand",
+        "score": 0.5391705069124424
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:git",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:github",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:version",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:control",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:container",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:as",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:code",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:web",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:contain",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/overview.md",
+        "category": "skill:redi",
+        "score": 0.5684210526315789
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "ai",
+        "score": 0.05755395683453238
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "design",
+        "score": 0.06629834254143646
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "knowledge",
+        "score": 0.3837837837837838
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "media",
+        "score": 0.08208955223880597
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "philosophy",
+        "score": 0.06763285024154589
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "science",
+        "score": 0.05747126436781609
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "security",
+        "score": 0.05555555555555555
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "technology",
+        "score": 0.13513513513513514
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "api-reference",
+        "score": 0.07317073170731707
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "architecture",
+        "score": 0.10218978102189781
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "best-practices",
+        "score": 0.08870967741935484
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "getting-started",
+        "score": 0.12844036697247707
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "troubleshooting",
+        "score": 0.046296296296296294
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:database",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:schema",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:unit",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:async",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:programming",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:inheritance",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:data",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:structures",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:networking",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:http",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:https",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:ci",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:databas",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:program",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:inherit",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:search",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:structur",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:network",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:tl",
+        "score": 0.5913461538461539
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:app",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:api",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:on",
+        "score": 0.5267857142857143
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:ts",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:python",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:py",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:rust",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:go",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:asp",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:c",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:annot",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:gener",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:io",
+        "score": 0.5617283950617284
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:documentation",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:organization",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:learning",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:eq",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:document",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:narr",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:organ",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:learn",
+        "score": 0.5230414746543779
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:git",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:github",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:branch",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:kubernetes",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:infrastructure",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:as",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:code",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:contain",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:kubernet",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/wiki/openstrand/schema/hierarchy.md",
+        "category": "skill:infrastructur",
+        "score": 0.5631578947368421
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "ai",
+        "score": 0.01079136690647482
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "design",
+        "score": 0.027624309392265192
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "knowledge",
+        "score": 0.08648648648648649
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "philosophy",
+        "score": 0.024154589371980676
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "science",
+        "score": 0.0038314176245210726
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "security",
+        "score": 0.022222222222222223
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "technology",
+        "score": 0.02702702702702703
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "api-reference",
+        "score": 0.032520325203252036
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "architecture",
+        "score": 0.014598540145985401
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "best-practices",
+        "score": 0.024193548387096774
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "troubleshooting",
+        "score": 0.009259259259259259
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:auth",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:data",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:tl",
+        "score": 0.5144230769230769
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:on",
+        "score": 0.5089285714285714
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:ts",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:c",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:io",
+        "score": 0.5185185185185185
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:writing",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:documentation",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:reflection",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:write",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:document",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:iter",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:reflect",
+        "score": 0.5161290322580645
+      },
+      {
+        "file": "weaves/writings/weave.yaml",
+        "category": "skill:contain",
+        "score": 0.5052631578947369
+      },
       {
         "file": "docs/HYBRID_TAGGING_DATAFLOW.md",
         "category": "ai",
@@ -1231,7 +2806,12 @@
       {
         "file": "weaves/frame/weave.yaml",
         "category": "knowledge",
-        "score": 0.08108108108108109
+        "score": 0.0918918918918919
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "media",
+        "score": 0.007462686567164179
       },
       {
         "file": "weaves/frame/weave.yaml",
@@ -1241,27 +2821,27 @@
       {
         "file": "weaves/frame/weave.yaml",
         "category": "science",
-        "score": 0.019157088122605363
+        "score": 0.0038314176245210726
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "security",
-        "score": 0.027777777777777776
+        "score": 0.016666666666666666
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "technology",
-        "score": 0.033783783783783786
+        "score": 0.02364864864864865
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "api-reference",
-        "score": 0.024390243902439025
+        "score": 0.04878048780487805
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "architecture",
-        "score": 0.043795620437956206
+        "score": 0.029197080291970802
       },
       {
         "file": "weaves/frame/weave.yaml",
@@ -1270,8 +2850,23 @@
       },
       {
         "file": "weaves/frame/weave.yaml",
+        "category": "skill:migration",
+        "score": 0.5192307692307693
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "skill:migrat",
+        "score": 0.5192307692307693
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
+        "category": "skill:structur",
+        "score": 0.5192307692307693
+      },
+      {
+        "file": "weaves/frame/weave.yaml",
         "category": "skill:tl",
-        "score": 0.5048076923076923
+        "score": 0.5192307692307693
       },
       {
         "file": "weaves/frame/weave.yaml",
@@ -1280,18 +2875,13 @@
       },
       {
         "file": "weaves/frame/weave.yaml",
-        "category": "skill:ts",
-        "score": 0.5185185185185185
-      },
-      {
-        "file": "weaves/frame/weave.yaml",
         "category": "skill:c",
-        "score": 0.5185185185185185
+        "score": 0.5123456790123457
       },
       {
         "file": "weaves/frame/weave.yaml",
         "category": "skill:io",
-        "score": 0.5185185185185185
+        "score": 0.5123456790123457
       },
       {
         "file": "weaves/frame/weave.yaml",
@@ -1305,7 +2895,7 @@
       },
       {
         "file": "weaves/frame/weave.yaml",
-        "category": "skill:contain",
+        "category": "skill:as",
         "score": 0.5052631578947369
       },
       {
@@ -5586,22 +7176,22 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "ai",
-        "score": 0.02158273381294964
+        "score": 0.01079136690647482
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "design",
-        "score": 0.0055248618784530384
+        "score": 0.011049723756906077
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "knowledge",
-        "score": 0.17297297297297298
+        "score": 0.1891891891891892
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "philosophy",
-        "score": 0.01932367149758454
+        "score": 0.024154589371980676
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -5616,7 +7206,7 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "technology",
-        "score": 0.07432432432432433
+        "score": 0.05405405405405406
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -5626,17 +7216,17 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "architecture",
-        "score": 0.043795620437956206
+        "score": 0.0364963503649635
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "best-practices",
-        "score": 0.03225806451612903
+        "score": 0.024193548387096774
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "getting-started",
-        "score": 0.01834862385321101
+        "score": 0.05504587155963303
       },
       {
         "file": "weaves/wiki/weave.yaml",
@@ -5646,56 +7236,36 @@
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:schema",
-        "score": 0.5384615384615384
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:integration",
-        "score": 0.5384615384615384
+        "score": 0.5192307692307693
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:data",
-        "score": 0.5384615384615384
+        "score": 0.5192307692307693
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:ci",
-        "score": 0.5384615384615384
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:deployment",
-        "score": 0.5384615384615384
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:integr",
-        "score": 0.5384615384615384
+        "score": 0.5192307692307693
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:tl",
-        "score": 0.5384615384615384
+        "score": 0.5192307692307693
       },
       {
         "file": "weaves/wiki/weave.yaml",
-        "category": "skill:deploy",
-        "score": 0.5384615384615384
+        "category": "skill:app",
+        "score": 0.5178571428571429
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:on",
-        "score": 0.5089285714285714
+        "score": 0.5178571428571429
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:ts",
-        "score": 0.5246913580246914
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:go",
         "score": 0.5246913580246914
       },
       {
@@ -5705,48 +7275,48 @@
       },
       {
         "file": "weaves/wiki/weave.yaml",
+        "category": "skill:gener",
+        "score": 0.5246913580246914
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
         "category": "skill:io",
         "score": 0.5246913580246914
       },
       {
         "file": "weaves/wiki/weave.yaml",
-        "category": "skill:documentation",
-        "score": 0.5092165898617511
+        "category": "skill:writing",
+        "score": 0.511520737327189
       },
       {
         "file": "weaves/wiki/weave.yaml",
-        "category": "skill:organization",
-        "score": 0.5092165898617511
+        "category": "skill:documentation",
+        "score": 0.511520737327189
+      },
+      {
+        "file": "weaves/wiki/weave.yaml",
+        "category": "skill:reflection",
+        "score": 0.511520737327189
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:document",
-        "score": 0.5092165898617511
+        "score": 0.511520737327189
       },
       {
         "file": "weaves/wiki/weave.yaml",
-        "category": "skill:organ",
-        "score": 0.5092165898617511
+        "category": "skill:reflect",
+        "score": 0.511520737327189
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:as",
-        "score": 0.531578947368421
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:code",
-        "score": 0.531578947368421
+        "score": 0.5105263157894737
       },
       {
         "file": "weaves/wiki/weave.yaml",
         "category": "skill:contain",
-        "score": 0.531578947368421
-      },
-      {
-        "file": "weaves/wiki/weave.yaml",
-        "category": "skill:cach",
-        "score": 0.531578947368421
+        "score": 0.5105263157894737
       },
       {
         "file": "schema/blocks-index.schema.yaml",
@@ -10927,18 +12497,22 @@
     "fileWarnings": []
   },
   "vocabulary": {
-    "totalUniqueTerms": 343,
+    "totalUniqueTerms": 389,
     "suggestedAdditions": [
       {
         "term": "block",
+        "frequency": 7
+      },
+      {
+        "term": "blocks",
         "frequency": 5
       },
       {
-        "term": "tagging",
+        "term": "technology",
         "frequency": 4
       },
       {
-        "term": "slug",
+        "term": "tagging",
         "frequency": 4
       },
       {
@@ -10950,7 +12524,7 @@
         "frequency": 4
       },
       {
-        "term": "2020",
+        "term": "slug",
         "frequency": 3
       },
       {
@@ -10958,7 +12532,23 @@
         "frequency": 3
       },
       {
+        "term": "items",
+        "frequency": 3
+      },
+      {
         "term": "frame",
+        "frequency": 3
+      },
+      {
+        "term": "assets",
+        "frequency": 3
+      },
+      {
+        "term": "suggestions",
+        "frequency": 3
+      },
+      {
+        "term": "golden",
         "frequency": 3
       },
       {
@@ -10970,7 +12560,7 @@
         "frequency": 3
       },
       {
-        "term": "blocks",
+        "term": "fibonacci",
         "frequency": 3
       },
       {
@@ -10980,9 +12570,9 @@
     ]
   },
   "performance": {
-    "timeElapsed": "88.19s",
+    "timeElapsed": "92.98s",
     "cacheHitRate": "0%",
-    "filesProcessed": 33,
+    "filesProcessed": 42,
     "filesCached": 0,
     "speedup": "N/A (first run)"
   }
