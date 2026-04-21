@@ -380,7 +380,7 @@ To become a Weaver, maintain high quality and request nomination from maintainer
 
 ## Getting Help
 
-- 💬 **Discord**: [discord.gg/framersai](https://discord.gg/framersai)
+- 💬 **Discord**: [discord.gg/usEkfCeQxs](https://discord.gg/usEkfCeQxs)
 - 📧 **Email**: team@frame.dev
 - 🐛 **Issues**: [github.com/framersai/codex/issues](https://github.com/framersai/codex/issues)
 - 📚 **Docs**: [frame.dev/codex/docs](https://frame.dev/codex/docs)

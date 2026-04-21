@@ -742,7 +742,7 @@ This schema is versioned using semantic versioning:
 - **OpenStrand ECA Spec**: [openstrand-architecture.md](../openstrand-architecture.md)
 - **Submission Guide**: [how-to-submit.md](./how-to-submit.md)
 - **GitHub Repo**: [github.com/framersai/codex](https://github.com/framersai/codex)
-- **Discord**: [discord.gg/framersai](https://discord.gg/framersai)
+- **Discord**: [discord.gg/usEkfCeQxs](https://discord.gg/usEkfCeQxs)
 
 ---
 

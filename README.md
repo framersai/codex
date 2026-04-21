@@ -21,7 +21,7 @@
 ![Tests](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/tests.svg)
 ![LOC](https://raw.githubusercontent.com/framersai/codex/master/docs/badges/loc.svg)
 
-[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Changelog](docs/CHANGELOG_SYSTEM.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/VXXC4SJMKh)
+[Browse](https://frame.dev/codex) • [Documentation](docs/DEVELOPMENT.md) • [Contributing](docs/contributing/how-to-submit.md) • [Changelog](docs/CHANGELOG_SYSTEM.md) • [Security](SECURITY.md) • [Discord](https://discord.gg/usEkfCeQxs)
 
 **AI Infrastructure for Superintelligence.**
 
@@ -474,7 +474,7 @@ With attribution requirement.
   
   ### Connect
   
-  [Website](https://frame.dev) • [Quarry](https://frame.dev/quarry) • [Frame Codex](https://frame.dev/codex) • [OpenStrand](https://openstrand.ai) • [Discord](https://discord.gg/framedev) • [GitHub](https://github.com/framersai)
+  [Website](https://frame.dev) • [Quarry](https://frame.dev/quarry) • [Frame Codex](https://frame.dev/codex) • [OpenStrand](https://openstrand.ai) • [Discord](https://discord.gg/usEkfCeQxs) • [GitHub](https://github.com/framersai)
   
   <br/>
   
